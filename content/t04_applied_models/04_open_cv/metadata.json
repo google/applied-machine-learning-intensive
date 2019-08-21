@@ -1,0 +1,10 @@
+{
+  "name": "OpenCV",
+  "bug": "b/129325721",
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "handouts": [],
+  "resources": [],
+  "materials": []
+}

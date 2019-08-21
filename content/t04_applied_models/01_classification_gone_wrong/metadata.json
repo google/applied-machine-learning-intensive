@@ -1,0 +1,15 @@
+{
+  "name": "Classification Gone Wrong",
+  "bug": "b/129297877",
+  "slides": [
+    "https://docs.google.com/presentation/d/1kIzrTucwu8hwPpQto7E6gpzs8PAvsvtOSicE25e_0i0/edit"
+    ],
+  "colabs": [],
+  "materials": [
+    "https://www.wired.com/story/when-it-comes-to-gorillas-google-photos-remains-blind/",
+    "https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G",
+    "https://www.scmp.com/tech/innovation/article/2174564/facial-recognition-catches-chinas-air-con-queen-dong-mingzhu"
+  ],
+  "handouts": [],
+  "resources": []
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Classification with scikit-learn",
+  "bug": "b/129328912",
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "materials": [],
+  "handouts": [],
+  "resources": [],
+  "slides": [
+    "https://docs.google.com/presentation/d/1oYwiln4SnSoPAhqmy5rr2Tz7AMkLOu_Zp7ePoc_81QE/edit"
+  ]
+}

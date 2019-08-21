@@ -1,0 +1,13 @@
+{
+  "name": "Convolutional Neural Networks",
+  "bug": "b/129290998",
+  "slides": [
+    "https://docs.google.com/presentation/d/1fnm0aRK6W2sztRgV1b_hGC18M3yu7g8PQn97kVHTheM/edit"
+  ],
+  "colabs": [
+    "colab.ipynb"
+    ],
+  "handouts": [],
+  "resources": [],
+  "materials": []
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Introduction to Scikit Learn",
+  "bug": "b/129330666",
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "materials": [],
+  "resources": [],
+  "slides": [
+    "slides.html",
+    "https://docs.google.com/presentation/d/1_Smz8mkK9lBrWKBjucpmLSE63jWkKw2hy10dP008Nz4/edit"
+  ],
+  "handouts": []
+}

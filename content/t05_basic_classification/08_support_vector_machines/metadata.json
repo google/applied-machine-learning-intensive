@@ -1,0 +1,13 @@
+{
+  "name": "Support Vector Machines",
+  "bug": "b/129291694",
+  "slides": [
+    "https://docs.google.com/presentation/d/14JS91pDSdPWA4ffbyeVd5P4tY5pT65oRL_KxUY0tDvQ/edit"
+  ],
+  "materials": [],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "handouts": [],
+  "resources": []
+}

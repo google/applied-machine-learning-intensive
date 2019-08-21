@@ -1,0 +1,13 @@
+{
+  "name": "Regression Quality",
+  "bug": "b/129327938",
+  "materials": [],
+  "resources": [],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "https://docs.google.com/presentation/d/1_FB122PvbgueJ8nAB6HIBivfz6pepxClqihSkXVVsZA/edit"
+  ],
+  "handouts": []
+}

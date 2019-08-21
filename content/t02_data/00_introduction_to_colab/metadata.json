@@ -1,0 +1,25 @@
+{
+  "name": "Introduction to Colab",
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "https://docs.google.com/presentation/d/1kuHeyOqU-2oMsuHjbF2s1R-jd2Gxp4qFZXXERYO0P1A/edit"
+  ],
+  "concepts": [
+    "colab"
+  ],
+  "materials": [],
+  "resources": [
+    "https://research.google.com/colaboratory/faq.html"
+  ],
+  "bug": "b/129329118",
+  "handouts": [],
+  "learning objectives": [
+    "Create and run a Google Colab"
+  ]
+  "concepts": [
+    "colab",
+    "colab:language selection",
+  ]
+}
