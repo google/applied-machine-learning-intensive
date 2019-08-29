@@ -1,0 +1,9 @@
+{
+  "name": "Generative Adversarial Networks",
+  "bug": "b/129289271",
+  "handouts": [],
+  "colabs": [
+    "colab.ipynb",
+    "colab-mnist.ipynb"
+  ]
+}

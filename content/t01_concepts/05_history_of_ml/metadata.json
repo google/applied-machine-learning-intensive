@@ -1,0 +1,17 @@
+{
+  "name": "History of Machine Learning",
+  "bug": "b/131160822",
+  "colabs": [],
+  "slides": [
+    "https://docs.google.com/presentation/d/1xTp2TwDSgk6CnGyKLjtLeFfMsQ2O7fprcumUEMOEF10"
+  ],
+  "materials": [
+    "https://docs.google.com/spreadsheets/d/1w8MNzbDcTyHXRXxIchdbcsPvmKUUCrvBYw2R_aQApaY/edit#gid=0",
+    "https://ksr-ugc.imgix.net/assets/017/898/811/557ba0e48630f3bd65b7289949b0d48e_original.png?ixlib=rb-1.1.0&w=680&fit=max&v=1502588669&auto=format&gif-q=50&lossless=true&s=6b223c84e8c983409abc9a218cc67ce9"
+  ],
+  "resources": [
+    "https://drive.google.com/open?id=1yX6dLS1UWBZo8IZS_4neaMUTt2noTJLMcKJVwaGkXrE",
+    "https://developers.google.com/machine-learning/amli-content/history-of-ml/intro"
+  ],
+  "handouts": []
+}

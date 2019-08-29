@@ -1,0 +1,13 @@
+{
+  "name": "Introduction to Keras",
+  "bug": "b/129326459",
+  "slides": [
+    "https://docs.google.com/presentation/d/1qo_h6J3sA580m6oBZFB0ZnzmLpCP3RUr1O0IBfjA2oU/edit"
+  ],
+  "colabs": [],
+  "materials": [],
+  "resources": [
+    "https://www.tensorflow.org/guide/keras"
+  ],
+  "handouts": []
+}
