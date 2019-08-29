@@ -1,0 +1,13 @@
+{
+  "name": "Polynomial Regression",
+  "bug": "b/129330903",
+  "materials": [],
+  "resources": [],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "https://docs.google.com/presentation/d/1ZbmvG5tuT3jo-kWmeoJ3WJBFsFa0bQWf1PCXVSDWw0E/edit"
+  ],
+  "handouts": []
+}

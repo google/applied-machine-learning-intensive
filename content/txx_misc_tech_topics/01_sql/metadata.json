@@ -1,0 +1,16 @@
+{
+  "name": "Introduction to SQL",
+  "bug": "b/129316272",
+  "slides": [
+    "https://docs.google.com/presentation/d/1mVeBnSLLc_obDzpMefduwvYrL08XcvyO9yA2XeJjf-A/edit"
+  ],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "materials": [],
+  "resources": [
+    "https://www.w3schools.com/sql/",
+    "https://www.dofactory.com/sql/join"
+  ],
+  "handouts": []
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Introduction to Machine Learning Models",
+  "bug": "b/129330737",
+  "colabs": [],
+  "slides": [
+    "https://docs.google.com/presentation/d/1r_8EqqEn7FYYypgD4wAYTJCvr595QegknMGo81khfO4/edit"
+  ],
+  "materials": [
+    "https://docs.google.com/document/d/1JCiCygNYrdWCBaB34qpexDB4jM_8EJbWbTycct9xacY/edit?usp=sharing",
+    "https://docs.google.com/spreadsheets/d/1lyHgpA_2H2aw6TyFcz7QCOQYgcrn1LcdMnz5D8pVUmM"
+  ],
+  "resources": [
+    "https://developers.google.com/machine-learning/amli-content/what-is-ml/what-can-ml-do",
+    "https://www.quora.com/What-can-machine-learning-do-and-cant-do"
+  ],
+  "review": [
+    "https://docs.google.com/document/d/1dQ7Rj7HE_mZCLuBLwjJBMmav3jPDCTUFsb71UIe2q34/edit#"
+  ],
+  "handouts": []
+}

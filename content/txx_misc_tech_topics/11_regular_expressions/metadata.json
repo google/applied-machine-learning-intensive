@@ -1,0 +1,14 @@
+{
+  "name": "Regular Expressions",
+  "bug": "b/131174555",
+  "slides": [],
+  "colabs": [
+    "colab.ipynb"
+    ],
+  "materials": [],
+  "handouts": [],
+  "resources": [
+    "https://regexone.com/",
+    "https://regexone.com/references/python"
+    ]
+}
