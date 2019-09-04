@@ -1,0 +1,20 @@
+{
+  "name": "Decision Trees and Random Forests",
+  "bug": "b/129289528",
+  "materials": [],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "handouts": [],
+  "slides": [
+    "slides.md"
+  ],
+  "resources": [
+    "https://en.wikipedia.org/wiki/Decision_tree",
+    "https://en.wikipedia.org/wiki/Random_forest",
+    "https://en.wikipedia.org/wiki/Ensemble_learning",
+    "https://en.wikipedia.org/wiki/Bootstrapping_(statistics)",
+    "https://en.wikipedia.org/wiki/Bootstrap_aggregating",
+    "https://en.wikipedia.org/wiki/Boosting_(machine_learning)"
+  ]
+}
