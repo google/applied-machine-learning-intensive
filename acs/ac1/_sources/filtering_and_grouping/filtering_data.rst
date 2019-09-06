@@ -1,3 +1,5 @@
+.. _filtering_data:
+
 Filtering Data
 ==============
 
@@ -157,8 +159,10 @@ contains”, then type the word “French”.
      :x: Incorrect
 
 
-Sorting
--------
+.. _sorting_data:
+
+Sorting Data
+------------
 
 Data is often unordered, which can make it difficult to examine visually.
 Sorting data allows you to order columns. Most of the ordering you will come
