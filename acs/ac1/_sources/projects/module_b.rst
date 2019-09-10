@@ -4,11 +4,8 @@ Module B
 Project Description
 -------------------
 
-In this project, you will:
-
--   Choose one of the provided datasets
--   Conduct a statistical analysis
--   Write a report summarizing your findings
+In this project, you will complete a statistical analysis on a dataset, then
+write a report summarizing your findings.
 
 Here are the steps you’ll need to complete. **Under each step are sub-bullets
 detailing questions you need to answer in your report.**
@@ -137,8 +134,11 @@ Grading Rubric
 
    * - **Joining (4)**
      - An appropriate join key was chosen. VLOOKUP was used successfully to
-       create a joined table.
-     -
+       create a joined table. The report contains a brief mention of why this
+       key was chosen.
+     - An appropriate join key was chosen and the join is successfully executed
+       using VLOOKUP, but the report does not include any discussion of why this
+       key was chosen.
      - There was an attempt at joining, but the wrong formula was used or the
        wrong key was used.
      - There was no attempt at using VLOOKUP.
@@ -203,7 +203,8 @@ Grading Rubric
    * - **Conclusion (4)**
      - The report contains a conclusion section summarizing key findings from
        other rubric areas. It is concise and complete.
-     -
+     - The report contains a conclusion section, but either contains minor
+       inconsistencies with previous findings, or omits relevant findings.
      - The report contains a conclusion section, but it is incomplete or doesn’t
        accurately reflect previous findings.
      - The report does not contain a conclusion section.

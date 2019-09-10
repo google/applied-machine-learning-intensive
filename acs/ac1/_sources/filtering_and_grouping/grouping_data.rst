@@ -262,13 +262,10 @@ C, but only if column E is equal to “Man”. This is a perfect use case for
      :x: Incorrect
 
 
-.. TODO(https://github.com/RunestoneInteractive/RunestoneComponents/issues/896):
-   Currently the shortanswer directive needs the entire question on one line.
-   When fixed, make this question adhere to line limit.
-
 .. shortanswer:: titanic_survival_rate_by_class
 
-   Compare the survival rate across the classes: Crew, Class 3, Class 2, Class 1. Is this in line with what you expected?
+   Compare the survival rate across the classes: Crew, Class 3, Class 2, Class
+   1. Is this in line with what you expected?
 
 
 .. _This forum discussion goes into more detail.: https://stackoverflow.com/questions/17152704/google-spreadsheet-count-if-contains-a-string

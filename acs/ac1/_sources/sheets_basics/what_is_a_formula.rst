@@ -11,8 +11,19 @@ to a formula can be new data (e.g. ``=1+1``), or existing data from cells (e.g.
 ``=A1+A2``), or a combination (e.g. ``=A1+1``). Below are some illustrative
 examples of how formulas work.
 
-.. TODO(raskutti): Embed
-   https://docs.google.com/spreadsheets/d/17bkoB97dUdR0MBuaBXsWLR0VjkEYhJydXJUYV0tcWjw/edit#gid=737167147
+
+.. spreadsheet:: formulas
+   :colwidths: 300,300
+   :coltitles: 'formula','result'
+
+   "&#61;1+1",2
+   "&#61;2^2",4
+   "&#61;(1+1=3)",FALSE
+   "&#61;CONCATENATE(""abc"", ""xyz"")",abcxyz
+   "&#61;B2+B3",6
+   "&#61;2^B3",16
+   "&#61;-B6/10",-0.6
+
 
 Note that if Sheets cannot parse or calculate your formula, you will see an
 error. See :ref:`this section<errors>` for more on errors.
@@ -52,8 +63,21 @@ First, you enter the recipe for 12 servings into a table. (Note that for the
 ingredients with fractional amounts like 2/3 cup vegetable oil, you need to use
 a formula, namely ``=2/3``).
 
-.. TODO(raskutti): Embed
-   https://docs.google.com/spreadsheets/d/17bkoB97dUdR0MBuaBXsWLR0VjkEYhJydXJUYV0tcWjw/edit#gid=1963507413
+
+.. spreadsheet:: chocolate_cake
+   :colwidths: 300,300
+   :coltitles: 'ingredient','amount for 12 servings'
+
+   flour (cup),3
+   sugar (cup),2
+   cold water (cup),2
+   vegetable oil (cup),0.67
+   cocoa powder (cup),0.5
+   baking soda (tsp),2
+   white vinegar (tsp),2
+   salt (tsp),1
+   vanilla (tsp),1
+
 
 Now, you know that for 18 people, you will need to scale up everything to 18.
 You can do this by multiplying each ingredient by the scale factor of 18/12.
@@ -69,13 +93,25 @@ so the formula is as follows.
 
    =B2*18/12
 
-.. TODO(raskutti): Embed screencast of above formula.
+
+.. https://screenshot.googleplex.com/WRcQNS1jEEQ
+
+.. image:: figures/chocolate_cake_flour_for_18_servings.png
+   :align: center
+
 
 So for 18 servings, you need 4.5 cups of flour. Now, it’s as simple as
 copy-pasting this same formula to the other rows. You can do this using in-built
 copy-paste functionality, or you can drag down from the corner of the cell.
 
-.. TODO(raskutti): Embed screencast of dragging down.
+
+.. fillintheblank:: chocolate_cake_cocoa_powder_for_18_servings
+
+   How many cups of cocoa powder do you need for 18 servings? |blank|
+
+   - :0.75: Correct
+     :x: Incorrect
+
 
 The best thing about Sheets is that you could recreate this recipe no matter how
 the numbers change. For example, suppose the hosts ask you to bring enough for
@@ -87,13 +123,22 @@ update the number of servings.
 Use column D to show the amount required for the custom number of servings, and
 use cell E2 to store the desired number of servings, as below.
 
-.. TODO(raskutti): Embed screencast of above.
 
-Now, write a formula in column D, similar to the formulas in column C, except
-instead of **hardcoding** (entering a number manually) the number of servings,
-use cell E2 to indicate the number of servings.
+.. https://screenshot.googleplex.com/8fAdyqz19P4
 
-.. TODO(raskutti): Embed screencast of above.
+.. image:: figures/chocolate_cake_custom_servings.png
+   :align: center
+
+
+Now, you can write a formula in column D, similar to the formulas in column C,
+except instead of **hardcoding** (entering a number manually) the number of
+servings, use cell E2 to indicate the number of servings.
+
+
+.. https://screenshot.googleplex.com/sOJe1zonsHk
+
+.. image:: figures/chocolate_cake_flour_for_custom_servings.png
+   :align: center
 
 
 .. shortanswer:: dragging_formula_down
@@ -101,15 +146,32 @@ use cell E2 to indicate the number of servings.
    What do you think will happen if you drag this formula to the rows below?
 
 
-.. TODO(raskutti): Embed screencast of dragging wrong formula down.
+As was done in column C to calculate the recipe amounts for 18 servings, try
+dragging the formula in column D down to the rows below. You should observe that
+in this case, copy-pasting the formula did not behave as you might have wanted
+it to.
 
-This doesn't look right. The formula in cell D2 references cells B2 and E2. When
-you copy-paste this formula to D3, Sheets assumes you want the formula to update
-to reference cells B3 and E3. This is called **relative referencing**, because
-cell referencing in the formula is relative to where the formula is used. (So
-when it is used in D3, it references B3 and E3.) If you want a cell reference to
-*not* update when the formula is copy-pasted, you need to use **absolute
-referencing**.
+
+.. shortanswer:: why_dragging_formula_down_did_not_work
+
+   Why do you think copy-pasting this formula produced all zeros?
+
+
+The formula in cell D2 references cells B2 and E2. When you copy-paste this
+formula to D3, Sheets assumes you want the formula to update to reference cells
+B3 and E3.
+
+
+.. https://screenshot.googleplex.com/fDO6Vri1O3V
+
+.. image:: figures/chocolate_cake_relative_referencing_not_working.png
+   :align: center
+
+
+This is called **relative referencing**, because cell referencing in the formula
+is relative to where the formula is used. (So when it is used in D3, it
+references B3 and E3.) If you want a cell reference to *not* update when the
+formula is copy-pasted, you need to use **absolute referencing**.
 
 Sheets assumes references are relative. To tell Sheets to reference a cell
 absolutely, you need to use the ``$`` symbol.
@@ -127,17 +189,33 @@ when referencing A1. This is called semi-absolute referencing, and can be used
 to keep the row or column as an absolute reference while using the other as a
 relative reference. `You can learn more about cell referencing here.`_
 
+As an example, suppose you have the following sheet.
 
-.. TODO(bnmnetp): Currently the shortanswer directive needs the entire
-   question on one line. When fixed, make this question adhere to line limit.
+
+.. spreadsheet:: absolute_vs_relative_referencing_sheet
+   :colwidths: 200
+
+   1
+   2
+   3
+   4
+   5
+   6
+   7
+   8
+   9
+   10
+
+
+.. TODO(https://github.com/RunestoneInteractive/RunestoneComponents/issues/901):
+   Change question to allow students to do this within the webpage.
 
 .. shortanswer:: absolute_vs_relative_referencing
 
-   Suppose you see the formulas in the following sheet. What numbers will you see when you copy-paste the formula down?
+   Copy this data to a spreadsheet, and in cell B1, enter the formula
+   ``=A1*$A$2``. When you copy-paste this formula down, what numbers do you
+   expect to see?
 
-
-.. TODO(raskutti): Embed
-   https://docs.google.com/spreadsheets/d/17bkoB97dUdR0MBuaBXsWLR0VjkEYhJydXJUYV0tcWjw/edit#gid=795732740
 
 In this chocolate cake example, you want column B to be referenced relatively
 (so when you copy-paste to rows below, it updates itself), but cell E2 to be
@@ -150,17 +228,15 @@ referenced absolutely. So, the formula for cell D3 should be as below.
 
 Copy-pasting this formula down for the other ingredients now works as intended.
 
-.. TODO(raskutti): Embed screencast of dragging down.
+
+.. https://screenshot.googleplex.com/XkSctAUZVNa
+
+.. image:: figures/chocolate_cake_amounts_for_custom_servings.png
+   :align: center
+
 
 Now, if you update the number of servings you need in cell E2, the amounts for
 the shopping list magically update themselves.
-
-.. TODO(raskutti): Embed screencast of updating cell.
-
-Doing all of these steps manually, for each ingredient, would be challenging and
-may result in miscalculations. Doing it in Sheets might take some getting used
-to, but once you have the hang of using formulas, it makes calculations like
-this extremely simple!
 
 
 .. fillintheblank:: eggs_for_chocolate_cake
@@ -171,6 +247,12 @@ this extremely simple!
    - :0.82: Correct
      :9.87: Incorrect: The original recipe made 12 servings, not 1.
      :x: Incorrect
+
+
+Doing all of these steps manually, for each ingredient, would be challenging and
+may result in miscalculations. Doing it in Sheets might take some getting used
+to, but once you have the hang of using formulas, it makes calculations like
+this extremely simple!
 
 
 Example: The Fibonacci Sequence
@@ -224,26 +306,22 @@ you can then extend to get as many numbers in the sequence as you need.
 1.  Start by manually entering the initial numbers of the sequence: 0, 1 in
     cells A1 and A2.
 2.  The third number in the sequence is the sum of the previous two numbers, so
-    enter the formula =A1+A2 in cell A3.
-
-.. TODO(raskutti): Embed screencast of above.
+    enter the formula ``=A1+A2`` in cell A3.
 
 3.  This formula in Sheets is ``=A1+A2``. Since each cell is referenced
     relatively, it actually means “add the two numbers above this cell”.
     Therefore, if you copy-paste this formula to the next cell A4, Sheets
     interprets this as the formula ``=A2+A3``.
 
-.. TODO(raskutti): Embed screencast of above.
-
 4.  This can be extended to any number of cells. Drag the formula (or copy-paste
     it) to all cells in A up to A50, to show the 50th Fibonacci number.
-
-.. TODO(raskutti): Embed screencast of above.
 
 So the 50th number in the Fibonacci sequence is 7,778,742,049! In this example,
 each cell adds the two previous cells, which in turn is used to calculate the
 next cell. This is a type of **recursive formula**, where the same formula is
 being used over and over, but with different inputs.
+
+.. TODO(raskutti): Embed screencast of entire process above.
 
 Calculating this by hand or using a calculator would have taken way too much
 time and brainpower. Sheets lets you spend your time and brainpower on more
@@ -258,6 +336,8 @@ important things!
      :3: Incorrect: Remember 0 is the 1st Fibonacci number.
      :x: Incorrect
 
+
+.. _what_is_a_formula_painters:
 
 Example: Painters
 -----------------
@@ -289,8 +369,6 @@ should contain the following formula.
    =H2>200
 
 
-.. TODO(raskutti): Embed screencast of above.
-
 This formula evaluates to ``TRUE`` only if the value in H2 is greater than 200
 and ``FALSE`` if it’s not. You can then drag down or copy-paste that formula to
 the remaining rows.
@@ -310,9 +388,8 @@ The first ``=`` is telling Sheets that this cell contains a formula. The second
 ``=`` is a comparison (just like ``<`` or ``>``), comparing cell E2 to the word
 “French”.
 
-.. TODO(raskutti): Embed screencast of above.
-
-Once you have your answer for Modigliani, you can copy-paste this formula for the other painters as well.
+Once you have your answer for Modigliani, you can copy-paste this formula for
+the other painters as well.
 
 Going back to our original question (which French painters painted over 200
 paintings in their lifetimes?), we must have a final answer to satisfy both
@@ -345,14 +422,10 @@ so the formula looks as below.
    =AND(I2=TRUE, J2=TRUE)
 
 
-.. TODO(raskutti): Embed screencast of above.
-
 As usual, once this formula has been written for Amedeo Modigliani, it can be
 dragged or copy-pasted for the other 49 painters. This gives a ``TRUE`` or
 ``FALSE`` in column K for all painters as to whether the listed painter was
 classified as a prolific French painter.
-
-.. TODO(raskutti): Embed screencast of above.
 
 You might, however, find that column K is still a little hard to digest, and
 doesn’t present you with a succinct list of the prolific French painters in this
@@ -397,32 +470,32 @@ painted over 200 paintings.
 
      - Incorrect
 
-   - Renoir
+   - Pierre-Auguste Renoir
 
      + Correct
 
-   - Gauguin
+   - Paul Gauguin
 
      + Correct
 
-   - Rivera
+   - Diego Rivera
 
      - Incorrect
 
-   - Monet
+   - Claude Monet
 
      - Incorrect
 
-   - Degas
+   - Edgar Degas
 
      + Correct
-
 
 Of course, instead of using four formulas to find these painters, you could do
 this all in one formula, by wrapping each step into the next. However, when
 first starting, it helps to isolate each step into its own formula.
 
-.. TODO(raskutti): Embed screencast of above.
+.. TODO(raskutti): Embed screencast of the entire exercise above, then using
+   only one formula.
 
 
 .. shortanswer:: italian_painters

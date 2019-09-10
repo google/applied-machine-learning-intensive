@@ -60,18 +60,17 @@ tail** and a **left skew**.
    What real-world variable do you think could have the histogram above?
 
 
-.. TODO(https://github.com/RunestoneInteractive/RunestoneComponents/issues/896):
-   Currently the shortanswer directive needs the entire question on one line.
-   When fixed, make this question adhere to line limit.
-
 .. shortanswer:: questions_on_right_skew
 
-   In the histogram above, do you think more of the values are above or below the mean? How does that compare to the median? Will the median be greater or less than the mean in this case?
+   In the histogram above, do you think more of the values are above or below
+   the mean? How does that compare to the median? Will the median be greater or
+   less than the mean in this case?
 
 
 .. shortanswer:: questions_on_left_skew
 
-   Find some examples of variables with left skew. Are there more data points above or below the mean? How does the mean compare to the median?
+   Find some examples of variables with left skew. Are there more data points
+   above or below the mean? How does the mean compare to the median?
 
 
 Example: Dice Roll
@@ -107,13 +106,10 @@ more extreme or as outliers are introduced into the dataset, the median is less
 likely than the mean to be substantially affected.
 
 
-.. TODO(https://github.com/RunestoneInteractive/RunestoneComponents/issues/896):
-   Currently the shortanswer directive needs the entire question on one line.
-   When fixed, make this question adhere to line limit.
-
 .. shortanswer:: changing_value_of_dice
 
-   What would happen to the mean and median if you change the 1 of a standard dice to -10? What about if you change the 3 to 300?
+   What would happen to the mean and median if you change the 1 of a standard
+   dice to -10? What about if you change the 3 to 300?
 
 
 .. _outliers_and_skew_income:
