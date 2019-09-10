@@ -4,12 +4,9 @@ Module C
 Project Description
 -------------------
 
-In this project, you will:
-
--   Manipulate data from a SQL database
--   Visualize attributes of the dataset in sheets
--   Run a linear regression on variables in the dataset
--   Write a report summarizing your findings
+In this project, you will extract data from a SQL database, run a linear
+regression to find whether a correlation exists, then write a report summarizing
+your findings.
 
 Here are the steps you’ll need to complete. **Under each step are sub-bullets
 detailing questions you need to answer in your report.**
@@ -121,10 +118,12 @@ Grading Rubric
      - **NA / Not Present**
 
    * - **Dataset (2)**
-     - Report states why the dataset was chosen.
+     - The report contains a sufficiently in-depth discussion as to why the
+       dataset was chosen.
+     - The report contains a discussion as to why the dataset was chosen, but it
+       lacks details.
      -
-     -
-     - Report does not state why dataset was chosen.
+     - The report does not state why dataset was chosen.
 
    * - **Data Cleaning (8)**
      - All missing/unclean data is found and accounted for in a way that makes
@@ -144,7 +143,8 @@ Grading Rubric
        implemented to answer the stated questions. The merged dataset was
        verified for correctness. The report includes a correct discussion on the
        different types of JOIN.
-     -
+     - Technical implementation of the JOIN is done correctly, but the
+       discussion in the report lacks the sufficient detail.
      - Questions may be lacking in complexity. The incorrect JOIN or join key
        was chosen/used. There is inadequate discussion on why the type and key
        of the JOIN are chosen.
@@ -156,7 +156,10 @@ Grading Rubric
        statistics are accurately calculated, and used to answer the stated
        questions. There is some comment on what these values mean for the
        distribution.
-     -
+     - At least 2 questions were chosen and explanation was given as to why.
+       These questions involve calculating summary statistics. There is an
+       attempt at calculating summary statistics, but it produces minor errors.
+       The discussion in the report lacks some depth.
      - Questions may be lacking in complexity. There is an attempt at
        calculating summary statistics, but they are incorrect, not relevant to
        the stated question,  or not referenced in the report.
@@ -219,7 +222,8 @@ Grading Rubric
    * - **Conclusion (4)**
      - The report contains a conclusion section summarizing key findings from
        other rubric areas. It is concise and complete.
-     -
+     - The report contains a conclusion section, but either contains minor
+       inconsistencies with previous findings, or omits relevant findings.
      - The report contains a conclusion section, but it is incomplete or doesn’t
        accurately reflect previous findings.
      - The report does not contain a conclusion section.

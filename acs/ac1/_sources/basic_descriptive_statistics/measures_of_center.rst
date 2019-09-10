@@ -80,13 +80,10 @@ see :ref:`the example below<outliers_and_skew_income>`.)
      + Correct
 
 
-.. TODO(https://github.com/RunestoneInteractive/RunestoneComponents/issues/896):
-   Currently the shortanswer directive needs the entire question on one line.
-   When fixed, make this question adhere to line limit.
-
 .. shortanswer:: do_europeans_live_longer_than_north_americans
 
-   You want to do a study on whether Europeans live longer than North Americans. What dataset would you use, and what summary statistics would be useful?
+   You want to do a study on whether Europeans live longer than North Americans.
+   What dataset would you use, and what summary statistics would be useful?
 
 
 The mean, median, and mode functions in Sheets all have the exact same syntax as
@@ -189,13 +186,10 @@ all year round. The
 into these cities’ temperatures.
 
 
-.. TODO(https://github.com/RunestoneInteractive/RunestoneComponents/issues/896):
-   Currently the shortanswer directive needs the entire question on one line.
-   When fixed, make this question adhere to line limit.
-
 .. shortanswer:: nyc_and_seattle_median_temperatures
 
-   Calculate the median maximum temperatures for Seattle and NYC. Do these statistics tell a different story? Why?
+   Calculate the median maximum temperatures for Seattle and NYC.
+   Do these statistics tell a different story? Why?
 
 
 .. _The median family income in LA is $62,289, compared to $93,391 in SF: https://en.wikipedia.org/wiki/List_of_California_locations_by_income#Counties

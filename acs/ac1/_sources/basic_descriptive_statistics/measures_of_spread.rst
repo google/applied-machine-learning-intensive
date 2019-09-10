@@ -44,13 +44,10 @@ the mean salary in Wonkytown is also $50,000. So “on average”, residents of
 Consistentville and Wonkytown make the same salary.
 
 
-.. TODO(https://github.com/RunestoneInteractive/RunestoneComponents/issues/896):
-   Currently the shortanswer directive needs the entire question on one line.
-   When fixed, make this question adhere to line limit.
-
 .. shortanswer:: random_resident_salary
 
-   If you take a random resident of Consistentville, what would you guess their salary to be? Do you expect to be correct? What about in Wonkytown?
+   If you take a random resident of Consistentville, what would you guess their
+   salary to be? Do you expect to be correct? What about in Wonkytown?
 
 
 If you take a random resident of Consistentville and guess their salary to be

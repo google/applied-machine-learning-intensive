@@ -28,10 +28,7 @@ of all heights. This chapter will guide you through the most common descriptive
 statistics.
 
 
-.. TODO(https://github.com/RunestoneInteractive/RunestoneComponents/issues/896):
-   Currently the shortanswer directive needs the entire question on one line.
-   When fixed, make this question adhere to line limit.
-
 .. shortanswer:: students_travel_statistics
 
-   Suppose you have a dataset on how far students travel to get to school. What are some statistics of that dataset?
+   Suppose you have a dataset on how far students travel to get to school. What
+   are some statistics of that dataset?
