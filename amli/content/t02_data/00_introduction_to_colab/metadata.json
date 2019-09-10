@@ -9,10 +9,10 @@
   "concepts": [
     "colab"
   ],
-  "materials": [],
   "resources": [
     "https://research.google.com/colaboratory/faq.html"
   ],
   "bug": "b/129329118",
+  "materials": [],
   "handouts": []
 }
