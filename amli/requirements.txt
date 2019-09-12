@@ -1,5 +1,4 @@
-wheel
 absl-py
+google-auth-oauthlib
 nbformat
 pytest
-google-auth-oauthlib
