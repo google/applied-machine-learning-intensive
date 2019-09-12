@@ -15,8 +15,5 @@ SQL
    filtering.rst
    sorting.rst
    aggregating.rst
+   ifs_and_cases.rst
    joining.rst
-
-
-.. TODO(raskutti): Include subqueries.rst.
-.. TODO(raskutti): Include ifs_and_cases.rst.
