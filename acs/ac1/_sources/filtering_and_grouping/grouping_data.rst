@@ -1,3 +1,5 @@
+.. _grouping_data:
+
 Grouping Data
 =============
 
