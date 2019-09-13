@@ -9,33 +9,31 @@ amendments, and clarifications are listed below.
 Both this style guide and the developer style guide should be cited in code
 reviews to ensure that all new content is consistent.
 
-## Table of Contents
+- [Tone](#tone)
 
-- [Tone](#Tone)
-
-  - [Audience](#Audience)
+  - [Audience](#audience)
   
-  - [Person](#Person)
+  - [Person](#person)
   
-- [Code Blocks](#Code-Blocks)
+- [Code Blocks](#code-blocks)
 
-- [Heading Capitalization](#Heading-Capitalization)
+- [Heading Capitalization](#heading-capitalization)
 
-- [Lists](#Lists)
+- [Lists](#lists)
 
-  - [Ordered Lists](#Ordered-Lists)
+  - [Ordered Lists](#ordered-lists)
   
-  - [Indentation](#Indentation)
+  - [Indentation](#indentation)
   
-  - [Sublists](#Sublists)
+  - [Sublists](#sublists)
 
-- [Filenames](#Filenames)
+- [Filenames](#filenames)
 
-- [Hyperlinks](#Hyperlinks)
+- [Hyperlinks](#hyperlinks)
 
-- [Line Length](#Line-Length)
+- [Line Length](#line-length)
 
-- [Directives](#Directives)
+- [Directives](#directives)
 
 ## Tone
 
