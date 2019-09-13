@@ -201,7 +201,9 @@ Put two blank lines on either side of any `rst` or Runestone directives.
 Runestone directives often have blank lines contained within, so the double
 spacing helps to clarify the start and end of the directive.
 
-``` {.bad}
+The following is not consistent with the style guide.
+
+```
 This is some text.
 
 .. runestone_directive::
@@ -209,7 +211,9 @@ This is some text.
 This is more text.
 ```
 
-``` {.good}
+The following is consistent with the style guide.
+
+```
 This is some text.
 
 
