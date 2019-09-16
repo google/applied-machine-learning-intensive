@@ -10,29 +10,17 @@ Both this style guide and the developer style guide should be cited in code
 reviews to ensure that all new content is consistent.
 
 - [Tone](#tone)
-
-  - [Audience](#audience)
-  
-  - [Person](#person)
-  
+  * [Audience](#audience)
+  * [Person](#person)
 - [Code Blocks](#code-blocks)
-
 - [Heading Capitalization](#heading-capitalization)
-
 - [Lists](#lists)
-
-  - [Ordered Lists](#ordered-lists)
-  
-  - [Indentation](#indentation)
-  
-  - [Sublists](#sublists)
-
+  * [Ordered Lists](#ordered-lists)
+  * [Indentation](#indentation)
+  * [Sublists](#sublists)
 - [Filenames](#filenames)
-
 - [Hyperlinks](#hyperlinks)
-
 - [Line Length](#line-length)
-
 - [Directives](#directives)
 
 ## Tone
