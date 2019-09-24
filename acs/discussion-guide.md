@@ -1,12 +1,12 @@
 # Class Discussion Guide
 
--   [Overview](#overview)
--   [Ask good questions](#ask-good-questions)
--   [Hear from Everyone](#hear-from-everyone)
--   [Make Sure They’re Prepared](#make-sure-theyre-prepared)
--   [Develop Critical Thinking and Strong Arguments](#develop-critical-thinking-and-strong-arguments)
--   [Other Considerations](#other-considerations)
--   [Resources](#resources)
+- [Overview](#overview)
+- [Ask good questions](#ask-good-questions)
+- [Hear from Everyone](#hear-from-everyone)
+- [Make Sure They’re Prepared](#make-sure-they-re-prepared)
+- [Develop Critical Thinking and Strong Arguments](#develop-critical-thinking-and-strong-arguments)
+- [Other Considerations](#other-considerations)
+- [Resources](#resources)
 
 ## Overview
 
