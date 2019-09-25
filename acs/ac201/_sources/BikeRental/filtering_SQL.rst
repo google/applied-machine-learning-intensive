@@ -1,18 +1,27 @@
+.. Copyright (C)  Google, Runestone Interactive LLC
+   This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+   International License. To view a copy of this license, visit
+   http://creativecommons.org/licenses/by-sa/4.0/.
+
+
 Filtering
 =========
 
-We’ve seen how to look only at certain columns of the table but it is
+We’ve seen how to look only at certain columns of the table, but it is
 often useful to only look at certain rows in a table. For example, we
-could want to look only at the bike trips which are at least a certain
+might want to look only at the bike trips which are at least a certain
 number of minutes. Let’s say you’re only interested in bike trips of 60
 minutes or more:
+
 
 .. code:: python3
 
     %%sql
 
     SELECT
-      member_type, start_date, duration
+      member_type,
+      start_date,
+      duration
     FROM
       trip_data
     WHERE
@@ -21,13 +30,10 @@ minutes or more:
       10
 
 
-
 .. parsed-literal::
 
      * sqlite:///bikeshare.db
     Done.
-
-
 
 
 .. raw:: html
@@ -91,34 +97,32 @@ minutes or more:
     </table>
 
 
-
 It’s also possible to filter by multiple criteria. For example to look
 at only bike trips which are 60 minutes or more and only the subscriber
-type of Member:
+type of Member, you can write the following query.
+
 
 .. code:: python3
 
     %%sql
 
     SELECT
-      member_type, start_date, duration
+      member_type,
+      start_date,
+      duration
     FROM
       trip_data
     WHERE
-      duration >= 3600
-    AND
+      duration >= 3600 AND
       member_type = "Member"
     LIMIT
       10
-
 
 
 .. parsed-literal::
 
      * sqlite:///bikeshare.db
     Done.
-
-
 
 
 .. raw:: html
@@ -182,7 +186,6 @@ type of Member:
     </table>
 
 
-
 Practice Exercises
 ------------------
 
@@ -193,13 +196,20 @@ Practice Exercises
 
         %%sql
 
-        select * from trip_data where bike_number = 'W01274' and duration < 900
+        SELECT
+          *
+        FROM
+          trip_data
+        WHERE
+          bike_number = 'W01274' AND
+          duration < 900
 
 
     .. parsed-literal::
 
         * sqlite:///bikeshare.db
         Done.
+
 
     .. raw:: html
 
@@ -368,53 +378,63 @@ Practice Exercises
 
     .. code:: sql
 
-        select end_station, duration
-        from trip_data
-        where start_station = 31111 and duration > 8 * 60 * 60
+        SELECT
+          end_station,
+          duration
+        FROM
+          trip_data
+        WHERE
+          start_station = 31111 AND
+          duration > 8 * 60 * 60
 
 
     Question 3
 
     .. code:: sql
 
-        select count(*)
-        from trip_data
-        where start_station = 31111 and duration > 8 * 60 * 60 and  end_station = 31111
+        SELECT
+          COUNT(*)
+        FROM
+          trip_data
+        WHERE
+          start_station = 31111 AND
+          duration > 8 * 60 * 60 AND
+          end_station = 31111
 
-#.
+
 
     Figure out how to get all the trips on the bike with id of ``W01274``
     and only include rides which are shorter than 15 minutes.
 
+
     .. fillintheblank:: sql_ex1
 
-        What is the longest of the rides you just selected?
+        What is the longest of the rides you just selected? |blank|
 
         - :833: Is the correct answer
           :828: Is close, but it is the second longest
           :x: Keep trying
 
 
-#.
-
     .. fillintheblank:: sql_trips_31111
 
-        Get the ending station and the duration of all of the bike trips originating at station ``31111`` that lasted 8 hours or more.  How many trips match the criteria above?
+        Get the ending station and the duration of all of the bike trips
+        originating at station ``31111`` that lasted 8 hours or more. How many
+        trips match the criteria above?
 
         - :21: Is the correct answer
           :20|22: Close, but count again
           :x: Incorrect 8 hours is 28,800 seconds
 
-#.
 
     .. fillintheblank:: sql_trips_return
 
-        How many trips longer than 8 hours started and ended and station 31111 by casual riders?
+        How many trips longer than 8 hours started and ended and station
+        ``31111`` by casual riders?
 
         - :4: Is the correct answer
           :5: Is the total for both members and casual riders
           :x: catchall feedback
-
 
 
 **Lesson Feedback**
