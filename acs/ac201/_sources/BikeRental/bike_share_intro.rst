@@ -36,11 +36,11 @@ of ``hr`` which is not available in ``day.csv``).
 
 - ``weathersit``:
 
-  - 1: Clear / Few clouds / Partly cloudy
-  - 2: Mist and Cloudy / Mist and Broken clouds / Mist and Few clouds / Mist
-  - 3: Light Snow / Light Rain and Thunderstorm and Scattered clouds / Light
-    Rain and Scattered clouds
-  - 4: Heavy Rain and Ice Pellets and Thunderstorm and Mist / Snow and Fog
+  - 1: Clear, Few clouds, Partly cloudy, Partly cloudy
+  - 2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
+  - 3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain +
+    Scattered clouds
+  - 4: Heavy Rain + Ice Pellets + Thunderstorm + Mist, Snow + Fog
 
 - ``temp``: Normalized temperature in Celsius
 - ``atemp``: Normalized feeling temperature in Celsius
