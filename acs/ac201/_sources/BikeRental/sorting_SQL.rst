@@ -1,3 +1,9 @@
+.. Copyright (C)  Google, Runestone Interactive LLC
+   This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+   International License. To view a copy of this license, visit
+   http://creativecommons.org/licenses/by-sa/4.0/.
+
+
 Sorting
 =======
 
@@ -6,30 +12,29 @@ returning to us. What if we want to see the rows in a certain sorting
 order? We use the ``ORDER BY`` command to sort them by some other
 criteria.
 
-For example, to see the bike trips in the order of the duration in
-seconds:
+For example, the following query sorts the bike trips in the order of the
+duration in seconds.
+
 
 .. code:: python3
 
     %%sql
 
     SELECT
-      member_type, start_date, duration
+      member_type,
+      start_date,
+      duration
     FROM
       trip_data
     ORDER BY
       duration
-    LIMIT
-      10
-
+    LIMIT 10
 
 
 .. parsed-literal::
 
      * sqlite:///bikeshare.db
     Done.
-
-
 
 
 .. raw:: html
@@ -93,31 +98,29 @@ seconds:
     </table>
 
 
-
-Well, it turns out by default the sorting order is **ascending**. To
+Well, it turns out that by default the sorting order is **ascending**. To
 sort the rows in **descending** order, add the keyword ``DESC``.
+
 
 .. code:: python3
 
     %%sql
 
     SELECT
-      member_type, start_date, duration
+      member_type,
+      start_date,
+      duration
     FROM
       trip_data
     ORDER BY
       duration DESC
-    LIMIT
-      10
-
+    LIMIT 10
 
 
 .. parsed-literal::
 
      * sqlite:///bikeshare.db
     Done.
-
-
 
 
 .. raw:: html
@@ -181,33 +184,31 @@ sort the rows in **descending** order, add the keyword ``DESC``.
     </table>
 
 
-
 Of course, we can mix ``WHERE`` and ``ORDER BY``, to get only the bike
 trips from Member type of Casual in the order of the duration.
+
 
 .. code:: python3
 
     %%sql
 
     SELECT
-      member_type, start_date, duration
+      member_type,
+      start_date,
+      duration
     FROM
       trip_data
     WHERE
       member_type = "Casual"
     ORDER BY
       duration
-    LIMIT
-      10
-
+    LIMIT 10
 
 
 .. parsed-literal::
 
      * sqlite:///bikeshare.db
     Done.
-
-
 
 
 .. raw:: html
@@ -271,22 +272,23 @@ trips from Member type of Casual in the order of the duration.
     </table>
 
 
-
 Practice Exercises
 ------------------
 
 .. fillintheblank:: sql_sort_0
 
-   Get the start and end station IDs for bike trips that are longer 60 minutes or longer, in the order of largest number of seconds first and display the top 40 results.  What is the duration of the last ride |blank| what is the ending station?
+   Get the start and end station IDs for bike trips that are 60 minutes or
+   longer, in the order of largest number of seconds first and display the top
+   40 results. What is the duration of the last ride |blank|? What is the ending
+   station? |blank|
 
    - :84190: Is the correct answer
-     :86355: Is the longest - make sure you are using the DESC keyword to reverse your sort
+     :86355: Is the longest: make sure you are using the DESC keyword to reverse your sort
      :x: Keep on trying
 
    - :31018: Is the correct answer
-     :31611: Should be from the first row. Make sure you are sorting in the right order.
+     :31611: Should be from the first row: make sure you are sorting in the right order
      :x: Keep on querying
-
 
 
 .. reveal:: bikes_sort
@@ -297,15 +299,16 @@ Practice Exercises
         %%sql
 
         SELECT
-        duration, start_station, end_station
+          duration,
+          start_station,
+          end_station
         FROM
-        trip_data
+          trip_data
         WHERE
-        duration >= 3600
+          duration >= 3600
         ORDER BY
-        duration DESC
-        LIMIT
-        40
+          duration DESC
+        LIMIT 40
 
 
     .. raw:: html
@@ -518,13 +521,16 @@ Practice Exercises
             </tr>
         </table>
 
-    2.  ``select bike_number, duration from trip_data order by duration desc limit 1;``
 
-    3. ``select start_station, duration from trip_data where start_station = end_station order by duration desc limit 1;``
+    2. ``SELECT bike_number, duration FROM trip_data ORDER BY duration DESC LIMIT 1;``
+
+    3. ``SELECT start_station, duration FROM trip_data WHERE start_station = end_station ORDER BY duration DESC LIMIT 1;``
+
 
 .. fillintheblank:: sql_sort_1
 
-   On which bike was longest bike ride? |blank| How many seconds long was that ride?
+   On which bike was longest bike ride? |blank| How many seconds long was that
+   ride? |blank|
 
    - :W00379: Is the correct answer
      :W00470: Is the bike for the shortest
@@ -534,9 +540,11 @@ Practice Exercises
      :60: Is the shortest ride
      :x: Ride lengths are in seconds, you can sort on that field.
 
+
 .. fillintheblank:: sql_sort_2
 
-   What is the duration |blank| and starting station |blank| of the longest ride starting and ending at the same station?
+   What is the duration |blank| and starting station |blank| of the longest ride
+   that started and ended at the same station?
 
    - :86337: Is the correct answer
      :60: Is the shortest
@@ -576,4 +584,3 @@ Practice Exercises
     :option_3: Out of reach no matter how hard I try
 
     For me to master the things taught in this lesson feels...
-

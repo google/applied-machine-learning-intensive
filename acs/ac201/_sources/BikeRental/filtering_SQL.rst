@@ -7,10 +7,10 @@
 Filtering
 =========
 
-We’ve seen how to look only at certain columns of the table, but it is
+We've seen how to look only at certain columns of the table, but it is
 often useful to only look at certain rows in a table. For example, we
 might want to look only at the bike trips which are at least a certain
-number of minutes. Let’s say you’re only interested in bike trips of 60
+number of minutes. Let's say you're only interested in bike trips of 60
 minutes or more:
 
 
@@ -26,8 +26,7 @@ minutes or more:
       trip_data
     WHERE
       duration >= 3600
-    LIMIT
-      10
+    LIMIT 10
 
 
 .. parsed-literal::
@@ -97,7 +96,7 @@ minutes or more:
     </table>
 
 
-It’s also possible to filter by multiple criteria. For example to look
+It's also possible to filter by multiple criteria. For example to look
 at only bike trips which are 60 minutes or more and only the subscriber
 type of Member, you can write the following query.
 
@@ -115,8 +114,7 @@ type of Member, you can write the following query.
     WHERE
       duration >= 3600 AND
       member_type = "Member"
-    LIMIT
-      10
+    LIMIT 10
 
 
 .. parsed-literal::
@@ -466,4 +464,3 @@ Practice Exercises
     :option_3: Out of reach no matter how hard I try
 
     For me to master the things taught in this lesson feels...
-
