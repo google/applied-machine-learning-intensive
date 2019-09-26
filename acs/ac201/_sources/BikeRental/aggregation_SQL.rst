@@ -25,8 +25,7 @@ which subscriber type has the most bike trips.
       member_type
     ORDER BY
       COUNT(*) DESC
-    LIMIT
-      10
+    LIMIT 10
 
 
 .. parsed-literal::
@@ -59,18 +58,18 @@ which subscriber type has the most bike trips.
 
 ``GROUP BY member_type`` takes all the rows with a given
 member_type and produces a single row in the result. This means that
-we need to tell SQL how we want to combine the other columns’ values
+we need to tell SQL how we want to combine the other columns' values
 into a single row. The above example uses ``COUNT(*)``, which reports the number
 of rows that were combined.
 
 Aggregating the values for ``member_type`` is not hard, since
-they’re all the same; SQL just gives us a single copy of the publisher
+they're all the same; SQL just gives us a single copy of the publisher
 name. As for the other columns, we need to either ignore them (causing them to
 be omitted from the output) or specify a way to aggregate them.
 
 We must specify an aggregate function for any column that we ``SELECT``
-in our query (except the columns that we’re grouping by) in order for the
-command to run. If we don’t specify a way to aggregate these columns, most
+in our query (except the columns that we're grouping by) in order for the
+command to run. If we don't specify a way to aggregate these columns, most
 database servers will complain. However, SQLITE does not. SQLite lets you do
 error-prone things without giving you an error. For example, the following query
 will work, but you have no idea what the results actually mean.
@@ -133,7 +132,7 @@ group, or possibly in between; it is not defined. The best practices for writing
   ``SELECT`` clause, it must be in an aggregating function, for example ``MIN``,
   ``MAX``, ``MEAN``, ``COUNT``, etc.
 
-Let’s return briefly to the first query in this section. The
+Let's return briefly to the first query in this section. The
 top result was the count of bike trips for member_type ``Member``.
 
 =========== ========
@@ -142,7 +141,7 @@ member_type COUNT(*)
 Member      979814
 =========== ========
 
-If you’d like to get a more granular break down of the count, you can
+If you'd like to get a more granular break down of the count, you can
 specify multiple columns to aggregate within the ``GROUP BY`` clause,
 for example you can group by the member type and the start station.
 
@@ -164,8 +163,7 @@ for example you can group by the member type and the start station.
       start_station
     ORDER BY
       COUNT(*) DESC
-    LIMIT
-      20
+    LIMIT 20
 
 
 .. parsed-literal::
@@ -285,8 +283,8 @@ for example you can group by the member type and the start station.
     </table>
 
 
-Now that you’re familiar with how to aggregate data using SQL
-query by using ``COUNT()`` as your aggregation function, let’s take a
+Now that you're familiar with how to aggregate data using SQL
+query by using ``COUNT()`` as your aggregation function, let's take a
 look at other aggregation functions.
 
 There are `many such
@@ -312,8 +310,7 @@ bike trips for all subscriber types.
       trip_data
     GROUP BY
       member_type
-    LIMIT
-      10
+    LIMIT 10
 
 
 .. parsed-literal::
@@ -375,8 +372,7 @@ Practice Exercises
           start_station
         ORDER BY
           AVG(duration) DESC
-        LIMIT
-          10
+        LIMIT 10
 
 
     .. raw:: html
