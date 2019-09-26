@@ -19,4 +19,3 @@ to access, make articles easy to read, and make findings easy to interpret.
 -   Maps
 -   Pie charts
 -   Infographics
-
