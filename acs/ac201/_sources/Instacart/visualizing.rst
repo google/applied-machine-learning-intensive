@@ -1,157 +1,121 @@
-..  Copyright (C)  Google, Runestone Interactive LLC
-    This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.
+.. Copyright (C)  Google, Runestone Interactive LLC
+   This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+   International License. To view a copy of this license, visit
+   http://creativecommons.org/licenses/by-sa/4.0/.
+
 
 Visualizing Grocery Data
 ========================
 
+You can get some inspiration from https://python-graph-gallery.com/.
+
 -  How can we show top combinations of two things?
 
--  Visualize the flow from department to department or from aisle to
-   aisle.
+-  Visualize the flow from department to department or from aisle to aisle.
 
--  You can get some inspiration from https://python-graph-gallery.com/
+To accomplish this, you will have to dig into some new packages that we have not
+used so far. But this is all part of the process.
 
-To accomplish this you will have to dig into some new packages that we
-have not used in class. But this is all part of the process.
+We need to create square adjacency matrix: Aisle to Aisle. We'll use this to
+build our chord diagram and other graph like visualizations.
 
-We need to create square adjacency matrix – Aisle to Aisle. We’ll use
-this to build our chord diagram and other graph like visualizations.
-
-0. Merge the order_product data frame with the aisle data frame so we
-   have the aisle number for each product. (we can drop the aisle name
-   to save memory)
-1. Iterate over each order
-2. Order the order by add_to_cart_order
-3. Increase the count in from aisle (row) to to aisle (column) - this is
-   a directed graph.
-
-.. code:: python3
-
-    aisle_mat = pd.DataFrame(0, index=range(1,135),columns=range(1,135))
-
-.. code:: python3
-
-    flowdf = op.merge(products, on='product_id').merge(adf, on='aisle_id')
+1. Merge the order_product data frame with the aisle data frame so we have the
+   aisle number for each product. (We can drop the aisle name to save memory.)
+2. Iterate over each order.
+3. Order the order by add_to_cart_order.
+4. Increase the count in from aisle (row) to to aisle (column); this is a
+   directed graph.
 
 
 .. code:: python3
 
-    %%time
-
-    tco = flowdf.groupby('order_id')
-    for order in tco.groups.keys():
-        contents = tco.get_group(order).sort_values('add_to_cart_order')
-        rowit = contents.iterrows()
-        start_aisle = next(rowit)[1]['aisle_id']
-        for ix, row in rowit:
-            #print(start_aisle, row['aisle_id'])
-            try:
-                aisle_mat.loc[start_aisle][row['aisle_id']] += 1
-            except:
-                print("bad index", start_aisle, row['aisle_id'], type(start_aisle), type(row['aisle_id']))
-            start_aisle = row['aisle_id']
+   aisle_mat = pd.DataFrame(0, index=range(1, 135), columns=range(1, 135))
+   flowdf = op.merge(products, on='product_id').merge(adf, on='aisle_id')
 
 
+.. code:: python3
 
+   %%time
+
+   tco = flowdf.groupby('order_id')
+
+   for order in tco.groups.keys():
+       contents = tco.get_group(order).sort_values('add_to_cart_order')
+       rowit = contents.iterrows()
+       start_aisle = next(rowit)[1]['aisle_id']
+
+       for ix, row in rowit:
+           #print(start_aisle, row['aisle_id'])
+           try:
+               aisle_mat.loc[start_aisle][row['aisle_id']] += 1
+           except:
+               print("bad index", start_aisle, row['aisle_id'],
+                     type(start_aisle), type(row['aisle_id']))
+           start_aisle = row['aisle_id']
 
 
 .. parsed-literal::
 
-    CPU times: user 3h 4min 26s, sys: 2min 7s, total: 3h 6min 34s
-    Wall time: 3h 11min 18s
+   CPU times: user 3h 4min 26s, sys: 2min 7s, total: 3h 6min 34s
+   Wall time: 3h 11min 18s
 
 
 .. code:: python3
 
-    aisle_mat.to_csv('aisle_mat.csv')
+   aisle_mat.to_csv('aisle_mat.csv')
+
+   for ix, row in contents.iterrows():
+       print(row['product_id'], row['aisle_id'])
+
 
 .. code:: python3
 
-    for ix, row in contents.iterrows():
-        print(row['product_id'], row['aisle_id'])
+   x = contents.iterrows()
+   next(x)[1]['aisle_id']
 
-.. code:: python3
+   for i, j in x:
+       print(j['product_id'])
 
-    x = contents.iterrows()
-    next(x)[1]['aisle_id']
-
-.. code:: python3
-
-    for i, j in x:
-        print(j['product_id'])
-
-.. code:: python3
-
-    sbn.heatmap(aisle_mat)
-
-
+   sbn.heatmap(aisle_mat)
 
 
 .. parsed-literal::
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x22a687e48>
+   <matplotlib.axes._subplots.AxesSubplot at 0x22a687e48>
 
 
+.. image:: Figures/Instacart_84_1.png
 
 
-.. image:: Instacart_files/Instacart_84_1.png
-
-
-Looks like a lot of small values! Lets make a histogram of the whole
-thing and see.
-
-.. code:: python3
-
-    #plt.hist(aisle_mat.values.flatten(),bins=100)
-
-.. code:: python3
-
-    for i in range(1,135):
-        aisle_mat.loc[i][i] = 0
-
-.. code:: python3
-
-    x = aisle_mat.values.flatten()
+Looks like a lot of small values. Let's make a histogram of the whole thing and
+see.
 
 
 .. code:: python3
 
-    sall = aisle_mat.values.sum()
+   for i in range(1,135):
+       aisle_mat.loc[i][i] = 0
 
-.. code:: python3
+   x = aisle_mat.values.flatten()
+   sall = aisle_mat.values.sum()
+   y = aisle_mat.applymap(lambda x: x/sall)
+   z = y.applymap(lambda x: x if x > 0.001 else np.nan)
 
-    y = aisle_mat.applymap(lambda x: x/sall)
-
-.. code:: python3
-
-    z = y.applymap(lambda x: x if x > 0.001 else np.nan)
-
-.. code:: python3
-
-    sbn.heatmap(z)
-
-
+   sbn.heatmap(z)
 
 
 .. parsed-literal::
 
-    <matplotlib.axes._subplots.AxesSubplot at 0x386ea27f0>
+   <matplotlib.axes._subplots.AxesSubplot at 0x386ea27f0>
 
 
-
-
-.. image:: Instacart_files/Instacart_92_1.png
+.. image:: Figures/Instacart_92_1.png
 
 
 .. code:: python3
 
-    aisle_mat = pd.read_csv('aisle_mat.csv',index_col='aid')
-
-.. code:: python3
-
-    aisle_mat.head()
-
-
+   aisle_mat = pd.read_csv('aisle_mat.csv',index_col='aid')
+   aisle_mat.head()
 
 
 .. raw:: html
@@ -348,19 +312,15 @@ thing and see.
     </div>
 
 
+.. code:: python3
+
+   aisle_mat['total'] = aisle_mat.apply(lambda x : x.sum(), axis=1)
+
 
 .. code:: python3
 
-    aisle_mat['total'] = aisle_mat.apply(lambda x : x.sum(), axis=1)
-
-.. code:: python3
-
-    aisle_mat.sort_values('total', ascending=False, inplace=True)
-    aisle_mat.head()
-
-
-
-
+   aisle_mat.sort_values('total', ascending=False, inplace=True)
+   aisle_mat.head()
 
 
 .. raw:: html
@@ -557,76 +517,51 @@ thing and see.
     </div>
 
 
-
 .. code:: python3
 
-    row_order = aisle_mat.index
-    row_order = row_order.tolist()
-    aisle_mat.index
-
-
+   row_order = aisle_mat.index
+   row_order = row_order.tolist()
+   aisle_mat.index
 
 
 .. parsed-literal::
 
-    Int64Index([ 24,  83, 123, 120,  21,  84, 115, 107,  91, 112,
-                ...
-                118, 134,  55, 109,  10,  44, 102,  82, 132, 113],
-               dtype='int64', name='aid', length=134)
-
-
-
-
-
-
-
-
-
+   Int64Index([ 24,  83, 123, 120,  21,  84, 115, 107,  91, 112,
+               ...
+               118, 134,  55, 109,  10,  44, 102,  82, 132, 113],
+              dtype='int64', name='aid', length=134)
 
 
 .. code:: python3
 
-    aisle_map = pd.merge(aisle_mat, adf, left_index=True, right_on='aisle_id')['aisle']
-    aisle_map.values.tolist()[:10]
-
-
+   aisle_map = pd.merge(aisle_mat, adf, left_index=True, right_on='aisle_id')['aisle']
+   aisle_map.values.tolist()[:10]
 
 
 .. parsed-literal::
 
-    ['fresh fruits',
-     'fresh vegetables',
-     'packaged vegetables fruits',
-     'yogurt',
-     'packaged cheese',
-     'milk',
-     'water seltzer sparkling water',
-     'chips pretzels',
-     'soy lactosefree',
-     'bread']
-
+   ['fresh fruits',
+    'fresh vegetables',
+    'packaged vegetables fruits',
+    'yogurt',
+    'packaged cheese',
+    'milk',
+    'water seltzer sparkling water',
+    'chips pretzels',
+    'soy lactosefree',
+    'bread']
 
 
 .. code:: python3
 
-    am = aisle_mat.values.tolist()[:20][:20]
-    for i in range(len(am)):
-        am[i][i] = 0.0
+   am = aisle_mat.values.tolist()[:20][:20]
+   for i in range(len(am)):
+       am[i][i] = 0.0
 
-.. code:: python3
+   pickle.dump(am,file=open('am.pkl', 'wb'))
 
-    pickle.dump(am,file=open('am.pkl', 'wb'))
-
-.. code:: python3
-
-    import pprint
-
-.. code:: python3
-
-    depts = pd.read_csv('ecomm/departments.csv')
-    depts
-
-
+   depts = pd.read_csv('ecomm/departments.csv')
+   depts
 
 
 .. raw:: html
@@ -763,6 +698,7 @@ thing and see.
     </table>
     </div>
 
+
 **Lesson Feedback**
 
 .. poll:: LearningZone_11_3
@@ -792,4 +728,3 @@ thing and see.
     :option_3: Out of reach no matter how hard I try
 
     For me to master the things taught in this lesson feels...
-
