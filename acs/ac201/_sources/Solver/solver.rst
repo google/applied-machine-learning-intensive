@@ -1,6 +1,8 @@
+.. Copyright (C)  Google, Runestone Interactive LLC
+   This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+   International License. To view a copy of this license, visit
+   http://creativecommons.org/licenses/by-sa/4.0/.
 
-..  Copyright (C)  Google, Runestone Interactive LLC
-    This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.
 
 .. _h2b207b587f1f7c6d7e167056a1f7c7f:
 
