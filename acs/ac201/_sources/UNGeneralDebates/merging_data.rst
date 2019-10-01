@@ -1,18 +1,19 @@
+.. Copyright (C)  Google, Runestone Interactive LLC
+   This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+   International License. To view a copy of this license, visit
+   http://creativecommons.org/licenses/by-sa/4.0/.
 
-..  Copyright (C)  Google, Runestone Interactive LLC
-    This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.
 
 Merging and Tidying Data
 ========================
 
-Now that we know how the file is encoded we can read it easily
+Now that we know how the file is encoded, we can read it easily.
+
 
 .. code:: python3
 
-    c_codes = pd.read_csv('Data/country_codes.csv', encoding='iso-8859-1')
-    c_codes.head()
-
-
+   c_codes = pd.read_csv('Data/country_codes.csv', encoding='iso-8859-1')
+   c_codes.head()
 
 
 .. raw:: html
@@ -112,21 +113,17 @@ Now that we know how the file is encoded we can read it easily
     </div>
 
 
+This DataFrame has a lot of information, and we can add all or just a bit of it
+to our United Nations DataFrame using the ``merge`` method of Pandas.
 
-This data frame has a lot of information and we can add all or just a
-bit of it to our united nations DataFrame using Pandas’ ``merge``
-method.
+Before we merge, let's clean up the column names on the ``undf`` data frame and
+rename ``country`` to ``code_3`` to be consistent with the above.
 
-Before we merge lets clean up the column names on the undf data frame
-and rename country to code_3 to be consistent with the above.
 
 .. code:: python3
 
-    undf.columns = ['session', 'year', 'code_3', 'text']
-    undf.head()
-
-
-
+   undf.columns = ['session', 'year', 'code_3', 'text']
+   undf.head()
 
 
 .. raw:: html
@@ -196,27 +193,24 @@ and rename country to code_3 to be consistent with the above.
     </div>
 
 
+Now, we can merge our two data frames. We will keep all the columns from the
+original ``undf`` DataFrame and add country, continent, and subregion from the
+``c_codes`` DataFrame. We will merge the two data frames on the ``code_3``
+column. That is, for every row in ``undf``, we will look for a row in the
+``c_codes`` DataFrame where the values for ``code_3`` match. Pandas will then
+add the rest of the columns from the matching row in ``c_codes`` to the current
+row in ``undf``.
 
-Now we can merge our two data frames! We will keep all the columns from
-the original undf data frame and add country, continent, and subregion
-from the c_codes data frame. We will merge the two data frames on the
-code_3 column. That is for every row in undf we will look for a row in
-the c_codes data frame where the values for code_3 match. Pandas will
-then add the rest of the columns from the matching row in c_codes to the
-current row in undf.
+In the ``c_codes`` data frame, ``code_3`` is the "primary key", as no two rows
+have the same value for ``code_3``. In the ``undf`` data frame, ``code_3`` is a
+"foreign key", as we use it to lookup additional information in a table where
+``code_3`` is a primary key. More on this when we study SQL queries.
 
-**Dramatic foreshadowing** In the c_codes data frame code_3 is the
-‘primary key’ as no two rows will have the same value for code_3. In the
-undf data frame code_3 is a ‘Foreign key’ as we use it to lookup
-additional information in a table where code_3 is a primary key. More on
-this when we study SQL queries.
 
 .. code:: python3
 
-    undfe = undf.merge(c_codes[['code_3', 'country', 'continent', 'sub_region']])
-    undfe.head()
-
-
+   undfe = undf.merge(c_codes[['code_3', 'country', 'continent', 'sub_region']])
+   undfe.head()
 
 
 .. raw:: html
@@ -304,18 +298,15 @@ this when we study SQL queries.
     </div>
 
 
-
 .. code:: python3
 
-    undfe[undf.code_3 == 'EU ']
+   undfe[undf.code_3 == 'EU ']
 
 
 .. parsed-literal::
 
-    /Users/bradleymiller/.local/share/virtualenvs/httlads--V2x4wK-/lib/python3.6/site-packages/ipykernel_launcher.py:1: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
-      """Entry point for launching an IPython kernel.
-
-
+   /Users/bradleymiller/.local/share/virtualenvs/httlads--V2x4wK-/lib/python3.6/site-packages/ipykernel_launcher.py:1: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+     """Entry point for launching an IPython kernel.
 
 
 .. raw:: html
@@ -353,21 +344,20 @@ this when we study SQL queries.
     </div>
 
 
+Wait! What? What happened to EU?! Why did it dissappear after the merge? What
+else may have disappeared? The reason the EU dissappeared is that it is not in
+the ``c_codes`` data frame, and as you may recall, the ``merge`` function does
+the equivalent of a set intersection. That is, the key must be in BOTH data
+frames in order for it to be in the result. We can do our merge using an outer
+join to preserve the data, then see which countries have no text and which texts
+have no country name.
 
-Wait! What? what happened to EU?!! Why did it dissappear after the
-merge? What else may have dissappeared? The reason the EU dissappeared
-is that it is not in the c_codes data frame, and as you may recall the
-merge function does the equivalent of a set intersection. That is the
-key must be in BOTH data frames in order for it to be in the result. We
-can do our merge using an outer join to preserve the data and then see
-which countries have no text and which texts have no country name.
 
 .. code:: python3
 
-    undfe = undf.merge(c_codes[['code_3', 'country', 'continent', 'sub_region']], how='outer')
-    undfe.head()
-
-
+   undfe = undf.merge(c_codes[['code_3', 'country', 'continent', 'sub_region']],
+                      how='outer')
+   undfe.head()
 
 
 .. raw:: html
@@ -461,104 +451,88 @@ which countries have no text and which texts have no country name.
     </div>
 
 
+Now let's see which country names are not filled in.
 
-Now lets see which country names are not filled in.
 
 .. code:: python3
 
-    undfe[undfe.country.isna()].code_3.unique()
-
-
+   undfe[undfe.country.isna()].code_3.unique()
 
 
 .. parsed-literal::
 
-    array(['YDYE', 'CSK', 'YUG', 'DDR', 'EU'], dtype=object)
-
+   array(['YDYE', 'CSK', 'YUG', 'DDR', 'EU'], dtype=object)
 
 
 .. code:: python3
 
-    undfe[undfe.text.isna()].code_3.unique()
-
-
+   undfe[undfe.text.isna()].code_3.unique()
 
 
 .. parsed-literal::
 
-    array(['ALA', 'ASM', 'AIA', 'ATA', 'ABW', 'BMU', 'BES', 'BVT', 'IOT',
-           'CYM', 'CXR', 'CCK', 'COK', 'CUW', 'FLK', 'FRO', 'GUF', 'PYF',
-           'ATF', 'GIB', 'GRL', 'GLP', 'GUM', 'GGY', 'HMD', 'HKG', 'IMN',
-           'JEY', 'MAC', 'MTQ', 'MYT', 'MSR', 'NCL', 'NIU', 'NFK', 'MNP',
-           'PCN', 'PRI', 'REU', 'BLM', 'SHN', 'MAF', 'SPM', 'SRB', 'SXM',
-           'SGS', 'SJM', 'TWN', 'TKL', 'TCA', 'UMI', 'VGB', 'VIR', 'WLF',
-           'ESH'], dtype=object)
-
+   array(['ALA', 'ASM', 'AIA', 'ATA', 'ABW', 'BMU', 'BES', 'BVT', 'IOT',
+          'CYM', 'CXR', 'CCK', 'COK', 'CUW', 'FLK', 'FRO', 'GUF', 'PYF',
+          'ATF', 'GIB', 'GRL', 'GLP', 'GUM', 'GGY', 'HMD', 'HKG', 'IMN',
+          'JEY', 'MAC', 'MTQ', 'MYT', 'MSR', 'NCL', 'NIU', 'NFK', 'MNP',
+          'PCN', 'PRI', 'REU', 'BLM', 'SHN', 'MAF', 'SPM', 'SRB', 'SXM',
+          'SGS', 'SJM', 'TWN', 'TKL', 'TCA', 'UMI', 'VGB', 'VIR', 'WLF',
+          'ESH'], dtype=object)
 
 
 .. code:: python3
 
-    undfe[undfe.text.isna()].country.unique()
-
-
+   undfe[undfe.text.isna()].country.unique()
 
 
 .. parsed-literal::
 
-    array(['Åland Islands', 'American Samoa', 'Anguilla', 'Antarctica',
-           'Aruba', 'Bermuda', 'Bonaire, Sint Eustatius and Saba',
-           'Bouvet Island', 'British Indian Ocean Territory',
-           'Cayman Islands', 'Christmas Island', 'Cocos (Keeling) Islands',
-           'Cook Islands', 'Curaçao', 'Falkland Islands (Malvinas)',
-           'Faroe Islands', 'French Guiana', 'French Polynesia',
-           'French Southern Territories', 'Gibraltar', 'Greenland',
-           'Guadeloupe', 'Guam', 'Guernsey',
-           'Heard Island and McDonald Islands', 'Hong Kong', 'Isle of Man',
-           'Jersey', 'Macao', 'Martinique', 'Mayotte', 'Montserrat',
-           'New Caledonia', 'Niue', 'Norfolk Island',
-           'Northern Mariana Islands', 'Pitcairn', 'Puerto Rico', 'Réunion',
-           'Saint Barthélemy', 'Saint Helena, Ascension and Tristan da Cunha',
-           'Saint Martin (French part)', 'Saint Pierre and Miquelon',
-           'Serbia', 'Sint Maarten (Dutch part)',
-           'South Georgia and the South Sandwich Islands',
-           'Svalbard and Jan Mayen', 'Taiwan, Province of China', 'Tokelau',
-           'Turks and Caicos Islands', 'United States Minor Outlying Islands',
-           'Virgin Islands (British)', 'Virgin Islands (U.S.)',
-           'Wallis and Futuna', 'Western Sahara'], dtype=object)
+   array(['Åland Islands', 'American Samoa', 'Anguilla', 'Antarctica',
+          'Aruba', 'Bermuda', 'Bonaire, Sint Eustatius and Saba',
+          'Bouvet Island', 'British Indian Ocean Territory',
+          'Cayman Islands', 'Christmas Island', 'Cocos (Keeling) Islands',
+          'Cook Islands', 'Curaçao', 'Falkland Islands (Malvinas)',
+          'Faroe Islands', 'French Guiana', 'French Polynesia',
+          'French Southern Territories', 'Gibraltar', 'Greenland',
+          'Guadeloupe', 'Guam', 'Guernsey',
+          'Heard Island and McDonald Islands', 'Hong Kong', 'Isle of Man',
+          'Jersey', 'Macao', 'Martinique', 'Mayotte', 'Montserrat',
+          'New Caledonia', 'Niue', 'Norfolk Island',
+          'Northern Mariana Islands', 'Pitcairn', 'Puerto Rico', 'Réunion',
+          'Saint Barthélemy', 'Saint Helena, Ascension and Tristan da Cunha',
+          'Saint Martin (French part)', 'Saint Pierre and Miquelon',
+          'Serbia', 'Sint Maarten (Dutch part)',
+          'South Georgia and the South Sandwich Islands',
+          'Svalbard and Jan Mayen', 'Taiwan, Province of China', 'Tokelau',
+          'Turks and Caicos Islands', 'United States Minor Outlying Islands',
+          'Virgin Islands (British)', 'Virgin Islands (U.S.)',
+          'Wallis and Futuna', 'Western Sahara'], dtype=object)
 
 
-
-Do some research and fill in the country names for YDYE, CSK, YUG, DDR,
-and EU by hand.
-
-.. code:: python3
-
-    undfe.loc[undfe.code_3 == 'EU', 'country'] = 'European Union'
+Fill in the country names for YDYE, CSK, YUG, DDR, and EU by hand.
 
 
 .. code:: python3
 
-    by_country = undfe.groupby('country',as_index=False)['text'].count()
-    by_country.loc[by_country.text.idxmin()]
+   undfe.loc[undfe.code_3 == 'EU', 'country'] = 'European Union'
 
 
+.. code:: python3
+
+   by_country = undfe.groupby('country',as_index=False)['text'].count()
+   by_country.loc[by_country.text.idxmin()]
 
 
 .. parsed-literal::
 
-    country    South Sudan
-    text                 5
-    Name: 161, dtype: object
-
-
-
+   country    South Sudan
+   text                 5
+   Name: 161, dtype: object
 
 
 .. code:: python3
 
-    c_codes[c_codes.code_2 == 'EU']
-
-
+   c_codes[c_codes.code_2 == 'EU']
 
 
 .. raw:: html
@@ -598,196 +572,249 @@ and EU by hand.
     </div>
 
 
+I suspect that EU indicates the European Union, which has a place in the UN but
+is not a country.
 
-I suspect that EU is the European Union which has a place in the UN but
-is not a country. So OK, South Sudan has only spoken 5 times. Why is
-that? There is a very logical explanation, but it only makes you want to
-check out the 5 or 10 countries that have spoken the least. What are
-they?
+South Sudan has only spoken 5 times. Why is that? There is a very logical
+explanation, but it only makes you want to check out the 5 or 10 countries that
+have spoken the least.
 
-Ok, but why did EU seem to dissappear? When we do a merge if the key is
-missing then the row is not included in the final result.
-
-.. code:: python3
-
-    len(undfe)
-
-
-
-
-.. parsed-literal::
-
-    7406
-
+But why did EU seem to dissappear? When we do a merge, if the key is missing,
+then the row is not included in the final result.
 
 
 .. code:: python3
 
-    len(undf.code_3.unique())
-
-
+   len(undfe)
 
 
 .. parsed-literal::
 
-    199
-
+   7406
 
 
 .. code:: python3
 
-    len(undfe.code_3.unique())
-
-
+   len(undf.code_3.unique())
 
 
 .. parsed-literal::
 
-    194
-
+   199
 
 
 .. code:: python3
 
-    set(undf.code_3.unique()) - set(undfe.code_3.unique())
-
-
+   len(undfe.code_3.unique())
 
 
 .. parsed-literal::
 
-    {'CSK', 'DDR', 'EU', 'YDYE', 'YUG'}
+   194
 
 
+.. code:: python3
 
-Can you figure out what each of the above stand for? Why are they not in
-the list I gave you?
+   set(undf.code_3.unique()) - set(undfe.code_3.unique())
 
-At this point you may want to edit the csv file and add the data for
-these countries to the file. Then you can rerun the whole notebook and
-we will not lose as much data.
+
+.. parsed-literal::
+
+   {'CSK', 'DDR', 'EU', 'YDYE', 'YUG'}
+
+
+Can you figure out what each of the above stands for? Why are they not in the
+list presented earlier?
+
+At this point, you may want to edit the csv file and add the data for these
+countries to the file. Then, you can rerun the whole notebook and we will not
+lose as much data.
 
 
 Tidy Data
 ---------
 
-A lot of the work in data science revolves around getting data into the proper format for analysis.  A lot of data comes in messy formats for many different reasons.  But if we apply some basic principles from the world of database design, data modeling, and some good old common sense as outlined in the Hadley Wickham paper we can whip our data into shape.  Wickham says that tidy data has the following attributes:
+A lot of the work in data science revolves around getting data into the proper
+format for analysis. A lot of data comes in messy formats for many different
+reasons. But if we apply some basic principles from the world of database
+design, data modeling, and some common sense (as outlined in the Hadley Wickham
+paper), we can whip our data into shape. Wickham says that tidy data has the
+following attributes.
 
-* Each variable belongs in a column and contains values
-* Each observation forms a row
-* Each type of observational unit forms a table
+* Each variable belongs in a column and contains values.
+* Each observation forms a row.
+* Each type of observational unit forms a table.
 
+How does our United Nations data stack up? Pretty well. We have four columns:
+session, year, country, and text. If we think of the text of the speech as the
+thing we can observe, then each row does, in fact, form an observation, and
+session, year, and country are attributes that identify this particular
+observation.
 
-How does our United Nations data stack up?  Pretty well.  We have four columns: session, year, country, and text.  If we think of the text of the speech as the thing we can observe then each row does, in fact, form an observation and session, year, and country are attributes that identify this particular observation.
+Some of the common kinds of messiness that Wickham identifies include the
+following.
 
-Some of the common kinds of messiness that Wickham identifies include:
-
-* Column headers are values not variable names - imagine this table if we had one row for each year and a column for each country's text! Now that would not be tidy!
-* Multiple variables are stored in one column.  We've seen this untidiness in the movie data a couple of chapters ago.  We'll revisit that very soon to deal with it correctly.
-* Variables are stored in both rows and columns
-* Multiple types of observational units are stored in the same table
+* Column headers are values not variable names. Imagine this table if we had
+  one row for each year and a column for each country's text! Now that would
+  not be tidy!
+* Multiple variables are stored in one column. We've seen this untidiness in the
+  movie data a couple of chapters ago. We'll revisit that very soon to deal with
+  it correctly.
+* Variables are stored in both rows and columns.
+* Multiple types of observational units are stored in the same table.
 * A single observational unit is stored in multiple tables.
 
-Many of the problems with untidy data stem from not knowing how to handle relationships between multiple entities.  Most of the time things that we want to observe interact with other things we can observe and when we try to combine them into a single data frame that causes trouble!  There are three kinds of relationships that we should consider:
+Many of the problems with untidy data stem from not knowing how to handle
+relationships between multiple entities. Most of the time, things that we want
+to observe interact with other things we can observe, and when we try to combine
+them into a single data frame, that causes trouble. There are three kinds of
+relationships that we should consider.
 
-* one to one relationships
-* one to many relationships
-* many to many relationships
+* one-to-one relationships
+* one-to-many relationships
+* many-to-many relationships
 
-An example of a one to one relationship would be a person and their passport. A person can have one passport, and a passport belongs to one person.  There is data that we can collect about a person and that would make a fine DataFrame.  There is also data that we can collect from a passport, such as the countries that you have visited, the place the passport was issued, This also would make a fine DataFrame.
+An example of a one-to-one relationship would be a person and their passport. A
+person can have one passport, and a given passport belongs to only one person.
+There is data that we can collect about a person and that could be stored in a
+DataFrame. There is also data that we can collect from a passport, such as the
+countries that person has visited, the place the passport was issued, and this
+could also be stored in a DataFrame.
 
+An example of a one-to-many relationship is a customer and the the things they
+have ordered from Amazon. A particular customer may have ordered many things,
+but a given order can only belong to a single customer.
 
-An example of a one to many relationship is a customer and the the things they have ordered from Amazon.  A particular customer may have ordered many things, but an order can only belong to a single customer.
+An example of a many-to-many relationship is a student and a class. A student
+can be enrolled in more than one class, and a class can have many students who
+are enrolled in it.
 
-An example of a many to many relationship is a student and a class.  A student can be enrolled in more than one class, and a class has many students that have enrolled in it.
+Whenever you see a DataFrame that has a column that contains a list or a
+dictionary, that is a sure sign of untidiness. It is also something that can be
+fixed an in the end will make your analysis easier.
 
-Whenever you see a DataFrame that has a column that contains a list, or a dictionary that is a sure sign of untidiness!  It is also something that can be fixed an in the end will make your analysis easier.
 
 Tidying the Movie Genres
 ------------------------
 
-Lets look at the genres column of the movies dataset.   You may recall that it looks odd.  In fact here is the result of `df.iloc[0].genres`
+Let's look at the genres column of the movies dataset. You may recall that it
+looks odd. In fact, here is the result of ``df.iloc[0].genres``.
+
 
 .. parsed-literal::
 
-    "[{'id': 16, 'name': 'Animation'}, {'id': 35, 'name': 'Comedy'}, {'id': 10751, 'name': 'Family'}]"
+   "[{'id': 16, 'name': 'Animation'}, {'id': 35, 'name': 'Comedy'}, {'id': 10751, 'name': 'Family'}]"
 
-It looks like a list of dictionary literals.  Except it is in double quotes like a string.  Lets first figure out how we can get it to be an actual list of dictionaries.  Then we'll figure out what to do with it.  Python has a nifty function called `eval` that allows you to evaluate a Python expression that is a string. For example:
+
+It looks like a list of dictionary literals, except that it is in double quotes
+like a string. Let's first figure out how we can get it to be an actual list of
+dictionaries. Then, we'll figure out what to do with it. Python has a nifty
+function called ``eval`` that allows you to evaluate a Python expression that is
+a string.
 
 
 .. code:: python3
 
-    eval(df.iloc[0].genres)
+   eval(df.iloc[0].genres)
 
-Will return this:
 
 .. parsed-literal::
 
-    [{'id': 16, 'name': 'Animation'},
-     {'id': 35, 'name': 'Comedy'},
-     {'id': 10751, 'name': 'Family'}]
+   [{'id': 16, 'name': 'Animation'},
+    {'id': 35, 'name': 'Comedy'},
+    {'id': 10751, 'name': 'Family'}]
 
-Even better, we can assign the result of `eval` to a variable and then we can use the list and dictionary index syntax to access parts of the result!  Just like we learned about when we discussed JSON in an earlier chapter!
+
+Even better, we can assign the result of ``eval`` to a variable and then we can
+use the list and dictionary index syntax to access parts of the result, just
+like we learned about when we discussed JSON in an earlier chapter.
+
 
 .. code:: python3
 
-    glist = eval(df.iloc[0].genres)
-    glist[1]['name']
+   glist = eval(df.iloc[0].genres)
+   glist[1]['name']
+
 
 .. parsed-literal::
 
-    'Comedy'
+   'Comedy'
 
-One way we could solve this is to duplicate all of the rows for as many genres as the movie has storing one genere on each line, but that would mean we had to needlessly duplicate all of the other information on our first movie three times!
 
-The better strategy for doing solving this problem is to create a new DataFrame with just two columns.  One containing the movie's unique id number and a second containing the genre.  This allows you to use the `merge` method on the two DataFrames, but only temporarily when you need to know the genre of a particular movie.
+One way we could solve this is to duplicate all of the rows for as many genres
+as the movie has storing one genre on each line, but that would mean we would
+have to needlessly duplicate all of the other information on our first movie
+three times.
+
+A better strategy for doing solving this problem is to create a new DataFrame
+with just two columns: one containing the movie's unique id number, and a second
+containing the genre. This allows you to use the ``merge`` method on the two
+data frames, but only temporarily when you need to know the genre of a
+particular movie.
+
 
 .. figure::  movie_genres.jpg
 
-To construct this table we need to iterate over all the rows of the DataFrame and gather the genres for this movie.  For each genre of the movie we will add a an item to a list that contains the `imdb_id` of the movie and and item to a list that contains the name of the genre.  These two lists are in sync with each other so that the i\ :sup:`th` element of each list will represent the same movie.
 
-Here is some code you can use to construct two lists
+To construct this table, we need to iterate over all the rows of the DataFrame
+and gather the genres for this movie. For each genre of the movie, we will add
+an item to a list that contains the ``imdb_id`` of the movie and add an item to
+a list that contains the name of the genre. These two lists are in sync with
+each other so that the i :sup:`th` element of each list will represent the
+same movie.
+
+Here is some code you can use to construct the two lists.
+
+
 .. code:: python3
 
-    movie_list = []
-    genre_list = []
+   movie_list = []
+   genre_list = []
 
-    def map_genres(row):
-        try:
-            glist = eval(row.genres)
-        except:
-            glist = []
-            print(f"bad data for {row.title}")
-        for g in glist:
-            movie_list.append(row.imdb_id)
-            genre_list.append(g['name'])
+   def map_genres(row):
+       try:
+           glist = eval(row.genres)
+       except:
+           glist = []
+           print(f"bad data for {row.title}")
+       for g in glist:
+           movie_list.append(row.imdb_id)
+           genre_list.append(g['name'])
+
+   _ = df.apply(map_genres, axis=1)
 
 
-    _ = df.apply(map_genres, axis=1)
+Using these two lists, construct a new DataFrame with a column for ``imdb_id``
+and ``genre``.
 
-
-Using these two lists construct a new DataFrame with a column for `imdb_id` and `genere`
 
 .. fillintheblank:: un_fb_merge_movies1
 
-   How many movies are in the Family genre?
+   How many movies are in the Family genre? |blank|
 
    - :2770: Is the correct answer
-     :x: Use the len function on the data set results from querying the genres data frame.
+     :x: Use the len function on the results from querying the genres data frame
+
 
 .. fillintheblank:: un_fb_merge_movies2
 
-   Which genre has the most movies?
+   Which genre has the most movies? |blank|
 
    - :Drama: Is the correct answer
      :Comedy: Is in second place
      :x: Hint:  Use a groupby on the genres data frame
 
-Now lets calculate the average revenue for the Comedy genre.  We'll do this is a couple of steps.
+
+Now let's calculate the average revenue for the Comedy genre. We'll do this is a
+couple of steps.
 
 1.  We will reduce the genre DataFrame so it only has the Comedies left.
-2.  Then we will merge the movie data frame with the genres DataFrame using the `imdb_id` column.
-3.  We will be left with a DataFrame that only contains the rows for the movies that are comedies. You can think of a merge like this as being the **intersection** of the set of comedies and the set of all movies.
+2.  Then we will merge the movie data frame with the genres DataFrame using the
+    ``imdb_id`` column.
+3.  We will be left with a DataFrame that only contains the rows for the movies
+    that are comedies. You can think of a merge like this as being the
+    **intersection** of the set of comedies and the set of all movies.
+
 
 .. fillintheblank:: un_fb_merge_movies3
 
@@ -795,21 +822,20 @@ Now lets calculate the average revenue for the Comedy genre.  We'll do this is a
 
    - :(12608821.677012537|12608821.678): Is the correct answer
      :166966016647.0: Is the total revenue
-     :x: keep on trying.  Hint if merge is the problem you can use the fact that imdb_id is the only column in both DataFrames!
-
+     :x: Hint: Use the fact that imdb_id is the only column in both DataFrames
 
 
 .. fillintheblank:: un_fb_merge_movies4
 
-   What is the title |blank| and number of genres |blank| of the movie that is in the most genres?
-
+   What is the title |blank| and number of genres |blank| of the movie that is
+   in the most genres?
 
    - :The Warrior: Is the correct answer
      :incorrect: Is feedback on a specific incorrect
      :x: catchall feedback
 
    - :10: Is the correct answer
-     :x: Keep on it.  Hint use sort and head to create a very small DataFrame that you can merge with the movies.
+     :x: Hint: Use sort and head then merge with the movies data frame
 
 
 **Problems to work on**
@@ -817,8 +843,10 @@ Now lets calculate the average revenue for the Comedy genre.  We'll do this is a
 1. What is the total revenue for each genre?
 2. What is the average vote_average for each genre?
 3. What genre has the most votes?
-4. Use a similar process to create a data frame of collections and their movies.  Which collection has the most movies?
-5. Again a similar process can be used for spoken_languages.  How many movies are there for each language?  Is English the most popular movie language?
+4. Use a similar process to create a data frame of collections and their movies.
+   Which collection has the most movies?
+5. Again a similar process can be used for spoken_languages. How many movies are
+   there for each language? Is English the most popular movie language?
 
 
 **Lesson Feedback**
