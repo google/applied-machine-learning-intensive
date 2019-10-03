@@ -27,7 +27,7 @@ You probably have several questions here.
 With big problems like this, it's easy to get overwhelmed with the scope of the
 problem. It's also easy to want to make something really complex right away. A
 better approach is to try something simple at first
-(`Keep It Simple Stupid, or KISS<https://en.wikipedia.org/wiki/KISS_principle>`_).
+(`Keep It Simple Stupid, or KISS <https://en.wikipedia.org/wiki/KISS_principle>`_).
 If a simple solution works, why spend additional time and effort to make
 something complicated?
 

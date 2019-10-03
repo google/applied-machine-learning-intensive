@@ -13,20 +13,26 @@ Learning Goals for this Module
 ------------------------------
 
 * Become familiar with basic spreadsheet operations
-    * Addressing cells: relative versus absolute, on the same same sheet versus
-      across sheets
-    * Working with Ranges:  ``SUM``, ``AVERAGE``, ``CORRELL``
-    * Tricks for Copying and pasting down and across
-    * ``VLOOKUP`` (match / index)
-    * Grouping
-      * ``AVERAGEIF``
-      * ``COUNTIF``
-      * ``IF``
-      * Making a Pivot Table
-    * Cleaning
-      * ``TRIM``
-    * Exploring
-      * ``UNIQUE``
+
+  * Addressing cells: relative versus absolute, on the same same sheet versus
+    across sheets
+  * Working with Ranges:  ``SUM``, ``AVERAGE``, ``CORRELL``
+  * Tricks for Copying and pasting down and across
+  * ``VLOOKUP`` (match / index)
+  * Grouping
+
+    - ``AVERAGEIF``
+    - ``COUNTIF``
+    - ``IF``
+    - Making a Pivot Table
+
+  * Cleaning
+
+    - ``TRIM``
+
+  * Exploring
+
+    - ``UNIQUE``
 
 * Use a spreadsheet to explore data
 
