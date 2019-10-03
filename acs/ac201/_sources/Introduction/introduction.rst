@@ -7,7 +7,7 @@
 What Is Data Science?
 =====================
 
-`90% of the data in the world today has been created in the last two years alone.<http://www.iflscience.com/technology/how-much-data-does-the-world-generate-every-minute>`_
+`90% of the data in the world today has been created in the last two years alone. <http://www.iflscience.com/technology/how-much-data-does-the-world-generate-every-minute>`_
 This is the result of the continuing acceleration of the rate at which we store
 data. Some estimates indicate that roughly 2.5 quintillion bytes of data are
 generated per day; that's 2,500,000,000,000,000,000 bytes! By comparison, all
@@ -18,7 +18,7 @@ congress per day!
 The amount of data that Google alone stores in its servers is estimated to be 15
 exabytes (15 followed by 18 zeros!). For those of you who remember punch cards,
 you can visualize 15 exabytes as a
-`pile of cards three miles high <https://what-if.xkcd.com/63/>`_ ,covering all
+`pile of cards three miles high <https://what-if.xkcd.com/63/>`_, covering all
 of New England. Everywhere you go, someone or something is collecting data about
 you: what you buy, what you read, where you eat, where you stay, how and when
 you travel, and so much more.
@@ -297,7 +297,7 @@ without paying for it.
 Copyright laws are complicated, so please don't take anything written above as
 legal advice. You can learn more about copyright law and the creative commons
 work to help simplify the law on the
-`creative commons website <https://creativecommons.org/>`_
+`creative commons website <https://creativecommons.org/>`_.
 
 
 How to Use This Book
