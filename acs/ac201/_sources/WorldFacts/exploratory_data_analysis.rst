@@ -1,65 +1,68 @@
-
-..  Copyright (C)  Google, Runestone Interactive LLC
-    This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.
-
-World Factbook: Exploratory Data Analysis
-=========================================
+.. Copyright (C)  Google, Runestone Interactive LLC
+   This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+   International License. To view a copy of this license, visit
+   http://creativecommons.org/licenses/by-sa/4.0/.
 
 
-Loading data into a DataFrame from a CSV file
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Exploratory Data Analysis
+=========================
 
-The csv file is one of the most common ways you will find data. CSV stands for
-comma separated values and allows us to share data files in a simple
-text format. The data we will use to get started with Pandas is the data
-about countries we used in the spreadsheet module. You can open a CSV
-file in any text editor, but its not particularly easy to read. But
-because of its structure it is easy to parse. The first few lines of the
-raw csv file for this project look like this:
+Loading Data into a DataFrame from a CSV File
+---------------------------------------------
 
-::
+The CSV file is one of the most common ways you will find data. CSV stands for
+"comma separated value", and this format allows us to share data files in a
+simple text format. The data we will use to get started with Pandas is the data
+about countries we used in the spreadsheet module. You can open a CSV file in
+any text editor, but it may not be particularly easy to read. But because of its
+structure, it is easy to parse for analysis. The first few lines of the raw CSV
+file for this project look like this.
+
+
+.. code-block:: none
 
    Country,Ctry,Code,CodeNum,Region,Population,Area,Pop. Density,Coastline,Net migration,Infant mortality,GDP,Literacy,Phones,Arable,Crops,Other,Climate,Birthrate,Deathrate,Agriculture,Industry,Service
    Afghanistan,Afghanistan,AFG,4,ASIA (EX. NEAR EAST)         ,31056997,647500,48.0,0.00,23.06,163.07,700,36.0,3.2,12.13,0.22,87.65,1,46.6,20.34,0.38,0.24,0.38
    Albania ,Albania,ALB,8,EASTERN EUROPE                     ,3581655,28748,124.6,1.26,-4.93,21.52,4500,86.5,71.2,21.09,4.42,74.49,3,15.11,5.22,0.232,0.188,0.579
    Algeria ,Algeria,DZA,12,NORTHERN AFRICA                    ,32930091,2381740,13.8,0.04,-0.39,31,6000,70.0,78.1,3.22,0.25,96.53,1,17.14,4.61,0.101,0.6,0.298
 
-You may have some experience with reading and parsing CSV files on your
-own with Python. If not you may wish to `have a quick
-review <https://runestone.academy/runestone/static/fopp/Files/ReadingCSVFiles.html>`__
+
+You may have some experience with reading and parsing CSV files on your own with
+Python. If not, you may wish to
+`review this material <https://runestone.academy/runestone/static/fopp/Files/ReadingCSVFiles.html>`_.
+
 
 .. code:: python3
 
-    %matplotlib inline
+   %matplotlib inline
 
-    import pandas as pd
-    import matplotlib
-    import matplotlib.pyplot as plt
-    import psycopg2
-    import textatistic
-    import seaborn as sbn
-    from altair import Chart, X, Y, Color, Scale
-    import altair as alt
-    from vega_datasets import data
-    import requests
-    from bs4 import BeautifulSoup
-    matplotlib.style.use('ggplot')
-    # for plotly py.offline.init_notebook_mode()
+   import pandas as pd
+   import matplotlib
+   import matplotlib.pyplot as plt
+   import psycopg2
+   import textatistic
+   import seaborn as sbn
+   from altair import Chart, X, Y, Color, Scale
+   import altair as alt
+   from vega_datasets import data
+   import requests
+   from bs4 import BeautifulSoup
+   matplotlib.style.use('ggplot')
+   # for plotly py.offline.init_notebook_mode()
 
 
+Meanwhile, we will make use of one of the many data reading functions Pandas
+provides for us, ``read_csv``.
 
-Meanwhile, we will make use of one of the many data reading functions
-pandas provides for us ``read_csv``
 
 .. code:: python3
 
-    wd = pd.read_csv('world_countries.csv')
+   wd = pd.read_csv('world_countries.csv')
+
 
 .. code:: python3
 
-    wd.head()
-
-
+   wd.head()
 
 
 .. raw:: html
@@ -232,13 +235,12 @@ pandas provides for us ``read_csv``
     </div>
 
 
-
 Describing the Data
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 -  Country
--  Area Square Miles
--  Population Density per square mile
+-  Area square miles
+-  Population density per square mile
 -  Coastline coast/area ratio
 -  Net migration
 -  Infant mortaility per 1000 births
@@ -247,7 +249,7 @@ Describing the Data
 -  Phones per 1000
 -  Arable land %
 -  Crops %
--  other %
+-  Other %
 -  Climate
 -  Birthrate
 -  Deathrate
@@ -255,21 +257,20 @@ Describing the Data
 -  Inustry % GDP
 -  Service % GDP
 
-The Climate numbers are as follows:
+The Climate numbers are as follows.
 
 1. Dry tropical or tundra and ice
 2. Wet tropical
 3. Temperate humid subtropical and temperate continental
 4. Dry hot summers and wet winters
 
-Somehow some values of 1.5 and 2.5 have crept in, so we will assume that 1.5 is mixed tropical and 2.5 mixed.
+Somehow, some values of 1.5 and 2.5 have crept in, so we will assume that 1.5 is
+mixed between 1 and 2, and 2.5 mixed between 2 and 3.
 
 
 .. code:: python3
 
-    wd.describe()
-
-
+   wd.describe()
 
 
 .. raw:: html
@@ -494,144 +495,141 @@ Somehow some values of 1.5 and 2.5 have crept in, so we will assume that 1.5 is 
     </table>
     </div>
 
+
 Visualizing Distribution with Histograms
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------
+
 
 .. code:: python3
 
-    c = Chart(wd) # make a chart
-    m = c.mark_bar() # set the mark -- returns a new Chart
-    e = m.encode(X('Birthrate',bin=True),y='count()') # set the encoding
-    e.display()
+   c = Chart(wd) # make a chart
+   m = c.mark_bar() # set the mark -- returns a new Chart
+   e = m.encode(X('Birthrate',bin=True),y='count()') # set the encoding
+   e.display()
 
 
+.. image:: Figures/WorldFactbook_15_0.png
 
-.. image:: WorldFactbook_files/WorldFactbook_15_0.png
 
+We can shortcut a lot of what we did above into a single line, because once we
+have created a mark, there is really nothing more to do with it besides to add
+the encoding. Because the methods are all cleverly designed to return the proper
+object, we can string all of the calls above into a single line. We also do not
+need to explicitly call "display", because Altair returns an object that the
+Jupyter environment knows how to display automatically.
 
-We can shortcut a lot of what we did above into a single line because
-once we have created a mark there is really nothing more to do with it
-besides add the encoding. Because the methods are all cleverly designed
-to return the proper object we can string all of the calls above into a
-single line. We also do not need to explicitly call display because
-Altair returns an object that the Jupyter environment knows how to
-display automatically.
 
 .. code:: python3
 
-    Chart(wd).mark_bar().encode(x=X('Birthrate', bin=True), y='count()')
+   Chart(wd).mark_bar().encode(x=X('Birthrate', bin=True), y='count()')
 
 
-
-
-.. image:: WorldFactbook_files/WorldFactbook_17_0.png
-
+.. image:: Figures/WorldFactbook_17_0.png
 
 
 Practice
-~~~~~~~~
+--------
 
 .. fillintheblank:: fact_literacy
 
-   What is the range of values for the tallest bar when creating a histogram of the literacy rate? lower: |blank| upper: |blank|
+   What is the range of values for the tallest bar when creating a histogram of
+   the literacy rate? Lower: |blank| Upper: |blank|
 
    - :90: Is the correct answer
-     :89: just a little too low
-     :x: Please try again, the number will be between 10 and 100
+     :89: Just a little too low
+     :x: Try again, the number will be between 10 and 100
 
    - :100: Is correct
-     :x: Please try again, the number will be between 10 and 100
+     :x: Try again, the number will be between 10 and 100
+
 
 .. fillintheblank:: fact_service1
 
-   What is the range of values for the tallest bar when creating a histogram of the fraction of the economy due to service? lower: |blank| upper: |blank|
+   What is the range of values for the tallest bar when creating a histogram of
+   the fraction of the economy due to service? Lower: |blank| Upper: |blank|
 
    - :(.5|.50|0.50): Is the correct answer
-     :.49: just a little too low
-     :x: Please try again, the number will be between 0 and 1.0
+     :.49: Just a little too low
+     :x: Try again, the number will be between 0 and 1.0
 
    - :(.60|.6|0.60): Is correct
-     :x: Please try again, the number will be between 0.0 and 1.0
+     :x: Try again, the number will be between 0.0 and 1.0
+
 
 .. fillintheblank:: fact_service2
 
-   Approximately how many countries (to the nearest 5) have between 90 and 100% of their economy based on service?
+   Approximately how many countries (to the nearest 5) have between 90% and 100%
+   of their economy based on service? |blank|
 
    - :(5|6): Is the correct answer
-     :x: Please try again.  The number is less than 15
+     :x: Try again, the number is less than 15
 
-Scatter Plots for discovering relationships
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Now lets make a simple scatter plot of area versus population of the
+Scatter Plots for Discovering Relationships
+-------------------------------------------
+
+Now, let's make a simple scatter plot of area versus population of the
 countries.
 
-.. code:: python3
-
-    Chart(wd).mark_point().encode(x='Population', y='Area', tooltip='Country')
-
-
-
-
-.. image:: WorldFactbook_files/WorldFactbook_22_0.png
-
-
-
-
-Thats not a very satisfying graph. But it does make us want to focus
-more on the lower left corner. Let’s redo the graph but focus on the
-countries with a population under 150 million and an area under 4
-million. Lets start with the first part
-
-To do this we will create a new DataFrame where we focus on the
-countries with populations less than 150 million and areas less than 4
-million. Pandas makes this really easy with its querying power.
-
-The statement below produces a Series of boolean values. These boolean
-values are used to index the data frame and only the rows corresponding
-to True values are returned in the result.
 
 .. code:: python3
 
-    (wd.Population < 150000000).head(20)
+   Chart(wd).mark_point().encode(x='Population', y='Area', tooltip='Country')
 
 
+.. image:: Figures/WorldFactbook_22_0.png
+
+
+That's not a very satisfying graph, but it does make us want to focus more on
+the lower left corner. Let's redo the graph focussing on the countries with a
+population under 150 million and an area under million. Let's start with the
+first part.
+
+To do this, we will create a new DataFrame where we focus on the countries with
+populations less than 150 million and areas less than 4 million. Pandas makes
+this really easy with its querying power.
+
+The statement below produces a Series of boolean values. These boolean values
+are used to index the data frame, and only the rows corresponding to True values
+are returned in the result.
+
+
+.. code:: python3
+
+   (wd.Population < 150000000).head(20)
 
 
 .. parsed-literal::
 
-    0     True
-    1     True
-    2     True
-    3     True
-    4     True
-    5     True
-    6     True
-    7     True
-    8     True
-    9     True
-    10    True
-    11    True
-    12    True
-    13    True
-    14    True
-    15    True
-    16    True
-    17    True
-    18    True
-    19    True
-    Name: Population, dtype: bool
+   0     True
+   1     True
+   2     True
+   3     True
+   4     True
+   5     True
+   6     True
+   7     True
+   8     True
+   9     True
+   10    True
+   11    True
+   12    True
+   13    True
+   14    True
+   15    True
+   16    True
+   17    True
+   18    True
+   19    True
+   Name: Population, dtype: bool
 
 
+To be a bit more dramatic, let's look at the countries of less than 150,000.
 
-To be a bit more dramatic lets look at the countries of less than
-150,000
 
 .. code:: python3
 
-    wd[wd.Population < 150000]
-
-
+   wd[wd.Population < 150000]
 
 
 .. raw:: html
@@ -1572,39 +1570,36 @@ To be a bit more dramatic lets look at the countries of less than
     </div>
 
 
+Now, let's graph these countries. The easiest way to do this is to plug the
+query right into the call to create a Chart rather than assigning it to a
+variable first.
 
-Now lets graph these countries. The easiest way to do this is to plug
-the query right into the call to create a Chart rather than assigning it
-to a variable first.
 
 .. code:: python3
 
-    Chart(wd[wd.Population < 150000]).mark_point().encode(x='Population', y='Area', tooltip='Country').interactive()
+   Chart(wd[wd.Population < 150000]).mark_point().encode(
+       x='Population', y='Area', tooltip='Country').interactive()
 
 
+.. image:: Figures/WorldFactbook_30_0.png
 
 
-.. image:: WorldFactbook_files/WorldFactbook_30_0.png
+How interesting! One country has such a large value that it pushes all the
+others down. We added a tooltip parameter so that if you hover over that point,
+you will see it is Greenland (which has lots of land area, but not too many
+people). There are large universities that have more people than the entire
+country of Greenland. Let's improve our query to focus on area less than
+200,000.
 
+We can do more complicated boolean expressions by using the ``|`` (logical *or*)
+and ``&`` (logical *and*) operators. Normally in Python, these two operators are
+used for bitwise *or* and bitwise *and*. So, we can create a more complicated
+boolean expression to limit our DataFrame in both directions.
 
-
-How interesting! One country has such a large value that it pushes all the others down. We added a
-tooltip parameter so that if you hover over that point you will see it
-is Greenland! Lots of land area but not too many people. There are large
-universities that have more people than the country of Greenland. Lets
-improve out query to focus on area less than 200,000
-
-We can do more complicated boolean expressions by using the ``|``
-(logical or) and ``&`` (logical and) operators. Normally in Python these
-two operators are used for bitwise or and bitwise and. So we can create
-a more complicated boolean expression to limit our DataFrame in both
-directions.
 
 .. code:: python3
 
-    wd[(wd.Population < 150000) & (wd.Area < 200000)]
-
-
+   wd[(wd.Population < 150000) & (wd.Area < 200000)]
 
 
 .. raw:: html
@@ -2521,28 +2516,24 @@ directions.
     </div>
 
 
+.. code:: python3
+
+   Chart(wd[(wd.Population < 150000) & (wd.Area < 200000)]).mark_point().encode(
+       x='Population', y='Area', tooltip='Country').interactive()
+
+
+.. image:: Figures/WorldFactbook_34_0.png
+
+
+Suppose you have a favorite country you have visited or lived in at some point.
+For example, if you lived in Malta for six months, you might be curious about
+Malta. Let's see what data we have in the data frame for Malta using an
+equality.
+
 
 .. code:: python3
 
-    Chart(wd[(wd.Population < 150000) & (wd.Area < 200000)]).mark_point().encode(x='Population', y='Area', tooltip='Country').interactive()
-
-
-
-
-.. image:: WorldFactbook_files/WorldFactbook_34_0.png
-
-
-
-OK, so maybe you have a favorite country you have visited or lived in at
-some point. I lived in Malta for six months, so I’m always curious about
-Malta. Lets see what data we have in the data frame for Malta using an
-equality:
-
-.. code:: python3
-
-    wd[wd.Country == 'Malta']
-
-
+   wd[wd.Country == 'Malta']
 
 
 .. raw:: html
@@ -2595,20 +2586,18 @@ equality:
     </div>
 
 
+It seems odd that Malta would not be in the dataset. Let's try some other
+countries; nothing seems to work. One common problem is that names and other
+strings can end up with spaces at the beginning or the end of the word or
+phrase. If you do a quick try, you will see that 'Malta ' works, but that is
+inconvenient. We don't want to have to remember to put spaces at the end of
+every string all the time. We should do a bit of data cleanup and strip those
+spaces.
 
-Hmmm.. that seems odd that Malta would not be in the dataset. Lets try
-some other countries. Nothing seems to work. One common problem is that
-names and other strings can end up with spaces at the beginning or the
-end. If you do a quick try you will see that ‘Malta’ works. But that is
-horrible. We don’t want to have to remember to put spaces at the end of
-every string all the time. We should do a little data cleanup and strip
-those spaces.
 
 .. code:: python3
 
-    wd[wd.Country == 'Malta ']
-
-
+   wd[wd.Country == 'Malta ']
 
 
 .. raw:: html
@@ -2685,98 +2674,94 @@ those spaces.
     </div>
 
 
+You may recall that Python has a string method called ``strip`` that does
+exactly what we want. How can we get that to apply to all of the strings in the
+Series? Pandas allows us to do this using the ``str`` attribute of the series in
+combination with most of the standard string methods you know about.
 
-You may recall that Python has a string method called ``strip`` that
-does exactly what we want. How can we get that to apply to all of the
-strings in the Series? Pandas allows us to do this using the str
-attribute of the series in combination with most of the standard string
-methods you know about.
 
 .. code:: python3
 
-    wd.Country.str.strip()
-
-
+   wd.Country.str.strip()
 
 
 .. parsed-literal::
 
-    0                                            Afghanistan
-    1                                                Albania
-    2                                                Algeria
-    3                                         American Samoa
-    4                                                Andorra
-    5                                                 Angola
-    6                                               Anguilla
-    7                                      Antigua & Barbuda
-    8                                              Argentina
-    9                                                Armenia
-    10                                                 Aruba
-    11                                             Australia
-    12                                               Austria
-    13                                            Azerbaijan
-    14                                          Bahamas, The
-    15                                               Bahrain
-    16                                            Bangladesh
-    17                                              Barbados
-    18                                               Belarus
-    19                                               Belgium
-    20                                                Belize
-    21                                                 Benin
-    22                                               Bermuda
-    23                                                Bhutan
-    24                                               Bolivia
-    25                                  Bosnia & Herzegovina
-    26                                              Botswana
-    27                                                Brazil
-    28                                    British Virgin Is.
-    29                                                Brunei
-                                 ...
-    195                                          Switzerland
-    196                                                Syria
-    197                                               Taiwan
-    198                                           Tajikistan
-    199                                             Tanzania
-    200                                             Thailand
-    201                                                 Togo
-    202                                                Tonga
-    203                                    Trinidad & Tobago
-    204                                              Tunisia
-    205                                               Turkey
-    206                                         Turkmenistan
-    207                                    Turks & Caicos Is
-    208                                               Tuvalu
-    209                                               Uganda
-    210                                              Ukraine
-    211                                 United Arab Emirates
-    212    United Kingdom of Great Britain and Northern I...
-    213                             United States of America
-    214                                              Uruguay
-    215                                           Uzbekistan
-    216                                              Vanuatu
-    217                                            Venezuela
-    218                                              Vietnam
-    219                                       Virgin Islands
-    220                                    Wallis and Futuna
-    221                                       Western Sahara
-    222                                                Yemen
-    223                                               Zambia
-    224                                             Zimbabwe
-    Name: Country, Length: 225, dtype: object
+   0                                            Afghanistan
+   1                                                Albania
+   2                                                Algeria
+   3                                         American Samoa
+   4                                                Andorra
+   5                                                 Angola
+   6                                               Anguilla
+   7                                      Antigua & Barbuda
+   8                                              Argentina
+   9                                                Armenia
+   10                                                 Aruba
+   11                                             Australia
+   12                                               Austria
+   13                                            Azerbaijan
+   14                                          Bahamas, The
+   15                                               Bahrain
+   16                                            Bangladesh
+   17                                              Barbados
+   18                                               Belarus
+   19                                               Belgium
+   20                                                Belize
+   21                                                 Benin
+   22                                               Bermuda
+   23                                                Bhutan
+   24                                               Bolivia
+   25                                  Bosnia & Herzegovina
+   26                                              Botswana
+   27                                                Brazil
+   28                                    British Virgin Is.
+   29                                                Brunei
+                                ...
+   195                                          Switzerland
+   196                                                Syria
+   197                                               Taiwan
+   198                                           Tajikistan
+   199                                             Tanzania
+   200                                             Thailand
+   201                                                 Togo
+   202                                                Tonga
+   203                                    Trinidad & Tobago
+   204                                              Tunisia
+   205                                               Turkey
+   206                                         Turkmenistan
+   207                                    Turks & Caicos Is
+   208                                               Tuvalu
+   209                                               Uganda
+   210                                              Ukraine
+   211                                 United Arab Emirates
+   212    United Kingdom of Great Britain and Northern I...
+   213                             United States of America
+   214                                              Uruguay
+   215                                           Uzbekistan
+   216                                              Vanuatu
+   217                                            Venezuela
+   218                                              Vietnam
+   219                                       Virgin Islands
+   220                                    Wallis and Futuna
+   221                                       Western Sahara
+   222                                                Yemen
+   223                                               Zambia
+   224                                             Zimbabwe
+   Name: Country, Length: 225, dtype: object
 
 
+Now, we can replace our original ``Country`` column with the stripped column.
 
-Now we can replace our original Country column with the stripped column.
 
 .. code:: python3
 
-    wd['Country'] = wd.Country.str.strip()
+   wd['Country'] = wd.Country.str.strip()
+
 
 .. code:: python3
 
-    wd[wd.Country == 'Malta']
-
-
+   wd[wd.Country == 'Malta']
 
 
 .. raw:: html
@@ -2853,79 +2838,71 @@ Now we can replace our original Country column with the stripped column.
     </div>
 
 
+Power Tools: Scatter Matrix
+---------------------------
 
-Power Tools – Scatter Matrix
-----------------------------
-
-It would be pretty tedius to look at all the different pairs of things
-we might want to look at for correlation one at a time, but we can Use a
-scatter matrix to make life easier.
-
-.. code:: python3
-
-    alt.Chart(wd).mark_circle().encode(
-        alt.X(alt.repeat("column"), type='quantitative'),
-        alt.Y(alt.repeat("row"), type='quantitative'),
-        color='Region:N'
-    ).properties(
-        width=150,
-        height=150
-    ).repeat(
-        row=['Birthrate', 'Deathrate', 'Infant mortality', 'GDP'],
-        column=['Birthrate', 'Deathrate', 'Infant mortality', 'GDP']
-    ).interactive()
-
-
-
-
-.. image:: WorldFactbook_files/WorldFactbook_45_0.png
-
+It would be pretty tedius to look at all the different pairs of things we might
+want to look at for correlation one at a time, but we can use a scatter matrix
+to make life easier.
 
 
 .. code:: python3
 
-    list(reversed(['a','b']))
+   alt.Chart(wd).mark_circle().encode(
+       alt.X(alt.repeat("column"), type='quantitative'),
+       alt.Y(alt.repeat("row"), type='quantitative'),
+       color='Region:N'
+   ).properties(
+       width=150,
+       height=150
+   ).repeat(
+       row=['Birthrate', 'Deathrate', 'Infant mortality', 'GDP'],
+       column=['Birthrate', 'Deathrate', 'Infant mortality', 'GDP']
+   ).interactive()
 
 
+.. image:: Figures/WorldFactbook_45_0.png
 
+
+.. code:: python3
+
+   list(reversed(['a','b']))
 
 
 .. parsed-literal::
 
-    ['b', 'a']
-
-
+   ['b', 'a']
 
 
 Developing Fluency
-~~~~~~~~~~~~~~~~~~
+------------------
 
-Pandas will only become a part of your daily workflow when you develop
-fluency with the basics. You need to be able to do easy queries without
-having to think hard about the syntax. The only way that happens is
-through repetition. Lots of repetition and ideally that repetitive
-practice is spread out over time.
+Pandas will only become a part of your daily workflow when you develop fluency
+with the basics. You need to be able to do easy queries without having to think
+hard about the syntax. The only way to accomplish this is through repetition:
+lots of repetition, and ideally that repetitive practice is spread out over
+time.
 
-That doesn’t mean you can’t go on and do lots of much harder things, it
-just means it will take longer at first as you have to go back and
-review documentation in order to become efficient.
+That doesn’t mean you can't go on and do lots of much harder things, it just
+means that it will take longer at first, as you have to go back and review
+documentation in order to become efficient.
+
 
 Practice Questions
 ------------------
 
-1. What are the top 10 countries with the largest GDP?
-2. What are the top 20 countries by Population?
+1. What are the top 10 countries by GDP?
+2. What are the top 20 countries by population?
 3. What are the 10 countries with the largest net migration?
-4. What is distribution of Argiculture, Industry, and service for the
+4. What is the distribution of Argiculture, Industry, and service for the
    countries in Western Europe?
-5. What are the names, population and Area of the 5 largest (by area)
-   landlocked countries?
-6. What are the names and population of the five most populous
-   landlocked countries?
-7. What what is the name and GDP of the 10 countries with the most cell
-   phones/1000 people?
-8. What are the 10 countries with the largest GDP that have a “Wet
-   Tropical” climate?
+5. What are the names, population and Area of the 5 largest (by area) landlocked
+   countries?
+6. What are the names and population of the five most populous landlocked
+   countries?
+7. What is the name and GDP of the 10 countries with the most cell phones/1000
+   people?
+8. What are the 10 "Wet Tropical" countries with the highest GDP?
 
 
 **Lesson Feedback**

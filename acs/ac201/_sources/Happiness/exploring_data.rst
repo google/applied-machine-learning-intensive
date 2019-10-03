@@ -183,7 +183,7 @@ Summary Statistics
       .. fillintheblank:: fb_avghappiness
 
          Calculating the average happiness score. You should include three
-         digits to the right of the decimal point.|blank|
+         digits to the right of the decimal point. |blank|
 
          - :5.399: Is the correct answer
            :5.398: 5.3989 should be rounded up to 5.399
@@ -256,7 +256,7 @@ Visualization
    b. Choose chart type of histogram.
    c. Enter or drag the rows in column D. It should look like most of the bars
       are between 4 and 6.6 on your histogram?
-   e. Try editing the details of the histogram to look at the distribution in
+   d. Try editing the details of the histogram to look at the distribution in
       other columns.
 
 2. Because we are exploring you might also wonder "which country has the largest
@@ -333,6 +333,7 @@ Visualization
          - :Greece: Correct
            :#REF!: Looks like you need to check your ranges
 
+
    e. Now you should practice by finding the names of the countries that have
       the minimum and maximum values for some other columns.
 
@@ -356,6 +357,7 @@ Visualization
 
          - :4.096: Is the correct answer
            :x: Incorrect
+
 
    f. If you tried to copy/paste the functions from above you likely ran into
       some errors. Check the ranges carefully and remember what Sheets does when
@@ -393,7 +395,8 @@ Visualization
    countries and the least happy countries.
 
    a. Recompute the correlation scores, but don't do it for all of the
-   countries. Do it only for the top 25 and bottom 25. What stands out for you?
+      countries. Do it only for the top 25 and bottom 25. What stands out for
+      you?
 
    b. Calculate the mean value for each of the factors for the 25 and bottom 25
       countries and then calculate a difference between these values. Which have
