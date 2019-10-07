@@ -75,8 +75,8 @@ different between the ``vote_average`` and ``my_vote`` and divide it by
 
 .. fillintheblank:: mov_star_wars_difference
 
-   What's the percentage difference between my rating for Star Wars and its
-   popular rating? |blank|
+   What's the proportion (as a decimal) difference between my rating for Star
+   Wars and its popular rating? |blank|
 
    - :-0.10: Is the correct answer
      :x: catchall feedback
