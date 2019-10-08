@@ -1,3 +1,9 @@
+.. Copyright (C)  Google, Runestone Interactive LLC
+   This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+   International License. To view a copy of this license, visit
+   http://creativecommons.org/licenses/by-sa/4.0/.
+
+
 Joining
 =======
 
@@ -6,17 +12,18 @@ multiple tables in our database. For example, we might want to store
 additional information about the starting and ending location of the
 ride beside their IDs in a table called ``bikeshare_stations``.
 
-Here’s the columns in table ``bikeshare_stations``
+Here are the columns in table ``bikeshare_stations``
 
 ========== ======= ============================================
 Field name Type    Description
 ========== ======= ============================================
-station_id INTEGER Unique identifier of a station.
+station_id INTEGER Unique identifier of a station
 name       STRING  Public name of the station.
 status     STRING  Status of the station, either open or closed
 latitude   FLOAT   latitude of the station
 longitude  FLOAT   longitude of the station
 ========== ======= ============================================
+
 
 .. code:: python3
 
@@ -26,17 +33,13 @@ longitude  FLOAT   longitude of the station
       *
     FROM
       bikeshare_stations
-    LIMIT
-      10
-
+    LIMIT 10
 
 
 .. parsed-literal::
 
      * sqlite:///bikeshare.db
     Done.
-
-
 
 
 .. raw:: html
@@ -135,23 +138,24 @@ longitude  FLOAT   longitude of the station
     </div>
 
 
-This means that we now have the data to answer questions like “How many
-bike trips originated from bike station that’s at Van Ness Metro / UDC?”
-but the data are spread across two tables?
+This means that we now have the data to answer questions like "How many
+bike trips originated from bike station that's at Van Ness Metro / UDC?",
+but the data are spread across two tables.
 
 We could imagine storing the ``name`` column in our ``trip_data`` table
 since we list the start and end stations IDs for each trip but there are
-a few important reasons why that’s a bad idea:
+a few important reasons why that's a bad idea.
 
-1. We would waste space by duplicating data (not a big deal for this
-   example but a real concern for large systems)
-2. Updating data (for example status of station from active to closed)
-   would require updating each row in ``trip_data`` that refers to that
+1. We would waste space by duplicating data. (This isnot a big deal for this
+   example but a real concern for large systems.)
+2. Updating data (for example, updating the status of station from active to
+   closed) would require updating each row in ``trip_data`` that refers to that
    station ID. This is time-consuming and error-prone.
 
 Instead we leave the data in two separate tables and need a way to
-‘join’ the values together. We can do that by just listing multiple
+join the values together. We can do that by just listing multiple
 table names but the result is a mess:
+
 
 .. code:: python3
 
@@ -160,19 +164,15 @@ table names but the result is a mess:
     SELECT
       *
     FROM
-      trip_data, bikeshare_stations
-
-    LIMIT
-      10
-
+      trip_data,
+      bikeshare_stations
+    LIMIT 10
 
 
 .. parsed-literal::
 
      * sqlite:///bikeshare.db
     Done.
-
-
 
 
 .. raw:: html
@@ -359,11 +359,12 @@ table names but the result is a mess:
     </div>
 
 
-If you look carefully you might notice that the rows are identical for
+If you look carefully, you might notice that the rows are identical for
 the first few columns and then start to differ after ``duration``.
-That’s because SQL joins each row in the first table with each row in
+That's because SQL joins each row in the first table with each row in
 the second table. With 144 rows in ``bikeshare_stations`` and 1,226,767
-rows in ``trips_data``, we end up with a table of 176,654,448 rows.
+rows in ``trips_data``, we end up with a table of 176,654,448
+(``144 * 1,226,767``) rows.
 
 This rarely if ever is what we want. In most cases, we want to match up
 some aspect of the rows in the first table with some aspect of the rows
@@ -373,7 +374,8 @@ column being equal.
 In our bike sharing example, the ``station_id`` column of
 ``bikeshare_stations`` matches up with the ``start_station`` or
 ``end_station`` column of ``trip_data``. To force this match, we filter
-out the ones that don’t have the same value for both of these columns:
+out the ones that don't have the same value for both of these columns:
+
 
 .. code:: python3
 
@@ -382,20 +384,17 @@ out the ones that don’t have the same value for both of these columns:
     SELECT
       *
     FROM
-      trip_data, bikeshare_stations
+      trip_data,
+      bikeshare_stations
     WHERE
       start_station = station_id
-    LIMIT
-      10
-
+    LIMIT 10
 
 
 .. parsed-literal::
 
      * sqlite:///bikeshare.db
     Done.
-
-
 
 
 .. raw:: html
@@ -582,12 +581,13 @@ out the ones that don’t have the same value for both of these columns:
     </div>
 
 
-Notice that the result looks more sensical: we end up with one row from
+Notice that the result looks more sensible. We end up with one row from
 ``trip_data`` and the corresponding row from ``bikeshare_stations``
 (copied multiple times since there were only 144 rows in
 ``bikeshare_stations``).
 
-We can check the size of the resulting table by running:
+We can check the size of the resulting table by running the following.
+
 
 .. code:: python3
 
@@ -596,18 +596,16 @@ We can check the size of the resulting table by running:
     SELECT
       COUNT(*)
     FROM
-      trip_data, bikeshare_stations
+      trip_data,
+      bikeshare_stations
     WHERE
       start_station = station_id
-
 
 
 .. parsed-literal::
 
      * sqlite:///bikeshare.db
     Done.
-
-
 
 
 .. raw:: html
@@ -627,7 +625,8 @@ You might also see some cases where the comma between the table names is
 replaced with the keyword ``JOIN`` and ``WHERE`` is replaced with
 ``ON``. This is synonymous but sometimes preferred to make it clear that
 you are joining two tables and that your filters are there to specify
-how those tables are to be joined:
+how those tables are to be joined.
+
 
 .. code:: python3
 
@@ -636,16 +635,17 @@ how those tables are to be joined:
     SELECT
       COUNT(*)
     FROM
-      trip_data JOIN bikeshare_stations ON start_station = station_id
-
+      trip_data
+    JOIN
+      bikeshare_stations
+    ON
+      start_station = station_id
 
 
 .. parsed-literal::
 
      * sqlite:///bikeshare.db
     Done.
-
-
 
 
 .. raw:: html
@@ -660,20 +660,23 @@ how those tables are to be joined:
     </table>
 
 
+We can now use all the SQL tools that we've learned on this combined
+table. For example, to find out which **open** bike station has
+the highest bike trip counts (so we can ensure there is always plenty of
+bikes available), we can run the following query.
 
-We can now use all the SQL tools that we’ve learned on this combined
-table. For example, to find out which **open** bike station which has
-the highest bike trip counts so we can ensure there is always plenty of
-bikes available, we can run:
 
 .. code:: python3
 
     %%sql
 
     SELECT
-      station_id, COUNT(*) AS trip_count
+      station_id,
+      COUNT(*) AS trip_count
     FROM
-      trip_data join bikeshare_stations
+      trip_data
+    JOIN
+      bikeshare_stations
     ON
       start_station = station_id
     WHERE
@@ -683,17 +686,13 @@ bikes available, we can run:
       station_id
     ORDER BY
       trip_count DESC
-    LIMIT
-      10
-
+    LIMIT 10
 
 
 .. parsed-literal::
 
      * sqlite:///bikeshare.db
     Done.
-
-
 
 
 .. raw:: html
@@ -746,17 +745,20 @@ bikes available, we can run:
     </table>
 
 
-
 Practice Exercises
 ------------------
 
 .. fillintheblank:: sql_join_0
 
-   Use ``JOIN`` to show the station IDs of active stations and what’s the average duration of bike trip originating and ending at the same station with member type Member.  For station 31000 what is the average duration from above?
+   Use ``JOIN`` to show the station IDs of active stations and what's the
+   average duration of bike trip originating and ending at the same station with
+   member type Member. For station 31000 what is the average duration from
+   above?
 
    - :1005: Is the correct answer
      :incorrect: Is feedback on a specific incorrect
      :x: catchall feedback
+
 
 .. reveal:: bikes_join1
     :instructoronly:
@@ -766,19 +768,21 @@ Practice Exercises
         %%sql
 
         SELECT
-        station_id, AVG(duration)
+          station_id,
+          AVG(duration)
         FROM
-        trip_data JOIN bikeshare_stations
+          trip_data
+        JOIN
+          bikeshare_stations
         ON
-        start_station = station_id
+          start_station = station_id
         WHERE
-        member_type = 'Member'
-        AND start_station = end_station
-        AND status = 'open'
+          member_type = 'Member' AND
+          start_station = end_station AND
+          status = 'open'
         GROUP BY
-        station_id
-        LIMIT
-        10
+          station_id
+        LIMIT 10
 
 
     .. raw:: html
@@ -833,38 +837,76 @@ Practice Exercises
 
     2. .. code-block:: sql
 
-            select name, count(*)
-            from trip_data join bikeshare_stations on
-                start_station = station_id
-            group by name
-            order by count(*) desc
-            limit 10
+            SELECT
+              name,
+              count(*)
+            FROM
+              trip_data
+            JOIN
+              bikeshare_stations
+            ON
+              start_station = station_id
+            GROUP BY
+              name
+            ORDER BY
+              COUNT(*) DESC
+            LIMIT 10
+
 
     3. .. code-block:: sql
 
-            select name, count(*)
-            from trip_data join bikeshare_stations on end_station = station_id
-            group by name
-            order by count(*) desc
-            limit 10
+            SELECT
+              name,
+              COUNT(*)
+            FROM
+              trip_data
+            JOIN
+              bikeshare_stations
+            ON
+              end_station = station_id
+            GROUP BY
+              name
+            ORDER BY
+              COUNT(*) DESC
+            LIMIT 10
+
 
     4. .. code-block:: sql
 
-            select name, count(*)
-            from trip_data join bikeshare_stations on end_station = station_id
-            where start_station = end_station
-            group by name
-            order by count(*) desc
-            limit 10
+            SELECT
+              name,
+              COUNT(*)
+            FROM
+              trip_data
+            JOIN
+              bikeshare_stations
+            ON
+              end_station = station_id
+            WHERE start_station = end_station
+            GROUP BY
+              name
+            ORDER BY
+              COUNT(*) desc
+            LIMIT 10
 
     5. .. code-block:: sql
 
-            select name, count(*)
-            from trip_data join bikeshare_stations on end_station = station_id
-            where start_station = 31200
-            group by name
-            order by count(*) desc
-            limit 10
+            SELECT
+              name,
+              COUNT(*)
+            FROM
+              trip_data
+            JOIN
+              bikeshare_stations
+            ON
+              end_station = station_id
+            WHERE start_station = 31200
+            GROUP BY
+              name
+            ORDER BY
+              COUNT(*) desc
+            LIMIT 10
+
 
 .. fillintheblank:: sql_join_1
 
@@ -878,8 +920,7 @@ Practice Exercises
 
    What is the name of the station where the most rides end?
 
-   - :Massachusetts Ave & Dupont Circle NW: Is the correct answer - That must be a very busy station!
-     :Anacostia Ave & Benning Rd NE / River Terrace: Is feedback on a specific incorrect
+   - :Massachusetts Ave & Dupont Circle NW: Is the correct answer
      :x: catchall feedback
 
 
@@ -891,13 +932,16 @@ Practice Exercises
      :Massachusetts Ave & Dupont Circle NW: In order to be counted, rides must start and end at the same station
      :x: catchall feedback
 
+
 .. fillintheblank:: sql_join_4
 
-   What is the name of the most popular ending station for rides that begin at Massachusetts Ave & Dupont Circle NW?
+   What is the name of the most popular ending station for rides that begin at
+   Massachusetts Ave & Dupont Circle NW?
 
    - :15th & P St NW: Is the correct answer
      :Massachusetts Ave & Dupont Circle NW: Rides do not have to start and end here.
      :x: catchall feedback
+
 
 **Lesson Feedback**
 

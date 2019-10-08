@@ -1,27 +1,27 @@
 # AC1 Course Guide
 
--   [Overview](#overview)
--   [What is AC101?](#what-is-ac101)
--   [Learning Objectives](#learning-objectives)
--   [Catalog Description](#catalog-description)
--   [Faculty Guidelines](#faculty-guidelines)
-    *   [Setting Community Guidelines](#setting-community-guidelines)
-    +   [In-Class Activity](#in-class-activity)
-    *   [Projects](#projects)
-    +   [Team Formation and Dynamics](#team-formation-and-dynamics)
-    +   [Project Coaching](#project-coaching)
-    *   [Class Discussion](#class-discussion)
--   [Sample Syllabus](#sample-syllabus)
--   [Using the Instructor’s Guide](#using-the-instructors-guide)
-    *   [Hook](#hook)
-    *   [Activities](#activities)
-    +   [Livecoding](#livecoding)
-    +   [Ethics](#ethics)
-    +   [Hypothesis Forming and Testing](#hypothesis-forming-and-testing)
-    *   [Datasets](#datasets)
-    *   [[P1] Checks for Understanding](#p1-checks-for-understanding)
-    *   [[P1] Solutions/Output Expectations](#p1-solutions-output-expectations)
--   [Structuring Class Time](#structuring-class-time)
+- [Overview](#overview)
+- [What is AC101?](#what-is-ac101-)
+- [Learning Objectives](#learning-objectives)
+- [Catalog Description](#catalog-description)
+- [Faculty Guidelines](#faculty-guidelines)
+  * [Setting Community Guidelines](#setting-community-guidelines)
+    + [In-Class Activity](#in-class-activity)
+  * [Projects](#projects)
+    + [Team Formation and Dynamics](#team-formation-and-dynamics)
+    + [Project Coaching](#project-coaching)
+  * [Class Discussion](#class-discussion)
+- [Sample Syllabus](#sample-syllabus)
+- [Using the Instructor’s Guide](#using-the-instructor-s-guide)
+  * [Hook](#hook)
+  * [Activities](#activities)
+    + [Livecoding](#livecoding)
+    + [Ethics](#ethics)
+    + [Hypothesis Forming and Testing](#hypothesis-forming-and-testing)
+  * [Datasets](#datasets)
+  * [[P1] Checks for Understanding](#-p1--checks-for-understanding)
+  * [[P1] Solutions/Output Expectations](#-p1--solutions-output-expectations)
+- [Structuring Class Time](#structuring-class-time)
 
 ## Overview
 
@@ -70,7 +70,7 @@ literacy.
     visualizations.
 
 The
-[instructor guide](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/ac1/doc/instructor-guide.md)
+[instructor guide](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/external_documentation/ac1_instructor_guide.md)
 details specific learning objectives for each day, and connects them where
 possible to the themes above. Note that the learning objectives for a single day
 may cover multiple themes, and each theme will be reflected and reinforced in
@@ -229,7 +229,7 @@ Other good practices:
 Data scientists and computer scientists don’t work in isolation. Students should
 discuss and work through class concepts with each other frequently, building a
 sense of inquiry and collaboration.
-[Here is a guide](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/discussion-guide.md)
+[Here is a guide](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/external_documentation/discussion_guide.md)
 to creating good discussions in your classroom.
 
 ## Sample Syllabus
@@ -240,7 +240,7 @@ schedule, milestones, grading rubrics
 
 To give students as many resources as possible, we have included almost all
 classroom content in the textbook. The
-[instructor guide](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/ac1/doc/instructor-guide.md)
+[instructor guide](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/external_documentation/ac1_instructor_guide.md)
 will frequently refer to examples in the textbook, so you should familiarize
 yourself with the textbook material for each day.
 

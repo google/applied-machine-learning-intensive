@@ -1,35 +1,35 @@
 # AC1 Instructor Guide
 
--   [Overview](#overview)
--   [Module A](#module-a)
-    *   [1.1 Class Data Activity](#11-class-data-activity)
-    *   [1.2 Community Guidelines & Pretest](#12-community-guidelines---pretest)
-    *   [2.1 Visualizations](#21-visualizations)
-    *   [2.2 Creating Visualizations](#22-creating-visualizations)
-    *   [3.1 Sheets Basics](#31-sheets-basics)
-    *   [3.2 Basic Descriptive Statistics](#32-basic-descriptive-statistics)
-    *   [4.1 Basic Descriptive Statistics](#41-basic-descriptive-statistics)
-    *   [4.2 Filtering and Grouping](#42-filtering-and-grouping)
-    *   [5.1 Module A Project](#51-module-a-project)
-    *   [5.2 Module A Project](#52-module-a-project)
--   [Module B](#module-b)
-    *   [1.1 Scatter Plots and Correlation](#11-scatter-plots-and-correlation)
-    *   [1.2 Regression and Predictions](#12-regression-and-predictions)
-    *   [2.1 Regression Best Practices](#21-regression-best-practices)
-    *   [2.2 Filtering](#22-filtering)
-    *   [3.1 Pivot Tables](#31-pivot-tables)
-    *   [3.2 Pivot Tables](#32-pivot-tables)
-    *   [4.1 Joining Data](#41-joining-data)
-    *   [4.2 Overflow](#42-overflow)
-    *   [5.1 Cleaning for Project Prep](#51-cleaning-for-project-prep)
-    *   [5.2 Module B Project](#52-module-b-project)
+- [Overview](#overview)
+- [Module A](#module-a)
+  * [1.1 Class Data Activity](#11-class-data-activity)
+  * [1.2 Community Guidelines & Pretest](#12-community-guidelines---pretest)
+  * [2.1 Visualizations](#21-visualizations)
+  * [2.2 Creating Visualizations](#22-creating-visualizations)
+  * [3.1 Sheets Basics](#31-sheets-basics)
+  * [3.2 Basic Descriptive Statistics](#32-basic-descriptive-statistics)
+  * [4.1 Basic Descriptive Statistics](#41-basic-descriptive-statistics)
+  * [4.2 Filtering and Grouping](#42-filtering-and-grouping)
+  * [5.1 Module A Project](#51-module-a-project)
+  * [5.2 Module A Project](#52-module-a-project)
+- [Module B](#module-b)
+  * [1.1 Scatter Plots and Correlation](#11-scatter-plots-and-correlation)
+  * [1.2 Regression and Predictions](#12-regression-and-predictions)
+  * [2.1 Regression Best Practices](#21-regression-best-practices)
+  * [2.2 Filtering](#22-filtering)
+  * [3.1 Pivot Tables](#31-pivot-tables)
+  * [3.2 Pivot Tables](#32-pivot-tables)
+  * [4.1 Joining Data](#41-joining-data)
+  * [4.2 Overflow](#42-overflow)
+  * [5.1 Cleaning for Project Prep](#51-cleaning-for-project-prep)
+  * [5.2 Module B Project](#52-module-b-project)
 
 ## Overview
 
 This is an instructor’s guide for facilitating AC101 class sessions. Each
 section covers one class day, including learning objectives, a hook, activities,
 and datasets used. As described in the
-[course guide](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/ac1/doc/course-guide.md),
+[course guide](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/external_documentation/ac1_course_guide.md),
 opportunities for livecoding will be marked with **[DEMO]**, for ethics
 discussion marked with **[ETHICS]**, and for practice with hypothesis forming
 and testing marked with **[HYP]**.
@@ -54,7 +54,7 @@ Expected time: 10 minutes
 *   Icebreaker
 *   Introduce yourself and the purpose and idea of the class in a few sentences.
     Make sure students know what this class is and isn’t (you can use
-    [What is AC101?](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/ac1/doc/course-guide.md)
+    [What is AC101?](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/external_documentation/ac1_course_guide.md)
     as a guide).
 *   Give students a taste of what they will be doing and learning at the end of
     the course by talking through Module C project work. Be mindful of not
@@ -150,7 +150,7 @@ Expected time: 40 minutes
 
 1.  **[DEMO]** Display community guidelines survey results (from homework).
 1.  Facilitate
-    [community guidelines discussion](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/ac1/doc/course-guide.md#setting-community-guidelines).
+    [community guidelines discussion](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/external_documentation/course_guide.md#setting-community-guidelines).
 
 <span style="text-decoration:underline;">Pretest</span>
 
@@ -823,7 +823,7 @@ Expected time: 60 minutes
 1.  Introduce the project, making sure students are clear on all requirements
     and the final deliverables.
 1.  Have students form groups of 3-4 and start work!
-    1.  [Here](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/ac1/doc/course-guide.md#team-formation-and_dynamics)
+    1.  [Here](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/external_documentation/ac1_course_guide.md#team-formation-and_dynamics)
         is a guide to project team formation and facilitation. Students should
         come to class with a few research question ideas in mind, so they can
         form groups based on similar ideas.

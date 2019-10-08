@@ -118,10 +118,8 @@ limit, you should continue the item at the same indentation.
 
 ```
 1.  This is the first item in the ordered list.
-
     -   This is an example of a very long item that exceeds the eighty character
         line limit.
-
 2.  This is the second item in the ordered list.
 ```
 
@@ -148,7 +146,6 @@ links, do not include any blank lines between them.
 ```
 The word `hyperlink`_ links to the website https://this-is-the-link.com. A
 `second link`_ links to the website https://another-link.com.
-
 .. _hyperlink: https://this-is-the-link.com
 .. _second link: https://another-link.com
 ```
@@ -191,9 +188,7 @@ The following is not consistent with the style guide.
 
 ```
 This is some text.
-
 .. runestone_directive::
-
 This is more text.
 ```
 
@@ -201,10 +196,6 @@ The following is consistent with the style guide.
 
 ```
 This is some text.
-
-
 .. runestone_directive::
-
-
 This is more text.
 ```
