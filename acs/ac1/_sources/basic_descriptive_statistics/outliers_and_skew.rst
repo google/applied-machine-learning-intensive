@@ -24,6 +24,18 @@ measures of center?
    outliers.
 
 
+Outliers in a Histogram
+-------------------
+
+Consider the histogram of student heights below.
+
+
+.. https://screenshot.googleplex.com/CDZJYuvheh1
+
+.. image:: figures/Student_Heights_outlier.png
+   :align: center
+
+
 .. admonition:: Skew Definition
 
    **Skewness is a measure of asymmetry of a dataset.** If there are values far
