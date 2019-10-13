@@ -181,6 +181,9 @@ Since there are some households that earn extremely high incomes, just these few
 values can affect the mean too much (in the same way that changing 6 to 60
 affected the mean for the dice roll). The median is preferred in such contexts.
 
+Further Application
+------------------
+skew as a function... 
 
 .. _You can read more about the income distribution here.: https://dqydj.com/income-percentile-calculator/
 .. _US census report on income from 2003: https://www.census.gov/prod/2003pubs/p70-88.pdf
