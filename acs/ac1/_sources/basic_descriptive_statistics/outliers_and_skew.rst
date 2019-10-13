@@ -50,6 +50,19 @@ Consider the histogram of student heights below.
 Outliers and skew only pertain to quantitative variables. (For categorical
 variables, there is no notion of “distance” between different categories.)
 
+Skew in a Histogram
+-------------------
+
+Consider the histogram of student ages below.
+
+
+.. https://screenshot.googleplex.com/CDZJYuvheh1
+
+.. image:: figures/Student_Ages_skew.png
+   :align: center
+
+
+
 
 Skew in a Histogram
 -------------------
