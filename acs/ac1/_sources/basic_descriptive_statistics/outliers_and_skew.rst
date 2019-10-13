@@ -36,6 +36,10 @@ Consider the histogram of student heights below.
    :align: center
 
 
+
+In this example, we can see that there are two students whose heights are much greater than the rest of the students. As a result, taking the average of the class' height would result in 168.45 centimeters (cm). In an extreme case, think about what could happen if a school wanted to decide on what size jump ropes to purchase for P.E. classes or how high the student desks needed to be. 
+
+
 .. admonition:: Skew Definition
 
    **Skewness is a measure of asymmetry of a dataset.** If there are values far
@@ -45,6 +49,7 @@ Consider the histogram of student heights below.
    the mean but not much less than the mean. A **negative skew** occurs when the
    dataset contains values much less than the mean but not much greater than the
    mean.
+
 
 
 Outliers and skew only pertain to quantitative variables. (For categorical
@@ -60,6 +65,14 @@ Consider the histogram of student ages below.
 
 .. image:: figures/Student_Ages_skew.png
    :align: center
+
+This is an example of a positive skew. We can take the mean and find that it is 18.9. 
+A majority of the students are of the age of the mean or younger (7 students). At the same time
+there are students whose age is much higher.
+
+
+We can see an example of the opposite, called a negative skew when there are a majority of students
+whose ages are older...
 
 
 
