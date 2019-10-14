@@ -6,8 +6,7 @@
 .. _making_predictions_with_the_regression_line:
 
 Making Predictions with the Regression Line
-{#making-predictions-with-the-regression-line}
-==============================================
+===========================================
 
 .. image:: figures/average_sat_score_completion_rate.png
 
