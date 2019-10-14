@@ -70,7 +70,7 @@ point increase in the median SAT Math score, and the trend is linear,
 the change in median earnings is 100 \* $118.95 (or $11,895) for a 100
 point increase in the median SAT Math score.
 
-.. image:: figures/Slope_Changes_for SAT_math.jpg
+.. image:: figures/Slope_Changes_for_SAT_math.jpg
 
 If College X had median SAT Math scores 100 points higher than
 University Y, their graduates will make on average $11,895 more per
