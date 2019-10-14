@@ -25,15 +25,7 @@ For example, below is a scatter plot with median SAT Math score as the
 explanatory variable, and median earnings after graduation as the
 explained variable.
 
-.. raw:: html
-
-   <p id="gdcalert31" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B30.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert32">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/SAT_Math_and_Earnings.png
 
 First of all, the data exhibits a general upward trend: in general,
 schools with higher median SAT Math scores are more likely to graduate
@@ -55,29 +47,11 @@ The `slope of a straight line <https://en.wikipedia.org/wiki/Slope>`__
 tells you how much the y value changes when the x value is increased by
 1. This is also written as the ratio
 
-.. raw:: html
+.. image:: figures/slope_definition.png
 
-   <p id="gdcalert32" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform
-supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert33">Next
-alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+.. image:: figures/median_sat_earnings_annotated.png
 
-.. raw:: html
-
-   <p id="gdcalert33" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B31.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert34">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
-
-.. raw:: html
-
-   <p id="gdcalert34" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform
-supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert35">Next
-alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+.. image:: figures/slope_118.png
 
 From the equation above, because the slope is 118.95, when the median
 SAT math score increases by 1, the median earnings increases by 118.95.
@@ -87,12 +61,7 @@ median earnings goes up $118.95.
 It’s often helpful to look at larger changes too, like on the
 illustrated graph above.
 
-.. raw:: html
-
-   <p id="gdcalert35" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform
-supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert36">Next
-alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+.. image:: figures/sat_median_slope.png
 
 Every 100 point increase in median SAT math score corresponds with a
 predicted median earnings increase of $11,895. Another way to think
@@ -101,15 +70,7 @@ point increase in the median SAT Math score, and the trend is linear,
 the change in median earnings is 100 \* $118.95 (or $11,895) for a 100
 point increase in the median SAT Math score.
 
-.. raw:: html
-
-   <p id="gdcalert36" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B32.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert37">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/Slope_Changes_for SAT_math.jpg
 
 If College X had median SAT Math scores 100 points higher than
 University Y, their graduates will make on average $11,895 more per
@@ -130,23 +91,17 @@ This scatter plot shows the percentage of students receiving federal
 loans as the explanatory variable, and completion rate as the explained
 variable.
 
-.. raw:: html
+.. image:: figures/completion_rate_loans.png
 
-   <p id="gdcalert37" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B33.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert38">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
+.. mchoice:: completion_rate
 
-|alt_text|
-
-Question: Using the scatter plot above, which school will have a lower
-completion rate? (Specifically, which school will have fewer students
-graduating within 6 years?)
+   Using the scatter plot above, which school will have a lower
+   completion rate? (Specifically, which school will have fewer students
+   graduating within 6 years?)
 
 -  School A
 
-   -  Response text - Correct! Because the direction of the scatter plot
+   +  Correct: Because the direction of the scatter plot
       is negative, the school with the higher percentage of students
       with federal loans will have a lower completion rate. So College A
       will have a lower percentage of students graduating within 6
@@ -154,7 +109,7 @@ graduating within 6 years?)
 
 -  School B
 
-   -  Response text - Try again! Because the direction of the scatter
+   -  Incorrect: Try again! Because the direction of the scatter
       plot is negative, the school with the higher percentage of
       students with federal loans will have a lower completion rate. So
       College A will have a lower percentage of students graduating
@@ -171,12 +126,7 @@ The equation of the line of best fit is below.
 (Predicted Completion Rate) = -0.371 \* (Percentage with Federal Loans)
 + 0.775
 
-.. raw:: html
-
-   <p id="gdcalert38" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform
-supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert39">Next
-alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+.. image:: figures/slope_fed_loans.png
 
 Therefore for every 1% increase in the percentage of students with
 federal loans, the predicted completion rate drops by 0.37%. College A
@@ -184,26 +134,13 @@ and B have a difference of 10% in their federal loans percentage. To
 determine how much that impacts the predicted completion rate, you can
 multiply the slope by 10.
 
-.. raw:: html
-
-   <p id="gdcalert39" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: equation: use MathJax/LaTeX if your publishing platform
-supports it. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert40">Next
-alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+.. image:: figures/slope_fed_loan_mult.png
 
 Another way to think about this is that any change to x has to change y
 proportionally. Therefore, if the change in x is multiplied by 10, the
 change in y must also be multiplied by 10.
 
-.. raw:: html
-
-   <p id="gdcalert40" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B34.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert41">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/Slope_Changes.jpg
 
 So College A and College B should differ in their completion rate by
 3.71%. The negative value indicates that as the x value increases by
@@ -218,11 +155,13 @@ large endowments and give loans or scholarships directly to their
 students. These same schools may also have other resources that
 contribute to increased graduation rates.
 
-Question: Which of the following is the correct interpretation of the
-slope of the line of best fit?
+.. mchoice:: slope_line_of_best_fit
 
-(Predicted Median Debt of Graduates) = 0.209 \* (Average Net Tuition) +
-19043
+   Question: Which of the following is the correct interpretation of the
+   slope of the line of best fit?
+
+   (Predicted Median Debt of Graduates) = 0.209 \* (Average Net Tuition) +
+   19043
 
 1. For every dollar that median debt increases by, average net tuition
    increases by .209 dollars.
