@@ -16,12 +16,10 @@ the y-value at the point where the line crosses the y-axis. The
 `slope <#interpreting-slope>`__ gives the steepness of the line, and can
 be positive, negative, or zero.
 
-|pic1||pic2|
+.. image:: figures/negative_slope.png
+  :width: 49 %
 
-.. |pic1| image:: figures/negative_slope.png
-   :width: 45%
-
-.. |pic2| image:: figures/positive_slope.png
-   :width: 45%
+.. image:: figures/positive_slope.png
+  :width: 49 %
 
 Video on slope and intercept
