@@ -9,15 +9,7 @@ Making Predictions with the Regression Line
 {#making-predictions-with-the-regression-line}
 ==============================================
 
-.. raw:: html
-
-   <p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B28.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/average_sat_score_completion_rate.png
 
 Returning to the scatter plot showing average SAT score and completion
 rate, the equation of the regression line is y = 0.0011*x - 0.7116. The
@@ -45,15 +37,7 @@ equation with the number 1200.
 So, University X has a predicted completion rate of 63.86%. The point
 (1200, .6386) is illustrated on the scatter plot below.
 
-.. raw:: html
-
-   <p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B29.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/sat_completion_rate_annotated.png
 
 Question: Use the regression line to estimate the completion rate for a
 school with an average SAT score of 1400.
