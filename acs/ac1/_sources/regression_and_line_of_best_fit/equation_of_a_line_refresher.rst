@@ -17,13 +17,8 @@ the y-value at the point where the line crosses the y-axis. The
 be positive, negative, or zero.
 
 .. image:: figures/negative_slope.png
-   :width: 10%
-
-.. image:: figures/positive_slope.png
-   :width: 10%
-
-.. image:: figures/negative_slope.png
   :width: 49%
 .. image:: figures/positive_slope.png
   :width: 49%
+
 Video on slope and intercept
