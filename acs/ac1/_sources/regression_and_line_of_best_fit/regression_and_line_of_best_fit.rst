@@ -23,8 +23,6 @@ line.
 
 .. image:: figures/average_sat_score_completion_rate.png
 
-|alt_text|
-
 You can also find the slope and intercept of this line using the
 *SLOPE()* and\_ INTERCEPT()\_ functions in Sheets.
 
