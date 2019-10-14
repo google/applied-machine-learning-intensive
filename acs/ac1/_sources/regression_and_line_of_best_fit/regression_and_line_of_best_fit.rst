@@ -21,13 +21,7 @@ the R2 value, (this is the same coefficient of determination as
 described `above <#correlation>`__), and display the equation of the
 line.
 
-.. raw:: html
-
-   <p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B24.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
+.. image:: figures/average_sat_score_completion_rate.png
 
 |alt_text|
 
