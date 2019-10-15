@@ -37,7 +37,7 @@ Consider the histogram of student heights below.
 
 
 
-In this example, we can see that there are two students whose heights are much greater than the rest of the students. As a result, taking the average of the class' height would result in 168.45 centimeters (cm). When using data sets and making decisions based off of them it is crucial to know how using the mean as an important piece of data can actually be a mistake. In this case, think about what could happen if a school decided to use the mean when deciding how high the student desks needed to be. 
+In this example, we can see that there are two students whose heights are much greater than the rest of the students. As a result, taking the mean of the students' heights would result in 168.45 centimeters (cm). When using data to make decisions it is crucial to know how using the mean as an important piece of data can actually be a mistake. In this case, think about what could happen if a school decided to use the mean when deciding how high the student desks needed to be. 
 
 
 .. admonition:: Skew Definition
