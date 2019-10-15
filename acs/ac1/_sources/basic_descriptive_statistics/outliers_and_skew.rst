@@ -58,6 +58,17 @@ variables, there is no notion of “distance” between different categories.)
 Skew in a Histogram
 -------------------
 
+Consider the histogram of average exam scores below.
+
+.. https://screenshot.googleplex.com/CDZJYuvheh1
+
+.. image:: figures/Student_Exam_Scores_skew.png
+   :align: center
+
+
+
+
+
 Consider the histogram of student ages below.
 
 
