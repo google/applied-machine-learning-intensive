@@ -175,7 +175,8 @@ affected the mean for the dice roll). The median is preferred in such contexts.
 
 Further Application
 ------------------
-skew as a function... 
+In the real world skew is present in many different fields, including Economics. For more information about how skew affects financial markets, check out `this article on skewness in investing.`_
 
 .. _You can read more about the income distribution here.: https://dqydj.com/income-percentile-calculator/
 .. _US census report on income from 2003: https://www.census.gov/prod/2003pubs/p70-88.pdf
+... _this article on skewness in investing.: http://www.fusioninvesting.com/2010/09/what-is-skew-and-why-is-it-important/
