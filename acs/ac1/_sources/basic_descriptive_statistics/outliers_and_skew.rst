@@ -179,4 +179,4 @@ In the real world skew is present in many different fields, including Economics.
 
 .. _You can read more about the income distribution here.: https://dqydj.com/income-percentile-calculator/
 .. _US census report on income from 2003: https://www.census.gov/prod/2003pubs/p70-88.pdf
-... _this article on skewness in investing.: http://www.fusioninvesting.com/2010/09/what-is-skew-and-why-is-it-important/
+.. _this article on skewness in investing.: http://www.fusioninvesting.com/2010/09/what-is-skew-and-why-is-it-important/
