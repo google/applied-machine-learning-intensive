@@ -62,7 +62,7 @@ Consider the histogram of average exam scores below.
 
 .. https://screenshot.googleplex.com/CDZJYuvheh1
 
-.. image:: figures/Student_Exam_Scores_skew.png
+.. image:: figures/Average_Student_Exam_Scores_skew.png
    :align: center
 
 
