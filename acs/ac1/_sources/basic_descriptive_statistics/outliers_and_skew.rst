@@ -66,29 +66,14 @@ Consider the histogram of average exam scores below.
    :align: center
 
 
+This is an example of negative skew. If we take the mean, we will see that it is 81. What this tells us is that even though there are a large number of values that are lower than the mean. This large group of values below the mean is called
+a **left tail**, and as such a negative skew is often called a **left skew**. Similarly, a dataset with a
+positive skew looks like a mirror image of the histogram above, with a **right
+tail** and a **right skew**.
 
 
 
-Consider the histogram of student ages below.
-
-
-.. https://screenshot.googleplex.com/CDZJYuvheh1
-
-.. image:: figures/Student_Ages_skew.png
-   :align: center
-
-This is an example of a positive skew. We can take the mean and find that it is 18.9. 
-A majority of the students are the same age as the mean or younger (7 students out of the 9). At the same time
-there are students whose age is much higher.
-
-
-We can see an example of the opposite, called a negative skew when there are a majority of students
-whose ages are older...
-
-
-
-
-Skew in a Histogram
+Example: Positive Skew
 -------------------
 
 Consider the histogram of a variable below.
@@ -100,14 +85,10 @@ Consider the histogram of a variable below.
    :align: center
 
 
-This is an example of a positive skew, since, while most of the data lies in the
-interval between 0 and 1.5, there are values in the dataset that are much higher
-(but none that are below 0). This large group of values above the mean is called
-a **right tail**, and as such a positive skew is often called a **right skew**.
-(An example of a real dataset that might look like the histogram above is
-:ref:`outlined below<outliers_and_skew_income>`.) Similarly, a dataset with a
-negative skew looks like a mirror image of the histogram above, with a **left
-tail** and a **left skew**.
+While most of the data lies in the interval between 0 and 1.5, there are values in the dataset 
+that are much higher (but none that are below 0). Thus, this is an example of a positive skew.
+An example of a real dataset that might look like the histogram above is
+:ref:`outlined below<outliers_and_skew_income>`.
 
 
 .. shortanswer:: variables_with_right_skew
