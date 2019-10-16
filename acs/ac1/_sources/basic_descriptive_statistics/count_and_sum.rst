@@ -22,6 +22,8 @@ dataset.
    The **sum** of a dataset is the addition of all values in the dataset. This
    applies only to quantitative variables.
 
+Why it's useful
+------------------------
 
 The reason that the count is so important is that it can be an indication of how
 useful the dataset is. For example, suppose you’re trying to find the average
