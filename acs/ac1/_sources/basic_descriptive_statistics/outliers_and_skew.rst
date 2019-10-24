@@ -34,6 +34,7 @@ Consider the histogram of student heights below.
 
 .. image:: figures/Student_Heights_outlier.png
    :align: center
+   :alt: a histogram of student heights, Lia and Katrina are the tallest of the 11 students.
 
 
 
@@ -64,6 +65,7 @@ Consider the histogram of average exam scores below.
 
 .. image:: figures/Average_Student_Exam_Scores_skew.png
    :align: center
+   :alt: a histogram of average exam scores with a left tail, as in there are more values to the left (and lower) than the mean. This histogram has negative skew. 
 
 
 This is an example of negative skew. If we take the mean, we will see that it is 81. What this tells us is that even though there are a large number of values that are lower than the mean. This large group of values below the mean is called
@@ -83,6 +85,7 @@ Consider the histogram of a variable below.
 
 .. image:: figures/right_skew_histogram.png
    :align: center
+   :alt: a histogram of a variable with positive skew. It has a right tail which means there are more values on the right side of the mean.
 
 
 While most of the data lies in the interval between 0 and 1.5, there are values in the dataset 
@@ -124,6 +127,7 @@ happens to the mean and median for the dice roll when the 6 is changed to a 60.
 
 .. image:: figures/uneven_dice_mean.png
    :align: center
+   :alt: a screenshot of a table in Sheets. The average dice roll when the 6 value is changed to 60.
 
 
 The mean of the dice roll is now 12.5! Only one value was changed, yet the mean
@@ -134,6 +138,7 @@ changed drastically.
 
 .. image:: figures/uneven_dice_median.png
    :align: center
+   :alt: a screenshot of a table in Sheets. The median of the dice roll when the 6 value is changed to 60. 
 
 
 In contrast, the median does not change at all. The median is considered more
