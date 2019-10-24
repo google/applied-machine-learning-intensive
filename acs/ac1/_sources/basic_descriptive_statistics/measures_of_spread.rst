@@ -270,6 +270,7 @@ Suppose you have this dataset containing the heights of students in a class.
 .. TODO(raskutti): Embed
    https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=1913290661
 
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSwJDi3X7SBfNPnqCle0JeFV5bAoxNvypf82m7mM4ITYF6HZbF4ek_O7Sy5x0YApav_KQxm8vNJf7iu/pubhtml?gid=1913290661&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
 First, use the method of calculating variance (above) to calculate the variance
 and standard deviation of this dataset. Then, you can confirm your answers using
