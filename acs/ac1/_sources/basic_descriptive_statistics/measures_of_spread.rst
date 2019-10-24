@@ -28,6 +28,14 @@ other half are unemployed.
    :align: center
    :alt: A visual for the salaries of those in Wonkytown and Consistentville. 
 
+.. https://docs.google.com/presentation/d/11O5DHFz8OJn2cIiDnSHd0hfAmY1HDaFQKtGBd3HYCmQ/edit?usp=sharing
+
+.. image:: figures/city_salary_visual.png
+   :align: center
+   :alt: A visual for the salaries of those in Wonkytown and Consistentville with example incomes. 
+
+Above is an example dataset for 6 people in each of the towns and their salaries.
+
 .. fillintheblank:: mean_salary_in_consistentville
 
    What is the mean salary in Consistentville? (Give your answer in dollars.)
