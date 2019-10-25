@@ -5,8 +5,8 @@
 
 .. _interpreting_slope:
 
-Interpreting Slope {#interpreting-slope}
-========================================
+Interpreting Slope
+==================
 
 When interpreting the relationship between two variables, one of the key
 concepts is interpreting slope. While the correlation coefficient tells
@@ -99,21 +99,13 @@ variable.
    completion rate? (Specifically, which school will have fewer students
    graduating within 6 years?)
 
--  School A
+   - School A
 
-   +  Correct: Because the direction of the scatter plot
-      is negative, the school with the higher percentage of students
-      with federal loans will have a lower completion rate. So College A
-      will have a lower percentage of students graduating within 6
-      years.
+     + Correct: Because the direction of the scatter plot is negative, the school with the higher percentage of students with federal loans will have a lower completion rate. So College A will have a lower percentage of students graduating within 6 years.
 
--  School B
+   - School B
 
-   -  Incorrect: Try again! Because the direction of the scatter
-      plot is negative, the school with the higher percentage of
-      students with federal loans will have a lower completion rate. So
-      College A will have a lower percentage of students graduating
-      within 6 years.
+     - Incorrect: Try again! Because the direction of the scatter plot is negative, the school with the higher percentage of students with federal loans will have a lower completion rate. So College A will have a lower percentage of students graduating within 6 years.
 
 The slope of the line of best fit this time is negative. The slope of
 this line is negative because the line moves down from left to right,
@@ -163,11 +155,18 @@ contribute to increased graduation rates.
    (Predicted Median Debt of Graduates) = 0.209 \* (Average Net Tuition) +
    19043
 
-1. For every dollar that median debt increases by, average net tuition
-   increases by .209 dollars.
-2. For every dollar that average net tuition increases by, median debt
-   increases by 20.9%.
-3. For every dollar that median debt increases by, average net tuition
-   increases by 20.9%.
-4. For every dollar that average net tuition increases by, median debt
-   increases by .209 dollars.
+   - For every dollar that median debt increases by, average net tuition increases by .209 dollars.
+
+     - Incorrect
+
+   - For every dollar that average net tuition increases by, median debt increases by 20.9%.
+
+     + Correct
+
+   - For every dollar that median debt increases by, average net tuition increases by 20.9%.
+
+     - Incorrect
+
+   - For every dollar that average net tuition increases by, median debt increases by .209 dollars.
+
+     + Correct

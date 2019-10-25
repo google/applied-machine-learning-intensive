@@ -5,8 +5,8 @@
 
 .. _nonlinear_regression:
 
-Non-Linear Regression {#non-linear-regression}
-==============================================
+Non-Linear Regression
+=====================
 
 Up to this point you’ve only fit straight lines to data, but Sheets can
 fit other trendlines to data as well, including exponential, polynomial,
@@ -20,39 +20,13 @@ dramatically between 2004 and 2010. In this case, the linear trendline
 doesn’t fit the exponential growth seen in number of users. An
 exponential curve fits this example much better.
 
-.. raw:: html
-
-   <p id="gdcalert45" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B39.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert46">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
-
-.. raw:: html
-
-   <p id="gdcalert46" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B40.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert47">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/trendline_type.png
 
 You should be careful when choosing trendline type. For example, a
 polynomial curve can be fit to the latitude and January temperature
 data.
 
-.. raw:: html
-
-   <p id="gdcalert47" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B41.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert48">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/polynomial_curve.png
 
 But, in this case, switching to a polynomial curve doesn’t help explain
 the relationship between latitude and January temperature because you
@@ -68,40 +42,17 @@ other data. For example, consider a set of temperature and latitude data
 with only five cities. When looking at only these five data points, the
 trend seems curved, and this fourth degree polynomial curve fits nicely!
 
-.. raw:: html
-
-   <p id="gdcalert48" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B42.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert49">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/overfitting_graph.png
 
 But as more cities are added in, it becomes apparent that this trendline
 doesn’t fit new cities at all. The polynomial curve was overfit to the
 data, and a linear regression line would have predicted the other cities
 better.
 
-.. raw:: html
-
-   <p id="gdcalert49" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B43.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert50">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
-
-.. raw:: html
-
-   <p id="gdcalert50" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B44.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert51">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/polynomial_overfit.png
+  :width: 49%
+.. image:: figures/polynomial_overfit_linear_regression.png
+  :width: 49%
 
 The complete set of July temperatures, in red, has a strong, linear
 trend. The dataset with only five cities appeared to have a curve

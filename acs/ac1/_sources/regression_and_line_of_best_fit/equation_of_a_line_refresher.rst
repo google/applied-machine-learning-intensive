@@ -5,8 +5,8 @@
 
 .. _equation_of_a_line_refresher:
 
-Equation of a Line (Refresher) {#equation-of-a-line-refresher}
-==============================================================
+Equation of a Line (Refresher)
+==============================
 
 .. image:: figures/equation_of_a_line.png
 

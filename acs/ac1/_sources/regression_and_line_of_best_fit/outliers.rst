@@ -5,23 +5,15 @@
 
 .. _outliers:
 
-Outliers {#outliers}
-====================
+Outliers
+========
 
 As you saw in Module A, some statistics are very sensitive to extreme
 values (LINK TO OUTLIERS SECTION). This is also true for lines of best
 fit. You can see this very clearly by returning to the scatter plot of
 mean January temperature and latitude for US cities.
 
-.. raw:: html
-
-   <p id="gdcalert41" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B35.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert42">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/mean_jan_temp.png
 
 Question: Fill in the blank by interpreting the slope: When the latitude
 increases by 1, the predicted January temperature \__.
@@ -38,15 +30,7 @@ Juneau, Alaska, where the average January temperature is 31 degrees. For
 the sake of fun, also suppose there was a data entry error and someone
 entered 331, rather than 31.
 
-.. raw:: html
-
-   <p id="gdcalert42" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B36.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert43">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/outlier_jan_temp.png
 
 One reason that it’s a really good idea to start with a scatter plot
 when analyzing quantitative data is that it can help identify outliers.
@@ -56,15 +40,7 @@ be cities that are so unusual and so very far outside the line of best
 fit. Unusual points like this should be investigated and checked if
 possible.
 
-.. raw:: html
-
-   <p id="gdcalert43" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B37.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert44">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/outlier_jan_temp_line.png
 
 When you calculate the line of best fit and include the outlier of
 Juneau, the line of best fit is way off. The slope is now positive and
@@ -72,15 +48,7 @@ the correlation coefficient has gone from -0.85 to 0.43! Correlation
 coefficients and lines of best fit are very sensitive to outliers. Now,
 fix the Juneau data point.
 
-.. raw:: html
-
-   <p id="gdcalert44" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B38.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert45">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/fix_juneau_data_point.png
 
 Question: If Juneau, Portland, and Seattle are excluded (all cities with
 fairly high January temperatures in the Northern region, indicated in

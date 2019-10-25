@@ -33,6 +33,8 @@ Contents
     sheets_basics/toctree.rst
     basic_descriptive_statistics/toctree.rst
     filtering_and_grouping/toctree.rst
+    regression_and_line_of_best_fit/toctree.rst
+    manipulating_data/toctree.rst
     sql/toctree.rst
 
 .. toctree::
