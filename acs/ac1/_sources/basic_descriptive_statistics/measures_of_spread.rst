@@ -12,7 +12,7 @@ Measures of Spread
 Measures of center are very useful for giving you a “best guess” at a variable.
 But how useful are those guesses?
 
-In this section, we will learn about **standard deviation** and **variance**. Both of these measures of spread are useful to know since they lead to a better understanding about the accuracy of other statistics. We see this demonstrated in the example below.
+In this section, you will learn about **standard deviation** and **variance**. Both of these measures of spread are useful to know since they lead to a better understanding about the accuracy of other statistics. This is demonstrated in the example below.
 
 Trying to guess the value of a variable that doesn’t change much is a lot easier
 than trying to guess the value of a variable that changes drastically. To take
