@@ -47,8 +47,8 @@ Question: What type of variable is Date?
    Answer - Quantitative
 
 
-       Link back to discussion in module A. Because Date is being graphed on the
-x-axis, it is being treated as a quantity, not a category.
+       Link back to discussion in module A. Because Date is being graphed on the x-axis, it is being treated as a quantity, not a category.
+
 
 .. image:: figures/participant_pushup_data.png
   :width: 32%

@@ -25,8 +25,8 @@ to see the distribution of each variable alone, but would tell you
 nothing about the overall relationship between latitude and temperature.
 
 .. shortanswer:: scatter_intro_q1
-   How would you investigate this relationship, with the tools we
-   have?
+
+   How would you investigate this relationship, with the tools we have?
 
 One method could be to group the cities based on their latitude, and
 then compare the mean temperature for each group. Comparing the means
@@ -48,7 +48,7 @@ to group these, cities south of 35 degrees latitude will be labelled
 choice is somewhat arbitrary, but it breaks the cities into three fairly
 even groups. Add a new column with these labels based on a formula.
 
-.. image:: scatter1.png
+.. image:: figures/scatter1.png
 
 Question: Predict which region will have the highest January
 temperatures.
@@ -60,31 +60,34 @@ find the mean temperature for a given month and region.
 
 *NOTE: Link to Module A grouping.*
 
-.. image:: scatter2.png
+.. image:: figures/scatter2.png
 
 .. shortanswer:: scatter_intro_q2
-   What was the mean January temperature for cities in the
-   Central region?
+
+   What was the mean January temperature for cities in the Central region?
 
 .. shortanswer:: scatter_intro_q3
-   What was the mean July temperature for cities in the Northern
-   region?
+
+   What was the mean July temperature for cities in the Northern region?
 
 .. shortanswer:: scatter_intro_q4
-   Which region has the largest difference between its January
-   mean temperature and its July mean temperature?
+
+   Which region has the largest difference between its January mean temperature
+   and its July mean temperature?
 
 Functions like AVERAGEIF are a great way to calculate the mean for a
 specific region and/or month. But what if you want to see, in one
 visualization, the mean temperature for January and July across all
 regions? To do this, you can use a bar chart.
 
-.. image:: scatter3.png
+.. image:: figures/scatter3.png
 
 .. shortanswer:: scatter_intro_q5
+
    Which month has a bigger regional difference in temperatures?
 
 .. shortanswer:: scatter_intro_q6
+
    Dayton, Ohio and Memphis, Tennessee are both in the Central
    region, but Dayton has a latitude of 39.54 degrees, while Memphis has a
    latitude of 35.07 degrees. These cities were put in one category, even
