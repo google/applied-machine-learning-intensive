@@ -267,9 +267,6 @@ Example: Student Heights
 
 Suppose you have this dataset containing the heights of students in a class.
 
-.. TODO(raskutti): Embed
-   https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=1913290661
-
 .. https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=1702521484
 
 .. image:: figures/screenshot_studentheights_spread.png
