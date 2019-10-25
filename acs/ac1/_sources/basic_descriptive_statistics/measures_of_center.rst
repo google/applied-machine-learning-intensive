@@ -147,8 +147,8 @@ mean, you can start to build some intuition as to what the difference between
 these measures of center may be. Say someone asked you for your advice about
 where they wanted to move after graduation and that weather was a major concern
 for them. You want to give them a summary statistic to accurately summarize the
-data. Would the mean or median make more sense? You will walk through an example
-to find out.
+data. Would the mean or median make more sense? Walking through the next example
+can help you figure that out.
 
 .. _measures_of_center_weather:
 
