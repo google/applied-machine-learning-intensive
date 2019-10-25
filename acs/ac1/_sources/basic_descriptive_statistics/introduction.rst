@@ -15,13 +15,13 @@ they make claims sound more credible. Consider the following two sentences.
 2. “Adult Americans are spending five hours and four minutes on average watching TV.” 
 
 Although both sentences make the same point, the statistic used in sentence 2
-makes it a more powerful statement. That statistic happens to be true (source), 
+makes it a more powerful statement. That statistic happens to be true, 
 but the media and other sources will often misinterpret data to support the claim
-they’re trying to make. Since the claims they make often impact the decisions we
-make, it’s important for us to be able to critically assess those statistics. And
-on top of that, being able to perform statistical analyses gives us the powerful 
-ability to create data-driven statistics that support our own claims or drive our
-own decision-making in any field of work or study!
+they’re trying to make. Since the claims they make often impact the decisions you
+make, it’s important for you to be able to critically assess those statistics. And
+on top of that, being able to perform statistical analyses gives you the powerful 
+ability to create data-driven statistics that support your own claims or drive your
+own decision-making in any field of work or study.
 
 Here’s just a few examples of how a variety of fields use statistics:
 
