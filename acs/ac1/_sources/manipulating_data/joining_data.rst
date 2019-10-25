@@ -26,25 +26,7 @@ calculate the total cost for this grocery trip, you need to join the
 cost information to the grocery list information. While you could copy
 the cost of each item over, that would be both tedious and error prone.
 
-.. raw:: html
-
-   <p id="gdcalert65" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B59.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert66">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
-
-.. raw:: html
-
-   <p id="gdcalert66" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B60.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert67">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/grocery_image.png
 
 Thankfully, there is a function in Sheets that can do this work
 automatically.
@@ -74,15 +56,7 @@ search_key, range, index, and is_sorted.
    must be False. The list of items in the Prices sheet is not in order,
    so is_sorted should be False in this example.
 
-.. raw:: html
-
-   <p id="gdcalert67" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B61.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert68">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/vlookup.png
 
 In this example, \_VLOOKUP \_finds that the price of an apple is $0.79.
 Try copying the formula down to the cells C3:C8.
@@ -143,15 +117,7 @@ states heart-healthier than others?
 To begin to answer these questions, first make a pivot table and a bar
 chart to tell you which states have the most deaths.
 
-.. raw:: html
-
-   <p id="gdcalert68" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B62.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert69">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/sum_death_states.png
 
 The bar chart above shows the number of deaths for each state. Not every
 state name is labelled, but the four tallest bars correspond to
@@ -175,25 +141,7 @@ restricting to the year 2010.
 
 Video of pivot table, deaths by state.
 
-.. raw:: html
-
-   <p id="gdcalert69" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B63.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert70">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
-
-.. raw:: html
-
-   <p id="gdcalert70" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B64.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert71">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/pivot_deaths.png
 
 Add a column, using *VLOOKUP*, to display the state population in column
 C next to the death total for each state. The search_key will be the
@@ -201,30 +149,14 @@ state name, the range will be the table of state populations, the index
 will be 2 because the 2010 populations are in the second column, and
 is_sorted will be True as the state names are in alphabetical order.
 
-.. raw:: html
-
-   <p id="gdcalert71" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B65.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert72">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/vlookup_death.png
 
 After filling in the column of state populations, add a column for the
 death rate by dividing the total number of deaths by the state
 population. (It makes it more understandable if you format this column
 as a percentage.)
 
-.. raw:: html
-
-   <p id="gdcalert72" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B66.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert73">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/death_rate_column.png
 
 Video of adding columns for state population and death rate.
 
@@ -244,15 +176,7 @@ state age using *VLOOKUP*.
 Question: What is the correlation between the death rate and the median
 age?
 
-.. raw:: html
-
-   <p id="gdcalert73" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B67.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert74">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/median_age_death_rate.png
 
 The scatter plot of death rate and median age shows that states with
 younger populations *do* tend to have a lower death rate than states
@@ -294,15 +218,7 @@ each column of state populations to get the population for each year.)
 
 Video of adding US population by year.
 
-.. raw:: html
-
-   <p id="gdcalert74" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B68.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert75">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/us_population_by_year.png
 
 To graph the percentage for each cause of death, construct a table below
 (or in another sheet) with the same row and column labels. The value of
@@ -311,15 +227,7 @@ year divided by the population for that year.
 
 Video of constructing a table of death %.
 
-.. raw:: html
-
-   <p id="gdcalert75" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B69.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert76">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/death_percentage.png
 
 Select the data in this table, A18:H28, and insert a line graph showing
 how these percentages have changed over time. The graph below has been
@@ -327,15 +235,7 @@ restricted to cancer, Alzheimer’s disease and unintentional injury for
 clarity. The line types have also been modified to be dashed in
 different ways.
 
-.. raw:: html
-
-   <p id="gdcalert76" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B70.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert77">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/death_percentage_time.png
 
 Though the cancer rate is consistent over time, the rates for
 Alzheimer’s disease and unintentional injury have increased between 2010

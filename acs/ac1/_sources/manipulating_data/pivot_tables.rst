@@ -5,8 +5,8 @@
 
 .. _pivot_tables:
 
-Pivot Tables [READY FOR REVIEW] {#pivot-tables-[ready-for-review]}
-==================================================================
+Pivot Tables
+============
 
 Tables that show the average or total for different groups are often
 very helpful. Suppose some coworkers at a local company aren’t sure if
@@ -18,15 +18,7 @@ often they opened or closed the business could be used to see if there
 were big differences in assignments, and decide if those assignments
 were fair.
 
-.. raw:: html
-
-   <p id="gdcalert55" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B49.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert56">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/employee_table.png
 
 You could use AVERAGEIF, SUMIF and COUNTIF to make the table, but sheets
 has a built in tool called a pivot table that automates this process
@@ -64,15 +56,7 @@ adding rows, columns, values, and filters.
    pivot table would have the total hours, opening and closing shift for
    only those three days.
 
-.. raw:: html
-
-   <p id="gdcalert56" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B50.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert57">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/adding_a_variable_pivot.png
 
 Question: Who was assigned the most opening shifts?
 
@@ -101,15 +85,7 @@ in a pivot table.
 
 Video - getting subset from pivot table
 
-.. raw:: html
-
-   <p id="gdcalert57" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B51.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert58">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/jan_meyers.png
 
 Example: National Center for Health Statistics
 ----------------------------------------------
@@ -124,15 +100,7 @@ beginning in
 1999.
 <https://drive.google.com/open?id=1-_73K_54Q7Sil-ErcRGRz2Y7GJ8Aimrcd26xqY44s4Q>`__
 
-.. raw:: html
-
-   <p id="gdcalert58" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B52.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert59">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/leading_cause_of_death.png
 
 Question: How many people died from cancer in Nevada in 2007?
 
@@ -154,15 +122,7 @@ so you can see the total number of deaths.
 
 Video of constructing this pivot table and adding percentages.
 
-.. raw:: html
-
-   <p id="gdcalert59" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B53.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert60">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/death_sums.png
 
 The cause of death responsible for the most deaths in the USA is heart
 disease. But what percentage of deaths is this? To calculate the
@@ -203,15 +163,7 @@ table.
 
 Video of bar chart from pivot table.
 
-.. raw:: html
-
-   <p id="gdcalert60" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B54.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert61">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/death_bar_chart.png
 
 This chart makes it visually clear that heart disease and cancer are by
 a substantial amount the highest causes of death.
@@ -223,15 +175,7 @@ percentage column, or construct a new pivot table.)
 
 Video of two dim pivot table.
 
-.. raw:: html
-
-   <p id="gdcalert61" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B55.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert62">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/two_dim_pivot_table.png
 
 This table is too large to be interpretable. Visualizing this data in a
 chart is much more helpful. Select the range A2:S12 (the pivot table
@@ -243,15 +187,7 @@ one or more quantitative variables change over time. \**To construct a
 line chart your dataset must have a time variable. (In this dataset, it
 is the “Year” column.)
 
-.. raw:: html
-
-   <p id="gdcalert62" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B56.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert63">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/line_chart.png
 
 This graph is certainly more interpretable than the table, but it’s
 still difficult to distinguish the lines towards the bottom. Another
@@ -293,22 +229,8 @@ for the entire country.
 
 Video of adding Alzheimer’s and CA filter to a pivot table.
 
-.. raw:: html
+.. image:: figures/alzheimers_california.png
+   :width: 49%
 
-   <p id="gdcalert63" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B57.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert64">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
-
-.. raw:: html
-
-   <p id="gdcalert64" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B58.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert65">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+.. image:: figures/alzheimers.png
+   :width: 49% 
