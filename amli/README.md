@@ -25,3 +25,28 @@ content. To run the tests use the following commands:
   export ENV_DIR=$HOME/amli
   PYTHONPATH="amli/lib" python3 amli_tests.py
 ```
+
+## Content Development
+
+*Note that all time estimates assume 45 hours of in-class time per week*
+
+AMLI is constructed of "units" of learning. These units are topical and should
+take anywhere from 15 minutes to 1 day of classroom time to complete. The units
+are grouped together into "tracks". Each track ends in a capstone project that
+reinforces the material learned throughout the units of the track.
+
+A unit can consist of any combination of slides, colabs, and activities. The
+unit should contain a facilitator guide which helps the person or persons
+conductng the class understand how to present the material and how to handle
+commonly encoutered challenges.
+
+### Slides
+
+### Colabs
+
+#### Datasets
+
+### Facilitator Guides
+
+### Activities
+
