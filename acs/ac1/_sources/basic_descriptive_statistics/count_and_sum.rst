@@ -49,14 +49,6 @@ on this data to get the total amount of money you made that day in sales!
 You can also use *count* to get the number of sales (which is basically the 
 number of customers you got that day), to see if your business is doing well.
 
-*Don’t forget to take breaks while studying! I personally like coffee but tea 
-breaks are also great!*
-
-.. image:: figures/coffee_break.png
-   :scale: 50
-   :align: center
-   :alt: Character with a cup of coffee
-
 Calculating these statistics in Sheets is fairly straightforward. For these and
 other statistics, you’ll need to know **cell range notation**. To refer to a
 range of cells in Sheets, type the first cell in the range and the last cell in
