@@ -1,6 +1,8 @@
 - data
   - analysis
   - processing
+    - normalization
+    - standardization
     - feature engineering
       - singular value decomposition
       - principal component analysis
@@ -8,8 +10,14 @@
 - linear algebra
 - toolkits
   - scikit-learn
+    - random forest classifier
+    - random forest regressor
   - tensorflow
 - models
+  - tuning
+  - types
+    - classification
+    - regression
   - measurement
     - regression
       - mean absolute error
@@ -20,12 +28,21 @@
       - f1
       - precision
       - recall
+      - softmax
+      - homogeneity
+  - techniques
+    - ensemble learning
+    - bootstrapping
+    - bagging
+    - boosting
   - algorithms
     - linear regression
     - polynomial regression
     - logistic regression
     - support vector machines
     - decision trees
+      - gini
+      - entrophy
     - random forests
     - k-nearest neighbors
     - bayesian
@@ -55,6 +72,8 @@
     - filter
     - inner-join
     - outer-join
+  - algorithms
+    - binary trees
 - statistics
   - distributions
     - normal
