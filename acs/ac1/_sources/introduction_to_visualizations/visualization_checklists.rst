@@ -10,10 +10,13 @@ Visualization Checklists
 What should I look for when reading a visualization?
 ----------------------------------------------------
 
-Being able to interpret visualizations is a fundamental skill in data science.
-Like any form of media, a visualization has an author. As such, it has potential
-biases, and can be interpreted in different ways. Here is a checklist of
-important things to consider when reading a visualization.
+When you find a visualization online, it is important to ensure that you
+understand where the data is coming from and how this may affect how it is
+presented. Being able to interpret visualizations is a fundamental skill in data
+science. Like any form of media, a visualization has an author. As such, it has
+potential biases, and can be interpreted in different ways.
+
+Here is a checklist of important things to consider when reading a visualization.
 
 1.  Who is the **author** of the visualization?
 
@@ -65,11 +68,17 @@ important things to consider when reading a visualization.
         it a pie chart?
     -   What does this type of visualization do to accentuate their point?
 
+Find an example of a data visualization online. Follow the checklist above with
+your chosen visualization.
 
 .. _creating_visualization_checklist:
 
 What should I keep in mind when creating a visualization?
 ---------------------------------------------------------
+
+Now that you have been able to examine some existing visualizations, it's time
+for you to make your own! There are several choices for you to consider when
+making visualizations that are accessible for viewers.
 
 1.  What **point** do you intend to make with the visualization?
 
