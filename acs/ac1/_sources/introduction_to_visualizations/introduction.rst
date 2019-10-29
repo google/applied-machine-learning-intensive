@@ -19,3 +19,7 @@ to access, make articles easy to read, and make findings easy to interpret.
 -   Maps
 -   Pie charts
 -   Infographics
+
+
+In this chapter, you will learn more about when to use different visualizations and how to ensure that they effectively communicate your data to its audience. To start, take a look at the visualizations on this page. While reviewing them, keep in mind what you like about them and what elements on them guide your understanding of their meaning.
+
