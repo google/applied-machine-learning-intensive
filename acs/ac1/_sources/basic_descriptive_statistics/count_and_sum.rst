@@ -22,15 +22,32 @@ dataset.
    The **sum** of a dataset is the addition of all values in the dataset. This
    applies only to quantitative variables.
 
+Applications and Examples
+--------------------------
 
 The reason that the count is so important is that it can be an indication of how
 useful the dataset is. For example, suppose you’re trying to find the average
-age of students at your college of 800 people, so you conduct a survey
+height of students at your college of 800 people, so you conduct a survey
 collecting students’ heights. If your survey contains only 2 heights, then using
 these results to calculate an average won’t be very useful, since this summary
 statistic is only representative of 2 students. If, however, your survey
 contains 600 heights, calculating an average from these results will be more
 reliable, since this statistic represents 600 of the 800 students.
+
+Another place where you could use count is when planning a homework party.
+You are throwing a homework party and asked your friends to RSVP if they are
+attending and submit their food preferences through a survey. Knowing how many
+people will be attending would be very helpful to you when you go grocery
+shopping for snacks! In this case, taking the *count* of the spreadsheet created
+from the survey would give you this useful information.
+
+As for sum, let's consider a scenario in which you are the owner of a small,
+local coffee shop. As a small business owner, daily sales are really important
+to you so you know how your business is doing, and if there has been growth!
+You have a spreadsheet of all of the sales for a specific day. You can use *sum*
+on this data to get the total amount of money you made that day in sales!
+You can also use *count* to get the number of sales (which is basically the
+number of customers you got that day), to see if your business is doing well.
 
 Calculating these statistics in Sheets is fairly straightforward. For these and
 other statistics, you’ll need to know **cell range notation**. To refer to a
@@ -43,6 +60,7 @@ the range, separated by a colon. For example:
 
 .. image:: figures/cell_A1.png
    :align: center
+   :alt: Spreadsheet with cell A1 (column A, row 1) highlighted
 
 
 -   “A1:A6” means all cells in the A column from rows 1 through 6
@@ -51,6 +69,7 @@ the range, separated by a colon. For example:
 
 .. image:: figures/cells_A1_A6.png
    :align: center
+   :alt: Spreadsheet with cells in the A column, rows 1 through 6 highlighted
 
 
 -   “A1:D1” means all cells in the 1 row from columns A through D
@@ -59,6 +78,7 @@ the range, separated by a colon. For example:
 
 .. image:: figures/cells_A1_D1.png
    :align: center
+   :alt: Spreadsheet with cells in row 1, columns A through D highlighted
 
 
 -   “A1:D6” means all cells in rows 1 through 6 and columns A through D
@@ -67,6 +87,8 @@ the range, separated by a colon. For example:
 
 .. image:: figures/cells_A1_D6.png
    :align: center
+   :alt: Spreadsheet with cells in rows 1 through 6 and columns A through D
+         highlighted
 
 
 .. admonition:: Count and Sum Sheets Syntax
@@ -134,5 +156,10 @@ enough for Spotify Premium.
      :IF\(B1>=15, TRUE, FALSE\): Incorrect: Formulas must start with ``=``.
      :x: Incorrect
 
+Overview
+========
+Count and sum are just two of many useful basic descriptive statistics, and
+could be helpful in understanding a dataset. Use these two statistics when
+you want to get a general idea of your dataset quickly!
 
 .. _Spotify Premium on a family plan: https://www.spotify.com/us/family/
