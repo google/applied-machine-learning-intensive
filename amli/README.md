@@ -43,6 +43,49 @@ commonly encoutered challenges.
 
 ### Slides
 
+Slides are written in a very specific subset of markdown specified in the
+[md2googleslides](https://github.com/gsuitedevs/md2googleslides) project. The
+slides should be stored in the related unit folder and should be named
+`slides.md`.
+
+All slides should consist of a content section that will be shown in the
+presented slide and a speaker notes section. The speaker notes should contain
+information that would help the instructor conduct the class. Expect that the
+slides will be shared with the students.
+
+If a slide contains images there should be an 'Image Details' section in the
+speaker notes that references the original image and the image license.
+
+Every slide should also have a 'Concepts' section that lists the concepts
+mentioned in the slides. These concepts should map to concepts found in AMLI's
+`concepts.yaml` file.
+
+Here is an example slide:
+
+```
+  # Decision Trees
+
+  ![](res/tree.png)
+
+  <!--
+  Before we talk about Random Forests we should take some time to review what we have already learned
+  about Decision Trees.
+
+  Image Details:
+  * [tree.png](https://pixabay.com/vectors/tree-silhouette-winter-plant-3979965/): Pixabay License
+
+  Concepts:
+  * models:decision trees
+```
+
+Before submitting slides, be sure to run the `md2gslides` utility found at
+[md2googleslides](https://github.com/gsuitedevs/md2googleslides) and make sure
+that the slides render correctly.
+
+```
+  $HOME/node_modules/md2gslides/bin/md2gslides.js --use-fileio slides.md
+```
+
 ### Colabs
 
 #### Datasets
