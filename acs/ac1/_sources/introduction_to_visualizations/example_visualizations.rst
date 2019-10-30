@@ -7,11 +7,11 @@
 Example Visualizations
 ======================
 
-“The five types of Nicolas Cage movies”
+“Hollywood's Gender Imbalance”
 ---------------------------------------
 
-Take a look at the visualization titled “The five types of Nicolas Cage movies”,
-which appears in `this article of the same name, authored by statistics-based
+Take a look at the visualization titled “Hollywood's Gender Imbalance”,
+which appears in `this article, authored by statistics-based
 media site FiveThirtyEight`_. Ask yourself the following questions.
 
 -   What do you think the key point of this visualization is?
@@ -44,5 +44,5 @@ at any of the maps.
    How do you think researchers got statistics on how different groups voted?
 
 
-.. _this article of the same name, authored by statistics-based media site FiveThirtyEight: https://fivethirtyeight.com/features/the-five-types-of-nicolas-cage-movies/
+.. _this article, authored by statistics-based media site FiveThirtyEight: https://projects.fivethirtyeight.com/next-bechdel/
 .. _what if only certain subsets of US citizens voted?: https://fivethirtyeight.com/features/what-if-only-men-voted-only-women-only-nonwhite-voters/
