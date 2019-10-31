@@ -1,10 +1,10 @@
-"""Tests for amli.colab."""
+"""Tests for amli.lib.colab."""
 
 import copy
 import os
 from absl import flags
 import nbformat
-from amli.colab import Colab
+from amli.lib.colab import Colab
 from absl.testing import absltest
 
 FLAGS = flags.FLAGS
@@ -28,7 +28,7 @@ class ColabTest(absltest.TestCase):
   def setUpClass(cls):
     super(ColabTest, cls).setUpClass()
     colab_path = os.path.join(FLAGS.test_srcdir,
-                              'amli/colab.ipynb')
+                              'amli/lib/colab.ipynb')
     cls.notebook = nbformat.read(colab_path, as_version=4)
 
   def __make_assertions(
@@ -96,7 +96,7 @@ class ColabTest(absltest.TestCase):
 
   def test_load_from_local_file(self):
     colab_path = os.path.join(FLAGS.test_srcdir,
-                              'amli/colab.ipynb')
+                              'amli/lib/colab.ipynb')
     lab = Colab.from_local_file(colab_path)
     self.__make_assertions(lab)
 
