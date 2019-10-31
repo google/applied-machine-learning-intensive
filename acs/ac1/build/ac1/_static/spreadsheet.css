@@ -1,0 +1,6 @@
+div.runestone .jexcel_container {
+    max-height: 550px;
+    overflow: scroll;
+    max-width: 800px;
+    overflow: scroll;
+}

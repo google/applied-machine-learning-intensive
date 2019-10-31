@@ -1,0 +1,63 @@
+.clickable {
+    cursor: pointer;
+}
+
+.clickable-clicked {
+    box-shadow: 0px 0px 2px 2px rgba(0,100,0,0.75);
+}
+
+span.clickable-clicked {
+    background-color: yellow;
+    box-shadow: initial;
+}
+
+.clickable-clicked td {
+    background-color: #dad6c1;
+    box-shadow: initial;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th.clickable, td.clickable {
+    border: 1px solid black;
+}
+
+td.clickable-clicked{
+    background-color: #dad6c1;
+    box-shadow: initial;
+}
+
+td img {
+    margin: 5px;
+}
+
+.clickable-clicked th {
+    background-color: #dad6c1;
+    box-shadow: initial;
+}
+
+th.clickable-clicked{
+    background-color: #dad6c1;
+    box-shadow: initial;
+}
+
+.clickable-incorrect {
+    border: 1px solid red !important;
+    background-color: #f2dede !important;
+}
+
+.clickable-incorrect th {
+    border: 1px solid red !important;
+    background-color: #f2dede !important;
+}
+
+.clickable-incorrect td {
+    border: 1px solid red !important;
+    background-color: #f2dede !important;
+}
+
+img.clickable-incorrect {
+    box-shadow: 0px 0px 2px 2px rgba(100,0,0,0.75);
+}

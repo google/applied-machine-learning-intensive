@@ -1,0 +1,39 @@
+/* .. highlight:: CSS
+
+   ********************************************
+   CodeChat.css - Style sheet for CodeChat docs
+   ********************************************
+   Stylesheet for use with CodeChat's extensions to Docutils.
+
+   The overall goal is to allow comments (everything but ``<pre>`` tags) to
+   appear with normal (double) spacing, while comments and code are single
+   spaced.
+
+   :Author: Bryan A. Jones
+   :Contact: bjones AT ece DOT msstate DOT edu
+   :Copyright: This stylesheet has been placed in the public domain.
+
+   Implementation
+   ==============
+   This will cause an error if the html4css1 style sheet is embedded instead of
+   linked, though the page still displays without problems. However, omitting
+   it will cause the linked stylesheet case to fail, so leave this in.
+ */
+@import url(html4css1.css);
+
+/* Remove all top and bottom space around ``<pre>``, making it single-spaced.
+   Also, remove the border so that code and comments mix more naturally.
+ */
+.fenced-code pre, div.fenced-code div.highlight {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    border: none;
+    -webkit-box-shadow: none;
+}
+
+/*
+

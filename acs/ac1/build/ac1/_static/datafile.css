@@ -1,0 +1,32 @@
+.datafiletextfield {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.datafile_caption {
+    margin-bottom: -1px; /* to collapse border w/ below w/o needing border-bottom: none */
+    margin-left: 1em;
+    display: inline-block;
+    padding: 0 0.2em;
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 0 0;
+    font-style: italic;
+    background: white;
+}
+.datafile_caption code {
+    background: none;
+    border: none;
+}
+.datafile pre {
+    /* for ease of setting height based on #rows */
+    line-height: 1.5em;
+    max-width: 100%;
+    overflow: auto;
+    white-space: pre;
+    height: 30em;
+}
+.datafile_hidden {
+    display: none;
+}
+

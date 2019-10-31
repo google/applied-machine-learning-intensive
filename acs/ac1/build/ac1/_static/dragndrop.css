@@ -1,0 +1,70 @@
+.rsdraggable {
+    margin-left: 2%;
+    margin-top: 5px;
+    display:inline;
+    float:left;
+	text-align: left;
+	vertical-align: top;
+    background-color: #efefff;
+    font-family: monospace;
+    font-size: 120%;
+    padding-bottom: 10px;
+    min-width: 48%;
+    max-width: 48%;
+    border: 1px solid #efefff;
+    box-sizing: border-box;
+}
+.drag-button {
+    display: inline-block;
+}
+.drag-reset {
+    background-color: #474949;
+    color: white;
+}
+.drag-reset:hover {
+    background-color: black;
+    color: white;
+}
+.drop-incorrect {
+    border: 1px solid red !important;
+    background-color: #f2dede !important;
+}
+.drag-reset:enabled {
+    background-color: #474949;
+    color: white;
+}
+.draggable-drag {
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius: 10px;
+    display: block;
+    background-color:#EFEFEF;
+    border:1px solid lightgray;
+    padding:10px;
+    margin-top: 5px;
+    cursor: move;
+}
+
+.draggable-feedback {
+    text-align: left !important;
+    clear: both;
+}
+
+.draggable-drop {
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius: 10px;
+    display: block;
+    background-color:#DDDDDD;
+    border:1px solid lightgray;
+    padding:10px;
+    margin-top: 5px;
+}
+.draggable-container {
+    text-align:center;
+}
+
+.possibleDrop {
+    border-color: #000000;
+    background-color: #CCCCCC;
+}

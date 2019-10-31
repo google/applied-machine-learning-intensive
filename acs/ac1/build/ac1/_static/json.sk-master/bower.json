@@ -1,0 +1,27 @@
+{
+  "name": "json.sk",
+  "version": "0.0.0",
+  "homepage": "https://github.com/trinketapp/json.sk",
+  "authors": [
+    "Brian Marks <brianpmarks@gmail.com>"
+  ],
+  "description": "JSON module for Skulpt.",
+  "main": "__init__.js",
+  "dependencies": {
+    "skulpt": "master"
+  },
+  "keywords": [
+    "skulpt",
+    "python",
+    "json",
+    "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

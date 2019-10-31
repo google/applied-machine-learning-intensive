@@ -1,0 +1,146 @@
+.matrixeq_container {
+  padding: 6px 6px 6px 6px;
+  margin: 0px 0px 6px 0px;
+}
+
+span.matrix_table {
+  display: inline-table;
+  background-color: inherit;
+  border-width: 2px 2px;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+  padding: 0px 1px;
+  margin: 0px 0px 4px 0px;
+  overflow: visible;
+}
+
+span.matrix_column {
+  display: inline-table;
+  background-color: inherit;
+  padding: 2px 8px 2px 8px;
+  margin: 0px 1px;
+  border-width: 0px 0px 0px 0px;
+  font-family: monospace;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+span.matrix_column div {
+  display: block;
+  margin: 1px;
+  padding: 2px;
+  background-color: inherit;
+}
+
+span.matrix_table .matrix_column {
+  border-style: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+span.matrix_table:before {
+  content: " ";
+  background-color: inherit;
+  width: 85%;
+  text-align: center;
+  height: 2px;
+  position: relative;
+  top: -2px;
+  z-index: 100;
+  display: block;
+  margin: 0px auto;
+}
+
+span.matrix_table:after {
+  content: " ";
+  background-color: inherit;
+  width: 85%;
+  text-align: center;
+  height: 2px;
+  position: relative;
+  top: 2px;
+  z-index: 100;
+  display: block;
+  margin: 0px auto;
+}
+
+span.matrix_column:before {
+  content: " ";
+  width: 85%;
+  height: 2px;
+  position: relative;
+  top: -2px;
+  z-index: 100;
+  display: block;
+}
+
+span.matrix_column:after {
+  content: " ";
+  width: 85%;
+  height: 2px;
+  position: relative;
+  top: 2px;
+  z-index: 100;
+  display: block;
+}
+
+span.matrix_table span.matrix_column:before {
+  height: 0px;
+}
+
+span.matrix_table span.matrix_column:after {
+  height: 0px;
+}
+
+span input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 50px;
+  height: 24px;
+  font-family: sans-serif;
+  font-size: 12px;
+  appearance: none;
+  box-shadow: none;
+  text-align: right;
+  background-color: inherit;
+}
+
+span.matrix_operator {
+  display: inline-table;
+  padding: 0px;
+  margin: 0px 4px 0px 4px;
+  font-family: monospace;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+span.matrix_label {
+  display: inline-table;
+  padding: 0px 0px 0px 20px;
+  margin: 0px 1px;
+  font-family: sans-serif;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+/* Colors for matrix highlighting */
+
+.lightcyanColor {
+  background-color: lightcyan;
+}
+
+.lightgreyColor {
+  background-color: lightgrey;
+}
+
+.purpleColor {
+  background-color: #DFB5E8;
+}
+
+.yellowColor {
+  background-color: #FDFF9D;
+}
+
+
+

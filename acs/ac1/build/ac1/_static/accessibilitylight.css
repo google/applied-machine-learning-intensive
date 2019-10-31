@@ -1,0 +1,110 @@
+/*Navigation Tabbing Styling*/
+li.dropdown.open a.dropdown-toggle, li.dropdown.open a.dropdown-toggle:focus {
+	border:0px !important;
+	/*background-color: #346A6E!important;*/
+	background-color: #2A5659 !important;
+	color:#F8F8F8 !important;
+}
+a.dropdown-toggle:focus {
+	 /*border:1px solid #5B9DD9 !important;
+	 color:#5B9DD9 !important;
+	 width:48px !important;*/
+	 background-color: #52A6AC!important;
+	 color:#F8F8F8 !important;
+}
+/* Border Manipulation */
+li.divider-vertical {
+	margin:0px !important;
+}
+li.dropdown a.dropdown-toggle {
+	padding:15px 18px !important;
+}
+
+/*
+Bootstrap button styling  
+*/
+
+/* Default Button */
+/* Passes WCAG 2.0 */
+button.btn.btn-default:active {
+	color:#474949 !important;
+	background-color:#FFFFFF !important;
+}
+button.btn.btn-default:focus {
+	color:#474949 !important;
+	background-color:#FFFFFF !important;
+}
+button.btn.btn-default.btn-sm.disabled:active {
+	color:#474949 !important;
+	background-color:#FFFFFF !important;
+}
+button.btn.btn-default.btn-sm.disabled:focus {
+	color:#474949 !important;
+	background-color:#FFFFFF !important;
+}
+/* Sucess Button */
+/* Failed WCAG 2.0, #255425 passes */
+button.btn.btn-success:active {
+	color:#5CB85C !important;
+	background-color:#FFFFFF !important;
+}
+button.btn.btn-success:focus {
+	color:#5CB85C !important;
+	background-color:#FFFFFF !important;
+}
+
+/*Primary Button*/
+/* fails WCAG 2.0, #265986 passes */
+button.btn.btn-primary:active {
+	color:#337AB7 !important;
+	background-color:#FFFFFF !important;
+}
+button.btn.btn-primary:focus {
+	color:#337AB7 !important;
+	background-color:#FFFFFF !important;
+}
+
+
+/*Info Button */
+/* Fails, WCAG 2.0, #155569 passes*/
+button.btn.btn-info:active {
+	color:#5BC0DE!important;
+	background-color:#FFFFFF !important;
+}
+button.btn.btn-info:focus {
+	color:#5BC0DE !important;
+	background-color:#FFFFFF !important;
+}
+
+/*Warning Button*/
+/*Fails WCAG 2.0, #794b0b*/
+button.btn.btn-warning:active {
+	color:#F0AD4E !important;
+	background-color:#FFFFFF !important;
+}
+button.btn.btn-warning:focus {
+	color:#F0AD4E !important;
+	background-color:#FFFFFF !important;
+}
+
+/*Danger Button */
+/*Fails, #a62924 passes*/
+button.btn.btn-danger:active {
+	color:#D9534F !important;
+	background-color:#FFFFFF !important;
+}
+button.btn.btn-danger:focus {
+	color:#D9534F !important;
+	background-color:#FFFFFF !important;
+}
+
+/*Link Button*/
+/*Fails AAA, passes with #265986*/
+button.btn.btn-link:active {
+	color:#FFFFFF!important;
+	background-color:#337AB7 !important;
+}
+button.btn.btn-link:focus {
+	color:#FFFFFF !important;
+	background-color:#337AB7 !important;
+}

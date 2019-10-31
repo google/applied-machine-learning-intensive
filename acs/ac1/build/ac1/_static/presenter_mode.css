@@ -1,0 +1,279 @@
+.hidden{
+  display: none;
+}
+
+.view-toggle{
+  padding: 0.85em;
+}
+
+.presentation-mode .section *{
+  display: none;
+}
+
+.presentation-mode .section .runestone, .presentation-mode .section .runestone *{
+  display: initial;
+}
+
+.present{
+    height: 100vh;
+}
+
+.full-height{
+    height: 100vh;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0;
+}
+
+#codeDisplayDiv{
+  width: auto!important;
+}
+
+div.ExecutionVisualizer #dataViz{
+  margin: 0;  
+}
+
+div.ExecutionVisualizer div#stackHeader {
+  text-align: center;
+}
+
+#stackFrame{
+  display: block!important;
+}
+
+#stackHeapTable {
+  width: 100%;
+}
+
+#stackHeapTable tr {
+  justify-content: space-around;
+}
+
+div.ExecutionVisualizer td#stack_td, div.ExecutionVisualizer td#heap_td {
+  flex: 1;
+}
+
+.presentation-title {
+  display: none;
+}
+
+.present .presentation-title {
+  display: block;
+}
+
+div.ExecutionVisualizer div#heap {
+  float: none;
+  padding-left: 0;
+}
+
+#stack_td tr {
+  display: table-row;
+}
+
+#heap_td tr {
+  display: table-row;
+}
+
+#codeDisplayDiv{
+  margin: 0 auto;
+}
+
+/*  bnm -- comment this out for now as it breaks codelens indentation and arrows
+.visualizer tr{
+  display: flex;
+}
+*/
+
+#vizLayoutTd{
+  flex: 1;
+}
+
+#vizLayoutTdFirst {
+  flex: 2;
+}
+
+#vizLayoutTdSecond {
+  flex: 1;
+}
+
+#vizLayoutTdThird {
+  flex: 2;
+}
+
+#progOutputs {
+  display: block!important;
+  margin: 0 20px;
+  width: 60%;
+}
+
+#pyStdout {
+  width: 100%!important;
+}
+
+div.ExecutionVisualizer #pyStdout {
+  margin-bottom: 1em;
+}
+
+div.ExecutionVisualizer table.visualizer {
+  width: 100%;
+}
+
+.present #vizLayoutTdThird{
+  text-align: left;
+}
+
+.ac-block{
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.row-mode .ac-block{
+  display: block;
+  margin-bottom: 0;
+}
+
+.row-mode .ac_output, .row-mode .ac_code_div{
+  float: none;
+  display: block;
+  width: auto;
+  max-width: none;
+}
+
+.row-mode .ac_code_div{
+  margin-bottom: 1em;
+}
+
+.ac_section>* {
+  max-width: 100%;
+}
+
+.ac_output{
+  display: block;
+  max-width: 100%;
+}
+
+.ac_output pre {
+  visibility: visible!important;
+  min-height: 60px;
+}
+
+.CodeMirror{
+  margin: 0;
+  max-width: 100%;
+  border-radius: 3px;
+  min-height: 60px;
+}
+
+.container .section > runestone:not(.ac_section){
+  max-width:none;
+  margin: 0;
+}
+
+.presentation-options {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.layout-btn {
+  background-color: #FBEED5;
+  border: 2px solid #DFD4BE;
+  border-radius: 2px;
+  padding: .25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 .5rem;
+  transition: all .2s ease;
+}
+
+.layout-btn.active-layout, .layout-btn:focus {
+  border: 2px solid #979797;
+  outline: none;
+}
+
+.sketchpad-container {
+  min-width: 50%;
+  min-height: 300px;
+  padding: 0 15px;
+}
+
+.card-mode .sketchpad-container {
+  width: 50%;
+  margin: 0;
+  display: inline-block;
+  /*margin: 0 -15px;*/
+  vertical-align: top;
+}
+
+.row-mode .error {
+  margin: 20px 15px;
+}
+
+.card-mode .error {
+  margin: 28px 0 0;
+  width: 50%;
+  display: inline-block;
+  padding: 0 15px;
+  vertical-align: top;
+  margin-top: 28px;
+}
+
+.sketchpad {
+  background: white;
+  border: 2px solid grey;
+  border-radius: 3px;
+  width: 100%;
+  min-height: 300px;
+  display: block;
+}
+
+.btn-presenter {
+  padding: .5rem 1rem;
+  border-radius: 3px;
+  font-weight: 500;
+  margin: 1.5rem 0 1.5rem 1.5rem;
+}
+
+.btn-grey-outline {
+  border: 2px solid grey;
+  color: grey;
+  background: white;
+}
+
+.btn-grey-solid {
+  border: 2px solid grey;
+  color: white;
+  background: grey;
+}
+
+body.present .ac_section>* {
+  max-width: none;
+}
+body.present iframe {
+  width: 100%;
+}
+
+body.present {
+  /* font-size: 2.0em; */
+}
+
+body.present #relations-prev, body.present #relations-next, body.present .navLinkBg {
+  display: none;
+}
+
+body.present .btn-presenter {
+  position: absolute;
+}
+body.present .btn-presenter.prev-exercise { left: 0px; }
+body.present .btn-presenter.next-exercise { right: 0px; }
+
+/* .col-md-12 {
+  width: 58.333333333333336%;
+}
+
+.card-mode .col-md-7 {
+  width: 50%;
+} */
