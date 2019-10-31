@@ -1,8 +1,8 @@
 # python3
 
-"""Tests for amli.drive."""
+"""Tests for amli.lib.drive."""
 
-from amli import drive
+from amli.lib import drive
 from absl.testing import absltest
 
 

@@ -5,7 +5,7 @@
 import re
 import nbformat
 
-from amli.lint import Linter
+from amli.lib.lint import Linter
 
 EXCEPTION_MISSING_TOP_LEVEL_KEY = 'notebook missing top-level key "{key}"'
 EXCEPTION_MISSING_KERNELSPEC = 'notebook missing kernelspec metadata'
