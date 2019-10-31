@@ -15,11 +15,11 @@ initial installation.
 The good people who created Anaconda have also provided a very nice set of
 instructors to help you install it for the first time. There are instructions
 for Windows, macOS, and Linux. The
-`installation guide <https://conda.io/docs/user-guide/install/index.html#>`_ is
-also part of a larger set of documentation that you may find useful. Make sure
-you follow the instructions for a Regular Installation of Anaconda, and that you
-install the Python 3.x version (3.7 at the time of this writing). Do not install
-miniconda or do a silent installation.
+`installation guide <https://docs.conda.io/projects/conda/en/latest/user-guide/install/>`_
+is also part of a larger set of documentation that you may find useful. Make
+sure you follow the instructions for a Regular Installation of Anaconda, and
+that you install the Python 3.x version (3.7 at the time of this writing). Do
+not install Miniconda or do a silent installation.
 
 
 Starting Jupyter Lab

@@ -13,9 +13,15 @@ pages of
 of the Python Data Science Handbook.
 
 We're going to be using a dataset about movies to try out processing some data
-with Pandas.
+with Pandas. This dataset was obtained from
+`Kaggle <https://www.kaggle.com/rounakbanik/the-movies-dataset/home>`_ who
+downloaded it through the TMDB API.
+
+The movies available in this dataset are in correspondence with the movies that
+are listed in the MovieLens Latest Full Dataset.
 
 We start with some standard imports.
+
 
 .. code:: python3
 
@@ -212,13 +218,6 @@ Then we load the data from a local file and checkout the data.
 Exploring the Data
 ------------------
 
-This dataset was obtained from
-`Kaggle <https://www.kaggle.com/rounakbanik/the-movies-dataset/home>`_ who
-downloaded it through the TMDB API.
-
-The movies available in this dataset are in correspondence with the movies that
-are listed in the MovieLens Latest Full Dataset.
-
 Let's see what data we have.
 
 
@@ -234,6 +233,7 @@ Let's see what data we have.
 
 Twenty-three columns of data for over 45,000 movies is going be a lot to look
 at, but let's start by looking at what the columns represent.
+
 
 .. code:: python3
 
