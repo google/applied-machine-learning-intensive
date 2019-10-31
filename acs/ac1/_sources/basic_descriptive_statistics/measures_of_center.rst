@@ -43,7 +43,7 @@ class), what would you guess?
 
    -   If you count the number of times each category occurs, the mode is the
        category with the highest count.
-   -   A dataset can have multiple modes - if multiple categories have the same
+   -   A dataset can have multiple modes, if multiple categories have the same
        count, and this count is higher than those of the other categories.
    -   Sometimes the mode is referred to simply as the most common value.
    -   The mode is only defined for categorical variables.
