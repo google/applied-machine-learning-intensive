@@ -60,7 +60,7 @@ the range, separated by a colon. For example:
 
 .. image:: figures/cell_A1.png
    :align: center
-   :alt: Spreadsheet with cell A1 (column A, row 1) highlighted
+   :alt: A spreadsheet with cell A1 (column A, row 1) highlighted.
 
 
 -   “A1:A6” means all cells in the A column from rows 1 through 6
@@ -69,7 +69,7 @@ the range, separated by a colon. For example:
 
 .. image:: figures/cells_A1_A6.png
    :align: center
-   :alt: Spreadsheet with cells in the A column, rows 1 through 6 highlighted
+   :alt: A spreadsheet with cells in the A column, rows 1 through 6 highlighted.
 
 
 -   “A1:D1” means all cells in the 1 row from columns A through D
@@ -78,7 +78,7 @@ the range, separated by a colon. For example:
 
 .. image:: figures/cells_A1_D1.png
    :align: center
-   :alt: Spreadsheet with cells in row 1, columns A through D highlighted
+   :alt: A spreadsheet with cells in row 1, columns A through D highlighted.
 
 
 -   “A1:D6” means all cells in rows 1 through 6 and columns A through D
@@ -87,8 +87,8 @@ the range, separated by a colon. For example:
 
 .. image:: figures/cells_A1_D6.png
    :align: center
-   :alt: Spreadsheet with cells in rows 1 through 6 and columns A through D
-         highlighted
+   :alt: A spreadsheet with cells in rows 1 through 6 and columns A through D
+         highlighted.
 
 
 .. admonition:: Count and Sum Sheets Syntax
