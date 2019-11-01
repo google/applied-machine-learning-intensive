@@ -18,7 +18,8 @@ state only.
 .. admonition:: Filters in Sheets
 
    **A filter is a way of selecting a subset of rows based on a set of column
-   conditions.** A “column condition” is a statement on the value in a column.
+   conditions.** A “column condition” is a statement that restricts the value
+   in a column.
 
 
 For example, if column A contains two-letter state codes of the USA, and you
