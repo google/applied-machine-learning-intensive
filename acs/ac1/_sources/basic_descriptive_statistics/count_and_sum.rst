@@ -23,7 +23,7 @@ dataset.
    applies only to quantitative variables.
 
 Applications and Examples
---------------------------
+-------------------------
 
 The reason that the count is so important is that it can be an indication of how
 useful the dataset is. For example, suppose you’re trying to find the average
