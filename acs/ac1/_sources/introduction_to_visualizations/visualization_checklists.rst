@@ -73,6 +73,8 @@ your chosen visualization.
 
 .. _creating_visualization_checklist:
 
+
+
 What should I keep in mind when creating a visualization?
 ---------------------------------------------------------
 
