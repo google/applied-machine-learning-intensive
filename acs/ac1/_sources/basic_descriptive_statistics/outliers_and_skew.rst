@@ -25,7 +25,7 @@ measures of center?
 
 
 Outliers in a Histogram
--------------------
+-----------------------
 
 Consider the histogram of student heights below.
 
@@ -89,7 +89,7 @@ a **left tail**, and as such a negative skew is often called a **left skew**.
 
 
 Example: Positive Skew
--------------------
+----------------------
 
 Consider the histogram of a variable below.
 
@@ -195,7 +195,7 @@ values can affect the mean too much (in the same way that changing 6 to 60
 affected the mean for the dice roll). The median is preferred in such contexts.
 
 Further Application
-------------------
+-------------------
 In the real world skew is present in many different fields, including 
 Economics. For more information about how skew affects financial markets,
  check out `this article on skewness in investing.`_
