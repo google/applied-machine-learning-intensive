@@ -8,7 +8,7 @@ Example Visualizations
 ======================
 
 “Hollywood's Gender Imbalance”
----------------------------------------
+------------------------------
 
 Take a look at the visualization titled “Hollywood's Gender Imbalance”,
 which appears in `this article, authored by statistics-based
