@@ -35,16 +35,15 @@ Consider the histogram of student heights below.
     of the 11 students.
 
 
-
-In this example, you can see that there are two students whose heights are much
- greater than the rest of the students. Lia's height is 188 cm and Katrina's 
- height is 193 cm. Taking the mean of the students' heights results in 168.45 
- centimeters (cm). When using data to make decisions it is crucial to know how 
- using the mean as an important piece of data can actually result in 
- misinformation. In this case, the mean does not accurately represent what one
-  might assume is the height at which each student is approximately at. 
-  Consider the effects if this school decided to use the mean to decide how
-   high the student desks needed to be. 
+In this example, there are two students whose heights are much
+greater than the rest of the students. Lia's height is 188 cm and Katrina's 
+height is 193 cm. Taking the mean of the students' heights results in 168.45 
+centimeters (cm). When using data to make decisions, it is crucial to know how 
+using the mean as an important piece of data can actually result in 
+misinformation. In this case, the mean does not accurately represent what one
+might assume is the height at which each student is approximately at. 
+Consider the effects if this school decided to use the mean to decide how
+high the student desks needed to be. 
 
 
 .. admonition:: Skew Definition
@@ -58,9 +57,9 @@ In this example, you can see that there are two students whose heights are much
    mean.
 
 
-
 Outliers and skew only pertain to quantitative variables. (For categorical
 variables, there is no notion of “distance” between different categories.)
+
 
 Skew in a Histogram
 -------------------
@@ -75,12 +74,11 @@ Consider the histogram of average exam scores below.
 
 
 This is an example of negative skew. By taking the mean, you see that it is 81.
- What this means is that there are a large number of values that are lower than
-  the mean. This large group of values below the mean is called
+What this means is that there are a large number of values that are lower than
+the mean. This large group of values below the mean is called
 a **left tail**, and as such a negative skew is often called a **left skew**.
- Similarly, a dataset with a positive skew looks like a mirror image of the
-  histogram above, with a **right tail** and a **right skew**.
-
+Similarly, a dataset with a positive skew looks like a mirror image of the
+histogram above, with a **right tail** and a **right skew**.
 
 
 Example: Positive Skew
@@ -98,9 +96,9 @@ Consider the histogram of a variable below.
 
 
 While most of the data lies in the interval between 0 and 1.5, there are values
- in the dataset that are much higher (but none that are below 0). Thus, this is
-  an example of a positive skew. An example of a real dataset that might look 
-  like the histogram above is :ref:`outlined below<outliers_and_skew_income>`.
+in the dataset that are much higher (but none that are below 0). This is
+an example of a positive skew. An example of a real dataset that might look 
+like the histogram above is :ref:`outlined below<outliers_and_skew_income>`.
 
 
 .. shortanswer:: variables_with_right_skew
@@ -191,10 +189,10 @@ affected the mean for the dice roll). The median is preferred in such contexts.
 
 Further Application
 -------------------
-In the real world skew is present in many different fields, including 
+In the real world, skew is present in many different fields, including 
 Economics. For more information about how skew affects financial markets,
- check out `this article on skewness in investing.`_
+see `this article on skewness in finance.`_
 
 .. _You can read more about the income distribution here.: https://dqydj.com/income-percentile-calculator/
 .. _US census report on income from 2003: https://www.census.gov/prod/2003pubs/p70-88.pdf
-.. _this article on skewness in investing.: http://www.fusioninvesting.com/2010/09/what-is-skew-and-why-is-it-important/
+.. _this article on skewness in finance.: http://www.fusioninvesting.com/2010/09/what-is-skew-and-why-is-it-important/
