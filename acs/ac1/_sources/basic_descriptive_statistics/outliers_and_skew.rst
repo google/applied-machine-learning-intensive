@@ -29,9 +29,6 @@ Outliers in a Histogram
 
 Consider the histogram of student heights below.
 
-
-.. https://screenshot.googleplex.com/CDZJYuvheh1
-
 .. image:: figures/Student_Heights_outlier.png
    :align: center
    :alt: a histogram of student heights, Lia and Katrina are the tallest
@@ -69,8 +66,6 @@ Skew in a Histogram
 -------------------
 
 Consider the histogram of average exam scores below.
-
-.. https://screenshot.googleplex.com/CDZJYuvheh1
 
 .. image:: figures/Average_Student_Exam_Scores_skew.png
    :align: center
