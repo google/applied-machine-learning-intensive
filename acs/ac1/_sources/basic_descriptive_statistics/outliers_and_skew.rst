@@ -29,7 +29,7 @@ Outliers in a Histogram
 
 Consider the histogram of student heights below.
 
-.. image:: figures/Student_Heights_outlier.png
+.. image:: figures/student_heights_outlier.png
    :align: center
    :alt: a histogram of student heights, Lia and Katrina are the tallest
     of the 11 students.
@@ -69,7 +69,7 @@ Consider the histogram of average exam scores below.
 
 .. image:: figures/Average_Student_Exam_Scores_skew.png
    :align: center
-   :alt: a histogram of average exam scores with a left tail, as in there are 
+   :alt: A histogram of average exam scores with a left tail. There are 
    more values to the left (and lower) than the mean. This histogram has 
    negative skew. 
 
@@ -93,7 +93,7 @@ Consider the histogram of a variable below.
 
 .. image:: figures/right_skew_histogram.png
    :align: center
-   :alt: a histogram of a variable with positive skew. It has a right tail 
+   :alt: A histogram of a variable with positive skew. It has a right tail 
    which means there are more values on the right side of the mean.
 
 
@@ -136,8 +136,8 @@ happens to the mean and median for the dice roll when the 6 is changed to a 60.
 
 .. image:: figures/uneven_dice_mean.png
    :align: center
-   :alt: a screenshot of a table in Sheets. The average dice roll when the 6 
-   value    is changed to 60.
+   :alt: A screenshot of a table in Sheets. The average dice roll when the 6 
+   value is changed to 60.
 
 
 The mean of the dice roll is now 12.5! Only one value was changed, yet the mean
@@ -148,7 +148,7 @@ changed drastically.
 
 .. image:: figures/uneven_dice_median.png
    :align: center
-   :alt: a screenshot of a table in Sheets. The median of the dice roll when 
+   :alt: A screenshot of a table in Sheets. The median of the dice roll when 
    the 6 value is changed to 60. 
 
 
