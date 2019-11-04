@@ -22,7 +22,7 @@ For example, suppose you have a dataset containing the heights of all students
 in this class. 
 
 
-.. image:: figures/ExampleHeightStatistic2.png
+.. image:: figures/height_statistic.png
    :align: center
 
 
@@ -35,22 +35,17 @@ The following are all statistics from that dataset.
 -   The sum of all heights in the class is 3157cm.
 -   Half the maximum height is 96cm.
 
-Some statistics are more common and useful than others. For example, knowing the
-average height will likely be more useful in real life than knowing the sum
+Some statistics are more common and useful than others. For example, knowing 
+the average height will likely be more useful in real life than knowing the sum
 of all heights. This chapter will guide you through the most common descriptive
 statistics.
 
 Suppose you have a dataset on how far students travel to get to school. 
    
-.. image:: figures/ExampleDistanceStatistic.png
+.. image:: figures/distance_statistic.png
    :align: center
    
 .. shortanswer:: students_travel_statistics
 
-   What are some statistics of that dataset?
+   What are some important statistics of that dataset?
    
-.. shortanswer:: Reflection Questions 
-   1. What is a statistic?
-   2. Are all statistics helpful?
-   3. From the examples above, can you give an example of a helpful statistic? How about a not so helpful statistic?
-
