@@ -21,23 +21,24 @@ to access, make articles easy to read, and make findings easy to interpret.
 -   Infographics
 
 
-In this chapter, you will learn more about when to use different visualizations and how to ensure that they effectively communicate your data to its audience. To start, take a look at the visualizations on this page. While reviewing them, keep in mind what you like about them and what elements on them guide your understanding of their meaning.
+In this chapter, you will learn more about when to use different visualizations
+and how to ensure that they effectively communicate your data to its audience.
+To start, take a look at the visualizations on this page. While reviewing them,
+keep in mind what you like about them and what elements on them guide your 
+understanding of their meaning.
 
-.. https://screenshot.googleplex.com/CDZJYuvheh1
 
 .. image:: figures/example_pie_chart.png
    :align: center
-   :alt: a histogram of student heights, Lia and Katrina are the tallest of the 11 students.
+   :alt: An example pie chart visualization.
    
-.. https://screenshot.googleplex.com/CDZJYuvheh1
 
 .. image:: figures/table_example.png
    :align: center
-   :alt: a histogram of student heights, Lia and Katrina are the tallest of the 11 students.
+   :alt: An example table visualization.
    
-.. https://screenshot.googleplex.com/CDZJYuvheh1
 
 .. image:: figures/chicago_taxi_example.png
    :align: center
-   :alt: a histogram of student heights, Lia and Katrina are the tallest of the 11 students.
+   :alt: An example bar chart visualization. 
 
