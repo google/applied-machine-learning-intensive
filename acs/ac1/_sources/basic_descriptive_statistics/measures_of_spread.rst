@@ -12,6 +12,8 @@ Measures of Spread
 Measures of center are very useful for giving you a “best guess” at a variable.
 But how useful are those guesses?
 
+In this section, you will learn about **standard deviation** and **variance**. Both of these measures of spread are useful to know since they lead to a better understanding about the accuracy of other statistics. This is demonstrated in the example below.
+
 Trying to guess the value of a variable that doesn’t change much is a lot easier
 than trying to guess the value of a variable that changes drastically. To take
 an extreme example, suppose there are two very different cities next to each
@@ -24,7 +26,15 @@ other half are unemployed.
 
 .. image:: figures/consistentville_and_wonkytown.png
    :align: center
+   :alt: A visual for the salaries of those in Wonkytown and Consistentville. 
 
+.. https://docs.google.com/presentation/d/11O5DHFz8OJn2cIiDnSHd0hfAmY1HDaFQKtGBd3HYCmQ/edit?usp=sharing
+
+.. image:: figures/city_salary_visual.png
+   :align: center
+   :alt: A visual for the salaries of those in Wonkytown and Consistentville with example incomes. 
+
+Above is an example dataset for 6 people in each of the towns and their salaries.
 
 .. fillintheblank:: mean_salary_in_consistentville
 
@@ -100,6 +110,7 @@ deviation than the other.
 
 .. image:: figures/standard_deviation_in_histograms.png
    :align: center
+   :alt: A histogram of two variables. Variable two is concentrated in a smaller range across the horizontal axis with high values, while variable one is spread out across the horizontal axis with lower vertical axis values.
 
 
 .. mchoice:: standard_deviation_in_histograms
@@ -184,7 +195,7 @@ While standard deviation is more widely used, it is actually derived from
 another measure of spread, called the variance. More precisely, **the standard
 deviation is the square root of the variance**. Many `probability
 distributions`_ are defined in terms of mean and variance (not standard
-deviation).
+deviation). You can find another detailed explanation in `this article`_.
 
 
 .. admonition:: Variance Definition
@@ -256,9 +267,11 @@ Example: Student Heights
 
 Suppose you have this dataset containing the heights of students in a class.
 
-.. TODO(raskutti): Embed
-   https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=1913290661
+.. https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=1702521484
 
+.. image:: figures/screenshot_studentheights_spread.png
+   :align: center
+   :alt: a Sheets screenshot of a dataset of student heights.
 
 First, use the method of calculating variance (above) to calculate the variance
 and standard deviation of this dataset. Then, you can confirm your answers using
@@ -282,7 +295,13 @@ and standard deviation of this dataset. Then, you can confirm your answers using
    - :3.2: Correct
      :x: Incorrect
 
+Further Application
+--------------------
+
+There are real-world applications that these measures of center can be used for. In `this exercise`_ it encourages exploration of the salaries of professional athletes with measures of spread as well as other statistics. Try this on your own in Sheets if you are interested in getting more experience with any of the previously learned statistics.
 
 .. _this thread goes into some detail on the practical differences: https://www.quora.com/What-is-the-difference-between-sample-standard-deviation-and-population-standard-deviation
 .. _this thread goes into the mathematical theory behind the difference: https://math.stackexchange.com/questions/15098/sample-standard-deviation-vs-population-standard-deviation
 .. _probability distributions: https://en.wikipedia.org/wiki/Probability_distribution
+.. _this article: http://davidmlane.com/hyperstat/A16252.html
+.. _this exercise: https://www.ck12.org/statistics/Applications-of-Variance-and-Standard-Deviation/rwa/Variance-of-a-Data-Set/
