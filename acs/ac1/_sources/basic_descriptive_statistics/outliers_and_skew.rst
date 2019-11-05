@@ -87,8 +87,7 @@ Consider the histogram of a variable below.
 
 .. image:: figures/right_skew_histogram.png
    :align: center
-   :alt: A histogram of a variable with positive skew. It has a right tail 
-   which means there are more values on the right side of the mean.
+   :alt: A histogram of a variable with positive skew. It has a right tail which means there are more values on the right side of the mean.
 
 
 While most of the data lies in the interval between 0 and 1.5, there are values
@@ -130,8 +129,7 @@ happens to the mean and median for the dice roll when the 6 is changed to a 60.
 
 .. image:: figures/uneven_dice_mean.png
    :align: center
-   :alt: A screenshot of a table in Sheets. The average dice roll when the 6 
-   value is changed to 60.
+   :alt: A screenshot of a table in Sheets. The average dice roll when the 6 value is changed to 60.
 
 
 The mean of the dice roll is now 12.5! Only one value was changed, yet the mean
@@ -142,8 +140,7 @@ changed drastically.
 
 .. image:: figures/uneven_dice_median.png
    :align: center
-   :alt: A screenshot of a table in Sheets. The median of the dice roll when 
-   the 6 value is changed to 60. 
+   :alt: A screenshot of a table in Sheets. The median of the dice roll when the 6 value is changed to 60. 
 
 
 In contrast, the median does not change at all. The median is considered more
