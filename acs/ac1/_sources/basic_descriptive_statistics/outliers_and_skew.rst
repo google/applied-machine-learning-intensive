@@ -31,19 +31,18 @@ Consider the histogram of student heights below.
 
 .. image:: figures/student_heights_outlier.png
    :align: center
-   :alt: a histogram of student heights, Lia and Katrina are the tallest
+   :alt: A histogram of student heights. Lia and Katrina are the tallest
     of the 11 students.
 
 
 In this example, there are two students whose heights are much
 greater than the rest of the students. Lia's height is 188 cm and Katrina's 
 height is 193 cm. Taking the mean of the students' heights results in 168.45 
-centimeters (cm). When using data to make decisions, it is crucial to know how 
-using the mean as an important piece of data can actually result in 
-misinformation. In this case, the mean does not accurately represent what one
+centimeters (cm). Using the mean as your only summary statistic can often be
+misleading. In this case, the mean does not accurately represent what one
 might assume is the height at which each student is approximately at. 
 Consider the effects if this school decided to use the mean to decide how
-high the student desks needed to be. 
+high the student desks needed to be.
 
 
 .. admonition:: Skew Definition
