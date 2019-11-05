@@ -92,11 +92,16 @@ To illustrate the difference between quantitative and categorical variable, cons
 
 .. image:: figures/student_data.png
 
-The dataset contains, for a 20 student class, the name, height, hair color, and birthday of students in the class. 
 
-Column B has a numeric value and is a quantitative variable. Columns A and C are categorical. 
+The dataset contains, for a 20 student class, the name, height, hair color, 
+and birthday of students in the class. 
 
-The “Name” and “Hair Color” variables can only be a fixed set of names and colors, respectively. 
+Column B has a numeric value and is a quantitative variable. Columns A and C 
+are categorical. 
+
+The “Name” and “Hair Color” variables can only be a fixed set of names and
+colors, respectively. 
+
 Example: Weather
 ----------------
 
@@ -151,6 +156,7 @@ types.
     whole number (e.g. number of stairs in a building, number of children).
     Another example would be shoe size, which can be whole numbers or half
     numbers.
+    
 -   A **continuous variable** is a quantitative variable that can take any value
     within a range. Examples of this are numeric variables that can be expressed
     to as many decimal places as necessary.
@@ -163,11 +169,6 @@ example, if you have a dataset on height and one of the values is zero, you
 might assume that datapoint is missing, since you know height must be positive.
 (Moreover if one of the values is negative, you can assume that datapoint was
 incorrectly recorded.)
-
-In further studies, it can also be important to distinguish between these two
-types of variables. For example (and this goes well beyond the scope of this
-course), the way to `define the probability distribution random variable`_
-depends on whether the variable is discrete or continuous.
 
 To illustrate the difference between a discrete and continuous variable,
 consider the example of height. In general, a person’s height can be expressed
