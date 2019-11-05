@@ -25,9 +25,13 @@ and compare how many things exist or happen. For example, such a chart could
 show:
 
 1.  The human population in different countries (counting people)
+
 .. image:: figures/country_population.png
+
 2.  The number of people who get different grades in a class (counting students)
+
 .. image:: figures/student_grades.png
+
 3.  The frequency of train arrivals at different stations (counting trains per
     unit time), which is shown above.
 
