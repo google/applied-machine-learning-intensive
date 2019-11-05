@@ -267,8 +267,6 @@ Example: Student Heights
 
 Suppose you have this dataset containing the heights of students in a class.
 
-.. https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=1702521484
-
 .. image:: figures/screenshot_studentheights_spread.png
    :align: center
    :alt: a Sheets screenshot of a dataset of student heights.
@@ -298,7 +296,11 @@ and standard deviation of this dataset. Then, you can confirm your answers using
 Further Application
 --------------------
 
-There are real-world applications that these measures of center can be used for. In `this exercise`_ it encourages exploration of the salaries of professional athletes with measures of spread as well as other statistics. Try this on your own in Sheets if you are interested in getting more experience with any of the previously learned statistics.
+There are real-world applications that these measures of center can be used for. 
+In `this exercise`_ it encourages exploration of the salaries of professional 
+athletes with measures of spread as well as other statistics. Try this on your 
+own in Sheets if you are interested in getting more experience with any of the 
+previously learned statistics.
 
 .. _this thread goes into some detail on the practical differences: https://www.quora.com/What-is-the-difference-between-sample-standard-deviation-and-population-standard-deviation
 .. _this thread goes into the mathematical theory behind the difference: https://math.stackexchange.com/questions/15098/sample-standard-deviation-vs-population-standard-deviation
