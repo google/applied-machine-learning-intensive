@@ -31,8 +31,7 @@ Consider the histogram of student heights below.
 
 .. image:: figures/student_heights_outlier.png
    :align: center
-   :alt: A histogram of student heights. Lia and Katrina are the tallest
-    of the 11 students.
+   :alt: A histogram of student heights. Lia and Katrina are the tallest of the 11 students.
 
 
 In this example, there are two students whose heights are much
