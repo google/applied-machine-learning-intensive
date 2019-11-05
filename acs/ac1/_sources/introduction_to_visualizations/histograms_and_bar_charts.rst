@@ -10,7 +10,7 @@ Histograms and Bar Charts
 =========================
 
 Some of the most commonly used visualizations are histograms and bar charts.
-These are the types of graphs with vertical bars of different heights, that
+These are the types of graphs with vertical bars of different heights.
 An example of each is below. (The histogram
 is the first, the bar chart is the second.)
 
