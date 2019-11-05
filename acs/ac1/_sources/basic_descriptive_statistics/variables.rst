@@ -85,11 +85,22 @@ is a categorical response, so it is likely this was entered incorrectly.
 
 .. _variables_weather:
 
+
+Example: Student Data 
+----------------
+To illustrate the difference between quantitative and categorical variable, consider the following example concerning data of students in a class.
+
+.. image:: figures/student_data.png
+
+The dataset contains, for a 20 student class, the name, height, hair color, and birthday of students in the class. 
+
+Column B has a numeric value and is a quantitative variable. Columns A and C are categorical. 
+
+The “Name” and “Hair Color” variables can only be a fixed set of names and colors, respectively. 
 Example: Weather
 ----------------
 
-To illustrate the difference between a quantitative and a categorical variable,
-consider the following example concerning weather. In this and all following
+In this and all following
 examples using this dataset, the temperature is reported in degrees Fahrenheit.
 
 .. TODO(raskutti): Embed
