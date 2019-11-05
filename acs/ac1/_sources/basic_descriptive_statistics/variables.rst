@@ -96,8 +96,8 @@ To illustrate the difference between quantitative and categorical variable, cons
 The dataset contains, for a 20 student class, the name, height, hair color, 
 and birthday of students in the class. 
 
-Column B has a numeric value and is a quantitative variable. Columns A and C 
-are categorical. 
+Column B has a numeric value and is a quantitative variable. Columns A, C, 
+and D are categorical. 
 
 The “Name” and “Hair Color” variables can only be a fixed set of names and
 colors, respectively. 
