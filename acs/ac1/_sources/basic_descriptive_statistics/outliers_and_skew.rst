@@ -29,8 +29,6 @@ Outliers in a Histogram
 
 Consider the histogram of student heights below.
 
-.. https://screenshot.googleplex.com/5Jy8HGAhgXd
-
 .. image:: figures/student_heights_outlier.png
    :align: center
    :alt: A histogram of student heights. Lia and Katrina are the tallest of the 11 students.
