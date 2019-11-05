@@ -66,11 +66,9 @@ Skew in a Histogram
 
 Consider the histogram of average exam scores below.
 
-.. image:: figures/Average_Student_Exam_Scores_skew.png
+.. image:: figures/average_student_exam_scores_skew.png
    :align: center
-   :alt: A histogram of average exam scores with a left tail. There are 
-   more values to the left (and lower) than the mean. This histogram has 
-   negative skew. 
+   :alt: A histogram of average exam scores with a left tail. There are more values to the left (and lower) than the mean. This histogram has negative skew. 
 
 
 This is an example of negative skew. By taking the mean, you see that it is 81.
