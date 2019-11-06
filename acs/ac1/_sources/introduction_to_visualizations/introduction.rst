@@ -26,22 +26,32 @@ and how to ensure that they effectively communicate your data to its audience.
 To start, take a look at the visualizations on this page. While reviewing them,
 keep in mind what you like about them and what elements on them guide your 
 understanding of their meaning.
-<<<<<<< HEAD
-=======
 
->>>>>>> ea780aa92ce42576adb80be13f65a0911baefd36
+Pie Chart 
+=========
 
 .. image:: figures/example_pie_chart.png
    :align: center
    :alt: An example pie chart visualization.
    
+This figure holds data about famous artists and their ethnicity. 
+
+Table
+=====
 
 .. image:: figures/table_example.png
    :align: center
    :alt: An example table visualization.
    
+This figure depicts a table holding information about people. The columns
+contain data for several different categories. 
+
+Bar Chart
+=========
 
 .. image:: figures/chicago_taxi_example.png
    :align: center
    :alt: An example bar chart visualization. 
 
+This figure holds information on average fare and duration of taxi
+rides in Chicago.
