@@ -1,21 +1,21 @@
 # python3
 
-"""Tests for amli.lib.colab."""
+"""Tests for amli.colab."""
 
 import copy
 import os
 from absl import flags
 import nbformat
 
-from amli.lib.colab import Colab
-from amli.lib.lint import DuplicateCellIDs
-from amli.lib.lint import Linter
-from amli.lib.lint import LintError
-from amli.lib.lint import OutputDataFound
-from amli.lib.lint import PrivateOutputsOff
-from amli.lib.lint import TableOfContentsHidden
-from amli.lib.lint import WrongPythonDisplayName
-from amli.lib.lint import WrongPythonName
+from amli.colab import Colab
+from amli.lint import DuplicateCellIDs
+from amli.lint import Linter
+from amli.lint import LintError
+from amli.lint import OutputDataFound
+from amli.lint import PrivateOutputsOff
+from amli.lint import TableOfContentsHidden
+from amli.lint import WrongPythonDisplayName
+from amli.lint import WrongPythonName
 from absl.testing import absltest
 
 FLAGS = flags.FLAGS
@@ -27,7 +27,7 @@ class LintErrorTests(absltest.TestCase):
   def setUpClass(cls):
     super(LintErrorTests, cls).setUpClass()
     colab_path = os.path.join(FLAGS.test_srcdir,
-                              'amli/lib/colab.ipynb')
+                              'amli/colab.ipynb')
     cls.notebook = nbformat.read(colab_path, as_version=4)
 
   def test_no_lint_errors(self):

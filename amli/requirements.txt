@@ -2,3 +2,4 @@ absl-py
 google-auth-oauthlib
 nbformat
 pytest
+pyyaml

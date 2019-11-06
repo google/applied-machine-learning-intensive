@@ -12,6 +12,11 @@ Measures of Spread
 Measures of center are very useful for giving you a “best guess” at a variable.
 But how useful are those guesses?
 
+<<<<<<< HEAD
+=======
+In this section, you will learn about **standard deviation** and **variance**. Both of these measures of spread are useful to know since they lead to a better understanding about the accuracy of other statistics. This is demonstrated in the example below.
+
+>>>>>>> ea780aa92ce42576adb80be13f65a0911baefd36
 Trying to guess the value of a variable that doesn’t change much is a lot easier
 than trying to guess the value of a variable that changes drastically. To take
 an extreme example, suppose there are two very different cities next to each
@@ -256,9 +261,15 @@ Example: Student Heights
 
 Suppose you have this dataset containing the heights of students in a class.
 
+<<<<<<< HEAD
 .. TODO(raskutti): Embed
    https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=1913290661
 
+=======
+.. image:: figures/screenshot_studentheights_spread.png
+   :align: center
+   :alt: a Sheets screenshot of a dataset of student heights.
+>>>>>>> ea780aa92ce42576adb80be13f65a0911baefd36
 
 First, use the method of calculating variance (above) to calculate the variance
 and standard deviation of this dataset. Then, you can confirm your answers using
@@ -282,6 +293,17 @@ and standard deviation of this dataset. Then, you can confirm your answers using
    - :3.2: Correct
      :x: Incorrect
 
+<<<<<<< HEAD
+=======
+Further Application
+--------------------
+
+There are real-world applications that these measures of center can be used for. 
+In `this exercise`_ it encourages exploration of the salaries of professional 
+athletes with measures of spread as well as other statistics. Try this on your 
+own in Sheets if you are interested in getting more experience with any of the 
+previously learned statistics.
+>>>>>>> ea780aa92ce42576adb80be13f65a0911baefd36
 
 .. _this thread goes into some detail on the practical differences: https://www.quora.com/What-is-the-difference-between-sample-standard-deviation-and-population-standard-deviation
 .. _this thread goes into the mathematical theory behind the difference: https://math.stackexchange.com/questions/15098/sample-standard-deviation-vs-population-standard-deviation

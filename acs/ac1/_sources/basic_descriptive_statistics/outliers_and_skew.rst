@@ -24,6 +24,7 @@ measures of center?
    outliers.
 
 
+<<<<<<< HEAD
 Outliers in a Histogram
 -----------------------
 
@@ -44,6 +45,8 @@ Consider the effects if this school decided to use the mean to decide how
 high the student desks needed to be.
 
 
+=======
+>>>>>>> ea780aa92ce42576adb80be13f65a0911baefd36
 .. admonition:: Skew Definition
 
    **Skewness is a measure of asymmetry of a dataset.** If there are values far
@@ -61,6 +64,7 @@ variables, there is no notion of “distance” between different categories.)
 
 Skew in a Histogram
 -------------------
+<<<<<<< HEAD
 
 Consider the histogram of average exam scores below.
 
@@ -79,6 +83,8 @@ histogram above, with a **right tail** and a **right skew**.
 
 Example: Positive Skew
 ----------------------
+=======
+>>>>>>> ea780aa92ce42576adb80be13f65a0911baefd36
 
 Consider the histogram of a variable below.
 
@@ -87,6 +93,7 @@ Consider the histogram of a variable below.
 
 .. image:: figures/right_skew_histogram.png
    :align: center
+<<<<<<< HEAD
    :alt: A histogram of a variable with positive skew. It has a right tail which means there are more values on the right side of the mean.
 
 
@@ -94,6 +101,18 @@ While most of the data lies in the interval between 0 and 1.5, there are values
 in the dataset that are much higher (but none that are below 0). This is
 an example of a positive skew. An example of a real dataset that might look 
 like the histogram above is :ref:`outlined below<outliers_and_skew_income>`.
+=======
+
+
+This is an example of a positive skew, since, while most of the data lies in the
+interval between 0 and 1.5, there are values in the dataset that are much higher
+(but none that are below 0). This large group of values above the mean is called
+a **right tail**, and as such a positive skew is often called a **right skew**.
+(An example of a real dataset that might look like the histogram above is
+:ref:`outlined below<outliers_and_skew_income>`.) Similarly, a dataset with a
+negative skew looks like a mirror image of the histogram above, with a **left
+tail** and a **left skew**.
+>>>>>>> ea780aa92ce42576adb80be13f65a0911baefd36
 
 
 .. shortanswer:: variables_with_right_skew
@@ -129,7 +148,10 @@ happens to the mean and median for the dice roll when the 6 is changed to a 60.
 
 .. image:: figures/uneven_dice_mean.png
    :align: center
+<<<<<<< HEAD
    :alt: A screenshot of a table in Sheets. The average dice roll when the 6 value is changed to 60.
+=======
+>>>>>>> ea780aa92ce42576adb80be13f65a0911baefd36
 
 
 The mean of the dice roll is now 12.5! Only one value was changed, yet the mean
@@ -140,7 +162,10 @@ changed drastically.
 
 .. image:: figures/uneven_dice_median.png
    :align: center
+<<<<<<< HEAD
    :alt: A screenshot of a table in Sheets. The median of the dice roll when the 6 value is changed to 60. 
+=======
+>>>>>>> ea780aa92ce42576adb80be13f65a0911baefd36
 
 
 In contrast, the median does not change at all. The median is considered more
@@ -180,6 +205,7 @@ Since there are some households that earn extremely high incomes, just these few
 values can affect the mean too much (in the same way that changing 6 to 60
 affected the mean for the dice roll). The median is preferred in such contexts.
 
+<<<<<<< HEAD
 Further Application
 -------------------
 In the real world, skew is present in many different fields, including 
@@ -189,3 +215,8 @@ see `this article on skewness in finance.`_
 .. _You can read more about the income distribution here.: https://dqydj.com/income-percentile-calculator/
 .. _US census report on income from 2003: https://www.census.gov/prod/2003pubs/p70-88.pdf
 .. _this article on skewness in finance.: http://www.fusioninvesting.com/2010/09/what-is-skew-and-why-is-it-important/
+=======
+
+.. _You can read more about the income distribution here.: https://dqydj.com/income-percentile-calculator/
+.. _US census report on income from 2003: https://www.census.gov/prod/2003pubs/p70-88.pdf
+>>>>>>> ea780aa92ce42576adb80be13f65a0911baefd36
