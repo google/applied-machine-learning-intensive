@@ -34,20 +34,21 @@ statistic is only representative of 2 students. If, however, your survey
 contains 600 heights, calculating an average from these results will be more
 reliable, since this statistic represents 600 of the 800 students.
 
-Another place where you could use count is when planning a homework party.
+Another place where you could use *count* is when planning a homework party.
 You are throwing a homework party and asked your friends to RSVP if they are
-attending and submit their food preferences through a survey. Knowing how many
-people will be attending would be very helpful to you when you go grocery
-shopping for snacks! In this case, taking the *count* of the spreadsheet created
-from the survey would give you this useful information.
+attending and to submit their food preferences through a survey. Knowing how 
+many people will be attending would be very helpful to you when you go 
+grocery shopping for snacks. In this case, taking the *count* of the 
+spreadsheet created from the survey would give you this useful information.
 
-As for sum, let's consider a scenario in which you are the owner of a small,
-local coffee shop. As a small business owner, daily sales are really important
-to you so you know how your business is doing, and if there has been growth!
-You have a spreadsheet of all of the sales for a specific day. You can use *sum*
-on this data to get the total amount of money you made that day in sales!
-You can also use *count* to get the number of sales (which is basically the
-number of customers you got that day), to see if your business is doing well.
+As for *sum*, consider a scenario in which you are the owner of a small,
+local coffee shop. As a small business owner, daily sales are really 
+important to you so you know how your business is doing, and if there has 
+been growth! You have a spreadsheet of all of the sales for a specific day. 
+You can use *sum* on this data to get the total amount of money you made that
+day in sales! You can also use *count* to get the number of sales (which is 
+basically the number of customers you got that day), to see if your business 
+is doing well.
 
 Calculating these statistics in Sheets is fairly straightforward. For these and
 other statistics, you’ll need to know **cell range notation**. To refer to a
