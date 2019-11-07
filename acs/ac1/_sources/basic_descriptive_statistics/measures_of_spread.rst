@@ -14,12 +14,12 @@ But how useful are those guesses?
 
 In this section, you will learn about **standard deviation** and **variance**. Both of these measures of spread are useful to know since they lead to a better understanding about the accuracy of other statistics. This is demonstrated in the example below.
 
-Trying to guess the value of a variable that doesn’t change much is a lot easier
-than trying to guess the value of a variable that changes drastically. To take
-an extreme example, suppose there are two very different cities next to each
-other. In “Consistentville”, everyone has the same yearly salary of $50,000. In
-“Wonkytown” exactly half the people have a yearly salary of $100,000, and the
-other half are unemployed.
+Trying to guess the value of a variable that doesn’t change much is a lot 
+easier than trying to guess the value of a variable that changes drastically. 
+To take an extreme example, suppose there are two very different cities next 
+to each other. In “Consistentville”, everyone has the same yearly salary of 
+$50,000. In “Wonkytown” exactly half the people have a yearly salary of 
+$100,000, and the other half are unemployed.
 
 
 .. https://docs.google.com/presentation/d/11O5DHFz8OJn2cIiDnSHd0hfAmY1HDaFQKtGBd3HYCmQ/edit?usp=sharing
@@ -34,7 +34,8 @@ other half are unemployed.
    :align: center
    :alt: A visual for the salaries of those in Wonkytown and Consistentville with example incomes. 
 
-Above is an example dataset for 6 people in each of the towns and their salaries.
+Above is an example dataset for 6 people in each of the towns and their 
+salaries.
 
 .. fillintheblank:: mean_salary_in_consistentville
 
@@ -53,11 +54,11 @@ Above is an example dataset for 6 people in each of the towns and their salaries
      :x: Incorrect
 
 
-Since all residents of Consistentville make the same salary of $50,000, the mean
-salary is simply $50,000. Now since exactly half the residents of Wonkytown make
-$100,000 and the other half make $0, it should make some intuitive sense that
-the mean salary in Wonkytown is also $50,000. So “on average”, residents of
-Consistentville and Wonkytown make the same salary.
+Since all residents of Consistentville make the same salary of $50,000, the 
+mean salary is simply $50,000. Now since exactly half the residents of 
+Wonkytown make $100,000 and the other half make $0, it should make some 
+intuitive sense that the mean salary in Wonkytown is also $50,000. So 
+“on average,” residents of Consistentville and Wonkytown make the same salary.
 
 
 .. shortanswer:: random_resident_salary
@@ -68,16 +69,16 @@ Consistentville and Wonkytown make the same salary.
 
 If you take a random resident of Consistentville and guess their salary to be
 the mean of $50,000, you would be right every single time. However, if you did
-the same in Wonkytown, you would be wrong every single time! Not only would your
-guess be wrong, it would be either $50,000 below or $50,000 above their true
-salary, both of which are way off! So in this case, while the mean was an
+the same in Wonkytown, you would be wrong every single time! Not only would 
+your guess be wrong, it would be either $50,000 below or $50,000 above their 
+true salary, both of which are way off! So in this case, while the mean was an
 extremely effective “best guess” in Consistentville, it was not so useful in
 Wonkytown.
 
-In a city like Wonkytown, it is pretty hard to form a “best guess”. That’s where
-measures of spread come in. A measure of spread statistic doesn’t refine a
-measure of center, but it can tell you how useful that measure of center is. The
-most common measure of spread is called the standard deviation.
+In a city like Wonkytown, it is pretty hard to form a “best guess”. That’s 
+where measures of spread come in. A measure of spread statistic doesn’t refine 
+a measure of center, but it can tell you how useful that measure of center is. 
+The most common measure of spread is called the standard deviation.
 
 
 .. admonition:: Standard Deviation Definition
@@ -176,12 +177,12 @@ almost 7 degrees (more than 50%) higher in NYC compared to Seattle.
 
 This example should illustrate that knowing the mean sometimes isn’t enough.
 Just using the mean, you may have believed that Seattle and NYC have very
-similar temperature all year round. Knowing the standard deviation alongside the
-average, however, tells you that while Seattle and NYC have similar mean
+similar temperature all year round. Knowing the standard deviation alongside 
+the average, however, tells you that while Seattle and NYC have similar mean
 temperatures, there is much higher year-round variability in NYC. If you then
-add in the knowledge of the maximum and minimum temperatures of both cities, you
-would have a pretty good idea of the year-round temperature seasonality of both
-cities.
+add in the knowledge of the maximum and minimum temperatures of both cities, 
+you would have a pretty good idea of the year-round temperature seasonality of 
+both cities.
 
 
 Extension: Variance
@@ -210,8 +211,8 @@ procedure for calculating the variance of a dataset, call it dataset A.
 1.  Calculate the mean of dataset A.
 2.  Find the difference between the mean of dataset A and each value in dataset
     A. These values form a new dataset, dataset B.
-3.  Square all the values in dataset B. These values form a new dataset, dataset
-    C.
+3.  Square all the values in dataset B. These values form a new dataset, 
+    dataset C.
 4.  The mean of dataset C is the variance of dataset A.
 
 More intuitively, dataset B shows you how far points in dataset A are from the
@@ -272,8 +273,8 @@ Suppose you have this dataset containing the heights of students in a class.
    :alt: a Sheets screenshot of a dataset of student heights.
 
 First, use the method of calculating variance (above) to calculate the variance
-and standard deviation of this dataset. Then, you can confirm your answers using
-``VARP`` and ``STDEVP``.
+and standard deviation of this dataset. Then, you can confirm your answers 
+using ``VARP`` and ``STDEVP``.
 
 
 .. fillintheblank:: variance_of_students_heights
@@ -296,7 +297,7 @@ and standard deviation of this dataset. Then, you can confirm your answers using
 Further Application
 --------------------
 
-There are real-world applications that these measures of center can be used for. 
+There are real-world applications that these measures of center can be used for.
 In `this exercise`_ it encourages exploration of the salaries of professional 
 athletes with measures of spread as well as other statistics. Try this on your 
 own in Sheets if you are interested in getting more experience with any of the 
