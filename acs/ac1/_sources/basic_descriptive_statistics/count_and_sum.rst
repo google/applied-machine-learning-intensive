@@ -155,10 +155,5 @@ enough for Spotify Premium.
      :IF\(B1>=15, TRUE, FALSE\): Incorrect: Formulas must start with ``=``.
      :x: Incorrect
 
-Overview
-========
-Count and sum are just two of many useful basic descriptive statistics, and
-could be helpful in understanding a dataset. Use these two statistics when
-you want to get a general idea of your dataset quickly!
 
 .. _Spotify Premium on a family plan: https://www.spotify.com/us/family/
