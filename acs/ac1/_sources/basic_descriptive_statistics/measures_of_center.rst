@@ -210,7 +210,7 @@ over twelve months, however, these effects “cancelled out”, and, when lookin
 just at the mean, it may look as if Seattle and NYC have similar temperatures
 all year round. Sometimes summary statistics can over-summarize the data. You
 will learn more about how to take this over-summarization into account in the
-:ref:`section below on measures of spread<measures_of_spread>` section. In the
+:ref:`section below on measures of spread<measures_of_spread>`. In the
 meantime, you can look closer into investigating the median of this data.
 
 
