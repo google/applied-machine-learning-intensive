@@ -10,13 +10,13 @@ Measures of Center
 ==================
 
 Some of the most widely used statistics are “measures of center,” which
-describe where the data is centered. This type of statistic is
-extremely useful, as it allows you to summarize all the data with one
-number/category. (Statistics like this are called **summary statistics**.)
+describe where the data is centered. This type of statistic is extremely useful,
+as it allows you to summarize all the data with one number/category. (Statistics
+like this are called **summary statistics**.)
 
-You can think of a measure of center as a “best guess”. For example, if you had
-one guess at the value of a new observation (e.g. the height of a new student
-who joins the class), what would you guess?
+You can think of a measure of center as a “best guess”. If you had one guess at
+the value of a new observation (e.g. the height of a new student who joins the
+class), what would you guess?
 
 
 .. admonition:: The Three Measures of Center
@@ -26,6 +26,8 @@ who joins the class), what would you guess?
    -   The mean is calculated by adding up all the values in the data, and
        dividing by the number of data points.
    -   The mean is only defined for quantitative variables.
+   -   Sometimes the mean is referred to simply as the “average” (for example in
+       Sheets), but it is better to remember it as the mean.
 
    The **median** is the middle value.
 
@@ -34,6 +36,8 @@ who joins the class), what would you guess?
    -   If there are two “middle values” (which occurs when there is an even
        number of data points), the median is halfway between the two values.
    -   The median is only defined for quantitative variables.
+   -   The median is the value such that half the values are below it, and half
+       the values are above it.
 
    The **mode** is the most commonly occurring value in the data.
 
@@ -44,12 +48,14 @@ who joins the class), what would you guess?
        count, and this count is higher than those of the other categories.
    -   The mode is only defined for categorical variables.
 
-When handling different types of data, different measures of center can tell
-you more useful information than others can. Whenever you have a categorical
+
+When handling different types of data, some measures of center can tell you more
+useful information than others can. Whenever you have a categorical
 variable, the mode is your only choice for a measure of center. However, with
 quantitative variables, either the mean or median can be used to describe the
 “best guess”. You can begin building intuition about which of the three measures
 of center is most appropriate through some examples:
+
 
 .. mchoice:: new_student_birth_country
 
@@ -69,15 +75,16 @@ of center is most appropriate through some examples:
 
      + Correct
 
+
 .. image:: figures/seattle.jpg
-  :align: center
+   :align: center
 
 
 .. shortanswer:: cost_of_living_seattle_new_york
 
    You want to do a study on whether it is more expensive to rent an apartment
-   in Seattle or in New York City. What data would you try to collect to answer
-   this question and what summary statistics would be useful?
+   in Seattle or in New York City. What data would you collect to answer this
+   question, and what summary statistics could be useful?
 
 
 The mean, median, and mode functions in Sheets all have the exact same syntax as
@@ -85,6 +92,7 @@ the ``MIN`` and ``MAX`` functions, defined earlier
 :ref:`here<minimum_and_maximum_dice_roll>`. You can either input all relevant
 values into the function separated by commas, or you can define a cell range.
 The latter is far more convenient in most cases.
+
 
 .. admonition:: Measures of Center in Sheets
 
@@ -108,16 +116,19 @@ The latter is far more convenient in most cases.
    ``=MODE(value1, value2, value3)``), or you can input a range of cells of
    which you want to know the mode (e.g. ``=MODE(A1:A10)``).
 
-Now that you know the functions for calculating mean, median, and mode in
-sheets, put your newfound knowledge to the test. Say you are helping
-grade for a class and your professor has given you a list of student scores
-for the last exam. How would you calculate the median and mode in sheets?
+
+Say you are helping grade for a class and your professor has given you a list of
+student scores for the last exam. How would you calculate the median and mode
+in sheets?
+
 
 Example: Test Scores
 --------------------
 
+
 .. image:: figures/test_scores.png
    :align: center
+
 
 .. TODO(raskutti): Embed
    https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=1025947509
@@ -142,15 +153,18 @@ Example: Test Scores
      :MEDIAN\(A1\:A6\): Incorrect: Remember formulas must start with ``=``.
      :x: Incorrect
 
+
 Now that you have some practice with creating formulas to calculate median and
-mean, you can start to build some intuition as to what the difference between
+mean, you can start to build some intuition as to what the differences between
 these measures of center may be. Say someone asked you for your advice about
-where they wanted to move after graduation and that weather was a major concern
-for them. You want to give them a summary statistic to accurately summarize the
-data. Would the mean or median make more sense? Walking through the next example
-can help you figure that out.
+where they wanted to move after graduation, and that the weather was a major
+concern for them. You want to give them a summary statistic to accurately
+summarize the data. Would the mean or median make more sense? The next example
+can help you understand when you would want to use the mean versus the median.
+
 
 .. _measures_of_center_weather:
+
 
 Example: Weather
 ----------------
@@ -159,17 +173,21 @@ First, calculate and compare the mean maximum daily temperature in Seattle
 and New York City (NYC). The data for the two cities’ temperatures are in two
 different sheets.
 
+
 .. _Temperature Spreadsheet.: https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=0
 .. TODO(raskutti):
    https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=0
+
 
 The “actual_max_temp” is in column D, and tells you the maximum daily
 temperature. Calculating the mean of that is as simple as using the ``AVERAGE``
 function on that cell range as shown in the image below. From this, you can see
 that the mean maximum temperature in Seattle is 64.2 degrees.
 
+
 .. image:: figures/sea_max_average.png
    :align: center
+
 
 You can now switch to the NYC sheet and use the exact same formula.
 
@@ -184,23 +202,28 @@ You can now switch to the NYC sheet and use the exact same formula.
 
 This example indicates that on average, over the course of twelve months,
 Seattle and NYC have fairly similar temperatures. Does this seem right to you?
+
 In reality, for a given time of year, the temperatures of Seattle and NYC
 usually differ significantly. NYC winters are considerably colder than Seattle
 winters, and NYC summers tend to be warmer than Seattle summers. When averaged
 over twelve months, however, these effects “cancelled out”, and, when looking
 just at the mean, it may look as if Seattle and NYC have similar temperatures
-all year round. Sometimes summary statistics can over-summarize the data. We
-will learn more about how to take this into account in the
+all year round. Sometimes summary statistics can over-summarize the data. You
+will learn more about how to take this over-summarization into account in the
 :ref:`section below on measures of spread<measures_of_spread>` section. In the
 meantime, you can look closer into investigating the median of this data.
+
 
 .. shortanswer:: nyc_and_seattle_median_temperatures
 
    Calculate the median maximum temperatures for Seattle and NYC.
    Do these statistics tell a different story? Why?
 
-Right now, the mean and median may not seem all that different. However,
-there are cases where the median is more useful than the mean. The next section
-on outliers will explain this difference through an example on family income.
+
+Right now, the mean and median may not seem all that different. However, there
+are cases where the median is more useful than the mean. The
+:ref:`next section on outliers <outliers_and_skew>` will explain this difference
+through an example on family income.
+
 
 .. _See here for a longer discussion.: https://www.quora.com/What-is-difference-between-the-mean-and-the-average
