@@ -34,14 +34,16 @@ Consider the histogram of student heights below.
    :alt: A histogram of student heights. Lia and Katrina are the tallest of the 11 students.
 
 
-In this example, there are two students whose heights are much
-greater than the rest of the students. Lia's height is 188 cm and Katrina's 
-height is 193 cm. Taking the mean of the students' heights results in 168.45 
-centimeters (cm). Using the mean as your only summary statistic can often be
-misleading. In this case, the mean does not accurately represent what one
-might assume is the height at which each student is approximately at. 
-Consider the effects if this school decided to use the mean to decide how
-high the student desks needed to be.
+In this example, there are two students whose heights are much greater than the
+rest of the students. Lia's height is 188 centimeters (cm) and Katrina's height
+is 193 cm. Taking the mean of the students' heights results in 168.45 (cm). 
+Using the mean as the only summary statistic of a dataset can often be 
+misleading. In this example of student heights, the mean does not accurately 
+depict the heights of the students. It especially would not be the correct 
+statistic to use in making decisions regarding height that would impact each
+student. Consider the effects if this school decided to use the mean to decide
+how high the student desks needed to be. This would result in desks that are 
+too high for most students and too small for a few others.
 
 
 .. admonition:: Skew Definition
@@ -66,15 +68,14 @@ Consider the histogram of average exam scores below.
 
 .. image:: figures/average_student_exam_scores_skew.png
    :align: center
-   :alt: A histogram of average exam scores with a left tail. There are more values to the left (and lower) than the mean. This histogram has negative skew. 
+   :alt: A histogram of average exam scores with a left tail. There are more values to the left of (or lower than) the mean. This histogram has negative skew. 
 
 
-This is an example of negative skew. By taking the mean, you see that it is 81.
-What this means is that there are a large number of values that are lower than
-the mean. This large group of values below the mean is called
-a **left tail**, and as such a negative skew is often called a **left skew**.
-Similarly, a dataset with a positive skew looks like a mirror image of the
-histogram above, with a **right tail** and a **right skew**.
+This is an example of negative skew. The mean is 81, and there are a large 
+number of values that are lower than 81. This large group of values below the 
+mean is called a **left tail**, and as such a negative skew is often called a 
+**left skew**. Similarly, a dataset with a positive skew looks like a mirror 
+image of the histogram above, with a **right tail** and a **right skew**.
 
 
 Example: Positive Skew
@@ -182,9 +183,10 @@ affected the mean for the dice roll). The median is preferred in such contexts.
 
 Further Application
 -------------------
+
 In the real world, skew is present in many different fields, including 
-Economics. For more information about how skew affects financial markets,
-see `this article on skewness in finance.`_
+economics. For more information about how skew affects financial markets, see 
+`this article on skewness in finance.`_
 
 .. _You can read more about the income distribution here.: https://dqydj.com/income-percentile-calculator/
 .. _US census report on income from 2003: https://www.census.gov/prod/2003pubs/p70-88.pdf
