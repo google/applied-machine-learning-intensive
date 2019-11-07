@@ -11,8 +11,8 @@ Measures of Center
 
 Some of the most widely used statistics are “measures of center,” which
 describe where the data is centered. This type of statistic is extremely useful,
-as it allows you to summarize all the data with one number/category. (Statistics
-like this are called **summary statistics**.)
+as it allows you to summarize all the data with one number/category. Statistics
+that summarize key aspects of the data are called **summary statistics**.
 
 You can think of a measure of center as a “best guess”. If you had one guess at
 the value of a new observation (e.g. the height of a new student who joins the
@@ -54,7 +54,7 @@ useful information than others can. Whenever you have a categorical
 variable, the mode is your only choice for a measure of center. However, with
 quantitative variables, either the mean or median can be used to describe the
 “best guess”. You can begin building intuition about which of the three measures
-of center is most appropriate through some examples:
+of center is most appropriate through some examples.
 
 
 .. mchoice:: new_student_birth_country
@@ -76,7 +76,7 @@ of center is most appropriate through some examples:
      + Correct
 
 
-.. image:: figures/seattle.jpg
+.. image:: figures/seattle.png
    :align: center
 
 
@@ -117,13 +117,12 @@ The latter is far more convenient in most cases.
    which you want to know the mode (e.g. ``=MODE(A1:A10)``).
 
 
+Example: Test Scores
+--------------------
+
 Say you are helping grade for a class and your professor has given you a list of
 student scores for the last exam. How would you calculate the median and mode
 in sheets?
-
-
-Example: Test Scores
---------------------
 
 
 .. image:: figures/test_scores.png
@@ -159,8 +158,9 @@ mean, you can start to build some intuition as to what the differences between
 these measures of center may be. Say someone asked you for your advice about
 where they wanted to move after graduation, and that the weather was a major
 concern for them. You want to give them a summary statistic to accurately
-summarize the data. Would the mean or median make more sense? The next example
-can help you understand when you would want to use the mean versus the median.
+summarize what the weather might be like at those respective locations. Would
+the mean or median make more sense? The next example can help you understand
+when you would want to use the mean versus the median.
 
 
 .. _measures_of_center_weather:
@@ -208,7 +208,9 @@ usually differ significantly. NYC winters are considerably colder than Seattle
 winters, and NYC summers tend to be warmer than Seattle summers. When averaged
 over twelve months, however, these effects “cancelled out”, and, when looking
 just at the mean, it may look as if Seattle and NYC have similar temperatures
-all year round. Sometimes summary statistics can over-summarize the data. You
+all year round.
+
+Sometimes summary statistics can over-summarize the data. You
 will learn more about how to take this over-summarization into account in the
 :ref:`section below on measures of spread<measures_of_spread>`. In the
 meantime, you can look closer into investigating the median of this data.
