@@ -9,7 +9,7 @@
 Measures of Center
 ==================
 
-Some of the most widely used statistics are “measures of center” which
+Some of the most widely used statistics are “measures of center,” which
 describe where the data is centered. This type of statistic is
 extremely useful, as it allows you to summarize all the data with one
 number/category. (Statistics like this are called **summary statistics**.)
@@ -69,7 +69,7 @@ of center is most appropriate through some examples:
 
      + Correct
 
-.. image:: figures/sea.JPG
+.. image:: figures/seattle.jpg
   :align: center
 
 
