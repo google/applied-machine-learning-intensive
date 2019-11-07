@@ -10,9 +10,9 @@ Example Visualizations
 “Hollywood's Gender Imbalance”
 ------------------------------
 
-Take a look at the visualization titled “Hollywood's Gender Imbalance”,
-which appears in `this article, authored by statistics-based
-media site FiveThirtyEight`_. Ask yourself the following questions.
+Take a look at the visualization titled “Hollywood's Gender Imbalance”, which 
+appears in `this article, authored by statistics-based media site 
+FiveThirtyEight`_. Ask yourself the following questions.
 
 -   What do you think the key point of this visualization is?
 -   Where has the author drawn attention to, and how?
