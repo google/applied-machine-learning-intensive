@@ -133,10 +133,11 @@ in the previous example: Renoir, Degas, and Gauguin.
 
 Filters make this kind of exercise significantly easier. What was previously a
 complicated formula is now just two simple filters. Moreover, filters allow you
-to be more specific with your conditions. Suppose, instead of looking at
-painters who only have French nationality, you now want to look at painters for
-whom at least one of their nationalities is French. (For example, this includes
-Alfred Sisley, whose nationalities are French and British.)
+to be more specific with your conditions, which makes them a powerful but easy 
+tool to use. Suppose, instead of looking at painters who only have French 
+nationality, you now want to look at painters for whom *at least one* of their
+nationalities is French. (For example, this includes Alfred Sisley, whose 
+nationalities are French and British.)
 
 Since this filter is not based on an exact equality, you need to use a “Filter
 by condition”. You can change the filter applied to the “nationality” column,
@@ -170,6 +171,7 @@ contains”, then type the word “French”.
 
 Sorting Data
 ------------
+Now we can see how a Filter in Sheets can also be used to easily sort data.
 
 Data is often unordered, which can make it difficult to examine visually.
 Sorting data allows you to order columns. Most of the ordering you will come
