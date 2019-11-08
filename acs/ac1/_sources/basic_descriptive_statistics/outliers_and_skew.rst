@@ -36,25 +36,23 @@ Consider the histogram of student heights below.
 
 In this example, there are two students whose heights are much greater than the
 rest of the students. Lia's height is 188 centimeters (cm) and Katrina's height
-is 193 cm. Taking the mean of the students' heights results in 168.45 (cm). 
-Using the mean as the only summary statistic of a dataset can often be 
-misleading. In this example of student heights, the mean does not accurately 
-depict the heights of the students. It especially would not be the correct 
-statistic to use in making decisions regarding height that would impact each
-student. Consider the effects if this school decided to use the mean to decide
-how high the student desks needed to be. This would result in desks that are 
-too high for most students and too small for a few others.
+is 193 cm. Taking the mean of the students' heights results in 168.45 cm.
+
+Using the mean as the only summary statistic of a dataset can often be
+misleading. For example, consider the effects if this school decided to use the
+mean to decide how high the student desks needed to be. This would result in
+desks that are too high for most students, but too small for Lia and Katrina.
 
 
 .. admonition:: Skew Definition
 
-   **Skewness is a measure of asymmetry of a dataset.** If there are values far
-   away from the mean on one side (either above or below), but no values the
-   same distance from the mean on the other side, this is an example of skew. A
-   **positive skew** occurs when the dataset contains values much greater than
-   the mean but not much less than the mean. A **negative skew** occurs when the
-   dataset contains values much less than the mean but not much greater than the
-   mean.
+   **Skewness is a measure of asymmetry of a dataset.** For example, a dataset
+   has a skew if there are values far away from the mean on one side (either
+   above or below), but far fewer values the same distance from the mean on the
+   other side. A **positive skew** occurs when the dataset contains values much
+   greater than the mean but far fewer values less than the mean. A **negative
+   skew** occurs when the dataset contains values much less than the mean but
+   far fewer values much greater than the mean.
 
 
 Outliers and skew only pertain to quantitative variables. (For categorical
