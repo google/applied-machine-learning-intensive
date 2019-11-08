@@ -19,19 +19,15 @@ makes the statement sound more persuasive. That statistic happens to be true,
 but the media and other sources will often misinterpret data to support the claim
 they’re trying to make. Since the claims they make often impact the decisions you
 make, it’s important for you to be able to critically assess those statistics.
-On top of that, being able to perform statistical analyses gives you the powerful 
-ability to create data-driven statistics that support your own claims or drive your
+On top of that, statistics allows you to support your own claims or drive your
 own decision-making in any field of work or study.
 
-Here’s just a few examples of how a variety of fields use statistics:
+Here are just a few examples of how a variety of fields use statistics:
 
 -  Journalists use data to substantiate their reporting.
 -  Political leaders use data to inform their decisions.
 -  Sports teams and businesses lean heavily on statistical algorithms for their actions.
 -  Psychologists use statistics to give meaning to the data they collected.
--  So many other fields use statistics with so many other uses!
 
-.. image:: figures/venn_diagram.png
-   :align: center
+There are so many other fields that use statistics with so many other uses!
 
-This next chapter explains the basics of statistics, and how to use them in Sheets.
