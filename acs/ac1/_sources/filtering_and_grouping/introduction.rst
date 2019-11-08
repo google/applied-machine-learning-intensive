@@ -13,12 +13,12 @@ Sheets has functions that allow you to **filter** as well as **group**
 data. For example, if you had the table below you could use filtering and
 grouping to more easily display certain data. 
 
-.. image::
+.. image:: figures/table_data_example.png
    :align: center
    :alt: Table of data.
 
 
-.. image::
+.. image:: figures/table_filter_example.png
    :align: center
    :alt: The same table of data after applying a filter.
 
