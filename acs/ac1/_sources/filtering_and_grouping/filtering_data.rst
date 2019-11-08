@@ -181,9 +181,10 @@ across is either numeric or text.
 -   Text data can be ordered alphabetically “A-Z” or “Z-A”.
 
 Sorting can be useful if you just want to see the top or bottom values of a
-dataset. For example, if you have a dataset containing information on all of the
-students in a class, you may order it by age to see the ages of the youngest and
-oldest students.
+dataset. For example, if you have a list of bills you need to pay this month,
+you can order it by amount to see the cost of the most expensive and least
+expensive bill you have to pay.
+
 
 If you have already set up a Filter in Sheets, sorting comes for free. For
 example, suppose you wanted to sort the painters dataset alphabetically by
