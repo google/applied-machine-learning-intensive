@@ -7,11 +7,13 @@
 What Is A Sheet?
 ================
 
-Fundamentally, a sheet is a table, or a matrix. It is a 2-dimensional way of
-viewing **data** (any form of information that you can type on a computer
-keyboard), through rows and columns. Sheets is often used to store a
-**dataset**, which is a related set of different data points. Below is the key
-terminology you need to know when using Sheets.
+Fundamentally, a spreadsheet (also known as a sheet) is a table, or a matrix. It
+is a 2-dimensional way of viewing **data** (any form of information used for
+reference or analysis), through rows and columns. Spreadsheets are used to
+store, manipulate, and analyze data. You can create a spreadsheet using Google
+Sheets, which is simply referred to as Sheets throughout this textbook. Sheets
+is often used to store **datasets**, which are related sets of different data
+points. Below is the key terminology you need to know when using Sheets.
 
 
 .. admonition:: Basic Definitions
