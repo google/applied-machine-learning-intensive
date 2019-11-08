@@ -53,5 +53,5 @@ Bar Chart
    :align: center
    :alt: An example bar chart visualization. 
 
-This figure holds information on average fare and duration of taxi rides in 
-Chicago.
+This figure holds information about the amount of trips and average fare
+depending on the duration of taxi rides in Chicago.
