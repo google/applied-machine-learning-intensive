@@ -39,7 +39,7 @@ This figure holds data about famous artists and their ethnicity.
 Table
 =====
 
-.. image:: figures/table_example.png
+.. image:: figures/table_data_example.png
    :align: center
    :alt: An example table visualization.
    
