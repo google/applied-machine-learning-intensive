@@ -43,7 +43,7 @@ Table
    :align: center
    :alt: An example table visualization.
    
-This figure depicts a table holding information about people. The columns
+This figure depicts a table holding information about people. The columns 
 contain data for several different categories. 
 
 Bar Chart
@@ -53,5 +53,5 @@ Bar Chart
    :align: center
    :alt: An example bar chart visualization. 
 
-This figure holds information on average fare and duration of taxi
-rides in Chicago.
+This figure holds information on average fare and duration of taxi rides in 
+Chicago.
