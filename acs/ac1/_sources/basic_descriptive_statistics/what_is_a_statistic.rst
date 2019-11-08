@@ -17,7 +17,6 @@ is.
    information you can get from a set of data.
 
 
-
 For example, suppose you have a dataset containing the heights of all students
 in this class. 
 
