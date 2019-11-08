@@ -34,14 +34,13 @@ statistic is only representative of 2 students. If, however, your survey
 contains 600 heights, calculating an average from these results will be more
 reliable, since this statistic represents 600 of the 800 students.
 
-Another place where you could use *count* and *sum* is when planning a homework
-party. You are throwing a homework party and ask your friends to RSVP if they
-are attending and to submit how many pizza slices they would like to eat 
-through a survey. Knowing how many people would be attending would be helpful 
-to you when you purchase snacks. In this case, taking the *count* of the 
-spreadsheet created from the survey would give you this useful information. You 
-could also take the *sum* of the number of pizza slices your friends want in 
-order to get a better idea of how many pizzas to order. 
+As an example of using *count* and *sum*, suppose you are throwing a homework
+party. You ask your friends to RSVP if they are attending and to submit how many
+pizza slices they would like to eat, through a survey. Knowing how many people
+would be attending will be helpful to you when you purchase snacks, and you can
+use the *count* to calculate the number of guests. You could also take the *sum*
+of the number of pizza slices your friends want in order to get a better idea of
+how many pizzas to order.
 
 Calculating these statistics in Sheets is fairly straightforward. For these and
 other statistics, you’ll need to know **cell range notation**. To refer to a
