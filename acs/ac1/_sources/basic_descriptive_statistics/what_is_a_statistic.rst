@@ -47,5 +47,5 @@ Suppose you have a dataset on how far students travel to get to school.
    
 .. shortanswer:: students_travel_statistics
 
-   What are some important statistics of that dataset?
+   What are some important statistics of the dataset above?
    
