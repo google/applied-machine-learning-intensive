@@ -12,7 +12,10 @@ Measures of Spread
 Measures of center are very useful for giving you a “best guess” at a variable.
 But how useful are those guesses?
 
-In this section, you will learn about **standard deviation** and **variance**. Both of these measures of spread are useful to know since they lead to a better understanding about the accuracy of other statistics. This is demonstrated in the example below.
+In this section, you will learn about **standard deviation** and **variance**.
+These are the most common "measures of spread" statistics, since they indicate 
+how spread out a dataset is. These statistics are also used to inform how useful 
+other statistics (such as the mean) are for making predictions.
 
 Trying to guess the value of a variable that doesn’t change much is a lot 
 easier than trying to guess the value of a variable that changes drastically. 
@@ -270,7 +273,7 @@ Suppose you have this dataset containing the heights of students in a class.
 
 .. image:: figures/screenshot_studentheights_spread.png
    :align: center
-   :alt: a Sheets screenshot of a dataset of student heights.
+   :alt: A Sheets screenshot of a dataset of student heights.
 
 First, use the method of calculating variance (above) to calculate the variance
 and standard deviation of this dataset. Then, you can confirm your answers 
@@ -298,7 +301,7 @@ Further Application
 --------------------
 
 There are real-world applications that these measures of center can be used for.
-In `this exercise`_ it encourages exploration of the salaries of professional 
+`This exercise`_ exploresthe salaries of professional 
 athletes with measures of spread as well as other statistics. Try this on your 
 own in Sheets if you are interested in getting more experience with any of the 
 previously learned statistics.
@@ -307,4 +310,4 @@ previously learned statistics.
 .. _this thread goes into the mathematical theory behind the difference: https://math.stackexchange.com/questions/15098/sample-standard-deviation-vs-population-standard-deviation
 .. _probability distributions: https://en.wikipedia.org/wiki/Probability_distribution
 .. _this article: http://davidmlane.com/hyperstat/A16252.html
-.. _this exercise: https://www.ck12.org/statistics/Applications-of-Variance-and-Standard-Deviation/rwa/Variance-of-a-Data-Set/
+.. _This exercise: https://www.ck12.org/statistics/Applications-of-Variance-and-Standard-Deviation/rwa/Variance-of-a-Data-Set/
