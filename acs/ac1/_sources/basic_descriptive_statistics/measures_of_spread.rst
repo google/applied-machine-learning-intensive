@@ -12,19 +12,30 @@ Measures of Spread
 Measures of center are very useful for giving you a “best guess” at a variable.
 But how useful are those guesses?
 
-Trying to guess the value of a variable that doesn’t change much is a lot easier
-than trying to guess the value of a variable that changes drastically. To take
-an extreme example, suppose there are two very different cities next to each
-other. In “Consistentville”, everyone has the same yearly salary of $50,000. In
-“Wonkytown” exactly half the people have a yearly salary of $100,000, and the
-other half are unemployed.
+In this section, you will learn about **standard deviation** and **variance**. Both of these measures of spread are useful to know since they lead to a better understanding about the accuracy of other statistics. This is demonstrated in the example below.
+
+Trying to guess the value of a variable that doesn’t change much is a lot 
+easier than trying to guess the value of a variable that changes drastically. 
+To take an extreme example, suppose there are two very different cities next 
+to each other. In “Consistentville”, everyone has the same yearly salary of 
+$50,000. In “Wonkytown” exactly half the people have a yearly salary of 
+$100,000, and the other half are unemployed.
 
 
 .. https://docs.google.com/presentation/d/11O5DHFz8OJn2cIiDnSHd0hfAmY1HDaFQKtGBd3HYCmQ/edit?usp=sharing
 
 .. image:: figures/consistentville_and_wonkytown.png
    :align: center
+   :alt: A visual for the salaries of those in Wonkytown and Consistentville. 
 
+.. https://docs.google.com/presentation/d/11O5DHFz8OJn2cIiDnSHd0hfAmY1HDaFQKtGBd3HYCmQ/edit?usp=sharing
+
+.. image:: figures/city_salary_visual.png
+   :align: center
+   :alt: A visual for the salaries of those in Wonkytown and Consistentville with example incomes. 
+
+Above is an example dataset for 6 people in each of the towns and their 
+salaries.
 
 .. fillintheblank:: mean_salary_in_consistentville
 
@@ -43,11 +54,11 @@ other half are unemployed.
      :x: Incorrect
 
 
-Since all residents of Consistentville make the same salary of $50,000, the mean
-salary is simply $50,000. Now since exactly half the residents of Wonkytown make
-$100,000 and the other half make $0, it should make some intuitive sense that
-the mean salary in Wonkytown is also $50,000. So “on average”, residents of
-Consistentville and Wonkytown make the same salary.
+Since all residents of Consistentville make the same salary of $50,000, the 
+mean salary is simply $50,000. Now since exactly half the residents of 
+Wonkytown make $100,000 and the other half make $0, it should make some 
+intuitive sense that the mean salary in Wonkytown is also $50,000. So 
+“on average,” residents of Consistentville and Wonkytown make the same salary.
 
 
 .. shortanswer:: random_resident_salary
@@ -58,16 +69,16 @@ Consistentville and Wonkytown make the same salary.
 
 If you take a random resident of Consistentville and guess their salary to be
 the mean of $50,000, you would be right every single time. However, if you did
-the same in Wonkytown, you would be wrong every single time! Not only would your
-guess be wrong, it would be either $50,000 below or $50,000 above their true
-salary, both of which are way off! So in this case, while the mean was an
+the same in Wonkytown, you would be wrong every single time! Not only would 
+your guess be wrong, it would be either $50,000 below or $50,000 above their 
+true salary, both of which are way off! So in this case, while the mean was an
 extremely effective “best guess” in Consistentville, it was not so useful in
 Wonkytown.
 
-In a city like Wonkytown, it is pretty hard to form a “best guess”. That’s where
-measures of spread come in. A measure of spread statistic doesn’t refine a
-measure of center, but it can tell you how useful that measure of center is. The
-most common measure of spread is called the standard deviation.
+In a city like Wonkytown, it is pretty hard to form a “best guess”. That’s 
+where measures of spread come in. A measure of spread statistic doesn’t refine 
+a measure of center, but it can tell you how useful that measure of center is. 
+The most common measure of spread is called the standard deviation.
 
 
 .. admonition:: Standard Deviation Definition
@@ -100,6 +111,7 @@ deviation than the other.
 
 .. image:: figures/standard_deviation_in_histograms.png
    :align: center
+   :alt: A histogram of two variables. Variable two is concentrated in a smaller range across the horizontal axis with high values, while variable one is spread out across the horizontal axis with lower vertical axis values.
 
 
 .. mchoice:: standard_deviation_in_histograms
@@ -165,12 +177,12 @@ almost 7 degrees (more than 50%) higher in NYC compared to Seattle.
 
 This example should illustrate that knowing the mean sometimes isn’t enough.
 Just using the mean, you may have believed that Seattle and NYC have very
-similar temperature all year round. Knowing the standard deviation alongside the
-average, however, tells you that while Seattle and NYC have similar mean
+similar temperature all year round. Knowing the standard deviation alongside 
+the average, however, tells you that while Seattle and NYC have similar mean
 temperatures, there is much higher year-round variability in NYC. If you then
-add in the knowledge of the maximum and minimum temperatures of both cities, you
-would have a pretty good idea of the year-round temperature seasonality of both
-cities.
+add in the knowledge of the maximum and minimum temperatures of both cities, 
+you would have a pretty good idea of the year-round temperature seasonality of 
+both cities.
 
 
 Extension: Variance
@@ -184,7 +196,7 @@ While standard deviation is more widely used, it is actually derived from
 another measure of spread, called the variance. More precisely, **the standard
 deviation is the square root of the variance**. Many `probability
 distributions`_ are defined in terms of mean and variance (not standard
-deviation).
+deviation). You can find another detailed explanation in `this article`_.
 
 
 .. admonition:: Variance Definition
@@ -199,8 +211,8 @@ procedure for calculating the variance of a dataset, call it dataset A.
 1.  Calculate the mean of dataset A.
 2.  Find the difference between the mean of dataset A and each value in dataset
     A. These values form a new dataset, dataset B.
-3.  Square all the values in dataset B. These values form a new dataset, dataset
-    C.
+3.  Square all the values in dataset B. These values form a new dataset, 
+    dataset C.
 4.  The mean of dataset C is the variance of dataset A.
 
 More intuitively, dataset B shows you how far points in dataset A are from the
@@ -256,13 +268,13 @@ Example: Student Heights
 
 Suppose you have this dataset containing the heights of students in a class.
 
-.. TODO(raskutti): Embed
-   https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=1913290661
-
+.. image:: figures/screenshot_studentheights_spread.png
+   :align: center
+   :alt: a Sheets screenshot of a dataset of student heights.
 
 First, use the method of calculating variance (above) to calculate the variance
-and standard deviation of this dataset. Then, you can confirm your answers using
-``VARP`` and ``STDEVP``.
+and standard deviation of this dataset. Then, you can confirm your answers 
+using ``VARP`` and ``STDEVP``.
 
 
 .. fillintheblank:: variance_of_students_heights
@@ -282,7 +294,17 @@ and standard deviation of this dataset. Then, you can confirm your answers using
    - :3.2: Correct
      :x: Incorrect
 
+Further Application
+--------------------
+
+There are real-world applications that these measures of center can be used for.
+In `this exercise`_ it encourages exploration of the salaries of professional 
+athletes with measures of spread as well as other statistics. Try this on your 
+own in Sheets if you are interested in getting more experience with any of the 
+previously learned statistics.
 
 .. _this thread goes into some detail on the practical differences: https://www.quora.com/What-is-the-difference-between-sample-standard-deviation-and-population-standard-deviation
 .. _this thread goes into the mathematical theory behind the difference: https://math.stackexchange.com/questions/15098/sample-standard-deviation-vs-population-standard-deviation
 .. _probability distributions: https://en.wikipedia.org/wiki/Probability_distribution
+.. _this article: http://davidmlane.com/hyperstat/A16252.html
+.. _this exercise: https://www.ck12.org/statistics/Applications-of-Variance-and-Standard-Deviation/rwa/Variance-of-a-Data-Set/
