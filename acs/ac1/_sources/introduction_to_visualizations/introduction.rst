@@ -22,10 +22,11 @@ to access, make articles easy to read, and make findings easy to interpret.
 
 
 In this chapter, you will learn more about when to use different visualizations
-and how to ensure that they effectively communicate your data to its audience.
-To start, take a look at the visualizations on this page. While reviewing them,
+and how to ensure that they effectively communicate data to your audience.
+To start, take a look at the visualizations below. While reviewing them,
 keep in mind what you like about them and what elements on them guide your 
 understanding of their meaning.
+
 
 Pie Chart 
 =========
@@ -49,7 +50,7 @@ contain data for several different categories.
 Bar Chart
 =========
 
-.. image:: figures/chicago_taxi_example.png
+.. image:: figures/bar_chart_example.png
    :align: center
    :alt: An example bar chart visualization. 
 
