@@ -30,4 +30,3 @@ Here are just a few examples of how a variety of fields use statistics:
 -  Psychologists use statistics to give meaning to the data they collected.
 
 There are so many other fields that use statistics with so many other uses!
-
