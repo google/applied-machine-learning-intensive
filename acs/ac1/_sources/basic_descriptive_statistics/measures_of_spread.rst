@@ -14,10 +14,10 @@ But how useful are those guesses?
 
 In this section, you will learn about **standard deviation** and **variance**.
 These are the most common "measures of spread" statistics, since they indicate 
-how spread out a dataset is. These statistics are also used to inform how useful 
-other statistics (such as the mean) are for making predictions.
+how spread out a dataset is. These statistics are also used to inform how
+useful other statistics (such as the mean) are for making predictions.
 
-Trying to guess the value of a variable that doesn’t change much is a lot 
+Trying to guess the value of a variable that doesn’t change much is a lot
 easier than trying to guess the value of a variable that changes drastically. 
 To take an extreme example, suppose there are two very different cities next 
 to each other. In “Consistentville”, everyone has the same yearly salary of 
@@ -301,10 +301,10 @@ Further Application
 --------------------
 
 There are real-world applications that these measures of center can be used for.
-`This exercise`_ exploresthe salaries of professional 
-athletes with measures of spread as well as other statistics. Try this on your 
-own in Sheets if you are interested in getting more experience with any of the 
-previously learned statistics.
+`This exercise`_ explores the salaries of professional athletes with measures 
+of spread as well as other statistics. Try this on your own in Sheets if you 
+are interested in getting more experience with any of the previously learned 
+statistics.
 
 .. _this thread goes into some detail on the practical differences: https://www.quora.com/What-is-the-difference-between-sample-standard-deviation-and-population-standard-deviation
 .. _this thread goes into the mathematical theory behind the difference: https://math.stackexchange.com/questions/15098/sample-standard-deviation-vs-population-standard-deviation
