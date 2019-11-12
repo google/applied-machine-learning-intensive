@@ -31,7 +31,7 @@ separately applied.
 
    - See Answer
 
-     + The table was filtered in the gender column, alphabetically from Z to A.
+     + Correct: The table was filtered in the gender column, alphabetically from Z to A.
 
 .. image:: figures/table_group_example.png
    :align: center
@@ -43,7 +43,7 @@ separately applied.
 
    - See Answer
 
-     + The table was grouped using the COUNTIF function to count how many people came from Los Angeles.
+     + Correct: The table was grouped using the COUNTIF function to count how many people came from Los Angeles.
 
 Don't worry if that was confusing. This exercise was to help get you more familiar 
 with potential uses for filtering and grouping on a data set.
