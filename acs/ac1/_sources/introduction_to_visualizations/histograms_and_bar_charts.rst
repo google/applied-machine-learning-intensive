@@ -33,7 +33,7 @@ show:
 .. image:: figures/student_grades.png
 
 3.  The frequency of train arrivals at different stations (counting trains per
-    unit time), which is shown above.
+    unit time), which is shown as the first example above.
 
 
 Note that sometimes bar charts with vertical bars are called column charts.
