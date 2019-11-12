@@ -20,7 +20,6 @@ to access, make articles easy to read, and make findings easy to interpret.
 -   Pie charts
 -   Infographics
 
-
 In this chapter, you will learn more about when to use different visualizations
 and how to ensure that they effectively communicate data to your audience.
 To start, take a look at the visualizations below. While reviewing them,
@@ -35,7 +34,8 @@ Pie Chart
    :align: center
    :alt: An example pie chart visualization.
    
-This figure holds data about famous artists and their ethnicity. 
+This pie chart example shows the proportion of the backgrounds for the most
+influential artists of their time from different countries.
 
 Table
 =====
@@ -44,8 +44,8 @@ Table
    :align: center
    :alt: An example table visualization.
    
-This figure depicts a table holding information about people. The columns 
-contain data for several different categories. 
+This table holds standard information about people. Each column contains data
+for a different category. 
 
 Bar Chart
 =========
