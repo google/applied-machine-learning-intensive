@@ -171,7 +171,7 @@ contains”, then type the word “French”.
 
 Sorting Data
 ------------
-Now you can see how a Filter in Sheets can also be used to easily sort data.
+Now you will see how a Filter in Sheets can also be used to easily sort data.
 
 Data is often unordered, which can make it difficult to examine visually.
 Sorting data allows you to order columns. Most of the ordering you will come
