@@ -216,10 +216,6 @@ variables`_. However, this is well beyond the scope of this course.
    Think of a different example of an ordered categorical variable.
 
 
-
-
-
-
 .. _range of values: https://en.wikipedia.org/wiki/Support_(mathematics)
 .. _define the probability distribution random variable: https://en.wikipedia.org/wiki/Random_variable#Examples
 .. _ordinal variables: https://en.wikipedia.org/wiki/Ordinal_data
