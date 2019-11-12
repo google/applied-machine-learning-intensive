@@ -43,8 +43,8 @@ There are two types of variables.
         “bicycle”, etc.
 
 All variables can be described as quantitative or categorical. Because some
-concepts in statistics apply to only one type of variable, however, it is always
-important to classify the variables in your dataset as quantitative or
+concepts in statistics apply to only one type of variable, however, it is 
+always important to classify the variables in your dataset as quantitative or
 categorical. For example, it doesn’t make much sense to calculate the average
 city in a set of cities. In contrast, calculating the average temperature makes
 complete sense. Also, when plotting counts of a variable, histograms are used
@@ -117,12 +117,12 @@ maximum temperatures for each day from July 1, 2014 to June 30, 2015. It should
 be relatively clear, just by looking at the values of the variables, which
 variables are quantitative and which are categorical.
 
-Columns D, E, and F have numeric values, and are quantitative variables. Columns
-B and C are categorical.
+Columns D, E, and F have numeric values, and are quantitative variables. 
+Columns B and C are categorical.
 
-The “month_text” can only be one of 12 words (January through December), and the
-“city” must be a US city. (Since there is a natural ordering to months, the
-“month_text” variable is an example of an
+The “month_text” can only be one of 12 words (January through December), 
+and the “city” must be a US city. (Since there is a natural ordering to months, 
+the “month_text” variable is an example of an
 :ref:`ordered categorical variable<ordered_categorical_variables>`. The “city”
 variable is a standard unordered categorical variable.)
 
@@ -158,26 +158,28 @@ types.
     Another example would be shoe size, which can be whole numbers or half
     numbers.
     
--   A **continuous variable** is a quantitative variable that can take any value
-    within a range. Examples of this are numeric variables that can be expressed
-    to as many decimal places as necessary.
+-   A **continuous variable** is a quantitative variable that can take any 
+    value within a range. Examples of this are numeric variables that can be
+    expressed to as many decimal places as necessary.
+
 
 In general, it is always a good idea to know what the possible values that a
-variable can take. This includes whether the variable is discrete or continuous,
-as well as what the range of possible values is. (This `range of values`_ is
-called the **support**.) This can help with finding missing or wrong data. For
-example, if you have a dataset on height and one of the values is zero, you
-might assume that datapoint is missing, since you know height must be positive.
-(Moreover if one of the values is negative, you can assume that datapoint was
-incorrectly recorded.)
+variable can take. This includes whether the variable is discrete or 
+continuous, as well as what the range of possible values is. 
+(This `range of values`_ is called the **support**.) This can help with finding 
+missing or wrong data. For example, if you have a dataset on height and one of 
+the values is zero, you might assume that datapoint is missing, since you know 
+height must be positive. (Moreover if one of the values is negative, you can 
+assume that datapoint was incorrectly recorded.)
 
 To illustrate the difference between a discrete and continuous variable,
 consider the example of height. In general, a person’s height can be expressed
 to as many decimal places as necessary, for example 172.9532145 centimeters. So
-it is a continuous variable. However, height is *usually* rounded to the nearest
-feet and inches (5ft 8in) or to the nearest centimeter (173cm). In these cases,
-it is a discrete variable, as it can only take certain values. In contrast, shoe
-size is always a discrete variable. (A shoe size of 7.234 does not exist.)
+it is a continuous variable. However, height is *usually* rounded to the 
+nearest feet and inches (5ft 8in) or to the nearest centimeter (173cm). In 
+these cases, it is a discrete variable, as it can only take certain values. 
+In contrast, shoe size is always a discrete variable. (A shoe size of 7.234 
+does not exist.)
 
 
 .. _ordered_categorical_variables:
@@ -185,10 +187,10 @@ size is always a discrete variable. (A shoe size of 7.234 does not exist.)
 Extension: Ordered Categorical Variables
 ----------------------------------------
 
-Categorical variables are usually unordered. This means that there is no typical
-ranking to the categories. For the variable “eye color”, there is no obvious
-ordering to the values. You couldn’t say that in general, brown eyes is more or
-less than blue eyes.
+Categorical variables are usually unordered. This means that there is no 
+typical ranking to the categories. For the variable “eye color”, there is no 
+obvious ordering to the values. You couldn’t say that in general, brown eyes 
+is more or less than blue eyes.
 
 However, some categorical variables have a natural ordering to them. For
 example, consider the variable “highest level of education” where the values
@@ -212,6 +214,10 @@ variables`_. However, this is well beyond the scope of this course.
 .. shortanswer:: categorical_variable_example
 
    Think of a different example of an ordered categorical variable.
+
+
+
+
 
 
 .. _range of values: https://en.wikipedia.org/wiki/Support_(mathematics)
