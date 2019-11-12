@@ -31,19 +31,19 @@ separately applied.
 
    - See Answer
 
-     + Correct: The table was filtered in the gender column, alphabetically from Z to A.
+     + Correct - The table was filtered in the gender column, alphabetically from Z to A.
 
 .. image:: figures/table_group_example.png
    :align: center
    :alt: The same table after applying grouping.
 
-.. mchoice:: table_filter
+.. mchoice:: table_group
 
    Can you guess what kind of grouping was used on the table? 
 
    - See Answer
 
-     + The table was grouped using the ``COUNTIF`` function to count how many people came from Los Angeles.
+     + Correct - The table was grouped using the ``COUNTIF`` function to count how many people came from Los Angeles.
 
 Don't worry if that was confusing. This exercise was to help get you more familiar 
 with potential uses for filtering and grouping on a data set.
