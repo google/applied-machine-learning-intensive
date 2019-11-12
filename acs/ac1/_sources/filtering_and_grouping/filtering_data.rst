@@ -171,7 +171,7 @@ contains”, then type the word “French”.
 
 Sorting Data
 ------------
-Now we can see how a Filter in Sheets can also be used to easily sort data.
+Now you can see how a Filter in Sheets can also be used to easily sort data.
 
 Data is often unordered, which can make it difficult to examine visually.
 Sorting data allows you to order columns. Most of the ordering you will come
@@ -182,8 +182,8 @@ across is either numeric or text.
 
 Sorting can be useful if you just want to see the top or bottom values of a
 dataset. For example, if you have a list of bills you need to pay this month,
-you can order it by amount to see the cost of the most expensive and least
-expensive bill you have to pay.
+you can order it by total amount owed to see the cost of the most expensive 
+and least expensive bill you have to pay.
 
 
 If you have already set up a Filter in Sheets, sorting comes for free. For
