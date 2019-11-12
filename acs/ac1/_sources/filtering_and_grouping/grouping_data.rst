@@ -30,6 +30,14 @@ functions.
    The **cell range to be filtered** is ``A1:A10``, and the **filter condition**
    is ``“=violin”``.
 
+   Earlier in the introduction you saw an example of the ``COUNTIF`` function used
+   on a table of standard information about people. Here it is below with the function
+   visible:
+
+   .. image:: figures/table_group_example_2.png
+   :align: center
+   :alt: A screenshot from Sheets of a table of peoples' information grouped to count how many are from Los Angeles
+
    **The SUMIF function sums the values of cells that satisfy a condition.** The
    syntax looks like ``=SUMIF(cell range to be filtered, filter condition, cell
    range to be summed)``.
@@ -103,6 +111,7 @@ French painters.
 
 .. image:: figures/filtered_index.png
    :align: center
+   :alt: A screenshot from Sheets of a painters dataset filtered by nationality and counting the number of French painters
 
 
 Notice that when trying to count the number of rows, selecting the cells selects
@@ -123,6 +132,7 @@ of French painters, you can use ``COUNTIF``. The range to be counted is the
 
 .. image:: figures/french_painters_using_countif.png
    :align: center
+   :alt: A screenshot from Sheets of a painters dataset grouped to count the number of painters whose nationality is French
 
 
 .. fillintheblank:: number_of_paintings_by_french_painters_using_countif
@@ -218,6 +228,7 @@ column C and use this column for the formula.
 
 .. image:: figures/titanic_adding_survived_column.png
    :align: center
+   :alt: A screenshot from Sheets of a titanic passenger dataset using the IF function to label dead as a 0 and alive as a 1 in a new column called Survived number
 
 
 .. fillintheblank:: titanic_survival_rate
@@ -248,6 +259,7 @@ C, but only if column E is equal to “Man”. This is a perfect use case for
 
 .. image:: figures/titanic_men_survival_rate.png
    :align: center
+   :alt: A screenshot from Sheets of a titanic passenger dataset using the average function to find the men's survival rate
 
 
 .. fillintheblank:: titanic_women_survival_rate
