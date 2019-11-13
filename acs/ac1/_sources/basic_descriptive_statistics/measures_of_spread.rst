@@ -12,35 +12,19 @@ Measures of Spread
 Measures of center are very useful for giving you a “best guess” at a variable.
 But how useful are those guesses?
 
-In this section, you will learn about **standard deviation** and **variance**.
-These are the most common "measures of spread" statistics, since they indicate 
-how spread out a dataset is. These statistics are also used to inform how
-useful other statistics (such as the mean) are for making predictions.
-
-Trying to guess the value of a variable that doesn’t change much is a lot easier 
-than trying to guess the value of a variable that can change drastically. To 
-take an extreme example, suppose there are two very different cities next to 
-each other. In “Consistentville”, everyone has the same yearly salary of 
-$50,000. In “Wonkytown” exactly half the people have a yearly salary of 
-$100,000, and the other half are unemployed.
+Trying to guess the value of a variable that doesn’t change much is a lot easier
+than trying to guess the value of a variable that changes drastically. To take
+an extreme example, suppose there are two very different cities next to each
+other. In “Consistentville”, everyone has the same yearly salary of $50,000. In
+“Wonkytown” exactly half the people have a yearly salary of $100,000, and the
+other half are unemployed.
 
 
 .. https://docs.google.com/presentation/d/11O5DHFz8OJn2cIiDnSHd0hfAmY1HDaFQKtGBd3HYCmQ/edit?usp=sharing
 
 .. image:: figures/consistentville_and_wonkytown.png
    :align: center
-   :alt: A visual for the salaries of those in Wonkytown and Consistentville. 
 
-
-.. https://docs.google.com/presentation/d/11O5DHFz8OJn2cIiDnSHd0hfAmY1HDaFQKtGBd3HYCmQ/edit?usp=sharing
-
-.. image:: figures/city_salary_visual.png
-   :align: center
-   :alt: A visual for the salaries of those in Wonkytown and Consistentville with example incomes. 
-
-
-Above is an example dataset for 6 people in each of the towns and their 
-salaries.
 
 .. fillintheblank:: mean_salary_in_consistentville
 
@@ -62,7 +46,7 @@ salaries.
 Since all residents of Consistentville make the same salary of $50,000, the mean
 salary is simply $50,000. Now since exactly half the residents of Wonkytown make
 $100,000 and the other half make $0, it should make some intuitive sense that
-the mean salary in Wonkytown is also $50,000. So “on average,” residents of
+the mean salary in Wonkytown is also $50,000. So “on average”, residents of
 Consistentville and Wonkytown make the same salary.
 
 
@@ -116,7 +100,6 @@ deviation than the other.
 
 .. image:: figures/standard_deviation_in_histograms.png
    :align: center
-   :alt: A histogram of two variables. Variable two is concentrated in a smaller range across the horizontal axis with high values, while variable one is spread out across the horizontal axis with lower vertical axis values.
 
 
 .. mchoice:: standard_deviation_in_histograms
@@ -163,6 +146,8 @@ almost the same as finding the average, except you use the ``STDEVP`` function.
 This tells you that the standard deviation of the maximum daily temperature in
 Seattle is 12.9 degrees.
 
+.. TODO(raskutti): Embed screencast.
+
 
 .. fillintheblank:: standard_deviation_seattle_max_temp
 
@@ -199,7 +184,7 @@ While standard deviation is more widely used, it is actually derived from
 another measure of spread, called the variance. More precisely, **the standard
 deviation is the square root of the variance**. Many `probability
 distributions`_ are defined in terms of mean and variance (not standard
-deviation). `You can find another detailed explanation in this article.`_
+deviation).
 
 
 .. admonition:: Variance Definition
@@ -233,7 +218,6 @@ equally “far”). Then the mean of the squared differences in dataset C tells 
    cells of which you want to know the mean (e.g. ``=VARP(A1:A10)``). (Note:
    :ref:`the same caveat<measures_of_spread_weather>` as with ``STDEVP`` applies
    to ``VARP``.)
-
 
 In Consistentville, every salary is $50,000 and the mean is $50,000. Therefore,
 all values in dataset B are zero, so all values in dataset C are zero. The mean
@@ -272,10 +256,8 @@ Example: Student Heights
 
 Suppose you have this dataset containing the heights of students in a class.
 
-
-.. image:: figures/screenshot_studentheights_spread.png
-   :align: center
-   :alt: A Sheets screenshot of a dataset of student heights.
+.. TODO(raskutti): Embed
+   https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=1913290661
 
 
 First, use the method of calculating variance (above) to calculate the variance
@@ -301,18 +283,6 @@ and standard deviation of this dataset. Then, you can confirm your answers using
      :x: Incorrect
 
 
-Further Application
---------------------
-
-There are real-world applications that these measures of center can be used for.
-`This exercise explores the salaries of professional athletes`_ with measures of
-spread as well as other statistics. Try this on your own in Sheets if you are
-interested in getting more experience with any of the previously learned
-statistics.
-
-
 .. _this thread goes into some detail on the practical differences: https://www.quora.com/What-is-the-difference-between-sample-standard-deviation-and-population-standard-deviation
 .. _this thread goes into the mathematical theory behind the difference: https://math.stackexchange.com/questions/15098/sample-standard-deviation-vs-population-standard-deviation
 .. _probability distributions: https://en.wikipedia.org/wiki/Probability_distribution
-.. _You can find another detailed explanation in this article.: https://www.mathsisfun.com/data/standard-deviation.html
-.. _This exercise explores the salaries of professional athletes: https://www.ck12.org/statistics/Applications-of-Variance-and-Standard-Deviation/rwa/Variance-of-a-Data-Set/

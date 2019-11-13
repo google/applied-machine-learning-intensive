@@ -17,9 +17,11 @@ your findings.
 Here are the steps you’ll need to complete. **Under each step are sub-bullets
 detailing questions you need to answer in your report.**
 
-1.  Form a group of no more than 4 people. (You may want to form a group with
-    people who are in a similar major or have similar interests as this may make
-    dataset selection easier).
+1.  Form a group of no more than 4 people.
+
+    -   You may want to form a group with people who are in a similar major or
+        have similar interests as this may make dataset selection easier.
+
 2.  Choose one of the provided datasets in the provided SQL server.
 
     -   What made you choose this dataset?
@@ -39,10 +41,10 @@ detailing questions you need to answer in your report.**
 
     -   What were the questions you chose and why?
     -   Which datasets did you have to join?
-    -   What are the primary keys on which you join?
+    -   What are the primary keys on which you joined?
     -   What type of JOIN was applicable for your questions?
-    -   Explain how you verified that your datasets were merged in the way you
-        expected.
+    -   How did you verify that your datasets were merged in the way you
+        expected?
 
 5.  Think of 2-3 interesting statistical questions you would like to answer
     using these datasets. These should involve calculating the mean, median, and
@@ -196,7 +198,6 @@ Grading Rubric
      - There are no visualizations comparing summary statistics across groups.
 
    * - **Regression (8)**
-
      - Report includes both the scatter plot and the line-of-best-fit equation,
        and these values are (close to) correct. The report includes a discussion
        of  why the particular variables were chosen, the meaning of the
@@ -235,10 +236,15 @@ Grading Rubric
      - The report does not contain a conclusion section.
 
    * - **Readability (4)**
-
      - The report is structured by section, with appropriate headings. The
        report has very few spelling/grammar errors.
      -
      - The report’s structure lacks clarity or is otherwise difficult to read.
        The report has several spelling/grammar errors.
      - There is no report.
+
+   * - **Total (60)**
+     -
+     -
+     -
+     -

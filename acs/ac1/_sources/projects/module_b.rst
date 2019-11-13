@@ -16,9 +16,11 @@ write a report summarizing your findings.
 Here are the steps you’ll need to complete. **Under each step are sub-bullets
 detailing questions you need to answer in your report.**
 
-1.  Form a group of no more than 4 people. (You may want to form a group with
-    people who are in a similar major or have similar interests as this may make
-    dataset selection easier).
+1.  Form a group of no more than 4 people.
+
+    -   You may want to form a group with people who are in a similar major or
+        have similar interests as this may make dataset selection easier.
+
 2.  Choose one of the provided datasets. If you feel strongly about another
     dataset that is not included in the list, please make sure to have it
     approved by the instructor before proceeding.
@@ -124,7 +126,6 @@ Grading Rubric
      - Report does not include a rationale for why the dataset was chosen.
      - The dataset was not approved by the instructor.
 
-
    * - **Data Cleaning (8)**
      - All missing/unclean data is found and accounted for in a way that makes
        sense. The report references data types, any ethical tradeoffs, and
@@ -137,7 +138,6 @@ Grading Rubric
      - Report does not include any reference to data cleaning (independently of
        whether data cleaning was done).
 
-
    * - **Joining (4)**
      - An appropriate join key was chosen. VLOOKUP was used successfully to
        create a joined table. The report contains a brief mention of why this
@@ -149,7 +149,6 @@ Grading Rubric
        wrong key was used.
      - There was no attempt at using VLOOKUP.
 
-
    * - **Population Summary Statistics (6)**
      - The summary statistics are accurately calculated and reported. There is
        some comment on what these values mean for the distribution.
@@ -158,7 +157,6 @@ Grading Rubric
      - There is an attempt at calculating summary statistics, but they are
        incorrect or not referenced in the report.
      - There is no attempt at calculating the population summary statistics.
-
 
    * - **Grouped Summary Statistics (8)**
      - A pivot table was used to calculate relevant summary statistics per
@@ -173,7 +171,6 @@ Grading Rubric
        and measures. The grouped summary statistics are incorrect or
        non-existent.
      - There is no attempt at a pivot table.
-
 
    * - **Regression (8)**
      - Report includes both the scatter plot and the line-of-best-fit equation,
@@ -191,12 +188,11 @@ Grading Rubric
        interpretation, or correlation vs causation.
      - There is no attempt at fitting a regression.
 
-
    * - **Prediction (6)**
      - The equation of the line of best fit is used to predict these values. The
        report correctly identifies and explains which points are suitable for
-       prediction. The ethics of prediction are mentioned, and the report includes
-       the pros and cons of using a linear regression to predict.
+       prediction. The ethics of prediction are mentioned, and the report
+       includes the pros and cons of using a linear regression to predict.
      - Values are chosen for prediction that are largely appropriate. The report
        struggles with why some points are not suitable for prediction.  There is
        some mention of the ethics of using prediction from a linear model.
@@ -204,7 +200,6 @@ Grading Rubric
        mention of suitability of prediction of certain points, or the chosen
        points are not usable with this model.
      - There is no attempt at prediction using the line of best fit.
-
 
    * - **Conclusion (4)**
      - The report contains a conclusion section summarizing key findings from
@@ -215,7 +210,6 @@ Grading Rubric
        accurately reflect previous findings.
      - The report does not contain a conclusion section.
 
-
    * - **Readability (4)**
      - The report is structured by section, with appropriate headings. The
        report has very few spelling/grammar errors.
@@ -223,7 +217,6 @@ Grading Rubric
      - The report’s structure lacks clarity or is otherwise difficult to read.
        The report has several spelling/ grammar errors.
      - There is no report.
-
 
    * - **Total (50)**
      -

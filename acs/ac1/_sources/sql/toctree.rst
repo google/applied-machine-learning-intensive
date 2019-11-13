@@ -11,7 +11,6 @@ SQL
    :caption: Contents
    :maxdepth: 2
 
-   introduction.rst
    selecting.rst
    filtering.rst
    sorting.rst

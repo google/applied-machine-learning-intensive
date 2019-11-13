@@ -22,25 +22,15 @@ dataset.
    The **sum** of a dataset is the addition of all values in the dataset. This
    applies only to quantitative variables.
 
-Applications and Examples
--------------------------
 
 The reason that the count is so important is that it can be an indication of how
 useful the dataset is. For example, suppose you’re trying to find the average
-height of students at your college of 800 people, so you conduct a survey
+age of students at your college of 800 people, so you conduct a survey
 collecting students’ heights. If your survey contains only 2 heights, then using
 these results to calculate an average won’t be very useful, since this summary
 statistic is only representative of 2 students. If, however, your survey
 contains 600 heights, calculating an average from these results will be more
 reliable, since this statistic represents 600 of the 800 students.
-
-As an example of using *count* and *sum*, suppose you are throwing a homework
-party. You ask your friends to RSVP if they are attending and to submit how many
-pizza slices they would like to eat, through a survey. Knowing how many people
-would be attending will be helpful to you when you purchase snacks, and you can
-use the *count* to calculate the number of guests. You could also take the *sum*
-of the number of pizza slices your friends want in order to get a better idea of
-how many pizzas to order.
 
 Calculating these statistics in Sheets is fairly straightforward. For these and
 other statistics, you’ll need to know **cell range notation**. To refer to a
@@ -53,7 +43,6 @@ the range, separated by a colon. For example:
 
 .. image:: figures/cell_A1.png
    :align: center
-   :alt: A spreadsheet with cell A1 (column A, row 1) highlighted.
 
 
 -   “A1:A6” means all cells in the A column from rows 1 through 6
@@ -62,7 +51,6 @@ the range, separated by a colon. For example:
 
 .. image:: figures/cells_A1_A6.png
    :align: center
-   :alt: A spreadsheet with cells in the A column, rows 1 through 6 highlighted.
 
 
 -   “A1:D1” means all cells in the 1 row from columns A through D
@@ -71,7 +59,6 @@ the range, separated by a colon. For example:
 
 .. image:: figures/cells_A1_D1.png
    :align: center
-   :alt: A spreadsheet with cells in row 1, columns A through D highlighted.
 
 
 -   “A1:D6” means all cells in rows 1 through 6 and columns A through D
@@ -80,8 +67,6 @@ the range, separated by a colon. For example:
 
 .. image:: figures/cells_A1_D6.png
    :align: center
-   :alt: A spreadsheet with cells in rows 1 through 6 and columns A through D
-         highlighted.
 
 
 .. admonition:: Count and Sum Sheets Syntax

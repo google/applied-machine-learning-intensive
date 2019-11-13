@@ -14,3 +14,6 @@ Projects
    module_a.rst
    module_b.rst
    module_c.rst
+   module_d.rst
+   module_e.rst
+   module_f.rst

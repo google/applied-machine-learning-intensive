@@ -20,8 +20,6 @@ formula.
 
 .. image:: figures/sheets_error.png
    :align: center
-   :alt: Cell with 1 divided by 0 with error box that says "Function DIVIDE 
-         parameter 2 cannot be zero."
 
 
 There are `several types of errors`_, and this section does not cover them in
@@ -38,7 +36,7 @@ tips are below.
     Google, lists all functions and how to set the inputs. The table is ordered
     by “type”, so you can find common mathematical functions with the type
     “Math”.
-3.  **Try Googling your error.** If you are facing an error, chances are
+3.  **The Internet is your friend.** If you are facing an error, chances are
     several people have seen it before. Try searching for the error message or
     the broken formula online. Sites like `Google Support`_ and `StackOverflow`_
     have helped millions.

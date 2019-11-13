@@ -18,8 +18,7 @@ state only.
 .. admonition:: Filters in Sheets
 
    **A filter is a way of selecting a subset of rows based on a set of column
-   conditions.** A “column condition” is a statement that restricts the value
-   in a column.
+   conditions.** A “column condition” is a statement on the value in a column.
 
 
 For example, if column A contains two-letter state codes of the USA, and you
@@ -133,11 +132,10 @@ in the previous example: Renoir, Degas, and Gauguin.
 
 Filters make this kind of exercise significantly easier. What was previously a
 complicated formula is now just two simple filters. Moreover, filters allow you
-to be more specific with your conditions, which makes them a powerful but easy 
-tool to use. Suppose, instead of looking at painters who only have French 
-nationality, you now want to look at painters for whom *at least one* of their
-nationalities is French. (For example, this includes Alfred Sisley, whose 
-nationalities are French and British.)
+to be more specific with your conditions. Suppose, instead of looking at
+painters who only have French nationality, you now want to look at painters for
+whom at least one of their nationalities is French. (For example, this includes
+Alfred Sisley, whose nationalities are French and British.)
 
 Since this filter is not based on an exact equality, you need to use a “Filter
 by condition”. You can change the filter applied to the “nationality” column,
@@ -172,8 +170,6 @@ contains”, then type the word “French”.
 Sorting Data
 ------------
 
-Now you will see how a Filter in Sheets can also be used to easily sort data.
-
 Data is often unordered, which can make it difficult to examine visually.
 Sorting data allows you to order columns. Most of the ordering you will come
 across is either numeric or text.
@@ -182,10 +178,9 @@ across is either numeric or text.
 -   Text data can be ordered alphabetically “A-Z” or “Z-A”.
 
 Sorting can be useful if you just want to see the top or bottom values of a
-dataset. For example, if you have a list of bills you need to pay this month,
-you can order it by total amount owed to see the cost of the most expensive 
-and least expensive bill you have to pay.
-
+dataset. For example, if you have a dataset containing information on all of the
+students in a class, you may order it by age to see the ages of the youngest and
+oldest students.
 
 If you have already set up a Filter in Sheets, sorting comes for free. For
 example, suppose you wanted to sort the painters dataset alphabetically by

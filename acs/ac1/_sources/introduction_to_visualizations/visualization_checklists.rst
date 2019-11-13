@@ -10,17 +10,10 @@ Visualization Checklists
 What should I look for when reading a visualization?
 ----------------------------------------------------
 
-When you find a visualization online, it is important to ensure that you
-understand where the data is coming from and how this may affect how it is
-presented. Being able to interpret visualizations is a fundamental skill in data
-science. Like any form of media, a visualization has an author. As such, it has
-potential biases, and can be interpreted in different ways.
-
-Here is a checklist of important things to consider when reading a
-visualization. More detailed descriptions of what to look for in a visualization
-are listed below the checklist.
-
-.. image:: figures/visualization_checklist.png
+Being able to interpret visualizations is a fundamental skill in data science.
+Like any form of media, a visualization has an author. As such, it has potential
+biases, and can be interpreted in different ways. Here is a checklist of
+important things to consider when reading a visualization.
 
 1.  Who is the **author** of the visualization?
 
@@ -28,22 +21,14 @@ are listed below the checklist.
         organization?
     -   Is the author an experienced statistician and/or writer?
 
-2.  What **biases** might the author have?
+2.  How rigorously has the visualization (or the article in which the
+    visualization appears) been **reviewed**?
 
-    -   Especially if the visualization is on a media platform, it may have
-        unconscious or conscious bias. This may include, but is not limited to:
+    -   For example, if the visualization appears in *The New York Times* it has
+        likely been thoroughly reviewed, whereas if the visualization is part of
+        a personal blog it may not have been.
 
-        -   political bias
-        -   racial bias
-        -   product bias (i.e. if the author trying to promote/sell something)
-
-3.  What point is the author trying to **communicate** with the visualization?
-
-    -   A visualization is an author’s choice of medium to convey facts and/or
-        opinions.
-    -   What are these core facts and/or opinions?
-
-4.  What **data** is backing the visualization?
+3.  What **data** is backing the visualization?
 
     -   It is *crucial* to know what data is used to make the visualization. For
         example:
@@ -59,33 +44,32 @@ are listed below the checklist.
             students at the college, while a sample would be just the students
             in your dorm.)
 
-5.  How rigorously has the visualization (or the article in which the
-    visualization appears) been reviewed and **evaluated**?
+4.  What **biases** might the author have?
 
-    -   For example, if the visualization appears in *The New York Times* it has
-        likely been thoroughly reviewed, whereas if the visualization is part of
-        a personal blog it may not have been.
+    -   Especially if the visualization is on a media platform, it may have
+        unconscious or conscious bias. This may include, but is not limited to:
 
-6.  Why has the author chosen this **format** of visualization?
+        -   political bias
+        -   racial bias
+        -   product bias (i.e. if the author trying to promote/sell something)
 
-    -   What format does the visualization use? Is it a table? Is it a pie
-        chart?
+5.  What **point** is the author trying to make with the visualization?
+
+    -   A visualization is an author’s choice of medium to convey facts and/or
+        opinions.
+    -   What are these core facts and/or opinions?
+
+6.  Why has the author chosen this **type** of visualization?
+
+    -   The “type” of visualization indicates the format, e.g. Is it a table? Is
+        it a pie chart?
     -   What does this type of visualization do to accentuate their point?
-
-.. shortanswer:: visualization_checklist
-
-   Find an example of a data visualization online. Follow the checklist above
-   with your chosen visualization.
 
 
 .. _creating_visualization_checklist:
 
 What should I keep in mind when creating a visualization?
 ---------------------------------------------------------
-
-Now that you have been able to examine some existing visualizations, it's time
-for you to make your own! There are several choices for you to consider when
-making visualizations that are accessible for viewers.
 
 1.  What **point** do you intend to make with the visualization?
 
