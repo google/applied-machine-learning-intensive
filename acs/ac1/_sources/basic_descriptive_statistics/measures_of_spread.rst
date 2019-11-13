@@ -31,11 +31,13 @@ $100,000, and the other half are unemployed.
    :align: center
    :alt: A visual for the salaries of those in Wonkytown and Consistentville. 
 
+
 .. https://docs.google.com/presentation/d/11O5DHFz8OJn2cIiDnSHd0hfAmY1HDaFQKtGBd3HYCmQ/edit?usp=sharing
 
 .. image:: figures/city_salary_visual.png
    :align: center
    :alt: A visual for the salaries of those in Wonkytown and Consistentville with example incomes. 
+
 
 Above is an example dataset for 6 people in each of the towns and their 
 salaries.
@@ -162,9 +164,6 @@ This tells you that the standard deviation of the maximum daily temperature in
 Seattle is 12.9 degrees.
 
 
-.. TODO(raskutti): Embed screencast.
-
-
 .. fillintheblank:: standard_deviation_seattle_max_temp
 
    What is the standard deviation of the maximum daily temperature of NYC? (Use
@@ -235,6 +234,7 @@ equally “far”). Then the mean of the squared differences in dataset C tells 
    :ref:`the same caveat<measures_of_spread_weather>` as with ``STDEVP`` applies
    to ``VARP``.)
 
+
 In Consistentville, every salary is $50,000 and the mean is $50,000. Therefore,
 all values in dataset B are zero, so all values in dataset C are zero. The mean
 of this all-zero dataset is zero, so the variance of salary in Consistentville
@@ -272,13 +272,15 @@ Example: Student Heights
 
 Suppose you have this dataset containing the heights of students in a class.
 
+
 .. image:: figures/screenshot_studentheights_spread.png
    :align: center
    :alt: A Sheets screenshot of a dataset of student heights.
 
+
 First, use the method of calculating variance (above) to calculate the variance
-and standard deviation of this dataset. Then, you can confirm your answers 
-using ``VARP`` and ``STDEVP``.
+and standard deviation of this dataset. Then, you can confirm your answers using
+``VARP`` and ``STDEVP``.
 
 
 .. fillintheblank:: variance_of_students_heights
@@ -297,6 +299,7 @@ using ``VARP`` and ``STDEVP``.
 
    - :3.2: Correct
      :x: Incorrect
+
 
 Further Application
 --------------------
