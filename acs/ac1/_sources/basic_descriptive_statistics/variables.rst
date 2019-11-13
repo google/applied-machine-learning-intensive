@@ -85,15 +85,36 @@ is a categorical response, so it is likely this was entered incorrectly.
 
 .. _variables_weather:
 
+
+Example: Student Data 
+---------------------
+
+To illustrate the difference between quantitative and categorical variable,
+consider the following example concerning data of students in a class.
+
+
+.. image:: figures/student_data.png
+
+
+The dataset contains, for a 20 student class, the name, height, hair color, and
+birthday of students in the class.
+
+Column B has a numeric value, so it is a quantitative variable. Columns A, C,
+and D are categorical.
+
+The “Name” and “Hair Color” variables can only be a fixed set of non-numeric
+values.
+
+
 Example: Weather
 ----------------
 
-To illustrate the difference between a quantitative and a categorical variable,
-consider the following example concerning weather. In this and all following
-examples using this dataset, the temperature is reported in degrees Fahrenheit.
+In this and all following examples using this dataset, the temperature is
+reported in degrees Fahrenheit.
 
-.. TODO(raskutti): Embed
-   https://docs.google.com/spreadsheets/d/17bkoB97dUdR0MBuaBXsWLR0VjkEYhJydXJUYV0tcWjw/edit#gid=419330429
+
+.. https://docs.google.com/spreadsheets/d/17bkoB97dUdR0MBuaBXsWLR0VjkEYhJydXJUYV0tcWjw/edit#gid=419330429
+
 
 The dataset contains, for several US cities, the average (mean), minimum, and
 maximum temperatures for each day from July 1, 2014 to June 30, 2015. It should
@@ -114,8 +135,8 @@ either quantitative or categorical. You could encode each new day as a whole
 number (for example, 2014-7-1 maps to 1, 2014-7-2 maps to 2, 2015-6-30 maps to
 365), in which case “date” would be quantitative. (It would be a
 :ref:`discrete quantitative variable<discrete_and_continuous_variables>`.)
-However, you could also argue that, given that the timeframe of this dataset is
-July 2014 to June 2015, each day is a new category of the possible 365
+However, you could also argue that, given that the timeframe of this dataset
+is July 2014 to June 2015, each day is a new category of the possible 365
 categories. (This would then be an ordered categorical variable.)
 
 How you choose to consider this variable depends on how you want to use this
@@ -140,6 +161,7 @@ types.
     whole number (e.g. number of stairs in a building, number of children).
     Another example would be shoe size, which can be whole numbers or half
     numbers.
+
 -   A **continuous variable** is a quantitative variable that can take any value
     within a range. Examples of this are numeric variables that can be expressed
     to as many decimal places as necessary.
@@ -152,11 +174,6 @@ example, if you have a dataset on height and one of the values is zero, you
 might assume that datapoint is missing, since you know height must be positive.
 (Moreover if one of the values is negative, you can assume that datapoint was
 incorrectly recorded.)
-
-In further studies, it can also be important to distinguish between these two
-types of variables. For example (and this goes well beyond the scope of this
-course), the way to `define the probability distribution random variable`_
-depends on whether the variable is discrete or continuous.
 
 To illustrate the difference between a discrete and continuous variable,
 consider the example of height. In general, a person’s height can be expressed
