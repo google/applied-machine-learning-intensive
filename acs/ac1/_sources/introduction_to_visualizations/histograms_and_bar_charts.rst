@@ -131,9 +131,9 @@ You can then customize this chart in numerous different ways. Below are just a
 few important things to keep in mind when creating graphs.
 
 -   Make all text (main title, axis titles, axis labels) big enough to read.
-    (There are no hard and fast rules here, but always
-    have :ref:`accessibility<creating_visualization_checklist>` at the forefront
-    of your mind when creating visualizations.)
+    (There are no hard and fast rules here, but always have
+    :ref:`accessibility<creating_visualization_checklist>` at the forefront of
+    your mind when creating visualizations.)
 -   Choose descriptive titles for the horizontal and vertical axes.
 -   Choose the right bin size (width) for histograms.
 
