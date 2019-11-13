@@ -49,8 +49,8 @@ categorical. For example, it doesn’t make much sense to calculate the average
 city in a set of cities. In contrast, calculating the average temperature makes
 complete sense. Also, when plotting counts of a variable, histograms are used
 for quantitative variables and bar charts are used for categorical variables.
-(More on this distinction can be found in :ref:`the section on histograms and
-bar charts<histograms_and_bar_charts>`.)
+(More on this distinction can be found in
+:ref:`the section on histograms and bar charts<histograms_and_bar_charts>`.)
 
 Knowing a variable’s type can also help with identifying missing or incorrect
 data. For example, suppose you have a dataset of students’ heights, and one of
@@ -126,18 +126,18 @@ B and C are categorical.
 
 The “month_text” can only be one of 12 words (January through December), and the
 “city” must be a US city. (Since there is a natural ordering to months, the
-“month_text” variable is an example of an :ref:`ordered categorical
-variable<ordered_categorical_variables>`. The “city” variable is a standard
-unordered categorical variable.)
+“month_text” variable is an example of an
+:ref:`ordered categorical variable<ordered_categorical_variables>`. The “city”
+variable is a standard unordered categorical variable.)
 
 The “date” variable in Column A is a little trickier, and could be considered
 either quantitative or categorical. You could encode each new day as a whole
 number (for example, 2014-7-1 maps to 1, 2014-7-2 maps to 2, 2015-6-30 maps to
-365), in which case “date” would be quantitative. (It would be a :ref:`discrete
-quantitative variable<discrete_and_continuous_variables>`.) However, you could
-also argue that, given that the timeframe of this dataset is July 2014 to June
-2015, each day is a new category of the possible 365 categories. (This would
-then be an ordered categorical variable.)
+365), in which case “date” would be quantitative. (It would be a
+:ref:`discrete quantitative variable<discrete_and_continuous_variables>`.)
+However, you could also argue that, given that the timeframe of this dataset
+is July 2014 to June 2015, each day is a new category of the possible 365
+categories. (This would then be an ordered categorical variable.)
 
 How you choose to consider this variable depends on how you want to use this
 data. For example, if you want to graph the daily temperature over time, you
