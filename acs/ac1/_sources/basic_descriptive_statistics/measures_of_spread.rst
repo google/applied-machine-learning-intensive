@@ -199,7 +199,7 @@ While standard deviation is more widely used, it is actually derived from
 another measure of spread, called the variance. More precisely, **the standard
 deviation is the square root of the variance**. Many `probability
 distributions`_ are defined in terms of mean and variance (not standard
-deviation). You can find another detailed explanation in `this article`_.
+deviation). `You can find another detailed explanation in this article.`_
 
 
 .. admonition:: Variance Definition
@@ -305,7 +305,7 @@ Further Application
 --------------------
 
 There are real-world applications that these measures of center can be used for.
-`This exercise`_ explores the salaries of professional athletes with measures of
+`This exercise explores the salaries of professional athletes`_ with measures of
 spread as well as other statistics. Try this on your own in Sheets if you are
 interested in getting more experience with any of the previously learned
 statistics.
@@ -314,5 +314,5 @@ statistics.
 .. _this thread goes into some detail on the practical differences: https://www.quora.com/What-is-the-difference-between-sample-standard-deviation-and-population-standard-deviation
 .. _this thread goes into the mathematical theory behind the difference: https://math.stackexchange.com/questions/15098/sample-standard-deviation-vs-population-standard-deviation
 .. _probability distributions: https://en.wikipedia.org/wiki/Probability_distribution
-.. _this article: https://www.mathsisfun.com/data/standard-deviation.html
-.. _This exercise: https://www.ck12.org/statistics/Applications-of-Variance-and-Standard-Deviation/rwa/Variance-of-a-Data-Set/
+.. _You can find another detailed explanation in this article.: https://www.mathsisfun.com/data/standard-deviation.html
+.. _This exercise explores the salaries of professional athletes: https://www.ck12.org/statistics/Applications-of-Variance-and-Standard-Deviation/rwa/Variance-of-a-Data-Set/
