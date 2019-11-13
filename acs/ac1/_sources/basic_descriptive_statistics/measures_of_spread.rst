@@ -57,10 +57,10 @@ salaries.
      :x: Incorrect
 
 
-Since all residents of Consistentville make the same salary of $50,000, the 
-mean salary is simply $50,000. Now since exactly half the residents of Wonkytown
-make $100,000 and the other half make $0, it should make some intuitive sense 
-that the mean salary in Wonkytown is also $50,000. So “on average,” residents of
+Since all residents of Consistentville make the same salary of $50,000, the mean
+salary is simply $50,000. Now since exactly half the residents of Wonkytown make
+$100,000 and the other half make $0, it should make some intuitive sense that
+the mean salary in Wonkytown is also $50,000. So “on average,” residents of
 Consistentville and Wonkytown make the same salary.
 
 
@@ -73,13 +73,13 @@ Consistentville and Wonkytown make the same salary.
 If you take a random resident of Consistentville and guess their salary to be
 the mean of $50,000, you would be right every single time. However, if you did
 the same in Wonkytown, you would be wrong every single time! Not only would your
-guess be wrong, it would be either $50,000 below or $50,000 above their true 
-salary, both of which are way off! So in this case, while the mean was an 
+guess be wrong, it would be either $50,000 below or $50,000 above their true
+salary, both of which are way off! So in this case, while the mean was an
 extremely effective “best guess” in Consistentville, it was not so useful in
 Wonkytown.
 
 In a city like Wonkytown, it is pretty hard to form a “best guess”. That’s where
-measures of spread come in. A measure of spread statistic doesn’t refine a 
+measures of spread come in. A measure of spread statistic doesn’t refine a
 measure of center, but it can tell you how useful that measure of center is. The
 most common measure of spread is called the standard deviation.
 
@@ -93,12 +93,12 @@ most common measure of spread is called the standard deviation.
 
 
 By itself, the standard deviation can help you estimate how good your “best
-guess” is. It is even more useful when comparing two different datasets, as it 
+guess” is. It is even more useful when comparing two different datasets, as it
 can tell you which dataset is more spread out. In the case of comparing
 Consistentville and Wonkytown, knowing the standard deviation alone would tell
 you that in Consistentville everyone makes the same salary, while in Wonkytown
 the salaries differ from the mean on average by $50,000. If you were guessing
-salaries, knowing the standard deviation would help you make a much more 
+salaries, knowing the standard deviation would help you make a much more
 informed guess!
 
 
@@ -106,8 +106,8 @@ Standard Deviation in a Histogram
 ---------------------------------
 
 Look at the side-by-side histogram below. It contains two variables (one in red
-and one in blue) with the same mean, but one with a much higher standard deviation
-than the other.
+and one in blue) with the same mean, but one with a much higher standard
+deviation than the other.
 
 
 .. https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=1702521484
@@ -152,7 +152,7 @@ will use the daily maximum temperature column.
 Note that there are several variants of the ``STDEVP`` function in Sheets. In
 this section, you can always use the ``STDEVP`` function. If you are interested
 in the difference between the different variants, `this thread goes into some
-detail on the practical differences`_, and `this thread goes into the 
+detail on the practical differences`_, and `this thread goes into the
 mathematical theory behind the difference`_. In practice, there is not much
 numeric difference between the different functions.
 
@@ -160,6 +160,7 @@ Finding the standard deviation of the maximum daily weather for Seattle is
 almost the same as finding the average, except you use the ``STDEVP`` function.
 This tells you that the standard deviation of the maximum daily temperature in
 Seattle is 12.9 degrees.
+
 
 .. TODO(raskutti): Embed screencast.
 
@@ -180,12 +181,12 @@ almost 7 degrees (more than 50%) higher in NYC compared to Seattle.
 
 This example should illustrate that knowing the mean sometimes isn’t enough.
 Just using the mean, you may have believed that Seattle and NYC have very
-similar temperature all year round. Knowing the standard deviation alongside 
-the average, however, tells you that while Seattle and NYC have similar mean
+similar temperature all year round. Knowing the standard deviation alongside the
+average, however, tells you that while Seattle and NYC have similar mean
 temperatures, there is much higher year-round variability in NYC. If you then
-add in the knowledge of the maximum and minimum temperatures of both cities, 
-you would have a pretty good idea of the year-round temperature seasonality of 
-both cities.
+add in the knowledge of the maximum and minimum temperatures of both cities, you
+would have a pretty good idea of the year-round temperature seasonality of both
+cities.
 
 
 Extension: Variance
@@ -214,8 +215,8 @@ procedure for calculating the variance of a dataset, call it dataset A.
 1.  Calculate the mean of dataset A.
 2.  Find the difference between the mean of dataset A and each value in dataset
     A. These values form a new dataset, dataset B.
-3.  Square all the values in dataset B. These values form a new dataset, 
-    dataset C.
+3.  Square all the values in dataset B. These values form a new dataset, dataset
+    C.
 4.  The mean of dataset C is the variance of dataset A.
 
 More intuitively, dataset B shows you how far points in dataset A are from the
@@ -299,11 +300,13 @@ using ``VARP`` and ``STDEVP``.
 
 Further Application
 --------------------
+
 There are real-world applications that these measures of center can be used for.
-`This exercise`_ explores the salaries of professional athletes with measures 
-of spread as well as other statistics. Try this on your own in Sheets if you 
-are interested in getting more experience with any of the previously learned 
+`This exercise`_ explores the salaries of professional athletes with measures of
+spread as well as other statistics. Try this on your own in Sheets if you are
+interested in getting more experience with any of the previously learned
 statistics.
+
 
 .. _this thread goes into some detail on the practical differences: https://www.quora.com/What-is-the-difference-between-sample-standard-deviation-and-population-standard-deviation
 .. _this thread goes into the mathematical theory behind the difference: https://math.stackexchange.com/questions/15098/sample-standard-deviation-vs-population-standard-deviation
