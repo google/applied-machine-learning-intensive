@@ -36,6 +36,7 @@ below, **the highlighted cell is C4, meaning the column is C, and the row is
 
 .. image:: figures/sheets_keyword_definitions.png
    :align: center
+   :alt: An example image of a sheet depicting column C, row 4, and cell C4.
 
 
 Example: Painters
