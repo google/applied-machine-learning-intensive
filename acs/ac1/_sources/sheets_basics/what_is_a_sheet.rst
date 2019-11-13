@@ -50,14 +50,14 @@ In general:
 -   **Each row is an observation of the data.** In this example, each row is a
     painter. For example, row 8 (where id = 6) tells you about Edouard Manet. If
     you were to add a new painter to this dataset, you would add a new row. You
-    can add a new row by clicking insert in the menu bar, and selecting either
-    row above or row below.
+    can add a new row by clicking "Insert" in the menu bar, and selecting either
+    "Row Above" or "Row Below."
 -   **Each column is an attribute of the data.** In this example, each column
     tells you something about the painter (e.g. “name”, “years”). For example,
     column E tells you about a painter’s nationality. If you were to add a new
     attribute to this dataset (e.g. the number of children they had), you would
-    add a new column. You can add a new column by clicking insert in the menu
-    bar, and selecting either column above or column below.
+    add a new column. You can add a new column by clicking "Insert" in the menu
+    bar, and selecting either "Column Above" or "Column Below."
 -   **Each cell is an attribute of an observation.** In this example, each cell
     tells you something specific about a given painter. For example, cell E8
     tells you that Edouard Manet was French. If you have new information for an
@@ -66,6 +66,7 @@ In general:
 
 .. image:: figures/painters_example_sheets.png
    :align: center
+   :alt: Example image of the "painters" dataset.
 
 
 Use `this dataset`_ to answer the following questions.
