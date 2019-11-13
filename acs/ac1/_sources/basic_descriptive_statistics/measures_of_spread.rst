@@ -58,10 +58,10 @@ salaries.
 
 
 Since all residents of Consistentville make the same salary of $50,000, the 
-mean salary is simply $50,000. Now since exactly half the residents of 
-Wonkytown make $100,000 and the other half make $0, it should make some 
-intuitive sense that the mean salary in Wonkytown is also $50,000. So 
-“on average,” residents of Consistentville and Wonkytown make the same salary.
+mean salary is simply $50,000. Now since exactly half the residents of Wonkytown
+make $100,000 and the other half make $0, it should make some intuitive sense 
+that the mean salary in Wonkytown is also $50,000. So “on average,” residents of
+Consistentville and Wonkytown make the same salary.
 
 
 .. shortanswer:: random_resident_salary
@@ -72,16 +72,16 @@ intuitive sense that the mean salary in Wonkytown is also $50,000. So
 
 If you take a random resident of Consistentville and guess their salary to be
 the mean of $50,000, you would be right every single time. However, if you did
-the same in Wonkytown, you would be wrong every single time! Not only would 
-your guess be wrong, it would be either $50,000 below or $50,000 above their 
-true salary, both of which are way off! So in this case, while the mean was an
+the same in Wonkytown, you would be wrong every single time! Not only would your
+guess be wrong, it would be either $50,000 below or $50,000 above their true 
+salary, both of which are way off! So in this case, while the mean was an 
 extremely effective “best guess” in Consistentville, it was not so useful in
 Wonkytown.
 
-In a city like Wonkytown, it is pretty hard to form a “best guess”. That’s 
-where measures of spread come in. A measure of spread statistic doesn’t refine 
-a measure of center, but it can tell you how useful that measure of center is. 
-The most common measure of spread is called the standard deviation.
+In a city like Wonkytown, it is pretty hard to form a “best guess”. That’s where
+measures of spread come in. A measure of spread statistic doesn’t refine a 
+measure of center, but it can tell you how useful that measure of center is. The
+most common measure of spread is called the standard deviation.
 
 
 .. admonition:: Standard Deviation Definition
@@ -93,12 +93,12 @@ The most common measure of spread is called the standard deviation.
 
 
 By itself, the standard deviation can help you estimate how good your “best
-guess” is. It is even more useful when comparing two different datasets, as it
+guess” is. It is even more useful when comparing two different datasets, as it 
 can tell you which dataset is more spread out. In the case of comparing
 Consistentville and Wonkytown, knowing the standard deviation alone would tell
 you that in Consistentville everyone makes the same salary, while in Wonkytown
 the salaries differ from the mean on average by $50,000. If you were guessing
-salaries, knowing the standard deviation would help you make a much more
+salaries, knowing the standard deviation would help you make a much more 
 informed guess!
 
 
@@ -106,8 +106,8 @@ Standard Deviation in a Histogram
 ---------------------------------
 
 Look at the side-by-side histogram below. It contains two variables (one in red
-and one in blue) with the same mean, but one with a much higher standard
-deviation than the other.
+and one in blue) with the same mean, but one with a much higher standard deviation
+than the other.
 
 
 .. https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=1702521484
@@ -152,7 +152,7 @@ will use the daily maximum temperature column.
 Note that there are several variants of the ``STDEVP`` function in Sheets. In
 this section, you can always use the ``STDEVP`` function. If you are interested
 in the difference between the different variants, `this thread goes into some
-detail on the practical differences`_, and `this thread goes into the
+detail on the practical differences`_, and `this thread goes into the 
 mathematical theory behind the difference`_. In practice, there is not much
 numeric difference between the different functions.
 
