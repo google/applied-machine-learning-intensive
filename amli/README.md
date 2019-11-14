@@ -54,7 +54,18 @@ information that would help the instructor conduct the class. Expect that the
 slides will be shared with the students.
 
 If a slide contains images there should be an 'Image Details' section in the
-speaker notes that references the original image and the image license.
+speaker notes that references the original image and the image license. If the
+image is original work owned by Google note that with 'Copyright Google'.
+
+Sites approved for finding stock images with open licenses are:
+
+   * [Unsplash](https://unsplash.com) using the
+     [Unsplash License](https://unsplash.com/license)
+   * [Pexels](https://pexels.com) using the
+     [Pexels License](https://www.pexels.com/photo-license/)
+   * [https://pixabay.com](Pixabay) using the
+     [Pixabay License](https://pixabay.com/service/license/)
+   * [https://barnimages.com](Barn Images)
 
 Every slide should also have a 'Concepts' section that lists the concepts
 mentioned in the slides. These concepts should map to concepts found in AMLI's
