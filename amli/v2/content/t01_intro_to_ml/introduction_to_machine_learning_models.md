@@ -1,5 +1,4 @@
 # Intro to ML Models
-## Name/Date
 
 <!--
 - Model Types
