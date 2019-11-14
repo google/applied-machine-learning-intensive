@@ -15,7 +15,7 @@ https://developers.google.com/machine-learning/amli-content/what-is-ml/terminolo
 
 # Learning from Examples
 
-![](https://www.jcpportraits.com/sites/jcpportraits.com/files/portrait/1607/Toddler_0005_P030_.jpg)
+![Image](https://file.io/HEwIRT)
 
 <!--
 Machine learning uses examples to identify patterns and make predictions on new examples. 
