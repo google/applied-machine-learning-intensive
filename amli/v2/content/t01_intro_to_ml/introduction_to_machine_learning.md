@@ -1,5 +1,4 @@
 # Intro to Machine Learning (ML)
-## Name/Date
 
 <!--
 Background content for the slides:
