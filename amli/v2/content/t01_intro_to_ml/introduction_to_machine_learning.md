@@ -12,7 +12,7 @@ https://developers.google.com/machine-learning/amli-content/what-is-ml/terminolo
 
 ---
 
-# Learning from Examples
+## Learning from Examples
 
 ![Image](https://file.io/HEwIRT)
 
@@ -24,7 +24,7 @@ Imagine if you brought a young child to the zoo, and upon arriving at the lion e
 
 ---
 
-# Learning from Examples
+## Learning from Examples
 
 ![](https://cdn.mos.cms.futurecdn.net/vChK6pTy3vN3KbYZ7UU7k3-320-80.jpg)
 
@@ -34,7 +34,7 @@ Would you be surprised? Maybe the child has not seen a lion before, but does hav
 
 ---
 
-# Learning from Examples
+## Learning from Examples
 
 ![](http://stmedia.stimg.co/Cecil.JPG?fit=crop&crop=faces)
 
@@ -44,7 +44,7 @@ You inform the child this animal is a lion and continue your day at the zoo.
 
 ---
 
-# Learning from Examples
+## Learning from Examples
 
 ![](https://previews.123rf.com/images/gmack007/gmack0071708/gmack007170800006/85074775-a-tiger-laying-down-shot-in-hdr.jpg)
 
@@ -58,7 +58,7 @@ Similarly, machine learning makes predictions based on feedback while learning f
 
 ---
 
-# Learning from Examples
+## Learning from Examples
 ![](https://images-na.ssl-images-amazon.com/images/I/71rgVdaE0sL._SX425_.jpg)
 
 <!--
@@ -117,7 +117,7 @@ There are many key terms you’ll encounter in this class, and in your machine l
 
 ---
 
-# Artificial Intelligence 
+## Artificial Intelligence 
 
 <!--
 What is artificial intelligence?
@@ -133,7 +133,7 @@ You might think of crazy robots like in “Ex Machina”, or chatbots like Googl
 
 ---
 
-# Machine Learning 
+## Machine Learning 
 
 <!--
 What is machine learning then?
@@ -149,7 +149,7 @@ Machine learning is a strategy through which AI can appear “intelligent” whe
 
 --- 
 
-# Deep Learning 
+## Deep Learning 
 
 <!--
 “Deep learning” is a term that has become more and more widely used in recent years, due to the increasing availability of data.
@@ -175,7 +175,7 @@ Sometimes these terms are used interchangeably, but that’s not quite correct. 
 
 ---
 
-# Features 
+## Features 
 
 <!--
 Now let’s dive deeper into what goes into a machine learning system.
@@ -232,7 +232,7 @@ time of day
 
 ---
 
-# Model 
+## Model 
 
 <!--
 These features are used in a model to make predictions.
@@ -247,7 +247,7 @@ a mathematical way the patterns and insights that a machine learning system lear
 
 ---
 
-# Training 
+## Training 
 
 <!--
 Teaching a model the difference between a lion photo and a tiger photo requires training data. Training data is a large set of examples related to the problem you are trying to solve. The model will make predictions based on the patterns found in the training data.
@@ -259,7 +259,7 @@ Especially with more data, models can become so complex that the details of how 
 
 ---
 
-# Testing 
+## Testing 
 
 <!--
 Machine learning makes predictions on new data based on previous examples (training data). If your lion-detecting model adequately distinguishes lions from tigers, the model is performing successfully. If not, you can experiment with additional training data or other approaches to improve the results.
@@ -274,13 +274,3 @@ It’s important to always have a separate training dataset and testing dataset.
 
 Just like the child from the zoo, a machine learning model will do the best it can with the information it has. Overfitting can be mitigated by looking for blind spots and bias in data and processes. It might also be a sign that you need more training data. We’ll have a deeper discussion of how to improve performance of machine learning models, including reducing overfitting, later in the class.
 -->
-
-
-
-
-
-
-
-
-
-
