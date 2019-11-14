@@ -13,5 +13,6 @@ Introduction To Visualizations
 
    introduction.rst
    example_visualizations.rst
-   visualization_checklists.rst
+   reading_visualizations_checklist.rst
+   creating_visualizations_checklist.rst
    histograms_and_bar_charts.rst
