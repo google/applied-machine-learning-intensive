@@ -96,9 +96,9 @@ A machine learning approach would be able to look through a large number of exam
 
 ---
 
-DIAGRAM
 
-![](https://file.io/t2IhOY)
+
+![Image](https://file.io/4yqZYv)
 
 <!--
 Machine learning is an iterative process that requires large amounts of data to learn useful, generalizable patterns. 
@@ -168,7 +168,7 @@ For example, a neural network classifying images of animals could have a layer t
 
 ---
 
-DIAGRAM
+![Image](https://file.io/SLUDs7)
 
 <!--
 Sometimes these terms are used interchangeably, but that’s not quite correct. Deep learning is a specific technique in machine learning, which is a subfield in AI.
