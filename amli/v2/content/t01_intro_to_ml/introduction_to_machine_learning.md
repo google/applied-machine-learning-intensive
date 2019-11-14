@@ -14,39 +14,48 @@ https://developers.google.com/machine-learning/amli-content/what-is-ml/terminolo
 
 # Learning from Examples
 
-![Image](https://file.io/HEwIRT)
+![](res/toddler.jpg)
 
 <!--
 Machine learning uses examples to identify patterns and make predictions on new examples. 
 
 Imagine if you brought a young child to the zoo, and upon arriving at the lion exhibit, the child pointed at a lion and said, “It’s a kitty!”
+
+Image Details:
+* [toddler.jpg](https://pixabay.com/photos/african-child-black-child-child-2578559/): Pixabay License
 -->
 
 ---
 
 # Learning from Examples
 
-![](https://cdn.mos.cms.futurecdn.net/vChK6pTy3vN3KbYZ7UU7k3-320-80.jpg)
+![](res/kitten.jpg)
 
 <!--
-Would you be surprised? Maybe the child has not seen a lion before, but does have a kitten at home, so they said the closest thing they could think of. 
+Would you be surprised? Maybe the child has not seen a lion before, but does have a kitten at home, so they said the closest thing they could think of.
+
+Image Details:
+* [kitten.jpg](https://unsplash.com/photos/2Nca6Aum17o): Usplash License
 -->
 
 ---
 
 # Learning from Examples
 
-![](http://stmedia.stimg.co/Cecil.JPG?fit=crop&crop=faces)
+![](res/lion.jpg)
 
 <!--
 You inform the child this animal is a lion and continue your day at the zoo.
+
+Image Details:
+* [lion.jpg](https://www.pexels.com/photo/lion-sleeping-beside-rock-1187987/): Pexels License
 -->
 
 ---
 
 # Learning from Examples
 
-![](https://previews.123rf.com/images/gmack007/gmack0071708/gmack007170800006/85074775-a-tiger-laying-down-shot-in-hdr.jpg)
+![](res/tiger.jpg)
 
 <!--
 Later, you arrive at the tiger cage and the child now says, “It’s a lion!” (perhaps they now think all big cats are lions…) You might clarify for the child that tigers have stripes, while lions don’t.
@@ -54,15 +63,21 @@ Later, you arrive at the tiger cage and the child now says, “It’s a lion!”
 We expect children to learn from their surroundings, and when they get something wrong, we provide feedback to help them improve. The child's understanding of cats, lions, and tigers improves with feedback.
 
 Similarly, machine learning makes predictions based on feedback while learning from examples.
+
+Image Details:
+* [tiger.jpg](https://pixabay.com/photos/animal-tiger-big-cat-safari-1868911/): Pixabay License
 -->
 
 ---
 
 # Learning from Examples
-![](https://images-na.ssl-images-amazon.com/images/I/71rgVdaE0sL._SX425_.jpg)
+![](res/kitten-lion.png)
 
 <!--
 A machine learning algorithm might have a hard time determining whether this is a kitten or a lion -- but then again, so might the child from the zoo.
+
+Image Details:
+* [kitten-lion.png](https://en.wikipedia.org/wiki/Comment_(computer_programming)#Tags): TODO
 -->
 
  ---
@@ -97,7 +112,7 @@ A machine learning approach would be able to look through a large number of exam
 
 
 
-![Image](https://file.io/4yqZYv)
+![](res/product-development-process.png)
 
 <!--
 Machine learning is an iterative process that requires large amounts of data to learn useful, generalizable patterns. 
@@ -105,6 +120,9 @@ Machine learning is an iterative process that requires large amounts of data to 
 Your first step in approaching a problem should always be to define a clear, user-focused goal. Then, decide whether to take a rules-based or machine learning approach based on how the advantages of each fit to your goal (generally, if you have a large amount of diverse data, machine learning is the way to go). 
 
 No matter your approach, you’ll then need to test and refine your system until goals are met.
+
+Image Details:
+* [product-development-process.png](http://google.com): Copyright Google
 -->
 
 ---
@@ -167,10 +185,13 @@ For example, a neural network classifying images of animals could have a layer t
 
 ---
 
-![Image](https://file.io/SLUDs7)
+![](res/deep-learning-hierarchy.png)
 
 <!--
 Sometimes these terms are used interchangeably, but that’s not quite correct. Deep learning is a specific technique in machine learning, which is a subfield in AI.
+
+Image Details:
+* [deep-learning-hierarchy.png](https://google.com): Copyright Google
 -->
 
 ---
