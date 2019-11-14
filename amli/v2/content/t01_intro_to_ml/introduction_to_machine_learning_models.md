@@ -26,8 +26,8 @@ Highlight the importance of explaining their reasoning and coming to a conclusio
 
 ---
 
-# Classification
-## Determine which class or category an example belongs to using labeled data as a guide
+## Classification
+Determine which class or category an example belongs to using labeled data as a guide
 
 <!--
 Classification systems determine which class or category an example belongs to. They can distinguish between two or more classes. These classes are defined based on your goals for the machine learning system.
@@ -53,8 +53,8 @@ label emails as spam
 
 ---
 
-# Clustering
-## Find relationships between data
+## Clustering
+Find relationships between data
 
 <!--
 Clustering looks for similar examples in a dataset. It is an example of unsupervised machine learning, or a system that does not require correct labels provided to learn. Instead, in the process of clustering, a machine learning system defines categories and places examples into each category by quantifying how closely examples are related to one another.
@@ -79,8 +79,8 @@ grouping many examples of soft drinks from around the world
 
 ---
 
-# Regression
-## Predicting the relationship between multiple variables
+## Regression
+Predicting the relationship between multiple variables
 
 <!--
 Regression predicts the relationship between two or more variables. If you were interested in predicting the price of a house, you might look for patterns in location, square footage, or number of bedrooms. While classification involves a discrete / categorical value to predict, regression involves a continuous value to predict.
@@ -110,8 +110,8 @@ predict crop yield based on weather, time of year
 
 --- 
 
-# Sequences
-## Suggest the next value in a sequence
+## Sequences
+Suggest the next value in a sequence
 
 <!--
 Finally, sequence prediction suggests what might come next, based on previous examples.
@@ -175,10 +175,3 @@ Discuss: Does ordering of the data matter? (Answer: Kind of)
 
 Ordering of the data matters when you might have groups of highly correlated examples. For example, if you feed your ML system all pictures of lions, then all pictures of tigers, and so on, it may not be able to learn general patterns as well. It’s extremely important to shuffle the training data to avoid such groupings (though as long as you shuffle, the exact ordering after the shuffle does not matter).
 -->
-
----
-
-
-
-
-
