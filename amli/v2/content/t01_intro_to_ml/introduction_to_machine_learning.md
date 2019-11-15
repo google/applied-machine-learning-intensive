@@ -80,25 +80,31 @@ Image Details:
 * [kitten-lion.png](https://en.wikipedia.org/wiki/Comment_(computer_programming)#Tags): TODO
 -->
 
- ---
+---
 
 # Options
 
 **Rules-based**
+
 * Humans develop the logic flow
 * If/then/else rules
 * One-off exceptions
 * Limited to human reasoning
 * Exposes bias of the implementor
 
+.
+
 {.column}
 
 **Machine Learning**
+
 * Model trained with data
 * Emergent patterns in the data
 * Experiments and refinements in training and models
 * Limited by training data
 * Exposes bias of the training data
+
+.
 
 <!--
 Before machine learning, many problems used a “rules-based approach”, which makes predictions based on a list of rules. In some situations it’s useful to have this human input, but it’s challenging to maintain as new rules are needed for each change in user needs or ecosystem.
