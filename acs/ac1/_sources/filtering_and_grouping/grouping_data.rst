@@ -35,8 +35,9 @@ functions.
    visible:
 
    .. image:: figures/table_group_example_2.png
-   :align: center
-   :alt: A screenshot from Sheets of a table of peoples' information using the COUNT IF grouping function to count how many are from Los Angeles
+      :align: center
+      :alt: A screenshot from Sheets of a table of peoples' information using the COUNT IF grouping function to count how many are from Los Angeles
+
 
    **The SUMIF function sums the values of cells that satisfy a condition.** The
    syntax looks like ``=SUMIF(cell range to be filtered, filter condition, cell
@@ -54,8 +55,9 @@ functions.
    function ``SUMIF``.
 
    .. image:: figures/table_sumif_example.png
-   :align: center
-   :alt: A screenshot from Sheets of a table of peoples' information using the SUM IF grouping function to sum the total income of people from New York City
+      :align: center
+      :alt: A screenshot from Sheets of a table of peoples' information using the SUM IF grouping function to sum the total income of people from New York City
+
 
    **The AVERAGEIF function finds the mean of cells that satisfy a condition.**
    The syntax looks like ``=AVERAGEIF(cell range to be filtered, filter
@@ -68,11 +70,8 @@ functions.
    ``“=violin”``, and the **cell range to be averaged** is ``B1:B10``.
 
    .. image:: figures/table_averageif_example.png
-   :align: center
-   :alt: A screenshot from Sheets of a table of Spotify's top 50 songs in 2019 using the AVERAGE IF function to average the total popularity of Ed Sheeran's songs
-
-
-.. TODO(raskutti): Add a screencast showing the above functions.
+      :align: center
+      :alt: A screenshot from Sheets of a table of Spotify's top 50 songs in 2019 using the AVERAGE IF function to average the total popularity of Ed Sheeran's songs
 
 
 Note that for ``SUMIF`` and ``AVERAGEIF``, if you want to sum or average the
