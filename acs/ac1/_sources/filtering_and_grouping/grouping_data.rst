@@ -25,14 +25,12 @@ functions.
    The syntax looks like ``=COUNTIF(cell range to be filtered, filter
    condition)``.
 
-   For example, consider the formula ``=COUNTIF(A1:A10, “=violin”)``. This
-   counts the number of cells in the range A1:A10 that match the word “violin”.
-   The **cell range to be filtered** is ``A1:A10``, and the **filter condition**
-   is ``“=violin”``.
-
-   Earlier in the introduction you saw an example of the ``COUNTIF`` function used
-   on a table of standard information about people. Here it is below with the function
-   visible:
+   Earlier in the introduction you saw an example of the ``COUNTIF`` function 
+   used on a table of standard information about people. That example utilizes
+   the formula ``=COUNTIF(B1:B26, “=Los Angeles”)``. This counts the number of
+   cells in the range B1:B26 that match the word “Los Angeles”. The **cell 
+   range to be filtered** is ``B1:B26``, and the **filter condition** is 
+   ``“=Los Angeles”``.
 
    .. image:: figures/table_group_example_2.png
       :align: center
@@ -43,11 +41,11 @@ functions.
    syntax looks like ``=SUMIF(cell range to be filtered, filter condition, cell
    range to be summed)``.
 
-   Given a table of _the top 50 songs on Spotify in 2019_, you can add up the total 
-   popularity of songs by a certain artists. For example, consider the formula 
-   ``=SUMIF(C2:C51, "=Ed Sheeran", N2:N51)``. This sums the values in the cells
-   N2:N51, but only using rows for which the cell in that row in column C 
-   matches the word "Ed Sheeran." The **cell range** to be filtered is 
+   Given a table of _the top 50 songs on Spotify in 2019_, you can add up the 
+   total popularity of songs by a certain artists. For example, consider the 
+   formula ``=SUMIF(C2:C51, "=Ed Sheeran", N2:N51)``. This sums the values in
+   the cells N2:N51, but only using rows for which the cell in that row in 
+   column C matches the word "Ed Sheeran." The **cell range** to be filtered is 
    ``C2:C51``, the **filter condition** is ``“=Ed Sheeran”``, and the **cell 
    range to be summed** is ``N2:N51``.
 
