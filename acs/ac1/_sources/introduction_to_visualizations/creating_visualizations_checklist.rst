@@ -51,6 +51,7 @@ checklist.
 
 
 .. image:: figures/creating_visualizations_checklist.png
+   :alt: A summary checklist of visualization concepts that are listed below.
 
 1.  **Why** are you making this visualization? What **point** do you intend to
     make with the visualization?
