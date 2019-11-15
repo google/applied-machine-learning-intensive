@@ -53,7 +53,7 @@ functions.
    Pictured is a screenshot of part of the dataset in Sheets with the grouping
    function ``SUMIF``.
 
-   .. image:: figures/table_sumif_example_.png
+   .. image:: figures/table_sumif_example.png
    :align: center
    :alt: A screenshot from Sheets of a table of peoples' information using the SUM IF grouping function to sum the total income of people from New York City
 
@@ -67,7 +67,7 @@ functions.
    range to be filtered** is ``A1:A10``, the **filter condition** is
    ``“=violin”``, and the **cell range to be averaged** is ``B1:B10``.
 
-   .. image:: figures/table_averageif_example_.png
+   .. image:: figures/table_averageif_example.png
    :align: center
    :alt: A screenshot from Sheets of a table of Spotify's top 50 songs in 2019 using the AVERAGE IF function to average the total popularity of Ed Sheeran's songs
 
