@@ -13,3 +13,4 @@ Filtering and Grouping
 
    filtering_data.rst
    grouping_data.rst
+   summary.rst
