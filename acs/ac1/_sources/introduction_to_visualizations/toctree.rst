@@ -15,3 +15,4 @@ Introduction To Visualizations
    example_visualizations.rst
    visualization_checklists.rst
    histograms_and_bar_charts.rst
+   summary.rst
