@@ -36,17 +36,26 @@ functions.
 
    .. image:: figures/table_group_example_2.png
    :align: center
-   :alt: A screenshot from Sheets of a table of peoples' information grouped to count how many are from Los Angeles
+   :alt: A screenshot from Sheets of a table of peoples' information using the COUNT IF grouping function to count how many are from Los Angeles
 
    **The SUMIF function sums the values of cells that satisfy a condition.** The
    syntax looks like ``=SUMIF(cell range to be filtered, filter condition, cell
    range to be summed)``.
 
-   For example, consider the formula ``=SUMIF(A1:A10, “=violin”, B1:B10)``. This
-   sums the values in the cells B1:B10, but only using rows for which the cell
-   in that row in column A matches the word “violin”. The **cell range to be
-   filtered** is ``A1:A10``, the **filter condition** is ``“=violin”``, and the
-   **cell range to be summed** is ``B1:B10``.
+   Given a table of _the top 50 songs on Spotify in 2019_, you can add up the total 
+   popularity of songs by a certain artists. For example, consider the formula 
+   ``=SUMIF(C2:C51, "=Ed Sheeran", N2:N51)``. This sums the values in the cells
+   N2:N51, but only using rows for which the cell in that row in column C 
+   matches the word "Ed Sheeran." The **cell range** to be filtered is 
+   ``C2:C51``, the **filter condition** is ``“=Ed Sheeran”``, and the **cell 
+   range to be summed** is ``N2:N51``.
+
+   Pictured is a screenshot of part of the dataset in Sheets with the grouping
+   function ``SUMIF``.
+
+   .. image:: figures/table_sumif_example_.png
+   :align: center
+   :alt: A screenshot from Sheets of a table of peoples' information using the SUM IF grouping function to sum the total income of people from New York City
 
    **The AVERAGEIF function finds the mean of cells that satisfy a condition.**
    The syntax looks like ``=AVERAGEIF(cell range to be filtered, filter
@@ -57,6 +66,10 @@ functions.
    which the cell in that row in column A matches the word “violin”. The **cell
    range to be filtered** is ``A1:A10``, the **filter condition** is
    ``“=violin”``, and the **cell range to be averaged** is ``B1:B10``.
+
+   .. image:: figures/table_averageif_example_.png
+   :align: center
+   :alt: A screenshot from Sheets of a table of Spotify's top 50 songs in 2019 using the AVERAGE IF function to average the total popularity of Ed Sheeran's songs
 
 
 .. TODO(raskutti): Add a screencast showing the above functions.
