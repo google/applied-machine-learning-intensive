@@ -141,7 +141,7 @@ There are many key terms you’ll encounter in this class, and in your machine l
 
 ---
 
-# Artificial Intelligence
+# Artificial Intelligence{.big}
 
 <!--
 What is artificial intelligence?
@@ -157,7 +157,7 @@ You might think of crazy robots like in “Ex Machina”, or chatbots like Googl
 
 ---
 
-# Machine Learning
+# Machine Learning{.big}
 
 <!--
 What is machine learning then?
@@ -173,7 +173,7 @@ Machine learning is a strategy through which AI can appear “intelligent” whe
 
 --- 
 
-# Deep Learning 
+# Deep Learning {.big}
 
 <!--
 “Deep learning” is a term that has become more and more widely used in recent years, due to the increasing availability of data.
@@ -202,7 +202,7 @@ Image Details:
 
 ---
 
-# Features 
+# Features {.big}
 
 <!--
 Now let’s dive deeper into what goes into a machine learning system.
@@ -259,7 +259,7 @@ time of day
 
 ---
 
-# Model 
+# Model {.big}
 
 <!--
 These features are used in a model to make predictions.
@@ -274,7 +274,7 @@ a mathematical way the patterns and insights that a machine learning system lear
 
 ---
 
-# Training 
+# Training {.big}
 
 <!--
 Teaching a model the difference between a lion photo and a tiger photo requires training data. Training data is a large set of examples related to the problem you are trying to solve. The model will make predictions based on the patterns found in the training data.
@@ -286,7 +286,7 @@ Especially with more data, models can become so complex that the details of how 
 
 ---
 
-# Testing 
+# Testing {.big}
 
 <!--
 Machine learning makes predictions on new data based on previous examples (training data). If your lion-detecting model adequately distinguishes lions from tigers, the model is performing successfully. If not, you can experiment with additional training data or other approaches to improve the results.
@@ -295,6 +295,8 @@ The data you use for testing should be representative of your problem and goal. 
 -->
 
 ---
+
+# Overfitting {.big}
 
 <!--
 It’s important to always have a separate training dataset and testing dataset. If you observe high performance on the training data but lower performance on the separate testing data, it’s a sign of overfitting. Overfitting occurs when a model conforms too much to its training data and cannot generalize to make predictions about new data. For example, if none of the tigers in the training data have white fur, the model could assume all tigers have orange fur.
