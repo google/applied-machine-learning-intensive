@@ -32,7 +32,7 @@ functions.
    range to be filtered** is ``B1:B26``, and the **filter condition** is 
    ``“=Los Angeles”``.
 
-   .. image:: figures/table_group_example_2.png
+   .. image:: figures/table_countif_example.png
       :align: center
       :alt: A screenshot from Sheets of a table of peoples' information using the COUNT IF grouping function to count how many are from Los Angeles
 
@@ -41,13 +41,13 @@ functions.
    syntax looks like ``=SUMIF(cell range to be filtered, filter condition, cell
    range to be summed)``.
 
-   Given a table of _the top 50 songs on Spotify in 2019_, you can add up the 
-   total popularity of songs by a certain artists. For example, consider the 
-   formula ``=SUMIF(C2:C51, "=Ed Sheeran", N2:N51)``. This sums the values in
-   the cells N2:N51, but only using rows for which the cell in that row in 
-   column C matches the word "Ed Sheeran." The **cell range** to be filtered is 
-   ``C2:C51``, the **filter condition** is ``“=Ed Sheeran”``, and the **cell 
-   range to be summed** is ``N2:N51``.
+   Given a the same table of standard information about people, you can find 
+   the total income of those from New York City. Consider the formula 
+   ``=SUMIF(B2:B26, "=New York City", E2:E26)``. This sums the values in the 
+   cells E2:E26, but only using rows for which the cell in that row in column 
+   B matches the word "New York City". The **cell range** to be filtered is 
+   ``B2:B26``, the **filter condition** is ``“=New York City”``, and the **cell
+   range to be summed** is ``E2:E26``.
 
    Pictured is a screenshot of part of the dataset in Sheets with the grouping
    function ``SUMIF``.
@@ -61,11 +61,13 @@ functions.
    The syntax looks like ``=AVERAGEIF(cell range to be filtered, filter
    condition, cell range to be averaged)``.
 
-   For example, consider the formula ``=AVERAGEIF(A1:A10, “=violin”, B1:B10)``.
-   This finds the mean of cells in the range B1:B10, but only using rows for
-   which the cell in that row in column A matches the word “violin”. The **cell
-   range to be filtered** is ``A1:A10``, the **filter condition** is
-   ``“=violin”``, and the **cell range to be averaged** is ``B1:B10``.
+   Given a table of `the top 50 songs on Spotify in 2019`_, you can calculate 
+   the mean popularity of songs by a certain artist. For example, consider the 
+   formula ``=AVERAGEIF(C4:C53, "=Ed Sheeran", E4:E53)``. This finds the mean 
+   of cells in the range E4:E53, but only using rows for which the cell in that 
+   row in column C matches the word "Ed Sheeran." The **cell range** to be 
+   filtered is ``C4:C53``, the **filter condition** is ``“=Ed Sheeran”``, and 
+   the **cell range to be averaged** is ``E4:E53``.
 
    .. image:: figures/table_averageif_example.png
       :align: center
@@ -301,3 +303,4 @@ C, but only if column E is equal to “Man”. This is a perfect use case for
 .. _This forum discussion goes into more detail.: https://stackoverflow.com/questions/17152704/google-spreadsheet-count-if-contains-a-string
 .. _Titanic: https://en.wikipedia.org/wiki/RMS_Titanic
 .. _killing over 1,500 people: https://en.wikipedia.org/wiki/Passengers_of_the_RMS_Titanic
+.. _the top 50 songs on Spotify in 2019: https://www.kaggle.com/leonardopena/top50spotify2019/data
