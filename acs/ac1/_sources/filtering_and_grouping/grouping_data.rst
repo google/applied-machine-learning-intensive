@@ -75,8 +75,8 @@ functions.
 
 
 Note that for ``SUMIF`` and ``AVERAGEIF``, if you want to sum or average the
-rows in column A themselves, you can enter A1:A10 as the third argument or leave
-the third argument empty.)
+rows in column B or C themselves, you can enter B2:B26 or C2:C53 as the third 
+argument or leave the third argument empty.
 
 
 Example: Painters
