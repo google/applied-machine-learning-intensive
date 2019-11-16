@@ -34,7 +34,7 @@ functions.
 
    .. image:: figures/table_countif_example.png
       :align: center
-      :alt: A screenshot from Sheets of a table of peoples' information using the COUNT IF grouping function to count how many are from Los Angeles
+      :alt: A screenshot from Sheets of a table of peoples' information using the COUNT IF grouping function to count how many are from Los Angeles.
 
 
    **The SUMIF function sums the values of cells that satisfy a condition.** The
@@ -54,7 +54,7 @@ functions.
 
    .. image:: figures/table_sumif_example.png
       :align: center
-      :alt: A screenshot from Sheets of a table of peoples' information using the SUM IF grouping function to sum the total income of people from New York City
+      :alt: A screenshot from Sheets of a table of peoples' information using the SUM IF grouping function to sum the total income of people from New York City.
 
 
    **The AVERAGEIF function finds the mean of cells that satisfy a condition.**
@@ -69,9 +69,9 @@ functions.
    filtered is ``C4:C53``, the **filter condition** is ``“=Ed Sheeran”``, and 
    the **cell range to be averaged** is ``E4:E53``.
 
-   .. image:: figures/table_averageif_example.png
+   .. image:: figures/spotify_averageif_example.png
       :align: center
-      :alt: A screenshot from Sheets of a table of Spotify's top 50 songs in 2019 using the AVERAGE IF function to average the total popularity of Ed Sheeran's songs
+      :alt: A screenshot from Sheets of a table of Spotify's top 50 songs in 2019 using the AVERAGE IF function to average the total popularity of Ed Sheeran's songs.
 
 
 Note that for ``SUMIF`` and ``AVERAGEIF``, if you want to sum or average the
@@ -123,7 +123,7 @@ French painters.
 
 .. image:: figures/filtered_index.png
    :align: center
-   :alt: A screenshot from Sheets of a painters dataset filtered by nationality and counting the number of French painters
+   :alt: A screenshot from Sheets of a painters dataset filtered by nationality and counting the number of French painters.
 
 
 Notice that when trying to count the number of rows, selecting the cells selects
@@ -144,7 +144,7 @@ of French painters, you can use ``COUNTIF``. The range to be counted is the
 
 .. image:: figures/french_painters_using_countif.png
    :align: center
-   :alt: A screenshot from Sheets of a painters dataset grouped to count the number of painters whose nationality is French
+   :alt: A screenshot from Sheets of a painters dataset grouped to count the number of painters whose nationality is French.
 
 
 .. fillintheblank:: number_of_paintings_by_french_painters_using_countif
@@ -240,7 +240,7 @@ column C and use this column for the formula.
 
 .. image:: figures/titanic_adding_survived_column.png
    :align: center
-   :alt: A screenshot from Sheets of a titanic passenger dataset using the IF function to label dead as a 0 and alive as a 1 in a new column called Survived number
+   :alt: A screenshot from Sheets of a titanic passenger dataset using the IF function to label dead as a 0 and alive as a 1 in a new column called Survived number.
 
 
 .. fillintheblank:: titanic_survival_rate
@@ -271,7 +271,7 @@ C, but only if column E is equal to “Man”. This is a perfect use case for
 
 .. image:: figures/titanic_men_survival_rate.png
    :align: center
-   :alt: A screenshot from Sheets of a titanic passenger dataset using the average function to find the men's survival rate
+   :alt: A screenshot from Sheets of a titanic passenger dataset using the average function to find the men's survival rate.
 
 
 .. fillintheblank:: titanic_women_survival_rate
