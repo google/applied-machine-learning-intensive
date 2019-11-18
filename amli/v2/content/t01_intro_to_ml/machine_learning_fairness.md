@@ -4,6 +4,8 @@
 
 # Read & Discuss
 
+INSERT IMAGE HEADLINE SCREENSHOT
+
 <!--
 Open up the ML Fairness topic with engaging examples from various domains, showing the impact of bias on end users. There are 4 potential articles in the facilitator guide -- choose your favorite 3 and have students count off 1/2/3. Assign each group an article to read.
 
