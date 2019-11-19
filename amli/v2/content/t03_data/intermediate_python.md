@@ -9,7 +9,7 @@
 * Instance variables and methods
 * Method calling
 
-INSERT INTERMEDIATEPYTHON1
+![](res/intermediatepython1.png)
 
 <!--
 Make sure everyone knows what “programming paradigm” means
@@ -19,7 +19,7 @@ Clearly define objects, instances, and classes. Eg: Classes are like blueprints,
 
 ---
 
-INSERT INTERMEDIATEPYTHON2
+![](res/intermediatepython2.png)
 
 <!--
 Give a full example of defining a class, creating methods, instantiating an object, and calling functions.
@@ -27,7 +27,7 @@ Give a full example of defining a class, creating methods, instantiating an obje
 
 ---
 
-INSERT INTERMEDIATEPYTHON3
+![](res/intermediatepython3.png)
 
 <!--
 Explain str vs repr
@@ -42,7 +42,8 @@ Helpful read: https://dbader.org/blog/meaning-of-underscores-in-python
 
 # Inheritance
 
-INSERT INTERMEDIATEPYTHON4
+
+![](res/intermediatepython4.png)
 
 <!--
 Explain inheritance:
