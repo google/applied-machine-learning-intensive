@@ -1,5 +1,7 @@
 # Introduction to Colab
 
+![](res/colab.png)
+
 ---
 
 # What is Colab?
