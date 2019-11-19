@@ -10,7 +10,7 @@ Source: Wikipedia
 
 ---
 
-INSERT PYTHONIMAGE1
+![](res/introtopython1.png)
 
 <!--
 Interpreted means portability, ease of use (no compiling) and that the code can be run interactively (as illustrated above). 
