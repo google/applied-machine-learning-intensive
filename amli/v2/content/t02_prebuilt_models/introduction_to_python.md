@@ -33,7 +33,7 @@ Python2:
 
 Most visible diff: print vs. print()
 
-INSERT PYTHONIMAGE2
+![](res/introtopyton2.png)
 
 <!--
 There are multiple versions of Python in the world. 1.x is long gone. 2.x is deprecated and support will soon stop but there's still a lot of code and code samples out there that use it. 
@@ -47,7 +47,7 @@ When looking at Python reference docs, look for the version number in the URL.
 
 ---
 
-INSERT PYTHONIMAGE3
+![](res/introtopython3.png)
 
 <!--
 When using StackOverflow (or other online resources), look for python-3.x tag and parenthesis around values to be printed.
@@ -57,7 +57,7 @@ Besides print, the other differences between python2 and python3 are unlikely to
 
 ---
 
-INSERT PYTHONIMAGE4
+![](res/introtopython4.png)
 
 <!--
 There are multiple ways to run python.
@@ -75,7 +75,7 @@ If you're in a notebook, you can run all the cells in order (recommended) but yo
 * Tabs can be used too but should not be mixed with spaces indent (Recommendation: just use spaces)
 * Indents can be nested to arbitrary depths
 
-INSERT PYTHONIMAGE5
+![](res/introtopython5.png)
 
 <!--
 In practice, the indents makes it hard to have long functions with many levels of nesting. That's actually a good thing, use decomposition (breaking code into smaller functions) instead. 
@@ -91,7 +91,7 @@ In practice, the indents makes it hard to have long functions with many levels o
 * Avoid changing the type of a variable
 * This almost means that lists can contain objects of different types. Avoid doing that.
 
-INSERT PYTHONIMAGE6
+![](res/introtopython6.png)
 
 ---
 
@@ -103,7 +103,7 @@ INSERT PYTHONIMAGE6
 * When you want to deal with characters, just use single-character strings
 * Strings are immutable
 
-INSERT PYTHONIMAGE7
+![](res/introtopython7.png)
 
 ---
 
@@ -111,7 +111,7 @@ INSERT PYTHONIMAGE7
 
 Commands end at the line break unless in the middle of a parenthesis, a triple-quoted string or an object definition.
 
-INSERT PYTHONIMAGE8
+
 
 ---
 
@@ -121,7 +121,7 @@ INSERT PYTHONIMAGE8
 * Looping over numbers requires creating a list of numbers. The function range makes that pretty easy.
 * You can create elaborate numbering schemes with range. 
 
-INSERT PYTHONIMAGE8
+![](res/introtopython8.png)
 
 ---
 
@@ -134,11 +134,11 @@ INSERT PYTHONIMAGE8
 * dir(some_object) to see its content (including methods)
 * len to get the length of many objects (strings, lists, dictionaries, …) but it's a function, not a method
 
-INSERT PYTHONIMAGE9
+![](res/introtopython9.png)
 
 ---
 
-INSERT PYTHONKEYBOARDIMAGE
+![](res/introtopythonkeyboard.png)
 
 <!--
 Enough talking, let's get to doing!
@@ -149,3 +149,5 @@ Enough talking, let's get to doing!
 # Device library: Laptop
 
 [Full device library](https://standards.google/downloads/)
+
+![](res/introtopythonlaptop.png)
