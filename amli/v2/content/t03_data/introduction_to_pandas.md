@@ -79,7 +79,7 @@ The most commonly used would be read_csv() but for a large dataset read_sql migh
 
 # Your Turn
 
-[Introduction to Pandas](https://colab.sandbox.google.com/drive/1YHNh4nYPq0nJfLe_uPZKAml-B-rZs8-d)
+[Introduction to Pandas](https://colab.sandbox.google.com/drive/1YHNh4nYPq0nJfLe_uPZKAml-B-rZs8-d) {.big}
 
 
 
