@@ -93,5 +93,5 @@ Wikipedia article on flower sepal: https://en.wikipedia.org/wiki/Sepal
 
 # Your Turn
 
-[Numpy, Matplotlib, and Seaborn](https://colab.sandbox.google.com/drive/1DteCte0oOefBB5w0lZVg8oeqPgsOcheT)
+[Numpy, Matplotlib, and Seaborn](https://colab.sandbox.google.com/drive/1DteCte0oOefBB5w0lZVg8oeqPgsOcheT){.big}
 
