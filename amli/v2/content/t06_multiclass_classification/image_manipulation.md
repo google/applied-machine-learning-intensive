@@ -109,6 +109,8 @@ Again, we use the PIL module to do so by passing in the desired_size.
 
 ---
 
+# The final image
+
 ![](res/imagemaninpy10.png)
 
 <!--
