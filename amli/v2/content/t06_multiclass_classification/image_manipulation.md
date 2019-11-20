@@ -119,4 +119,4 @@ Here’s the final image.
 
 # Your Turn
 
-[Maniupating an Image in Python}(https://colab.sandbox.google.com/drive/180O8QlkmoqI90h8zyCDiTfLq9egrauhb)
+[Maniupating an Image in Python](https://colab.sandbox.google.com/drive/180O8QlkmoqI90h8zyCDiTfLq9egrauhb){.big}
