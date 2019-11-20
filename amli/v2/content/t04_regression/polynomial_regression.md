@@ -118,7 +118,7 @@ Source: photo by Hugo L. Casanova on Unsplash
 
 ---
 
-![](res/polynomialregression12.jpg)
+![](res/polynomialregression13.jpg)
 
 <!--
 There is the other extreme, where you make clothing so loose that just about anyone could cover up with it. This would be underfitting.
@@ -184,19 +184,157 @@ https://medium.com/@yongddeng/regression-analysis-lasso-ridge-and-elastic-net-9e
 
 ---
 
-
-
+# Loss
 
 ![](res/polynomialregression16.png)
+
+<!--
+But what does it mean to shrink the coefficients? It means to increase the value of the loss function as the coefficients are calculated.
+
+As a reminder, here is the equation of a common loss function for regression problems, the residual sum of squares.
+
+In this equation:
+
+n = the number of rows in the training data
+p = the coefficients in the equation
+yi = the target value
+β0 = the intercept
+βi = the bias at each coefficient of the polynomial equation
+xi = the feature value at the given factor of the polynomial equation
+
+https://en.wikipedia.org/wiki/Residual_sum_of_squares
+
+$$RSS(\beta) = \displaystyle\sum_{i=1}^{n} \left( y_i -\beta_0 - \displaystyle\sum_{j=1}^p \beta_j x_{i}^j \right)^2$$
+-->
+
+---
+
+# Lasso (L1)
+
 ![](res/polynomialregression17.png)
+
+<!--
+Lasso is considered L1 regression. This regression uses the absolute value of the coefficients and appends them to the output of the loss function.
+
+It actually is an acronym for Least Absolute Shrinkage and Selection Operator.
+
+Due to the L1-Norm, some of the coefficients are more likely set equal to zero, depending on the regularisation parameter λ which needs to be chosen/tuned by the Cross-Validation 
+
+https://en.wikipedia.org/wiki/Lasso_(statistics)
+
+$$RSS(\beta) + \lambda \displaystyle \sum_{j=1}^p \left| \beta_j \right|$$
+-->
+
+---
+
+# Ridge (L2)
+
 ![](res/polynomialregression18.png)
+
+<!--
+Ridge regularization looks similar, but instead of appending the sum of absolute values to the loss function, it appends the sum of squares.
+
+Ridge regression, also known as Tikhonov Regularisation seeks λ that minimises the penalised or regularised RSS. As the L2 norm is differentiable, learning problems using the method can be solved by Gradient Descent
+
+https://en.wikipedia.org/wiki/Tikhonov_regularization
+
+$$RSS(\beta) + \lambda \displaystyle \sum_{j=1}^p \beta_j^2$$
+-->
+
+---
+
+# ElasticNet (L1 + L2)
+
+<!--
+ElasticNet is the combination of L1 and L2 regularization applied to the loss function.
+
+https://en.wikipedia.org/wiki/Elastic_net_regularization
+--> 
+
+---
+
+# Which is Best?
+
+<!--
+It really depends.
+
+L1 regularization can drive coefficients to zero and tends to produce a sparse model.
+
+L2 regularization is less likely to drive coefficients to zero and tends to produce a more dense model.
+
+ElasticNet works well in many situations.
+
+It is probably worth experimenting with each method to see which works best for your particular model.
+-->
+
+---
+
+Is there a way we can find a polynomial to go through the data perfectly? {.big}
+
+---
+
+Is there a way we can find a polynomial to go through the data perfectly? {.big}
+**If so, should we do it?** {big}
+
+---
+
+What type of function would you use to fit the following data? {.big}
+
 ![](res/polynomialregression19.png)
+
+---
+
+What type of function would you use to fit the following data? {.big}
+
 ![](res/polynomialregression20.png)
+
+--- 
+
+What type of function would you use to fit the following data? {.big}
+
 ![](res/polynomialregression21.png)
+
+---
+
+What type of function would you use to fit the following data? {.big}
+
 ![](res/polynomialregression22.png)
+
+---
+
+What type of function would you use to fit the following data? {.big}
+
 ![](res/polynomialregression23.png)
+
+---
+
+What type of function would you use to fit the following data? {.big}
+
 ![](res/polynomialregression24.png)
+
+---
+
+Why might this be a bad idea? {.big}
 ![](res/polynomialregression25.png)
-![](res/polynomialregression25.png)
+
+---
+
+Polynomial Interpolation  ! =  Polynomial Regression {.big}
+
 ![](res/polynomialregression26.png)
+
+<!--
+-A linear regression may make more sense; throw in another data point and polynomial may drastically change!
+-Especially true if we are looking for general trends, high order polynomials may be too “curvy”
+-Next slide...also polynomial interpolations generally go crazy outside the region where the data was interpolated (connected)
+-->
+
+---
+
+Polynomial Interpolations go nuts outside the data range {.big}
+
 ![](res/polynomialregression27.png)
+
+---
+
+# Your Turn
