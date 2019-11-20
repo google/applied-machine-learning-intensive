@@ -149,12 +149,88 @@ Ex: If you’re predicting a disease that would require invasive surgery, you wi
 https://stats.stackexchange.com/questions/312780/why-is-accuracy-not-the-best-measure-for-assessing-classification-models
 -->
 
+---
+
+Precision {.big}
+
 ![](res/classification10.png)
+
+<!--
+In practice, you need more nuanced measures.
+
+(Students will get more experience with this in the Classification Quality unit. Don't need to spend much time on it here. The slide is just showing that precision is a percentage of the positive cases that were actually correctly predicted over all of the positive case predictions.)
+
+Precision: (true positive / all positive predictions)
+When the model predicted positive, how often was it right?
+Intuition: did the model classify as positive too often?
+
+what happens if we classify everything as negative except for 1 that we’re 100% sure it’s positive?
+100% precision
+
+Write formula on the whiteboard
+-->
+
+---
+
+Recall {.big}
+
 ![](res/classification11.png)
-![](res/classification12.png)
+
+<!--
+(Students will get more experience with this in the Classification Quality unit.)
+Recall: (true positive / all actual positive)
+Out of all the possible positives, how many did the model correctly identify?
+Intuition: Did it miss any positives?
+-->
+
+---
+
+![](res/classification12.jpg)
+
+<!--
+Balancing precision and recall is a tug-of-war between the metrics. Finding the optimal point where these two metrics are acceptable to your model is the goal.
+
+If we want to increase recall, predict positive more often
+If we want to increase precision, only predict positive when we’re absolutely sure (raise classification threshold)
+In general, raising the classification threshold reduces false positives, thus raising precision.
+
+Source: Photo by Anna Samoylova on Unsplash
+-->
+
+---
+
+F1 {.big}
+
 ![](res/classification13.png)
+
+<!--
+What is a good way to determine if precision and recall are balanced? The F1 score computes the harmonic mean for the values. This formula penalizes small values of either, so optimizing for a high F1 score helps keep both precision and recall high.
+
+Compare color blindness example: accuracy vs F1 when everyone is predicted as negative.
+
+Expand formula to get optimized F1 (can calculate F1 directly from the TP/TN/FP/FN counts)
+-->
+
+---
+
+F1: optimized {.big}
+
 ![](res/classification14.png)
 
+<!--
+The F1 formula can be reduced to this formula… math.
+--> 
 
+---
 
+# Which do I use?
 
+<!--
+The answer is "it depends".
+
+In general accuracy isn't a good measure.
+
+F1 is a good measure to balance precision and recall.
+
+We’ll discuss more advanced measures later as well -- it is a good idea to measure the quality of your classifier using many different metrics and graphs, and sometimes directly reporting the confusion matrix is insightful
+-->
