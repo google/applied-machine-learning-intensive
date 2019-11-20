@@ -63,3 +63,7 @@ Using TensorFlow estimators requires four steps: {.big}
 4.) Call a training or evaluation method {.big}
 
 ![](res/linregwithTF6.png)
+
+---
+
+# Your Turn
