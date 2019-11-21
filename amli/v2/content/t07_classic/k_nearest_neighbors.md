@@ -28,5 +28,99 @@ One of the simplest **supervised** machine learning algorithms used mostly for c
 
 ---
 
+Example: classify as red or white wine {.big} 
+
+![](res/KNN01.png)
+
+---
+
+Example: classify as red or white wine {.big} 
+
+![](res/KNN02.png)
+
+---
+
+Example: classify as red or white wine {.big} 
+
+![](res/KNN03.png)
+
+---
+
+Example: classify as red or white wine {.big} 
+
+![](res/KNN04.png)
+
+---
+
+Example: classify as red or white wine {.big} 
+
+![](res/KNN05.png)
+
+---
+
+Example: classify as red or white wine {.big} 
+
+![](res/KNN06.png)
+
+---
+
+Example: classify as red or white wine {.big} 
+
+![](res/KNN07.png)
+
+---
+
+Example: classify as red or white wine {.big} 
+
+![](res/KNN08.png)
+
+---
+
+Example: classify as red or white wine {.big} 
+
+![](res/KNN09.png)
+
+---
+
+Example: classify as red or white wine {.big} 
+
+![](res/KNN10.png)
+
+---
+
+Example: classify as red or white wine {.big} 
+
+![](res/KNN011.png)
+
+---
+
+Example: classify as red or white wine {.big} 
+
+![](res/KNN12.png)
+
+---
+
+Example: classify as red or white wine {.big} 
+
+![](res/KNN13.png)
+
+---
+
+Example: classify as red or white wine {.big} 
+
+![](res/KNN14.png)
+
+---
+
+Example: classify as red or white wine {.big} 
+
+![](res/KNN015.png)
+
+---
+
+
+
+
+
 
 
