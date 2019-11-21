@@ -114,13 +114,59 @@ Example: classify as red or white wine {.big}
 
 Example: classify as red or white wine {.big} 
 
-![](res/KNN015.png)
+![](res/KNN15.png)
 
 ---
 
+# How do we choose K?
 
+* Small K -- > noise has a higher influence
+* Large K -- > computationally expensive
 
+---
 
+# How do we choose K?
 
+* Small K -- > noise has a higher influence
+* Large K -- > computationally expensive
 
+**SOME OPTIONS**:
+* Let K = sqrt(m) (i.e. sqrt of sample size)
+* Try K=1, 2, 3, 4, 5, …. with mult training/testing compare F1, accuracy, etc.
+* Try different K and use cross-validation (Colab to come!)
+* Use a clustering algorithm (Colabs to come!)
+* And more!!
 
+---
+
+![](res/KNN16.png)
+
+---
+
+# When to use KNN?
+
+KNN is a “lazy learner” algorithm - doesn’t learn a discriminative function from the training set (no generalization until query is made).
+
+Use when:
+* Dataset is relatively small 
+* Dataset is relatively noise-free
+
+---
+
+# Overfitting
+
+**QUESTION**:
+
+How might you run the risk of overfitting with KNN?
+
+---
+
+# Overfitting
+
+![](res/KNN17.png)
+
+---
+
+# Drawing decision boundary
+
+![](res/KNN18.png)
