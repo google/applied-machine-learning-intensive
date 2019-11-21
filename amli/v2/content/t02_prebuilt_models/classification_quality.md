@@ -244,6 +244,8 @@ You can interpret this as how many actual negative examples were falsely predict
 
 # Receiver Operating Characteristic (ROC) curve
 
+![](res/classqual17a.png)
+
 <!--
 How do you tell if you have a good model? There is a calculation called Area Under Curve (AOC) or Area Under ROC (AUROC). Most toolkits will calculate this value for you. An AOC of 0.5 is a totally random classifier (dotted line) and an AOC of 1.0 is a perfect classifier.
 
