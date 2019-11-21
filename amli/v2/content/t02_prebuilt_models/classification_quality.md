@@ -1,4 +1,4 @@
-# Classification Quality 
+# Classification Quality
 
 <!--
 A giant piece of machine learning is knowing how to evaluate and tune your model results.
