@@ -127,3 +127,7 @@ But, fundamentally, we know that the order of words matters. Harder NLP tasks bu
 the typical process for any NLP task is:
 raw text -> transform to feature vectors (either through feature extraction or embeddings) -> run through some model -> perform supervised task
 -->
+
+# Your Turn
+
+[Natural Language Processing](
