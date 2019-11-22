@@ -78,4 +78,5 @@ In this section you learned:
 -  The line of best fit is very sensitive to **outliers** and extreme values.
 -  The line of best fit doesn’t have to be a straight line. It can be
    exponential, polynomial, or many others. But be careful not to **overfit**
-  the trendline, especially with small datasets.
+   the trendline, especially with small datasets.
+   

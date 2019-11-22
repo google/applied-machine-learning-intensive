@@ -3,8 +3,8 @@
     International License. To view a copy of this license, visit
     http://creativecommons.org/licenses/by-sa/4.0/.
 
-Importing Data {#importing-data}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Importing Data
+==============
 
 Up to this point, you have been dealing with data entirely within
 Sheets. However, when you start tackling problems on real-world
@@ -47,18 +47,7 @@ Question: Import this data into Sheets using the following instructions.
    set “Separator type” to “Comma”. You can choose the “Import location”
    that suits you best.
 
-*SCREENSHOT:*\ `https://screenshot.googleplex.com/tXt0zzAE7Cq
-<https://screenshot.googleplex.com/tXt0zzAE7Cq>`__\ *\ *
-
-.. raw:: html
-
-   <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>
-gd2md-html alert: inline image link here (to images/Module-B0.png). Store image
-on your image server and adjust path/filename if necessary. </span><br>(<a
-href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span
-style="color: red; font-weight: bold">>>>>> </span></p>
-
-|alt_text|
+[TODO] Insert Screenshot
 
 3. When you click “Import data”, you should see the entire dataset.
 

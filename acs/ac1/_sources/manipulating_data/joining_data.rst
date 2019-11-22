@@ -19,11 +19,11 @@ Example: Grocery List
 Suppose you have `a file with two sheets
 <https://drive.google.com/open?id=14G4uiN4SNyoj8ZiIKWzACHBHPzQY6lvDC54MWwZJP8U>`__:
 a grocery list, and a list of prices of various items. The grocery list contains
- the items you need and the quantity. The prices list has various items
- available at the grocery store and their cost. To calculate the total cost for
- this grocery trip, you need to join the cost information to the grocery list
- information. While you could copy the cost of each item over, that would be
- both tedious and error prone.
+the items you need and the quantity. The prices list has various items available
+at the grocery store and their cost. To calculate the total cost for this
+grocery trip, you need to join the cost information to the grocery list
+information. While you could copy the cost of each item over, that would be both
+tedious and error prone.
 
 
 .. image:: figures/grocery_image.png

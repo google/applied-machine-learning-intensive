@@ -33,15 +33,29 @@ Contents
     sheets_basics/toctree.rst
     basic_descriptive_statistics/toctree.rst
     filtering_and_grouping/toctree.rst
+
+.. toctree::
+    :maxdepth: 1
+
+    module_b_preface.rst
+
+.. toctree::
+    :maxdepth: 2
+
+    importing_and_exporting_data/toctree.rst
     scatter_plots_and_correlation/toctree.rst
     regression_and_line_of_best_fit/toctree.rst
     manipulating_data/toctree.rst
-    sql/toctree.rst
 
 .. toctree::
     :maxdepth: 1
 
     module_c_preface.rst
+
+.. toctree::
+    :maxdepth: 2
+
+    sql/toctree.rst
 
 .. toctree::
     :maxdepth: 2

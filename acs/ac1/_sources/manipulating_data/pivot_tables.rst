@@ -35,16 +35,20 @@ columns, values, and filters.
    variable, displayed either as rows or columns of the pivot table. For
    example, when you select “Name” as a variable under rows, the pivot table
    will have one row for each of the employees at the company.
+
 -  Adding a variable to **values** populates the cells of the table.
+
    -  If you want the total number of hours each employee at the company was
       assigned, select the value “Hours” and summarize by sum. This will add the
       total number of hours each employee was assigned to the table.
+
    -  If you want the total number of opening shifts each employee at the
       company was assigned, select the value “Opening Shift” and summarize by
       count. This will add the number of opening shifts each employee was
       assigned to the table as an additional column. Repeating this process with
       “Closing Shift” will add a column showing the number of closing shifts for
       each employee.
+      
 -  Adding a variable to **filters** subsets the data before the pivot table is
    constructed. For example, a filter can be added on the “Date” variable for
    only the days July 4 - July 6. The resulting pivot table would have the total

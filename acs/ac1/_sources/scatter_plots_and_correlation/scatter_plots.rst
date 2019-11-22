@@ -3,8 +3,8 @@
     International License. To view a copy of this license, visit
     http://creativecommons.org/licenses/by-sa/4.0/.
 
-Scatter Plots {#scatter-plots}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Scatter Plots
+=============
 
 Atlanta, Georgia, which has a latitude of 33 degrees, is not included in
 this weather dataset. If you were asked to predict average January
@@ -48,11 +48,7 @@ as a point, where the x-coordinate of each point is that city’s
 latitude, and the y-coordinate of each point is that city’s mean January
 temperature.
 
-.. raw:: html
-
 [TODO] Insert images
-
-|alt_text|
 
 Using the scatter plot, you might predict that the January temperature
 in Atlanta would be between 45 and 50 degrees F, based on the

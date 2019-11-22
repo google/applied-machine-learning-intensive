@@ -3,8 +3,8 @@
     International License. To view a copy of this license, visit
     http://creativecommons.org/licenses/by-sa/4.0/.
 
-Describing Scatter Plots {#describing-scatter-plots}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Describing Scatter Plots
+========================
 
 Question: Match each scatter plot to each description.
 
@@ -12,62 +12,50 @@ Question: Match each scatter plot to each description.
    variable (y) is the annual salary for a sample of working adults
    between the ages of 18 and 65.
 
-   ::
-
-       Answer: Bottom Left. Most adults make more money as they get older, but
-there are many other factors, like education and career that also impact salary.
+   ::Answer: Bottom Left. Most adults make more money as they get older, but
+     there are many other factors, like education and career that also impact
+     salary.
 
 
 2. The explanatory variable (x) is the mean commute time in minutes and
    the explained variable (y) is height in inches for a sample of
    employees at a small company.
 
-   ::
-
-       Answer: Bottom Right. There’s no real relationship between height and
-commute time.
+   ::Answer: Bottom Right. There’s no real relationship between height and
+     commute time.
 
 3. The explanatory variable (x) is the month of the year, starting in
    January, and the explained variable (y) is the mean temperature for
    that month for St. Louis, Missouri which has cold winters and warm
    summers.
 
-   ::
-
-       Answer: Middle left. Cold winters and warm summers means smaller values
-close to the end points 1 = January and 12 = December, and higher temperatures
-in the middle.
+   ::Answer: Middle left. Cold winters and warm summers means smaller values
+     close to the end points 1 = January and 12 = December, and higher
+     temperatures in the middle.
 
 4. The explanatory variable (x) is the city miles per gallon and the
    explained variable (y) is the highway miles per gallon for a sample
    of cars.
 
-   ::
-
-       Answer: Top Right. Cars with higher city mpg also have higher highway
-mpg.
+   ::Answer: Top Right. Cars with higher city mpg also have higher highway
+     mpg.
 
 5. The explanatory variable (x) is the number of hours after e-coli has
    been introduced to a petri dish and the explained variable (y) is the
    estimated number of e-coli cells after t hours. The number of cells
    doubles about every 20 minutes.
 
-   ::
+   ::Answer: Top left. Because the number of cells is doubling, the change
+     every 20 minutes at the beginning of the experiment is small compared to
+     the change every 20 minutes at the end of the experiment when there are
+     much more cells dividing.
 
-       Answer: Top left. Because the number of cells is doubling, the change
-every 20 minutes at the beginning of the experiment is small compared to the
-change every 20 minutes at the end of the experiment when there are much more
-cells dividing.
+6. The explanatory variable (x) is the years of driving experience and the
+   explained variable (y) is the insurance premium paid for a sample of drivers.
 
-6. The explanatory variable (x) is the years of driving experience and
-   the explained variable (y) is the insurance premium paid for a sample
-   of drivers.
-
-   ::
-
-       Answer: Middle Right. Drivers with more driving experience are considered
-safver, so they pay smaller premiums. Similarly, drivers with less driving
-experience are considered riskier and pay greater premiums.
+   ::Answer: Middle Right. Drivers with more driving experience are considered
+     safer, so they pay smaller premiums. Similarly, drivers with less driving
+     experience are considered riskier and pay greater premiums.
 
 [TODO] Insert all images
 
@@ -103,38 +91,26 @@ Question: Match each scatterplot below with its description.
 
 1. Neither positive nor negative, strong, nonlinear
 
-   ::
-
-       Middle left
+   ::Middle left
 
 2. Positive, moderate, linear
 
-   ::
-
-       Bottom left
+   ::Bottom left
 
 3. No relationship
 
-   ::
-
-       Bottom right
+   ::Bottom right
 
 4. Negative, moderate, linear
 
-   ::
-
-       Middle right
+   ::Middle right
 
 5. Positive, strong, linear
 
-   ::
-
-       Top right
+   ::Top right
 
 6. Positive, strong, nonlinear
 
-   ::
-
-       Top left
+   ::Top left
 
 [TODO] Insert images
