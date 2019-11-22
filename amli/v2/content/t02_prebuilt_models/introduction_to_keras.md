@@ -72,6 +72,7 @@ Define
 
 Neural Net
 * We will go deep into neural network model discussion in a couple of weeks but for now focus getting comfortable with Keras APIs and coding flow
+-->
 
 ---
 
