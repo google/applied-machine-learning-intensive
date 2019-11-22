@@ -11,22 +11,24 @@ Making Accessible Visualizations
 
 When creating visualizations, it is important to create content that is both
 **physically accessible** and **understandable** to all.
-`More than 1 billion people have some form of disability`_ and so you need to
+`More than 1 billion people have some form of disability`_, so you need to
 ensure that you are not excluding anyone when creating a visualization.
 
 For example, look at the following example of a chart.
 
 
 .. image:: figures/not_color_blind.png
+   :align: center
    :alt: A line graph comparing number of likes over time of two posts.
 
 
 However, someone who is color-blind may see the graph as shown below, which has
-been `generated using this color-blindness simulator.`_ As you can see, it is
+been `generated using this color-blindness simulator`_. As you can see, it is
 more difficult to read.
 
 
 .. image:: figures/color_blind.png
+   :align: center
    :alt: A line graph comparing number of likes over time of two posts.
 
 
@@ -35,10 +37,14 @@ visualization. How about if a person was dyslexic? `This article identifies
 some key considerations for accessible data visualizations.`_
 
 In addition, some other aspects of visualization to think about include
-language, color, size. Look at your choices and ask: Is this the simplest way to
-express this information? How simple/complicated should your visualization be,
-depending on the technical understanding of your audience? Keep all these
-questions in mind so that your visualizations are clear for all.
+language, color, size. Look at your choices and ask:
+
+-   Is this the simplest way to express this information?
+-   How simple/complicated should your visualization be, depending on the
+    technical understanding of your audience?
+
+Keep these questions in mind so that your visualizations are clear for all.
+
 
 What should I keep in mind when creating a visualization?
 ---------------------------------------------------------
@@ -51,7 +57,9 @@ checklist.
 
 
 .. image:: figures/creating_visualizations_checklist.png
+   :align: center
    :alt: A summary checklist of visualization concepts that are listed below.
+
 
 1.  **Why** are you making this visualization? What **point** do you intend to
     make with the visualization?
@@ -79,6 +87,6 @@ checklist.
         visualization is the best unless you try others?
 
 
-.. _generated using this color-blindness simulator.: https://www.color-blindness.com/coblis-color-blindness-simulator/
+.. _generated using this color-blindness simulator: https://www.color-blindness.com/coblis-color-blindness-simulator/
 .. _More than 1 billion people have some form of disability: https://www.who.int/en/news-room/fact-sheets/detail/disability-and-health
 .. _This article identifies some key considerations for accessible data visualizations.: http://www.storytellingwithdata.com/blog/2018/6/26/accessible-data-viz-is-better-data-viz
