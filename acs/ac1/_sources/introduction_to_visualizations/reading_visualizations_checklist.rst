@@ -20,7 +20,11 @@ Here is a checklist of important things to consider when reading a
 visualization. More detailed descriptions of what to look for in a visualization
 are listed below the checklist.
 
+
 .. image:: figures/visualization_checklist.png
+   :align: center
+   :alt: A summary checklist for creating visualizations, listed below.
+
 
 1.  Who is the **author** of the visualization?
 
@@ -72,10 +76,8 @@ are listed below the checklist.
         chart?
     -   What does this type of visualization do to accentuate their point?
 
+
 .. shortanswer:: visualization_checklist
 
    Find an example of a data visualization online. Follow the checklist above
    with your chosen visualization.
-
-
-.. _creating_visualization_checklist:
