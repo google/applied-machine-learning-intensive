@@ -103,3 +103,10 @@ Evaluate
 
 [Image Classification with Keras](https://colab.sandbox.google.com/drive/1OfhoB99E9h7SMWMXwBRLs54aGUMcwXFF)
 
+<!--
+Let’s work on the Image Classification colab where we can apply the skills we’ve been recently introduced to:
+Keras API
+Image Manipulation with Python
+Introduction to Neural Network
+-->
+
