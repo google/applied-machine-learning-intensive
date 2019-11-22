@@ -7,23 +7,19 @@
 Introduction
 ============
 
-As mentioned in the preface, SQL, which stands for Structured Query Language, is
-a programming language used to get, store, and change information that is in a
-database. SQL is one of the most widely used programming languages today. It can
-be used in any field where there is data.
+As mentioned in the preface, SQL (which stands for Structured Query Language) is
+a programming language that is used to get, store, and change information in a
+database. SQL is one of the most widely used programming languages today, and
+can be used in any field where there is data.
 
-You may be wondering how this is different from the sheets you have just learned
-about. However, how would you handle the case where your spreadsheet had
-millions or billions of cells of data? Would you want to scroll down and load
-all that data? Well, this is where SQL comes in. SQL does many of the things
-that you have learned in the previous sections, but it also does them on a much
-larger scale. This will allow you to automate data analysis so that you can
-effectively navigate large datasets that might be cumbersome to navigate by
-hand.
+You may be wondering when you would need to use SQL since you already know how
+to use Sheets. SQL does many of the things that you have learned in the previous
+sections, but it also does them on a much larger scale. Imagine a spreadsheet
+with one billion rows!
 
-You can use SQL to analyze anything from stock market prices of the Dow Jones
-Industrial Average (DOW) over the last fifty years to patient data at a major
-hospital. If you can make a database out of some information, you can use SQL to
-store and analyze it. In addition, SQL allows you to share data and reorganize
-data from different datasets. In this next chapter, you will learn the basics of
-SQL so that you can efficiently navigate a database!
+You can use SQL to analyze anything from stock market prices to patient data at
+a major hospital. If you have a database with any kind of data, you can use SQL
+to store and analyze it. In addition, SQL allows you to reorganize data across
+different datasets. This chapter will teach you how to use SQL to automate data
+analysis so that you can effectively navigate large datasets that might be
+cumbersome to navigate by hand.
