@@ -3,6 +3,9 @@
    International License. To view a copy of this license, visit
    http://creativecommons.org/licenses/by-sa/4.0/.
 
+
+.. _creating_visualization_checklist:
+
 Checklist for Creating Visualizations
 =====================================
 
@@ -58,7 +61,7 @@ checklist.
 
 .. image:: figures/creating_visualizations_checklist.png
    :align: center
-   :alt: A summary checklist of visualization concepts that are listed below.
+   :alt: A summary checklist for reading visualizations, listed below.
 
 
 1.  **Why** are you making this visualization? What **point** do you intend to
