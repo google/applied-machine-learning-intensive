@@ -24,7 +24,7 @@ Source: https://pixabay.com/vectors/brain-think-knowledge-mind-science-2845862/
 
 ---
 
-![](res/neurnet04.png)
+![](res/neurnet03.png)
 
 <!--
 This is the building block of the brain: a neuron.
@@ -36,7 +36,7 @@ Source: https://pixabay.com/vectors/neuron-nerve-cell-axon-dendrite-296581/
 
 ---
 
-![](res/neurnet05.png)
+![](res/neurnet04.png)
 
 <!--
 This builds a web of neurons called a "neural network"
@@ -46,7 +46,7 @@ This simplification of the brain signaling pathway lead to research into "artifi
 Source: https://pixabay.com/illustrations/neurons-brain-cells-brain-structure-440660/
 -->
 
-![](res/neurnet06.png)
+![](res/neurnet05.png)
 
 <!--
 1940s! I thought neural networks were cutting edge?
