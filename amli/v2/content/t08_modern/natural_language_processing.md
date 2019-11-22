@@ -11,7 +11,7 @@ Group discussion: what are some applications of NLP in your everyday life?
 See next slide for examples: really anything that involves processing text/language
 -->
 
-# What is Natural Language Processing?
+What is Natural Language Processing? {.big}
 
 ![](res/NLP02.png)
 
@@ -105,11 +105,11 @@ Take an example movie review, "I love love loved it!", and another, "I HATED it 
 
 Language modeling {.big}
 
-![](res/NLP08.png)
-
 Sequential
 * language depends on the ordering of words
 * Recurrent Neural Networks handle this well
+
+![](res/NLP08.png)
 
 <!--
 BOW approaches are surprisingly successful on many tasks (email spam filter, sentiment analysis) and are less computationally intensive.
@@ -121,7 +121,9 @@ But, fundamentally, we know that the order of words matters. Harder NLP tasks bu
 
 # NLP Processing
 
+![](res/NLP09.png)
+
+<--
 the typical process for any NLP task is:
 raw text -> transform to feature vectors (either through feature extraction or embeddings) -> run through some model -> perform supervised task
-
-![](res/NLP09.png)
+-->
