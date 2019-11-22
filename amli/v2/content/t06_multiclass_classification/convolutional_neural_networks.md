@@ -84,10 +84,6 @@ Convolutional Layers
 
 ![](res/conNN09.png)
 
-GoogLe-Net
-
-http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf
-
 ---
 
 ![](res/conNN10.png)
@@ -117,11 +113,9 @@ http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf
 
 ---
 
+# Why?
 
-
-
-
-
-
-
-
+<!--
+Too many connections on large images
+Recognize shapes anywhere in an image
+-->
