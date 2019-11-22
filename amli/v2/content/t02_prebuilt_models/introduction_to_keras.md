@@ -80,6 +80,7 @@ Sample Code {.big}
 
 ![](res/introkeras02.png)
 
+<!--
 Compile
 * As the model train, you can influence how it improve the model between iterations by specifying: Optimizer, Loss Function, Metrics
 
@@ -94,6 +95,7 @@ Evaluate
 * Call model.evaluate() to evaluate the model quality
 * Use a separate test dataset to independently assess quality
 * Return: evaluation accuracy and loss values
+-->
 
 ---
 
