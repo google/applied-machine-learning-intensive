@@ -91,16 +91,15 @@ Example: SAT Scores and Loans
 Question: Find the difference in predicted median earnings between College A and
 College B if the difference in their average math SAT scores is 150 points.
 
-This dataset has many other variables, and many other relationships to
-examine. For example, does the percentage of students with federal loans
-at a college impact its completion rate? Suppose your friend has been
-accepted to College A and College B, and is very determined to graduate
-within four years. However, she has to take some student loans, and is
-trying to decide where to go. You don’t know much about either school,
-but College A has 10% more students with federal loans than College B.
-This scatter plot shows the percentage of students receiving federal
-loans as the explanatory variable, and completion rate as the explained
-variable.
+This dataset has many other variables, and many other relationships to examine.
+For example, does the percentage of students with federal loans at a college
+impact its completion rate? Suppose your friend has been accepted to College A
+and College B, and is very determined to graduate within four years. However,
+she has to take some student loans, and is trying to decide where to go. You
+don’t know much about either school, but College A has 10% more students with
+federal loans than College B. This scatter plot shows the percentage of students
+receiving federal loans as the explanatory variable, and completion rate as the
+explained variable.
 
 
 .. image:: figures/completion_rate_loans.png
@@ -108,9 +107,9 @@ variable.
 
 .. mchoice:: completion_rate
 
-   Using the scatter plot above, which school will have a lower
-   completion rate? (Specifically, which school will have fewer students
-   graduating within 6 years?)
+   Using the scatter plot above, which school will have a lower completion rate?
+   (Specifically, which school will have fewer students graduating within
+   6 years?)
 
    - School A
 
@@ -127,54 +126,54 @@ variable.
        percentage of students graduating within 6 years.
 
 
-The slope of the line of best fit this time is negative. The slope of
-this line is negative because the line moves down from left to right,
-just like the scatter plot which has a negative direction. This means
-that in general, the higher the federal loans taken out to go to a
-college, the lower the completion rate.
+The slope of the line of best fit this time is negative. The slope of this line
+is negative because the line moves down from left to right, just like the
+scatter plot which has a negative direction. This means that in general, the
+higher the federal loans taken out to go to a college, the lower the completion
+rate.
 
 The equation of the line of best fit is below.
 
-(Predicted Completion Rate) = -0.371 \* (Percentage with Federal Loans)
-+ 0.775
+(Predicted Completion Rate) = -0.371 \* (Percentage with Federal Loans) + 0.775
+
 
 .. image:: figures/slope_fed_loans.png
 
-Therefore for every 1% increase in the percentage of students with
-federal loans, the predicted completion rate drops by 0.37%. College A
-and B have a difference of 10% in their federal loans percentage. To
-determine how much that impacts the predicted completion rate, you can
-multiply the slope by 10.
+
+Therefore for every 1% increase in the percentage of students with federal
+loans, the predicted completion rate drops by 0.37%. College A and B have a
+difference of 10% in their federal loans percentage. To determine how much that
+impacts the predicted completion rate, you can multiply the slope by 10.
+
 
 .. image:: figures/slope_fed_loan_mult.png
 
+
 Another way to think about this is that any change to x has to change y
-proportionally. Therefore, if the change in x is multiplied by 10, the
-change in y must also be multiplied by 10.
+proportionally. Therefore, if the change in x is multiplied by 10, the change in
+y must also be multiplied by 10.
 
 .. image:: figures/Slope_Changes.jpg
 
-So College A and College B should differ in their completion rate by
-3.71%. The negative value indicates that as the x value increases by
-10%, the y value \_decreases*\* \**_by 3.71%.
+So College A and College B should differ in their completion rate by 3.71%. The
+negative value indicates that as the x value increases by 10%, the y value
+\_decreases*\* \**_by 3.71%.
 
-However, that doesn’t mean that students who have federal loans graduate
-less often than students who don’t! One issue is that this dataset is
-about schools, not students. There are also many other factors at play.
-For example, a school’s financial resources is certainly a lurking
-variable. Schools where students don’t need federal loans often have
-large endowments and give loans or scholarships directly to their
-students. These same schools may also have other resources that
-contribute to increased graduation rates.
+However, that doesn’t mean that students who have federal loans graduate less
+often than students who don’t! One issue is that this dataset is about schools,
+not students. There are also many other factors at play. For example, a school’s
+financial resources is certainly a lurking variable. Schools where students
+don’t need federal loans often have large endowments and give loans or
+scholarships directly to their students. These same schools may also have other
+resources that contribute to increased graduation rates.
 
 
 .. mchoice:: slope_line_of_best_fit
 
-   Question: Which of the following is the correct interpretation of the
-   slope of the line of best fit?
+   Question: Which of the following is the correct interpretation of the slope
+   of the line of best fit?
 
-   (Predicted Median Debt of Graduates) = 0.209 \* (Average Net Tuition) +
-   19043
+   (Predicted Median Debt of Graduates) = 0.209 \* (Average Net Tuition) + 19043
 
    - For every dollar that median debt increases by, average net tuition
      increases by .209 dollars.

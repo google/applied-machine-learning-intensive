@@ -74,17 +74,17 @@ for understanding the relationship between two variables. Here are some
 important considerations to keep in mind.
 
 -  To ensure that your predictions are accurate, make sure you aren’t
-   extrapolating. For example, if all of your cities have a latitude
-   between 25 and 45 degrees, a prediction made about a city at 12
-   degrees won’t be very accurate.
--  Be careful if your dataset contains outliers as lines of best fit are
-   very sensitive to extreme values. Even one outlier can change the
-   direction of the line of best fit and dramatically reduce the R2
-   value. For example, if the January temperature for Boston is
-   accidentally recorded as 678 degrees, the line of best fit won’t fit
-   the rest of the data, and won’t be useful for making predictions.
--  Report relationships between variables without assigning causation.
-   For example, you can’t state that increased latitude causes lower
-   January temperature, but you can say that there is a strong
-   relationship between latitude and temperature, and that greater
-   latitudes are associated with lower January temperatures.
+   extrapolating. For example, if all of your cities have a latitude between 25
+   and 45 degrees, a prediction made about a city at 12 degrees won’t be very
+   accurate.
+-  Be careful if your dataset contains outliers as lines of best fit are very
+   sensitive to extreme values. Even one outlier can change the direction of the
+   line of best fit and dramatically reduce the R2 value. For example, if the
+   January temperature for Boston is accidentally recorded as 678 degrees, the
+   line of best fit won’t fit the rest of the data, and won’t be useful for
+   making predictions.
+-  Report relationships between variables without assigning causation. For
+   example, you can’t state that increased latitude causes lower January
+   temperature, but you can say that there is a strong relationship between
+   latitude and temperature, and that greater latitudes are associated with
+   lower January temperatures.

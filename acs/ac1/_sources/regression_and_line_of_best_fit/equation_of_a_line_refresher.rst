@@ -10,15 +10,16 @@ Equation of a Line (Refresher)
 
 .. image:: figures/equation_of_a_line.png
 
-All line equations in this text will be presented in the form y = m*x +
-b, where m is the slope and b is the y-intercept. The **y-intercept** is
-the y-value at the point where the line crosses the y-axis. The
-`slope <#interpreting-slope>`__ gives the steepness of the line, and can
-be positive, negative, or zero.
+All line equations in this text will be presented in the form y = m*x + b, where
+m is the slope and b is the y-intercept. The **y-intercept** is the y-value at
+the point where the line crosses the y-axis. The `slope <#interpreting-slope>`__
+gives the steepness of the line, and can be positive, negative, or zero.
+
 
 .. image:: figures/negative_slope.png
   :width: 49%
 .. image:: figures/positive_slope.png
   :width: 49%
+
 
 Video on slope and intercept
