@@ -42,10 +42,12 @@ Regex rules can be very powerful but also very complex. Many guides exist for ef
 
 ---
 
-# Text Processing
+Text Processing {.big}
 
 Minimum edit distance (Levenshtein distance)
 * minimum # edits needed to change one string into the other
+
+![](res/NLP05.png)
 
 <!--
 Another important concept for text processing is minimum edit distance (also called levenshtein distance). This is especially useful for autocorrect tools and evaluating systems that generate language (like translation). There are many open source Python implementations of this algorithm you can use.
@@ -73,9 +75,9 @@ Another common technique is TFIDF, which calculates how important a word is to a
 
 ---
 
-# Feature Extraction: spaCy
+Feature Extraction: spaCy {.big}
 
-![](res/NLP05.png)
+![](res/NLP06.png)
 
 <!--
 There are many more linguistic features that you can extract from text. spaCy is a fast python library for advanced natural language processing tools. It converts text into a collection of “Token” objects, each of which contains useful annotations such as Part of Speech (pos) and Named Entities (ent_type).
@@ -85,9 +87,41 @@ In this example, spaCy breaks “San Francisco” into two Tokens, each of which
 
 ---
 
-![](res/NLP06.png)
+# Language Modeling
 
+Bag-of-Words (BOW)
+* disregard order of words
+* simple and surprisingly powerful
 
+![](res/NLP07.png)
 
+<!--
+To build models for NLP tasks, we must have some notion of how words fit together into sentences and text. Language modeling refers to determining how likely a certain sentence is. The simplest language modeling approach is a bag-of-words: treat a sentence like an unordered collection (set) of words.
 
+Take an example movie review, "I love love loved it!", and another, "I HATED it :-(".  You as a human could guess which review corresponded to a positive sentiment and which review corresponded to a negative sentiment, even if we looked at these sentences out of order (e.g., "it! I loved love love" and "HATED :-( I it".  So bag-of-words is like saying, "Ehhh... I'm pretty sure I can glean the meaning of sentences, with words in any order, so why bother keeping track of the order? Sounds like more work to me..." But you can probably think of an example or two where this strategy would fail, yes? Especially consider if you're trying to predict more than just two sentiments ("good" and "bad").
+-->
 
+---
+
+Language modeling {.big}
+
+![](res/NLP08.png)
+
+Sequential
+* language depends on the ordering of words
+* Recurrent Neural Networks handle this well
+
+<!--
+BOW approaches are surprisingly successful on many tasks (email spam filter, sentiment analysis) and are less computationally intensive.
+
+But, fundamentally, we know that the order of words matters. Harder NLP tasks build upon sequential approaches, which preserve the order of words in a text. This is exactly what RNNs are useful for.
+-->
+
+---
+
+# NLP Processing
+
+the typical process for any NLP task is:
+raw text -> transform to feature vectors (either through feature extraction or embeddings) -> run through some model -> perform supervised task
+
+![](res/NLP09.png)
