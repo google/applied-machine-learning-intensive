@@ -12,3 +12,9 @@ Scatter Plots and Correlation
    :maxdepth: 2
 
    introduction.rst
+   scatter_plots.rst
+   creating_a_scatter_plot_in_sheets.rst
+   describing_scatter_plots.rst
+   correlation.rst
+   correlation_and_college_data.rst
+   correlation_versus_causation.rst 
