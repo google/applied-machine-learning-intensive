@@ -1,0 +1,93 @@
+# Natural Language Processing 
+
+---
+
+# What is Natural Language Processing?
+
+![](res/NLP01.png)
+
+<!--
+Group discussion: what are some applications of NLP in your everyday life?
+See next slide for examples: really anything that involves processing text/language
+-->
+
+# What is Natural Language Processing?
+
+![](res/NLP02.png)
+
+---
+
+# Recurrent Neural Nets: Example
+
+Character-Level Language Models
+
+![](res/NLP03.png)
+
+---
+
+# Text Processing
+
+Regular Expression (Regex)
+* pattern used to match character combinations in strings
+
+![](res/NLP04.png)
+
+<!--
+Before machine learning, solved NLP problems using mostly pattern matching. Even now, these text processing techniques can be very important in processing messy natural language. 
+
+Regular Expressions are widely used in text processing (imagine needing to extract all the emails from a block of text, or remove prefixes/suffixes from a root word). A regex defines a pattern that is used to match certain character combinations, following a set of rules. Here we show a few examples of pattern matching rules: “.” matches any single character, “+” matches 1 or more of the previous character, “[^...]” negates the rest of the pattern in the brackets. 
+
+Regex rules can be very powerful but also very complex. Many guides exist for effectively using regexes: https://www.rexegg.com/regex-quickstart.html
+-->
+
+---
+
+# Text Processing
+
+Minimum edit distance (Levenshtein distance)
+* minimum # edits needed to change one string into the other
+
+<!--
+Another important concept for text processing is minimum edit distance (also called levenshtein distance). This is especially useful for autocorrect tools and evaluating systems that generate language (like translation). There are many open source Python implementations of this algorithm you can use.
+-->
+
+---
+
+# Feature Extraction
+
+n-grams
+* consider sequences of n words instead of one word at a time
+* “that movie was not horrible” -> “that movie was not horrible”
+
+TFIDF (term frequency - inverse document frequency)
+* determine how important a word is to a document
+* discount more common words (“and”, “the”)
+
+<!--
+Before neural networks, the first step in NLP was “feature extraction”, or transforming raw text into informative features. The idea is that just the individual words in a text do not fully capture the meaning of the text.
+
+One very common feature extraction technique is n-grams, which consider n word sequences instead of just individual words. While in the original sentence “that movie was not horrible”, the word “horrible” may cause a model to predict very strong negative emotion, extracting bigrams (2-grams) would correctly pair “not horrible”, which is a much milder emotion.
+
+Another common technique is TFIDF, which calculates how important a word is to a text. This often has the effect of ignoring more common words (like “the”) and letting the model focus on more unique words in the text.
+-->
+
+---
+
+# Feature Extraction: spaCy
+
+![](res/NLP05.png)
+
+<!--
+There are many more linguistic features that you can extract from text. spaCy is a fast python library for advanced natural language processing tools. It converts text into a collection of “Token” objects, each of which contains useful annotations such as Part of Speech (pos) and Named Entities (ent_type).
+
+In this example, spaCy breaks “San Francisco” into two Tokens, each of which is labeled as a proper noun (PROPN) and a Geographical/Political Entity (GPE). 
+-->
+
+---
+
+![](res/NLP06.png)
+
+
+
+
+
