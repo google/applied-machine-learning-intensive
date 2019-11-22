@@ -10,9 +10,9 @@ Histograms and Bar Charts
 =========================
 
 Some of the most commonly used visualizations are histograms and bar charts.
-These are the kinds of graphs with vertical bars of different heights, that
-(kind of) look like a city skyline. An example of each is below. (The histogram
-is the first, the bar chart is the second.)
+These are the types of graphs with vertical bars of different heights. An
+example of each is below. (The histogram is the first, the bar chart is the
+second.)
 
 
 .. image:: figures/train_arrivals.png
@@ -25,9 +25,16 @@ and compare how many things exist or happen. For example, such a chart could
 show:
 
 1.  The human population in different countries (counting people)
-2.  The frequency of train arrivals at different stations (counting trains per
-    unit time)
-3.  The number of people who get different grades in a class (counting students)
+
+.. image:: figures/country_population.png
+
+2.  The number of people who get different grades in a class (counting students)
+
+.. image:: figures/student_grades.png
+
+3.  The frequency of train arrivals at different stations (counting trains per
+    unit time), which is shown as the first example above
+
 
 Note that sometimes bar charts with vertical bars are called column charts.
 Choosing between horizontal and vertical bars is largely an aesthetic choice.
@@ -49,7 +56,7 @@ In some cases, the x-axis (horizontal axis) of the graph represents different
 **categories**. Each category is a distinct group. Examples of this are:
 
 -   countries (as in example 1 above)
--   letter grades (as in example 3 above)
+-   letter grades (as in example 2 above)
 -   hair color
 
 In this case, plotting counts or frequencies for the different categories is
@@ -60,7 +67,7 @@ In other cases, the x-axis (horizontal axis) of the graph represents **bins of
 numbers**. Each bin represents a specific interval of a number (for example, one
 bin might include a range of values between 0 and 10). Examples of this are:
 
--   time between train arrivals (as in example 2 above)
+-   time between train arrivals (as in example 3 above)
 -   heights
 -   SAT scores
 
@@ -116,7 +123,9 @@ choosing the right graph and customizing it to best display your data.
 You can make graphs in Sheets by highlighting the data you want to visualize,
 then clicking “Insert > Chart”.
 
-.. TODO(raskutti): Include screencast.
+
+.. image:: figures/sheets_how_to.png
+
 
 You can then customize this chart in numerous different ways. Below are just a
 few important things to keep in mind when creating graphs.

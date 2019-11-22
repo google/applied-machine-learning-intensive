@@ -18,23 +18,33 @@ is.
 
 
 For example, suppose you have a dataset containing the heights of all students
-in this class. The following are all statistics from that dataset.
+in this class. 
 
--   The shortest height is \__.
--   The tallest height is \__.
--   There are \__ students in this class.
--   The average height is \__.
--   95% of students have a height less than \__.
--   The sum of all heights in the class is \__.
--   Half the maximum height is \__.
 
-Some statistics are more common and useful than others. For example, knowing the
-average height will likely be more useful in real life than knowing than the sum
+.. image:: figures/height_statistic.png
+   :align: center
+
+
+The following are all statistics from that dataset.
+
+-   The shortest height is 146cm.
+-   The tallest height is 192cm.
+-   There are 19 students in this class.
+-   The average height is 166.16cm.
+-   The sum of all heights in the class is 3157cm.
+-   Half the maximum height is 96cm.
+
+Some statistics are more common and useful than others. For example, knowing 
+the average height will likely be more useful in real life than knowing the sum
 of all heights. This chapter will guide you through the most common descriptive
 statistics.
 
-
+Suppose you have a dataset on how far students travel to get to school. 
+   
+.. image:: figures/distance_statistic.png
+   :align: center
+   
 .. shortanswer:: students_travel_statistics
 
-   Suppose you have a dataset on how far students travel to get to school. What
-   are some statistics of that dataset?
+   What are some important statistics of the dataset above?
+   
