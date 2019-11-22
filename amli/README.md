@@ -65,7 +65,6 @@ Sites approved for finding stock images with open licenses are:
      [Pexels License](https://www.pexels.com/photo-license/)
    * [https://pixabay.com](Pixabay) using the
      [Pixabay License](https://pixabay.com/service/license/)
-   * [https://barnimages.com](Barn Images)
 
 Every slide should also have a 'Concepts' section that lists the concepts
 mentioned in the slides. These concepts should map to concepts found in AMLI's
