@@ -34,4 +34,3 @@ Although both sentences make the same point, the statistic used in the second
 sentence makes the claim much more specific than the first. The specificity
 provided by statistics is a powerful tool that allows you to support your own
 claims or drive your own decision-making in any field of work or study.
-
