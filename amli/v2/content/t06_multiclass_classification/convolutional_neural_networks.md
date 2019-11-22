@@ -65,11 +65,61 @@ Source: https://pixabay.com/photos/industry-strommast-power-line-pylon-3112436/
 # LeNet-5
 
 ![](res/conNN07.png)
+
+<!--
+LeNet
+
+http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf
+-->
+
+---
+
 ![](res/conNN08.png)
+
+<!--
+Convolutional Layers
+-->
+
+---
+
 ![](res/conNN09.png)
+
+GoogLe-Net
+
+http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf
+
+---
+
 ![](res/conNN10.png)
+
+<!--
+Feature Maps
+-->
+
+---
+
 ![](res/conNN11.png)
+
+<!--
+Pooling
+-->
+
+---
+
+# GoogLe-Net
+
 ![](res/conNN12.png)
+
+<!--
+GoogLe-Net
+http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf
+-->
+
+---
+
+
+
+
 
 
 
