@@ -8,46 +8,59 @@
 Filtering
 =========
 
-*(link to filtering section in Module A)* Often you may be interested in
-just a specific subset of a dataset. For example, if you have population
-data over the past ten years for each state, you may want to analyze
-data only for Florida, or only for the year 2017. Recall that a filter
-is a way of selecting a subset of rows based on a set of column
-conditions. Filtering data helps identify the similarities and
-differences between groups, and describe the relationships between
-variables. Often, you can only see important differences or trends by
+*(link to filtering section in Module A)* Often you may be interested in just a
+specific subset of a dataset. For example, if you have population data over the
+past ten years for each state, you may want to analyze data only for Florida, or
+only for the year 2017. Recall that a filter is a way of selecting a subset of
+rows based on a set of column conditions. Filtering data helps identify the
+similarities and differences between groups, and describe the relationships
+between variables. Often, you can only see important differences or trends by
 filtering.
 
 For example, consider a `personal trainer who has implemented a new
-strength training
-regime
-<https://drive.google.com/open?id=1kzEQ-JCgr0RLCb0ojl1HldF0irO_UzQO0PtxsjBRFtU>`__
-to use with her clients. She wants to see if the new routine increases
-the number of push-ups her clients can perform. It’s a great routine,
-and her clients are working hard, so she expects a positive \_r \_value
-showing that her clients can do more push-ups as they progress through
-the regime.
-
-Question: What type of variable is Participant?
-
-::
-
-   Answer - Categorical
-
-Question: What type of variable is Number of Pushups?
-
-::
-
-   Answer - Quantitative
-
-Question: What type of variable is Date?
-
-::
-
-   Answer - Quantitative
+strength training regime <https://drive.google.com/open?id=1kzEQ-JCgr0RLCb0ojl1HldF0irO_UzQO0PtxsjBRFtU>`__
+to use with her clients. She wants to see if the new routine increases the
+number of push-ups her clients can perform. It’s a great routine, and her
+clients are working hard, so she expects a positive \_r \_value showing that her
+clients can do more push-ups as they progress through the regime.
 
 
-       Link back to discussion in module A. Because Date is being graphed on the x-axis, it is being treated as a quantity, not a category.
+.. mchoice:: participant_variable
+
+   Question: What type of variable is Participant?
+
+   - Categorical
+
+     + Correct
+
+   - Quantitative
+
+     - Incorrect
+
+.. mchoice:: pushups_variable
+
+   Question: What type of variable is Number of Pushups?
+
+   - Categorical
+
+     - Incorrect
+
+   - Quantitative
+
+     + Correct
+
+.. mchoice:: date_variable
+
+   Question: What type of variable is Number of Pushups?
+
+   - Categorical
+
+     - Incorrect: Link back to discussion in module A. Because Date is being
+       graphed on the x-axis, it is being treated as a quantity, not a category.
+
+   - Quantitative
+
+     + Correct
 
 
 .. image:: figures/participant_pushup_data.png
@@ -57,26 +70,28 @@ Question: What type of variable is Date?
 
 Question: Calculate the r value.
 
-She is disappointed to find that the r value is negative. Looking at the
-scatter plot, it looks like each individual has improved, but the
-overall trend is negative. This is an example of `Simpson’s
-paradox <https://en.wikipedia.org/wiki/Simpson%27s_paradox>`__, in which
-every subset of a population shows the opposite effect to the population
-itself. If the trainer could filter by participant, she could find the
-correlation for each participant.
+She is disappointed to find that the r value is negative. Looking at the scatter
+plot, it looks like each individual has improved, but the overall trend is
+negative. This is an example of `Simpson’s paradox <https://en.wikipedia.org/wiki/Simpson%27s_paradox>`__,
+in which every subset of a population shows the opposite effect to the
+population itself. If the trainer could filter by participant, she could find
+the correlation for each participant.
+
 
 .. image:: figures/participant_improvement.png
+
 
 This graph shows that each participant has improved, and the correlation
 coefficient for each individual would be positive.
 
-You can also do filtering using *SUMIF*, *COUNTIF* and *AVERAGEIF*.
-Suppose the same trainer has information about the length of each
-strength training session with each client. She can use *AVERAGEIF* and
-*COUNTIF* to construct a table showing the average length and total
-number of workouts for each client.
+You can also do filtering using *SUMIF*, *COUNTIF* and *AVERAGEIF*. Suppose the
+same trainer has information about the length of each strength training session
+with each client. She can use *AVERAGEIF* and *COUNTIF* to construct a table
+showing the average length and total number of workouts for each client.
+
 
 .. image:: figures/participant_table.png
 
-Question: Complete the table for all participants. What is the average
-workout length for participant B?
+
+Question: Complete the table for all participants. What is the average workout
+length for participant B?
