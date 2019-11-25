@@ -18,7 +18,7 @@ Topics: Quick mention of bias and fairness
 
 ## ML is a tool
 
-PICTURE WRENCH/NAIL/SCREW
+![](res/hammerwrench.png)
 
 <!--
 When you have a hammer, everything looks like a nail.
@@ -28,7 +28,7 @@ When you have a hammer, everything looks like a nail.
 
 ## What kind of tool?
 
-PICTURE PATENT
+![](res/patent.png)
 
 <!--
 What does ML do? What are its benefits? What are its drawbacks?
@@ -49,7 +49,7 @@ Bad: energy and time cost money
 
 ## What other tools do we have?
 
-PICTURE TOOLBOX
+![](res/toolbox.png)
 
 <!--
 Look at definition, brainstorm other ways to accomplish goals
@@ -66,7 +66,7 @@ Machine Learning
 
   * Experiments --> Workable Model
 
-PICTURE COMIC
+![](res/comic.png)
 
 <!--
 From https://developers.google.com/machine-learning/amli-content/problem-framing/intro: 
@@ -78,6 +78,8 @@ The neural network might use these representations to do accurate translations o
 ---
 
 ## Shifting your mindset
+
+![](res/peternorvig.jpg)
 
 "Machine Learning changes the way you think about a problem. The focus shifts from a mathematical science to a natural science, running experiments and using statistics, not logic, to analyze its results.”
 -Peter Norvig

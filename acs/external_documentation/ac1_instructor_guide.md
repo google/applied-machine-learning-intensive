@@ -3,7 +3,7 @@
 - [Overview](#overview)
 - [Module A](#module-a)
   * [1.1 Class Data Activity](#11-class-data-activity)
-  * [1.2 Community Guidelines & Pretest](#12-community-guidelines---pretest)
+  * [1.2 Community Guidelines and Pretest](#12-community-guidelines-and-pretest)
   * [2.1 Visualizations](#21-visualizations)
   * [2.2 Creating Visualizations](#22-creating-visualizations)
   * [3.1 Sheets Basics](#31-sheets-basics)
@@ -119,15 +119,14 @@ Expected time: 35 minutes
 <span style="text-decoration:underline;">Homework</span>
 
 1.  Fill out a survey on community guidelines (for discussion in the next
-    class). [Here is a sample survey](https://forms.gle/VAuoGjsGsQke12xY9) you
-    can use.
+    class).
 1.  Read syllabus if you provide one.
 
 #### Datasets
 
 *   N/A: Students will collect their own data from the class.
 
-### 1.2 Community Guidelines & Pretest
+### 1.2 Community Guidelines and Pretest
 
 #### Learning Objectives
 
@@ -150,7 +149,7 @@ Expected time: 40 minutes
 
 1.  **[DEMO]** Display community guidelines survey results (from homework).
 1.  Facilitate
-    [community guidelines discussion](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/external_documentation/course_guide.md#setting-community-guidelines).
+    [community guidelines discussion](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/external_documentation/ac1_course_guide.md#setting-community-guidelines).
 
 <span style="text-decoration:underline;">Pretest</span>
 
@@ -563,11 +562,11 @@ Expected time: 40 minutes
         ready to discuss it by Day 5.1 (in 3 class days, before introducing the
         Module A project).
 
-#### Datasets {#weather-dataset}
+#### Datasets <a name="weather-dataset"></a>
 
 *   **Weather
     ([NYC](https://docs.google.com/spreadsheets/d/e/2PACX-1vSwJDi3X7SBfNPnqCle0JeFV5bAoxNvypf82m7mM4ITYF6HZbF4ek_O7Sy5x0YApav_KQxm8vNJf7iu/pubhtml#),
-    [Seattle](https://docs.google.com/spreadsheets/d/e/2PACX-1vSwJDi3X7SBfNPnqCle0JeFV5bAoxNvypf82m7mM4ITYF6HZbF4ek_O7Sy5x0YApav_KQxm8vNJf7iu/pubhtml#)**
+    [Seattle](https://docs.google.com/spreadsheets/d/e/2PACX-1vSwJDi3X7SBfNPnqCle0JeFV5bAoxNvypf82m7mM4ITYF6HZbF4ek_O7Sy5x0YApav_KQxm8vNJf7iu/pubhtml#))**
     *   Description: Temperature data for each day in NYC and Seattle, from 1
         July 2014 through 30 June 2015. We will use this example several times
         throughout this module.
@@ -980,7 +979,7 @@ Expected time: 25 minutes
 1.  Finish reading and questions from “Scatter Plots and Correlation” section
 1.  Read: textbook “Regression and Line of Best Fit” section up to “Outliers”
 
-#### Datasets {#city-climate-and-college-datasets}
+#### Datasets <a name="city-climate-and-college-datasets"></a>
 
 *   **City Climate**
     *   Description: Temperature and latitude, longitude data for various US

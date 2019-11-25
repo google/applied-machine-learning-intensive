@@ -4,6 +4,6 @@
 
 ## Research & Machine Intelligence
 
-![Image](https://file.io/m1uNfT)
+![](res/researchandmachineintelligence.png)
 
 ---
