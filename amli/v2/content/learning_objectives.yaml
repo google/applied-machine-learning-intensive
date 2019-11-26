@@ -77,8 +77,10 @@ regression:
  - identifies when to use mean squared error versus mean absolute error
  - determines if a regression model generalizes well
  - adjusts hyperparameters for regression model
- - visualizes a calibration plot of regression performance
- - interprets a calibration plot of regression performance
+ - visualizes a predicted vs. actual plot of regression performance
+ - interprets a predicted vs. actual plot of regression performance
+ - visualizes a residual plot of regression performance
+ - interprets a residual plot of regression performance
  - performs regression using a perceptron
 
 binary classification:
