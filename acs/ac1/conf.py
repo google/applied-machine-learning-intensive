@@ -76,6 +76,6 @@ html_theme_path = [
 ]
 html_title = 'Runestone Interactive Overview'
 html_short_title = 'Runestone Interactive Overview'
-html_static_path = runestone_static_dirs()
+html_static_path = runestone_static_dirs() + ['./_static']
 html_show_copyright = False
 htmlhelp_basename = 'PythonCoursewareProjectdoc'
