@@ -80,9 +80,9 @@ Source: photo by Jo Szczepanska on Unsplash: https://unsplash.com/photos/bjemWZc
 
 ---
 
-Narrow your problem and brainstorm again
+Narrow your problem and brainstorm again {.big}
 
-How might we...?
+How might we...? {.big}
 
 ![](res/projectideation03.jpg){.background}
 
