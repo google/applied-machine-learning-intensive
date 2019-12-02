@@ -13,7 +13,7 @@ Make sure to go over capstone project requirements and format before this activi
 
 ---
 
-Brainstorming {.big}
+# Brainstorming
 
 1.  Defer judgment
 1.  Encourage wild ideas
@@ -56,7 +56,7 @@ Source: photo by TeroVesalainen on Pixabay: https://pixabay.com/photos/thought-i
 
 ---
 
-Group ideas by theme {.big}
+# Group ideas by theme
 
 ![](res/projectideation02.jpg)
 
@@ -99,7 +99,6 @@ They will use these ideas to create a pitch. The best ideas will be selected and
 
 Next step: pitch your idea.
 
-
 Further reading: pages 85-87 of IDEO book
 
 Source: image by SplitShire from Pixabay: https://pixabay.com/photos/focus-telephoto-lens-lens-loupe-407244/ 
@@ -107,7 +106,7 @@ Source: image by SplitShire from Pixabay: https://pixabay.com/photos/focus-telep
 
 ---
 
-Pitch {.big}
+# Pitch
 
 The **WHO**
 * Always start by introducing yourself.
@@ -134,7 +133,7 @@ Source: image by OpenClipart-Vectors on Pixabay https://pixabay.com/vectors/figh
 
 ---
 
-Create your pitch {.big}
+# Create your pitch
 
 ![](res/projectideation05.png)
 
@@ -149,7 +148,7 @@ Source: image by Manfred Steger from Pixabay: https://pixabay.com/vectors/pixel-
 
 --- 
 
-Pitch {.big}
+# Pitch
 
 ![](res/projectideation06.jpg){.background}
 
@@ -163,7 +162,7 @@ Source: image by freestocks-photos from Pixabay: https://pixabay.com/photos/audi
 
 ---
 
-Vote {.big}
+# Vote
 
 ![](res/projectideation07.jpg){.background}
 
@@ -175,7 +174,7 @@ Source: photo by Paul Bence on Unsplash: https://unsplash.com/photos/11gPy_c8R8Y
 
 ---
 
-Form groups {.big}
+# Vote
 
 ![](res/projectideation08.jpg)
 
