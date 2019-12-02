@@ -45,3 +45,38 @@ The project team has the option of using one of the datasets below or bring thei
 * [dataCommons](https://browser.datacommons.org/)
 
 Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google Public Data Explorer](https://www.google.com/publicdata/directory) to search for interesting dataset for your project.
+
+---
+
+# Project Schedule
+
+**Week 1:**
+* Form your team 
+* Explore and pick project datasets
+* Brainstorm problem space and motivating question(s) that you’d like ML to help solve
+* Write a design doc on how you approach building the ML model
+
+**Week 2:**
+* Get feedback/review on your design doc from guest speaker(s)
+* Create a high level project plan of who’s doing what tasks by when
+* Acquire & prep your dataset
+* Start defining and training  your ML model
+* Friday afternoon lightning talks: project status, share interesting things that you found, lessons learned, etc.
+
+**Week 3:**
+* Use data to validate your model, and start using your model for prediction
+* Last pivot opportunities (if needed)
+* Friday mid project status check-in: (project status update, share issues and resolutions, tips, useful tools
+* Group meeting with instructor team
+* Individual meeting with instructor team
+**Week 4:**
+* Final iterations on model predictions
+* Friday afternoon lightning talks: project status, share interesting things that you found, lessons learned, etc.
+
+**Week 5**
+* Review results and prepare conclusions
+* Put together your project presentation or demo
+  
+
+
+
