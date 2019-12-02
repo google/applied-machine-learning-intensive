@@ -120,6 +120,8 @@ Given a messy address book, write a function to find phone numbers when searchin
 
 Note: the names are not sorted.
 
+![](res/bigO06.jpg)
+
 <!--
 time complexity vs space complexity
 
@@ -195,6 +197,100 @@ my_address_book = [
 Source: Photo by Essentialiving on Unsplash
 -->
 
+---
+
+# The friends Θ and Ω
+
+![](res/bigO07.png)
+
+<!--
+Compare the idea of asymptotic analysis with finding limits at infinity. We really only care about arbitrarily big numbers.
+
+Give example of O(1) with a 1 million constant vs O(n^2) with a 10 constant multiplier
+
+def quadratic(lst):
+ n = len(lst)
+ for i in range(n):
+   for j in range(n):
+     for k in range(10):
+       print("whassup")
+
+def constant(lst):
+ n = len(lst)
+ for i in range(1000000):
+   print("whassup")
+
+Which is faster?
+
+Explain Omega (lower bound) and Theta (tight bound) 
+In both of these cases, the worst and best case are the same. They are an example of Theta.
+In our earlier search example with had a return statement in the for loop. What happens in the best case? What about the worst?
+The best and worst case are not the same, so we use Omega and Big-O.
+
+Example: for loops without break statements vs while loop
+
+Explain theta with linear function ( c1* g(x) <= f(x) <= c2 * g(x) )
+For example, in our earlier example, if we had: 
+def quadratic(lst):
+ n = len(lst)
+ for i in range(n):
+   for j in range(n):
+     if n > 10:
+       for k in range(10):
+         print("whassup")
+
+This is still Big Theta, because n^2 <= n^2 <= 10 * n^2
+
+but in industry you really only need to know Big O
+
+Source: http://www.cs.utsa.edu/~bylander/cs3343/notes/asymptotic.pdf
+-->
+
+---
+
+# Order of magnitude
+
+Put the following in order:
+* O(n)
+* O(n log n)
+* O(2^n)
+* O(log n)
+* O(n^2)
+* O(1)
+* O(n!)
+
+![](res/bigO08.png)
+
+<!--
+Highlight most common (1, log n, n, n^2, etc)
+
+Source: http://bigocheatsheet.com/ 
+-->
+
+---
+
+# List of examples:
+
+![](res/bigO09.png)
+
+<!--
+Walk through example of how to analyze code.
+Pay special attention to how to calculate the number of instructions in each line
+
+Hand out exercise sheet and give 15 min for students to complete
+-->
+
+---
+
+# Review Solutions
+
+[Big-O Solutions](https://colab.sandbox.google.com/drive/1vlJeQBNnf-BSoF4K31TQsB6Oc4XcZq-f)
+
+<!--
+Go over solutions: https://colab.research.google.com/drive/1r2xOKjinPi31A7iAjZVtLLKymKLopOOO
+
+Explain the use of “for loop prints” to count the number of times a given line executes
+-->
 
 
 
