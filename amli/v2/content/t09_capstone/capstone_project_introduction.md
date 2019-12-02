@@ -33,6 +33,15 @@
 
 # Datasets
 
-The project team has the option of using one of the datasets below or bring their own dataset.
+The project team has the option of using one of the datasets below or bring their own dataset:
+
+
+* [IMDB Movie reviews sentiment classification](https://keras.io/datasets/#imdb-movie-reviews-sentiment-classification
+* [Boston housing price regression dataset](https://keras.io/datasets/#boston-housing-price-regression-dataset)
+* [NOAA GSOD dataset](https://www.kaggle.com/noaa/gsod)
+* [UC Irvine ML Repository](https://archive.ics.uci.edu/ml/datasets.html)
+* [Google BigQuery Public dataset](https://cloud.google.com/bigquery/public-data/)
+* [Google AI Datasets](https://ai.google/tools/datasets/)
+* [dataCommons](https://browser.datacommons.org/)
 
 Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google Public Data Explorer](https://www.google.com/publicdata/directory) to search for interesting dataset for your project.
