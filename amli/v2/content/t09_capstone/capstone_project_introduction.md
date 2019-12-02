@@ -36,7 +36,7 @@
 The project team has the option of using one of the datasets below or bring their own dataset:
 
 
-* [IMDB Movie reviews sentiment classification](https://keras.io/datasets/#imdb-movie-reviews-sentiment-classification
+* [IMDB Movie reviews sentiment classification](https://keras.io/datasets/#imdb-movie-reviews-sentiment-classification)
 * [Boston housing price regression dataset](https://keras.io/datasets/#boston-housing-price-regression-dataset)
 * [NOAA GSOD dataset](https://www.kaggle.com/noaa/gsod)
 * [UC Irvine ML Repository](https://archive.ics.uci.edu/ml/datasets.html)
