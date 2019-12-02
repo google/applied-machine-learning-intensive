@@ -29,7 +29,7 @@ Tips:
 ---
 
 # Fairness Considerations
-Fill out an ethical storyboarding worksheet as part of your detail design
+Fill out an [ethical storyboarding worksheet](https://docs.google.com/document/d/1DyWrmHpebD9WsROXK3ncC2GTfz90AgMYutkpfDeKwLY/edit) as part of your detail design
 
 ---
 
