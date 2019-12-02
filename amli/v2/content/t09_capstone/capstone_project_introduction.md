@@ -66,9 +66,12 @@ Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google 
 **Week 3:**
 * Use data to validate your model, and start using your model for prediction
 * Last pivot opportunities (if needed)
-* Friday mid project status check-in: (project status update, share issues and resolutions, tips, useful tools
-* Group meeting with instructor team
-* Individual meeting with instructor team
+* Friday mid project status check-in: 
+  * project status update
+  * share issues and resolutions, tips, useful tools
+  * Group meeting with instructor team
+  * Individual meeting with instructor team
+
 **Week 4:**
 * Final iterations on model predictions
 * Friday afternoon lightning talks: project status, share interesting things that you found, lessons learned, etc.
@@ -76,6 +79,84 @@ Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google 
 **Week 5**
 * Review results and prepare conclusions
 * Put together your project presentation or demo
+
+---
+
+# Daily and weekly time structure
+
+
+**Monday**
+* 9:30: team stand-ups
+* [Optional] ad hoc topic
+* Project work
+* End of day debrief/de-energizer
+
+**Tuesday**
+* 9:30: team stand-ups
+* [Optional] ad hoc topic
+* Project work
+* End of day debrief/de-energizer
+
+**Wednesday**
+* 9:30: team stand-ups
+* Professional Skills session and/or Guest Speaker
+
+**Thursday**
+* 9:30: team stand-ups
+* [Optional] ad hoc topic
+* Project work
+* End of day debrief/de-energizer
+
+**Friday**
+* 9:30: team stand-ups
+* [Optional] ad hoc topic
+* Project work
+* Afternoon: project status update presentation
+* End week debrief/de-energizer
+
+---
+
+# Best practices & useful skills
+
+These could be used to simulate industry setting, and could be presented throughout the project weeks by either the instructor team, guest speaker or students.
+
+Please indicate interest in any of the topics below or suggest a new topic through group chat in Slack.
+
+**Technical topics**
+* Natural Language Understanding
+* Activation Functions
+* Web App development
+* Working with Git/Github
+* Regular Expression: replace or extract string
+* SQL: BigQuery and Pandas
+* Image: Manipulation in Python (part 2)
+* Data: Web Scraping with Beautiful Soup
+* Data: Calculate Geo distances with lat and long
+* SQL: Date arithmetics
+* Chart: Formatting with Matplotlib
+* SQL: DML statements (create, update, delete)
+* Algorithm Series: go over 1 algorithm
+* Data Issues Series: go over 1 data issue to watch for and fix
+
+**Development**
+* Design Doc
+* Coding Guideline and why it’s important
+* Code Review or Pair Programming
+* Gather Feedback
+* Testing
+
+**Project Management**
+* Project Plan
+* Standups
+* Pivots and Adjustments
+
+**Communication**
+* Presentation
+* Effective Slides
+* Demo
+
+---
+
   
 
 
