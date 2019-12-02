@@ -31,6 +31,17 @@ Tips:
 # Fairness Considerations
 Fill out an [ethical storyboarding worksheet](https://docs.google.com/document/d/1DyWrmHpebD9WsROXK3ncC2GTfz90AgMYutkpfDeKwLY/edit) as part of your detail design
 
+The ethical storyboarding worksheet asks your group to:
+* descrbe a fictional person who was positively affected by a model trained with this data
+* describe a fictional person who was negatively affected by a model trained with this data
+* describe at least two sources of bias the particular model in your story could have
+* describe at least one way you could modify the model to mitigate this bias
+  * what can you do when designing our model to account for inherent bias in its input data?
+* describe at least one way you could modify the dataset to mitigate this bias 
+  * what could you do differently if you collected this data again? 
+* describe at least one way you could modify the context surrounding the model to mitigate this bias
+  * consider what human practices or policies you could put in place to protect people within the social system where this model is used
+
 ---
 
 # References
