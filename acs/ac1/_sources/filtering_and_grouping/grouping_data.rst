@@ -27,7 +27,7 @@ functions.
 
    Earlier in the introduction you saw an example of the ``COUNTIF`` function 
    used on a table of standard information about people. That example utilizes
-   the formula ``=COUNTIF(B1:B26, “=Los Angeles”)``. This counts the number of
+   the formula ``=COUNTIF(``B1:B26``, “=Los Angeles”)``. This counts the number of
    cells in the range B1:B26 that match the word “Los Angeles”. The **cell 
    range to be filtered** is ``B1:B26``, and the **filter condition** is 
    ``“=Los Angeles”``.
@@ -41,9 +41,9 @@ functions.
    syntax looks like ``=SUMIF(cell range to be filtered, filter condition, cell
    range to be summed)``.
 
-   Given a the same table of standard information about people, you can find 
+   Given the same table of standard information about people, you can find 
    the total income of those from New York City. Consider the formula 
-   ``=SUMIF(B2:B26, "=New York City", E2:E26)``. This sums the values in the 
+   ``=SUMIF(``B2:B26``, "=New York City", ``E2:E26``)``. This sums the values in the 
    cells E2:E26, but only using rows for which the cell in that row in column 
    B matches the word "New York City". The **cell range** to be filtered is 
    ``B2:B26``, the **filter condition** is ``“=New York City”``, and the **cell
@@ -63,8 +63,8 @@ functions.
 
    Given a table of `the top 50 songs on Spotify in 2019`_, you can calculate 
    the mean popularity of songs by a certain artist. For example, consider the 
-   formula ``=AVERAGEIF(C4:C53, "=Ed Sheeran", E4:E53)``. This finds the mean 
-   of cells in the range E4:E53, but only using rows for which the cell in that 
+   formula ``=AVERAGEIF(``C4:C53``, "=Ed Sheeran", ``E4:E53``)``. This finds the mean 
+   of cells in the range ``E4:E53``, but only using rows for which the cell in that 
    row in column C matches the word "Ed Sheeran." The **cell range** to be 
    filtered is ``C4:C53``, the **filter condition** is ``“=Ed Sheeran”``, and 
    the **cell range to be averaged** is ``E4:E53``.
@@ -75,7 +75,7 @@ functions.
 
 
 Note that for ``SUMIF`` and ``AVERAGEIF``, if you want to sum or average the
-rows in column B or C themselves, you can enter B2:B26 or C2:C53 as the third 
+rows in column B or C themselves, you can enter ``B2:B26`` or ``C2:C53`` as the third 
 argument or leave the third argument empty.
 
 
