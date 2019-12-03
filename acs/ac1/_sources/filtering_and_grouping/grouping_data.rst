@@ -25,38 +25,59 @@ functions.
    The syntax looks like ``=COUNTIF(cell range to be filtered, filter
    condition)``.
 
-   For example, consider the formula ``=COUNTIF(A1:A10, “=violin”)``. This
-   counts the number of cells in the range A1:A10 that match the word “violin”.
-   The **cell range to be filtered** is ``A1:A10``, and the **filter condition**
-   is ``“=violin”``.
+   Earlier in the introduction you saw an example of the ``COUNTIF`` function
+   used on a table of standard information about people. That example utilizes
+   the formula ``=COUNTIF(B1:B26, “=Los Angeles”)``. This counts the number of
+   cells in the range B1:B26 that match the word “Los Angeles”. The **cell range
+   to be filtered** is ``B1:B26``, and the **filter condition** is
+   ``“=Los Angeles”``.
+
+   .. image:: figures/table_countif_example.png
+      :align: center
+      :alt: A screenshot from Sheets of a table of information using the COUNTIF grouping function to count how many people are from Los Angeles.
+
 
    **The SUMIF function sums the values of cells that satisfy a condition.** The
    syntax looks like ``=SUMIF(cell range to be filtered, filter condition, cell
    range to be summed)``.
 
-   For example, consider the formula ``=SUMIF(A1:A10, “=violin”, B1:B10)``. This
-   sums the values in the cells B1:B10, but only using rows for which the cell
-   in that row in column A matches the word “violin”. The **cell range to be
-   filtered** is ``A1:A10``, the **filter condition** is ``“=violin”``, and the
-   **cell range to be summed** is ``B1:B10``.
+   Given the same table of standard information about people, you can find the
+   total income of those from New York City. Consider the formula
+   ``=SUMIF(B2:B26, "=New York City", E2:E26)``. This sums the values in the
+   cells ``E2:E26``, but only using rows for which the cell in that row in
+   column B matches the word "New York City". The **cell range** to be filtered
+   is ``B2:B26``, the **filter condition** is ``“=New York City”``, and the
+   **cell range to be summed** is ``E2:E26``.
+
+   Pictured is a screenshot of part of the dataset in Sheets with the grouping
+   function ``SUMIF``.
+
+   .. image:: figures/table_sumif_example.png
+      :align: center
+      :alt: A screenshot from Sheets of a table of information using the SUMIF grouping function to sum the total income of people from New York City.
+
 
    **The AVERAGEIF function finds the mean of cells that satisfy a condition.**
    The syntax looks like ``=AVERAGEIF(cell range to be filtered, filter
    condition, cell range to be averaged)``.
 
-   For example, consider the formula ``=AVERAGEIF(A1:A10, “=violin”, B1:B10)``.
-   This finds the mean of cells in the range B1:B10, but only using rows for
-   which the cell in that row in column A matches the word “violin”. The **cell
-   range to be filtered** is ``A1:A10``, the **filter condition** is
-   ``“=violin”``, and the **cell range to be averaged** is ``B1:B10``.
+   Given a table of `the top 50 songs on Spotify in 2019`_, you can calculate
+   the mean popularity of songs by a certain artist. For example, consider the
+   formula ``=AVERAGEIF(C4:C53, "=Ed Sheeran", E4:E53)``. This finds the mean
+   of cells in the range ``E4:E53``, but only using rows for which the cell in
+   that row in column C matches the word "Ed Sheeran." The **cell range** to be
+   filtered is ``C4:C53``, the **filter condition** is ``“=Ed Sheeran”``, and
+   the **cell range to be averaged** is ``E4:E53``.
 
 
-.. TODO(raskutti): Add a screencast showing the above functions.
+   .. image:: figures/spotify_averageif_example.png
+      :align: center
+      :alt: A screenshot from Sheets of a table of Spotify's top 50 songs in 2019 using the AVERAGEIF function to average the total popularity of Ed Sheeran's songs.
 
 
 Note that for ``SUMIF`` and ``AVERAGEIF``, if you want to sum or average the
-rows in column A themselves, you can enter A1:A10 as the third argument or leave
-the third argument empty.)
+rows in column B or C themselves, you can enter ``B2:B26`` or ``C2:C53`` as the
+third argument or leave the third argument empty.
 
 
 Example: Painters
@@ -99,18 +120,17 @@ example. Consider the filter applied above, to limit the painters dataset to
 French painters.
 
 
-.. https://screenshot.googleplex.com/UbHcOGy0exS
-
 .. image:: figures/filtered_index.png
    :align: center
+   :alt: A screenshot from Sheets of a painters dataset filtered by nationality and counting the number of French painters.
 
 
 Notice that when trying to count the number of rows, selecting the cells selects
 all cells between the first and the last, not just the filtered cells. Note that
-the selected range is H5:H48. While there are only 13 filtered rows, the range
-selects all rows between 5 and 48. This returns a count of 44 French artists,
-which is incorrect. The same is true for cell ranges when using ``SUM`` and
-``AVERAGE``.
+the selected range is ``H5:H48`. While there are only 13 filtered rows, the
+range selects all rows between 5 and 48. This returns a count of 44 French
+artists, which is incorrect. The same is true for cell ranges when using ``SUM``
+and ``AVERAGE``.
 
 Instead of copy-pasting the filtered table to a new sheet and then using summary
 functions, you can just use grouping functions. For example, to count the number
@@ -119,10 +139,9 @@ of French painters, you can use ``COUNTIF``. The range to be counted is the
 “French”.
 
 
-.. https://screenshot.googleplex.com/934CkQgWm8q
-
 .. image:: figures/french_painters_using_countif.png
    :align: center
+   :alt: A screenshot from Sheets of a painters dataset grouped to count the number of painters whose nationality is French.
 
 
 .. fillintheblank:: number_of_paintings_by_french_painters_using_countif
@@ -192,9 +211,6 @@ The `Titanic`_ was a passenger ship that sank on its journey from Southampton
 (England) to New York (USA) in 1912, `killing over 1,500 people`_. This example
 uses passenger data from the tragedy. Each row records a passenger on the ship.
 
-.. TODO(raskutti): Embed
-   https://docs.google.com/spreadsheets/d/1KsjcplW-ooOEfrYsCRT5lJ4W9LVIzxXPU5V_9F7JE1w/edit#gid=1839270122
-
 The purpose of this example is to find out whether some groups, for example,
 women and children who had priority access to life rafts in case of emergency,
 had a higher survival rate than others. For example, did women and children have
@@ -214,10 +230,9 @@ column C and use this column for the formula.
    =IF(B2=“Alive”, 1, 0)
 
 
-.. https://screenshot.googleplex.com/HC8dHA4hZmo
-
 .. image:: figures/titanic_adding_survived_column.png
    :align: center
+   :alt: A screenshot from Sheets of a titanic passenger dataset using the IF function to label dead as a 0 and alive as a 1 in a new column called Survived number.
 
 
 .. fillintheblank:: titanic_survival_rate
@@ -244,10 +259,9 @@ C, but only if column E is equal to “Man”. This is a perfect use case for
    =AVERAGEIF(E$2:E$2209, "=Man", C$2:C$2209)
 
 
-.. https://screenshot.googleplex.com/qUe8Y6LLH0a
-
 .. image:: figures/titanic_men_survival_rate.png
    :align: center
+   :alt: A screenshot from Sheets of a titanic passenger dataset using the average function to find the men's survival rate.
 
 
 .. fillintheblank:: titanic_women_survival_rate
@@ -279,3 +293,4 @@ C, but only if column E is equal to “Man”. This is a perfect use case for
 .. _This forum discussion goes into more detail.: https://stackoverflow.com/questions/17152704/google-spreadsheet-count-if-contains-a-string
 .. _Titanic: https://en.wikipedia.org/wiki/RMS_Titanic
 .. _killing over 1,500 people: https://en.wikipedia.org/wiki/Passengers_of_the_RMS_Titanic
+.. _the top 50 songs on Spotify in 2019: https://www.kaggle.com/leonardopena/top50spotify2019/data
