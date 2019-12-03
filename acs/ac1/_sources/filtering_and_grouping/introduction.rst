@@ -18,29 +18,25 @@ certain data.
    :alt: Table of data.
 
 Above is a table with some standard information collected from a group of 
-people. Below is the same data from the table before after filtering and 
-grouping is separately applied.
+people (this data is fictional). Below is the same data from this table after 
+filtering and grouping are separately applied.
 
-.. image:: figures/table_filter_example.png
+.. image:: figures/table_filter_example_la.png
    :align: center
    :alt: The same table of data after applying a filter.
 
 **Can you guess what kind of filter was used on the table?** 
-(Answer at the bottom of the page)
+
+The filter applied selected the data for people whose city is "Los Angeles".
 
 .. image:: figures/table_group_example.png
    :align: center
    :alt: The same table after applying grouping.
 
 **Can you guess what kind of grouping was used on the table?** 
-(Answer at the bottom of the page)
+
+The table was grouped using the ``COUNTIF`` function to count how many 
+people have their city listed as Los Angeles.
 
 Don't worry if that was difficult. This exercise was to help get you more 
 familiar with potential uses for filtering and grouping on a data set.
-
-Answers:
-
-- The first table was filtered in the gender column, alphabetically from Z to A.
-
-- The second table was grouped using the ``COUNTIF`` function to count how many 
-people came from Los Angeles.
