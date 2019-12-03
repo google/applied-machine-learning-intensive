@@ -306,7 +306,7 @@ Expected time: 20 minutes
 Expected time: 30 minutes
 
 1.  All 3 examples are in
-    [this spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vRvSQRACxVLn_ub1CASmgMQw8G-6eB3196meAi2mgpID2MMmrQeAhosYfRfZgUIcbxuylCdfhq8Kar6/pubhtml#).
+    [this spreadsheet](https://docs.google.com/spreadsheets/d/1OOvRY_UX-A_tkSDRW60SoEMOkym-kO0B1uZIcED-btE/edit#gid=0).
 1.  **[DEMO]** Demo creating a bar chart using the “bar chart” sheet and a
     histogram using the “histogram” sheet. Show how to adjust text labels, text
     size, and bin size.
@@ -396,7 +396,7 @@ Expected time: 25 minutes
 
 1.  **[DEMO]** See if there are syntax questions from the reading, demoing them
     as needed using the
-    [chocolate cake spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vSO6-yeSWwvbmnGgvVX4umu-JgoeTPkwZ9fmtjPLYA250E6m6zySZCr5Al3n8MNQw0Vyt-GIgiv_iER/pubhtml#).
+    [chocolate cake spreadsheet](https://docs.google.com/spreadsheets/d/17bkoB97dUdR0MBuaBXsWLR0VjkEYhJydXJUYV0tcWjw/edit#gid=1963507413).
 1.  **[DEMO]** Work through chocolate cake example. This example should be more
     scaffolded since it is their first introduction to Sheets, and a chance for
     you to show some good working practices.
@@ -425,7 +425,7 @@ Expected time: 25 minutes
 Expected time: 45 minutes
 
 1.  Work through
-    [Painters example](https://docs.google.com/spreadsheets/d/e/2PACX-1vSO6-yeSWwvbmnGgvVX4umu-JgoeTPkwZ9fmtjPLYA250E6m6zySZCr5Al3n8MNQw0Vyt-GIgiv_iER/pubhtml#).
+    [Painters example](https://docs.google.com/spreadsheets/d/17bkoB97dUdR0MBuaBXsWLR0VjkEYhJydXJUYV0tcWjw/edit#gid=419330429).
     The textbook walks through the example step-by-step, so if you want more
     interactive practice:
     1.  **[DEMO]** Introduce conditional formulas (e.g. “=H2>200”), AND, and IF.
@@ -447,9 +447,9 @@ Expected time: 45 minutes
 1.  Read: textbook A3.2 Basic Descriptive Statistics up to the “Count and Sum”
     section
 
-#### Datasets
+#### Datasets <a name="painters-dataset"></a>
 
-*   **[Painters](https://docs.google.com/spreadsheets/d/e/2PACX-1vSO6-yeSWwvbmnGgvVX4umu-JgoeTPkwZ9fmtjPLYA250E6m6zySZCr5Al3n8MNQw0Vyt-GIgiv_iER/pubhtml#)**
+*   **[Painters](https://docs.google.com/spreadsheets/d/17bkoB97dUdR0MBuaBXsWLR0VjkEYhJydXJUYV0tcWjw/edit#gid=2146787371)**
     *   Description: Biographical information about 50 of the most influential
         painters of all time. We will use this example several times throughout
         this module.
@@ -507,7 +507,7 @@ Expected time: 20 minutes
     1.  **[HYP]** Discuss: What variables can you use Count/Sum with? What
         questions might you use Count/Sum to answer?
     1.  **[DEMO]** Introduce
-        [Spotify Premium example](https://docs.google.com/spreadsheets/d/e/2PACX-1vSwJDi3X7SBfNPnqCle0JeFV5bAoxNvypf82m7mM4ITYF6HZbF4ek_O7Sy5x0YApav_KQxm8vNJf7iu/pubhtml#)
+        [Spotify Premium example](https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=2040847965)
         and demo range notation using the COUNT function.
     1.  Ask students to create a function that sums all the values. Do you and
         your roommates have enough to get Spotify Premium this month?
@@ -516,9 +516,9 @@ Expected time: 20 minutes
     1.  **[HYP]** Discuss: What variables can you use Min/Max with? What
         questions might you use Min/Max to answer?
     1.  If students need more practice with range notation, demo the
-        [Dice Roll example](https://docs.google.com/spreadsheets/d/e/2PACX-1vSwJDi3X7SBfNPnqCle0JeFV5bAoxNvypf82m7mM4ITYF6HZbF4ek_O7Sy5x0YApav_KQxm8vNJf7iu/pubhtml#).
+        [Dice Roll example](https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=241382997).
     1.  Have students work in small groups on the
-        [second Weather example](https://docs.google.com/spreadsheets/d/e/2PACX-1vSwJDi3X7SBfNPnqCle0JeFV5bAoxNvypf82m7mM4ITYF6HZbF4ek_O7Sy5x0YApav_KQxm8vNJf7iu/pubhtml#).
+        [second Weather example](https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=287928864).
 
 <span style="text-decoration:underline;">Measures of Center</span>
 
@@ -541,7 +541,7 @@ Expected time: 40 minutes
         median (and the difference)... Leave them with that curiosity, for now,
         as it will motivate measures of skew / spread in the next class.
 1.  **[DEMO]** Demo AVERAGE / MEDIAN functions using
-    [Dice Roll example](https://docs.google.com/spreadsheets/d/e/2PACX-1vSwJDi3X7SBfNPnqCle0JeFV5bAoxNvypf82m7mM4ITYF6HZbF4ek_O7Sy5x0YApav_KQxm8vNJf7iu/pubhtml#).
+    [Dice Roll example](https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=471054686).
 1.  Work through Weather example in small groups. The textbook walks through the
     example step-by-step, so to make this interactive just give students the
     problem description: “Calculate and compare the mean maximum daily
@@ -565,8 +565,8 @@ Expected time: 40 minutes
 #### Datasets <a name="weather-dataset"></a>
 
 *   **Weather
-    ([NYC](https://docs.google.com/spreadsheets/d/e/2PACX-1vSwJDi3X7SBfNPnqCle0JeFV5bAoxNvypf82m7mM4ITYF6HZbF4ek_O7Sy5x0YApav_KQxm8vNJf7iu/pubhtml#),
-    [Seattle](https://docs.google.com/spreadsheets/d/e/2PACX-1vSwJDi3X7SBfNPnqCle0JeFV5bAoxNvypf82m7mM4ITYF6HZbF4ek_O7Sy5x0YApav_KQxm8vNJf7iu/pubhtml#))**
+    ([NYC](https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=1029440577),
+    [Seattle](https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=0))**
     *   Description: Temperature data for each day in NYC and Seattle, from 1
         July 2014 through 30 June 2015. We will use this example several times
         throughout this module.
@@ -613,7 +613,7 @@ Expected time: 5-15 minutes
 Expected time: 30 minutes
 
 1.  **[DEMO]** Show
-    [the histogram](https://docs.google.com/spreadsheets/d/e/2PACX-1vSwJDi3X7SBfNPnqCle0JeFV5bAoxNvypf82m7mM4ITYF6HZbF4ek_O7Sy5x0YApav_KQxm8vNJf7iu/pubhtml#)
+    [the histogram](https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=25591255)
     from the “Skew in a Histogram” section. Have students explain the positive
     skew and right tail that it shows. Discuss the 3 follow-up questions as a
     class.** **
@@ -639,7 +639,7 @@ Expected time: 30 minutes
         half $0 and half $100,000 to represent “Wonkytown”).
 1.  Define standard deviation. Discuss: when is this statistic useful?
     1.  **[DEMO]** Show
-        [the histogram](https://docs.google.com/spreadsheets/d/e/2PACX-1vSwJDi3X7SBfNPnqCle0JeFV5bAoxNvypf82m7mM4ITYF6HZbF4ek_O7Sy5x0YApav_KQxm8vNJf7iu/pubhtml#)
+        [the histogram](https://docs.google.com/spreadsheets/d/17ve2CvqFOhyMUGO13S69duQEExW47bWBLtme4pONiWY/edit#gid=1702521484)
         in “Standard Deviation in a Histogram”. Ask students which variable has
         a higher standard deviation and why.
 1.  Work through Weather example in small groups. The textbook walks through the
@@ -750,7 +750,7 @@ Expected time: 40 minutes
 
 #### Datasets
 
-*   [Painters](#city-climate-and-college-datasets)
+*   [Painters](#painters-dataset)
 *   **Titanic**
     *   Description: Information on all people aboard the
         [HMS Titanic](http://www.encyclopedia-titanica.org). This dataset is
@@ -822,7 +822,7 @@ Expected time: 60 minutes
 1.  Introduce the project, making sure students are clear on all requirements
     and the final deliverables.
 1.  Have students form groups of 3-4 and start work!
-    1.  [Here](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/external_documentation/ac1_course_guide.md#team-formation-and_dynamics)
+    1.  [Here](https://github.com/google/applied-machine-learning-intensive/blob/master/acs/external_documentation/ac1_course_guide.md#projects)
         is a guide to project team formation and facilitation. Students should
         come to class with a few research question ideas in mind, so they can
         form groups based on similar ideas.
@@ -1126,7 +1126,7 @@ Expected time: 10-20 minutes
 Expected time: 20 minutes
 
 *   This
-    [height versus age spreadsheet](https://docs.google.com/spreadsheets/d/e/2PACX-1vQknS-NHdPiFY0ivCGYiH_2bpi4E-nhl1WJaSC9mZd3OnqzMe2hYFtkGk7YZT7AID6olNR1RgE1WtoD/pubhtml)
+    [height versus age spreadsheet](https://docs.google.com/spreadsheets/d/1IUBUVgx_Jlb1b4KH1DZyz8z3VGCk1w63zu00uw5ej9k/edit#gid=714697538)
     has ages and heights for children between the ages of 4 and 16. Have
     students find a regression line and use it to predict the heights for:
     *   someone 10 years old
@@ -1199,7 +1199,7 @@ Expected time: 40 minutes
 
 #### Datasets
 
-*   [Personal trainer data (generated)](https://docs.google.com/spreadsheets/d/e/2PACX-1vTICYg8KhO5eAv-Vr7xCO59FATyj_wDTzhBRnxzuP2sNofbACzHk1HCn3344yk3DUlA6s-lFzdEDpId/pubhtml)
+*   [Personal trainer data (generated)](https://docs.google.com/spreadsheets/d/1kzEQ-JCgr0RLCb0ojl1HldF0irO_UzQO0PtxsjBRFtU/edit#gid=0)
 *   [College Scorecard Data](#city-climate-and-college-datasets)
 
 ### 3.1 Pivot Tables
@@ -1217,10 +1217,9 @@ Expected time: 40 minutes
 Expected time: 10 minutes
 
 *   **[DEMO]** Recreate the table summarizing
-    [work assignments](https://docs.google.com/spreadsheets/d/e/2PACX-1vT1vnHCFc_3E-W4DiZ0hrDzlsP-Nh8vfD82fGMf7QT_YOJbdiKso31kLhxcSmlzEo0sLtLnksK6lDcj/pubhtml)
-    from the last section made using SUMIF with
-    [pivot tables in 30 seconds](https://docs.google.com/spreadsheets/d/e/2PACX-1vT1vnHCFc_3E-W4DiZ0hrDzlsP-Nh8vfD82fGMf7QT_YOJbdiKso31kLhxcSmlzEo0sLtLnksK6lDcj/pubhtml).
-    Then repeat, taking time to explain row, column, value and filter options.
+    [work assignments](https://docs.google.com/spreadsheets/d/1XnI8Z8UZJxzHeUAly7Qj2I5i1ZCxIs13YR72LcXYQjc/edit#gid=1017970651)
+    from the last section made using SUMIF with pivot tables in 30 seconds Then
+    repeat, taking time to explain row, column, value and filter options.
 
 #### Activities
 
@@ -1254,9 +1253,9 @@ Expected time: 45 minutes
 
 #### Datasets
 
-*   [Work Assignments](https://docs.google.com/spreadsheets/d/e/2PACX-1vT1vnHCFc_3E-W4DiZ0hrDzlsP-Nh8vfD82fGMf7QT_YOJbdiKso31kLhxcSmlzEo0sLtLnksK6lDcj/pubhtml)
+*   [Work Assignments](https://docs.google.com/spreadsheets/d/1XnI8Z8UZJxzHeUAly7Qj2I5i1ZCxIs13YR72LcXYQjc/edit#gid=1017970651)
     (generated)
-*   [NCHS data](https://docs.google.com/spreadsheets/d/e/2PACX-1vQKQmUx85LK0ksxP70dgJ0TMaAmHMZY0BGf45j8NPAwj6za-wTprUy0eq9XtPXKQDVQU5EeC5wh5Mof/pubhtml)
+*   [NCHS data](https://docs.google.com/spreadsheets/d/1-_73K_54Q7Sil-ErcRGRz2Y7GJ8Aimrcd26xqY44s4Q/edit#gid=1263757945)
     *   Description:
     *   Source:
     *   Number of rows:
@@ -1306,7 +1305,7 @@ Expected time: 40 minutes
 
 #### Datasets
 
-*   [NCHS data](https://docs.google.com/spreadsheets/d/e/2PACX-1vQKQmUx85LK0ksxP70dgJ0TMaAmHMZY0BGf45j8NPAwj6za-wTprUy0eq9XtPXKQDVQU5EeC5wh5Mof/pubhtml)
+*   [NCHS data](https://docs.google.com/spreadsheets/d/1-_73K_54Q7Sil-ErcRGRz2Y7GJ8Aimrcd26xqY44s4Q/edit#gid=1263757945)
 
 ### 4.1 Joining Data
 
@@ -1346,8 +1345,8 @@ Expected time: 40 minutes
 
 #### Datasets
 
-*   [NCHS data](https://docs.google.com/spreadsheets/d/e/2PACX-1vQKQmUx85LK0ksxP70dgJ0TMaAmHMZY0BGf45j8NPAwj6za-wTprUy0eq9XtPXKQDVQU5EeC5wh5Mof/pubhtml)
-*   [State Population](https://docs.google.com/spreadsheets/d/e/2PACX-1vT4uCIwhPdW23iGY4b54YY8m8dew69PYqCa7x1fwVD702AlQb8ONHdd2I3kynGn4yG31HkCi_z5S7hg/pubhtml)
+*   [NCHS data](https://docs.google.com/spreadsheets/d/1-_73K_54Q7Sil-ErcRGRz2Y7GJ8Aimrcd26xqY44s4Q/edit#gid=1263757945)
+*   [State Population](https://docs.google.com/spreadsheets/d/1NiG_3AGTw1y2V69di_d_loIFwTcQTmPWIjZgvHChvsk/edit#gid=636479847)
     *   Description:
     *   Source:
     *   Number of rows:

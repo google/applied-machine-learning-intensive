@@ -4,15 +4,17 @@
    http://creativecommons.org/licenses/by-sa/4.0/.
 
 
-Introduction To Visualizations
-==============================
+Scatter Plots and Correlation
+=============================
 
 .. toctree::
    :caption: Contents
    :maxdepth: 2
 
    introduction.rst
-   example_visualizations.rst
-   reading_visualizations_checklist.rst
-   creating_visualizations_checklist.rst
-   histograms_and_bar_charts.rst
+   scatter_plots.rst
+   creating_a_scatter_plot_in_sheets.rst
+   describing_scatter_plots.rst
+   correlation.rst
+   correlation_and_college_data.rst
+   correlation_versus_causation.rst 

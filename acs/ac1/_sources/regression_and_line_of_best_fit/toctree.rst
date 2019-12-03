@@ -4,15 +4,16 @@
    http://creativecommons.org/licenses/by-sa/4.0/.
 
 
-Introduction To Visualizations
-==============================
+Regression and "Line of Best Fit"
+=================================
 
 .. toctree::
    :caption: Contents
    :maxdepth: 2
 
-   introduction.rst
-   example_visualizations.rst
-   reading_visualizations_checklist.rst
-   creating_visualizations_checklist.rst
-   histograms_and_bar_charts.rst
+   regression_and_line_of_best_fit.rst
+   equation_of_a_line_refresher.rst
+   making_predictions_with_the_regression_line.rst
+   interpreting_slope.rst
+   outliers.rst
+   nonlinear_regression.rst

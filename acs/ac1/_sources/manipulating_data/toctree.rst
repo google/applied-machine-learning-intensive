@@ -4,15 +4,13 @@
    http://creativecommons.org/licenses/by-sa/4.0/.
 
 
-Introduction To Visualizations
-==============================
+Manipulating Data
+=================
 
 .. toctree::
    :caption: Contents
    :maxdepth: 2
 
-   introduction.rst
-   example_visualizations.rst
-   reading_visualizations_checklist.rst
-   creating_visualizations_checklist.rst
-   histograms_and_bar_charts.rst
+   filtering.rst
+   pivot_tables.rst
+   joining_data.rst
