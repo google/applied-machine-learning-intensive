@@ -348,7 +348,7 @@ important things!
 Example: Painters
 -----------------
 
-To further illustrate how recursive formulas can automate data processing,
+To further illustrate how formulas can automate data processing,
 consider the painters dataset again. Don’t worry if this example seems a bit
 daunting at first; it is designed to be challenging.
 
