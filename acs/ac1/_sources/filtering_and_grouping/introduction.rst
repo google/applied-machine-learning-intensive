@@ -28,8 +28,8 @@ filtering and grouping are separately applied.
    :alt: The same table after applying a filter.
 
 
-This is an example of **filtering** data to just see rows of people whose city
-is Los Angeles.
+This is an example of **filtering** the data to only see rows of people whose
+city is Los Angeles.
 
 
 .. image:: figures/table_group_example.png
