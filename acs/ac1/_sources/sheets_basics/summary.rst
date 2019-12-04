@@ -5,4 +5,4 @@
 
 .. image:: figures/sheets_summary.png
    :align: center
-   :alt: Graphic summarizing key concepts of sheet basics.
+   :alt: Graphic summarizing key concepts of Sheets basics.
