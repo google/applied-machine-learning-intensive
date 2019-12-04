@@ -19,3 +19,4 @@ Basic Descriptive Statistics
    measures_of_center.rst
    outliers_and_skew.rst
    measures_of_spread.rst
+   summary.rst
