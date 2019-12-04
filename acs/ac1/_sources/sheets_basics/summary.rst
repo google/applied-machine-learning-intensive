@@ -3,16 +3,6 @@
    International License. To view a copy of this license, visit
    http://creativecommons.org/licenses/by-sa/4.0/.
 
-
-Sheets Basics
-=============
-
-.. toctree::
-   :caption: Contents
-   :maxdepth: 2
-
-   introduction.rst
-   what_is_a_sheet.rst
-   what_is_a_formula.rst
-   errors.rst
-   summary.rst
+.. image:: figures/sheets_summary.png
+   :align: center
+   :alt: Graphic summarizing key concepts of Sheets basics.
