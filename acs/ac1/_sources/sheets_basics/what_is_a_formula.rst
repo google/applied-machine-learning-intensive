@@ -409,7 +409,9 @@ checking each answer, which can lead to mistakes, especially when you are
 working with hundreds of rows of data, you can use the ``AND`` function.
 
 
-.. admonition:: The ``AND`` Function
+**The**
+``AND`` 
+**Function**
 
    The ``AND`` function returns ``TRUE`` if and only if each statement separated
    by a comma within its brackets are ``TRUE``. The syntax looks as below.
@@ -440,7 +442,9 @@ you can write a formula that prints the artist’s name if they are prolific and
 French, and prints nothing if not. This can be done using the ``IF`` function.
 
 
-.. admonition:: The ``IF`` Function
+**The**
+``IF`` 
+**Function**
 
    The ``IF`` function is used to show different results based on a condition.
    The syntax looks as below.
