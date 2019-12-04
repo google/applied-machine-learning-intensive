@@ -16,8 +16,6 @@ certain data.
 
 .. image:: figures/table_data.png
    :align: center
-   :height: 50 px
-   :width: 100 px
    :alt: Table containing basic data for 23 people.
 
 
