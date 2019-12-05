@@ -348,9 +348,9 @@ important things!
 Example: Painters
 -----------------
 
-To further illustrate how formulas can automate data processing,
-consider the painters dataset again. Don’t worry if this example seems a bit
-daunting at first; it is designed to be challenging.
+To further illustrate how formulas can automate data processing, consider the 
+painters dataset again. Don’t worry if this example seems a bit daunting at
+first; it is designed to be challenging.
 
 Suppose you’re interested in studying only the most prolific French painters,
 specifically French painters who produced over 200 paintings in their lifetimes.
