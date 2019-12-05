@@ -17,9 +17,8 @@ There are multiple spreadsheet softwares, including Google Sheets, Apple
 Numbers, Microsoft Excel, and more. While functionality may differ slightly
 across platforms, the core concepts and syntaxes are the same. In this course,
 whenever sheets are mentioned, it is in reference to Google Sheets, which is
-pictured below.
+pictured below with example student data.
 
 .. image:: figures/sheet_example.png
-   :align: center
-   :alt: Google Sheet spreadsheet with example student data. A coloumn for 
-   student's name, height, hair color and birthday.
+   :align: center 
+   :alt: Spreadsheet with example student data of name, height, hair color.
