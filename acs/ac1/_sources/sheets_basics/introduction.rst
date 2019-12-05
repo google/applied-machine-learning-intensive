@@ -19,4 +19,7 @@ across platforms, the core concepts and syntaxes are the same. In this course,
 whenever sheets are mentioned, it is in reference to Google Sheets, which is
 pictured below.
 
-.. image:: figures/spreadsheet_example.png
+.. image:: figures/sheet_example.png
+   :align: center
+   :alt: Google Sheet spreadsheet with example student data. A coloumn for 
+   student's name, height, hair color and birthday.
