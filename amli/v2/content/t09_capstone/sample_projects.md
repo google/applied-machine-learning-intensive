@@ -19,10 +19,10 @@
   # DebuSequencer
   
 * ML music generator
- * Keras 
- * Pandas
- * Numpy 
- * Flask
+  * Keras 
+  * Pandas
+  * Numpy 
+  * Flask
 * [Slides](https://docs.google.com/presentation/d/1OUHZf1b3rKYft6FjttfLyD3lbidrGgyf7qaCUHvzUzQ/edit#slide=id.g5a43df980a_0_1094)
 
 ---
@@ -30,11 +30,11 @@
 # Electurify
 
 * Accessible Lecture Tool
- * Keras 
- * Pandas
- * Numpy 
- * Flask
- * Binary search trees
+  * Keras 
+  * Pandas
+  * Numpy 
+  * Flask
+  * Binary search trees
 * [Slides](https://docs.google.com/presentation/d/1OUHZf1b3rKYft6FjttfLyD3lbidrGgyf7qaCUHvzUzQ/edit#slide=id.g5a43df980a_0_724)
 
 ---
@@ -42,10 +42,10 @@
 # Gans
 
 * Faces- Generated Images
- * GANS
- * Convolutional Neural Networks
- * Python, TensorFlow, CUDA
- * LeakyReLU activation function
+  * GANS
+  * Convolutional Neural Networks
+  * Python, TensorFlow, CUDA
+  * LeakyReLU activation function
 * [Slides](https://docs.google.com/presentation/d/1OUHZf1b3rKYft6FjttfLyD3lbidrGgyf7qaCUHvzUzQ/edit#slide=id.g5a43df980a_0_197)
 
 ---
@@ -53,7 +53,7 @@
 # Not Corners Anymore
 
 * Develop a pipeline that combines object detection and depth estimation for applications in autonomous robotics
- * Mask R-CNN
+  * Mask R-CNN
 * [Slides](https://docs.google.com/presentation/d/1OUHZf1b3rKYft6FjttfLyD3lbidrGgyf7qaCUHvzUzQ/edit=id.g5a43df980a_0_0)
 
 ---
@@ -61,8 +61,8 @@
 # Language Modeling
 
 * Build a model that can generate human sounding texts based on someone’s tweets
- * LSTM Recurrent Neural Network
- * GPT-2
+  * LSTM Recurrent Neural Network
+  * GPT-2
 * [Slides](https://docs.google.com/presentation/d/1OUHZf1b3rKYft6FjttfLyD3lbidrGgyf7qaCUHvzUzQ/edit#slide=id.g5a43df980a_0_1238)
 
 ---
@@ -70,17 +70,17 @@
 # Predicting Ad Clicks
 
 * Predict mobile ad clicks given advertising data
- * Kaggle
- * Multiple Perceptron Network
- * Keras
+  * Kaggle
+  * Multiple Perceptron Network
+  * Keras
 * [Slides](https://docs.google.com/presentation/d/1OUHZf1b3rKYft6FjttfLyD3lbidrGgyf7qaCUHvzUzQ/edit=id.g5a43df980a_0_404)
 
 # What's up with Income
 
 * Using ML to Understand How Income Changes Across Zip Codes
- * Linear Regression
- * Classification with Scikitlearn- Adaboost
- * Clustering
+  * Linear Regression
+  * Classification with Scikitlearn- Adaboost
+  * Clustering
 * [Slides](https://docs.google.com/presentation/d/1OUHZf1b3rKYft6FjttfLyD3lbidrGgyf7qaCUHvzUzQ/edit#slide=id.g5a43df980a_0_604)
 
 ---
@@ -108,9 +108,9 @@ If you have a concrete example of bias in ML systems from your own experience, s
 * What ML Fairness risks exist?
 * How would a “fair” model behave?
 * How can we mitigate risks?
- * Model
- * Dataset
- * Context
+  * Model
+  * Dataset
+  * Context
 
 <!--
 It’s important to always remember that ML algorithms and systems are built, trained, and evaluated by people, and are affected by human cognitive limitations and biases. To create systems that work for everyone, we have to intentionally work to mitigate those issues. It’s also important to note that fairness is *subjective* -- not all biases should be approached the same way. 
