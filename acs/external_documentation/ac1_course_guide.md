@@ -316,15 +316,6 @@ you for any questions that may arise. We’ll explain the dataset source, schema
 our motivation for choosing it, and any tricky areas to be aware of in working
 with them.
 
-### [P1] Checks for Understanding
-
-With AIs if students aren’t understanding. TODO: guide on good checks for
-understanding
-
-### [P1] Solutions/Output Expectations
-
-Harvey Mudd Clinic
-
 ## Structuring Class Time
 
 We designed the instructor guide with a bi-weekly 80 minute class period in
