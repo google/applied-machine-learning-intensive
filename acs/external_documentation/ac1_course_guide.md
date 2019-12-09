@@ -1,7 +1,7 @@
 # AC1 Course Guide
 
 - [Overview](#overview)
-- [What is AC101?](#what-is-ac101-)
+- [What is AC1?](#what-is-ac1)
 - [Learning Objectives](#learning-objectives)
 - [Catalog Description](#catalog-description)
 - [Faculty Guidelines](#faculty-guidelines)
@@ -12,25 +12,25 @@
     + [Project Coaching](#project-coaching)
   * [Class Discussion](#class-discussion)
 - [Sample Syllabus](#sample-syllabus)
-- [Using the Instructor’s Guide](#using-the-instructor-s-guide)
+- [Using the Instructor’s Guide](#using-the-instructors-guide)
   * [Hook](#hook)
   * [Activities](#activities)
     + [Livecoding](#livecoding)
     + [Ethics](#ethics)
     + [Hypothesis Forming and Testing](#hypothesis-forming-and-testing)
   * [Datasets](#datasets)
-  * [[P1] Checks for Understanding](#-p1--checks-for-understanding)
-  * [[P1] Solutions/Output Expectations](#-p1--solutions-output-expectations)
+  * [[P1] Checks for Understanding](#p1-checks-for-understanding)
+  * [[P1] Solutions/Output Expectations](#p1-solutionsoutput-expectations)
 - [Structuring Class Time](#structuring-class-time)
 
 ## Overview
 
-Introduce instructors to the purpose and structure of AC101, including helpful
+Introduce instructors to the purpose and structure of AC1, including helpful
 guidelines for course management.
 
-## What is AC101?
+## What is AC1?
 
-The primary goal of AC101 is to teach students **data literacy**: the ability to
+The primary goal of AC1 is to teach students **data literacy**: the ability to
 access, transform, use, and interpret data, ethically and effectively, to inform
 decision-making. This is a practical, hands-on course that will teach students
 to ask and answer questions about data through spreadsheets, SQL databases, and
@@ -39,7 +39,7 @@ be highly applicable to any major or career.
 
 This is an interdisciplinary course combining concepts from data science,
 computer science, and statistics -- it is not a comprehensive introductory
-course in any of those fields. AC101 prepares students for AC201, which is a
+course in any of those fields. AC1 prepares students for AC201, which is a
 more comprehensive course on Python programming and data science in Python.
 Students who do not take more courses on the subject will still have a useful
 understanding of widely-used data science tools and techniques, which they can
