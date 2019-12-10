@@ -101,7 +101,7 @@ I am accountable and thorough. I dedicate time and energy to maintaining my orga
 * I am detail-oriented and process-driven.
 * I appreciate order and punctuality.
 
-![](res/personalitystyles.jpg)
+![](res/personalitystyles03.jpg)
 
 <!--
 Source: Photo by Katie Harp on Unsplash
@@ -120,7 +120,7 @@ I am conceptual and an independent thinker. I like to develop models, explore id
 * I am a designer and inventor. 
 * I prefer to work independently. 
 
-![](res/personalitystyles.jpg)
+![](res/personalitystyles04.jpg)
 
 <!--
 Source: Photo by Jason Dent on Unsplash
@@ -139,27 +139,54 @@ I value people in the organization and seek to draw out their full potential. My
 * I can change my color to suit the situation (chameleon). 
 * My ideal role is to harmonize, inspire, communicate, and create.
 
----
-
-# Exercise #1: Determine your colors
-
-Step 1: Look over color description handout
-Step 2: Do self-assessment handout
-Step 3: Determine your color  
-
-
+![](res/personalitystyles05.jpg)
 
 <!--
 Source: Photo by Mockaroon on Unsplash
 -->
 
+---
 
+# Exercise #1: Determine your colors
 
+* Step 1: Look over color description handout
+* Step 2: Do self-assessment handout
+* Step 3: Determine your color  
 
+<!--
+[Pass out True Colors description one-pager]
 
+“Take this quick assessment to determine your primary and secondary colors. Remember that each of us have each of the four colors in us to varying degrees.”
 
+[Allow 3-5 minutes to take assessment]
+-->
 
+---
 
+# Exercise #2: Census
+
+![](res/personalitystyles06.png)
+
+<!--
+“Let’s take a count of who has which primary and secondary color.”
+
+[Write names or tally marks to represent each student participating on chart paper or a whiteboard.]
+-->
+
+---
+
+# Exercise #3: Color groups
+
+(15 minutes)
+* Step 1: Find your primary color buddies, go to whiteboards
+* Step 2: Discuss & chart your answers to these questions:
+  * 1. What strengths does your color bring to a team?
+  * 2. What can be tough for others when working with you?
+  * 3. What are several tips to working successfully with you? 
+  * 4. What picture, song, logo that best represents your color?
+
+(20 minutes)
+* Step 3: Get ready to present back to the larger group (5 minutes per group)
 
 
 
