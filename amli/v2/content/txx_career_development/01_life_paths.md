@@ -106,4 +106,6 @@ Please come prepared to our next session with a copy (online is fine) of your cu
 Our next session will be a resume workshop. Please come prepared with a copy -- online or printed out -- of your current technical resume. If you haven’t yet created a technical resume, bring whatever resume you currently have!
 -->
 
+---
+
 
