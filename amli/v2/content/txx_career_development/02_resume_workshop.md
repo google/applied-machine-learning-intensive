@@ -88,7 +88,7 @@ Source: Photo by Burst on Unsplash
 
 ---
 
-1.) Education {.big}
+**1.) Education** {.big}
 
 Your education should be the first section of your resume.
 
@@ -117,7 +117,7 @@ Technical Skills: listed in order of proficiency (strongest first, weakest last)
 
 ---
 
-Education example {.big}
+**Education example** {.big}
 
 ![](res/resumeworkshop03.png)
 
@@ -129,7 +129,7 @@ Technical Skills: How you demonstrate your level of “proficiency” can vary. 
 
 ---
 
-2.) Work Experiences {.big}
+**2.) Work Experiences** {.big}
 
 Focus on your impact!
 
@@ -166,7 +166,7 @@ By doing [Z]: what you specifically did to achieve those results (e.g., by restr
 
 ---
 
-Before {.big}
+**Before** {.big}
 
 ![](res/resumeworkshop04.png)
 
@@ -176,7 +176,7 @@ This work experience description provides us with some information, but how coul
 
 ---
 
-After {.big}
+**After** {.big}
 
 ![](res/resumeworkshop05.png)
 
@@ -189,7 +189,7 @@ Mention: description is important, even if you don’t have numbers to share
 
 ---
 
-3.) Projects {.big}
+**3.) Projects** {.big}
 
 Again, focus on your impact.
 
@@ -208,7 +208,7 @@ As we mentioned before, early on in your technical career, you may not feel that
 
 ---
 
-Projects example {.big}
+**Projects example** {.big}
 
 ![](res/resumeworkshop06.png)
 
@@ -221,7 +221,7 @@ Clear delineation of group (class) project vs. personal project
 
 ---
 
-4.) Activities/Leadership {.big}
+**4.) Activities/Leadership** {.big}
 
 Tell employers what excites you.
 
@@ -250,7 +250,7 @@ Employers want to know what excites you, so take this opportunity to let them kn
 
 ---
 
-Activities/Leadership example {.big}
+**Activities/Leadership example** {.big}
 
 ![](res/resumeworkshop07.png)
 
@@ -265,7 +265,7 @@ Things to point out:
 
 ---
 
-5.) Honors/Awards {.big}
+**5.) Honors/Awards** {.big}
 
 What, in addition to what you’ve already shared, sets you apart?
 
@@ -285,7 +285,7 @@ Along the way of your technical career, you may come across opportunities to: 1)
 
 ---
 
-Honors/Awards example {.big}
+**Honors/Awards example** {.big}
 
 ![](res/resumeworkshop08.png)
 
@@ -318,22 +318,41 @@ Your resume should demonstrate your passion for tech (through involvement in act
 * What you include on your resume tells your story. 
 -->
 
-# Your Turn
+# Your turn
 
 Take the next 15 minutes to apply these suggestions to your resume. {.big}
 
+<!--
+Take the next 15 minutes to make some changes to your resume based off of this presentation. I am happy to answer questions as you work.
+
+[Circulate around the room and help students as they need.]
+-->
+
+---
+
+# Next steps
+
+* Review your technical resume and make edits based on what you learned today.
+* Please have your resume on Google Drive and share both a Google Doc and PDF version with ____________ and ________________ by _______.
+* I will edit and get back to you with feedback. Please implement changes as soon as possible.
+* [optional] We will then begin sharing your resumes with potential employers, if you indicated that would be okay.
+* This is a good time to update or create your LinkedIn profile, too! We will have a separate presentation on LinkedIn soon.
 
 
+<!--
+Please continue to make changes to your resume based on what you learned today.
+Please share your resume with me by _________.
+This is a good time to update or create your LinkedIn profile, too! We will have a separate presentation on LinkedIn soon.
+-->
 
+---
 
+# Thank you
 
+Thank you. Questions?
 
+<!--
+Thank you so much for participating! Any lingering questions?
+-->
 
-
-
-
-
-
-
-
-
+---
