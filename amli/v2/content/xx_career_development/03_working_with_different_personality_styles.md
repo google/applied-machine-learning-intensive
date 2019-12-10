@@ -180,13 +180,34 @@ Source: Photo by Mockaroon on Unsplash
 (15 minutes)
 * Step 1: Find your primary color buddies, go to whiteboards
 * Step 2: Discuss & chart your answers to these questions:
-  * 1. What strengths does your color bring to a team?
-  * 2. What can be tough for others when working with you?
-  * 3. What are several tips to working successfully with you? 
-  * 4. What picture, song, logo that best represents your color?
+  * What strengths does your color bring to a team?
+  * What can be tough for others when working with you?
+  * What are several tips to working successfully with you? 
+  * What picture, song, logo that best represents your color?
 
 (20 minutes)
 * Step 3: Get ready to present back to the larger group (5 minutes per group)
 
+<!--
+[Distribute four large whiteboards or pieces of chart paper throughout the room and label them with one of the four True Colors: orange, gold, blue, green.]
 
+When I say go, find your primary color group and begin discussing the four questions on the board. You will chart your answers to the questions, either with words, drawings, or whatever you’d like to use to describe your primary true color. You’ll have 15 minutes to work on this and then each group will present out to the group. What questions do you have?”
 
+[Allow students 15 minutes to work and add five additional minutes if they need it.]
+
+[After each presentation, allow non-presenting students an opportunity to ask questions: “What questions do you have for the blue group?”]
+-->
+
+---
+
+# Final reflection
+
+* What was this experience like for you? 
+* What did you learn?
+* How do you think this will be useful moving forward?
+
+<!--
+“I’d love to close out by hearing about what this experience was like for you, what you learned, or how you feel like you’ll use this moving forward.”
+
+[Thank students for participating]
+-->
