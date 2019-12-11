@@ -32,11 +32,11 @@ publish. On the right selection pane, choose which file type to publish as.
 Always be careful to ensure no private information is present in a dataset that
 you publish. There may be instances where your dataset holds sensitive 
 information. It is important to know when that is, and to understand the `laws
-and regulations on information privacy.`_ On the other hand, there are plenty of
+and regulations on information privacy.` On the other hand, there are plenty of
 publicly available datasets with important information. `Here are some of the 
-most popular published datasets from 2018.`_ 
+most popular published datasets from 2018.`
 
-For more help on exporting data from Sheets, `check out this guide`_
+For more help on exporting data from Sheets, `check out this guide`
 
 .. _laws and regulations for information privacy.: https://en.wikipedia.org/wiki/Information_privacy
 .. _Here are some of the most popular published data sets from 2018.: https://data.world/blog/top-10-datasets-2018/
