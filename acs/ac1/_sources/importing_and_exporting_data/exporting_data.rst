@@ -19,4 +19,25 @@ and choose which format you need to export to. The format options are:
 Another useful tool in Sheets allows you to publish your data online. If
 you click “File > Publish to the web”, you can publish your entire file
 or a specified sheet as a web page, or as any of the downloadable file
-formats above.
+formats above. 
+
+.. image:: figures/publish_data.png
+    :align: center
+    :alt: A screenshot of the pop up box when publishing a spreadsheet from Google Sheets.
+
+This image is an example of what it looks like to publish a spreadsheet from 
+Sheets. On the left selection pane, choose how much of the spreadsheet to 
+publish. On the right selection pane, choose which file type to publish as.
+
+Always be careful to ensure no private information is present in a dataset that
+you publish. There may be instances where your dataset holds sensitive 
+information. It is important to know when that is, and to understand the _`laws
+and regulations on information privacy.`_ On the other hand, there are plenty of
+publicly available datasets with important information. _`Here are some of the 
+most popular published datasets from 2018.`_ 
+
+For more help on exporting data from Sheets, _`check out this guide`_
+
+.. _laws and regulations for information privacy.: https://en.wikipedia.org/wiki/Information_privacy
+.. _Here are some of the most popular published data sets from 2018.: https://data.world/blog/top-10-datasets-2018/
+.. _check out this guide: https://support.google.com/docs/answer/9330963?hl=en
