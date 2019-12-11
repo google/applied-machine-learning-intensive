@@ -35,8 +35,8 @@ Always be careful to ensure no private information is present in a dataset that
 you publish. There may be instances where your dataset holds sensitive 
 information. It is important to know when that is, and to understand the `laws 
 and regulations on information privacy.`_ On the other hand, there are plenty of
-publicly available datasets with important information. `Here are some of the
-most popular published datasets from 2018`_
+publicly available datasets with important information. 
+`Here are some of the most popular published datasets from 2018`_
 
 For more help on exporting data from Sheets, `check out this guide`_
 
