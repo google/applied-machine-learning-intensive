@@ -158,7 +158,9 @@ The second input is the range of the values of the column that you want to searc
 Notice that if you use C2:C86 instead of C1:C86 instead, the row value returned by the function will be shifted up by one, so the answer will be 53 instead of 54. This is because the returned value is equal to how far down the value is in the range, so when you omit the first row in the range (C1), the returned value will be one less than the row number because it’s counting the rows starting at C2.
 
 This is what that bug would look like if you were using a smaller dataset and trying to find the state with the largest population:
-IMAGES
+
+.. image:: figures/match.png
+   :align: center
 
 The last input is the manner in which you want to search. Since the values in Price Percent aren’t sorted, you use 0. The final function is ``=MATCH(MAX(C2:C86), C1:C86, 0)``. The returned value is 46, meaning the most expensive candy is in row 46. You can now go back CandyData and tell them that Nik L Nip is the most expensive candy on the dataset.
 
