@@ -10,7 +10,7 @@ Today we’re going to talk about the art of networking. If you’re thinking of
 
 Interacting meaningfully with other people to exchange information and develop contacts, especially to further one’s career.
 
-![](res/artofnetworking01.png)
+![](res/artofnetworking01.jpg)
 
 <!--
 * As a student, you’ll begin having many opportunities to begin making connections with others and building your network, so now is a great time to begin learning the skills of networking.
@@ -61,7 +61,7 @@ Both formal and informal settings:
 
 # Networking DOs and DON'Ts
 
-![](res/artofnetworking02.png)
+![](res/artofnetworking02.jpg)
 
 <!--
 In the next few slides, we will go over ways to effectively network, as well as some things that may detract from building a good network.
@@ -107,6 +107,8 @@ Source: Photo by Akson on Unsplash
 * (Consider using a real world example of inappropriate use of calling people, LinkedIn requests, etc)
 -->
 
+---
+
 3.) DO: make a specific request {.big}
 
 * Vagueness can lead to a lack of results
@@ -121,6 +123,8 @@ Source: Photo by Akson on Unsplash
   * What you could say is: I have a Math minor and know from reading that Chrome needs engineers with this background. Do you think there would be opportunities for me here? 
 * You need to showcase your skills and value, show us you’ve done their research on roles and qualifications, and ask specific questions when you have them.
 -->
+
+---
 
 4.) DO: personalize all communication {.big}
 
@@ -154,7 +158,7 @@ What are some things we want to include as we craft this email?
 
 ---
 
-Practice A [Template]
+Practice A [Template] {.big}
 
 Hello [Name],
 
@@ -176,4 +180,183 @@ This template is an example and certainly not the only way to follow up after me
 -->
 
 ---
+
+Practice A [Example] {.big}
+
+Hello Imani,
+
+I hope you’re having a great Friday.
+
+
+It was so nice to meet you at the Code For Good Hackathon and chat about trends in AI. After our conversation, I found this article about how Fortnite uses Artificial Intelligence and Analytics to make the game more fun, which reminded me of our conversation about Gaming and AI. I thought you’d find it interesting, so I figured I’d pass it along.
+
+
+Again, I really enjoyed meeting you and I’m looking forward to keeping in touch. Don’t hesitate to reach out if you want to get together and bounce around some more ideas about click-worthy article titles. I’d love that!
+
+
+Hope to hear from you,
+
+Josh
+
+<!--
+Here, we went with an article to keep the conversation going - a great option if you aren’t sure of exact next steps, but want to keep the conversation open and add this person to your professional network. You could also make your “ask” to pass along your resume. We’ll see an example next that simply asks for an informational meeting as a next step.
+-->
+
+---
+
+Practice B - when you are requesting an informational interview {.big}
+
+You don’t just want to connect with this person—you want to learn from them. You’re eager to setup an informational interview (or even a more informal coffee date or email chat) where you can come prepared with a list of questions you want answers to.
+
+What do we want to keep in mind as we write this email?
+
+<!--
+Ask a student to read the slide. Before clicking on the next slide, get some answers from the audience. 
+Possible ideas:
+* Who you are
+* How you know about them (or if you met them briefly - when and where)
+* An ask, in this case, to meet up
+* Meeting up is a BIG ask, so give them an “out” to possibly answer questions by email if they don’t have time to meet up
+-->
+
+---
+
+Practice B [Template] {.big}
+
+Hello [Name],
+
+I hope you’re doing well!
+
+
+My name is [Your name], and I’m a [job title] with [Company]. I really admire your [work/experience] with [outlet]. I’m interested in finding out more about [area] myself and was hoping you’d be willing to provide some insights from your experience.
+
+
+If you’re open to it, I’d love to buy you a cup of coffee sometime soon so I can ask you some questions and learn more about you and your [journey/career path]. I understand your schedule may be busy, so, alternatively, I’m also happy to pass along some questions via email or connect by phone.
+
+
+Looking forward to hearing from you, [Name]!
+
+Best, 
+
+[Your Name]
+
+<!--
+The ask is for the informational meeting is there, but so is the option to follow up by email. This email template assumes you don’t know the person. If you DID know this person, you would just edit like the email we saw previously, adding how you know them to jog their memory and then going ahead with your ask for an informational meeting.
+-->
+
+---
+
+Practice B [Example] {.big}
+
+Hello Mitch,
+
+
+My name is Andre and I’m currently a student in a Google-sponsored intensive where I am building my Machine Learning and Data Science skills. I heard you speak about the ethics involved with data analytics and the work you are doing with the AI Ethics Research Group at the Kaggle Conference. I’m really interested in the important work happening in the space of ML fairness myself and was hoping you’d be willing to provide some insights from your experience.
+
+
+If you’re open to it, I’d love to buy you a cup of coffee sometime soon so I can ask you some questions and learn more about you and your work. I understand your schedule may be busy, so, alternatively, I’m also happy to pass along some questions via email or connect by phone.
+
+
+Looking forward to hearing from you, Mitch!
+
+Best,
+
+Andre
+
+<!--
+Notice this is a very specific request Mitch is making. Also notice he is providing multiple options for Rachel to choose from regarding how to connect. If Rachel agrees to chat with Mitch, she is doing the favor and therefore should choose the medium.
+-->
+
+---
+
+Practice C - when you are connecting with the friend of a friend {.big}
+
+Your friend or colleague recommended that you reach out to one of his acquaintances, as he thought you’d have a lot to connect on. Rather than making an introduction, he passed along that person’s contact information and encouraged you to get in touch.
+
+What do we want to be sure to include in this instance?
+
+<!--
+Before clicking on the next slide, get some answers from the audience. 
+Possible ideas:
+* The person you have in common
+* How you know that common contact
+* What did your mutual contact think you have in common?
+* An ask - why are you getting in touch with them?
+-->
+
+Practice C [Template] {.big}
+
+Hello [Name],
+
+My name is [your name], and I [how you know mutual contact] [mutual contact’s name], who passed along your contact information to me.
+
+
+[Mutual contact’s name] mentioned we share a [passion for/interest in/experience with] [shared interest] and said you’d be a great person to get to know. So, I thought I’d reach out, introduce myself, and let you know that I’d love to find out more about you and your experience with [specific area].
+
+
+Looking forward to connecting, [Name]!
+
+All the best,
+
+[Your Name]
+
+<!--
+Maybe it’s a shared passion or interest, or maybe it’s a job or career you may be interested in. You can tailor this template accordingly so that it meets your needs.
+-->
+
+---
+
+Practice C [Example] {.big}
+
+Hello David,
+
+My name is Sidnie, and I’m good friends with Clint, who passed along your contact information to me.
+
+
+Clint mentioned we share a passion for dog rescues and said you’d be a great person to get to know! So, I thought I’d reach out, introduce myself, and let you know that I’d love to find out more about you and your experience with Saving Paws Rescue.
+
+
+Would you possibly have 15-20 minutes to connect in person, over Skype, or via phone in the next few weeks?
+
+Looking forward to connecting, David!
+
+All the best,
+
+Sidnie
+
+<!--
+Here’s a good reminder that these best practices can be used for personal networking and hobbies as well as purely professional. 
+-->
+
+---
+
+5.) DON'T: forget to say thank you
+
+* Send a follow up email, or even better - a handwritten thank you note when possible
+* Let your contacts know the outcome when they’ve helped you out
+* No act is too simple to express gratitude to someone
+
+<!--
+* Always send someone a “thank you” email, even if it’s just to thank them for a brief conversation, if at all possible, it’s a great idea to send someone a thank you note if you can easily access their mailing address (you should use their professional mailing address) It will set you apart in a time when most people will use technology. Just make sure to use careful handwriting and spelling.
+* If someone connected you with an interview for a job, funding for a startup, or a donation to a cause you are championing, let them know the outcome, send an email letting them know you got the job, grew your company by 5%, or raised $5,000 for ALS research. Whatever the outcome, thank them for their time, making the connection, or their donation.
+* It's a simple step that many people miss. Show appreciation when someone does something nice for you online. Whether it's responding to a few questions, retweeting a link to your blog post, or even connecting you with one of their friends — it's always appropriate to express your gratitude. It's especially important to follow-up after someone has provided advice. People like to feel helpful, so let them know if their advice was useful for you.
+-->
+
+---
+
+6.) DO: use appropriate salutations/closings
+
+* “Hi” is fine for casual emails, but “Hello” is better for more formal emails
+ * “Dear” is probably antiquated at this point
+ * “To Whom It May Concern” is too nonspecific - try to narrow it down
+* Use “Mr./Ms.” for more formal, but if you are not sure, just use their first name
+ * Not sure if they are a “Dr.”? Try to do some research
+* For closing, “Best” is BEST, “With Regards” for more formal writing
+ * Do NOT “Cheers” - sounds like you are going drinking, and “Yours” sounds like a love note closing in high school :)
+
+
+
+
+
+
 
