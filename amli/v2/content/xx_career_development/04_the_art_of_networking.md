@@ -143,7 +143,7 @@ Source: Photo by Akson on Unsplash
 
 ---
 
-Practice A - when you are following up with someone you met briefly {.big}
+**Practice A - when you are following up with someone you met briefly** {.big}
 
 You made some polite small talk and then exchanged business cards with this person at a networking event. Now—rather than letting that contact information collect dust in your desk drawer—you want to take the next step to forge a relationship.
 
@@ -158,7 +158,7 @@ What are some things we want to include as we craft this email?
 
 ---
 
-Practice A [Template] {.big}
+**Practice A [Template]** {.big}
 
 Hello [Name],
 
@@ -181,7 +181,7 @@ This template is an example and certainly not the only way to follow up after me
 
 ---
 
-Practice A [Example] {.big}
+**Practice A [Example]** {.big}
 
 Hello Imani,
 
@@ -204,7 +204,7 @@ Here, we went with an article to keep the conversation going - a great option if
 
 ---
 
-Practice B - when you are requesting an informational interview {.big}
+**Practice B - when you are requesting an informational interview** {.big}
 
 You don’t just want to connect with this person—you want to learn from them. You’re eager to setup an informational interview (or even a more informal coffee date or email chat) where you can come prepared with a list of questions you want answers to.
 
@@ -221,7 +221,7 @@ Possible ideas:
 
 ---
 
-Practice B [Template] {.big}
+**Practice B [Template]** {.big}
 
 Hello [Name],
 
@@ -246,7 +246,7 @@ The ask is for the informational meeting is there, but so is the option to follo
 
 ---
 
-Practice B [Example] {.big}
+**Practice B [Example]** {.big}
 
 Hello Mitch,
 
@@ -269,7 +269,7 @@ Notice this is a very specific request Mitch is making. Also notice he is provid
 
 ---
 
-Practice C - when you are connecting with the friend of a friend {.big}
+**Practice C - when you are connecting with the friend of a friend** {.big}
 
 Your friend or colleague recommended that you reach out to one of his acquaintances, as he thought you’d have a lot to connect on. Rather than making an introduction, he passed along that person’s contact information and encouraged you to get in touch.
 
@@ -286,7 +286,7 @@ Possible ideas:
 
 ---
 
-Practice C [Template] {.big}
+**Practice C [Template]** {.big}
 
 Hello [Name],
 
@@ -308,7 +308,7 @@ Maybe it’s a shared passion or interest, or maybe it’s a job or career you m
 
 ---
 
-Practice C [Example] {.big}
+**Practice C [Example]** {.big}
 
 Hello David,
 
@@ -332,7 +332,7 @@ Here’s a good reminder that these best practices can be used for personal netw
 
 ---
 
-5.) DON'T: forget to say thank you
+5.) DON'T: forget to say thank you {.big}
 
 * Send a follow up email, or even better - a handwritten thank you note when possible
 * Let your contacts know the outcome when they’ve helped you out
@@ -346,7 +346,7 @@ Here’s a good reminder that these best practices can be used for personal netw
 
 ---
 
-6.) DO: use appropriate salutations/closings
+6.) DO: use appropriate salutations/closings {.big}
 
 * “Hi” is fine for casual emails, but “Hello” is better for more formal emails
   * “Dear” is probably antiquated at this point
@@ -367,7 +367,7 @@ Does anyone have a signoff they use that they want advice on? [Elicit student co
 
 ---
 
-7.) DO: be ready to meet people! 
+7.) DO: be ready to meet people! {.big}
 
 * Have a firm handshake
 * Have your resume updated and ready to go
@@ -385,7 +385,7 @@ Does anyone have a signoff they use that they want advice on? [Elicit student co
 
 ---
 
-8.) DO: craft your elevator pitch
+8.) DO: craft your elevator pitch {.big}
 
 * Be ready to succinctly describe who you are, what you do, and what your goals are 
 * Practice!
