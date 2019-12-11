@@ -39,9 +39,9 @@ and regulations on information privacy.`_ On the other hand, there are plenty of
 publicly available datasets with important information. `Here are some of the 
 most popular published datasets from 2018.`_
 
-For more help on exporting data from Sheets, `check out this guide`_
+For more help on publishing data from Sheets, `check out this guide`_
 
 
 .. _laws and regulations on information privacy.: https://en.wikipedia.org/wiki/Information_privacy
 .. _Here are some of the most popular published datasets from 2018.: https://data.world/blog/top-10-datasets-2018/
-.. _check out this guide: https://support.google.com/docs/answer/9330963?hl=en
+.. _check out this guide: https://support.google.com/docs/answer/183965?co=GENIE.Platform%3DDesktop&hl=en
