@@ -284,6 +284,8 @@ Possible ideas:
 * An ask - why are you getting in touch with them?
 -->
 
+---
+
 Practice C [Template] {.big}
 
 Hello [Name],
@@ -347,16 +349,91 @@ Here’s a good reminder that these best practices can be used for personal netw
 6.) DO: use appropriate salutations/closings
 
 * “Hi” is fine for casual emails, but “Hello” is better for more formal emails
- * “Dear” is probably antiquated at this point
- * “To Whom It May Concern” is too nonspecific - try to narrow it down
+  * “Dear” is probably antiquated at this point
+  * “To Whom It May Concern” is too nonspecific - try to narrow it down
 * Use “Mr./Ms.” for more formal, but if you are not sure, just use their first name
- * Not sure if they are a “Dr.”? Try to do some research
+  * Not sure if they are a “Dr.”? Try to do some research
 * For closing, “Best” is BEST, “With Regards” for more formal writing
- * Do NOT “Cheers” - sounds like you are going drinking, and “Yours” sounds like a love note closing in high school :)
+  * Do NOT “Cheers” - sounds like you are going drinking, and “Yours” sounds like a love note closing in high school :)
 
+<!--
+* Just a quick note on how to open and close emails - you can show some personality here, within reason, but you don’t want your opening/closing/or subject line to be silly or distracting.
+* If you are not sure of the gender of the person you are emailing for some reason, use their name only. “Miss” and “Mrs.” guess at a woman’s married status and are pretty passeé now. “Mx.” is gaining traction as a gender neutral greeting, but hasn’t fully caught on yet. However, if someone refers to themselves this way, by all means use it
+* As a general rule, follow the lead of the person introducing you, or how the person refers to themselves. You always start more formal - unless the person is close in age to you, I would say. If the person then asks you to refer to them by their first name, do that
+* If you’re not sure if someone has an MD or PhD and your research doesn’t give you an answer, use your best judgment. If they are faculty, you can always say “Professor” this still shows respect for their education and role, even if you aren’t sure of their credentials
+* For signing off, use your best judgment. I like “Best” - “Best Wishes” sounds a little too fluffy to me, but is still fine. “Regards” also works, but is pretty formal and a little stiff. Personally, “Cheers” and “Yours” don’t work for me. 
+Does anyone have a signoff they use that they want advice on? [Elicit student contributions and respond to each.]
+-->
 
+---
 
+7.) DO: be ready to meet people! 
 
+* Have a firm handshake
+* Have your resume updated and ready to go
+* Save contacts somewhere centralized with notes
+* Treat everyone you meet with respect
+* **Activity**: shake hands with as many people in the room as you can for the next 30 seconds
 
+<!--
+* A firm handshake is still very important; avoid being TOO firm, but when you shake hands, firmly grasp the right hand of the person with your right hand only, then pump up and down once or twice only while making eye contact and exchanging names, saying “nice to meet” you and remembering to smile between all that! If you know you have sweaty hands (a lot of people do especially when they are nervous, subtly wipe your palms first as you walk up)
+* Always have your resume updated and ready to go, saved as a PDF, or on Google drive. Leave off the objective so you don’t have to continually personalize. Spend time after every new role you take adding that information. You wouldn’t believe how many opportunities people miss by not having an updated resume saved to their computers.
+* Business cards disappear easily, so transfer contacts to your phone, email or another centralized place. If possible, make a quick note of title, company, and anything else as a small note that will remind you of who this person is and what you talked about  - they may not be someone you think will be an important contact now, but you never know, so try to keep a record and details to jog your memory.
+* Along those lines, you never know who will be in a position to help you or give you advice now or in the future, so remember to use you manners an treat everyone with respect.
+* Set a timer for 30 seconds, make everyone get up and PRACTICE an appropriate handshake, eye contact, and a positive, confident introduction!
+-->
 
+---
 
+8.) DO: craft your elevator pitch
+
+* Be ready to succinctly describe who you are, what you do, and what your goals are 
+* Practice!
+* Keep your “pitch” up to date
+
+<!--
+* You should practice being able to describe who you are, what your goals are, and what you’re involved in. Trust me, you’ll use this at everything from career fairs to family weddings. 
+* You may want to slightly tailor your pitch based on different roles you hold  - for instance, you may have a “pitch” about where you go to school, what you want to study, and the kinds of careers or opportunities you are looking for when you got to something like a career fair, but if you are at a meeting for club presidents and you head up the Computer Science club, you may have a pitch of what your club does, how many members you have, and your goals for this year.
+* There will always be a reason to sell what you do in a very short window of time. It will always play in your favor if you maintain the ability to do that in a way that manages to cover who you are, what you do, and why it’s relevant. Try to come off as casual, efficient, and not forced or pushy. Easy, right? We know it’s not, which is why you should practice ahead of time. * In a mirror. Repeatedly. And, like a resume, elevator pitches need periodic updating.
+-->
+
+---
+
+# Questions?
+
+![](res/artofnetworking03.jpg)
+
+<!--
+What questions do you have?
+
+Source: Photo by Alejandro Escamilla on Unsplash
+-->
+
+---
+
+# Activity
+
+* Spend two minutes crafting your one-minute elevator-pitch. Include your name, where you attend school, your major, and opportunities that interest you, like an internship or full time job in a specific field.
+* Pick a partner and take turns giving your elevator pitches; start out by shaking their hand, looking them in the eye, and then saying your pitch.
+* Solicit feedback from your partner. Don’t forget feedback on the handshake, too!
+* Take one more turn if you have time, using the feedback you were given.
+
+<!--
+Let’s craft or fine-tune our elevator pitches so we’re ready to meaningfully connect with people when those opportunities arise!
+-->
+
+---
+
+# Next steps
+
+Open up your laptop, reach out to one connection on LinkedIn (or another platform of your choosing) to let them know what you’re up to and share your resume or set up next steps like any of those we reviewed today.
+
+If you do not have a LinkedIn profile, please make one and be sure to include AMLI as an experience! Our next career development session is about LinkedIn!
+
+![](res/artofnetworking04.jpg)
+
+<!--
+Circulate to help students formulate emails, respond to recruiters, etc. If students say they don’t have anyone to reach out to - how about a faculty speaker, or just someone they can send a “thank you” and update to? Doesn’t have to be a cold email.
+
+Source: Photo by Avel Chuklanov on Unsplash
+-->
