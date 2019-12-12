@@ -1,4 +1,5 @@
-# Applied Computing 1: Introduction to Google Sheets and SQL
+# Applied Computing 1 (AC1)
+# *Introduction to Google Sheets and SQL*
 
 ## What is AC1?
 
