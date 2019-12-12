@@ -16,8 +16,6 @@ here. The box entitled ``Error`` tells you why Sheets could not compute the
 formula.
 
 
-.. https://screenshot.googleplex.com/KfZ5kB5ihS6
-
 .. image:: figures/sheets_error.png
    :align: center
    :alt: Cell with 1 divided by 0 with error box that says "Function DIVIDE 
