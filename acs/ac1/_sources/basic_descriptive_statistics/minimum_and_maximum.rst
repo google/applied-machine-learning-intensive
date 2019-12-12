@@ -77,6 +77,7 @@ comma.
 
 .. image:: figures/minimum_using_values.png
    :align: center
+   :alt: Google Sheets image of min function, values separated by commas
 
 
 Alternately, you can specify all the values in different cells, and input the
@@ -87,6 +88,7 @@ cell range into the ``MIN`` function.
 
 .. image:: figures/minimum_using_cell_range.png
    :align: center
+   :alt: Google Sheets image of min function using range of values
 
 
 In future examples, you will see that specifying a cell range is the more
@@ -184,6 +186,8 @@ trying to find the state with the largest population:
 
 .. image:: figures/match.png
    :align: center
+   :alt: Google Sheets side-by-side images of how changing the range affects
+         the output
 
 The last input is the manner in which you want to search. Since the values in 
 Price Percent aren’t sorted, you use 0. The final function is 
