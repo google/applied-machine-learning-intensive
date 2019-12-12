@@ -73,8 +73,6 @@ In the first way, each value is input into the ``MIN`` function, separated by a
 comma.
 
 
-.. https://screenshot.googleplex.com/wv9iEUPFF
-
 .. image:: figures/minimum_using_values.png
    :align: center
 
@@ -82,8 +80,6 @@ comma.
 Alternately, you can specify all the values in different cells, and input the
 cell range into the ``MIN`` function.
 
-
-.. https://screenshot.googleplex.com/NkogVUC3prp
 
 .. image:: figures/minimum_using_cell_range.png
    :align: center
