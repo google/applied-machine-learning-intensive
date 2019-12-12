@@ -3,6 +3,9 @@
    International License. To view a copy of this license, visit
    http://creativecommons.org/licenses/by-sa/4.0/.
 
+Summary
+=======
+
 .. image:: figures/sheets_summary.png
    :align: center
    :alt: Graphic summarizing key concepts of Sheets basics.
