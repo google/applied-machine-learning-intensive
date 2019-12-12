@@ -82,7 +82,7 @@ Which of these is something you think your presentation skills should improve on
 
 ---
 
-# Content, Delivery, and Create: make it visually appealing 
+# Content, delivery, and create: make it visually appealing 
 
 ![](res/presentconfidence03.png)
 
