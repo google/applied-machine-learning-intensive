@@ -1,7 +1,7 @@
 # AC1 Course Guide
 
 - [Overview](#overview)
-- [What is AC101?](#what-is-ac101-)
+- [What is AC1?](#what-is-ac1)
 - [Learning Objectives](#learning-objectives)
 - [Catalog Description](#catalog-description)
 - [Faculty Guidelines](#faculty-guidelines)
@@ -12,25 +12,25 @@
     + [Project Coaching](#project-coaching)
   * [Class Discussion](#class-discussion)
 - [Sample Syllabus](#sample-syllabus)
-- [Using the Instructor’s Guide](#using-the-instructor-s-guide)
+- [Using the Instructor’s Guide](#using-the-instructors-guide)
   * [Hook](#hook)
   * [Activities](#activities)
     + [Livecoding](#livecoding)
     + [Ethics](#ethics)
     + [Hypothesis Forming and Testing](#hypothesis-forming-and-testing)
   * [Datasets](#datasets)
-  * [[P1] Checks for Understanding](#-p1--checks-for-understanding)
-  * [[P1] Solutions/Output Expectations](#-p1--solutions-output-expectations)
+  * [[P1] Checks for Understanding](#p1-checks-for-understanding)
+  * [[P1] Solutions/Output Expectations](#p1-solutionsoutput-expectations)
 - [Structuring Class Time](#structuring-class-time)
 
 ## Overview
 
-Introduce instructors to the purpose and structure of AC101, including helpful
+Introduce instructors to the purpose and structure of AC1, including helpful
 guidelines for course management.
 
-## What is AC101?
+## What is AC1?
 
-The primary goal of AC101 is to teach students **data literacy**: the ability to
+The primary goal of AC1 is to teach students **data literacy**: the ability to
 access, transform, use, and interpret data, ethically and effectively, to inform
 decision-making. This is a practical, hands-on course that will teach students
 to ask and answer questions about data through spreadsheets, SQL databases, and
@@ -38,8 +38,8 @@ data visualization tools. The skills and problem solving mindset they learn will
 be highly applicable to any major or career.
 
 This is an interdisciplinary course combining concepts from data science,
-computer science, and statistics -- it is not a comprehensive introductory
-course in any of those fields. AC101 prepares students for AC201, which is a
+computer science, and statistics. It is not a comprehensive introductory
+course in any of those fields. AC1 prepares students for AC201, which is a
 more comprehensive course on Python programming and data science in Python.
 Students who do not take more courses on the subject will still have a useful
 understanding of widely-used data science tools and techniques, which they can
@@ -133,7 +133,7 @@ group work throughout the class. The end-of-module projects are large and
 designed to be completed in groups. Working in groups also better prepares
 students for real-life working environments.
 
-You may already have experience leading project-based learning -- either way, we
+You may already have experience leading project-based learning. Either way, we
 are including in this section some best practices for fostering successful
 student projects in this course.
 [Here is an article](https://uwaterloo.ca/centre-for-teaching-excellence/teaching-resources/teaching-tips/alternatives-lecturing/group-work/implementing-group-work-classroom)
@@ -152,7 +152,7 @@ when needed. Groups of three can work well also.
 There are many ways to form students into groups. One important purpose of the
 projects is so students can apply class content to practical life applications
 that interest them. They will generally have a lot of flexibility to choose
-research questions, datasets, and areas for analysis -- which can also lead to a
+research questions, datasets, and areas for analysis, which can also lead to a
 lot of conflict in making group decisions. Given that, the most successful team
 formation method we’ve found is to let students form their own groups based on
 those areas of interest for the project. Here’s a structured activity to do so:
@@ -163,7 +163,7 @@ those areas of interest for the project. Here’s a structured activity to do so
 1.  Have each student present their ideas to the class.
 1.  Option 1 (students decide): Students talk to the other students whose ideas
     interested them, forming groups amongst themselves. There might be instances
-    where too many or too few students want to be in a group -- typically,
+    where too many or too few students want to be in a group. Typically,
     students are able to resolve this themselves. If not, you may need to step
     in and mediate.
 1.  Option 2 (you decide): Students submit their top 3 interests after seeing
@@ -175,7 +175,7 @@ comfortable with working together, and can coordinate time to meet/work outside
 of class.
 
 Finally, disagreements will be inevitable. Remind students of relevant classroom
-guidelines that you decided on together at the start of class -- hopefully these
+guidelines that you decided on together at the start of class. Hopefully these
 principles have been reinforced throughout the in-class exercise work as well.
 If they have strong concerns about their group dynamic, they should talk to you.
 
@@ -200,7 +200,7 @@ actually do work incrementally, rather than saving it all for the night before,
 and gives you another chance to give feedback. For example, for the Module C
 project, you could specify a “midpoint checkin” in week 5 by which students must
 have completed all the SQL analysis up to step 6. Create as many milestones as
-you think will be useful -- even if you don’t require any, check-in with groups
+you think will be useful. Even if you don’t require any, check-in with groups
 to make sure they’re setting milestones for themselves.
 
 Other good practices:
@@ -282,7 +282,7 @@ We want students to think about the ethics of data science early and often
 during the course. As ever-increasing amounts of data are collected and used for
 decision-making, there are ever-increasing opportunities for abuse of data.
 Developing data literacy involves understanding that data is not facts and
-figures in a vacuum -- every time they interact with data, students should
+figures in a vacuum. Every time they interact with data, students should
 consider potential concerns with its collection, analysis, and interpretation.
 
 We’ll mark real-world applications and ethical questions related to the learning
@@ -315,15 +315,6 @@ that day. The purpose is to give you familiarity with the datasets and prepare
 you for any questions that may arise. We’ll explain the dataset source, schema,
 our motivation for choosing it, and any tricky areas to be aware of in working
 with them.
-
-### [P1] Checks for Understanding
-
-With AIs if students aren’t understanding. TODO: guide on good checks for
-understanding
-
-### [P1] Solutions/Output Expectations
-
-Harvey Mudd Clinic
 
 ## Structuring Class Time
 

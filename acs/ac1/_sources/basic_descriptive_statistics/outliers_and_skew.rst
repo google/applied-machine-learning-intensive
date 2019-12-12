@@ -82,8 +82,6 @@ Example: Positive Skew
 Consider the histogram of a variable below.
 
 
-.. https://screenshot.googleplex.com/CDZJYuvheh1
-
 .. image:: figures/right_skew_histogram.png
    :align: center
    :alt: A histogram of a variable with positive skew. It has a right tail which means there are more values on the right side of the mean.
@@ -124,8 +122,6 @@ Outliers also have different effects on different measures of center. See what
 happens to the mean and median for the dice roll when the 6 is changed to a 60.
 
 
-.. https://screenshot.googleplex.com/CFU6x5845z2
-
 .. image:: figures/uneven_dice_mean.png
    :align: center
    :alt: A screenshot of a table in Sheets. The average dice roll when the 6 value is changed to 60.
@@ -134,8 +130,6 @@ happens to the mean and median for the dice roll when the 6 is changed to a 60.
 The mean of the dice roll is now 12.5! Only one value was changed, yet the mean
 changed drastically.
 
-
-.. https://screenshot.googleplex.com/5Jy8HGAhgXd
 
 .. image:: figures/uneven_dice_median.png
    :align: center

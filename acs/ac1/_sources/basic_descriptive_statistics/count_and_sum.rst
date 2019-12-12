@@ -49,7 +49,6 @@ the range, separated by a colon. For example:
 
 -   “A1” refers to cell A1
 
-.. https://screenshot.googleplex.com/F0X547QtW1Y
 
 .. image:: figures/cell_A1.png
    :align: center
@@ -58,7 +57,6 @@ the range, separated by a colon. For example:
 
 -   “A1:A6” means all cells in the A column from rows 1 through 6
 
-.. https://screenshot.googleplex.com/f9Vqz8V3u7d
 
 .. image:: figures/cells_A1_A6.png
    :align: center
@@ -67,7 +65,6 @@ the range, separated by a colon. For example:
 
 -   “A1:D1” means all cells in the 1 row from columns A through D
 
-.. https://screenshot.googleplex.com/bHAPFd3DC4O
 
 .. image:: figures/cells_A1_D1.png
    :align: center
@@ -76,7 +73,6 @@ the range, separated by a colon. For example:
 
 -   “A1:D6” means all cells in rows 1 through 6 and columns A through D
 
-.. https://screenshot.googleplex.com/7Eni7pw80hL
 
 .. image:: figures/cells_A1_D6.png
    :align: center

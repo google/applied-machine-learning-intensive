@@ -100,8 +100,6 @@ so the formula is as follows.
    =B2*18/12
 
 
-.. https://screenshot.googleplex.com/WRcQNS1jEEQ
-
 .. image:: figures/chocolate_cake_flour_for_18_servings.png
    :align: center
 
@@ -130,8 +128,6 @@ Use column D to show the amount required for the custom number of servings, and
 use cell E2 to store the desired number of servings, as below.
 
 
-.. https://screenshot.googleplex.com/8fAdyqz19P4
-
 .. image:: figures/chocolate_cake_custom_servings.png
    :align: center
 
@@ -140,8 +136,6 @@ Now, you can write a formula in column D, similar to the formulas in column C,
 except instead of **hardcoding** (entering a number manually) the number of
 servings, use cell E2 to indicate the number of servings.
 
-
-.. https://screenshot.googleplex.com/sOJe1zonsHk
 
 .. image:: figures/chocolate_cake_flour_for_custom_servings.png
    :align: center
@@ -167,8 +161,6 @@ The formula in cell D2 references cells B2 and E2. When you copy-paste this
 formula to D3, Sheets assumes you want the formula to update to reference cells
 B3 and E3.
 
-
-.. https://screenshot.googleplex.com/fDO6Vri1O3V
 
 .. image:: figures/chocolate_cake_relative_referencing_not_working.png
    :align: center
@@ -234,8 +226,6 @@ referenced absolutely. So, the formula for cell D3 should be as below.
 
 Copy-pasting this formula down for the other ingredients now works as intended.
 
-
-.. https://screenshot.googleplex.com/XkSctAUZVNa
 
 .. image:: figures/chocolate_cake_amounts_for_custom_servings.png
    :align: center
@@ -348,9 +338,9 @@ important things!
 Example: Painters
 -----------------
 
-To further illustrate how recursive formulas can automate data processing,
-consider the painters dataset again. Don’t worry if this example seems a bit
-daunting at first; it is designed to be challenging.
+To further illustrate how formulas can automate data processing, consider the 
+painters dataset again. Don’t worry if this example seems a bit daunting at
+first; it is designed to be challenging.
 
 Suppose you’re interested in studying only the most prolific French painters,
 specifically French painters who produced over 200 paintings in their lifetimes.

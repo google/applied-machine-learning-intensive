@@ -15,3 +15,4 @@ Sheets Basics
    what_is_a_sheet.rst
    what_is_a_formula.rst
    errors.rst
+   summary.rst

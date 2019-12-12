@@ -32,7 +32,7 @@
     "colab": 60,
     "reflection": 10
   },
-  "learning_objectives": [
+  "learning-objectives": [
     "Apply ensemble learning to a machine learning problem using random forests.",
     "Understand ensemble techniques such as bagging and boosting.",
     "Modify random forest hyperparameters in order to optimize a model."

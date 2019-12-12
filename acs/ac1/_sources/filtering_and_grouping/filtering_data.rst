@@ -53,8 +53,6 @@ Create a filter”. Make sure that your cursor is clicked anywhere around the da
 that is to be filtered. In this example, it is anywhere in the range A1:H51.
 
 
-.. https://screenshot.googleplex.com/cjxxxDAaJV8
-
 .. image:: figures/create_a_filter.png
    :align: center
 
@@ -66,8 +64,6 @@ click on the nationality filter icon. In this case, you are filtering by a value
 select “French”, either by scrolling through the values, or by typing “French”.
 
 
-.. https://screenshot.googleplex.com/8ospuxkfvzG
-
 .. image:: figures/filter_french_painters.png
    :align: center
 
@@ -75,8 +71,6 @@ select “French”, either by scrolling through the values, or by typing “Fre
 When you click “OK”, the result will be only French painters, and the
 nationality filter icon is now filled, rather than empty.
 
-
-.. https://screenshot.googleplex.com/wFYYf2FACqB
 
 .. image:: figures/filtered_french_painters.png
    :align: center
@@ -92,8 +86,6 @@ So within the filter box, you should select “Filter by condition”, scroll to
 of paintings being greater than 200.
 
 
-.. https://screenshot.googleplex.com/DtiDPZKsMKN
-
 .. image:: figures/filter_over_200_paintings.png
    :align: center
 
@@ -102,8 +94,6 @@ Once this is done, the green filter icon should be filled, and you should see
 only three rows left. Specifically, the same three painters found using formulas
 in the previous example: Renoir, Degas, and Gauguin.
 
-
-.. https://screenshot.googleplex.com/3e5BfB4k9vX
 
 .. image:: figures/french_painters_with_over_200_paintings.png
    :align: center
@@ -144,8 +134,6 @@ by condition”. You can change the filter applied to the “nationality” colu
 from a “Filter on values” to a “Filter on condition”. You can scroll to “Text
 contains”, then type the word “French”.
 
-
-.. https://screenshot.googleplex.com/FeBwGZsztoe
 
 .. image:: figures/filter_painters_with_any_french_nationality.png
 
@@ -192,8 +180,6 @@ example, suppose you wanted to sort the painters dataset alphabetically by
 genre.
 
 
-.. https://screenshot.googleplex.com/u25s9GWmyGT
-
 .. image:: figures/painters_sort_genre.png
    :align: center
 
@@ -202,8 +188,6 @@ Note that you can sort “A-Z” or “Z-A”. If you try to sort a numeric colu
 will see the same options (“A-Z” or “Z-A”), but these will act as numeric
 sorters, and denote “lowest to highest” and “highest to lowest” respectively.
 
-
-.. https://screenshot.googleplex.com/dOPjoGouzZZ
 
 .. image:: figures/painters_sort_paintings.png
    :align: center
