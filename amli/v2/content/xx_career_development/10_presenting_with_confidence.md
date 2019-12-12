@@ -215,12 +215,12 @@ Questions before we get started?
 
 Practice {.big}
 
-Introduce yourself and your topic
-* Hello, my name is ____ and today I’ll be talking about ____.
-What do you want your audience to know?
- * Main Point 1 - support with evidence, data, or story
- * Main Point 2 - support with evidence, data, or story
-Conclude
+* Introduce yourself and your topic
+  * Hello, my name is ____ and today I’ll be talking about ____.
+* What do you want your audience to know?
+  * Main Point 1 - support with evidence, data, or story
+  * Main Point 2 - support with evidence, data, or story
+* Conclude
  * Emphasize the most important points
  * Thank the audience for their time
  
