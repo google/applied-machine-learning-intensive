@@ -92,9 +92,9 @@ Remember from our last session that the best responses to behavioral interview q
 * Be specific, kind and direct
 * Be sure to share things that went well, as well as things that could  be improved
 
-*“I would try…”* 
-*“I liked it when you said…”*
-*“I noticed…”*
+1. *“I would try…”* 
+1. *“I liked it when you said…”*
+1. *“I noticed…”*
 
 .
 
@@ -105,8 +105,8 @@ Remember from our last session that the best responses to behavioral interview q
 * Don’t go back and forth or argue a point; let feedback wash over you
 * Only take what you want. Feedback is a suggestion, so keep the points you think are important and let the rest go.
 
-*“Thanks for your feedback.”*
-*“I appreciate your suggestion.”*
+1. *“Thanks for your feedback.”*
+1. *“I appreciate your suggestion.”*
 
 .
 
@@ -177,12 +177,3 @@ I hope you remember this from the technical interviews, but please don’t forge
 -->
 
 ---
-
-
-
-
-
-
-
-
-
