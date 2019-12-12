@@ -11,7 +11,7 @@ be highly applicable to any major or career.
 
 This is an interdisciplinary course combining concepts from data science,
 computer science, and statistics. It is not a comprehensive introductory
-course in any of those fields. AC1 prepares students for AC201, which is a more
+course in any of those fields. AC1 prepares students for more comprehensive
 comprehensive course on Python programming and data science in Python. Students
 who do not take more courses on the subject will still have a useful
 understanding of widely-used data science tools and techniques, which they can
