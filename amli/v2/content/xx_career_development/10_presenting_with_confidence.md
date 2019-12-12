@@ -80,7 +80,9 @@ Pausing allows you time to think and also be effectively used to create anticipa
 Which of these is something you think your presentation skills should improve on? Or what do you feel like you do well? [Solicit student contributions, and respond to each.]
 -->
 
-Create: make it visually appealing
+---
+
+Create: make it visually appealing {.big}
 
 ![](res/presentconfidence03.png)
 
@@ -143,12 +145,7 @@ What questions or comments do you have about the content we’ve covered so far?
 
 ---
 
-# Activity + Practice
-
-* Read the list of values in front of you
-* Underline the 10 values that resonate with you most
-* Star 5 of those 10 values that are most important to you *
-* Finally, circle 2 of those 5 values that feel like your most core values, those you can’t separate yourself from 
+# Activity + Practice 
 
 <!--
 Let’s do a brief activity and then put these presentation guidelines into practice!
@@ -156,8 +153,20 @@ Let’s do a brief activity and then put these presentation guidelines into prac
 [Pass out list of values handout.]
 -->
 
-Activity
+---
 
+Activity {.big}
+
+* Read the list of values in front of you
+* Underline the 10 values that resonate with you most
+* Star 5 of those 10 values that are most important to you *
+* Finally, circle 2 of those 5 values that feel like your most core values, those you can’t separate yourself from 
+
+---
+
+Activity {.big}
+
+<--
 [Do NOT click until all the text appears. When this slide appears, only the first two lines will be visible. That text is all students should see until you give the first instructions and allow them time to read the values and underline the 10 that are most important to them. Provide 3-5 minutes.]
 
 Take a moment to read over the list of values in front of you. When you’re done, underline the 10 values that resonate with you most.
@@ -181,6 +190,8 @@ Does anyone want to share what 1 or 2 of their values are? [Solicit students con
 
 ---
 
+Practice {.big}
+
 * Pick a partner
 * Take 3-4 minutes to prepare a 1½ -2 minute presentation on this prompt:
   * What are the two values that are most important to you?
@@ -192,8 +203,53 @@ Does anyone want to share what 1 or 2 of their values are? [Solicit students con
 * Share one strength and one area of improvement for your partner after they present
     * Remember, helpful feedback is clear, specific, kind, future-focused, and starts with “I”
 
+<!--
+Now, we’re going to share these values in a brief presentation to a partner. (We’ll also revisit these values in our next career development session, so don’t forget what you chose!)
 
+[Ask a student to read the instructions aloud.]
 
+Questions before we get started? 
+-->
 
+---
 
+Practice {.big}
 
+Introduce yourself and your topic
+* Hello, my name is ____ and today I’ll be talking about ____.
+What do you want your audience to know?
+ * Main Point 1 - support with evidence, data, or story
+ * Main Point 2 - support with evidence, data, or story
+Conclude
+ * Emphasize the most important points
+ * Thank the audience for their time
+ 
+ <!--
+Here’s one way you can structure your presentation, but feel free to be creative. Note that this isn’t a likely a place for data, but I wanted to include it as a method of supporting a main point.
+
+[If desired, facilitator can share an example presentation before releasing students.]
+
+[Flip back to previous slide so those instructions are displayed for students as they work. Give students 10 minutes total for this entire exercise, letting them know when they should transition from preparing the presentations to giving them and switching between partners.]
+-->
+
+---
+
+# Any volunteers?
+
+<!--
+[After students have presented to their partners and given and received feedback, ask if anyone would like to present to the class. Thank students who volunteer. Move on to closing if no one volunteers or if running short on time.]
+
+What was this experience like for you? Which of the best practices we went over were difficult to apply? What did you or your partner do particularly well? What would you work to improve if you gave this presentation again?
+-->
+
+---
+
+# Q&A
+
+<--
+Thank you all so much for engaging in this session and sharing about yourselves in these presentations. We are going to revisit these two values in our next session about the offer process, so remember what you’ve selected. 
+
+As I mentioned in the beginning of this presentation, becoming a presenter takes time and involves significant, frequent practice. I hope you’ve taken something from today’s session that you can apply to your project presentations and other presentations you give in the future. What remaining questions do you have? [Solicit student questions/comments, and respond to each.]
+-->
+
+---
