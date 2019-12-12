@@ -221,8 +221,8 @@ Practice {.big}
   * Main Point 1 - support with evidence, data, or story
   * Main Point 2 - support with evidence, data, or story
 * Conclude
- * Emphasize the most important points
- * Thank the audience for their time
+  * Emphasize the most important points
+  * Thank the audience for their time
  
  <!--
 Here’s one way you can structure your presentation, but feel free to be creative. Note that this isn’t a likely a place for data, but I wanted to include it as a method of supporting a main point.
