@@ -227,7 +227,7 @@ Response should include:
 
 ---
 
-Sample response
+Sample response {.big}
 
 ![](res/commrecruiter06.png)
 
