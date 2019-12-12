@@ -31,7 +31,7 @@ We’ll start by going over what makes a successful presentation: content, deliv
 
 ---
 
-# Content + Deliery = Success
+# Content + Delivery = Success
 
 ![](res/presentconfidence01.jpg)
 
@@ -41,7 +41,7 @@ The two main components of giving a presentation are the content - what you say 
 
 ---
 
-Content: go from good to great! {.big}
+# Content: go from good to great! 
 
 * Know your audience
 * Tell a story
@@ -62,7 +62,7 @@ Finally, it’s important to summarize the main points of your presentation -- a
 
 ---
 
-Delivery: the four Ps of presenting {.big}
+# Delivery: the four Ps of presenting 
 
 ![](res/presentconfidence02.png)
 
@@ -82,7 +82,7 @@ Which of these is something you think your presentation skills should improve on
 
 ---
 
-Create: make it visually appealing {.big}
+# Content, Delivery, and Create: make it visually appealing 
 
 ![](res/presentconfidence03.png)
 
@@ -155,7 +155,7 @@ Let’s do a brief activity and then put these presentation guidelines into prac
 
 ---
 
-Activity {.big}
+# Activity 
 
 * Read the list of values in front of you
 * Underline the 10 values that resonate with you most
@@ -166,7 +166,7 @@ Activity {.big}
 
 Activity {.big}
 
-<--
+<!--
 [Do NOT click until all the text appears. When this slide appears, only the first two lines will be visible. That text is all students should see until you give the first instructions and allow them time to read the values and underline the 10 that are most important to them. Provide 3-5 minutes.]
 
 Take a moment to read over the list of values in front of you. When you’re done, underline the 10 values that resonate with you most.
@@ -190,7 +190,7 @@ Does anyone want to share what 1 or 2 of their values are? [Solicit students con
 
 ---
 
-Practice {.big}
+# Practice 
 
 * Pick a partner
 * Take 3-4 minutes to prepare a 1½ -2 minute presentation on this prompt:
@@ -236,6 +236,8 @@ Here’s one way you can structure your presentation, but feel free to be creati
 
 # Any volunteers?
 
+![](res/presentconfidence04.jpg)
+
 <!--
 [After students have presented to their partners and given and received feedback, ask if anyone would like to present to the class. Thank students who volunteer. Move on to closing if no one volunteers or if running short on time.]
 
@@ -246,7 +248,7 @@ What was this experience like for you? Which of the best practices we went over 
 
 # Q&A
 
-<--
+<!--
 Thank you all so much for engaging in this session and sharing about yourselves in these presentations. We are going to revisit these two values in our next session about the offer process, so remember what you’ve selected. 
 
 As I mentioned in the beginning of this presentation, becoming a presenter takes time and involves significant, frequent practice. I hope you’ve taken something from today’s session that you can apply to your project presentations and other presentations you give in the future. What remaining questions do you have? [Solicit student questions/comments, and respond to each.]
