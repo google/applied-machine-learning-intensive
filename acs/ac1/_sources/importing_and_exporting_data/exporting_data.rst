@@ -3,10 +3,11 @@
     International License. To view a copy of this license, visit
     http://creativecommons.org/licenses/by-sa/4.0/.
 
+
 .. importing_and_exporting_data:
 
-Exporting Data {#exporting-data}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Exporting Data
+--------------
 
 Exporting data is even easier than importing data. If you have a file
 sheet that is ready for export, you can just click “File > Download”,
@@ -25,8 +26,8 @@ formats above. This is a useful way to share data that will be continually
 updated.
 
 .. image:: figures/publish_data.png
-    :align: center
-    :alt: A screenshot of the pop up box when publishing a spreadsheet from Google Sheets.
+   :align: center
+   :alt: A screenshot of the pop-up box when publishing a spreadsheet from Google Sheets.
 
 This image is an example of what it looks like to publish a spreadsheet from 
 Sheets. On the left selection pane, choose how much of the file to publish. On
@@ -35,7 +36,7 @@ the right selection pane, choose which file type to publish as.
 Always be careful to ensure no private information is present in a dataset that
 you publish. There may be instances where your dataset holds sensitive 
 information. It is important to know when that is, and to understand the `laws 
-and regulations on information privacy.`_ On the other hand, there are plenty of
+and regulations on information privacy`_. On the other hand, there are plenty of
 publicly available datasets with important information. `Here are some of the 
 most popular published datasets from 2018.`_
 
