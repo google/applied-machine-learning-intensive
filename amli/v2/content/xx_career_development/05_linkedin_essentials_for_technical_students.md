@@ -46,7 +46,7 @@ I get asked this question a lot: “My LinkedIn is just my resume, right?” We�
 
 ---
 
-# How LinkedIn is **similar** to a resume 
+# How LinkedIn is *similar* to a resume 
 
 * Experience section
     * List every employer, position, and when you worked there. Flesh it all out as you can.  
@@ -63,7 +63,7 @@ I get asked this question a lot: “My LinkedIn is just my resume, right?” We�
 
 ---
 
-# How LinkedIn is **different** from a resume
+# How LinkedIn is *different* from a resume
 
 * About me section
    * Be self-absorbed in a professional way. Talk about who you are, what you do, what you want to do.
@@ -82,7 +82,7 @@ I get asked this question a lot: “My LinkedIn is just my resume, right?” We�
 
 ---
 
-# How LinkedIn is **different** from a resume
+# How LinkedIn is *different* from a resume
 
 * It can be as long as you want
    * Don’t skimp on truthful keywords or skills!
