@@ -63,7 +63,7 @@ We’re going to start by discussing growth mindset, and then we’ll go into be
 * Shift the focus from a fixed mindset of “being good” to a growth mindset of “getting better”
 * When possible, give feedback on the process, not the outcome
 
-![](res/linkedin01.png)
+![](res/feedback01.png)
 
 <!--Before we even get to talking about giving and receiving feedback, let’s ground this conversation in an important scientific concept related to feedback: growth mindset. 
 -->
@@ -108,7 +108,7 @@ These are the differences between growth mindset and fixed mindset. “In a grow
 
 # Best practices for giving feedback
 
-![](res/linkedin02.png)
+![](res/feedback02.png)
 
 <!--
 Here are some best practices for giving feedback. How you deliver the feedback can depend on the situation and the person on the receiving end, but these are generally helpful guidelines to keep in mind when delivering feedback.
@@ -118,7 +118,7 @@ Are there other best practices you can think of?
 
 ---
 
-![](res/linkedin03.png)
+![](res/feedback03.png)
 
 <!--
 Let’s apply those best practices to some examples. What’s the difference between the two pieces of feedback shown here? [Elicit student contributions and respond.]
@@ -129,7 +129,7 @@ Er...not so helpful…: person-focused, vague, unkind, entirely critical, “you
 
 ---
 
-![](res/linkedin04.png)
+![](res/feedback04.png)
 
 <!--
 What about this one? [Elicit student contributions and respond.]
@@ -140,7 +140,7 @@ Er...not so helpful…: person-focused, vague, unkind, entirely critical, “you
 
 ---
 
-![](res/linkedin05.png)
+![](res/feedback05.png)
 
 <!--
 Here’s a last example. What do you think? [Elicit student contributions and respond.]
@@ -204,7 +204,7 @@ One way to become more open to developmental feedback is to think of feedback as
 
 ---
 
-Some helpful frames for responding to feedback:
+Some helpful frames for responding to feedback: {.big}
 
 
 * *“Thank you for the feedback.”*
