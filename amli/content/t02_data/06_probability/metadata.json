@@ -4,9 +4,7 @@
   "materials": [],
   "resources": [],
   "colabs": [
-    "colab_dice_rolling.ipynb",
-    "colab1.ipynb",
-    "colab2.ipynb"
+    "colab.ipynb"
   ],
   "handouts": []
 }
