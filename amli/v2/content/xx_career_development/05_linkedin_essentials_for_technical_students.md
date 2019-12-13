@@ -104,9 +104,9 @@ I get asked this question a lot: “My LinkedIn is just my resume, right?” We�
 
 # Building Connections on LinkedIn
 
-* Who is it appropriate to add?
-* Searching for new connections
-* Writing to people you found on LinkedIn
+* Who is it appropriate to add? {.big}
+* Searching for new connections {.big}
+* Writing to people you found on LinkedIn {.big}
 
 <!--
 Now let’s dive into how to build connections on LinkedIn. You’ll have a pretty unexciting LinkedIN newsfeed if you aren’t connected to, or following, anyone else!
@@ -157,35 +157,250 @@ Begin typing in the search bar at the top of your page. Click People. Then click
 
 # Writing to people you found on LinkedIn
 
-# Options
+**What to do**
 
-**Technical interviews assess**
-
-* Role-specific technical knowledge
-* Problem-solving abilities
-* How you think
-* Communication skills
-* How you get to your answer
-
-Prevalent with employers hiring for engineering, science, and IT roles
+*  Say how you found them
+*  Say why you’re writing to them
+*  Say what you want to talk about specifically
+*  Give multiple options for connecting (phone, Google Hangout, email, whatever works best for THEM)
+*  Be brief
 
 .
 
 {.column}
 
-**Behavioral interviews assess**
+**What not to do**
 
-* Likelihood of future behavior based on past behavior
-* How you’ve responded in specific situations
-* The measurable skills and value you brought to those situations
-
-Prevalent with employers hiring for any role
+*  Ask for a job
+*  Ask for everything 
+*  Forget to show gratitude 
 
 .
 
+<!--
+*  Remember when I said you shouldn’t add people you don’t know on LinkedIn? That’s true if you’re not going to reach out to them to attempt to make a meaningful connection. If you’d like to spend time speaking with someone about their work, potentially in the form of an informational interview, you can reach out to them in a thoughtful, professional manner via LinkedIn to see if they’d be willing to make time for you.  Here are some best practices for writing to people you found on LinkedIn:
 
+* WHAT TO DO
+Say how you found them. All you need is half a sentence -- “I found you on UF's LinkedIn page…”
+Say why are you writing them. Again, another half sentence -- “... and I’m writing because I’m interested in the work you do at Twitter.”
+Say what you want to talk about. Use 1-2 sentences to explain what you want to discuss with or learn from them. Remember from our networking presentation, clear is kind. Do not be vague. 
+Give multiple options for connecting -- phone, Skype, email -- whatever works best for THEM. You are asking a favor of another person. In this case it doesn't matter your preference. 
+Be brief, make sure your subject line makes sense, goal is to get them to reply
 
+* WHAT NOT TO DO:
+Ask, “Can you give me a job?” That is not appropriate to ask. You’re seeking to learn from their experiences.
+Ask for everything. Their time is valuable!
+Forget to show gratitude. Thank them for responding. Thank them for making time to connect if they’re able. Thank them after chatting with them, which is a great opportunity for follow-up questions. 
+-->
 
+---
 
+# Stand out to recruiters on LinkedIn
 
+*  Let them know you’re looking {.big}
+*  Update your skills {.big}
+*  Endorse and recommend your connections {.big}
 
+<!--
+Now that we’ve gone over some basics regarding building out your LinkedIn profile and making connections with others, let’s talk about how you can stand out (in a good way!) to recruiters who might be looking to fill roles with someone who has your skill set and experience.
+-->
+
+---
+
+# Make sure recruiters know you're looking
+
+![](res/linkedin03.png)
+
+<!--
+This may seem simple, but the first thing you want to do is ensure recruiters know you’re looking for a job. You can do that by going to Settings & Privacy, selecting Job seeking preferences, and making sure the toggle for Let Recruiters know you’re open to opportunities is set to Yes.
+-->
+
+---
+
+# Update your skills
+
+![](res/linkedin04.png)
+
+<!--
+Now that it’s clear to recruiters that you’re open to opportunities, let’s talk about what skills you should list on your LinkedIn so your employability and uniqueness are on display!
+First, some basics. LinkedIn allows you to list 25 skills and allows your connections can endorse you for those skills. Your endorsers can even indicate HOW skilled you are at them. The three skills with the most endorsements from other people will be the ones prominently featured on your LinkedIn profile page when others look. They can still click and see the others. 
+-->
+
+---
+
+# Update your skills
+
+*  Scroll down on your own profile page to Skills & Endorsements
+*  Click Add a new skill
+*  Keyword optimization is critical. Look at the job descriptions for the roles you want and ensure those skills show up on your LinkedIn if you have them
+*  Below are some of the required skills for a Data Scientist role open at Snapchat:
+
+![](res/linkedin05.png)
+
+<!--
+This may seem intuitive, but it’s important to choose skills that reflect the required skills and job requirements for the roles you’re looking for. Obviously you should be truthful about the skills and experiences you have as well.
+-->
+
+---
+
+# Your turn!
+
+Spend **3 minutes** updating your skills section -- 
+
+from this summer and previously developed skills you haven’t added yet.
+
+Be truthful. If there are topics we haven’t covered yet, take a picture of the following slide and save for future updates.
+
+<!--
+Let’s update your skills section! But first, what are some skills you should add? [Progress to next slide.]
+-->
+
+---
+
+# What new skills can you add to your LinkedIn?
+
+*  HTML
+*  Web app development
+*  Data engineering
+*  SciKit Learn
+*  TensorFlow
+*  Image classification
+*  SQL
+*  Python
+*  Webscraping/Webcrawling
+*  BigQuery
+*  Google Cloud
+*  APIs
+*  Deep Learning
+*  Regression
+*  Classification
+*  JavaScript
+
+<!--
+What are some new skills you can add to your LinkedIn after your time at AMLI this summer? Here’s a list of some we’ve come up with. Are there others? What about “softer” skills? Are there other skills missing from your LinkedIn that you have but haven’t included yet? Add those, too!
+-->
+
+---
+
+# Endorse & recommend your connections
+
+What’s the difference?
+
+<!--
+What’s the difference between LinkedIn endorsements and LinkedIn recommendations? 
+A skill endorsement is a one-click way for your connections to endorse the skills listed on your profile. There isn't an automatic way to request an endorsement and only skills already listed can be endorsed. A written recommendation isn't included with this feature.
+A recommendation is a written statement of endorsement received from a connection. You can request recommendations from your connections, as well as proactively recommend your connections.
+-->
+
+# *Endorse* & recommend your groupmates
+
+![](res/linkedin06.png)
+
+<!--
+Endorsements are quick and easy one-clicks you can utilize to vouch that your LinkedIn connection has a particular skill or set of skills. You simply go to a LinkedIn connection’s profile page, scroll down to their skills section, and click on the + symbol next to the skill you want to endorse. Once a check mark appears in the circle, you’ve successfully endorsed them. Endorsements frequently serve a “you scratch my back, I’ll scratch yours function,” so hopefully the person you endorsed will return the favor and endorse you for skills they know you have.
+-->
+
+---
+
+# Your turn!
+
+Spend **2 minutes** providing endorsements for your group members.
+
+<!--
+Let’s practice! Spend the next two minutes providing endorsements for your group members. Please only endorse them for skills you know they have, and remember it is unlikely someone is highly skilled on a platform they first interacted with last week. Once you’ve finished, you can begin endorsing other program participants for skills you know they have.
+-->
+
+---
+
+# Endorse and *recommend* your groupmates
+
+*  Go to a LinkedIn connection’s page and click More
+*  Click on Recommend
+
+![](res/linkedin07.png)
+
+<!--
+Let’s move onto recommendations. To create a LinkedIn recommendation for someone, go to their page and click More then Recommend. 
+-->
+
+---
+
+# Endorse and *recommend* your groupmates
+
+*  Indicate how you know Michael and what his position was at the time.
+*  Write your recommendation!
+*  Aim for at least 3-5 sentences.
+*  Look up examples online if you need assistance.
+
+![](res/linkedin08.png)
+
+<!--
+To leave a recommendation on LinkedIn, that person must have AMLI listed as an experience or you won’t be able to comment on your work with them throughout this program. 
+
+At this stage you’ll indicate what your relationship is with the person and what their position was at the time.
+
+From here you will have an opportunity to write a recommendation about that person. You should aim for the recommendation to be no more than one paragraph, ideally 3-5 sentences. 
+-->
+
+---
+
+# Endorse and *recommend* your groupmates
+
+*  Explain how you know the person
+*  Show, don’t tell 
+*  Don’t forget “soft” skills and personality characteristics
+*  End with a hearty recommendation
+*  It shouldn’t be more than a paragraph
+
+<!--
+In your recommendation it’s important that you explain how you know the person. You should also make a point of not just saying someone has a certain characteristic or set of skills; you should use this opportunity to provide at least one example of a time that skill or characteristic has been put on display or something you’re consistently impressed with about their work. Don’t be afraid to include soft skills or personality characteristics that are appropriate and helpful for that person if a potential employer were looking at their LinkedIn. For example, if it’s true, it’s appropriate to say someone is extremely collaborative and generous with their time, always helping out teammates with their work. It’s not appropriate to say they must be fun to be around because they’ve dated four of your friends. 
+-->
+
+---
+
+# Endorse and *recommend* your groupmates
+
+![](res/linkedin09.png)
+
+<!--
+Here are some templates as starting points for writing recommendations. What do you notice about these recommendations?
+
+[Potential student responses: it’s concise, to the point, explains how the person knew them, includes personality and hard skills a person brought to their work, etc]
+-->
+
+---
+
+# Your turn!
+
+Spend **12 minutes** providing recommendations for your group members. 
+
+<!--
+Let’s practice! Spend the next 12 minutes providing written recommendations for your group members. Please try to deviate from the EXACT wording in the prior slide, as our recommendations would lose weight if they appear canned. You don’t want a whole page of recommendations that are the same. Please let me know if you need help, as I’ll be walking around the room to help you.
+-->
+
+---
+
+# Let's recap
+
+*  LinkedIn profiles serve a number of functions, including helping stay in touch with peers and building new connections.
+*  Your resume and LinkedIn share similarities but are not the same.
+*  Keywords, skills, endorsements, your picture, about me section, and your headline are all ways to stand out to recruiters.
+
+<!--
+We’ve gone over a lot today. Let’s recap some highlights. First, LinkedIn has grown to fill a number of different important functions for students and professionals, including staying in touch with colleagues, former managers, professors, and important people in your field. Your resume shares some similarities with your resume, but they’re also different. What are some of those differences or similarities? [Elicit answers from students.] Last, recruiters are looking for people with your skills, and you can make it easier for them to find you by maximizing the potential of these sections. List your skills. Include endorsements. Create an about me and headline section. 
+
+What else stood out to you today as something you’ll take with you?
+-->
+
+---
+
+# Next steps
+
+Prior to our next session, please take time to review the following article in Harvard Business Review:
+[Harvard Business Review: Find the Coaching in Criticism](https://hbr.org/2014/01/find-the-coaching-in-criticism)
+
+<!--
+Prior to our next session, please take time to read the following article: Harvard Business Review: Finding the Coaching in Criticism.
+-->
+
+---
