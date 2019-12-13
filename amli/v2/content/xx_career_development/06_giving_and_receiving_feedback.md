@@ -204,7 +204,7 @@ One way to become more open to developmental feedback is to think of feedback as
 
 ---
 
-Some helpful frames for responding to feedback: {.big}
+# Some helpful frames for responding to feedback:
 
 
 * *“Thank you for the feedback.”*
@@ -246,7 +246,7 @@ This is meant to be a fun exercise with an easy-to-describe example. I might say
 
 ---
 
-Feedback exercise debrief {.big}
+# Feedback exercise debrief
 
 * What was this experience like? 
 * Can you give me one word to describe it?
@@ -288,5 +288,4 @@ Questions or comments?
 Thank you all so much for participating today and for your willingness to engage with this important topic. What remaining questions or comments do you have?
 -->
 
-
-
+---
