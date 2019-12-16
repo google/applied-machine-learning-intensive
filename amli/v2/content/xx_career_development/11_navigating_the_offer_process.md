@@ -203,11 +203,7 @@ Next we’ll talk about some common components to tech offers, which can be quit
 
 **Components of a typical [tech] offer** {.big}
 
-Base Salary + Bonus + Equity 
-
-= 
-
-Total Compensation
+Base Salary + Bonus + Equity = Total Compensation
 
 <!--
 When considering your salary and weighing offers, it’s important to remember that you’re weighing more than a single number. There are several things you’ll likely want to evaluate when determining your total rewards. This includes equity, potential bonus, benefits, perks and more. Let’s start by talking about salary, also known as compensation. It’s helpful to think of offers in terms of total compensation, or the sum of the base salary, the equity value and the annual bonus (+ signing bonus if there is one), which are typical (but not always present) in an offer. These numbers combined equal total compensation, and by determining this number for your offer it will help you compare offers from companies. 
@@ -250,8 +246,8 @@ Equity is the value of shares issued by a company, often given as:
 
 **OR**
 
-**Options**
-An option given by a company to an employee to buy stock in the company at a discounted or fixed price (strike price)
+* **Options**
+  * An option given by a company to an employee to buy stock in the company at a discounted or fixed price (strike price)
 
 <!--
 There are two common types of equity offered; Restricted Stock Units (RSUs) and Options. 
