@@ -115,7 +115,7 @@ Source: *Images created on tagul.com
 
 ---
 
-**Your values at wrok** {.big}
+**Your values at work** {.big}
 
 * Consider
   * Reflect on your values, where you’re willing to live, whether your values align with certain roles and organizations
@@ -148,14 +148,122 @@ As I mentioned in the beginning of this presentation, take from these slides wha
 
 **Factors to consider** {.big}
 
-* Location
+* **Location**
     * Cost of living and labor can vary tremendously across U.S. cities
-    * NerdWallet’s Cost of Living Calculator can help you determine what a comparable salary would be in another city given cost of living
-* Your Professional & Educational Experiences 
+    * [NerdWallet’s Cost of Living Calculator](https://www.nerdwallet.com/cost-of-living-calculator) can help you determine what a comparable salary would be in another city given cost of living
+* **Your Professional & Educational Experiences** 
     * Your salary will likely be less than someone in a similar position who has more years of work experience and/or more education
-Industry
-Your potential employer also has a range in mind
-It’s based on what they already pay people in similar roles and the pay scales of competitors. Still, do your research!
+* **Industry**
+    * Your potential employer also has a range in mind
+    * It’s based on what they already pay people in similar roles and the pay scales of competitors. Still, do your research!
+
+<!--
+Location, Location, Location! Cost of living in a particular city can impact your desired salary range. For example, according to NerdWallet’s Cost of Living Calculator, making a pre-tax salary of $100,000 in San Francisco equates to $46,606 in Kansas City, MO because cost of living is 53% lower. That is a HUGE difference and should impact your salary range when discussing employment opportunities at companies in two different cities.
+
+Expect that the employer has a salary range in mind based on what the company pays people currently in similar roles, as well as what they know about the pay scales of their competitors. Information is power -- and currency -- in all salary range and negotiation situations. The more you know about the company, the industry and the position, the easier it will be to provide a competitive and appropriate salary range.
+-->
+
+---
+
+**Do your research** {.big}
+
+* Determine how much take-home (net) pay stems from your entire (gross) income in a given city/state via [SmartAsset](https://smartasset.com/taxes/paycheck-calculator) or [PayCheckCity](https://www.paycheckcity.com/calculator/salary/)
+* Spend time with your personal finances
+  * student loans, rent, food, utilities, savings, emergency fund, etc
+* Consult GlassDoor and related sites… with a grain of salt
+* Consult friends and former classmates/colleagues who have similar roles in similar areas
+* Give a range of at least $10k
+* The bottom of the range should be the absolute lowest salary you would accept
+
+<!--
+I can’t overstate the importance of doing your homework here. From determining how much your take-home pay will be after withholdings and taxes to understanding your own personal finances, this can feel overwhelming but is really important.
+
+Consult friends/colleagues and resources like GlassDoor, but do understand that those are anecdotal and not representative of a company’s pay policies and pay scales.
+
+Keep in mind that an employer may gravitate to the the lowest part of your range and maybe… lower. For that reason, the lowest number in your range should be the absolute lowest salary you’re willing to accept. Some seasoned professionals may suggest making the bottom of the range a little higher than you would accept, but I would not recommend this for your first professional role.
+-->
+
+---
+
+**It's OK to *not* answer** {.big}
+
+*"I'm really interested in learning more about the role. I don't have solid salary expectations at the moment, but I'd be happy to revisit that later down the road if this still seems like a good opportunity for both of us."*
+
+<!--
+If a recruiter or hiring manager asks you for your salary range before you interview in person -- maybe during an informational phone call or phone screen --  in most cases you can politely defer this to a later conversation, potentially after interviewing. This can buy you some time to do more research. 
+-->
+
+# 3.) Full-time offers and negotiating
+
+<!--
+Next we’ll talk about some common components to tech offers, which can be quite confusing. There are a lot of buzzwords and jargon - strike price, vesting schedule, options, 401k - that I hope to make a little less intimidating. Please ask questions as you have them, and if I don’t know, I will try to find the answer!
+-->
+
+---
+
+**Components of a typical [tech] offer** {.big}
+
+Base Salary + Bonus + Equity 
+
+= 
+
+Total Compensation
+
+<!--
+When considering your salary and weighing offers, it’s important to remember that you’re weighing more than a single number. There are several things you’ll likely want to evaluate when determining your total rewards. This includes equity, potential bonus, benefits, perks and more. Let’s start by talking about salary, also known as compensation. It’s helpful to think of offers in terms of total compensation, or the sum of the base salary, the equity value and the annual bonus (+ signing bonus if there is one), which are typical (but not always present) in an offer. These numbers combined equal total compensation, and by determining this number for your offer it will help you compare offers from companies. 
+-->
+
+---
+
+**Other perks/benefits** {.big}
+
+* Paid time off (PTO) 
+* Healthcare
+* 401k matching
+* Education reimbursement
+* On-site services (gyms, transportation, laundry) 
+* Child care & parental leave
+* Legal services, mental health services, travel insurance, etc.
+* Dogs in the office 
+* Paid volunteer hours
+
+![](res/offer03.jpg)
+
+<!--
+In addition to base salary, equity and bonuses, some companies offer particularly stellar health insurance, free food, childcare, 401k matching, and many more perks. Ask your recruiter about these things. You might uncover a really incredible perk/amenity that aligns with your core values. 
+
+Does anyone have any questions or comments about these?
+
+[Solicit student contributions and respond to each.]
+
+Source: Photo by Danielle Cerullo on Unsplash
+-->
+
+**Equity** {.big}
+
+Equity is the value of shares issued by a company, often given as:
+
+* **Restricted Stock Units (RSUs)**
+  * Compensation awarded by an employer to an employee in the form of company stock, distributed according to a vesting plan, or once certain restrictions are met
+
+**OR**
+
+**Options**
+An option given by a company to an employee to buy stock in the company at a discounted or fixed price (strike price)
+
+<!--
+There are two common types of equity offered; Restricted Stock Units (RSUs) and Options. 
+
+Restricted Stock Units are called GSUs at Google, and other companies may have unique names for them. So it’s a good idea to ask your recruiter “Is what I’m receiving a restricted stock unit, or options?” Restricted stock units are compensation awarded by an employer to an employee in the form of stock, which is distributed (or given) according to a vesting plan. Most stock isn’t given entirely up front, rather the vesting plan releases the stock to you in increments, normally over several years.
+
+An option is a form of equity given to an employee to buy stock in the company at a discounted or fixed price.
+
+Source: Source: National Center for Employee Ownership (NCEO) 
+-->
+
+
+
+
 
 
 
