@@ -396,6 +396,7 @@ Now that you have:
 * Found the best fit
 * Determined an appropriate salary range
 * Understood your offers 
+
 You are ready to make the right decision for YOU
 
 <!--
