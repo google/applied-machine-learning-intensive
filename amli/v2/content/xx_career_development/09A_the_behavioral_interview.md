@@ -59,7 +59,7 @@ What do you think? What’s the difference between a behavioral and a technical 
 
 ---
 
-# Options
+# technical vs. behavioral interviews
 
 **Technical interviews assess**
 
