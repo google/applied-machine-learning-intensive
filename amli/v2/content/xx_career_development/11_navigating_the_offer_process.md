@@ -239,6 +239,8 @@ Does anyone have any questions or comments about these?
 Source: Photo by Danielle Cerullo on Unsplash
 -->
 
+---
+
 **Equity** {.big}
 
 Equity is the value of shares issued by a company, often given as:
@@ -261,10 +263,157 @@ An option is a form of equity given to an employee to buy stock in the company a
 Source: Source: National Center for Employee Ownership (NCEO) 
 -->
 
+---
+
+**Comparing equity** {.big}
+
+![](res/offer04.png)
+
+<!--
+Comparing equity among publicly traded companies and privately held (or pre-IPO) is not making an apples to apples comparison. Rather, it’s more like comparing apples to oranges. 
+
+Let’s take a look first at apples, or, publicly traded companies:
+
+If they grant equity, it’s often in the form of RSUs, some companies call them by different names (e.g. Google calls them GSUs), but in essence restricted stock follows the same structure in that shares are granted - or GIVEN - I.e. you don’t have to purchase , the share price is public, there is a documented vesting schedule, and shares are liquid after they vest. 
+
+What does it mean when I say liquid? 
+
+[Solicit student responses.] The answer is, liquid means that they are yours to do what you’d like with - sell, trade, i.e. you can get cash. 
+
+Last, with equity given at a public company, you can review the stock history and trajectory, which can aid in evaluation of worth
+
+Now, let’s look at oranges, or, privately held companies. 
+
+Privately held companies typically grant equity in the form of options, which as we discussed in the previous slide are the opportunity to BUY the company stock at a discounted price or set price. This set price is also known as a STRIKE price. Private companies also tend to have vesting schedules over 4-5 years. Unless sold on a secondary (aka gray) market - which is uncommon, options in privately held companies are not liquid (i.e. you can’t sell them for actual dollars) until the company has an “exit event”. 
+
+Does anyone know what an exit event is? [Solicit student contributions, and respond to each.] The answer is an exit event is an event like an IPO, or initial public offering, or the company is acquired or merges. You can ask when a company plans to IPO, or if they have plans to merge/sell, but should be aware that generally recruiters won’t make promises here as they don’t control the market.
+
+Employees who exercise their options and sell their shares when the company’s stock is trading significantly higher than the grant price have the potential to make a lot of money. For example, say you have the option to buy 5000 shares at $10 and sell the stock at $50, with a $50,000 investment you end up with $250,000. Beware, though, as this can go the other way, too.
+
+Source: Sources: National Center for Employee Ownership (NCEO), Investopedia  
+-->
+
+---
+
+**Equity questions** {.big}
+
+* Am I receiving stock (e.g. RSUs), options, or another form of equity?
+* Will I receive a dollar value, or a set number of shares?
+* What is the vesting schedule? 
+* What is the current stock price, and how has this stock performed historically? (available online)
+* For privately held companies, is there a timeline to an exit?
+
+<!--
+Because equity can be confusing, and hard to compare across companies, here are some good questions to ask the recruiter or to research: 
+As we learned, stock and options are quite different, and it’s important to understand which you are receiving
+Some companies give a set dollar value of equity, and others give shares - ask which you are getting
+Know what the vesting schedule is, as this varies from company to company. At some companies, the vesting schedule is even, for example, vesting at a rate of 20% over five years, and at others you may receive a lower percentage of the stock early on, and a higher percentage later
+You can ask a recruiter or check online, but you’ll want to know the history of the stock’s performance to help you understand it’s value and up-side
+For privately held companies, it can be hard to understand HOW and WHEN you’ll receive equity, and asking questions around exit strategies and IPO timelines can help you get a better idea if you’ll be able to exercise your options say next year as opposed to many years from now
+-->
+
+---
+
+**401K** {.big}
+
+A 401k is a retirement savings plan sponsored by an employer, and it allows employees to save and invest a portion of their paycheck before taxes are taken out. Taxes are paid when money is withdrawn from the account. 
 
 
+**How to evaluate**:
+* Will your company match my contributions? 
+* Is there a tenure stipulation on how long I must work there before I receive matching?
+* What is the maximum amount the company will contribute? 
 
+<!--
+Raise your hand if you know what a 401k is.
 
+[Call on students until someone provides a correct answer.]
 
+That’s right, a 401k is a tax deferred retirement savings plan, and some companies will match your contributions up to a certain amount. 
 
+Let’s practice a quick calculation. The maximum amount you can contribute is 19,000 per year (as of 2019). Say your company will match 10% of your contributions up to the allowed maximum. How much is that? $1,900. So you put in $19,000 and your company puts in $1,900
 
+Many companies contribute based on a percent, but some do a flat rate, some only contribute after you’ve been with the company for some time, so it’s important to ask the questions:
+Will your company match my contributions?
+If yes, is there a tenure stipulation on how long i must work there before I receive matching?
+At what rate does your company match or contribute? 
+What is the maximum amount your company will contribute? 
+
+401k contributions can amount to thousands of dollars a year, so ask the questions and do the simple math! 
+-->
+
+---
+
+**Negotiating** {.big}
+
+* Be mindful of timing, i.e. don’t wait until the last minute
+* Be clear about what’s important to you 
+* As we discussed earlier, be transparent and honest 
+* Understand your offers and do your due diligence 
+* Have data and justification 
+* Be realistic 
+* Reneging an offer is a bad idea
+
+<!--
+Don’t wait until the night before your offer is due to talk to your recruiter about what’s important to you, or to start negotiating. Also, if you need to ask for an offer extension, do so as soon as possible (not the day the offer decision is due).
+
+Take the time to ask recruiters some of the important questions we mentioned regarding 401k, equity, etc. 
+
+Do your research if you don’t understand something! We don’t expect you to be experts, but this is YOUR offer! 
+
+If you decide to negotiate, it’s helpful if you have data and justification. By data, I don’t mean to quote Glassdoor numbers, because sites like Glassdoor don’t always take into account tenure, and other factors, and aren’t always accurate. Having data means that you did the math, and the total compensation at company A and company B are % different, and you would like one company to match the other’s offer. Justification means that you’re coming to the company with more than “my friend got that much $$ so I think I should get that too.
+
+Be realistic. Negotiating an offer isn’t like negotiating for some other things, where you give a pie in the sky number and just hope you’ll get half. Also, some companies cannot negotiate at all with things like PTO, or healthcare, so if the recruiter says it’s not an area they will budge on, see where they might have room to budge elsewhere. 
+
+Does anyone know what reneging an offer means? 
+
+[Solicit student answers and respond to each.]
+
+Yes, reneging is when you back out of an offer you’ve already accepted. While legally you’re allowed to do this as an at-will employee, it is a terrible idea and can potentially having lasting impacts on your professional reputation. Hiring managers and recruiters put a lot of time, energy, and resources into finding and hiring you. They’ve likely rejected other candidates because you accepted your offer. If you back out they have to start the process all over again. This could put a big red flag on your candidacy, both at the company where you interviewed and with the recruiters you worked with. And those recruiters move around. All this is to say, barring emergencies, you shouldn’t regnege an offer.
+
+What questions do you have about negotiating?
+
+[Solicit student questions and respond to each.]
+-->
+
+---
+
+**Mock scenario** {.big}
+
+*You just received an offer from your dream company, and you’re super excited about joining them, except one thing: their compensation package is 15% lower than your other offers. Now what?*
+
+<!--
+In this scenario, you have an offer for a company you really want to work at, but their total compensation does not align with your other offers. 
+
+What do you think you do here? 
+
+[Solicit student contributions.]
+
+Yes, you want to gather the data (i.e. the total compensation for the offer you want to accept is 15% lower than your other offers) and talk to the recruiter about why this is important to you and why this is holding you back. Be honest, give them the data and justification. 
+-->
+
+---
+
+**You have arrived!** {.big}
+
+Now that you have:
+* Found the best fit
+* Determined an appropriate salary range
+* Understood your offers 
+You are ready to make the right decision for YOU
+
+<!--
+Now that you’ve analyzed what’s important to you and found the companies that are the best fit for your values, you worked effectively with your recruiter, and you understood your offers, you feel ready and comfortable to make the right decision for you. Congratulations! 
+
+This won’t all happen within an hour’s time in real life, but I do hope this session has given you some things to think about and has made you feel a bit more ahead of the offer process.  
+-->
+
+---
+
+# Questions?
+
+<!--
+Thank you for participating and and for your engagement during this jam-packed presentation. I hope it’s been helpful and provided you with some important considerations for your job hunt. What remaining questions do you have for me before we close out? 
+-->
+
+---
