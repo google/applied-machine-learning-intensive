@@ -155,7 +155,7 @@ Source: Photo by Ionut Andrei Coman on Unsplash
 
 ---
 
-# 2.) Knowledge?
+# 2.) Knowledge
 
 What is selection bias? Why does it matter?
 
