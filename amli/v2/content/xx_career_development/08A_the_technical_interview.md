@@ -135,7 +135,9 @@ Last, there are usually multiple correct answers. Take the time to think. Pick c
 1. Coding questions {.big}
 1. Open-ended questions {.big}
 
+<!--
 There are 5 kinds of questions that we think you're likely to run into. We'll cover each of them in more details.
+-->
 
 ---
 
