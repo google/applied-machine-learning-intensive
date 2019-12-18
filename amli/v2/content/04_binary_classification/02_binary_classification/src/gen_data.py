@@ -67,7 +67,7 @@ def main():
   print('name,diameter,weight,red,green,blue')
   for name, config in fruit.items():
     diameters = generate_sorted_values('diameter', config, 2)
-    weights = generate_sorted_values('weight', config, 4)
+    weights = generate_sorted_values('weight', config, 5)
 
     reds = generate_color_values(config['color']['r'], 6)
     greens = generate_color_values(config['color']['g'], 10)
