@@ -1,12 +1,12 @@
 import numpy as np
 
-FRUIT_COUNT = 1000
+FRUIT_COUNT = 5000
 
 ORANGE = {
   'diameter': {
     'min': 6,
-    'max': 10,
-    'avg': (10 + 6) / 2,
+    'max': 12,
+    'avg': (12 + 6) / 2,
   },
   'weight': { # grams
     'min': 96,
@@ -22,14 +22,14 @@ ORANGE = {
 
 GRAPEFRUIT = {
   'diameter': {
-    'min': 10,
-    'max': 15,
-    'avg': (15 + 10) / 2,
+    'min': 9,
+    'max': 14,
+    'avg': (14 + 9) / 2,
   },
   'weight': { # grams
     'min': 100,
-    'max': 300,
-    'avg': 246,
+    'max': 280,
+    'avg': 206,
   },
   'color': {
     'r': 151,
@@ -67,11 +67,11 @@ def main():
   print('name,diameter,weight,red,green,blue')
   for name, config in fruit.items():
     diameters = generate_sorted_values('diameter', config, 2)
-    weights = generate_sorted_values('weight', config, 5)
+    weights = generate_sorted_values('weight', config, 3)
 
-    reds = generate_color_values(config['color']['r'], 6)
+    reds = generate_color_values(config['color']['r'], 10)
     greens = generate_color_values(config['color']['g'], 10)
-    blues = generate_color_values(config['color']['b'], 6)
+    blues = generate_color_values(config['color']['b'], 10)
 
     for i in range(FRUIT_COUNT):
       diameter = round(diameters[i], 2)
