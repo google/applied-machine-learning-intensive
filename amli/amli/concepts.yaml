@@ -12,7 +12,11 @@
   - scikit-learn
     - random forest classifier
     - random forest regressor
+    - LinearRegression
   - tensorflow
+  - numpy
+  - matplotlib
+  - pandas
 - models
   - tuning
   - types
