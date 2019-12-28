@@ -14,11 +14,26 @@
     "make predictions using a model"
   ],
   
+  "concepts": {
+    "prerequisite": [
+      "programming:python",
+    ],
+    
+    "introduced": [
+      "toolkits:scikit-learn"
+    ]
+  },  
+  
+  "duration": {
+    "lecture": 15,
+    "colab": 75
+  },
+  
   "materials": [],
   "resources": [],
   "slides": [
-    "slides.html",
-    "https://docs.google.com/presentation/d/1_Smz8mkK9lBrWKBjucpmLSE63jWkKw2hy10dP008Nz4/edit"
+    "slides.md",
+    "amli/v2/content/03_regression/01_introduction_to_sklearn/slides.md"
   ],
   "handouts": []
 }
