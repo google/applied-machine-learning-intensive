@@ -6,11 +6,11 @@
   ],
   
   "learning-objectives": [
-    "Demonstrate the ability to do the following in scikit-learn:"
-    "load sample data"
-    "generate sample data"
-    "transform data"
-    "train a model" 
+    "Demonstrate the ability to do the following in scikit-learn:",
+    "load sample data",
+    "generate sample data",
+    "transform data",
+    "train a model",
     "make predictions using a model"
   ],
   
@@ -33,7 +33,7 @@
   "resources": [],
   "slides": [
     "slides.md",
-    "amli/v2/content/03_regression/01_introduction_to_sklearn/slides.md"
+    "amli/v2/content/02_data/01_introduction_to_sklearn/slides.md"
   ],
   "handouts": []
 }
