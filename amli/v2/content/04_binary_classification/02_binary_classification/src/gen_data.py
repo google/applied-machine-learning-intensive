@@ -3,7 +3,7 @@ import numpy as np
 FRUIT_COUNT = 5000
 
 ORANGE = {
-  'diameter': {
+  'diameter': { # cm
     'min': 6,
     'max': 12,
     'avg': (12 + 6) / 2,
@@ -21,7 +21,7 @@ ORANGE = {
 }
 
 GRAPEFRUIT = {
-  'diameter': {
+  'diameter': { # cm
     'min': 9,
     'max': 14,
     'avg': (14 + 9) / 2,
@@ -35,6 +35,42 @@ GRAPEFRUIT = {
     'r': 151,
     'g': 70,
     'b': 15,
+  },
+}
+
+LEMON = {
+  'diameter': { # cm
+    'min': 5,
+    'max': 11,
+    'avg': (11 + 5) / 2,
+  },
+  'weight': { # grams
+    'min': 90,
+    'max': 200,
+    'avg': 140,
+  },
+  'color': {
+    'r': 185,
+    'g': 160,
+    'b': 3,
+  },
+}
+
+LIME = {
+  'diameter': { # cm
+    'min': 5,
+    'max': 11,
+    'avg': (11 + 5) / 2,
+  },
+  'weight': { # grams
+    'min': 90,
+    'max': 200,
+    'avg': 140,
+  },
+  'color': {
+    'r': 113,
+    'g': 148,
+    'b': 36,
   },
 }
 
@@ -61,7 +97,9 @@ def generate_color_values(color, variance):
 def main():
   fruit = {
     'orange': ORANGE,
-    'grapefruit': GRAPEFRUIT
+    'grapefruit': GRAPEFRUIT,
+    'lemon': LEMON,
+    'lime': LIME,
   }
 
   print('name,diameter,weight,red,green,blue')
