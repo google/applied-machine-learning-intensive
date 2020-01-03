@@ -5,13 +5,13 @@ FRUIT_COUNT = 5000
 ORANGE = {
   'diameter': { # cm
     'min': 6,
-    'max': 12,
-    'avg': (12 + 6) / 2,
+    'max': 11,
+    'avg': (11 + 6) / 2,
   },
   'weight': { # grams
     'min': 96,
     'max': 210,
-    'avg': 150,
+    'avg': 145,
   },
   'color': {
     'r': 157,
@@ -22,12 +22,12 @@ ORANGE = {
 
 GRAPEFRUIT = {
   'diameter': { # cm
-    'min': 9,
+    'min': 10,
     'max': 14,
-    'avg': (14 + 9) / 2,
+    'avg': (14 + 10) / 2,
   },
   'weight': { # grams
-    'min': 100,
+    'min': 110,
     'max': 280,
     'avg': 206,
   },
