@@ -62,11 +62,20 @@ The concept of weights and bias is important to most machine learning models, ev
 
 # Machine Learning Process
 
-![](res/regression12.png)
+1. Infer/Predict/Forecast
+1. Calculate Error/Loss/Cost
+1. Train/Learn
+1. Iterate (until some stopping condition)
 
 ---
 
 # Predict the Selling Price of a House
+
+![](res/regression12.png)
+
+---
+
+# Predict Price of a House Using the Machine Learning Process
 
 ![](res/regression13.png)
 
@@ -108,12 +117,6 @@ The concept of weights and bias is important to most machine learning models, ev
 
 ---
 
-# Predict Price of a House Using the Machine Learning Process
-
-![](res/regression20.png)
-
----
-
 # "Learned" parameters
 
 Wobble m and b around **iteratively** to **reduce loss**
@@ -130,6 +133,12 @@ A common loss function for regression is the root mean squared error -- we’ll 
 ---
 
 # Error/Loss/Cost Functions
+
+![](res/regression20.png)
+
+---
+
+# Housing Example
 
 ![](res/regression21.png)
 
@@ -150,12 +159,6 @@ A common loss function for regression is the root mean squared error -- we’ll 
 # Housing Example
 
 ![](res/regression24.png)
-
----
-
-# Housing Example
-
-![](res/regression25.png)
 
 ---
 
@@ -184,19 +187,19 @@ You can control gradient descent by deciding the learning rate, which determines
 
 # Linear Algebra Notation for y=mx+b
 
-![](res/regression26.png)
+![](res/regression25.png)
 
 ---
 
 # Linear Algebra Notation for y=mx+b
 
-![](res/regression27.png)
+![](res/regression26.png)
 
 ---
 
 # Multiple Regression (i.e. multiple features)
 
-![](res/regression28.png)
+![](res/regression27.png)
 
 <!--
 Realistically, energy level might depend on several factors. Now, our model needs to learn 3 weights (one for each input feature) and one bias.
@@ -208,13 +211,13 @@ The concept of weights and bias is important to most machine learning models, ev
 
 # Multiple Regression Notation
 
-![](res/regression29.png)
+![](res/regression28.png)
 
 ---
 
 # Closed form, exact solution
 
-![](res/regression30.png)
+![](res/regression29.png)
 
 <!--
 How does the model actually “learn” those values? Through linear algebra, we’ve actually found an exact equation -- all you need to do is plug in your X and y values, and calculate to get your weight and bias values.
