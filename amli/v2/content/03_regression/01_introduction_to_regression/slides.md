@@ -60,36 +60,57 @@ The concept of weights and bias is important to most machine learning models, ev
 
 ---
 
-# Closed form, exact solution
+# Machine Learning Process
 
-![](res/regression6.png)
-
-<!--
-How does the model actually “learn” those values? Through linear algebra, we’ve actually found an exact equation -- all you need to do is plug in your X and y values, and calculate to get your weight and bias values.
-
-So, is that it? Is machine learning solved??
--->
+![](res/regression12.png)
 
 ---
 
-# Reality intrudes
+# Predict the Selling Price of a House
 
-Closed form solution is expensive
-* Requires *lots* of computation
-* In practice, requires all data to fit into RAM
-* Computer’s just gonna give up
+![](res/regression13.png)
 
-![](res/regression7.jpg)
+---
 
-<!--
-A closed form solution is perfect if you have a relatively small number of features and data points. But we’ve said before that machine learning models work best with large amounts of data -- and some models have thousands or tens of thousands of input features. 
+# Predict Price of a House Using the Machine Learning Process
 
-With such complex data, the computation required to get a closed form solution is prohibitively difficult (both in terms of memory and time required). 
+![](res/regression14.png)
 
-https://stats.stackexchange.com/questions/23128/solving-for-regression-parameters-in-closed-form-vs-gradient-descent
+---
 
-Source: Photo by JESHOOTS.COM on Unsplash
--->
+# Predict Price of a House Using the Machine Learning Process
+
+![](res/regression15.png)
+
+---
+
+# Predict Price of a House Using the Machine Learning Process
+
+![](res/regression16.png)
+
+---
+
+# Predict Price of a House Using the Machine Learning Process
+
+![](res/regression17.png)
+
+---
+
+# Predict Price of a House Using the Machine Learning Process
+
+![](res/regression18.png)
+
+---
+
+# Predict Price of a House Using the Machine Learning Process
+
+![](res/regression19.png)
+
+---
+
+# Predict Price of a House Using the Machine Learning Process
+
+![](res/regression20.png)
 
 ---
 
@@ -108,10 +129,40 @@ A common loss function for regression is the root mean squared error -- we’ll 
 
 ---
 
+# Error/Loss/Cost Functions
+
+![](res/regression21.png)
+
+---
+
+# Housing Example
+
+![](res/regression22.png)
+
+---
+
+# Housing Example
+
+![](res/regression23.png)
+
+---
+
+# Housing Example
+
+![](res/regression24.png)
+
+---
+
+# Housing Example
+
+![](res/regression25.png)
+
+---
+
 # Gradient descent
 
 * The computer’s job: 
-  * Start with an arbitrary value
+  * Start with an arbitrary guess of parameters
   * Tweak it in whichever direction reduces loss more 
   * The less the loss is changing, the less the value should be tweaked
 
@@ -131,6 +182,50 @@ You can control gradient descent by deciding the learning rate, which determines
 
 ---
 
+# Linear Algebra Notation for y=mx+b
+
+![](res/regression26.png)
+
+---
+
+# Linear Algebra Notation for y=mx+b
+
+![](res/regression27.png)
+
+---
+
+# Multiple Regression (i.e. multiple features)
+
+![](res/regression28.png)
+
+<!--
+Realistically, energy level might depend on several factors. Now, our model needs to learn 3 weights (one for each input feature) and one bias.
+
+The concept of weights and bias is important to most machine learning models, even complex neural networks. The model uses data to learn how each input feature affects the output, and learns a bias to linearly shift its predictions to fit the data (like shifting a y-intercept).
+-->
+
+---
+
+# Multiple Regression Notation
+
+![](res/regression29.png)
+
+---
+
+# Closed form, exact solution
+
+![](res/regression30.png)
+
+<!--
+How does the model actually “learn” those values? Through linear algebra, we’ve actually found an exact equation -- all you need to do is plug in your X and y values, and calculate to get your weight and bias values.
+
+X is an m x n matrix. X^T*X is invertible if and only if m /leq n and rank(X) = m
+
+So, is that it? Is machine learning solved??
+-->
+
+---
+
 # Batched data
 
 Break data into smaller batches
@@ -145,7 +240,7 @@ Break data into smaller batches
 
 ---
 
-# Hyperparameters we care about
+# Hyperparameters We Care About
 
  ![](res/regression11.png)
  
@@ -153,10 +248,4 @@ Break data into smaller batches
  After setting up a model, you may find you need to perform “hyperparameter tuning” to achieve best results. Different problems work well with different combinations of hyperparameter values -- you’ll often need to experiment, or “tune”, those combinations. Here are some rough guidelines for potential problems with learning rate and batch size that might suggest increasing or decreasing their values.
 -->
 
-
-
-
-
-
-
-
+---
