@@ -9,9 +9,9 @@ ORANGE = {
     'avg': (11 + 6) / 2,
   },
   'weight': { # grams
-    'min': 96,
+    'min': 95,
     'max': 210,
-    'avg': 145,
+    'avg': (210+95)/2,
   },
   'color': {
     'r': 157,
@@ -22,14 +22,14 @@ ORANGE = {
 
 GRAPEFRUIT = {
   'diameter': { # cm
-    'min': 10,
+    'min': 9,
     'max': 14,
-    'avg': (14 + 10) / 2,
+    'avg': (14 + 9) / 2,
   },
   'weight': { # grams
-    'min': 110,
-    'max': 280,
-    'avg': 206,
+    'min': 140,
+    'max': 255,
+    'avg': (255+140)/2,
   },
   'color': {
     'r': 151,
@@ -98,8 +98,8 @@ def main():
   fruit = {
     'orange': ORANGE,
     'grapefruit': GRAPEFRUIT,
-    'lemon': LEMON,
-    'lime': LIME,
+#    'lemon': LEMON,
+#    'lime': LIME,
   }
 
   print('name,diameter,weight,red,green,blue')
