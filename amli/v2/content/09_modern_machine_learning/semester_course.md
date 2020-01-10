@@ -324,5 +324,87 @@ First, we want to show some ways to visualize the model to evaluate if it is goo
 
 # Visualizing Loss with a Calibration Plot
 
+---
+
+# Calibration Plots To Visualize a Model
+
+![](res/TTXpic19.png)
+
+---
+
+# Which Model is Better?
+
+![](res.TTXpic21.png)
+
+---
+
+![](res/TTXgreen.png)
+
+# Quantifying Loss
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**measuring loss** {.big}
+
+What are some mathematical ways to measure loss? Remember that
+* Loss should become smaller when predictions improve.
+* Loss should become larger when prediction get worse.
+
+Lots of ideas are reasonable here; be creative.
+
+---
+
+![](res/TTXgreen.png)
+
+# Squared Loss and RMSE 
+
+---
+
+# A Convenient Loss Function for Regression 
+
+![](res.TTXpic22.png)
+
+---
+
+# Computing Squared Error on a Data Set
+
+![](res.TTXpic23.png)
+
+<!--
+Talk through the notation and also re-iterate the vector notation so they understand it when it shows up later.
+  -- x is our input example.  It’s bold because it’s a vector with many dimensions (features).
+  -- y is our label.
+  -- D is a data set containing many labeled examples, which are (x, y) pairs.
+  -- (y-y’)2 is the loss for any given example; prediction(x) gives y’ for a given x.
+-->
+
+---
+
+# RMSE - Root Mean Squared Error
+
+![](res.TTXpic24.png)
+
+---
+
+![](res/TTXgroupchat.png)
+
+**RMSE** {.big}
+
+Why is minimizing root mean squared error (RMSE) the same as minimizing mean squared error (MSE)? 
+
+(Reminder: The only difference is that RMSE is the square root of MSE.)
+
+---
+
+![](res/TTXgreen.png)
+
+# Intro to SGD (Stochastic Gradient Descent)
+
+---
+
+
+
 
 
