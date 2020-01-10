@@ -242,6 +242,87 @@ Begin defining linear regression. We are going to introduce some notation in the
 
 ---
 
+![](res/TTXgreen.png)
+
+# Linear Regression with Many Features
+
+---
+
+![](res/TTXgroupchat.png)
+
+**applying ML** {.big}
+
+Imagine the problem of building an ML model to predict apartment rental price.
+* What features would you use?
+* What would the training labels be?
+* Describe some unlabeled examples
+* Find a way to describe this as a regression task
+
+---
+
+# Linear Regression with Many Features
+
+![](res/TTXpic14.png)
+
+<!--
+This is a good chance to discuss the w_1 is a weight giving the importance of x_1 (# of bedrooms) to predicting the rent and w_2 is the importance of x_2 (condition of the building) in predicting the rent.
+-->
+
+---
+
+# Linear Regression Notation
+
+![](res/TTXpic15.png)
+
+<!--
+Here we transition to an n-dimensional model.  In TF b is used for the bias but I think it’s also good to introduce the convention of using w_0 for b.  But after this slide, the convention is to stick with using b.
+-->
+
+---
+
+# Summary of Linear Regression
+
+![](res/TTXpic16.png)
+
+<!--
+Close with a single slide summarizing linear regression.  Stop here and ask the students if there are any questions about the slide.  Return to earlier slides if needed.
+-->
+
+---
+
+![](res/TTXgreen.png)
+
+# Visualizing Loss With a Scatter Plot
+
+---
+
+# Loss
+
+![](res/TTXpic17.png)
+
+<!--
+First, we want to show some ways to visualize the model to evaluate if it is good.  Even after we define a mathematical definition of loss this is important as a way to evaluate if the model is good.  For example, looking at the RMSE doesn’t really tell you if the model is any good.  We’ll make this concrete later.
+-->
+
+---
+
+# Evaluating if a Linear Model is Good
+
+* We will eventually look at mathematical ways to evaluate the quality of a model but that should not replace more informal yet intuitive ways to evaluate a model 
+* When you just have one variable, drawing a line on a scatter plot that shows the model predictions is a good tool.
+* Let’s look at two different models to predict the price of a car from its engine’s horsepower.
+
+---
+
+# Which Model is Better?
+
+![](res/TTXpic18.png)
+
+---
+
+![](res/TTXgreen.png)
+
+# Visualizing Loss with a Calibration Plot
 
 
 
