@@ -638,7 +638,7 @@ What happens if you directly use these features?
 
 # Transforming Numeric Features (cont)
 
-![](res/TTXpic45.png)
+![](res/TTXpic46.png)
 
 ---
 
@@ -739,5 +739,166 @@ As an example, what is log10(10)? log10(10^2)? log10(10^3)?
 
 ---
 
+![](res/TTXgreen.png)
+
+# Using Quantiles to Compute Bucket Boundaries
+
+---
+
+# Creating Buckets by Quantiles
+
+![](res/TTXpic56a.png)
+
+---
+
+# Creating Bins by Quantiles
+
+![](res/TTXpic56b.png)
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**quantiles** {.big}
+
+What is the advantage of using quantiles (left) versus equal width bins (right)?
+
+![](res/TTXpic56c.png)
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**quantiles** {.big}
+
+How could we transform the data so that uniform scaling makes more sense?
+
+![](res/TTXpic56d.png)
+
+---
+
+# Quantiles vs. Equal Width Bins
+
+* Both forms of binning provide non-linear behavior since the feature weight for each bin can be independently set
+* Using quantiles gives more resolution in areas where there is more data
+* For both techniques, you can adjust the number of bins to vary the amount of resolution versus the number of features introduced.
+
+---
+
+![](res/TTXgreen.png)
+
+# Representing Categorical Features
+
+---
+
+# Representing Categorical Features
+
+* How can we represent features such as:
+  * The day of the week
+  * A person’s occupation(s)
+  * The words in an advertisement
+  * The movies a person has rated
+* Remember a linear model can only take a weighted combination of features.
+
+---
+
+# Graphical View of a Linear Model
+
+![](res/TTXpic57.png)
+
+<!--
+Remind students that this is one way to represent a linear model.  We have three inputs, x1, x2, and x3, shown by the blue circles.  They’re combined with some weight (given on each edge) to produce an output.  Bias term isn’t shown.
+-->
+
+---
+
+# Transforming Categorical Features
+
+![](res/TTXpic58.png)
+
+---
+
+# Categorical Features: One-Hot Encoding
+
+![](res/TTXpic59.png)
+
+---
+
+# Efficiently Representing One-Hot Encoding
+
+![](res/TTXpic60.png)
+
+---
+
+# Efficiently Representing One-Hot Encoding
+
+![](res/TTXpic61.png)
+
+---
+
+# One-Hot Encoding vs Single Numeric Feature
+
+![](res/TTXpic62.png)
+
+--- 
 
 
+![](res/TTXgroupchat.png) 
+
+**numerical vs. one-hot** {.big}
+
+Can you think of a type of data where a one-hot representation makes more sense than a numerical one? 
+
+What about vice versa?
+
+---
+
+# Encoding Features that are Sets/Phrases 
+
+![](res/TTXpic63.png)
+
+---
+
+# Encoding Features that are Sets/Phrases 
+
+![](res/TTXpic64.png)
+
+---
+
+# Vocabulary for Categorical Features
+
+![](res/TTXpic65.png)
+
+--- 
+
+![](res/TTXgroupchat.png) 
+
+**vocabulary** {.big}
+
+Can you think of a potential issue with using a fixed vocabulary? 
+
+Hint: Think about what would happen if you tried to encode the sentence "it costs a badrillion dollars."
+
+---
+
+# Vocabulary - Out of Vocab
+
+![](res/TTXpic66.png)
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**OOV** {.big}
+
+Can you think of a potential issue with using a single OOV indicator? 
+
+Hint: Think about the representations for "it costs a badrillion dollars" and "it costs a coupla dollars.”
+
+---
+
+# Hashing to Define Vocabulary Mapping
+
+![](res/TTXpic67.png)
+
+---
