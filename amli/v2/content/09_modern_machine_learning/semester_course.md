@@ -641,3 +641,14 @@ What happens if you directly use these features?
 ![](res/TTXpic45.png)
 
 ---
+
+![](res/TTXgreen.png)
+
+# Scaling and Clipping Numeric Features
+
+---
+
+
+
+
+
