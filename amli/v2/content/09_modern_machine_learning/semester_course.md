@@ -364,13 +364,13 @@ Lots of ideas are reasonable here; be creative.
 
 # A Convenient Loss Function for Regression 
 
-![](res.TTXpic22.png)
+![](res/TTXpic22.png)
 
 ---
 
 # Computing Squared Error on a Data Set
 
-![](res.TTXpic23.png)
+![](res/TTXpic23.png)
 
 <!--
 Talk through the notation and also re-iterate the vector notation so they understand it when it shows up later.
@@ -384,7 +384,7 @@ Talk through the notation and also re-iterate the vector notation so they unders
 
 # RMSE - Root Mean Squared Error
 
-![](res.TTXpic24.png)
+![](res/TTXpic24.png)
 
 ---
 
@@ -508,9 +508,136 @@ Step through all the arguments here.
 
 ---
 
+![](res/TTXgreen.png)
 
+# Using Learning Curve to Adjust the Learning Rate
 
+---
 
+![](res/TTXgroupchat.png) 
 
+**learning rate** {.big}
 
+What might happen if the learning rate is set much too small? Much too large?
 
+---
+
+# Learning Rate Way Too Low
+
+![](res/TTXpic34.png)
+
+---
+
+# Learning Rate Way Too High
+
+![](res/TTXpic35.png)
+
+---
+
+# Learning Rate Still Too High
+
+![](res/TTXpic36.png)
+
+---
+
+# Need More Steps (loss still going down)
+
+![](res/TTXpic37.png)
+
+---
+
+# Good Learning Rate and Number of Steps
+
+![](res/TTXpic38.png)
+
+---
+
+# Converging to a Poor Model
+
+![](res/TTXpic39.png)
+
+<!--Make sure the students recognize the from the learning curve it looks like the model is good.  ALso looking at the RMSE it looks good.  However when looking at the calibration plot you can see that the model is not good. 
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**loss curves** {.big}
+
+So far we have only been thinking about the loss curve for mean squared error, which looks like a bowl. 
+
+How well do you think gradient descent would work for other loss function shapes? 
+
+What would it mean if your loss function was flat? How would gradient descent work if your loss function was very bumpy?
+
+---
+
+![](res/TTXgreen.png)
+
+# Introduction to Feature Engineering
+
+---
+
+![](res/TTXblue03.png)
+
+---
+
+# Start By Exploring Your Data
+
+![](res/TTXpic40.png)
+
+---
+
+# Feature Engineering
+
+![](res/TTXpic41.png)
+
+---
+
+# Why Transform Features
+
+![](res/TTXpic42.png)
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**linear models** {.big}
+
+Say you are predicting the price of a room on Craigslist and two features you have are the room's length and width. 
+
+Can a linear model compute the room's area (length * width) when making predictions? How or why not?
+
+---
+
+# Why Transform Features (cont)
+
+![](res/TTXpic43.png)
+
+---
+
+# Transforming Numeric Features
+
+![](res/TTXpic44.png)
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**feature scales** {.big}
+
+What if you are creating a linear model to predict city mpg of a car from highway mpg (x1) and price (x2)
+
+What happens if you directly use these features?
+
+---
+
+# Transforming Numeric Features (cont)
+
+![](res/TTXpic45.png)
+
+# Transforming Numeric Features (cont)
+
+![](res/TTXpic45.png)
+
+---
