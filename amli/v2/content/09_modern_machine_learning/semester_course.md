@@ -416,25 +416,25 @@ Why is minimizing root mean squared error (RMSE) the same as minimizing mean squ
 
 # Pictorial View of Gradient Descent
 
-![](res.TTXpic26.png)
+![](res/TTXpic26.png)
 
 ---
 
 # Pictorial View of Gradient Descent
 
-![](res.TTXpic27.png)
+![](res/TTXpic27.png)
 
 ---
 
 # Pictorial View of Gradient Descent
 
-![](res.TTXpic28.png)
+![](res/TTXpic28.png)
 
 ---
 
 # Training: A Gradient Step
 
-![](res.TTXpic29.png)
+![](res/TTXpic29.png)
 
 <!--
 Visual explanation of gradient descent in 3 slides:
@@ -473,7 +473,7 @@ Step through all the arguments here
 
 # Learning Rate: Size of Step to Make
 
-![](res.TTXpic30.png)
+![](res/TTXpic30.png)
 
 <!--
 This all just applies to a convex function but for now we’ll not discuss this unless someone asks.
@@ -483,7 +483,7 @@ This all just applies to a convex function but for now we’ll not discuss this 
 
 # Using TensorFlow (TF)
 
-![](res.TTXpic31.png)
+![](res/TTXpic31.png)
 
 <!--
 Step through all the arguments here.
@@ -493,7 +493,7 @@ Step through all the arguments here.
 
 # Training a Model with Gradient Descent
 
-![](res.TTXpic32.png)
+![](res/TTXpic32.png)
 
 ---
 
