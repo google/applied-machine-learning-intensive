@@ -902,3 +902,184 @@ Hint: Think about the representations for "it costs a badrillion dollars" and "i
 ![](res/TTXpic67.png)
 
 ---
+
+![](res/TTXgreen.png)
+
+# When to Treat Numerical Data as Categorical 
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**categorical vs. numerical** {.big}
+
+How would you encode a feature such as zipcode? 
+
+Does it make more sense as a categorical or numerical feature? 
+
+Can you think of any domain-specific feature transformations which would make sense here?
+
+---
+
+# Categorical vs. Numerical Features
+
+* How would you encode a feature such as zipcode?
+* Though it could be used directly as a numerical feature, you don’t want to multiply it by a weight.
+* Best to treat zipcode as categorical data.
+* You could use domain knowledge to group zipcodes that are geographically nearby into a single bucket.
+* **You need to think about raw features and how to best use them.**
+
+---
+
+# Feature Engineering: Missing Features
+
+Often data sets are missing features. 
+
+* If this is extremely rare we could just skip those examples, but otherwise what do we do?
+* For non-numerical data?
+
+---
+
+![](res/TTXgreen.png)
+
+# Handling Missing Data
+
+---
+
+# Feature Engineering: Missing Features
+
+Often data sets are missing features. If this is extremely rare we could just skip those examples, but otherwise what do we do?
+
+* For non-numerical data?
+  * A common solution is to just introduce a feature value for “missing”
+* How do we handle this for numerical data?
+
+---
+
+# Feature Engineering: Missing Features
+
+Often data sets are missing features. If this is extremely rare we could just skip those examples, but otherwise what do we do?
+
+* For non-numerical data?
+  * A common solution is to just introduce a feature value for “missing”
+* How do we handle this for numerical data?
+  * Use the average value (or some common value)
+  * Bin the data and introduce a “missing” bin
+
+---
+
+![](res/TTXgreen.png)
+
+# Introducing Non-Linearities via Feature Crosses
+
+---
+
+# Add Non-Linearities To a Linear Model
+
+* Linear models can represent a lot more problems when we add **non-linearities** to the features
+* We’ve already seen one way to do this:
+  * Bucketizing Numerical Features
+* Other ways to introduce non-linearities:
+  * Feature Crosses
+  * Adding Artificial Variables
+  
+---
+
+# Preview: Feature Crosses
+
+* We will study feature crosses in more depth later.
+* In a linear model the contribution captured for each feature is independent of the others and this is often not the case in data.
+* **Feature Crosses** introduce non-linear behavior between a set of two or more features by capturing dependencies between the features.
+
+---
+
+# Feature Cross Example
+
+![](res/TTXpic698.png)
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**feature cross cost** {.big}
+
+If we have one feature which can take on M values and another feature which can take on N values, how many values will the cross of these two features take on?
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**numerical crosses** {.big}
+
+How can we apply feature crossing to numerical data? Is there a feature transformation that makes sense here?
+
+---
+
+# Feature Crosses in TensorFlow
+
+* Define new features called crossed column  in TF for the cross  [A x B] using either bucketized numerical features or categorical features A and B
+* The resulting crosses are often extremely sparse
+* Crosses can involve any number of features, such as: [A x B x C x D x E]
+
+<!--
+Mention that “cross products” is a synonym.  For folks wondering more about this, can remind them that these are cartesian products on sets.
+
+This is where we hit the idea of sparsity.  Sparse feature vectors are feature vectors where most of the values are 0.  For example, in the latitude binning example from the previous section, we ended up with a just a single “1” bin-feature and the remaining 9 bin-features were 0’s.  This idea can be taken to the extreme for large scale data, as may be appropriate for presence / non-presence of words in a text snippet as one example.
+-->
+
+---
+
+# Feature Crosses: Some Examples
+
+![](res/TTXpic69.png)
+
+<!--
+A fine intuition here is to say that some words in a pet description are only “good” at certain times of day.  For example, jumping up excitedly is often a nice way for a pet to welcome its owner home, but may be very unwelcome at 3am.
+-->
+
+---
+
+# Feature Crosses: Why Would We Do This?
+
+* Linear learners scale well to massive data
+* But without feature crosses, the expressivity of these models would be limited
+* Using feature crosses + massive data is one efficient strategy for learning highly complex models
+  * Foreshadowing: Neural nets provide another
+* Are there downsides to adding more and more crosses?
+
+<!--
+If you feel like getting into it, you can mention that part of the extreme efficiency of these systems comes from exploiting sparsity in the data -- out of potentially billions of potential crosses, only a few hundred are likely present with non-zero values in a given example.
+-->
+
+---
+
+# Feature Engineering: Be Creative!
+
+* We’ve just seen some examples but the key is to think about your data, what a linear model can do and then how to best capture that.
+* Remember, there’s not one right answer.  Sometimes you need to try a few things and see what gives you the best predictions.
+
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**last example** {.big}
+
+If you wanted to predict the rental price for an apartment and you had a street address, how might you represent that? 
+
+What kind of additional useful features could you collect based on the street address?
+
+---
+
+![](res/TTXgreen.png)
+
+# Mathematics of Stochastic Gradient Descent (SGD)
+
+---
+
+
+
+
+
+
+
