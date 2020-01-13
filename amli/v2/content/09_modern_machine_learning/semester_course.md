@@ -404,6 +404,112 @@ Why is minimizing root mean squared error (RMSE) the same as minimizing mean squ
 
 ---
 
+![](res/TTXblue02.png)
+
+---
+
+# Gradient Descent: High Level View
+
+![](res.TTXpic25.png)
+
+---
+
+# Pictorial View of Gradient Descent
+
+![](res.TTXpic26.png)
+
+---
+
+# Pictorial View of Gradient Descent
+
+![](res.TTXpic27.png)
+
+---
+
+# Pictorial View of Gradient Descent
+
+![](res.TTXpic28.png)
+
+---
+
+# Training: A Gradient Step
+
+![](res.TTXpic29.png)
+
+<!--
+Visual explanation of gradient descent in 3 slides:
+First slide gives our starting point.  Can point out the shape of the loss function and the global minimum, noting that this is convex. 
+Second slide shows the direction of the (negative gradient), and the particular step size we decide to take.  (more on step size in a bit)
+Third slide shows where we end up on loss when we take a step.  It’s a bit closer to the minimum (hooray!) but we’ll need to iterate more.
+-->
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**gradient ascent** {.big}
+
+What would happen if we took a step in the positive gradient direction instead of the negative gradient direction? 
+
+When might we do this?
+
+---
+
+![](res/TTXgreen.png)
+
+# Using SGD in Tensorflow
+
+---
+
+# Using TensorFlow
+
+Later in the course we will present **Gradient Descent** in more depth.  For now we just present enough detail for you to be apply to apply the TF API to obtain a good linear model for a simple real data set.
+
+<!--
+Step through all the arguments here
+-->
+
+---
+
+# Learning Rate: Size of Step to Make
+
+![](res.TTXpic30.png)
+
+<!--
+This all just applies to a convex function but for now we’ll not discuss this unless someone asks.
+-->
+
+---
+
+# Using TensorFlow (TF)
+
+![](res.TTXpic31.png)
+
+<!--
+Step through all the arguments here.
+-->
+
+--- 
+
+# Training a Model with Gradient Descent
+
+![](res.TTXpic32.png)
+
+---
+
+# Things You Need to Decide
+
+* **Learning Rate**
+  * Very important since this is the size of the step to take.  Typically change by powers of 10 until the model is training reasonably well and then fine tune
+* **Number of Steps to Train**
+  * Time to train is proportional to this (for fixed set of features). You want to make this is as small as you can while still getting to the minimum loss possible.
+* **What Features to Use**
+  * This is very important and will be our next main topic
+
+---
+
+
+
 
 
 
