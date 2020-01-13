@@ -648,7 +648,96 @@ What happens if you directly use these features?
 
 ---
 
+# Transforming Numeric Features
 
+![](res/TTXpic47.png)
+
+---
+
+# Linear Scaling
+
+![](res/TTXpic48.png)
+
+<!--
+On the board help them derive this formula.
+-->
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**linear scaling** {.big}
+
+What would happen if you used linear scaling, but there was an outlier? 
+
+What other feature transformation could you use to prevent this?
+
+---
+
+# Feature Clipping
+
+![](res/TTXpic49.png)
+
+---
+
+# Log Scaling
+
+![](res/TTXpic50.png)
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**log scaling** {.big}
+
+
+Why does log-scaling help spread out power-law data? 
+
+As an example, what is log10(10)? log10(10^2)? log10(10^3)?
+
+---
+
+# Z-score scaling
+
+![](res/TTXpic51.png)
+
+---
+
+![](res/TTXgreen.png)
+
+# Introducing Non-Linearities via Bucketizing Features
+
+---
+
+# Add Non-Linearities To a Linear Model
+
+![](res/TTXpic52.png)
+
+---
+
+# Motivation: Bucketizing Numeric Features
+
+![](res/TTXpic53.png)
+
+---
+
+# Bucketizing Compression Ratio
+
+![](res/TTXpic54.png)
+
+---
+
+# Using Raw and Bucketized Features
+
+![](res/TTXpic55.png)
+
+---
+
+# Selection of Bucket Boundaries
+
+![](res/TTXpic56.png)
+
+---
 
 
 
