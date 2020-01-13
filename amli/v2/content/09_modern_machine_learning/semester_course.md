@@ -410,7 +410,7 @@ Why is minimizing root mean squared error (RMSE) the same as minimizing mean squ
 
 # Gradient Descent: High Level View
 
-![](res.TTXpic25.png)
+![](res/TTXpic25.png)
 
 ---
 
