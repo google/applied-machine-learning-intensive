@@ -995,7 +995,7 @@ Often data sets are missing features. If this is extremely rare we could just sk
 
 # Feature Cross Example
 
-![](res/TTXpic698.png)
+![](res/TTXpic68.png)
 
 ---
 
