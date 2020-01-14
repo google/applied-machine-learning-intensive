@@ -1077,9 +1077,148 @@ What kind of additional useful features could you collect based on the street ad
 
 ---
 
+![](res/TTXblue04.png)
 
+---
 
+# Review of Overview of Gradient Descent
 
+![](res/TTXpic70.png)
 
+---
 
+# Training: Decreasing the Loss
 
+![](res/TTXpic71.png)
+
+<!--
+Visual explanation of gradient descent in 3 slides:
+First slide gives our starting point.  Can point out the shape of the loss function and the global minimum, noting that this is convex. 
+Second slide shows the direction of the (negative gradient), and the particular step size we decide to take.  (more on step size in a bit)
+Third slide shows where we end up on loss when we take a step.  It’s a bit closer to the minimum (hooray!) but we’ll need to iterate more.
+-->
+
+---
+
+# Training: A Gradient Step
+
+![](res/TTXpic72.png)
+
+<!--
+Visual explanation of gradient descent in 3 slides:
+First slide gives our starting point.  Can point out the shape of the loss function and the global minimum, noting that this is convex. 
+Second slide shows the direction of the (negative gradient), and the particular step size we decide to take.  (more on step size in a bit)
+Third slide shows where we end up on loss when we take a step.  It’s a bit closer to the minimum (hooray!) but we’ll need to iterate more.
+-->
+
+---
+
+# Learning Rate (Size of Step) Too Small
+
+![](res/TTXpic73.png)
+
+---
+
+# Learning Rate (Size of Step) Too Large
+
+![](res/TTXpic74.png)
+
+---
+
+# Well-Tuned Learning Rate
+
+![](res/TTXpic75.png)
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**gradient at minimum** {.big}
+
+What is the gradient of the loss curve we were just looking at at its minimum (lowest point)? 
+
+Can you think of any other ways for the curve to have this gradient?
+
+---
+
+# Local Minimum 
+
+When the loss function we are optimizing is not convex we can get stuck in local minimum
+
+![](res/TTXpic76.png)
+
+<!--
+Just show a simplest example of a non-convex function with a local minimum.  In reality, of course there are many local minimum.
+-->
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**local minima** {.big}
+
+If you have a loss function where you know there are multiple local minimum, can you think of how you would end up in one local minimum versus another? 
+
+Are there any ways to use gradient descent to find many different local minimum?
+
+---
+
+# Mini-Batch Gradient Descent
+
+* Computing  gradient over the entire dataset for every step is expensive and unnecessary
+* Mini-Batch Gradient Descent: Compute gradient on **batches** typically of 10-1000 samples
+
+---
+
+# Stochastric Gradient Descent (SGD)
+
+* Mini-Batch Gradient Descent using batches that are **random** samples of examples
+* Random samples allow the gradient estimate to be more accurate than using the same small sample over and over again.
+* Many data sets are arranged in some order (e.g. imagine if the automobile data set was sorted by price).
+* Easy way to get random samples is to randomly “shuffle” the data and then just take first batch-size examples, then next batch-size examples, ...
+
+---
+
+# Update Step in SGD
+
+![](res/TTXpic77.png)
+
+---
+
+# Update Step in SGD (cont)
+
+![](res/TTXpic78.png)
+
+<!--
+I recognize that some students will have issues with the math.  However, I found that a lot of students appreciated this slide and it helped them understand the gradient computation much better.  I think it’s worth doing and just see how many students can stick with it.  I’d recommend doing the gradient computation on the board to help keep the students with you.
+--> 
+
+---
+
+# Update Step in SGD (cont)
+
+![](res/TTXpic79.png)
+
+<!--
+I recognize that some students will have issues with the math.  However, I found that a lot of students appreciated this slide and it helped them understand the gradient computation much better.  I think it’s worth doing and just see how many students can stick with it.  I’d recommend doing the gradient computation on the board to help keep the students with you.
+-->
+
+---
+
+# Update Step in SGD (cont)
+
+![](res/TTXpic80.png)
+
+<!--
+I recognize that some students will have issues with the math.  However, I found that a lot of students appreciated this slide and it helped them understand the gradient computation much better.  I think it’s worth doing and just see how many students can stick with it.  I’d recommend doing the gradient computation on the board to help keep the students with you.
+-->
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**gradient magnitude** {.big}
+
+![](res/TTXpic81.png)
+
+---
