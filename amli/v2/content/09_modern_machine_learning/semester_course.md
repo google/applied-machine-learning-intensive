@@ -1371,3 +1371,145 @@ Finding the minimum of the train loss curve may not give you the minimum of the 
 
 ---
 
+# Partitioning Data Sets
+
+![](res/TTXpic94.png)
+
+<!--
+Visual reinforcement
+Training set:  Used for training.
+Test set: Used for double-checking your eval after you think you’ve found your best model.  Avoids human-overfitting of the validation set.
+-->
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**a possible workflow?** {.big}
+
+![](res/TTXpic95.png)
+
+---
+
+# A Solution to “Polluting” Test Data
+
+![](res/TTXpic96.png)
+
+<!--
+Just to drive this home…
+
+Training set:  Used for training.
+Validation set:  Used for eval during training.
+Test set: Used for double-checking your eval after you think you’ve found your best model.  Avoids human-overfitting of the validation set.
+-->
+
+---
+
+# Better Workflow: Use a Validation Data 
+
+![](res/TTXpic97.png)
+
+---
+
+# Partitioning Data Sets
+
+* You need to be very careful when partitioning your data into training, validation and test sets.
+* You will explore this some in your next lab.
+* Let’s look at some real-life examples showing some subtle but significant errors you can make that would lead you to believe you have a really good model but in practice one that will not generalize to new data.
+
+<!--
+Visual reinforcement
+Training set:  Used for training.
+Test set: Used for double-checking your eval after you think you’ve found your best model.  Avoids human-overfitting of the validation set.
+-->
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**small validation set** {.big}
+
+If your training dataset was very small (say, 100 examples), and you use 5% of it for your validation set, how big would your validation set be? Can you think of any issues with using a validation set of this size?
+
+
+---
+
+# k-fold Cross Validation
+
+* Test data must be set aside unless there is no concern about overfitting
+* What if we don’t have enough data to set aside enough for validation data?
+* For these cases k-fold cross validation is often used
+* Basic idea is to divide the data into k roughly even size pieces and in each of k training phases uses 1 piece as validation and the other k-1 as training data
+
+<!--
+Stress that we assume there is a separate test data set that has been set aside.  If needed you could instead use one of the folds as test data but it is really preferred not to do this since you would then be using the test data from one phase as training or validation in the others.
+-->
+
+---
+
+# Illustration of k-fold Cross-Validation
+
+![](res/TTXpic98.png)
+
+<!--
+The next set of slides is a visualization of 5-fold cross validation.  Here the data divides perfectly into the 5 groups but that is not necessary
+-->
+
+---
+
+# Illustration of k-fold Cross-Validation
+
+![](res/TTXpic99.png)
+
+---
+
+# Illustration of k-fold Cross-Validation
+
+![](res/TTXpic100.png)
+
+---
+
+# Illustration of k-fold Cross-Validation
+
+![](res/TTXpic101.png)
+
+---
+
+# Cross-Validation: Compute Metric
+
+![](res/TTXpic102.png)
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**high-variance performance** {.big}
+
+Say you perform k-fold cross validation and find that for a single hyperparameter setting, the model's performance varies significantly across different folds. 
+
+What are some reasons this might happen?
+
+---
+
+# Cross-Validation: Train Final Model
+
+* To train the final model, choose the hyperparameter setting that gives you best aggregated performance over the k runs.
+* Now run the algorithm with the chosen hyperparameters using all examples (other than those set aside as test data throughout) as the training data to obtain the final model.
+* Use the test data, which has not been used during cross validation to check for any issues with overfitting.
+
+---
+
+# k-fold Cross-Validation: Pros and Cons
+
+* The advantage of k-fold cross validation is that we can train on (k-1)/k of the data each phase and that all points are used for validation.
+* The disadvantage is that k different models need to be trained for every set of hyperparameters being considered, which is slow.
+* Only use k-fold cross-validation if you don’t have enough labeled data to split into independent train, validate and test sets.
+
+---
+
+![](res/TTXgreen.png)
+
+# Regularization for Simplicity
+
+---
+
