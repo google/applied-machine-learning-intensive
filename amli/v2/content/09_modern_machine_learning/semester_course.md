@@ -1222,3 +1222,152 @@ I recognize that some students will have issues with the math.  However, I found
 ![](res/TTXpic81.png)
 
 ---
+
+![](res/TTXgreen.png)
+
+# Recognizing and Preventing Overfitting
+
+---
+
+# Will Our Model Make Good Predictions?
+
+* **Our Key Goal**: predict well on new unseen data.
+* **Problem**: We only get a sample of data D for training
+* We can measure the loss for our model on the sample D but how can we know if it will predict well on new data?
+* **Performance Measure**: A measure of how well the model predicts on unseen data.  This is usually related to the loss function.
+
+---
+
+# Example Performance Measure
+
+![](res/TTXpic82.png)
+
+---
+
+# Non-Linear Model
+
+![](res/TTXpic83.png)
+
+---
+
+# “Perfect” Model
+
+![](res/TTXpic84.png)
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**overfitting** {.big}
+
+Given that we can can find a model which fits the training data perfectly, why might this not be useful? (Hint: Remember that our goal in machine learning is often to do prediction on data not in our training set)
+
+---
+
+# Measuring Generalization Ability
+
+![](res/TTXpic85.png)
+
+---
+
+# Generalization for Linear Model
+
+![](res/TTXpic86.png)
+
+---
+
+# Generalization for Non-Linear Model
+
+![](res/TTXpic87.png)
+
+---
+
+# Generalization for “Perfect” Model  
+
+![](res/TTXpic88.png)
+
+---
+
+# Overfitting 
+
+![](res/TTXpic89.png)
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**underfitting** {.big}
+
+Can you think of any datasets where a linear model would be too simple?
+
+---
+
+# An Underfit Model  
+
+![](res/TTXpic90.png)
+
+---
+
+![](res/TTXgreen.png)
+
+# Model Complexity and Occam’s Razor
+
+---
+
+# How do we know if our model is good?
+
+* William of Occam (back in 14th century) argued that simple explanations of nature are better
+* **Occam’s Razor principle**: the less complex a model is, the more likely to predict new data well
+* How can we define how complex a learning model is?
+* How can we measure how well our model generalizes?
+
+---
+
+# Model Complexity
+
+![](res/TTXpic91.png)
+
+---
+
+![](res/TTXgreen.png)
+
+# Test Data
+
+* In practice to determine if our model do well on a new sample of data we use a new sample of data that we call the test set
+* Good performance on the test set is a useful indicator of good performance on the new data as long as:
+  * The test set is large enough
+  * The test set is independent of the training set so it truly represents new data
+  * We don’t cheat by using the test set more than once
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**test set vs. real world** {.big}
+
+The purpose of the test set is to estimate performance in the "real world" that the model has never seen before, so that we can get a feel for how well it would work when deployed. Can you think of any difficulties that may come up when trying to predict "real-world" performance?
+
+---
+
+# Generalization Curve and Overfitting
+
+![](res/TTXpic92.png)
+
+---
+
+# Train vs. Test Loss Curves
+
+![](res/TTXpic93.png)
+
+<!--
+Finding the minimum of the train loss curve may not give you the minimum of the test loss curve.
+-->
+
+---
+
+![](res/TTXgreen.png)
+
+# Training, Validation, and Test Data Sets
+
+---
+
