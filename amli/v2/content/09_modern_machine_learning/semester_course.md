@@ -1513,3 +1513,68 @@ What are some reasons this might happen?
 
 ---
 
+# Ways to Prevent Overfitting
+
+![](res/TTXpic103.png)
+
+---
+
+# Penalizing Model Complexity
+
+![](res/TTXpic104.png)
+
+<!--
+Notation of Loss(Data|Model) reads as “minimize loss of the data, given the model.”
+
+Mention tradeoff parameter lambda for controlling how much you value simplicity vs. fitting the training data.  Optimal value for any given problem is data dependent, which means we almost always need to spend some time tuning this (either manually or via automated search).
+
+Talk through what happens if we only minimize model complexity (without worrying about training error) -- we’d end up with a null model. 
+-->
+
+---
+
+# Penalizing Model Complexity
+
+![](res/TTXpic105.png)
+
+<!--
+Notation of Loss(Data|Model) reads as “minimize loss of the data, given the model.”
+
+Mention tradeoff parameter lambda for controlling how much you value simplicity vs. fitting the training data.  Optimal value for any given problem is data dependent, which means we almost always need to spend some time tuning this (either manually or via automated search).
+
+Talk through what happens if we only minimize model complexity (without worrying about training error) -- we’d end up with a null model. 
+-->
+
+---
+
+# Regularized Train Loss (cartoon)
+
+![](res/TTXpic106.png)
+
+<!--
+Using regularization can make the model simpler, which can avoid bad solutions.
+-->
+
+---
+
+# Regularization 
+
+![](res/TTXpic107.png)
+
+<!--
+What do we mean by “prior belief”?  It’s a belief we go into training the model with -- not something learned from the data.  This is a way of encouraging the model to follow some structure (a.k.a simplicity) on the model.
+
+Normal distribution on weights -- if you have a lot of weights (which in a linear model corresponds to having a lot of input variables), you could plot a histogram of the weight values and see a nice normal curve.
+-->
+
+---
+
+![](res/TTXgreen.png)
+
+# L2 Regularization to Reduce Overfitting
+
+---
+
+
+
+
