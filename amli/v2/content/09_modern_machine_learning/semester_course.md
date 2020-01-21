@@ -1575,6 +1575,15 @@ Normal distribution on weights -- if you have a lot of weights (which in a linea
 
 ---
 
+# L2 Regularlization
+
+<!--
+Note that there’s a new parameter here: lambda.  This lambda is a simple scalar value that balances how much we weigh each of these goals in our total loss function.  This is a tuning parameter, and must be explicitly set.  The best value for any given problem is data dependent, so you’ll need to do some tuning, either manually (for example, via a grid search along a set of possible values) or automatically using a tool like Vizier.  We’ll talk about Vizier in the Lab.
+
+The 2 in the formula is supposed to be a subscript -- if you squint you’ll see that it’s on a slightly different level.
+
+Note that although we say “L2 norm”, it’s really the square of the L2 norm.  Among other things, this makes the derivative trivial to work with.
+-->
 
 
 
