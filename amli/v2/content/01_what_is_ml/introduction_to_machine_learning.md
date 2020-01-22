@@ -1,13 +1,3 @@
-# Intro to Machine Learning (ML)
-
-<!--
-Background content for the slides:
-https://developers.google.com/machine-learning/amli-content/what-is-ml/intro
-https://developers.google.com/machine-learning/amli-content/what-is-ml/terminology	`
--->
-
----
-
 # What is Machine Learning?
 
 ---
