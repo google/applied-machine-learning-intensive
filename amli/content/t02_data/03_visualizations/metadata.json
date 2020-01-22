@@ -2,7 +2,8 @@
   "name": "Visualizations",
   "bug": "b/129331483",
   "colabs": [
-    "colab.ipynb"
+    "colab1.ipynb",
+    "colab2.ipynb"
   ],
   "slides": [
     "https://docs.google.com/presentation/d/1owLr7j_oaf8zLCw4S6L0VYjWbbPcypIlNGSJ7i-KGTk/edit"
