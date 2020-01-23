@@ -1,5 +1,3 @@
-# What is Machine Learning?
-
 ---
 
 ## Learning from Examples
