@@ -25,7 +25,7 @@ First, let's take a moment to meet your instructional staff.
 # Prerequisites
 
 * Basic Python programming
-* Basic matrix math
+* Basic matrix algebra
 * Exposure to statistics and probability
 
 <!--
@@ -44,7 +44,7 @@ learn, especially when you already have programming experience.
 
 This is an applied course, but we will do a little math along the way.
 
-For matrix math it would be nice if you knew how to add, subtract, and multiply matrices.
+For matrix algebra it would be nice if you knew how to add, subtract, and multiply matrices.
 Understanding dot products and transpositions would be helpful too.
 
 For statistics a probability, we only lightly touch these concepts in the course. You should
