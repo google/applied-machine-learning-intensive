@@ -2,5 +2,6 @@
 
 import os #lets us navigate folders
 
+#get all folders in the content folder
 tracks = [dI for dI in os.listdir('../content') if os.path.isdir(os.path.join('../content',dI))]
 print(tracks)
