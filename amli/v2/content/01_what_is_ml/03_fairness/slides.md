@@ -7,9 +7,13 @@
 ![](res/MLheadlinescreenshot.png)
 
 <!--
-Open up the ML Fairness topic with engaging examples from various domains, showing the impact of bias on end users. There are 4 potential articles in the facilitator guide -- choose your favorite 3 and have students count off 1/2/3. Assign each group an article to read.
+*Open up the ML Fairness topic with engaging examples from various domains, showing the impact of bias on 
+end users. There are 4 potential articles in the facilitator guide -- choose your favorite 3 and have
+students count off 1/2/3. Assign each group an article to read.
 
-After everyone has finished reading (~10 mins), gather in mixed clusters of 3 (one student from each article) to explain the main takeaway of your article to others in your group. What bias was uncovered and how would you describe its impact on people? What do you find interesting about this article?
+After everyone has finished reading (~10 mins), gather in mixed clusters of 3 (one student from each
+article) to explain the main takeaway of your article to others in your group. What bias was uncovered
+and how would you describe its impact on people? What do you find interesting about this article?*
 -->
 
 ---
@@ -23,11 +27,15 @@ After everyone has finished reading (~10 mins), gather in mixed clusters of 3 (o
 * Implicit (Confirmation, Experimenters)
 
 <!--
-Biases can be found throughout the design and development of ML systems. Stay in same groups of 3; do a 2-part activity to identify different types of bias. 
+Biases can be found throughout the design and development of ML systems. Stay in same groups of 3; do a
+2-part activity to identify different types of bias. 
 
-Part 1 asks them to use cards to match 9 descriptive examples with 9 different types of bias (Bias Card Matching). For Part 2, ask them to pair-share or volunteer-share what instances of these bias types they’ve encountered in their own experience.
+Part 1 asks them to use cards to match 9 descriptive examples with 9 different types of bias (Bias Card
+Matching). For Part 2, ask them to pair-share or volunteer-share what instances of these bias types they’ve
+encountered in their own experience.
 
-If you have a concrete example of bias in ML systems from your own experience, share how it was detected and handled. 
+If you have a concrete example of bias in ML systems from your own experience, share how it was detected
+and handled. 
 -->
 
 ---
