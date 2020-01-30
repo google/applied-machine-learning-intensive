@@ -319,7 +319,7 @@ What is machine learning then?
 
 ---
 
-a specific field of AI where a system learns to find patterns in examples in order to make predictions
+a specific field of AI where a system learns to find patterns in examples, typically using statistics, in order to make predictions
 
 <!--
 Machine learning is a strategy through which AI can appear “intelligent” when performing tasks
@@ -423,7 +423,7 @@ These features are used in a model to make predictions.
 
 a mathematical way the patterns and insights that a machine learning system learns from examples and is used to make predictions
 
-<!-- A model specifies how your machine learning system will actually learn patterns and insights. The model will then make predictions based on what it learned. Different models perform better on different problems. We’ll discuss several common types of models in a later lecture.
+<!-- A model specifies how your machine learning system will actually learn patterns and insights. The model will then make predictions based on what it learned. Different models perform better on different problems. We’ll discuss several common types of models in a later lecture. For example, (price of house) = 100 * (square footage of house). If the house is 1500ft^2, then we forecast the price to be $150,000.
 -->
 
 ---
