@@ -2,5 +2,5 @@
 
 import os #lets us navigate folders
 
-tracks = [dI for dI in os.listdir('../amli/content') if os.path.isdir(os.path.join('../amli/content',dI))]
+tracks = [dI for dI in os.listdir('../content') if os.path.isdir(os.path.join('../content',dI))]
 print(tracks)
