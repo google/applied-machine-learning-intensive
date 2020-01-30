@@ -63,7 +63,7 @@ Sites approved for finding stock images with open licenses are:
      [Unsplash License](https://unsplash.com/license)
    * [Pexels](https://pexels.com) using the
      [Pexels License](https://www.pexels.com/photo-license/)
-   * [https://pixabay.com](Pixabay) using the
+   * [Pixabay](https://pixabay.com) using the
      [Pixabay License](https://pixabay.com/service/license/)
 
 Every slide should also have a 'Concepts' section that lists the concepts
