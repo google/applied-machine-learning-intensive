@@ -72,7 +72,7 @@ label emails as spam
 ---
 
 ## Clustering
-Find relationships between data
+Find relationships between data, typically without a labeled training set
 
 <!--
 Clustering looks for similar examples in a dataset. It is an example of unsupervised machine
@@ -106,7 +106,7 @@ grouping many examples of soft drinks from around the world
 ---
 
 ## Regression
-Predicting the relationship between multiple variables
+Predicting the relationship between multiple variables, where the target is continuous
 
 <!--
 Regression predicts the relationship between two or more variables. If you were interested in 
@@ -138,6 +138,8 @@ regression system?
 ex:
 estimate arrival time based on traffic and distance
 predict crop yield based on weather, time of year
+
+Also, logistic regression is a classification technique (with a binary target), and it can be confusing. But typically, when we say "regression" we mean predicting a continuous variable. 
 -->
 
 --- 
@@ -161,6 +163,8 @@ Quick discussion: what are some other examples of sequence predictions?
 ex:
 translations based on context
 password strength (how predictable is the next letter from the previous ones)
+autocomplete
+marketbasket 
 -->
 
 ---
@@ -208,7 +212,7 @@ the examples used to train them.
 Discuss: what attributes of a dataset would be ideal? (Correct answer is Large size / High
 diversity: A large number of examples that cover a variety of use cases is essential for a machine
 learning system to understand the underlying patterns in the data. A model trained on this type of
-dataset is more likely to perform well on new data.)
+dataset is more likely to perform well on new data. But it also may take a long time to train.)
 
 Even if you have a lot of data, if it does not cover a variety of examples, a model will have lower
 confidence for new data underrepresented in the training examples.
