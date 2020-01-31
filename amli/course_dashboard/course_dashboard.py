@@ -21,7 +21,14 @@ extratracks.sort() #figured it won't be very useful, but at least nice to have t
 
 outmd.write("# Course Dashboard\n")
 
-outmd.write("## Sequence Tracks\n")
+outmd.write("Track Count: " + str(len(sequencetracks)) + "\n")
+
+delayprint = ""
+unitcount = 0
+
+outmd.write("Unit Count: " + str(unitcount))
+
+delayprint += ("## Sequence Tracks\n")
 
 for track in sequencetracks:
     jsonfile = open("../content/" + str(track) + "/metadata.json", "r")
@@ -29,16 +36,32 @@ for track in sequencetracks:
     for line in lines:
         if "name" in line:
             linelist = line.split('"')
-            outmd.write("### " + track[1:3] + ": " + linelist[-2] + "\n")
+            string = "### " + track[1:3] + ": " + linelist[-2] + "\n"
+            delayprint += string
     jsonfile.close()
     units = [dI for dI in os.listdir('../content/' + track) if os.path.isdir(os.path.join('../content/' + track,dI))]
     units.sort()
     for unit in units:
+        unitcount = unitcount + 1
         jsonfile = open("../content/" + str(track) + "/" + str(unit) + "/metadata.json", "r")
         lines = jsonfile.readlines()
         for line in lines:
             if '"name":' in line:
                 linelist = line.split('"')
-                outmd.write(" * " + unit[0:2] + ": " + linelist[-2] + "\n")
+                string = " * " + unit[0:2] + ": " + linelist[-2] + "\n"
+                delayprint += string
+        #this section of commented out stuff might be useful but the json files 
+        #in the colab have some issues, so maybe json parsing by hand
+        #will be faster
+        #content = "".join(lines)
+        #content = content.replace("\n", "")
+        #content = content.replace("\t", " ")
+        #content = content.replace(r"\s", " ")
+        #content = content.replace('" "', '","')
+        #print(content)
+        #parsed_json = json.loads(content)
+        #print(parsed_json["name"])
         jsonfile.close()
 
+outmd.write(delayprint)
+outmd.close()
