@@ -74,7 +74,7 @@ for track in sequencetracks:
         content = content.replace('" "', '","')
         parsed_json = json.loads(content)
         #print(parsed_json["name"])
-        string = " * " + unit[0:2] + ": " + parsed_json["name"] + "\n"
+        string = " * " + unit[0:2] + ": **" + parsed_json["name"] + "**\n"
         delayprint += string
         if "colabs" in parsed_json.keys():
             #print(str(len(parsed_json["colabs"])) + " Colab notebooks")
