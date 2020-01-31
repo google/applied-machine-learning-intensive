@@ -92,40 +92,50 @@ Unit Count: 70
 ### 02: Data Analysis and Manipulation
  * **00: Introduction to Colab**
    * 1 Colab notebooks
+     * 0 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1kuHeyOqU-2oMsuHjbF2s1R-jd2Gxp4qFZXXERYO0P1A/edit
    * Resources:
      * https://research.google.com/colaboratory/faq.html
  * **01: Introduction to Python**
    * 1 Colab notebooks
+     * 3 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1e1Vz9veOsC-Tc7yltqOOT3iPI_2InEruS7wABY3eZwk/edit
  * **02: Intermediate Python**
    * 4 Colab notebooks
+     * 10 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/10JbPax-E7c6LvVhMPO7jC84x3dud3aNb6HDoprqLM9M
  * **03: Visualizations**
    * 2 Colab notebooks
+     * 8 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1owLr7j_oaf8zLCw4S6L0VYjWbbPcypIlNGSJ7i-KGTk/edit
  * **04: Introduction to Pandas**
    * 1 Colab notebooks
+     * 3 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1tTlQoMPOryYg5u6i6AN1Z19aHgKtxHQe_KFaxZ9Lv1U/edit
  * **05: Intermediate Pandas**
    * 1 Colab notebooks
+     * 3 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/14pIJ_BY40UhvyvYc9AtHj_Jep9aBf-HN-HSXzNa81zI/edit
  * **06: Probability**
    * 3 Colab notebooks
+     * 10 Exercises
  * **07: Statistical Analysis of Data**
    * 1 Colab notebooks
+     * 4 Exercises
  * **08: Data Analysis and Manipulation**
    * 1 Colab notebooks
+     * 1 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1FuooAOi_v3MbkxQbg1q4vEp_Ful-ucLJ7lFBixnQd9g/edit
  * **09: Data Processing Project**
    * 1 Colab notebooks
+     * 2 Exercises
 ### 03: Regression
  * **00: Regression**
    * 0 Colab notebooks
@@ -137,6 +147,7 @@ Unit Count: 70
      * https://stats.stackexchange.com/questions/23128/solving-for-regression-parameters-in-closed-form-vs-gradient-descent
  * **01: Introduction to Scikit Learn**
    * 1 Colab notebooks
+     * 3 Exercises
    * Slides:
      * slides.html
      * https://docs.google.com/presentation/d/1_Smz8mkK9lBrWKBjucpmLSE63jWkKw2hy10dP008Nz4/edit
@@ -148,28 +159,35 @@ Unit Count: 70
      * https://docs.google.com/document/d/1BXzquN_wmHS5suxt-JuG3CnG8EARUWg_HBPQQm-9Pic/edit
  * **03: Linear Regression with Scikit Learn**
    * 1 Colab notebooks
+     * 10 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1YXhsn68VCzGvMzigCnnw1vlxYdADSuZENnlHMe4sPPQ/edit
  * **04: Polynomial Regression**
    * 1 Colab notebooks
+     * 3 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1ZbmvG5tuT3jo-kWmeoJ3WJBFsFa0bQWf1PCXVSDWw0E/edit
  * **05: Dimensionality Reduction**
    * 1 Colab notebooks
+     * 1 Exercises
  * **06: Regression Quality**
    * 1 Colab notebooks
+     * 3 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1_FB122PvbgueJ8nAB6HIBivfz6pepxClqihSkXVVsZA/edit
  * **07: Introduction to TensorFlow**
    * 1 Colab notebooks
+     * 4 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1bq1AXl1OypV1-kV76nmzKg7K90U_qcBdCqWpUKa1FzM/edit
  * **08: Linear Regression with TensorFlow**
    * 1 Colab notebooks
+     * 4 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1ru-QtzmPWIZxhn8dtZF3NXwVpUXg72RLLNK1S7EmuTo/edit
  * **09: Linear Regression Project**
    * 1 Colab notebooks
+     * 2 Exercises
 ### 04: Using Pre-build Machine Learning Models
  * **00: Classification**
    * 0 Colab notebooks
@@ -191,16 +209,21 @@ Unit Count: 70
      * https://www.scmp.com/tech/innovation/article/2174564/facial-recognition-catches-chinas-air-con-queen-dong-mingzhu
  * **02: Image Manipulation**
    * 1 Colab notebooks
+     * 2 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1I86mxmrwg8PsuV3J8U2blJO0I2vpB5whQmr6dzA93bc/edit
  * **03: Video Processing**
    * 1 Colab notebooks
+     * 1 Exercises
  * **04: OpenCV**
    * 1 Colab notebooks
+     * 1 Exercises
  * **05: Saving and Loading Models**
    * 1 Colab notebooks
+     * 2 Exercises
  * **06: Using Prebuilt Models Project**
    * 1 Colab notebooks
+     * 2 Exercises
 ### 05: Basic Classification
  * **00: Classification Quality**
    * 0 Colab notebooks
@@ -212,14 +235,18 @@ Unit Count: 70
      * https://ml-cheatsheet.readthedocs.io/en/latest/loss_functions.html
  * **01: Classification with scikit-learn**
    * 1 Colab notebooks
+     * 12 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1oYwiln4SnSoPAhqmy5rr2Tz7AMkLOu_Zp7ePoc_81QE/edit
  * **02: Bucketized Features**
    * 1 Colab notebooks
+     * 3 Exercises
  * **03: Cross-Validation**
    * 1 Colab notebooks
+     * 3 Exercises
  * **04: Random Forests**
    * 1 Colab notebooks
+     * 1 Exercises
    * Resources:
      * https://en.wikipedia.org/wiki/Decision_tree
      * https://en.wikipedia.org/wiki/Random_forest
@@ -229,19 +256,24 @@ Unit Count: 70
      * https://en.wikipedia.org/wiki/Boosting_(machine_learning)
  * **05: k-Nearest Neighbors**
    * 1 Colab notebooks
+     * 4 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1mYMxv2DbD0b3zPLgKKee1V2NVxl7K211Hk8iF5Zl1eQ/edit
  * **06: Bayesian Models**
    * 1 Colab notebooks
+     * 1 Exercises
  * **07: Singular Value Decomposition**
  * **08: Support Vector Machines**
    * 1 Colab notebooks
+     * 4 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/14JS91pDSdPWA4ffbyeVd5P4tY5pT65oRL_KxUY0tDvQ/edit
  * **09: Classification with TensorFlow**
    * 1 Colab notebooks
+     * 1 Exercises
  * **10: Basic Classification Project**
    * 1 Colab notebooks
+     * 4 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1AMZ2gxEmhCmF5QnMuTEAMCK-eEfLSwK2lzqDGKdhEJo
 ### 06: Image Classification
@@ -251,9 +283,11 @@ Unit Count: 70
      * https://docs.google.com/presentation/d/1B3gb2J42-kh0XXPgL6tI_agLAFCYWQ3Za8H61CsiVg4/edit
  * **01: Artificial Neural Networks**
    * 1 Colab notebooks
+     * 1 Exercises
  * **02: Activation Functions**
  * **03: Convolutional Neural Networks**
    * 1 Colab notebooks
+     * 1 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1fnm0aRK6W2sztRgV1b_hGC18M3yu7g8PQn97kVHTheM/edit
  * **04: Introduction to Keras**
@@ -264,10 +298,12 @@ Unit Count: 70
      * https://www.tensorflow.org/guide/keras
  * **05: Image Classification with Keras**
    * 1 Colab notebooks
+     * 2 Exercises
    * Resources:
      * https://github.com/zalandoresearch/fashion-mnist
  * **06: Image Classification Project**
    * 1 Colab notebooks
+     * 2 Exercises
    * Materials:
      * https://www.youtube.com/watch?v=ACmydtFDTGs
 ### 07: Clustering
@@ -277,25 +313,32 @@ Unit Count: 70
      * https://docs.google.com/presentation/d/1Dsyrx3O4uCahYHQtHp7UJgkwZE_ZRbewnjuPRgq0EEI/edit
  * **01: k-Means**
    * 1 Colab notebooks
+     * 2 Exercises
 ### 08: Advanced Topics in Deep Learning
  * **00: Embeddings**
    * 1 Colab notebooks
+     * 4 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/17JSXlcoRXzXwE5EXjt1b6XCtvBNkdWu2CSnVy6abfDs/edit
  * **01: Recurrent Neural Networks**
    * 1 Colab notebooks
+     * 4 Exercises
  * **02: Natural Language Processing**
    * 1 Colab notebooks
+     * 4 Exercises
    * Slides:
      * https://docs.google.com/presentation/d/1caON9bqpjGCOULARzVoX8a4YRWQ1htTSG2oXdoWd1Ao/edit
  * **03: Autoencoders**
    * 1 Colab notebooks
+     * 2 Exercises
  * **04: Generative Adversarial Networks**
    * 2 Colab notebooks
+     * 2 Exercises
  * **05: Reinforcement Learning**
  * **06: Transfer Learning**
  * **07: Advanced Sequence Prediction**
    * 1 Colab notebooks
+     * 1 Exercises
 ### 09: Capstone Project
  * **00: Capstone Project Introduction**
    * 0 Colab notebooks

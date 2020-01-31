@@ -11,7 +11,7 @@
 # Track count and unit count done
 # Word count: What counts as a word? Is this the sum of all words appearing in all colabs/etc.? How will instructors benefit?
 # Duration: Seems very useful, will need to learn api stuff to get into colabs and slides
-# Exercise count: Similar to duration, need api.
+# Exercise count done
 # also seems useful to include data on each unit (slide link, colab, any extra materials, duration) in 
 # list of units for teachers to reference
 # Some of these may be good telecon questions
@@ -21,6 +21,7 @@
 
 import os #lets us navigate folders
 import json #for parsing the metadata files more easily (hopefully)
+import re #for regex because I don't want to come up with all of the ways to denote an exercise by hand
 
 #opening a markdown file to write all of the output to
 outmd = open("Dashboard.md", "w")
@@ -79,22 +80,39 @@ for track in sequencetracks:
         #print(parsed_json["name"])
         string = " * **" + unit[0:2] + ": " + parsed_json["name"] + "**\n"
         delayprint += string
+        colabs = []
         if "colabs" in parsed_json.keys():
             #print(str(len(parsed_json["colabs"])) + " Colab notebooks")
             string = "   * " + str(len(parsed_json["colabs"])) + " Colab notebooks\n"
             delayprint += string
+            colabs += parsed_json["colabs"]
         elif "colab" in parsed_json.keys():
             #print(str(len(parsed_json["colab"])) + " Colab notebooks")
             string = "   * " + str(len(parsed_json["colab"])) + " Colab notebooks\n"
+            delayprint += string
+            colabs += parsed_json["colab"]
+        #in colabs, exercises denoted by ##Exercise number or ## Exercise number
+        #This section counts all of the exercises from all colabs
+        exercisecount = 0
+        for colab in colabs:
+            colabfile = open("../content/" + str(track) + "/" + str(unit) + "/" + colab)
+            colabcontent = colabfile.read()
+            m = re.search(r'## *[Ee]xercise ', colabcontent)
+            while m != None:
+                exercisecount += 1
+                colabcontent = colabcontent[m.end():]
+                m = re.search(r'## *[Ee]xercise ', colabcontent)
+        if len(colabs) > 0:
+            string = "     * " + str(exercisecount) + " Exercises\n"
             delayprint += string
         if ("slides" in parsed_json.keys()) and (len(parsed_json["slides"]) > 0):
             string = "   * Slides:\n"
             delayprint += string
             slides = parsed_json["slides"]
             for slideshow in slides:
-                #print(" * " + slideshow)
                 string = "     * " + slideshow + "\n"
                 delayprint += string
+        #Gets materials, resources, and handouts links from json file
         if ("materials" in parsed_json.keys()) and (len(parsed_json["materials"]) > 0):
             #print("Materials:")
             string = "   * Materials:\n"
