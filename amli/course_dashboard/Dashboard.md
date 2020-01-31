@@ -1,6 +1,9 @@
 # Course Dashboard
 Track Count: 10
-Unit Count: 0## Sequence Tracks
+
+Unit Count: 70
+
+## Sequence Tracks
 ### 00: Course Preamble
  * 00: Program Welcome and Overview
  * 01: Ask Me Anything

@@ -21,12 +21,10 @@ extratracks.sort() #figured it won't be very useful, but at least nice to have t
 
 outmd.write("# Course Dashboard\n")
 
-outmd.write("Track Count: " + str(len(sequencetracks)) + "\n")
+outmd.write("Track Count: " + str(len(sequencetracks)) + "\n\n")
 
 delayprint = ""
 unitcount = 0
-
-outmd.write("Unit Count: " + str(unitcount))
 
 delayprint += ("## Sequence Tracks\n")
 
@@ -62,6 +60,8 @@ for track in sequencetracks:
         #parsed_json = json.loads(content)
         #print(parsed_json["name"])
         jsonfile.close()
+
+outmd.write("Unit Count: " + str(unitcount) + "\n\n")
 
 outmd.write(delayprint)
 outmd.close()
