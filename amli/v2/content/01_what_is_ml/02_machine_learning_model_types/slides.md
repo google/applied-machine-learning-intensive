@@ -52,7 +52,7 @@ What are some examples that you know of that would be machine learning classific
 
 ---
 
-![Image](https://file.io/FbhXet)
+![Image](res/classification.gif)
 
 <!--
 This animation shows, mathematically, what a binary classification system is trying to do: given
@@ -86,7 +86,7 @@ systems propose their own categories based on patterns found in the examples.
 
 ---
 
-![Image](https://file.io/Km078M)
+![Image](res/clustering.gif)
 
 <!--
 For example, let’s say the child from the zoo wants to organize a photo albums of many pictures
@@ -117,7 +117,7 @@ involves a continuous value to predict.
 
 ---
 
-![Image](https://file.io/eXHrFC)
+![Image](res/linear_regression.gif)
 
 <!--
 This graphic shows one simple type of regression, which tries to find the best-fitting line for
@@ -127,7 +127,7 @@ some data points, then makes predictions based on that line.
 ---
 
 ## Regression
-![Image](https://file.io/xWBcE4)
+![Image](res/regression2.png)
 
 <!--
 Regression may also discover a more complicated pattern, such as this sine-like pattern of sea
@@ -153,7 +153,7 @@ Finally, sequence prediction suggests what might come next, based on previous ex
 
 ---
 
-![Image](https://file.io/YmjtJT)
+![Image](res/sequences.gif)
 
 <!--
 Autocomplete is an example of a sequence prediction: predicting what word is most likely to be
