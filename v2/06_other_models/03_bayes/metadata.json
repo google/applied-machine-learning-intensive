@@ -1,0 +1,23 @@
+{
+  "name": "Bayesian Models",
+  "handouts": [],
+  "resources": [],
+  "materials": [],
+  "colab": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
+  ],
+  "duration": {
+    "slides.md": 30,
+    "colab.ipynb": 90
+  },
+  "learning-objectives": [
+    "Review Bayes' Theorem.",
+    "Build a Classifier with sklearn.",
+    "Clean and analyze text.",
+    "Predict spam or ham.",
+    "Predict review sentiment (+ or -)."
+  ]
+}

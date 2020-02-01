@@ -1,0 +1,7 @@
+absl-py
+google-auth-oauthlib
+google-api-python-client
+nbformat
+numpy
+pytest
+pyyaml

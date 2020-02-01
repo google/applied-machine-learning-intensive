@@ -1,0 +1,19 @@
+{
+  "name": "Neural Networks",
+  "slides": [
+    "slides.md"
+  ],
+  "duration": {
+    "slides.md": 90
+  },
+  "materials": [],
+  "resources": [],
+  "colabs": [],
+  "handouts": [],
+  "learning-objectives": [
+    "Identify the elements of a perceptron.",
+    "Adjust weights and bias in a neural network.",
+    "Track a basic neural network prediction through hidden layers and activation functions.",
+    "Differentiate the step-function from other activation functions."
+  ]
+}

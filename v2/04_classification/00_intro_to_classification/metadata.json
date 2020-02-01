@@ -1,0 +1,15 @@
+{
+    "name": "Introduction to Classification",
+    "slides": [
+        "slides.md"
+    ],
+    "colabs": [],
+    "duration": {
+      "slides.md": 90
+    },
+    "learning-objectives": [
+        "Differentiate between classification and regression.",
+        "Apply accuracy, precision, recall, and F1 scoring to classification models.",
+        "Interpret classification quality charts."
+    ]
+}

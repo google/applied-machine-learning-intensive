@@ -1,0 +1,21 @@
+{
+  "name": "Regression with TensorFlow",
+  "slides": [
+    "slides.md"
+  ],
+  "materials": [],
+  "resources": [],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "duration": {
+    "slides.md": 45,
+    "colab.ipynb": 120
+  },
+  "handouts": [],
+  "learning-objectives": [
+    "Use the TensorFlow/Keras API to build a deep neural network.",
+    "Understand the implications of activation function choice.",
+    "Plot and interpret model training loss."
+  ]
+}

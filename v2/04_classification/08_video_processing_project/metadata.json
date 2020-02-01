@@ -1,0 +1,14 @@
+{
+  "name": "Video Processing Project",
+  "handouts": [],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "resources": [],
+  "materials": [],
+  "learning-objectives": [
+    "Use OpenCV to process images and video",
+    "Use a pre-trained model to identify and label objects in each frame of a video",
+    "Make judgements about classification quality and when to apply predicted labels"
+  ]
+}

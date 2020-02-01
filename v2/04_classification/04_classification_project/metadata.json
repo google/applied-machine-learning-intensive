@@ -1,0 +1,20 @@
+{
+  "name": "Basic Classification Project",
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
+  ],
+  "handouts": [],
+  "resources": [],
+  "materials": [],
+  "learning-objectives": [
+    "Define, build, train and evaluate a Linear Classifier model in TensorFlow.",
+    "Submit predictions to a Kaggle challenge."
+  ],
+  "duration": {
+    "slides.md": 30,
+    "colab.ipynb": 240
+  }
+}

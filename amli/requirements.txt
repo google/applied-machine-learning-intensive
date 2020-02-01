@@ -1,6 +1,0 @@
-absl-py
-google-auth-oauthlib
-nbformat
-numpy
-pytest
-pyyaml

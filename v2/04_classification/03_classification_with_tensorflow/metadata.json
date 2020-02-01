@@ -1,0 +1,20 @@
+{
+  "name": "Classification with TensorFlow",
+  "materials": [],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
+  ],
+  "duration": {
+    "slides.md": 30,
+    "colab.ipynb": 60
+  },
+  "handouts": [],
+  "resources": [],
+  "learning-objectives": [
+    "Create a classification model with TensorFlow.",
+    "Use a trained TensorFlow model to make classification predictions."
+  ]
+}

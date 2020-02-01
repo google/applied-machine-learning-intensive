@@ -1,0 +1,16 @@
+{
+  "name": "Artificial Neural Networks",
+  "slides": [
+    "slides.md"
+  ],
+  "colabs": [
+    "colab.ipynb"
+    ],
+  "handouts": [],
+  "resources": [],
+  "materials": [],
+  "learning-objectives": [
+    "Use TensorFlow to implement artificial neural network",
+    "Use DNNClassifier to implement deep neural network classifier"
+  ]
+}

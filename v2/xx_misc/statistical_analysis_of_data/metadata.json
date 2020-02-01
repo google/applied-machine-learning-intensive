@@ -1,0 +1,17 @@
+{
+  "name": "Statistical Analysis of Data",
+  "materials": [],
+  "resources": [],
+  "handouts": [],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "learning-objectives": [
+    "Understand basic statistical sampling, and generate a representative sample from a dataset",
+    "Be able to sniff out bias in an experiment",
+    "Discern a good measure of central tendency for a set of data points",
+    "Calculate standard deviation, standard error, and percentile",
+    "Describe what a skewed distribution is, and how it is a deviation from normality",
+    "Generate a hypothesis, and compare the means of 2 sample distributions with a t-test, and report on the results"
+  ]
+}
