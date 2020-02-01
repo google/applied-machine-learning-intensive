@@ -3,7 +3,7 @@
 <!--
 
 Welcome to the Applied Machine Learning Intensive. In this course we will explore the concept of
-machine learning and perform machine learning a wide variety of tasks. We are glad that you are
+machine learning and perform machine learning on a wide variety of tasks. We are glad that you are
 here and excited to explore this space with you.
 
 -->
@@ -34,7 +34,7 @@ We hope to keep the prerequisites small for this course. For the most part we'll
 everything that you need to know from the ground up. There are a few things that we do hope you
 already have exposure to that we've listed on this slide.
 
-If you don't know (or remember these), don't panic. We have labs for all of the prerequisites.
+If you don't know (or remember) these, don't panic. We have labs for all of the prerequisites.
 
 For Python programming, we really only expect you to know the basics of the core language. It would
 be good if you know `if`, `else`, `for`, `while`, the built in data types, and how to create your
@@ -47,7 +47,7 @@ This is an applied course, but we will do a little math along the way.
 For matrix algebra it would be nice if you knew how to add, subtract, and multiply matrices.
 Understanding dot products and transpositions would be helpful too.
 
-For statistics a probability, we only lightly touch these concepts in the course. You should
+For statistics and probability, we only lightly touch these concepts in the course. You should
 understand concepts like mean and median. We will touch a little on probabilistic concepts too. We
 won't however, get deep into t-tests and p-values.
 
@@ -130,7 +130,7 @@ Image Details:
 
 <!--
 
-With a traditional programming solution programmers will do research, talk to subject matter
+With a traditional programming solution, programmers will do research, talk to subject matter
 experts, and come up with an algorithm for determining how to price a home. They might make
 adjustments for the number of bedrooms, lot size, and other features like the proximity to water
 or to train tracks.
@@ -139,7 +139,7 @@ or to train tracks.
 should be quite a few features called out. Make sure that at least 10 are mentioned.*
 
 That was quite a list of attributes that might affect the price of a home. I'm sure that you know
-of even more that weren't mentioned. The list is huge and is really becomes difficult to maintain.
+of even more that weren't mentioned. The list is huge and it really becomes difficult to maintain.
 It is fragile and is easily affected by the biases of the programmers, the amount of research work
 done on the subject, and the number of conditionals that the programmers can maintain.
 
@@ -199,7 +199,7 @@ Image Details:
 ![](res/lion.jpg)
 
 <!--
-You inform the child this animal is a lion and continue your day at the zoo.
+You inform the child that this animal is a lion and continue your day at the zoo.
 
 Image Details:
 * [lion.jpg](https://www.pexels.com/photo/lion-sleeping-beside-rock-1187987/): Pexels License
@@ -225,13 +225,13 @@ Image Details:
 ---
 
 # Learning from Examples
-![](res/kitten-lion.png)
+![](res/cat-lion.jpg)
 
 <!--
-A machine learning algorithm might have a hard time determining whether this is a kitten or a lion. But then again, so might the child from the zoo.
+A machine learning algorithm might have a hard time determining whether this is a cat or a lion. But then again, so might the child from the zoo.
 
 Image Details:
-* [kitten-lion.png](https://en.wikipedia.org/wiki/Comment_(computer_programming)#Tags): TODO
+* [cat-lion.jpg](https://www.pxfuel.com/en/free-photo-xdsqg/): Creative Commons 0 License
 -->
 
 ---
@@ -277,7 +277,7 @@ A machine learning approach would be able to look through a large number of exam
 <!--
 Machine learning is an iterative process that requires large amounts of data to learn useful, generalizable patterns. 
 
-Your first step in approaching a problem should always be to define a clear, user-focused goal. Then, decide whether to take a rules-based or machine learning approach based on how the advantages of each fit to your goal (generally, if you have a large amount of diverse data, machine learning is the way to go). 
+Your first step in approaching a problem should always be to define a clear, user-focused goal. Then, decide whether to take a rules-based or machine learning approach based on how the advantages of each fit your goal (generally, if you have a large amount of diverse data, machine learning is the way to go). 
 
 No matter your approach, you’ll then need to test and refine your system until goals are met.
 
@@ -303,6 +303,8 @@ What is artificial intelligence?
 
 ---
 
+# Artificial Intelligence
+
 machines that appear intelligent based on the tasks they perform
 
 <!--
@@ -319,6 +321,8 @@ What is machine learning then?
 
 ---
 
+# Machine Learning
+
 a specific field of AI where a system learns to find patterns in examples, typically using statistics, in order to make predictions
 
 <!--
@@ -334,6 +338,8 @@ Machine learning is a strategy through which AI can appear “intelligent” whe
 -->
 
 ---
+
+# Deep Learning
 
 a machine learning approach that breaks a problem down into many pieces so it can learn more from the training data
 
@@ -363,6 +369,8 @@ Now let’s dive deeper into what goes into a machine learning system.
 -->
 
 ---
+
+# Features
 
 information drawn from examples which distinguish one example from another are the features in a machine learning system
 
@@ -421,9 +429,14 @@ These features are used in a model to make predictions.
 
 ---
 
+# Model
+
 a mathematical way the patterns and insights that a machine learning system learns from examples and is used to make predictions
 
 <!-- A model specifies how your machine learning system will actually learn patterns and insights. The model will then make predictions based on what it learned. Different models perform better on different problems. We’ll discuss several common types of models in a later lecture. For example, (price of house) = 100 * (square footage of house). If the house is 1500ft^2, then we forecast the price to be $150,000.
+
+Concepts:
+* models
 -->
 
 ---
@@ -436,6 +449,9 @@ Teaching a model the difference between a lion photo and a tiger photo requires 
 In one type of machine learning, known as supervised learning, the examples are labeled. For example, the title of an image could be "Lion" or "Not a Lion." The model could use these titles as feedback, learning better how to classify images.
 
 Especially with more data, models can become so complex that the details of how the model makes its predictions are difficult to understand. It’s important to continually evaluate and try to understand the output of your models. 
+
+Concepts:
+* models:training
 -->
 
 ---
@@ -446,6 +462,9 @@ Especially with more data, models can become so complex that the details of how 
 Machine learning makes predictions on new data based on previous examples (training data). If your lion-detecting model adequately distinguishes lions from tigers, the model is performing successfully. If not, you can experiment with additional training data or other approaches to improve the results.
 
 The data you use for testing should be representative of your problem and goal. Then your performance on the testing dataset should give you an idea of how your model will perform on totally new, real data.
+
+Concepts:
+* models:training
 -->
 
 ---
@@ -453,7 +472,20 @@ The data you use for testing should be representative of your problem and goal. 
 # Overfitting {.big}
 
 <!--
-It’s important to always have a separate training dataset and testing dataset. If you observe high performance on the training data but lower performance on the separate testing data, it’s a sign of overfitting. Overfitting occurs when a model conforms too much to its training data and cannot generalize to make predictions about new data. For example, if none of the tigers in the training data have white fur, the model could assume all tigers have orange fur.
+It’s important to always have a separate training dataset and testing dataset. If you observe high performance on the training data but lower performance on the separate testing data, it’s a sign of overfitting.
+-->
+
+---
+
+# Overfitting
+
+when a model conforms too much to its training data and cannot generalize to make predictions about new data.
+
+<!--
+Overfitting occurs when a model conforms too much to its training data and cannot generalize to make predictions about new data. For example, if none of the tigers in the training data have white fur, the model could assume all tigers have orange fur.
 
 Just like the child from the zoo, a machine learning model will do the best it can with the information it has. Overfitting can be mitigated by looking for blind spots and bias in data and processes. It might also be a sign that you need more training data. We’ll have a deeper discussion of how to improve performance of machine learning models, including reducing overfitting, later in the class.
+
+Concepts:
+* models:training:overfitting
 -->
