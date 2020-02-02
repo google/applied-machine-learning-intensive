@@ -1,3 +1,22 @@
+#!/usr/bin/python3
+
+"""
+Copyright 2020 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+"""
+
+
 """
 The script should accept a git repository and Google Drive folder URL as
 arguments
@@ -50,11 +69,41 @@ script will:
 """
 
 import os
+import json
 
 # from amli import drive
 
-def get_course_folders():
-    print(os.listdir())
+CONTENT_FOLDER = "../content"
+
+def get_course_folders(folder: str = ""):
+    """
+    Returns a list of course folders as strings. Defaults to the top level
+    content folder if not given an argument.
+
+    Args:
+        folder: specifies a folder to open. Optional.
+
+    Returns:
+        a list of file/folder names of contents of the given folder.
+    """
+    contents = os.listdir(f"{CONTENT_FOLDER}/{folder}")
+    return contents
 
 if __name__ == "__main__":
-    get_course_folders()
+    # get input from user
+    # authenticate google drive
+    # mount drive folder
+    tracks = get_course_folders()
+    for track in tracks:
+        # create folder in drive
+        path = f"{CONTENT_FOLDER}/{track}"
+        if os.path.isdir(path):
+            units = get_course_folders(track)
+
+            # debugging
+            print(track)
+            [print(f"\t{unit}") for unit in units]
+
+            for unit in units:
+                # make folder in drive
+                metadata = json.load(f"{path}/{unit}/metadata.json")
