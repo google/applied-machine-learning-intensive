@@ -49,5 +49,12 @@ script will:
         of the Google Drive passed to the script.
 """
 
+import os
+
+# from amli import drive
+
+def get_course_folders():
+    print(os.listdir())
+
 if __name__ == "__main__":
-    pass
+    get_course_folders()
