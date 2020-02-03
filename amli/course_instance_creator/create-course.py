@@ -68,10 +68,12 @@ script will:
         of the Google Drive passed to the script.
 """
 
-import os
 import json
+import os
+import sys
 
-# from amli import drive
+sys.path.insert(0,'..') # Allow us to access the amli directory
+from amli import drive
 
 CONTENT = "../content"
 
@@ -101,12 +103,12 @@ if __name__ == "__main__":
     for track in tracks:
         # create folder in drive
         path = f"{CONTENT}/{track}"
-        if os.path.isdir(path):
-            units = get_sub_folders(track)
+        units = get_sub_folders(track)
+        track_info = json.load(open(f"{path}/metadata.json"))
 
-            # debugging
-            print(track)
+        # debugging
+        print(track)
 
-            for unit in units:
-                print(f"\t{unit}")
-                metadata = json.load(open(f"{path}/{unit}/metadata.json"))
+        for unit in units:
+            print(f"\t{unit}")
+            unit_info = json.load(open(f"{path}/{unit}/metadata.json"))
