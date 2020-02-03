@@ -1,3 +1,18 @@
+#!/usr/bin/python3
+
+"""
+Copyright 2020 Google Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+"""
+
 """
 The script should accept a git repository and Google Drive folder URL as
 arguments
@@ -49,10 +64,12 @@ script will:
         of the Google Drive passed to the script.
 """
 
-import os
 import json
+import os
+import sys
 
-# from amli import drive
+sys.path.insert(0,'..') # Allow us to access the amli directory
+from amli import drive
 
 CONTENT = "../content"
 
@@ -92,12 +109,12 @@ if __name__ == "__main__":
     for track in tracks:
         # create folder in drive
         path = f"{CONTENT}/{track}"
-        if os.path.isdir(path):
-            units = get_sub_folders(track)
+        units = get_sub_folders(track)
+        track_info = json.load(open(f"{path}/metadata.json"))
 
-            # debugging
-            print(track)
+        # debugging
+        print(track)
 
-            for unit in units:
-                print(f"\t{unit}")
-                metadata = json.load(open(f"{path}/{unit}/metadata.json"))
+        for unit in units:
+            print(f"\t{unit}")
+            unit_info = json.load(open(f"{path}/{unit}/metadata.json"))

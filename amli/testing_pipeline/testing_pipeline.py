@@ -1,30 +1,18 @@
-#text before you start working on this to make sure there will be no merge conflicts
+# PREVENT MERGE CONFLICTS - TEXT BEFORE WORKING!
 
 # Suggested Components from starting document:
-# Overall Track Count
-# Overall Unit Count
-# Word Count for each type of document
-# Duration of the course (sum expected durations of each unit)
-# Exercise count
-
-# Thoughts:
-# Track count and unit count done
-# Word count: What counts as a word? Is this the sum of all words appearing in all colabs/etc.? How will instructors benefit?
-# Duration: Seems very useful, will need to learn api stuff to get into colabs and slides
-# Exercise count done
-# also seems useful to include data on each unit (slide link, colab, any extra materials, duration) in 
-# list of units for teachers to reference
-# Some of these may be good telecon questions
-
-# Just found this, might be useful for getting slideshow estimated durations:
-# https://developers.google.com/slides/quickstart/python
+# Enforce rules mentioned in Style Guide ()
+# Implement Spelling and Grammar Checks
+# All exercises and challenges have answer key
+# Colabs all use Python 3
+# Colabs don't have saved outputs turned on
 
 import os #lets us navigate folders
 import json #for parsing the metadata files more easily (hopefully)
 import re #for regex because I don't want to come up with all of the ways to denote an exercise by hand
 
 # Global Variables
-outputFile = "Dashboard.md"
+outputFile = "TestResults.txt"
 contentFolder = "../content"
 inContentFolder = "../content/"
 
