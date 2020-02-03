@@ -310,7 +310,7 @@ You'll encounter many terms in this class and in your machine learning work. Her
 
 ---
 
-# Artificial Intelligence{.big}
+# Artificial Intelligence {.big}
 
 <!--
 
@@ -332,7 +332,7 @@ You might think of crazy robots like in “Ex Machina," or chatbots like Google 
 
 ---
 
-# Machine Learning{.big}
+# Machine Learning {.big}
 
 <!--
 
