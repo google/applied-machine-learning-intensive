@@ -54,19 +54,24 @@ import json
 
 # from amli import drive
 
+CONTENT = "../content"
 
-def get_course_folders(folder: str = ""):
+def get_sub_folders(folder: str = ""):
     """
-    Returns a list of course folders as strings. Defaults to the top level
+    Returns a list of subfolders folders as strings. Defaults to the top level
     content folder if not given an argument.
 
     Args:
-        folder: specifies a folder to open. Optional.
+        folder: specifies a folder to open. Optional, Defaults to the top-level
+            content folder
 
     Returns:
-        a list of file/folder names of contents of the given folder.
+        a list of subfolders within the given folder.
     """
-    contents = os.listdir(f"{CONTENT_FOLDER}/{folder}")
+    path = f"{CONTENT}/{folder}"
+    contents = [sub_folder for sub_folder 
+                in os.listdir(path) 
+                if os.path.isdir(f"{path}/{sub_folder}")]
     return contents
 
 
@@ -83,17 +88,16 @@ if __name__ == "__main__":
     # get input from user
     # authenticate google drive
     # mount drive folder
-    tracks = get_course_folders()
+    tracks = get_sub_folders()
     for track in tracks:
         # create folder in drive
-        path = f"{CONTENT_FOLDER}/{track}"
+        path = f"{CONTENT}/{track}"
         if os.path.isdir(path):
-            units = get_course_folders(track)
+            units = get_sub_folders(track)
 
             # debugging
             print(track)
-            [print(f"\t{unit}") for unit in units]
 
             for unit in units:
-                # make folder in drive
-                metadata = json.load(f"{path}/{unit}/metadata.json")
+                print(f"\t{unit}")
+                metadata = json.load(open(f"{path}/{unit}/metadata.json"))
