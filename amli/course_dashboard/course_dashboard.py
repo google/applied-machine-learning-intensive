@@ -94,16 +94,28 @@ for track in sequencetracks:
         #in colabs, exercises denoted by ##Exercise number or ## Exercise number
         #This section counts all of the exercises from all colabs
         exercisecount = 0
+        mins = 0
         for colab in colabs:
             colabfile = open("../content/" + str(track) + "/" + str(unit) + "/" + colab)
             colabcontent = colabfile.read()
+            saved_colabcontent = colabcontent[:]
             m = re.search(r'## *[Ee]xercise ', colabcontent)
             while m != None:
                 exercisecount += 1
                 colabcontent = colabcontent[m.end():]
                 m = re.search(r'## *[Ee]xercise ', colabcontent)
+            colabcontent = saved_colabcontent[:]
+            m = re.search(r'minutes?', colabcontent)
+            if (m != None):
+                where_minutes_are = colabcontent[:m.start()]
+                where_minutes_are = where_minutes_are[-5:]
+                min_list = where_minutes_are.split('"')
+                minutes = min_list[-1][:-1]
+                mins += int(minutes)
         if len(colabs) > 0:
             string = "     * " + str(exercisecount) + " Exercises\n"
+            delayprint += string
+            string = "     * " + str(mins) + " minutes\n"
             delayprint += string
         if ("slides" in parsed_json.keys()) and (len(parsed_json["slides"]) > 0):
             string = "   * Slides:\n"
