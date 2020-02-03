@@ -77,7 +77,7 @@ def get_sub_folders(folder: str = ""):
 
 def scan_json():
 
-    with f = open("metadata.json", "r+") as f:
+    with open("metadata.json", "r+") as f:
         data = json.load(f)
         for label in data:
             if 'slides' in label:
