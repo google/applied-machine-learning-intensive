@@ -231,7 +231,7 @@ Image Details:
 
 ---
 
-# Learning from Examples
+## Learning from Examples
 ![](res/cat-lion.jpg)
 
 <!--
