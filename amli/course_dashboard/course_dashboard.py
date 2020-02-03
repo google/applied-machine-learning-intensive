@@ -23,11 +23,18 @@ import os #lets us navigate folders
 import json #for parsing the metadata files more easily (hopefully)
 import re #for regex because I don't want to come up with all of the ways to denote an exercise by hand
 
+# Global Variables
+outputFile = "Dashboard.md"
+contentFolder = "../content"
+inContentFolder = "../content/"
+
 #opening a markdown file to write all of the output to
-outmd = open("Dashboard.md", "w")
+outmd = open(outputFile, "w")
 
 #get all folders in the content folder
-tracks = [dI for dI in os.listdir('../content') if os.path.isdir(os.path.join('../content',dI))]
+tracks = [dI for dI in os.listdir(contentFolder) if os.path.isdir(
+    os.path.join(contentFolder,dI))]
+
 
 #Separating the numbered tracks from the extra content
 sequencetracks = []
@@ -39,14 +46,15 @@ for track in tracks:
         extratracks += [track]
 
 sequencetracks.sort()
-extratracks.sort() #figured it won't be very useful, but at least nice to have them in the same order each time
+extratracks.sort()
 
 #adding first info to markdown file
 outmd.write("# Course Dashboard\n")
 
 outmd.write("Track Count: " + str(len(sequencetracks)) + "\n\n")
 
-#since the next output line should be unit count, everything else goes into a string to be printed later
+#since the next output line should be unit count, everything else goes into a 
+# string to be printed later
 delayprint = ""
 unitcount = 0
 
@@ -54,7 +62,7 @@ delayprint += ("## Sequence Tracks\n")
 
 #goes through each track, gets official track name and unit names
 for track in sequencetracks:
-    jsonfile = open("../content/" + str(track) + "/metadata.json", "r")
+    jsonfile = open(inContentFolder + str(track) + "/metadata.json", "r")
     lines = jsonfile.readlines()
     for line in lines:
         if "name" in line:
@@ -62,11 +70,13 @@ for track in sequencetracks:
             string = "### " + track[1:3] + ": " + linelist[-2] + "\n"
             delayprint += string
     jsonfile.close()
-    units = [dI for dI in os.listdir('../content/' + track) if os.path.isdir(os.path.join('../content/' + track,dI))]
+    units = [dI for dI in os.listdir(inContentFolder + track) if os.path.isdir(
+        os.path.join(inContentFolder + track,dI))]
     units.sort()
     for unit in units:
         unitcount = unitcount + 1
-        jsonfile = open("../content/" + str(track) + "/" + str(unit) + "/metadata.json", "r")
+        jsonfile = open(inContentFolder + str(track) + "/" + str(unit) 
+        + "/metadata.json", "r")
         lines = jsonfile.readlines()
         content = "".join(lines)
         content = content.replace("\n", "")
@@ -83,12 +93,14 @@ for track in sequencetracks:
         colabs = []
         if "colabs" in parsed_json.keys():
             #print(str(len(parsed_json["colabs"])) + " Colab notebooks")
-            string = "   * " + str(len(parsed_json["colabs"])) + " Colab notebooks\n"
+            string = "   * " + str(len(parsed_json["colabs"])) 
+            + " Colab notebooks\n"
             delayprint += string
             colabs += parsed_json["colabs"]
         elif "colab" in parsed_json.keys():
             #print(str(len(parsed_json["colab"])) + " Colab notebooks")
-            string = "   * " + str(len(parsed_json["colab"])) + " Colab notebooks\n"
+            string = "   * " + str(len(parsed_json["colab"])) 
+            + " Colab notebooks\n"
             delayprint += string
             colabs += parsed_json["colab"]
         #in colabs, exercises denoted by ##Exercise number or ## Exercise number
@@ -96,7 +108,8 @@ for track in sequencetracks:
         exercisecount = 0
         mins = 0
         for colab in colabs:
-            colabfile = open("../content/" + str(track) + "/" + str(unit) + "/" + colab)
+            colabfile = open(inContentFolder + str(track) + "/" + str(unit) 
+            + "/" + colab)
             colabcontent = colabfile.read()
             saved_colabcontent = colabcontent[:]
             m = re.search(r'## *[Ee]xercise ', colabcontent)
@@ -164,7 +177,7 @@ outmd.write("## Extra Tracks\n")
 
 #goes through each track, gets official track name
 for track in extratracks:
-    jsonfile = open("../content/" + str(track) + "/metadata.json", "r")
+    jsonfile = open(inContentFolder + str(track) + "/metadata.json", "r")
     lines = jsonfile.readlines()
     for line in lines:
         if "name" in line:
