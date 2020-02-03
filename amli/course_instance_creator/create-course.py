@@ -13,6 +13,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 
+# Agenda:
 """
 The script should accept a git repository and Google Drive folder URL as
 arguments
@@ -69,9 +70,10 @@ import os
 import sys
 
 sys.path.insert(0,'..') # Allow us to access the amli directory
-# from amli import drive
+# from amli import drive # TODO Fix import of google_auth
 
-CONTENT = "../content"
+# TODO make this work when executed from root directory of repository
+CONTENT = "../content" 
 
 def get_sub_folders(folder: str = ""):
     """
@@ -102,19 +104,23 @@ def scan_json():
 
 
 if __name__ == "__main__":
-    # get input from user
-    # authenticate google drive
-    # mount drive folder
+    # TODO authenticate google drive
+    # TODO mount drive folder
     tracks = get_sub_folders()
     for track in tracks:
-        # create folder in drive
         path = f"{CONTENT}/{track}"
         units = get_sub_folders(track)
         track_info = json.load(open(f"{path}/metadata.json"))
+        track_name = track_info["name"]
+        # TODO create track folder in drive
 
         # debugging
-        print(track)
+        print(track_name)
 
         for unit in units:
-            print(f"\t{unit}")
             unit_info = json.load(open(f"{path}/{unit}/metadata.json"))
+            unit_name = unit_info["name"]
+            
+            # debugging
+            print(f"\t{unit_name}")
+            # TODO create unit folder in drive
