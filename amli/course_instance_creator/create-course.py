@@ -69,7 +69,7 @@ import os
 import sys
 
 sys.path.insert(0,'..') # Allow us to access the amli directory
-from amli import drive
+# from amli import drive
 
 CONTENT = "../content"
 
@@ -94,7 +94,7 @@ def get_sub_folders(folder: str = ""):
 
 def scan_json():
 
-    with f = open("metadata.json", "r+") as f:
+    with open("metadata.json", "r+") as f:
         data = json.load(f)
         for label in data:
             if 'slides' in label:
