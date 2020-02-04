@@ -2,7 +2,7 @@
 
 <!--
 We've learned about machine learning and artificial intelligence at a very high level. In this
-session we will dive a little deeper and talk about what machine learning can do and what types of
+session we'll dive a little deeper and talk about what machine learning can do and what types of
 models support different problem domains.
 -->
 
@@ -20,8 +20,8 @@ answers. If not, give some examples like self-driving cars, language recognition
 recognition, and whatever else you can think of.*
 
 Think of the diversity of applications of machine learning that we just mentioned. Given that
-diversity it is obvious that machine learning is much more than just one thing. Yes, it involves
-learning from data. But how it learns, what it learns, and what it can predict vary widely.
+diversity, it is obvious machine learning is much more than just one thing. Yes, it involves
+learning from data. But how it learns, what it learns, and what it can predict varies widely.
 
 The machine learning community has settled on a few groupings of model types, each with different
 applications.
