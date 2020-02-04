@@ -11,8 +11,8 @@
 # Notes
 # Use Python 3: Done!
 # Spell Check: Blocked
-# Contains Answer Key: Think about if there are multiple answer keys
-# Outputs Off: Working on now 
+# Contains Answer Key: Think about if there are multiple answer keys/naming of answer keys
+# Outputs Off: Done!
 
 
 import os #lets us navigate folders
@@ -25,19 +25,16 @@ outputFile = "TestResults.md"
 contentFolder = "../content"
 inContentFolder = "../content/"
 
-#def if __name__ == "__main__":
-#    main()
-
 def spellCheck():
     ''' Checks spelling and grammar of Colabs and Slides
         BLOCKED: We don't know if they have one
     '''
-    pass
+    return ""
 
 def containAnswerKey():
     ''' This will ensure all exercises and challenges have an answer key
     '''
-    pass
+    return ""
 
 def usePython3(track, unit, colabs):
     ''' This function will tell us if colaboratory notebooks use Python 3 or not
@@ -68,14 +65,15 @@ def outputsOff(track, unit, colabs):
     return toPrint
 
 def main():
-    #opening a markdown file to write all of the output to
+    # Setting up a markdown file to write all of the output to
     outmd = open(outputFile, "w")
+    outmd.write("## Test Results\n\n")
     
-    #get all folders in the content folder
+    # get all folders in the content folder
     tracks = [dI for dI in os.listdir(contentFolder) if os.path.isdir(
     os.path.join(contentFolder,dI))]
 
-    #Separating the numbered tracks from the extra content
+    # Separating the numbered tracks from the extra content
     sequencetracks = []
     extratracks = []
     for track in tracks:
@@ -87,12 +85,11 @@ def main():
     sequencetracks.sort()
     extratracks.sort()
 
-    #adding title to markdown file
-    outmd.write("## Test Results\n")
-
-    #create empty strings to record problems
+    # create empty strings to record our testing results
     py3check = ""
     outputcheck = ""
+    spellcheck = ""
+    answerkeycheck = ""
 
     #goes through each track, gets official track name and unit names
     for track in sequencetracks:
@@ -124,6 +121,10 @@ def main():
             py3check += testResults
             testResults = outputsOff(track, unit, colabs)
             outputcheck += testResults
+            testResults = spellCheck()
+            spellcheck += testResults
+            testResults = containAnswerKey()
+            answerkeycheck += testResults
 
             jsonfile.close()
     
@@ -138,7 +139,17 @@ def main():
         outputcheck = "Success!\n\n"
     outmd.write(outputcheck)
 
+    outmd.write("### Are all Colabs and Slides free of spelling errors?\n")
+    if (spellcheck == ""):
+        spellcheck = "Tests not yet implemented!\n\n"
+    outmd.write(spellcheck)
+
+    outmd.write("### Do all exercises have an answer key?\n")
+    if (answerkeycheck == ""):
+        answerkeycheck = "Tests not yet implemented!\n\n"
+    outmd.write(answerkeycheck)
+
     outmd.close()
 
-
+# call our main function to run our script!
 main()
