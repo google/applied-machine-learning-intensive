@@ -5,10 +5,14 @@
 # Implement Spelling and Grammar Checks
 # All exercises and challenges have answer key
 # Colabs all use Python 3
-# Colabs don't have saved outputs turned on
+# Colabs don't have saved outputs on
 
 
 # Notes
+# Use Python 3: Done!
+# Spell Check: Blocked
+# Contains Answer Key: Think about if there are multiple answer keys
+# Outputs Off: Working on now 
 
 
 import os #lets us navigate folders
@@ -41,7 +45,6 @@ def usePython3(track, unit, colabs):
     '''
     #toPrint = "# Are Colabs using Python 3?\n"
     toPrint = ""
-    problems = ""
     for colab in colabs:
         colabfile = open(inContentFolder + str(track) + "/" + str(unit) 
             + "/" + colab)
@@ -50,11 +53,19 @@ def usePython3(track, unit, colabs):
             toPrint += track + "/" + unit + "/" + colab + " is not using python 3.\n\n" 
     return toPrint
 
-def outputsOff():
+def outputsOff(track, unit, colabs):
     ''' This function will tell us if the colaboratory notebooks have saved
         outputs turned on or not
     '''
-    pass
+    #toPrint = "# Are Colabs cleared of all outputs?\n"
+    toPrint = ""
+    for colab in colabs:
+        colabfile = open(inContentFolder + str(track) + "/" + str(unit) 
+            + "/" + colab)
+        colabcontent = colabfile.read()
+        if ("\"outputs\": [{" in colabcontent) or ("\"outputs\":[{" in colabcontent):
+            toPrint += track + "/" + unit + "/" + colab + " has an uncleared output.\n\n" 
+    return toPrint
 
 def main():
     #opening a markdown file to write all of the output to
@@ -79,8 +90,10 @@ def main():
     #adding title to markdown file
     outmd.write("## Test Results\n")
 
-    outmd.write("### Are Colabs using python 3?\n")
+    #create empty strings to record problems
     py3check = ""
+    outputcheck = ""
+
     #goes through each track, gets official track name and unit names
     for track in sequencetracks:
         units = [dI for dI in os.listdir(inContentFolder + track) if os.path.isdir(
@@ -109,10 +122,21 @@ def main():
             # Make calls to our helper functions that check colabs
             testResults = usePython3(track, unit, colabs)
             py3check += testResults
+            testResults = outputsOff(track, unit, colabs)
+            outputcheck += testResults
+
             jsonfile.close()
-    if(py3check == ""):
+    
+    #Write out our test results for each
+    outmd.write("### Are Colabs using python 3?\n")
+    if (py3check == ""):
         py3check = "Success!\n\n"
     outmd.write(py3check)
+
+    outmd.write("### Are Colabs cleared of all outputs?\n")
+    if (outputcheck == ""):
+        outputcheck = "Success!\n\n"
+    outmd.write(outputcheck)
 
     outmd.close()
 
