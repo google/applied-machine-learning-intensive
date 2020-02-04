@@ -7,6 +7,7 @@
       - singular value decomposition
       - principal component analysis
       - embeddings
+- fairness
 - linear algebra
 - toolkits
   - scikit-learn

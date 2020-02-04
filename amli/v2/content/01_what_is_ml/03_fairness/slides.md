@@ -14,6 +14,9 @@ students count off 1/2/3. Assign each group an article to read.
 After everyone has finished reading (~10 mins), gather in mixed clusters of 3 (one student from each
 article) to explain the main takeaway of your article to others in your group. What bias was uncovered
 and how would you describe its impact on people? What do you find interesting about this article?*
+
+Concepts:
+ * fairness
 -->
 
 ---
