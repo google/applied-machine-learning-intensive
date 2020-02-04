@@ -18,10 +18,14 @@
   - matplotlib
   - pandas
 - models
+  - training
+    - overfitting
   - tuning
   - types
     - classification
     - regression
+	- clustering
+	- sequence prediction
   - measurement
     - regression
       - mean absolute error

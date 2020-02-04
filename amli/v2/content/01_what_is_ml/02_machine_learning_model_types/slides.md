@@ -1,7 +1,7 @@
 # Intro to ML Models
 
 <!--
-We've learned about machine learning and artifical intelligence at a very high level. In this
+We've learned about machine learning and artificial intelligence at a very high level. In this
 session we will dive a little deeper and talk about what machine learning can do and what types of
 models support different problem domains.
 -->
@@ -13,7 +13,7 @@ models support different problem domains.
 <!--
 Though machine learning is not new, its application in modern life has really started to expand over
 the last decade. What are some machine learning products that you know about? How has machine learning
-shown up and impoved something that you use?
+shown up and improved something that you use?
 
 *Give the class a few minutes to think of and call out answers. There should be a wide variety of
 answers. If not, give some examples like self-driving cars, language recognition, facial
@@ -29,7 +29,7 @@ applications.
 
 ---
 
-## Classification
+# Classification
 Determine which class or category an example belongs to using labeled data as a guide
 
 <!--
@@ -44,14 +44,17 @@ For example, to answer the question, "Is this a lion?", you would choose the cla
 answer the question, "What type of cat is this?", you might choose the classes "lion," "tiger,"
 and "kitten."
 
-Classification can be used to identify objects in images or even identify credit card transactions
-and fradulent or not.
+Classification can be used to identify objects in images or even identify whether credit card transactions are fraudulent or not.
 
 What are some examples that you know of that would be machine learning classification?
+
+Concepts:
+* models:types:classification
 -->
 
 ---
 
+# Classification
 ![Image](res/classification.gif)
 
 <!--
@@ -71,7 +74,7 @@ label emails as spam
 
 ---
 
-## Clustering
+# Clustering
 Find relationships between data, typically without a labeled training set
 
 <!--
@@ -82,14 +85,18 @@ each category by quantifying how closely examples are related to one another.
 
 Clustering differs from classification because the categories are not defined by you. Clustering
 systems propose their own categories based on patterns found in the examples. 
+
+Concepts:
+* models:types:clustering
 -->
 
 ---
 
+# Clustering
 ![Image](res/clustering.gif)
 
 <!--
-For example, let’s say the child from the zoo wants to organize a photo albums of many pictures
+For example, let’s say the child from the zoo wants to organize a photo album of many pictures
 from the zoo. They don’t know a lot about animals, but they do notice that some are very small 
 (reptiles, birds), some are medium sized (monkeys, seals) and some are very big (elephants, tigers). 
 They might sort the pictures into three groups based on size. 
@@ -98,14 +105,14 @@ Clustering systems similarly attempt to find “clusters” of similar data exam
 
 Quick discussion: What are other examples of clustering you can think of? What features might a 
 clustering system use to create clusters?
-(many possible answers, ex):
+(many possible answers, ex:
 suggesting similar videos
-grouping many examples of soft drinks from around the world
+grouping many examples of soft drinks from around the world)
 -->
 
 ---
 
-## Regression
+# Regression
 Predicting the relationship between multiple variables, where the target is continuous
 
 <!--
@@ -113,10 +120,14 @@ Regression predicts the relationship between two or more variables. If you were 
 predicting the price of a house, you might look for patterns in location, square footage, or number
 of bedrooms. While classification involves a discrete / categorical value to predict, regression
 involves a continuous value to predict.
+
+Concepts:
+* models:types:regression
 -->
 
 ---
 
+# Regression
 ![Image](res/linear_regression.gif)
 
 <!--
@@ -126,7 +137,7 @@ some data points, then makes predictions based on that line.
 
 ---
 
-## Regression
+# Regression
 ![Image](res/regression2.png)
 
 <!--
@@ -139,20 +150,24 @@ ex:
 estimate arrival time based on traffic and distance
 predict crop yield based on weather, time of year
 
-Also, logistic regression is a classification technique (with a binary target), and it can be confusing. But typically, when we say "regression" we mean predicting a continuous variable. 
+Note: *logistic* regression is a classification technique (with a binary target), and the similar names can be confusing. But typically, when we say "regression" we mean predicting a continuous variable. 
 -->
 
 --- 
 
-## Sequences
+# Sequences
 Suggest the next value in a sequence
 
 <!--
 Finally, sequence prediction suggests what might come next, based on previous examples.
+
+Concepts:
+* models:types:sequence-prediction
 -->
 
 ---
 
+# Sequences
 ![Image](res/sequences.gif)
 
 <!--
