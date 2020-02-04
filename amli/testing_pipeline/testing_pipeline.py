@@ -21,8 +21,8 @@ outputFile = "TestResults.md"
 contentFolder = "../content"
 inContentFolder = "../content/"
 
-def if __name__ == "__main__":
-    main()
+#def if __name__ == "__main__":
+#    main()
 
 def spellCheck():
     ''' Checks spelling and grammar of Colabs and Slides
@@ -35,18 +35,19 @@ def containAnswerKey():
     '''
     pass
 
-def usePython3(colabs):
+def usePython3(track, unit, colabs):
     ''' This function will tell us if colaboratory notebooks use Python 3 or not
         Checks the 'kernelspec' name is python3
     '''
-    toPrint = "# Are Colabs using Python 3?\n"
+    #toPrint = "# Are Colabs using Python 3?\n"
+    toPrint = ""
     problems = ""
     for colab in colabs:
         colabfile = open(inContentFolder + str(track) + "/" + str(unit) 
             + "/" + colab)
         colabcontent = colabfile.read()
-    if problems == "":
-        toPrint += "Success!"
+        if not ("\"name\":\"python3\"" in colabcontent) and not ("\"name\": \"python3\"" in colabcontent):
+            toPrint += track + "/" + unit + "/" + colab + " is not using python 3.\n\n" 
     return toPrint
 
 def outputsOff():
@@ -78,13 +79,14 @@ def main():
     #adding title to markdown file
     outmd.write("## Test Results\n")
 
+    outmd.write("### Are Colabs using python 3?\n")
+    py3check = ""
     #goes through each track, gets official track name and unit names
     for track in sequencetracks:
         units = [dI for dI in os.listdir(inContentFolder + track) if os.path.isdir(
             os.path.join(inContentFolder + track,dI))]
         units.sort()
         for unit in units:
-            unitcount = unitcount + 1
             jsonfile = open(inContentFolder + str(track) + "/" + str(unit) 
             + "/metadata.json", "r")
             lines = jsonfile.readlines()
@@ -100,36 +102,19 @@ def main():
 
             colabs = []
             if "colabs" in parsed_json.keys():
-                #print(str(len(parsed_json["colabs"])) + " Colab notebooks")
-                string = "   * " + str(len(parsed_json["colabs"])) 
-                + " Colab notebooks\n"
-                delayprint += string
                 colabs += parsed_json["colabs"]
             elif "colab" in parsed_json.keys():
-                #print(str(len(parsed_json["colab"])) + " Colab notebooks")
-                string = "   * " + str(len(parsed_json["colab"])) 
-                + " Colab notebooks\n"
-                delayprint += string
                 colabs += parsed_json["colab"]
             
             # Make calls to our helper functions that check colabs
-            testResults = usePython3(colabs)
-            outmd.write(testResults)
+            testResults = usePython3(track, unit, colabs)
+            py3check += testResults
             jsonfile.close()
-
-    #prints other track and unit information stored
-    outmd.write(delayprint)
-
-    outmd.write("## Extra Tracks\n")
-
-    #goes through each track, gets official track name
-    for track in extratracks:
-        jsonfile = open(inContentFolder + str(track) + "/metadata.json", "r")
-        lines = jsonfile.readlines()
-        for line in lines:
-            if "name" in line:
-                linelist = line.split('"')
-                outmd.write("### " + linelist[-2] + "\n")
-        jsonfile.close()
+    if(py3check == ""):
+        py3check = "Success!\n\n"
+    outmd.write(py3check)
 
     outmd.close()
+
+
+main()
