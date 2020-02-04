@@ -11,7 +11,7 @@
 # Notes
 # Use Python 3: Done!
 # Spell Check: Blocked
-# Contains Answer Key: Think about if there are multiple answer keys/naming of answer keys
+# Contains Answer Key: Pretty Close - worried about wording (exercise v. challenge) (solutions v. answer keys)
 # Outputs Off: Done!
 
 
@@ -31,10 +31,35 @@ def spellCheck():
     '''
     return ""
 
-def containAnswerKey():
+def containAnswerKey(track, unit, colabs):
     ''' This will ensure all exercises and challenges have an answer key
     '''
-    return ""
+    toPrint = ""
+    for colab in colabs:
+        exercisecount = 0
+        answerkeycount = 0
+        colabfile = open(inContentFolder + str(track) + "/" + str(unit) 
+            + "/" + colab)
+        colabcontent = colabfile.read()
+        saved_colabcontent = colabcontent[:]
+        # Count the number of Exercises
+        m = re.search(r'## *[Ee]xercise ', colabcontent)
+        while m != None:
+            exercisecount += 1
+            colabcontent = colabcontent[m.end():]
+            m = re.search(r'## *[Ee]xercise ', colabcontent)
+        colabcontent = saved_colabcontent[:]
+        # Count the number of Answer Keys
+        m = re.search(r'(###? *Solutions?)|(###? *Answer Key)', colabcontent)
+        while m != None:
+            answerkeycount += 1
+            colabcontent = colabcontent[m.end():]
+            m = re.search(r'(###? *Solutions?)|(###? *Answer Key)', colabcontent)
+        # print if the two numbers don't match
+        if exercisecount != answerkeycount:
+            toPrint += track + "/" + unit + "/" + colab + " has " + str(exercisecount) + " exercises, and " + str(answerkeycount) + " answer keys.\n\n"
+
+    return toPrint
 
 def usePython3(track, unit, colabs):
     ''' This function will tell us if colaboratory notebooks use Python 3 or not
@@ -123,7 +148,7 @@ def main():
             outputcheck += testResults
             testResults = spellCheck()
             spellcheck += testResults
-            testResults = containAnswerKey()
+            testResults = containAnswerKey(track, unit, colabs)
             answerkeycheck += testResults
 
             jsonfile.close()
@@ -146,7 +171,7 @@ def main():
 
     outmd.write("### Do all exercises have an answer key?\n")
     if (answerkeycheck == ""):
-        answerkeycheck = "Tests not yet implemented!\n\n"
+        answerkeycheck = "Success!\n\n"
     outmd.write(answerkeycheck)
 
     outmd.close()
