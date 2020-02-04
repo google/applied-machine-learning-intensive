@@ -57,7 +57,7 @@ Look at definition, brainstorm other ways to accomplish goals
 
 ---
 
-Traditional Sofware Engineering
+Traditional Software Engineering
 
   * Requirements --> Workable Design
 
@@ -140,7 +140,7 @@ https://developers.google.com/machine-learning/amli-content/problem-framing/fram
 
 Patents: "We want to know how many patents exist across important domains such as self-driving cars and mobile advertising."
 Hiring: "We want to catch competitive engineers' resumes that resume screeners mistakenly missed or rejected."
-Tech support: "We need to reduce the load on Technical Support by increasing the usage of self-help articles."
+Tech support: "We need to reduce the load on technical support by increasing the usage of self-help articles."
 -->
 
 ---
