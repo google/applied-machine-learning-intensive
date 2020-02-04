@@ -17,7 +17,7 @@ import re #for regex because I don't want to come up with all of the ways to den
 
 
 # Global Variables
-outputFile = "TestResults.txt"
+outputFile = "TestResults.md"
 contentFolder = "../content"
 inContentFolder = "../content/"
 
@@ -26,6 +26,7 @@ def if __name__ == "__main__":
 
 def spellCheck():
     ''' Checks spelling and grammar of Colabs and Slides
+        BLOCKED: We don't know if they have one
     '''
     pass
 
@@ -34,10 +35,19 @@ def containAnswerKey():
     '''
     pass
 
-def usePython3():
+def usePython3(colabs):
     ''' This function will tell us if colaboratory notebooks use Python 3 or not
+        Checks the 'kernelspec' name is python3
     '''
-    pass
+    toPrint = "# Are Colabs using Python 3?\n"
+    problems = ""
+    for colab in colabs:
+        colabfile = open(inContentFolder + str(track) + "/" + str(unit) 
+            + "/" + colab)
+        colabcontent = colabfile.read()
+    if problems == "":
+        toPrint += "Success!"
+    return toPrint
 
 def outputsOff():
     ''' This function will tell us if the colaboratory notebooks have saved
@@ -70,14 +80,6 @@ def main():
 
     #goes through each track, gets official track name and unit names
     for track in sequencetracks:
-        jsonfile = open(inContentFolder + str(track) + "/metadata.json", "r")
-        lines = jsonfile.readlines()
-        for line in lines:
-            if "name" in line:
-                linelist = line.split('"')
-                string = "### " + track[1:3] + ": " + linelist[-2] + "\n"
-                delayprint += string
-        jsonfile.close()
         units = [dI for dI in os.listdir(inContentFolder + track) if os.path.isdir(
             os.path.join(inContentFolder + track,dI))]
         units.sort()
@@ -95,9 +97,7 @@ def main():
             content = content.replace("  ", " ") #believe me, these three lines were necessary :/
             content = content.replace('" "', '","')
             parsed_json = json.loads(content)
-            #print(parsed_json["name"])
-            string = " * **" + unit[0:2] + ": " + parsed_json["name"] + "**\n"
-            delayprint += string
+
             colabs = []
             if "colabs" in parsed_json.keys():
                 #print(str(len(parsed_json["colabs"])) + " Colab notebooks")
@@ -111,68 +111,10 @@ def main():
                 + " Colab notebooks\n"
                 delayprint += string
                 colabs += parsed_json["colab"]
-            #in colabs, exercises denoted by ##Exercise number or ## Exercise number
-            #This section counts all of the exercises from all colabs
-            exercisecount = 0
-            mins = 0
-            for colab in colabs:
-                colabfile = open(inContentFolder + str(track) + "/" + str(unit) 
-                + "/" + colab)
-                colabcontent = colabfile.read()
-                saved_colabcontent = colabcontent[:]
-                m = re.search(r'## *[Ee]xercise ', colabcontent)
-                while m != None:
-                    exercisecount += 1
-                    colabcontent = colabcontent[m.end():]
-                    m = re.search(r'## *[Ee]xercise ', colabcontent)
-                colabcontent = saved_colabcontent[:]
-                m = re.search(r'minutes?', colabcontent)
-                if (m != None):
-                    where_minutes_are = colabcontent[:m.start()]
-                    where_minutes_are = where_minutes_are[-5:]
-                    min_list = where_minutes_are.split('"')
-                    minutes = min_list[-1][:-1]
-                    mins += int(minutes)
-            if len(colabs) > 0:
-                string = "     * " + str(exercisecount) + " Exercises\n"
-                delayprint += string
-                string = "     * " + str(mins) + " minutes\n"
-                delayprint += string
-            if ("slides" in parsed_json.keys()) and (len(parsed_json["slides"]) > 0):
-                string = "   * Slides:\n"
-                delayprint += string
-                slides = parsed_json["slides"]
-                for slideshow in slides:
-                    string = "     * " + slideshow + "\n"
-                    delayprint += string
-            #Gets materials, resources, and handouts links from json file
-            if ("materials" in parsed_json.keys()) and (len(parsed_json["materials"]) > 0):
-                #print("Materials:")
-                string = "   * Materials:\n"
-                delayprint += string
-                slides = parsed_json["materials"]
-                for slideshow in slides:
-                    #print(" * " + slideshow)
-                    string = "     * " + slideshow + "\n"
-                    delayprint += string
-            if ("resources" in parsed_json.keys()) and (len(parsed_json["resources"]) > 0):
-                #print("Resources:")
-                string = "   * Resources:\n"
-                delayprint += string
-                slides = parsed_json["resources"]
-                for slideshow in slides:
-                    #print(" * " + slideshow)
-                    string = "     * " + slideshow + "\n"
-                    delayprint += string
-            if ("handouts" in parsed_json.keys()) and (len(parsed_json["handouts"]) > 0):
-                #print("Handouts:")
-                string = "   * Handouts:\n"
-                delayprint += string
-                slides = parsed_json["handouts"]
-                for slideshow in slides:
-                    #print(" * " + slideshow)
-                    string = "     * " + slideshow + "\n"
-                    delayprint += string
+            
+            # Make calls to our helper functions that check colabs
+            testResults = usePython3(colabs)
+            outmd.write(testResults)
             jsonfile.close()
 
     #prints other track and unit information stored
