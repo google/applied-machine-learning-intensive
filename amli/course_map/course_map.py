@@ -13,11 +13,12 @@
 # Track Count: Done!
 # Unit Count: Done!
 # Word count: What counts as a word? Is this the sum of all words appearing in all colabs/etc.? How will instructors benefit?
-# Duration: done for colabs - need slide format before implementing for slides
+# Duration: Seems very useful, will need to learn api stuff to get into colabs and slides
 # Exercise count: done
-# Maybe we should add more info about the extra tracks too
+# Extra Implemented: data on each unit (slide link, colab, any extra materials, duration) in list of units for teachers to reference
+# Maybe we should add more info about the extra tracks too/ add links to colab notebooks
 
-# If slides in drive - might be useful for getting slideshow estimated durations:
+# Just found this, might be useful for getting slideshow estimated durations:
 # https://developers.google.com/slides/quickstart/python
 
 
@@ -26,7 +27,7 @@ import json # for parsing the metadata files
 import re # for regex
 
 # Global Variables
-outputFile = "Dashboard.md"
+outputFile = "Map.md"
 contentFolder = "../content"
 inContentFolder = "../content/"
 
@@ -47,7 +48,7 @@ def parseJSON(lines):
 def main():
     # Opening a markdown file to write all of the output to
     outmd = open(outputFile, "w")
-    outmd.write("# AMLI Course Dashboard\n\n")
+    outmd.write("# AMLI Course Map\n\n")
 
     # Get all folders in the content folder
     tracks = [dI for dI in os.listdir(contentFolder) if os.path.isdir(
@@ -136,15 +137,41 @@ def main():
                 delayprint += string
                 string = "     * " + str(mins) + " minutes\n"
                 delayprint += string
-            slidecount = 0
             if ("slides" in parsed_json.keys()) and (len(parsed_json["slides"]) > 0):
-                slides = parsed_json["slides"]
-                # for now we are just adding a number of slides but once we have slide format
-                # find the duration/ slide count maybe?
-                for slideshow in slides:
-                    slidecount += 1
-                string = "   * " + str(slidecount) + " Slides\n"
+                string = "   * Slides:\n"
                 delayprint += string
+                slides = parsed_json["slides"]
+                for slideshow in slides:
+                    string = "     * " + slideshow + "\n"
+                    delayprint += string
+            # Gets materials, resources, and handouts links from json file
+            if ("materials" in parsed_json.keys()) and (len(parsed_json["materials"]) > 0):
+                #print("Materials:")
+                string = "   * Materials:\n"
+                delayprint += string
+                slides = parsed_json["materials"]
+                for slideshow in slides:
+                    #print(" * " + slideshow)
+                    string = "     * " + slideshow + "\n"
+                    delayprint += string
+            if ("resources" in parsed_json.keys()) and (len(parsed_json["resources"]) > 0):
+                #print("Resources:")
+                string = "   * Resources:\n"
+                delayprint += string
+                slides = parsed_json["resources"]
+                for slideshow in slides:
+                    #print(" * " + slideshow)
+                    string = "     * " + slideshow + "\n"
+                    delayprint += string
+            if ("handouts" in parsed_json.keys()) and (len(parsed_json["handouts"]) > 0):
+                #print("Handouts:")
+                string = "   * Handouts:\n"
+                delayprint += string
+                slides = parsed_json["handouts"]
+                for slideshow in slides:
+                    #print(" * " + slideshow)
+                    string = "     * " + slideshow + "\n"
+                    delayprint += string
             jsonfile.close()
 
     # Print our stored information

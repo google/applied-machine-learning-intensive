@@ -1,6 +1,6 @@
 ## Test Results
 
-### Are Colabs using python 3?
+### Are Colabs using Python 3?
 Success!
 
 ### Are Colabs cleared of all outputs?

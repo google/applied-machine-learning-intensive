@@ -65,8 +65,7 @@ def containAnswerKey(track, unit, colabs):
             m = re.search(r'(###? *Solutions?)|(###? *Answer Key)', colabcontent)
         # Print if the two numbers don't match
         if exercisecount != answerkeycount:
-            toPrint += track + "/" + unit + "/" + colab + " has " +
-                 str(exercisecount) + " exercises, and " + str(answerkeycount) + " answer keys.\n\n"
+            toPrint += track + "/" + unit + "/" + colab + " has " + str(exercisecount) + " exercises, and " + str(answerkeycount) + " answer keys.\n\n"
 
     return toPrint
 
