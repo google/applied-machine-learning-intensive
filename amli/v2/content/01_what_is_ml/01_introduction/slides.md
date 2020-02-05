@@ -1,4 +1,4 @@
-# Welcome to <insert name of course>
+# Welcome to (insert name of course)
 
 <!--
 Welcome to <insert name of course>. In this course we will explore the concept of
