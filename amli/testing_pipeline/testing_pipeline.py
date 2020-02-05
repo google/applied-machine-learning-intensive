@@ -1,24 +1,29 @@
-# PREVENT MERGE CONFLICTS - TEXT BEFORE WORKING!
+####################################################
+## PREVENT MERGE CONFLICTS - TEXT BEFORE WORKING! ##
+####################################################
 
-# Suggested Components from starting document:
-# Enforce rules mentioned in Style Guide ()
+# Components from starting document:
+# Enforce rules mentioned in Style Guide
 # Implement Spelling and Grammar Checks
 # All exercises and challenges have answer key
 # Colabs all use Python 3
 # Colabs don't have saved outputs on
+# All referenced images have an appropriate liscensing
 
 
 # Notes
 # Use Python 3: Done!
+# Outputs Off: Done!
 # Spell Check: Blocked
 # Contains Answer Key: Pretty Close - worried about wording (exercise v. challenge) (solutions v. answer keys)
-# Outputs Off: Done!
+# Style Guide Rules: there is no syle guide at the link they gave
+# Referenced Images: Not entirely sure whether we should just be checking urls or trying to actually find
+#   source of image - look more into image liscense notes in colabs + slides
 
 
-import os #lets us navigate folders
-import json #for parsing the metadata files more easily (hopefully)
-import re #for regex because I don't want to come up with all of the ways to denote an exercise by hand
-
+import os # for navigating folders
+import json # for parsing the metadata files
+import re # for regex
 
 # Global Variables
 outputFile = "TestResults.md"
@@ -27,12 +32,14 @@ inContentFolder = "../content/"
 
 def spellCheck():
     ''' Checks spelling and grammar of Colabs and Slides
-        BLOCKED: We don't know if they have one
+        Output: string of colabs and slides with spelling and grammar issues
     '''
     return ""
 
 def containAnswerKey(track, unit, colabs):
-    ''' This will ensure all exercises and challenges have an answer key
+    ''' Ensures all exercises and challenges have an answer key
+        Inputs: Track, Unit, List of Colab notebooks
+        Output: string of all colabs missing answer keys
     '''
     toPrint = ""
     for colab in colabs:
@@ -54,23 +61,26 @@ def containAnswerKey(track, unit, colabs):
         while m != None:
             answerkeycount += 1
             colabcontent = colabcontent[m.end():]
+            # Currently checking for Solution, Solutions, Answer Key
             m = re.search(r'(###? *Solutions?)|(###? *Answer Key)', colabcontent)
-        # print if the two numbers don't match
+        # Print if the two numbers don't match
         if exercisecount != answerkeycount:
-            toPrint += track + "/" + unit + "/" + colab + " has " + str(exercisecount) + " exercises, and " + str(answerkeycount) + " answer keys.\n\n"
+            toPrint += track + "/" + unit + "/" + colab + " has " +
+                 str(exercisecount) + " exercises, and " + str(answerkeycount) + " answer keys.\n\n"
 
     return toPrint
 
 def usePython3(track, unit, colabs):
-    ''' This function will tell us if colaboratory notebooks use Python 3 or not
-        Checks the 'kernelspec' name is python3
+    ''' This function will tell us if colaboratory notebooks use Python 3
+        Inputs: Track, Unit, List of Colab notebooks
+        Output: string of all colabs not using Python 3
     '''
-    #toPrint = "# Are Colabs using Python 3?\n"
     toPrint = ""
     for colab in colabs:
         colabfile = open(inContentFolder + str(track) + "/" + str(unit) 
             + "/" + colab)
         colabcontent = colabfile.read()
+        # Check metadata of colab to ensure running Python 3
         if not ("\"name\":\"python3\"" in colabcontent) and not ("\"name\": \"python3\"" in colabcontent):
             toPrint += track + "/" + unit + "/" + colab + " is not using python 3.\n\n" 
     return toPrint
@@ -78,13 +88,15 @@ def usePython3(track, unit, colabs):
 def outputsOff(track, unit, colabs):
     ''' This function will tell us if the colaboratory notebooks have saved
         outputs turned on or not
+        Inputs: Track, Unit, List of Colab notebooks
+        Output: string of all colabs with outputs left in them
     '''
-    #toPrint = "# Are Colabs cleared of all outputs?\n"
     toPrint = ""
     for colab in colabs:
         colabfile = open(inContentFolder + str(track) + "/" + str(unit) 
             + "/" + colab)
         colabcontent = colabfile.read()
+        # Checks to ensure all colab outputs in metadata are empty (denoted [])
         if ("\"outputs\": [{" in colabcontent) or ("\"outputs\":[{" in colabcontent):
             toPrint += track + "/" + unit + "/" + colab + " has an uncleared output.\n\n" 
     return toPrint
@@ -94,11 +106,11 @@ def main():
     outmd = open(outputFile, "w")
     outmd.write("## Test Results\n\n")
     
-    # get all folders in the content folder
+    # Get all folders in the content folder
     tracks = [dI for dI in os.listdir(contentFolder) if os.path.isdir(
     os.path.join(contentFolder,dI))]
 
-    # Separating the numbered tracks from the extra content
+    # Separating the numbered tracks from the extra content, sorting then reappending
     sequencetracks = []
     extratracks = []
     for track in tracks:
@@ -109,29 +121,30 @@ def main():
 
     sequencetracks.sort()
     extratracks.sort()
+    alltracks = sequencetracks + extratracks
 
-    # create empty strings to record our testing results
+    # Create empty strings to record our testing results
     py3check = ""
     outputcheck = ""
     spellcheck = ""
     answerkeycheck = ""
 
-    #goes through each track, gets official track name and unit names
-    for track in sequencetracks:
+    # Goes through each track, gets track name, unit name, list of colabs
+    for track in alltracks:
         units = [dI for dI in os.listdir(inContentFolder + track) if os.path.isdir(
             os.path.join(inContentFolder + track,dI))]
         units.sort()
         for unit in units:
             jsonfile = open(inContentFolder + str(track) + "/" + str(unit) 
-            + "/metadata.json", "r")
+                + "/metadata.json", "r")
             lines = jsonfile.readlines()
             content = "".join(lines)
             content = content.replace("\n", "")
             content = content.replace("\t", "")
             content = content.replace(r"\s", " ")
             content = content.replace("  ", " ")
-            content = content.replace("  ", " ")
-            content = content.replace("  ", " ") #believe me, these three lines were necessary :/
+            content = content.replace("  ", " ") #three lines were necessary :/
+            content = content.replace("  ", " ") #can be prevented by fixing all jsons
             content = content.replace('" "', '","')
             parsed_json = json.loads(content)
 
@@ -141,7 +154,7 @@ def main():
             elif "colab" in parsed_json.keys():
                 colabs += parsed_json["colab"]
             
-            # Make calls to our helper functions that check colabs
+            # Make calls to our helper functions that test colabs
             testResults = usePython3(track, unit, colabs)
             py3check += testResults
             testResults = outputsOff(track, unit, colabs)
@@ -153,8 +166,8 @@ def main():
 
             jsonfile.close()
     
-    #Write out our test results for each
-    outmd.write("### Are Colabs using python 3?\n")
+    # Write out our test results for each
+    outmd.write("### Are Colabs using Python 3?\n")
     if (py3check == ""):
         py3check = "Success!\n\n"
     outmd.write(py3check)
@@ -176,5 +189,5 @@ def main():
 
     outmd.close()
 
-# call our main function to run our script!
+# Call our main function to run our script!
 main()

@@ -1,6 +1,6 @@
-# Course Dashboard
-Track Count: 10
+# AMLI Course Dashboard
 
+Sequence Track Count: 10
 Unit Count: 70
 
 ## Sequence Tracks
