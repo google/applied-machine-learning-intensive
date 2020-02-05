@@ -1,7 +1,7 @@
-# Applied Machine Learning Intensive
+# Welcome to <insert name of course>
 
 <!--
-Welcome to the Applied Machine Learning Intensive. In this course we will explore the concept of
+Welcome to <insert name of course>. In this course we will explore the concept of
 machine learning and perform machine learning on a wide variety of tasks. We're glad you're
 here and excited to explore this space with you.
 -->
