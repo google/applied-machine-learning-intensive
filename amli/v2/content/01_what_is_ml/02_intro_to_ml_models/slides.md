@@ -13,7 +13,7 @@ models support different problem domains.
 <!--
 Though machine learning is not new, its application in modern life has really started to expand over
 the last decade. What are some machine learning products that you know about? How has machine learning
-shown up and improved something that you use?
+shown up and improved something you use?
 
 *Give the class a few minutes to think of and call out answers. There should be a wide variety of
 answers. If not, give some examples like self-driving cars, language recognition, facial
@@ -39,9 +39,9 @@ Classification systems determine which class or category an example belongs to. 
 distinguish between two or more classes. These classes are defined based on your goals for
 the machine learning system.
 
-For example, to answer the question, "Is this a lion?", you would choose the classes "yes" and
+For example, to answer the question, "Is this a lion?" you would choose the classes "yes" and
 "no" (the problem of choosing between two classes is also called “binary classification”). To
-answer the question, "What type of cat is this?", you might choose the classes "lion," "tiger,"
+answer the question, "What type of cat is this?" you might choose the classes "lion," "tiger,"
 and "kitten."
 
 Classification can be used to identify objects in images or even identify whether credit card transactions are fraudulent or not.
@@ -65,11 +65,11 @@ the two classes and predict which class a new data point is in.
 The system can predict which class to apply to new data after training on existing data labeled
 with the correct class. 
 
-Quick discussion: What are some other examples of a classification system that you can think of?
-(very open ended, possible ex):
+What are some other examples of a classification system that you can think of?
+*(very open ended, possible ex):
 who is speaking right now?
 identify objects in images
-label emails as spam
+label emails as spam*
 -->
 
 ---
@@ -103,9 +103,8 @@ They might sort the pictures into three groups based on size.
 
 Clustering systems similarly attempt to find “clusters” of similar data examples.
 
-Quick discussion: What are other examples of clustering you can think of? What features might a 
-clustering system use to create clusters?
-(many possible answers, ex:
+What are other examples of clustering you can think of? What features might a clustering system use to create clusters?
+*(many possible ex):
 suggesting similar videos
 grouping many examples of soft drinks from around the world)
 -->
@@ -118,7 +117,7 @@ Predicting the relationship between multiple variables, where the target is cont
 <!--
 Regression predicts the relationship between two or more variables. If you were interested in 
 predicting the price of a house, you might look for patterns in location, square footage, or number
-of bedrooms. While classification involves a discrete / categorical value to predict, regression
+of bedrooms. While classification involves a discrete, categorical value to predict, regression
 involves a continuous value to predict.
 
 Concepts:
@@ -144,13 +143,13 @@ some data points, then makes predictions based on that line.
 Regression may also discover a more complicated pattern, such as this sine-like pattern of sea
 surface temperature every year.
 
-Quick discussion: What are other examples of regression? What features might be useful for that
+What are other examples of regression? What features might be useful for that
 regression system?
-ex:
+*(possible ex):
 estimate arrival time based on traffic and distance
-predict crop yield based on weather, time of year
+predict crop yield based on weather, time of year*
 
-Note: *logistic* regression is a classification technique (with a binary target), and the similar names can be confusing. But typically, when we say "regression" we mean predicting a continuous variable. 
+Note: *logistic* regression is a classification technique (with a binary target), and the similar names can be confusing. But typically, when we say "regression" we mean predicting a continuous variable.
 -->
 
 --- 
@@ -174,12 +173,12 @@ Concepts:
 Autocomplete is an example of a sequence prediction: predicting what word is most likely to be
 entered after typing part of a phrase.
 
-Quick discussion: what are some other examples of sequence predictions?
-ex:
+What are some other examples of sequence predictions?
+*(possible ex):
 translations based on context
 password strength (how predictable is the next letter from the previous ones)
 autocomplete
-marketbasket 
+marketbasket* 
 -->
 
 ---
@@ -193,8 +192,8 @@ processing power.
 
 What can ML not do?
 
-There are problems for which ML is not a good or viable solution (for example, if you don’t have enough
-data or not enough diversity, ie, the data is so biased that you can’t generalize), and there are
+There are problems for which ML is not a good or viable solution. For example, if you don’t have enough
+data or not enough diversity, ie, the data is so biased that you can’t generalize. And there are
 problems that ML actually cannot solve.
 
 Good ML problems:
@@ -203,10 +202,10 @@ Good ML problems:
 * use lots of historical data, 
 * and require decisions, not just predictions.
 
-Some examples of current limitations of ML (from https://www.quora.com/What-can-machine-learning-do-and-cant-do):
+Some examples of current limitations of ML are linked here: https://www.quora.com/What-can-machine-learning-do-and-cant-do) 
 an ML system cannot infer a context-free grammar that generates the strings in a language. In other words,
-an ML system can’t achieve true understanding of the grammar that generates a language the same way a human can
-Similar to statistics or data science approaches, ML cannot be used to show cause-effect relationships 
+an ML system can’t achieve true understanding of the grammar that generates a language the same way a human can. 
+Similar to statistics or data science approaches, ML cannot be used to show cause-effect relationships. 
 -->
 
 ---
@@ -224,10 +223,9 @@ Does the ordering of the data matter? Why?
 One important consideration is the quality of data -- machine learning models are only as good as
 the examples used to train them. 
 
-Discuss: what attributes of a dataset would be ideal? (Correct answer is Large size / High
-diversity: A large number of examples that cover a variety of use cases is essential for a machine
-learning system to understand the underlying patterns in the data. A model trained on this type of
-dataset is more likely to perform well on new data. But it also may take a long time to train.)
+What attributes of a dataset would be ideal? 
+*(Correct answer is Large size / High diversity: A large number of examples that cover a variety of use cases is essential for a machine learning system to understand the underlying patterns in the data. A model trained on this type of
+dataset is more likely to perform well on new data. But it also may take a long time to train.)*
 
 Even if you have a lot of data, if it does not cover a variety of examples, a model will have lower
 confidence for new data underrepresented in the training examples.
@@ -236,11 +234,12 @@ A small dataset with lots of variety makes it challenging to find patterns in th
 will lack the confidence a larger dataset provides. And if your dataset is small without much variation,
 you may not even need machine learning.
 
-Discuss: Does ordering of the data matter? (Answer: Kind of)
+Does ordering of the data matter? 
+*(Answer: Kind of)*
 
 Ordering of the data matters when you might have groups of highly correlated examples. For example, if
 you feed your ML system all pictures of lions, then all pictures of tigers, and so on, it may not be
 able to learn general patterns as well. It’s extremely important to shuffle the training data to avoid
-such groupings (though as long as you shuffle, the exact ordering after the shuffle does not matter).
+such groupings. Though, as long as you shuffle, the exact ordering after the shuffle does not matter.
 
 -->
