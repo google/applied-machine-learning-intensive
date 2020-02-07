@@ -1613,9 +1613,174 @@ Define calibration as the fact that the outputs are real world values like proba
 
 # Logistic Regression For Classification
 
+![](res/TTXpic108.png)
 
+<!--
+Define calibration as the fact that the outputs are real world values like probabilities -- contrast to uncalibrated outputs like an embedding vector (that is internally informative but the values have no real world correlation).
+-->
 
+---
 
+# Logistic Regression: Predictions
 
+![](res/TTXpic109.png)
 
+<!--
+Partner chat: why are asymptotes interesting?
+Unlike MSE, never guesses 1.0 probability.  Will keep trying to drive loss closer and closer to zero, in the absence of regularization.
+-->
 
+---
+
+![](res/TTXgroupchat.png) 
+
+**Sigmoid derivative** {.big}
+
+Look at the sigmoid curve. How much does the value of y change as you make x bigger and bigger or smaller and smaller? This is the derivative. What issue might you expect if x gets very large as you train your model?
+
+![](res/TTXpic110.png)
+
+---
+
+![](res/TTXgreen.png)
+
+# Log Loss and Need for Regularization
+
+---
+
+# LogLoss For Predicting Probabilities
+
+![](res/TTXpic111.png)
+
+<!--
+Note that this has a convenient derivative with respect to w.
+-->
+
+---
+
+# Logistic Regression & Regularization
+
+* Regularization is super important for logistic regression.
+  * Remember the asymptotes
+  * It’ll keep trying to drive loss to 0 in high dimensions
+
+* Two strategies are especially useful:
+  * L2 regularization -- penalizes huge weights.
+  * Early stopping -- limiting training steps or learning rate.
+
+<!--
+Potentially useful insight here -- imagine you assign a unique id to each example, and map each id to its own feature.  If you use un-regularized logistic regression, this will lead to absolute overfitting, as the model tries to drive loss to zero on all examples and never gets there, the weights for each indicator feature will be driven to +inf or -inf.  This can happen in practice in high dimensional data with feature crosses -- often there’s a huge mass of rare crosses that happens only on one example each.  Fortunately, in practice, we always use both explicit regularization (L1 and L2), and also some amount of early stopping regularization.
+-->
+
+---
+
+![](res/TTXgreen.png)
+
+# Calibration Plot to Recognize Prediction Bias
+
+* Logistic Regression predictions should be unbiased meaning that: average of predictions ≅ average of observations
+* Bias is a sign that something is wrong.
+* Zero bias alone does not mean everything is working.
+  * But it’s a great sanity check.
+  * If you have bias, you have a problem (e.g. incomplete feature set, biased training sample, …)
+* Don’t fix bias with a calibration layer, fix it in the model.
+* Look for bias in slices of data, this can guide improvements.
+
+<!--
+Prediction bias is a different thing than the neuron bias (which is the “+b” part of the “wx+b” linear equation).
+
+Prediction bias is the difference between (the average value of predictions made by the model over a dataset) - (the average value of the labels in that dataset).
+
+Ask students: why is a zero bias model insufficient?
+Useless
+Binary class
+-->
+
+---
+
+# Calibration Plots show Bucketed Bias
+
+![](res/TTXpic111.png)
+
+<!--
+This is on a log / log scale, as we’re comparing the bucketized log-odds predicted to the bucketized log-odds observed.
+
+You’ll note that things are pretty well calibrated in the moderate range, but the extreme low end is pretty bad.
+This can happen when parts of the data space is not well represented, or because of noise, or because of overly strong regularization.
+The bucketing can be done in a couple of ways.  You can bucket by linearly breaking up the target predictions, or you can bucket by quantiles.
+-->
+
+---
+
+![](res/TTXgreen.png)
+
+# Evaluation Metrics for Linear Classification
+
+---
+
+# Classification via Threshold
+
+* Sometimes, we use the output from logistic regression to predict the probability an event occurs.
+* Another common use for logistic regression is to use it for binary classification by introducing a threshold. 
+
+* Choice of threshold is a very important choice, and can be tuned.
+
+---
+
+# Evaluation Metrics: Accuracy
+
+* How do we evaluate classification models?
+* One possible measure: Accuracy
+    * the fraction of predictions we got right
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**accuracy** {.big}
+
+Devise a scenario in which accuracy would be a misleading metric of a model's usefulness
+
+---
+
+# Accuracy Can Be Misleading
+
+* In many cases, accuracy is a poor or misleading metric. Two common situations that case this are:
+  * Class imbalance, when positives or negatives are extremely rare
+  * Different kinds of mistakes have different costs
+  
+---
+
+# Confusion Matrix
+
+Useful to separate out different kinds of errors. Let’s use spam detection as an example where spam(1), and not spam(0)
+
+![](res/TTXpic113.png)
+
+---
+
+![](res/TTXgroupchat.png) 
+
+**error costs** {.big}
+
+In spam classification, which is worse: False negatives or false positives?
+
+---
+
+# Evaluation Metrics: Precision & Recall
+
+* We return to binary classification (True/False labels)
+* Precision: (True Positives) / (All Positive Predictions)
+  * When model said “positive” class, was it right?
+  * Intuition: Did the model classify as “spam” too often?
+* Recall: (True Positives) / (All Actual Positives)
+  * Out of all the possible positives, how many did the model correctly identify?
+  * Intuition: Did it classify as “not spam” too often?
+  
+---
+
+# F-measure
+
+![](res/TTXpic113.png)
+
+---
