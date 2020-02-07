@@ -1781,6 +1781,6 @@ In spam classification, which is worse: False negatives or false positives?
 
 # F-measure
 
-![](res/TTXpic113.png)
+![](res/TTXpic114.png)
 
 ---
