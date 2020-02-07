@@ -1585,5 +1585,37 @@ The 2 in the formula is supposed to be a subscript -- if you squint you’ll see
 Note that although we say “L2 norm”, it’s really the square of the L2 norm.  Among other things, this makes the derivative trivial to work with.
 -->
 
+![](res/TTXgroupchat.png) 
+
+**Regularization hyperparams** {.big}
+
+What's a method you might use to choose the value of λ?
+
+---
+
+![](res/TTXgreen.png)
+
+# Linear Classification (Logistic Regression)
+
+* Many problems require a probability estimate as output.
+* Logistic Regression is focused on such problems.
+* Handy because the probability estimates are calibrated.
+  * for example, prob(click) * bid = expected revenue
+* Also useful for when we need a binary classification
+  * click or not click? → prob(click)
+  * spam or not spam?  → prob(spam) 
+  
+<!--
+Define calibration as the fact that the outputs are real world values like probabilities -- contrast to uncalibrated outputs like an embedding vector (that is internally informative but the values have no real world correlation).
+-->
+
+---
+
+# Logistic Regression For Classification
+
+
+
+
+
 
 
