@@ -66,14 +66,13 @@ script will:
 """
 
 import json
-import os
-import sys
+# from pygithub import Github # currently unused
+import os, sys, getopt, urllib
 
-sys.path.insert(0,'..') # Allow us to access the amli directory
-# from amli import drive # TODO Fix import of google_auth
+import drive
 
 # TODO make this work when executed from root directory of repository
-CONTENT = "../content" 
+CONTENT = "/amli/v2" 
 
 def get_sub_folders(folder: str = ""):
     """
@@ -103,8 +102,25 @@ def scan_json():
                 print("success")
 
 
-if __name__ == "__main__":
+def main():
+    # TODO configure commandline arguments
+
+    opts, args = getopt.getopt(sys.argv[1:],"g")
+    if "-g" in opts[0]:
+        drive = args[0]
+    elif len(args) > 1:
+        repo = args[0]
+        drive = args[1]
+    else:
+        print(opts,args)
+        raise SystemExit("Error: No source or destination given.\n\n"
+                         "Usage: create-course.py [-g | <repo folder>] "
+                         "<Google-Drive folder shareable link>")
+    if drive[-12:] == "?usp=sharing":
+        drive = drive[:-12]
+    print(drive)
     # TODO authenticate google drive
+    # drive.authenticate()
     # TODO mount drive folder
     tracks = get_sub_folders()
     for track in tracks:
@@ -125,7 +141,11 @@ if __name__ == "__main__":
             print(f"\t{unit_name}")
             # TODO create unit folder in drive
 
-            for nb in unit_info["colabs"]:
-                # TODO copy to drive
-                # TODO update metadata.json to link to copy
-                pass
+            if (colabs := unit_info.get("colabs")):
+                for nb in colabs:
+                    # TODO copy to drive
+                    # TODO update metadata.json to link to copy
+                    pass
+
+if __name__ == "__main__":
+    main()
