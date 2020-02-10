@@ -43,6 +43,9 @@ import nbformat
 import os # for navigating folders
 import json # for parsing the metadata files
 import re # for regex
+from spellchecker import SpellChecker
+
+spell = SpellChecker()
 
 
 # Global Variables
