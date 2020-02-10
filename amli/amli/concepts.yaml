@@ -7,6 +7,7 @@
       - singular value decomposition
       - principal component analysis
       - embeddings
+- fairness
 - linear algebra
 - toolkits
   - scikit-learn
@@ -18,10 +19,14 @@
   - matplotlib
   - pandas
 - models
+  - training
+    - overfitting
   - tuning
   - types
     - classification
     - regression
+	- clustering
+	- sequence prediction
   - measurement
     - regression
       - mean absolute error
@@ -79,6 +84,7 @@
   - algorithms
     - binary trees
 - statistics
+  - probability
   - distributions
     - normal
     - non-normal

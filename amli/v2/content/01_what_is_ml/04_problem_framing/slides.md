@@ -8,7 +8,7 @@ https://developers.google.com/machine-learning/amli-content/problem-framing/good
 
 ---
 
-# Is ML right for you?
+# Is ML Right for You?
 
 <!--
 Topics: Quick mention of bias and fairness
@@ -16,7 +16,7 @@ Topics: Quick mention of bias and fairness
 
 --- 
 
-## ML is a tool
+## ML Is a Tool
 
 ![](res/hammerwrench.png)
 
@@ -26,7 +26,7 @@ When you have a hammer, everything looks like a nail.
 
 ---
 
-## What kind of tool?
+## What Kind of Tool?
 
 ![](res/patent.png)
 
@@ -47,7 +47,7 @@ Bad: energy and time cost money
 
 ---
 
-## What other tools do we have?
+## What Other Tools Do We Have?
 
 ![](res/toolbox.png)
 
@@ -57,7 +57,7 @@ Look at definition, brainstorm other ways to accomplish goals
 
 ---
 
-Traditional Sofware Engineering
+Traditional Software Engineering
 
   * Requirements --> Workable Design
 
@@ -77,7 +77,7 @@ The neural network might use these representations to do accurate translations o
 
 ---
 
-## Shifting your mindset
+## Shifting Your Mindset
 
 ![](res/peternorvig.jpg)
 
@@ -91,7 +91,7 @@ Quote source: https://developers.google.com/machine-learning/amli-content/proble
 
 ---
 
-# Comfort with uncertainty
+# Comfort With Uncertainty
 
 <!--
 https://developers.google.com/machine-learning/amli-content/problem-framing/ml-mindset
@@ -99,7 +99,7 @@ https://developers.google.com/machine-learning/amli-content/problem-framing/ml-m
 
 ---
 
-## Scientific method
+## Scientific Method
 
 1.  Set a research goal
 1.  Make a hypothesis
@@ -115,7 +115,7 @@ https://developers.google.com/machine-learning/amli-content/problem-framing/ml-m
 
 ---
 
-## Traits of good ML problems
+## Traits of Good ML Problems
 
 * Clear problem statement, before we look at data!
 * Lots and lots of data
@@ -128,7 +128,7 @@ https://developers.google.com/machine-learning/amli-content/problem-framing/good
 
 ---
 
-## Framing a problem
+## Framing a Problem
 
 * Start clearly and simply
 * What is your ideal outcome?
@@ -140,12 +140,12 @@ https://developers.google.com/machine-learning/amli-content/problem-framing/fram
 
 Patents: "We want to know how many patents exist across important domains such as self-driving cars and mobile advertising."
 Hiring: "We want to catch competitive engineers' resumes that resume screeners mistakenly missed or rejected."
-Tech support: "We need to reduce the load on Technical Support by increasing the usage of self-help articles."
+Tech support: "We need to reduce the load on technical support by increasing the usage of self-help articles."
 -->
 
 ---
 
-# Keep it simple!
+# Keep It Simple!
 
 (like, in ML, and in engineering, and in general)
 
@@ -156,7 +156,7 @@ You can use this if Kevin O’Malley gives guest lecture. His research team made
 
 ---
 
-## Good questions
+## Good Questions
 
 * What is the goal?
 * Do you have enough data?
@@ -165,7 +165,7 @@ You can use this if Kevin O’Malley gives guest lecture. His research team made
 
 ---
 
-## Properties of good output
+## Properties of Good Output
 
 * Connected to your ideal outcome
 * Can you obtain outputs to train with?
