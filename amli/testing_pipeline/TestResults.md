@@ -13,9 +13,9 @@ t02_data/06_probability/colab_dice_rolling.ipynb has an uncleared output.
 ### Are all Colabs and Slides free of spelling errors?
 t02_data/01_introduction_to_python/colab.ipynb contains nonword acces
 
-t02_data/06_probability/colab1.ipynb contains nonword choclate
-
 t02_data/06_probability/colab1.ipynb contains nonword eah
+
+t02_data/06_probability/colab1.ipynb contains nonword choclate
 
 t02_data/06_probability/colab1.ipynb contains nonword probabiltiy
 
@@ -23,9 +23,9 @@ t02_data/06_probability/colab2.ipynb contains nonword indepent
 
 t02_data/06_probability/colab2.ipynb contains nonword probabiltiy
 
-t05_basic_classification/08_support_vector_machines/colab.ipynb contains nonword largets
-
 t05_basic_classification/08_support_vector_machines/colab.ipynb contains nonword multple
+
+t05_basic_classification/08_support_vector_machines/colab.ipynb contains nonword largets
 
 t05_basic_classification/10_project_classification/colab.ipynb contains nonword fsdfasdfsadfsd
 
@@ -41,4 +41,7 @@ t02_data/08_data_analysis_and_manipulation/colab.ipynb has 1 exercises, and 2 an
 t03_regression/01_introduction_to_sklearn/colab.ipynb has 3 exercises, and 4 answer keys.
 
 t03_regression/03_linear_regression_with_sklearn/colab.ipynb has 10 exercises, and 13 answer keys.
+
+### Are all images correctly licensed?
+Not written yet!
 
