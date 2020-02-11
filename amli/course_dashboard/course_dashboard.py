@@ -52,7 +52,7 @@ def courseInstances():
     data = json.load(jsonfile)
     courseList = ""
     for instance in data["Current Courses"]:
-        courseList +=  " * **" + instance + "\n"
+        courseList +=  " * **" + instance + "**" + "\n"
     jsonfile.close()
     return courseList
 

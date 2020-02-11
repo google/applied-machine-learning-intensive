@@ -1,7 +1,7 @@
 # AMLI Course Dashboard
 
 Sequence Track Count: 10
-Unit Count: 70
+Unit Count: 68
 
 ## Sequence Tracks
 ### 00: Course Preamble
@@ -42,11 +42,6 @@ Unit Count: 70
    * 0 Colab notebooks
    * 1 Slides
 ### 02: Data Analysis and Manipulation
- * **00: Introduction to Colab**
-   * 1 Colab notebooks
-     * 0 Exercises
-     * 60 minutes
-   * 1 Slides
  * **01: Introduction to Python**
    * 1 Colab notebooks
      * 3 Exercises
@@ -61,11 +56,6 @@ Unit Count: 70
    * 2 Colab notebooks
      * 8 Exercises
      * 105 minutes
-   * 1 Slides
- * **04: Introduction to Pandas**
-   * 1 Colab notebooks
-     * 3 Exercises
-     * 60 minutes
    * 1 Slides
  * **05: Intermediate Pandas**
    * 1 Colab notebooks
@@ -285,7 +275,9 @@ Unit Count: 70
 ### Miscellaneous Technical Topics
 ## Course Instances
 
- * **sampleInsertedURL.com
- * **sampleInsertedURL.com
- * **sampleInsertedURL.com
- * **sampleToKeepURL.com
+ * **sampleInsertedURL.com**
+ * **sampleInsertedURL.com**
+ * **sampleInsertedURL.com**
+ * **sampleToKeepURL.com**
+ * **sampleToKeepURL.com**
+ * **sampleToKeepURL.com**
