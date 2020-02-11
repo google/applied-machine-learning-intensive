@@ -122,7 +122,7 @@ def main():
     outmd.write("Sequence Track Count: " + str(len(sequencetracks)) + "\n")
 
     # Create delay print for all info we gather that should be printed after unit count
-    delayprint = ""
+    delayprint = "\n"
 
     # Goes through each track, gets official track name and unit names
     unitcount = 0
