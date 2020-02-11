@@ -68,7 +68,7 @@ def courseInstanceCreater(courseURL):
     with open("course_instances.json", 'w') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     jsonfile.close()
-    # TODO: add a call to remake this file when this happens to add it to the dashboard
+    main()
 
 def courseInstanceDeleted(courseURL):
     ''' helper that deletes course instances when they are done
@@ -82,6 +82,7 @@ def courseInstanceDeleted(courseURL):
     with open("course_instances.json", 'w') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     jsonfile.close()
+    main()
 
 
 def main():
@@ -204,15 +205,11 @@ def main():
 
     # Prints out Course Instance
     outmd.write("## Course Instances\n\n")
-    # Testing
-    courseInstanceCreater("sampleToKeepURL.com")
-    courseInstanceCreater("sampleToDeleteURL.com")
-    courseInstanceDeleted("sampleToDeleteURL.com")
     toWrite = courseInstances()
     outmd.write(toWrite)
 
     outmd.close()
 
 # Call our main function to run our script!
-main()
+ main()
 

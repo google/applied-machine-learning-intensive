@@ -1,15 +1,17 @@
 {
+    "Number of Current Courses": "3",
+    "Old Courses": {
+        "link": "sampleOldURL.com"
+    },
     "Current Courses": [
         "sampleInsertedURL.com",
         "sampleInsertedURL.com",
         "sampleInsertedURL.com",
         "sampleToKeepURL.com",
         "sampleToKeepURL.com",
-        "sampleToKeepURL.com"
+        "sampleToKeepURL.com",
+        "sampleRetryMainUrl",
+        "sampleRetryMainUrl"
     ],
-    "Old Courses": {
-        "link": "sampleOldURL.com"
-    },
-    "Number of Current Courses": "3",
     "Number of Total Course Instances Created": "4"
 }
