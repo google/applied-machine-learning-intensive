@@ -44,6 +44,46 @@ def parseJSON(lines):
     parsed_json = json.loads(content)
     return parsed_json
 
+def courseInstances():
+    ''' helper that is called to read from a json of course instances
+        returns string to print out of course instances
+    '''
+    jsonfile = open("course_instances.json", "r")
+    data = json.load(jsonfile)
+    courseList = ""
+    for instance in data["Current Courses"]:
+        courseList +=  " * **" + instance + "\n"
+    jsonfile.close()
+    return courseList
+
+def courseInstanceCreater(courseURL):
+    ''' adds an instance of the course to the json file when it is created
+    '''
+    jsonfile = open("course_instances.json", "r")
+    data = json.load(jsonfile)
+    oldData = list(data["Current Courses"])
+    oldData.append(courseURL)
+    data["Current Courses"] = oldData
+    jsonfile.close()
+    with open("course_instances.json", 'w') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+    jsonfile.close()
+    # TODO: add a call to remake this file when this happens to add it to the dashboard
+
+def courseInstanceDeleted(courseURL):
+    ''' helper that deletes course instances when they are done
+    '''
+    jsonfile = open("course_instances.json", "r")
+    data = json.load(jsonfile)
+    oldData = list(data["Current Courses"])
+    oldData.remove(courseURL)
+    data["Current Courses"] = oldData
+    jsonfile.close()
+    with open("course_instances.json", 'w') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+    jsonfile.close()
+
+
 def main():
     # Opening a markdown file to write all of the output to
     outmd = open(outputFile, "w")
@@ -162,7 +202,17 @@ def main():
                 outmd.write("### " + linelist[-2] + "\n")
         jsonfile.close()
 
+    # Prints out Course Instance
+    outmd.write("## Course Instances\n\n")
+    # Testing
+    courseInstanceCreater("sampleToKeepURL.com")
+    courseInstanceCreater("sampleToDeleteURL.com")
+    courseInstanceDeleted("sampleToDeleteURL.com")
+    toWrite = courseInstances()
+    outmd.write(toWrite)
+
     outmd.close()
 
 # Call our main function to run our script!
 main()
+
