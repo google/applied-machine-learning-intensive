@@ -1,5 +1,13 @@
 # AMLI Course Dashboard
 
+## Course Instances
+
+Courses in Progress: 3
+
+ * **sampleInsertedURL.com**
+ * **sampleInsertedURL.com**
+ * **sampleInsertedURL.com**
+
 Sequence Track Count: 10
 Unit Count: 68
 
@@ -273,13 +281,3 @@ Unit Count: 68
 ### Professional Development
 ### Reccurring Classroom Events
 ### Miscellaneous Technical Topics
-## Course Instances
-
- * **sampleInsertedURL.com**
- * **sampleInsertedURL.com**
- * **sampleInsertedURL.com**
- * **sampleToKeepURL.com**
- * **sampleToKeepURL.com**
- * **sampleToKeepURL.com**
- * **sampleRetryMainUrl**
- * **sampleRetryMainUrl**
