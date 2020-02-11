@@ -67,12 +67,13 @@ script will:
 
 import json
 # from pygithub import Github # currently unused
-import os, sys, getopt, urllib
+import os, sys, getopt
+from tools import drive_integration
 
-import drive
+
 
 # TODO make this work when executed from root directory of repository
-CONTENT = "/amli/v2" 
+CONTENT = "../content" 
 
 def get_sub_folders(folder: str = ""):
     """
@@ -120,7 +121,7 @@ def main():
         drive = drive[:-12]
     print(drive)
     # TODO authenticate google drive
-    # drive.authenticate()
+    drive_integration.authenticate()
     # TODO mount drive folder
     tracks = get_sub_folders()
     for track in tracks:
