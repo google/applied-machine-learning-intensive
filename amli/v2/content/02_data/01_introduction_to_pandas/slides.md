@@ -111,13 +111,48 @@ Source: Google Copyright
 
 ---
 
+# Using Pandas
+
+```python
+import pandas as pd
+```
+
+<!--
+
+Pandas isn't a core part of Python. To use it you'll need to import it. You could do this by simply
+writing `import pandas`. In practice however, you'll see `import pandas as pd`. This isn't a
+requirement, but it is a convention that you'll see in quite a bit of code that uses Pandas and
+in documentation and on help sites. Aliasing `pandas` as `pd` will make it easier to utilize these
+resources.
+
+-->
+
+---
+
+# Installing Pandas
+
+```shell
+pip install pandas
+```
+
+<!--
+
+Pandas is pre-installed in the enviornment Colab uses. If you are running your code elsewhere you
+might need to install Pandas. A common way to do that is to use `pip`.
+
+-->
+
+---
+
 # Creating Pandas Data Structures
 
 
-When coding, we can make a Series in the following way:
+When coding, we can make a `Series` in the following way:
 
 ```python
-flavors = pd.Series(['Mint', 'Raspberry', 'Orange', 'Coffee'])
+flavors = pd.Series(
+    ['Mint', 'Raspberry', 'Orange', 'Coffee']
+)
 ```
 
 <!--
@@ -137,7 +172,8 @@ For the class:
 Multiple Series can be combined into a Dataframe:
 
 ```python
-flavors = pd.Series(['Mint', 'Raspberry', 'Orange', 'Coffee'])
+flavors = pd.Series([
+    'Mint', 'Raspberry', 'Orange', 'Coffee'])
 num_in_stock = pd.Series(['14', '13', '20', '7'])
 
 pd.DataFrame({ 'Truffle': flavors, 'Number': num_in_stock })
@@ -162,9 +198,9 @@ The 'sep' field denotes what character (or characters) are used in the file to s
 
 ---
 
-# Exploring a Dataframe
+# Exploring `Series` and `DataFrame`
 
-Pandas has some methods to get basic information about a dataframe
+Pandas has some methods to get basic information about both `Series` and `DataFrame` objects:
 
 * `describe()`
 * `head()`
@@ -183,7 +219,7 @@ We’ll go through each of these methods in turn. None of them modify the data, 
 
 ---
 
-# Exploring a Dataframe: describe()
+# Exploring `Series` and `DataFrame`
 
 Gives statistics about all of the numerical data in the dataframe
 
@@ -204,7 +240,7 @@ For the class:
 
 ---
 
-# Exploring a Dataframe: head()
+# Exploring `Series` and `DataFrame`
 
 Prints out the first few rows of the dataframe
 
@@ -225,7 +261,7 @@ For the class:
 
 ---
 
-# Exploring a Dataframe: tail()
+# Exploring `Series` and `DataFrame`
 
 Prints out the last few rows of the dataframe
 
@@ -246,7 +282,7 @@ For the class:
 
 ---
 
-# Exploring a Dataframe: hist()
+# Exploring `Series` and `DataFrame`
 
 Makes a histogram of any numerical data (calculates the frequency of each number)
 
@@ -270,15 +306,11 @@ For the class:
 
 # Accessing Data
 
-We can access elements of the Dataframe using familiar Python list operations
+We can access elements of the Dataframe using familiar Python list operations:
 
-```python
-my_dataframe['Names']
-
-my_dataframe['Names'][1]
-
-my_dataframe[0:2]
-```
+* `my_dataframe['Names']`
+* `my_dataframe['Names'][1]`
+* `my_dataframe[0:2]`
 
 <!--
 Motivation: 
@@ -368,6 +400,31 @@ For the class:
 
 ---
 
+# Accessing Data
+
+If you want to access row(s) of data you can use `iloc`.
+
+<!--
+
+TODO: describe iloc
+
+-->
+
+---
+
+# Accessing Data
+
+If you want to access specific rows and columns of data you can use `loc`.
+
+<!--
+
+TODO: describe loc. Be sure to mention that it directly access the data and doesn't make a copy of
+it. This allows `loc` to be on the left-hand side of assignment.
+
+-->
+
+---
+
 # Adding Series to a Dataframe
 
 We can create a new series of the same length by modifying all of the elements by a singular value.
@@ -423,4 +480,4 @@ def my_function(price):
 
 my_data['is_expensive'] = 
 my_data['prices'].apply(my_function)
-```s
+```
