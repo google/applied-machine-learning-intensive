@@ -50,13 +50,13 @@ def courseInstances():
     '''
     jsonfile = open("course_instances.json", "r")
     data = json.load(jsonfile)
-    courseList = ""
+    courseList = "Courses in Progress: " + str(len(list(data["Current Courses"]))) + "\n\n"
     for instance in data["Current Courses"]:
         courseList +=  " * **" + instance + "**" + "\n"
     jsonfile.close()
     return courseList
 
-def courseInstanceCreater(courseURL):
+def courseInstanceCreated(courseURL):
     ''' adds an instance of the course to the json file when it is created
     '''
     jsonfile = open("course_instances.json", "r")
@@ -75,10 +75,16 @@ def courseInstanceDeleted(courseURL):
     '''
     jsonfile = open("course_instances.json", "r")
     data = json.load(jsonfile)
+    # Remove the course from Current Courses
     oldData = list(data["Current Courses"])
     oldData.remove(courseURL)
     data["Current Courses"] = oldData
+    # Add the course to Previous Courses
+    oldData2 = list(data["Previous Courses"])
+    oldData2.append(courseURL)
+    data["Previous Courses"] = oldData2
     jsonfile.close()
+    # Actually change the JSON
     with open("course_instances.json", 'w') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     jsonfile.close()
@@ -89,6 +95,11 @@ def main():
     # Opening a markdown file to write all of the output to
     outmd = open(outputFile, "w")
     outmd.write("# AMLI Course Dashboard\n\n")
+
+     # Prints out Course Instance
+    outmd.write("## Course Instances\n\n")
+    toWrite = courseInstances() + "\n"
+    outmd.write(toWrite)
 
     # Get all folders in the content folder
     tracks = [dI for dI in os.listdir(contentFolder) if os.path.isdir(
@@ -106,12 +117,12 @@ def main():
     sequencetracks.sort()
     extratracks.sort()
 
-    # Write our Track Count - currently doesn't contain extra tracks
-    outmd.write("Sequence Track Count: " + str(len(sequencetracks)) + "\n")
+    # Start Writing out our Content Information
+    outmd.write("## Sequence Tracks\n")
+    outmd.write("Sequence Track Count: " + str(len(sequencetracks)) + "\n\n")
 
     # Create delay print for all info we gather that should be printed after unit count
     delayprint = ""
-    delayprint += ("## Sequence Tracks\n")
 
     # Goes through each track, gets official track name and unit names
     unitcount = 0
@@ -203,13 +214,8 @@ def main():
                 outmd.write("### " + linelist[-2] + "\n")
         jsonfile.close()
 
-    # Prints out Course Instance
-    outmd.write("## Course Instances\n\n")
-    toWrite = courseInstances()
-    outmd.write(toWrite)
-
     outmd.close()
 
 # Call our main function to run our script!
- main()
+main()
 

@@ -1,9 +1,18 @@
 # AMLI Course Dashboard
 
-Sequence Track Count: 10
-Unit Count: 68
+## Course Instances
+
+Courses in Progress: 3
+
+ * **sampleInsertedURL.com**
+ * **sampleInsertedURL.com**
+ * **sampleInsertedURL.com**
 
 ## Sequence Tracks
+Sequence Track Count: 10
+
+Unit Count: 68
+
 ### 00: Course Preamble
  * **00: Program Welcome and Overview**
    * 0 Colab notebooks
@@ -273,13 +282,3 @@ Unit Count: 68
 ### Professional Development
 ### Reccurring Classroom Events
 ### Miscellaneous Technical Topics
-## Course Instances
-
- * **sampleInsertedURL.com**
- * **sampleInsertedURL.com**
- * **sampleInsertedURL.com**
- * **sampleToKeepURL.com**
- * **sampleToKeepURL.com**
- * **sampleToKeepURL.com**
- * **sampleRetryMainUrl**
- * **sampleRetryMainUrl**
