@@ -34,7 +34,7 @@ spell = SpellChecker()
 
 # Global Variables
 outputFile = "TestResults.md"
-contentFolder = "../content"
+contentFolder = "../content/"
 inContentFolder = "../content/"
 
 def spellCheck(track, unit, colabs):
@@ -177,6 +177,7 @@ def main():
     for track in alltracks:
         units = [dI for dI in os.listdir(inContentFolder + track) if os.path.isdir(
             os.path.join(inContentFolder + track,dI))]
+        units = [x for x in units if x[2] == "_"]
         units.sort()
         for unit in units:
             jsonfile = open(inContentFolder + str(track) + "/" + str(unit) 
@@ -190,6 +191,10 @@ def main():
             content = content.replace("  ", " ") #three lines were necessary :/
             content = content.replace("  ", " ") #can be prevented by fixing all jsons
             content = content.replace('" "', '","')
+            content = content.replace(',]', ']')
+            content = content.replace(',}', '}')
+            content = content.replace(', ]', ' ]')
+            content = content.replace(', }', ' }')
             parsed_json = json.loads(content)
 
             colabs = []
