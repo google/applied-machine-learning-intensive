@@ -242,19 +242,6 @@ d. Extrinsic Based Learning (EBL)
 
 ---
 
-
-# 10.) In 1981, Gerald Dejong introduced EBL, in which a computer analyzes training data and by discarding unimportant data creates a general rule it can follow. What does EBL stand for?
-
-a. Experiential Based Learning (EBL)
-
-b. Explanation Based Learning (EBL)
-
-c. Expositional Based Learning (EBL)
-
-d. Extrinsic Based Learning (EBL)
-
----
-
 # 10.) In 1981, Gerald Dejong introduced EBL, in which a computer analyzes training data and by discarding unimportant data creates a general rule it can follow. What does EBL stand for?
 
 a. Experiential Based Learning (EBL)
@@ -339,5 +326,304 @@ d. $3000
 
 ---
 
+# 14.) Inspired by Joseph Weizenbaum’s early natural language processing computer program named ELIZA, Richard Wallace developed the chatbot A.L.I.C.E. in 1995, which stands for _____________________.
+
+a. Artificial Language Interactive Computer Entity
+
+b. Artificial Language Instinctual Computer Entity
+
+c. Artificial Linguistic Internet Computer Entity
+
+d. Artificial Linguistic Interval Computer Entity 
+
+---
+
+# 14.) Inspired by Joseph Weizenbaum’s early natural language processing computer program named ELIZA, Richard Wallace developed the chatbot A.L.I.C.E. in 1995, which stands for _____________________.
+
+a. Artificial Language Interactive Computer Entity
+
+b. Artificial Language Instinctual Computer Entity
+
+**c. Artificial Linguistic Internet Computer Entity**
+
+d. Artificial Linguistic Interval Computer Entity 
+
+---
+
+# 15.) What was the name of the IBM supercomputer that was the first computer to defeat a human world chess champion under tournament conditions?
+
+a. Deep Blue
+
+b. Blue Gene
+
+c. Sequoia
+
+d. Galileo 
+
+---
+
+# 15.) What was the name of the IBM supercomputer that was the first computer to defeat a human world chess champion under tournament conditions?
+
+**a. Deep Blue**
+
+b. Blue Gene
+
+c. Sequoia
+
+d. Galileo 
+
+---
+
+# 16.) In what year did Toyota offer the first intelligent parking system, called “hands free parking”?
+
+a. 1999
+
+b. 2003
+
+c. 2005
+
+d. 2007 
+
+---
+
+# 16.) In what year did Toyota offer the first intelligent parking system, called “hands free parking”?
+
+a. 1999
+
+**b. 2003**
+
+c. 2005
+
+d. 2007 
+
+---
+
+# 17.) In 2006, Geoffrey Hinton uses the term  ______________ to describe new algorithms that let computers distinguish objects in images and videos.
+
+a. Unsupervised learning
+
+b. Sentiment analysis
+
+c. Deep learning
+
+d. Overfitting
+
+---
+
+# 17.) In 2006, Geoffrey Hinton uses the term  ______________ to describe new algorithms that let computers distinguish objects in images and videos.
+
+a. Unsupervised learning
+
+b. Sentiment analysis
+
+**c. Deep learning**
+
+d. Overfitting
+
+---
+
+# 18.) Psychic Search, also known as ____________________ or Search as You Type, is a Google Search feature introduced in 2010 that returns results on the fly as you type your search query.
+
+a. Google Prompt
+
+b. Google Swift
+
+c. Google Snappy
+
+d. Google Instant
+
+---
+
+# 18.) Psychic Search, also known as ____________________ or Search as You Type, is a Google Search feature introduced in 2010 that returns results on the fly as you type your search query.
+
+a. Google Prompt
+
+b. Google Swift
+
+c. Google Snappy
+
+**d. Google Instant**
+
+--- 
+
+# 19.) Netflix offered $1,000,000 to anyone who could beat its algorithm at predicting consumer film ratings. The BellKor team of ________ scientists took the prize three years later, submitting their entry in the final round, a month-long race, mere minutes ahead of the second-place team.
+
+a. Facebook
+
+b. Apple
+
+c. Samsung
+
+d. AT&T
+
+---
+
+# 19.) Netflix offered $1,000,000 to anyone who could beat its algorithm at predicting consumer film ratings. The BellKor team of ________ scientists took the prize three years later, submitting their entry in the final round, a month-long race, mere minutes ahead of the second-place team.
+
+a. Facebook
+
+b. Apple
+
+c. Samsung
+
+**d. AT&T**
+
+---
+
+# 20.) In 2010, Microsoft Kinect began tracking 20 human features at a rate of_____________, allowing people to interact with the computer via movements and gestures.
+
+a. 5 times per second
+
+b. 15 times per second
+
+c. 30 times per second
+
+d. 50 times per second
+
+---
 
 
+# 20.) In 2010, Microsoft Kinect began tracking 20 human features at a rate of_____________, allowing people to interact with the computer via movements and gestures.
+
+a. 5 times per second
+
+b. 15 times per second
+
+**c. 30 times per second**
+
+d. 50 times per second
+
+---
+
+# 21.) Watson, a computer which responds to natural language text with processed information from the internet, defeats two former champions on Jeopardy! in which year? 
+
+a. 2010
+
+b. 2011
+
+c. 2012
+
+d. 2013
+
+---
+
+# 21.) Watson, a computer which responds to natural language text with processed information from the internet, defeats two former champions on Jeopardy! in which year? 
+
+**a. 2010**
+
+b. 2011
+
+c. 2012
+
+d. 2013
+
+---
+
+# 22.) In 2014, Facebook developed __________, a software algorithm that can recognize or verify individuals in photos with human-like accuracy.
+
+a. FaceTrace
+
+b. DeepLearn
+
+c. FaceTrack
+
+d. DeepFace
+
+---
+
+# 22.) In 2014, Facebook developed __________, a software algorithm that can recognize or verify individuals in photos with human-like accuracy.
+
+a. FaceTrace
+
+b. DeepLearn
+
+c. FaceTrack
+
+**d. DeepFace**
+
+---
+
+# 23.) Tesla’s Autopilot, a machine learning system, combines ______, ______ , and ________ sensors with real time traffic updates to drive Model S on the open road and in dense stop-and-go traffic with reduced human intervention.
+
+a. radar, camera, and MEMS
+
+b. ultrasound, sonar, and radar
+
+c. lidar, camera, and sonar
+
+d. camera, radar, and sonar
+
+---
+
+# 23.) Tesla’s Autopilot, a machine learning system, combines ______, ______ , and ________ sensors with real time traffic updates to drive Model S on the open road and in dense stop-and-go traffic with reduced human intervention.
+
+a. radar, camera, and MEMS
+
+b. ultrasound, sonar, and radar
+
+c. lidar, camera, and sonar
+
+**d. camera, radar, and sonar**
+
+---
+
+# 24.) What ML event did NOT occur in 2015?
+
+a. The University of Michigan’s 32-acre Mobility Transformation Center, called MCity, launches in 2015 as a world-class test facility for autonomous vehicle technology.
+
+b. Waymo reaches 1 million self-driving miles.
+
+c. Google launches TensorFlow, an open-source machine learning library.
+
+d. Facebook, Microsoft, and other companies including AWS, Nvidia, Qualcomm, Intel, and Huawei team up to develop the Open Neural Network Exchange Exchange (ONNX), an open format for representing deep learning models.
+
+---
+
+# 24.) What ML event did NOT occur in 2015?
+
+a. The University of Michigan’s 32-acre Mobility Transformation Center, called MCity, launches in 2015 as a world-class test facility for autonomous vehicle technology.
+
+b. Waymo reaches 1 million self-driving miles.
+
+c. Google launches TensorFlow, an open-source machine learning library.
+
+**d. Facebook, Microsoft, and other companies including AWS, Nvidia, Qualcomm, Intel, and Huawei team up to develop the Open Neural Network Exchange Exchange (ONNX), an open format for representing deep learning models. (2017).**
+
+---
+
+# The last question, #25, is worth 5 points!
+
+1. Tally up your points so far!
+1. Your team will have 60 seconds to deliberate. 
+1. As before, each team will display their answer at the same time. 
+1. Let’s dive in!
+
+---
+
+# 25.) In 2018, Google Cloud launched AutoML, a cloud service designed to make it easier for companies to create custom machine learning algorithms. What are some AutoML products?
+
+a. AutoML Boost, AutoML Decipher, AutoML Vision
+
+b. AutoML Natural Language, AutoML Translate, AutoML Vision
+
+c. AutoML Translate, AutoML Recommendations, AutoML Vision
+
+d. AutoML Personalization, AutoML Camera, AutoML Translate
+
+---
+
+# 25.) In 2018, Google Cloud launched AutoML, a cloud service designed to make it easier for companies to create custom machine learning algorithms. What are some AutoML products?
+
+a. AutoML Boost, AutoML Decipher, AutoML Vision
+
+**b. AutoML Natural Language, AutoML Translate, AutoML Vision**
+
+c. AutoML Translate, AutoML Recommendations, AutoML Vision
+
+d. AutoML Personalization, AutoML Camera, AutoML Translate
+
+---
+
+# Congrats to the winning team! 
+
+---
