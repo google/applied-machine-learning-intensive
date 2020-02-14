@@ -14,13 +14,14 @@
 # Notes
 # Use Python 3: Done!
 # Outputs Off: Done!
-# Spell Check: Copied in josh's code, but commented it all out because it was causing lots of errors. 
-# looking at packages, I think we might have to start over with our own idea because these look like
-# google only things we might not be able to download.
-# Contains Answer Key: Pretty Close - they'll let us know what exact wording to look for
+# Spell Check: Done for colabs, almost done for slides
+# Contains Answer Key: Done!
 # Style Guide Rules: there is no syle guide at the link they gave
-# Referenced Images: Not entirely sure whether we should just be checking urls or trying to actually find
-#   source of image - look more into image license notes in colabs + slides
+# Referenced Images: Written, not tested
+
+# I just added code to get slides (once that becomes possible), and to spellcheck them and look for image references.
+# I haven't tested any of it since getting slides is difficult, but the code is set up so that once v2 matches content,
+# it will run perfectly (maybe)
 
 import os # for navigating folders
 import json # for parsing the metadata files
@@ -36,8 +37,9 @@ spell = SpellChecker()
 outputFile = "TestResults.md"
 contentFolder = "../content/"
 inContentFolder = "../content/"
+#Why are these two variables the same?
 
-def spellCheck(track, unit, colabs):
+def spellCheck(track, unit, colabs, slides):
     ''' Checks spelling and grammar of Colabs and Slides
         Output: string of colabs and slides with spelling and grammar issues
     '''
@@ -68,14 +70,62 @@ def spellCheck(track, unit, colabs):
       for word in misspelled:
         if not word in okwords:
           toPrint += track + "/" + unit + "/" + colab + " contains nonword " + word + "\n\n"
+    for slideset in slides:
+      slidefile = open(inContentFolder + str(track) + "/" + str(unit) 
+            + "/" + slideset)
+      slidecontent = slidefile.read()
+      slidecontent = re.sub(r'\"id\": \"............\"', '', slidecontent)
+      slidewords = slidecontent.split()
+      newslidewords = []
+      for index in range(len(slidewords)):
+        if(len(slidewords[index]) > 1):
+          if(slidewords[index][0] == "(") or (slidewords[index][0] == "'") or (slidewords[index][0] == "\""):
+            slidewords[index] = slidewords[index][1:]
+          if(slidewords[index][-1] == ")") or (slidewords[index][-1] == "'") or (slidewords[index][-1] == "\"") or (slidewords[index][-1] == ".") or (slidewords[index][-1] == ",")or (slidewords[index][-1] == "?") or (slidewords[index][-1] == "!")or (slidewords[index][-1] == ":") or (slidewords[index][-1] == ";"):
+            slidewords[index] = slidewords[index][:-1]
+        if(len(slidewords[index]) > 1):
+          if(slidewords[index][-1] == "'"):
+            slidewords[index] = slidewords[index][:-1]
+        if(len(slidewords[index]) > 1):
+          if(slidewords[index][0] == "'"):
+            slidewords[index] = slidewords[index][1:]
+        m = re.search(r'[^a-zA-Z\']', slidewords[index])
+        if(m == None) and (len(slidewords[index]) > 0):
+          newslidewords += [slidewords[index]]
+      misspelled = spell.unknown(newslidewords)
+      for word in misspelled:
+        if not word in okwords:
+          toPrint += track + "/" + unit + "/" + colab + " contains nonword " + word + "\n\n"
     return toPrint
 
 
 def imagesLicensed(track, unit, slides):
   toPrint = ""
-  for slide in slides:
+  for slideset in slides:
     #check number of images and number of image citations
-    x = 0
+    slidefile = open(inContentFolder + str(track) + "/" + str(unit) 
+            + "/" + slideset)
+    slidecontent = slidefile.read()
+    individualslides = slidecontent.split("---")
+    slideno = 1
+    for slide in individualslides:
+        imagecount = 0
+        sourcecount = 0
+        tempstring = slide
+        m = re.search(r'!\[\]\(.*\)', tempstring)
+        while m != None:
+            imagecount += 1
+            tempstring = colabcontent[m.end():]
+            m = re.search(r'!\[\]\(.*\)', tempstring)
+        tempstring = slide
+        m = re.search(r'Source:', tempstring)
+        while m != None:
+            sourcecount += 1
+            tempstring = colabcontent[m.end():]
+            m = re.search(r'Source:', tempstring)
+        if(imagecount > sourcecount):
+            toPrint += track + "/" + unit + "/" + slidefile + " has unsourced image on slide " + str(slideno) + ".\n\n"
+        slideno += 1
   return toPrint
 
 
@@ -204,14 +254,22 @@ def main():
                 colabs += parsed_json["colab"]
             
             slides = []
-            #write code to get list of slide files
+            try:
+                #print("../v2/content/" + track + "/" + unit + "/")
+                #slides = os.listdir("../v2/content/" + track + "/" + unit + "/")
+                #print(slides)
+                slides = [md for md in os.listdir("../v2/content/" + track + "/" + unit + "/") if md[-3:] == ".md"]
+            except:
+                slides = [] #redundant but oh well
+            #print(slides)
+            #Currently this section ^ does not work, folders are named differently across content and v2.
             
             # Make calls to our helper functions that test colabs
             testResults = usePython3(track, unit, colabs)
             py3check += testResults
             testResults = outputsOff(track, unit, colabs)
             outputcheck += testResults
-            testResults = spellCheck(track, unit, colabs)
+            testResults = spellCheck(track, unit, colabs, slides)
             spellcheck += testResults
             testResults = containAnswerKey(track, unit, colabs)
             answerkeycheck += testResults

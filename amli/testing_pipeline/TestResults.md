@@ -13,9 +13,9 @@ t02_data/06_probability/colab_dice_rolling.ipynb has an uncleared output.
 ### Are all Colabs and Slides free of spelling errors?
 t02_data/01_introduction_to_python/colab.ipynb contains nonword acces
 
-t02_data/06_probability/colab1.ipynb contains nonword probabiltiy
-
 t02_data/06_probability/colab1.ipynb contains nonword eah
+
+t02_data/06_probability/colab1.ipynb contains nonword probabiltiy
 
 t02_data/06_probability/colab1.ipynb contains nonword choclate
 
@@ -23,9 +23,9 @@ t02_data/06_probability/colab2.ipynb contains nonword probabiltiy
 
 t02_data/06_probability/colab2.ipynb contains nonword indepent
 
-t05_basic_classification/08_support_vector_machines/colab.ipynb contains nonword multple
-
 t05_basic_classification/08_support_vector_machines/colab.ipynb contains nonword largets
+
+t05_basic_classification/08_support_vector_machines/colab.ipynb contains nonword multple
 
 t05_basic_classification/10_project_classification/colab.ipynb contains nonword fsdfasdfsadfsd
 
