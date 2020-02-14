@@ -107,16 +107,19 @@ def main():
     # TODO configure commandline arguments
 
     opts, args = getopt.getopt(sys.argv[1:],"g")
-    if "-g" in opts[0]:
+    if opts and "-g" in opts[0]:
         drive = args[0]
     elif len(args) > 1:
         repo = args[0]
         drive = args[1]
     else:
-        print(opts,args)
-        raise SystemExit("Error: No source or destination given.\n\n"
+        raise SystemExit("\x1b[31m" # Set text color to red
+                         "Error: No source or destination given.\n"
+                         "\x1b[32m" # Set text color to green
                          "Usage: create-course.py [-g | <repo folder>] "
-                         "<Google-Drive folder shareable link>")
+                         "<Google-Drive folder shareable link>"
+                         "\x1b[0m" # Reset text color
+                        )
     if drive[-12:] == "?usp=sharing":
         drive = drive[:-12]
     print(drive)

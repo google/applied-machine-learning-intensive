@@ -42,9 +42,10 @@ def authenticate():
 #  creds = corp_credentials.get_corp_credentials(
 #        None,  # Defaults to the current LOAS user.
 #        SCOPES)
+  user = os.path.expanduser('~')
 
-  if os.path.exists('/usr/local/google/home/jmcadams/token.pickle'):
-    with open('/usr/local/google/home/jmcadams/token.pickle', 'rb') as token:
+  if os.path.exists(f'{user}/token.pickle'):
+    with open(f'{user}/token.pickle', 'rb') as token:
       creds = pickle.load(token)
 
   if not creds or not creds.valid:
@@ -52,10 +53,10 @@ def authenticate():
       creds.refresh(Request())
     else:
       flow = InstalledAppFlow.from_client_secrets_file(
-          '/google/src/cloud/jmcadams/scripts/google3/credentials.json', SCOPES)
+          f'{user}/scripts/google3/credentials.json', SCOPES)
       creds = flow.run_local_server()
     # Save the credentials for the next run
-    with open('/usr/local/google/home/jmcadams/token.pickle', 'wb') as token:
+    with open(f'{user}/token.pickle', 'wb') as token:
       pickle.dump(creds, token)
 
   return creds
@@ -75,11 +76,11 @@ def base_folder(service):
   return folder
 
 def track_folders(service, base):
-  track_pattern = re.compile('([A-Z]+[0-9]*):\s.*')
+  track_pattern = re.compile(r'([A-Z]+[0-9]*):\s.*')
   #track_pattern = re.compile('([A-Z]+07):\s.*')
   results = service.files().list(q='"' + base['id'] + '" in parents and trashed = false', pageSize=1000).execute()
   track_folders = {}
-  for i, r in enumerate(results['files']):
+  for _, r in enumerate(results['files']):
     m = track_pattern.match(r['name'])
     if m:
       track_folders[m.group(1)] = r['id']
@@ -91,7 +92,7 @@ def find_colabs(service, fileId):
   results = service.files().list(q='"' + fileId + '" in parents and trashed = false', pageSize=1000).execute()
   colabs = {}
   #print(results)
-  for i, r in enumerate(results['files']):
+  for _, r in enumerate(results['files']):
     if r['name'].endswith('.ipynb') or r['mimeType'] == 'application/vnd.google.colaboratory':
       colabs[r['name']] = r['id']
     #print(i, r)
@@ -133,6 +134,8 @@ def main(argv):
   #print(colabs_in_drive.keys())
   #exit()
 
+  user = os.path.expanduser('~')
+
   for f in os.listdir('/tmp/amli'):
     if f.endswith('.ipynb'):# and f.startswith('T07'):
       just_name = f[0:len(f)-6]
@@ -140,7 +143,7 @@ def main(argv):
         'name': just_name,
         'mimeType': 'application/vnd.google.colaboratory'
       }
-      local = os.path.join('/usr/local/google/home/jmcadams/tmp/amli', f)
+      local = os.path.join(f'{user}/tmp/amli', f)
       media = MediaFileUpload(local,
           mimetype='application/vnd.google.colaboratory',
           resumable=True)
