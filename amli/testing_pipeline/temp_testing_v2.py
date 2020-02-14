@@ -14,14 +14,14 @@
 # Notes
 # Use Python 3: Done!
 # Outputs Off: Done!
-# Spell Check: Done! (As more slides added, can add more exceptions)
+# Spell Check: Done for colabs, almost done for slides
 # Contains Answer Key: Done!
 # Style Guide Rules: there is no syle guide at the link they gave
-# Referenced Images: Done! (Should ask exactly what their image referencing standard is)
+# Referenced Images: Written, not tested
 
 # I just added code to get slides (once that becomes possible), and to spellcheck them and look for image references.
-# I've tested it all in temp_testing_v2 and it works, so once v2 is more functional we can just change the folder
-# vars at the top and everything will be done!
+# I haven't tested any of it since getting slides is difficult, but the code is set up so that once v2 matches content,
+# it will run perfectly (maybe)
 
 import os # for navigating folders
 import json # for parsing the metadata files
@@ -34,9 +34,9 @@ spell = SpellChecker()
 
 
 # Global Variables
-outputFile = "TestResults.md"
-contentFolder = "../content/"
-inContentFolder = "../content/"
+outputFile = "TestResultsV2.md"
+contentFolder = "../v2/content/"
+inContentFolder = "../v2/content/"
 #Why are these two variables the same?
 
 def spellCheck(track, unit, colabs, slides):
@@ -230,38 +230,16 @@ def main():
         units = [x for x in units if x[2] == "_"]
         units.sort()
         for unit in units:
-            jsonfile = open(inContentFolder + str(track) + "/" + str(unit) 
-                + "/metadata.json", "r")
-            lines = jsonfile.readlines()
-            content = "".join(lines)
-            content = content.replace("\n", "")
-            content = content.replace("\t", "")
-            content = content.replace(r"\s", " ")
-            content = content.replace("  ", " ")
-            content = content.replace("  ", " ") #three lines were necessary :/
-            content = content.replace("  ", " ") #can be prevented by fixing all jsons
-            content = content.replace('" "', '","')
-            content = content.replace(',]', ']')
-            content = content.replace(',}', '}')
-            content = content.replace(', ]', ' ]')
-            content = content.replace(', }', ' }')
-            parsed_json = json.loads(content)
-
             colabs = []
-            if "colabs" in parsed_json.keys():
-                colabs += parsed_json["colabs"]
-            elif "colab" in parsed_json.keys():
-                colabs += parsed_json["colab"]
             
             slides = []
             try:
                 #print("../v2/content/" + track + "/" + unit + "/")
                 #slides = os.listdir("../v2/content/" + track + "/" + unit + "/")
                 #print(slides)
-                slides = [md for md in os.listdir("../v2/content/" + track + "/" + unit + "/") if md[-3:] == ".md"]
+                slides = [md for md in os.listdir(inContentFolder + track + "/" + unit + "/") if md[-3:] == ".md"]
             except:
                 slides = [] #redundant but oh well
-            #print(slides)
             #Currently this section ^ does not work, folders are named differently across content and v2.
             
             # Make calls to our helper functions that test colabs
@@ -275,8 +253,6 @@ def main():
             answerkeycheck += testResults
             testResults = imagesLicensed(track, unit, slides)
             licensecheck += testResults
-
-            jsonfile.close()
     
     # Write out our test results for each
     outmd.write("### Are Colabs using Python 3?\n")

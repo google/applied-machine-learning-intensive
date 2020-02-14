@@ -408,6 +408,25 @@ okwords = [
   "lookups",
   "tradeoffs",
   "trienode",
-  "svd"
+  "svd",
+  "child's",
+  "implementor",
+  "chatbots",
+  "weren't",
+  "i'm",
+  "emails",
+  "autocomplete",
+  "storyboarding",
+  "debug",
+  "screeners",
+  "pycharm",
+  "matlab",
+  "deployable",
+  "batched",
+  "invertible",
+  "tweets",
+  "pexels",
+  "unsplash",
+  "norvig"
 ]
 
