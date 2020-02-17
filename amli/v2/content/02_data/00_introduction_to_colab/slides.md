@@ -1,4 +1,5 @@
 # Introduction to Colab
+
 ![](https://colab.research.google.com/img/colab_favicon_256px.png)
 
 <!--
@@ -37,24 +38,27 @@ Source: Google Copyright
 
 -->
 
---
+---
+
+# Notebooks
 
 -![](res/notebook.png) #TODO
 -
  <!--
  
-Notebooks are another option that you will see regularly. They are also the
+Notebooks are another option that you will see regularly, and they are the
 primary coding environment for this course.
 
-Currently when someone mentions a data science notebook, they are typically
+When someone mentions a data science notebook, they are typically
 referring to a Jupyter Notebook.
 
 Jupyter Notebooks combine code, output, and supporting documentation in a single
 structured document. The document can be executed, modified, and iterated on.
 
 Though you'll see many Jupyter notebooks that contain Python code, they aren't
-limited to Python. Jupyter supports many different 'kernels' that allow users a
-wide variety of choice in what languages and libraries they use.
+limited to Python. Jupyter supports many different 'kernels' which allow users a
+wide variety of choice in what languages and libraries they use. In this course, 
+we will use Python. 
 
 Source: Google Copyright
 
@@ -71,7 +75,7 @@ and traditional development environments. There is a wide spectrum of tools
 available, some that blur the lines between traditional environments and
 notebooks.
 
-MATLAB is one of these tools. I can very much be used as a traditional
+MATLAB is one of these tools. It can very much be used as a traditional
 development environment where you write code and then deploy that code. However,
 it also supports a notebook mode which has a much more Jupyter-like feel.
 
@@ -80,7 +84,7 @@ type of environment. Personal preference, costs, corporate standards, and more
 go into the decision for someone to choose a specific environment.
 
 The environment might even change over the course of a project. A data scientist
-might explore and build a small model using a notebook. Later, once they model
+might explore and build a small model using a notebook. Later, once the model
 is designed, they might then switch over to a more traditional environment to
 create a deployable package.
 
@@ -94,15 +98,16 @@ Source Google Copyright
 
 * Colab is short for Google Colaboratory
 * Free in-the-browser programming environment
-* Require no setup, runs entirely on the Cloud
+* Requires no setup, runs entirely on the Cloud
 * Like Jupyter notebook that is stored in Google Drive
 * Available at https://colab.research.google.com
 
 <!--
 
-# TODO: add notes
+Colab will run your code on a virtual machine. 
 
-https://research.google.com/colaboratory/faq.html
+More documentation on Colab can be found at https://research.google.com/colaboratory/faq.html 
+
 
 -->
 
