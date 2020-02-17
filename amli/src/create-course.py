@@ -65,9 +65,8 @@ script will:
         of the Google Drive passed to the script.
 """
 
-import json
 # from pygithub import Github # currently unused
-import os, sys, getopt
+import os, sys, getopt, re
 from tools import drive_integration
 
 
@@ -94,13 +93,16 @@ def get_sub_folders(folder: str = ""):
     return contents
 
 
-def scan_json():
+def update_colabl_link():
+    f = open("slidesTest.md","r", encoding="latin1")
+    md = f.read()
+    f.close()
+    newLink = "test"
+    x = re.sub(r'https://colab.research.google.com/drive/[a-zA-Z0-9\-]+', 
+        "https://colab.research.google.com/drive/" + newLink, md) #mathces for re- 
 
-    with open("metadata.json", "r+") as f:
-        data = json.load(f)
-        for label in data:
-            if 'slides' in label:
-                print("success")
+    with open("slidesTest.md", 'w') as f:    
+        f.write(x)
 
 
 def main():
