@@ -406,9 +406,6 @@ a mathematical way the patterns and insights that a machine learning system lear
 
 <!-- 
 A model specifies how your machine learning system will actually learn patterns and insights. The model will then make predictions based on what it learned. Different models perform better on different problems. We’ll discuss several common types of models in a later lecture. For example, (price of house) = 100 * (square footage of house). If the house is 1500ft^2, then we forecast the price to be $150,000.
-
-Concepts:
-* models
 -->
 
 ---
@@ -421,9 +418,6 @@ Teaching a model the difference between a lion photo and a tiger photo requires 
 In one type of machine learning, known as supervised learning, the examples are labeled. For example, the title of an image could be "lion" or "not a lion." The model could use these titles as feedback, learning better how to classify images.
 
 Especially with more data, models can become so complex that the details of how the model makes its predictions are difficult to understand. It’s important to continually evaluate and try to understand the output of your models. 
-
-Concepts:
-* models:training
 -->
 
 ---
@@ -434,9 +428,6 @@ Concepts:
 Machine learning makes predictions on new data based on previous examples (training data). If your lion-detecting model adequately distinguishes lions from tigers, the model is performing successfully. If not, you can experiment with additional training data or other approaches to improve the results.
 
 The data you use for testing should be representative of your problem and goal. Then your performance on the testing dataset should give you an idea of how your model will perform on totally new, real data.
-
-Concepts:
-* models:training
 -->
 
 ---
@@ -457,7 +448,4 @@ when a model conforms too much to its training data and cannot generalize to mak
 Overfitting occurs when a model conforms too much to its training data and cannot generalize to make predictions about new data. For example, if none of the tigers in the training data have white fur, the model could assume all tigers have orange fur.
 
 Just like the child from the zoo, a machine learning model will do the best it can with the information it has. Overfitting can be mitigated by looking for blind spots and bias in data and processes. It might also be a sign you need more training data. We’ll have a deeper discussion of how to improve performance of machine learning models, including reducing overfitting, later in the class.
-
-Concepts:
-* models:training:overfitting
 -->
