@@ -176,8 +176,6 @@ It doesn't matter what order the cells appear in. What matters is the order in w
 * Contain explanatory text and images
 * Are formatted using using a simple markup language called [markdown](https://colab.sandbox.google.com/notebooks/markdown_guide.ipynb)
 
--![](res/text_cells.png) #TODO
-
 <!--
 
 -->
@@ -273,7 +271,7 @@ Tables are created using | and -. They will be formatted automatically with line
 
 ---
 
-#Markdown: LaTeX
+# Markdown: LaTeX
 
 ```
 $\sqrt{3x-1}+(1+x)^2$
