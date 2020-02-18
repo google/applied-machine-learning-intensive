@@ -1,29 +1,12 @@
 {
   "name": "Intro to ML Models",
-  "bug": "b/129330737",
-  "colabs": [],
-
   "Learning-objectives": [
     "Be able to distinguish between different types of ML models.",
   ],
-
-  "concepts": {
-    "prerequisite": [
-      "models",
-    ],
-    
-    "introduced": [
-	  "models:types:classification",
-	  "models:types:regression",
-	  "models:types:clustering",
-	  "models:types:sequence-prediction"
-    ]
-  },
-
+  "colabs": [],
   "duration": {
     "lecture": 30
   },
-
   "materials": [],
   "handouts": [],
   "resources": [],

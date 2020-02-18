@@ -1,7 +1,7 @@
 {
-  "name": "Introduction to Machine Learning",
-  "learning objectives": [
-    "Understand basic machine learning terminology.",
+  "name": "Machine Learning Problem Framing",
+  "Learning-objectives": [
+    "Understand when machine learning is useful and when it is not",
   ],
   "colabs": [],
   "duration": {
