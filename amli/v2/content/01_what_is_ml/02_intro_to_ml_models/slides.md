@@ -47,9 +47,6 @@ and "kitten."
 Classification can be used to identify objects in images or even identify whether credit card transactions are fraudulent or not.
 
 What are some examples that you know of that would be machine learning classification?
-
-Concepts:
-* models:types:classification
 -->
 
 ---
@@ -85,9 +82,6 @@ each category by quantifying how closely examples are related to one another.
 
 Clustering differs from classification because the categories are not defined by you. Clustering
 systems propose their own categories based on patterns found in the examples. 
-
-Concepts:
-* models:types:clustering
 -->
 
 ---
@@ -119,9 +113,6 @@ Regression predicts the relationship between two or more variables. If you were 
 predicting the price of a house, you might look for patterns in location, square footage, or number
 of bedrooms. While classification involves a discrete, categorical value to predict, regression
 involves a continuous value to predict.
-
-Concepts:
-* models:types:regression
 -->
 
 ---
@@ -159,9 +150,6 @@ Suggest the next value in a sequence
 
 <!--
 Finally, sequence prediction suggests what might come next, based on previous examples.
-
-Concepts:
-* models:types:sequence-prediction
 -->
 
 ---
@@ -241,5 +229,4 @@ Ordering of the data matters when you might have groups of highly correlated exa
 you feed your ML system all pictures of lions, then all pictures of tigers, and so on, it may not be
 able to learn general patterns as well. It’s extremely important to shuffle the training data to avoid
 such groupings. Though, as long as you shuffle, the exact ordering after the shuffle does not matter.
-
 -->
