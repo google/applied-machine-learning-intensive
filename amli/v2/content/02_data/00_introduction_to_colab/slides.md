@@ -42,8 +42,8 @@ Source: Google Copyright
 
 # Notebooks
 
--![](res/notebook.png) #TODO
--
+-![](res/notebook.png) 
+
  <!--
  
 Notebooks are another option that you will see regularly, and they are the
@@ -88,7 +88,7 @@ might explore and build a small model using a notebook. Later, once the model
 is designed, they might then switch over to a more traditional environment to
 create a deployable package.
 
-Source Google Copyright
+Source: Google Copyright
 
 -->
 
@@ -120,7 +120,7 @@ A good introductory notebook can be found here https://colab.sandbox.google.com/
 
 A notebook of movable cells which are either code or text cell
 
--![](res/notebook_cells.png) #TODO
+![](res/notebook_cells.png) 
 
 <!--
 
@@ -128,18 +128,7 @@ Hovering above or below a current cell will bring up the option to add a new cod
 
 You can run code cells and typeset text cells using Shift+Enter.
 
--->
-
----
-
-# Code Cells
-
-* Code cell contains your code and is executable to produce an output
-* Code cell executions are performed by connecting to a cloud-based runtime
-
--![](res/code_cells.png) #TODO
-
-<!--
+Source: Google Copyright
 
 -->
 
@@ -158,9 +147,11 @@ As of January 1, 2020, the Python team is no longer supporting Python 2, and as 
 
 # Code Cells: Python Print
 
--![](res/python_print.png) #TODO 
+![](res/python_print.png) 
 
 <!--
+
+Source: Google Copyright
 
 -->
 
@@ -168,67 +159,15 @@ As of January 1, 2020, the Python team is no longer supporting Python 2, and as 
 
 # Code Cells: Order of Cells vs. Order of Running Cells
 
--![](res/order_cells.png) #TODO 
+* Variables that you define in one cell can later be used in other cells
+* It DOES NOT matter what order the cells appear in
+* It DOES matter the order in which cells are run
 
 <!--
 
 It doesn't matter what order the cells appear in. What matters is the order in which they are run. The run-order is captured by the numebrs to the left of each cell. 
 
 -->
-
----
-
-# Code Cells: Shell
-Add a `!` to run shell commands
-
-<!---
-
-TODO: Notes?
-
---->
-
----
-
-# Code Cells: Magics
-Add a `%` to trigger magics which will change the way a code cell acts or interprets outputs
-
-<!---
-
-TODO: Notes?
-
---->
-
-
----
-
-# Code Cells: Line Magics
-
-```
-import numpy as np
-
-%timeit np.linalg.eigvals(np.random.rand(100,100))
-```
-
-<!---
-
-TODO: Notes?
-
---->
-
----
-
-# Code Cells: Cell Magics
-
-```
-%%html
-<marquee style='width: 30%; color: blue;'><b>Whee!</b></marquee>
-```
-
-<!---
-
-TODO: Notes?
-
---->
 
 ---
 
@@ -245,61 +184,33 @@ TODO: Notes?
 
 ---
 
-# Markdown: Bold
+# Markdown: Bold & Italic & Strikethrough
 
 \*\*bold\*\* = **bold**
 \_\_bold\_\_ = __bold__
 
-<!--
-
-TODO: Notes?
-
--->
-
----
-
-# Markdown: Italic
-
-\*bold\* = *italic*
-\_bold\_ = _italic_
-
-<!--
-
-TODO: Notes?
-
--->
-
----
-
-# Markdown: Strikethrough
+\*italic\* = *italic*
+\_italic\_ = _italic_
 
 \~\~strikethrough\~\~ = ~~strikethrough~~
 
 <!--
 
-TODO: Notes?
+You can easily format text with specific markdown syntax.
 
 -->
 
 ---
 
-#Markdown: Ordered Lists
+#Markdown: Lists
 
+Ordered List
 ```
 1. Item 1
 1. Item 2
 ```
 
-<!--
-
-TODO: Notes?
-
--->
-
----
-
-#Markdown: Unrdered Lists
-
+Unordered List
 ```
 * Item
 * Item
@@ -307,7 +218,7 @@ TODO: Notes?
 
 <!--
 
-TODO: Notes?
+You can create numbered and bulleted lists. 
 
 -->
 
@@ -319,14 +230,14 @@ TODO: Notes?
 * Item
   1. Item 1
   1. Item 2
-*. Item
+* Item
   1. Item 1
   1. Item 2
 ```
 
 <!--
 
-TODO: Notes?
+You can also create sublists. 
 
 -->
 
