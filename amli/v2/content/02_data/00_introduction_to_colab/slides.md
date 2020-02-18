@@ -99,30 +99,148 @@ Source Google Copyright
 * Colab is short for Google Colaboratory
 * Free in-the-browser programming environment
 * Requires no setup, runs entirely on the Cloud
-* Like Jupyter notebook that is stored in Google Drive
+* Like a Jupyter notebook that is stored in Google Drive
 * Available at https://colab.research.google.com
 
 <!--
 
-Colab will run your code on a virtual machine. 
+Notebooks run by connecting to virtual machines that have maximum lifetimes that can be as much as 12 hours. Notebooks will also disconnect from VMs when left idle for too long. Maximum VM lifetime and idle timeout behavior may vary over time, or based on your usage. 
+
+Colab focuses on supporting Python and its ecosystem of third-party tools. There is currently not support for other Jupyter kernels like R or Scala.
 
 More documentation on Colab can be found at https://research.google.com/colaboratory/faq.html 
 
+A good introductory notebook can be found here https://colab.sandbox.google.com/notebooks/intro.ipynb#scrollTo=GJBs_flRovLc
 
 -->
 
 ---
 
-# Colab Notebook
+# Cells in a Colab Notebook 
 
-* Consists of movable cells which are either code or text cell
+A notebook of movable cells which are either code or text cell
+
+-![](res/notebook_cells.png) #TODO
+
+<!--
+
+Hovering above or below a current cell will bring up the option to add a new code or text cell. 
+
+You can run code cells and typeset text cells using Shift+Enter.
+
+-->
+
+---
+
+# Code Cells
+
 * Code cell contains your code and is executable to produce an output
 * Code cell executions are performed by connecting to a cloud-based runtime
+
+-![](res/code_cells.png) #TODO
+
+<!--
+
+-->
+
+---
+
+# Code Cells: Python
+Write all code in Python 3. 
+
+<!--
+
+As of January 1, 2020, the Python team is no longer supporting Python 2, and as of that date, Colab has stopped supporting Python 2 runtimes. 
+
+-->
+
+---
+
+# Code Cells: Python Print
+
+-![](res/python_print.png) #TODO 
+
+<!--
+
+-->
+
+---
+
+# Code Cells: Order of Cells vs. Order of Running Cells
+
+-![](res/order_cells.png) #TODO 
+
+<!--
+
+It doesn't matter what order the cells appear in. What matters is the order in which they are run. The run-order is captured by the numebrs to the left of each cell. 
+
+-->
+
+---
+
+# Code Cells: Shell
+Add a `!` to run shell commands
+
+<!---
+
+TODO: Notes?
+
+--->
+
+---
+
+# Code Cells: Magics
+Add a `%` to trigger magics which will change the way a code cell acts or interprets outputs
+
+<!---
+
+TODO: Notes?
+
+--->
+
+
+---
+
+# Code Cells: Line Magics
+
+```
+import numpy as np
+
+%timeit np.linalg.eigvals(np.random.rand(100,100))
+```
+
+<!---
+
+TODO: Notes?
+
+--->
+
+---
+
+# Code Cells: Cell Magics
+
+```
+%%html
+<marquee style='width: 30%; color: blue;'><b>Whee!</b></marquee>
+```
+
+<!---
+
+TODO: Notes?
+
+--->
+
+---
+
+# Text Cells
+
 * Text cell contain explanatory text and images
 * Text cells are formatted using using a simple markup language called [markdown](https://colab.sandbox.google.com/notebooks/markdown_guide.ipynb)
 
+-![](res/text_cells.png) #TODO
+
 <!--
-The first time you execute a Colab’s code cell, Colab will connect to one of the available cloud-based runtimes.  Typically the runtime, support execution of Python code.  Other configuration of runtime allows the execution of TensorFlow projects, or access to GPU/TPU.
+
 -->
 
 ---
@@ -260,68 +378,7 @@ TODO: Notes?
 
 ---
 
-# Code Cells
-Contains code executed in an IPython environment
 
-<!---
-
-TODO: Notes?
-
---->
-
----
-
-# Code Cells: Shell
-Add a `!` to run shell commands
-
-<!---
-
-TODO: Notes?
-
---->
-
----
-
-# Code Cells: Magics
-Add a `%` to trigger magics which will change the way a code cell acts or interprets outputs
-
-<!---
-
-TODO: Notes?
-
---->
-
-
----
-
-# Code Cells: Line Magics
-
-```
-import numpy as np
-
-%timeit np.linalg.eigvals(np.random.rand(100,100))
-```
-
-<!---
-
-TODO: Notes?
-
---->
-
----
-
-# Code Cells: Cell Magics
-
-```
-%%html
-<marquee style='width: 30%; color: blue;'><b>Whee!</b></marquee>
-```
-
-<!---
-
-TODO: Notes?
-
---->
 
 ---
 
