@@ -30,24 +30,6 @@ Pandas provides data structures and tools that are similar to R and help with da
 
 ---
 
-# Why Pandas?
-
-* Good for data manipulation
-* As you might have noticed when making visualizations, while we were able to represent the data, we were not modifying it in any way.
-  * Pandas offers us this capability
-
-<!--
-
-Motivation: 
-Situating pandas within the rest of the course and contrasting it with previous work so they can see why it’s useful
-
-For the class:
-Sometimes the data we get is not in the right format for what we need, so Pandas can help us change that.
-
--->
-
----
-
 # Pandas Data Structures: Dataframes
 
 Dataframes are set up like tables, with columns, column headers, and rows of data.
@@ -143,15 +125,9 @@ flavors = pd.Series(
 )
 ```
 
-![](res/series_flavors.png) #TODO 
-
 <!--
 
-Motivation: 
-* Showing code on slide so students can ask questions before dealing with it on their own.
-
-For the class:
-* We created a Series indexed by 0, 1, 2, 3.
+We created a Series indexed by 0, 1, 2, 3. It is one column called "flavors" with entries ['Mint', 'Raspberry', 'Orange', 'Coffee']
 
 -->
 
@@ -168,8 +144,6 @@ num_in_stock = pd.Series(['14', '13', '20', '7'])
 
 pd.DataFrame({ 'Truffle': flavors, 'Number': num_in_stock })
 ```
-
-![](res/df_flavors_stock.png) #TODO 
 
 <!--
 Motivation: 
@@ -223,7 +197,7 @@ We’ll go through each of these methods in turn. None of them modify the data, 
 
 ---
 
-# Exploring `Series` and `DataFrame`: Shape
+# Exploring `Series` and `DataFrame`: `shape`
 
 Prints out (number of rows, number of columns)
 
@@ -237,11 +211,13 @@ my_dataframe.shape()
 
 shape() prints (number of rows, number of columns)
 
+Source: Google Copyright
+
 -->
 
 ---
 
-# Exploring `Series` and `DataFrame`: Head
+# Exploring `Series` and `DataFrame`: `head`
 
 Prints out the first few rows of the dataframe
 
@@ -255,11 +231,13 @@ my_dataframe.head()
 
 head() prints the full contents of the first 5 rows.
 
+Source: Google Copyright
+
 -->
 
 ---
 
-# Exploring `Series` and `DataFrame`: Tail
+# Exploring `Series` and `DataFrame`: `tail`
 
 Prints out the last few rows of the dataframe
 
@@ -272,11 +250,13 @@ my_dataframe.tail()
 
 tail() prints the full contents of the last 5 rows.
 
+Source: Google Copyright
+
 -->
 
 ---
 
-# Exploring `Series` and `DataFrame`: Describe
+# Exploring `Series` and `DataFrame`: `describe`
 
 Gives statistics about all of the NUMERICAL data in the dataframe
 
@@ -292,14 +272,16 @@ describe() gives statistics such as mean and median about numerical data
 
 Note that any columns without numerical data are not included 
 
+Source: Google Copyright
+
 -->
 
 
 ---
 
-# Exploring `Series` and `DataFrame`: Histogram
+# Exploring `Series` and `DataFrame`: `histogram`
 
-Makes a histogram of any numerical data (calculates the frequency of each number)
+Makes a histogram of any numerical columns (calculates the frequency of each number)
 
 ```python
 my_dataframe.hist()
@@ -309,6 +291,8 @@ my_dataframe.hist()
 <!--
 
 One column in my_dataframe is the average vote of users. The histogram shows number of movies vs. vote average.
+
+Source: Google Copyright
 
 -->
 
