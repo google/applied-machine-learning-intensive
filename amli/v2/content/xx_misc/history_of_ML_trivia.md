@@ -32,7 +32,7 @@ a. George Boole created a form of algebra in which all values can be reduced to 
 
 b. Inspired by how humans follow specific processes to perform tasks, English logician and cryptanalyst Alan Turing theorized how a machine might decipher and execute a set of instructions. The publication of his theory is considered the basis of computer science.
 
-**c. Ada Lovelace and Charles Babbage worked on programmable mechanical calculating machines.**
+**c. Ada Lovelace and Charles Babbage worked on programmable mechanical calculating machines. (1822)**
 
 d. Neuroscientist Warren McCulloch and mathematician Walter Pitts wrote a paper on how human neurons might work. To illustrate the theory, they modeled a neural network with electrical circuits.
 
