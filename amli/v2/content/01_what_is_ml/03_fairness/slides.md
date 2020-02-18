@@ -24,9 +24,6 @@ article) to explain the main takeaway of their article to others in the newly-fo
 What bias was uncovered?
 How would you describe its impact on people? 
 What do you find interesting about this article?*
-
-Concepts:
- * fairness
 -->
 
 ---
