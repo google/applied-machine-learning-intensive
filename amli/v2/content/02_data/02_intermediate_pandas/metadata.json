@@ -1,11 +1,16 @@
 {
   "name": "Intermediate Pandas",
-  "bug": "b/129330036",
+  "learning objectives": [
+    "Apply filters to Pandas DataFrames",
+    "Group data contained in Pandas DataFrames",
+    "Merge data across multiple Pandas DataFrames",
+    "Sort data contained in Pandas DataFrames"
+  ],
   "colabs": [
     "colab.ipynb"
   ],
   "slides": [
-    "https://docs.google.com/presentation/d/14pIJ_BY40UhvyvYc9AtHj_Jep9aBf-HN-HSXzNa81zI/edit"
+    "slides.md"
   ],
   "materials": [],
   "resources": [],
