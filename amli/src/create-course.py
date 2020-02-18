@@ -67,8 +67,9 @@ script will:
 
 import json
 # from pygithub import Github # currently unused
-import os, sys, getopt
+import os, sys, shutil, getopt
 from tools import drive_integration
+# from google.colab import drive as gd
 
 
 
@@ -81,11 +82,12 @@ def get_sub_folders(folder: str = ""):
     content folder if not given an argument.
 
     Args:
-        folder: specifies a folder to open. Optional, Defaults to the top-level
-            content folder
+        folder: str
+    specifies a folder to open. Optional, Defaults to the top-level content 
+    folder
 
-    Returns:
-        a list of subfolders within the given folder.
+    Returns:    
+    a list of subfolders within the given folder.
     """
     path = f"{CONTENT}/{folder}"
     contents = [sub_folder for sub_folder 
@@ -104,10 +106,9 @@ def scan_json():
 
 
 def main():
-    # TODO configure commandline arguments
-
+    # Get arguments for source and destination folders
     opts, args = getopt.getopt(sys.argv[1:],"g")
-    if opts and "-g" in opts[0]:
+    if opts and "-g" in opts[0]: # Can use '-g' to specify local repository
         drive = args[0]
     elif len(args) > 1:
         repo = args[0]
@@ -120,12 +121,17 @@ def main():
                          "<Google-Drive folder shareable link>"
                          "\x1b[0m" # Reset text color
                         )
-    if drive[-12:] == "?usp=sharing":
+    if drive[-12:] == "?usp=sharing": # Convert share links to direct links
         drive = drive[:-12]
-    print(drive)
-    # TODO authenticate google drive
-    drive_integration.authenticate()
-    # TODO mount drive folder
+
+    temp_folder = os.path.expanduser("~/Desktop/amli") 
+    # print(temp_folder)
+    os.mkdir(temp_folder)  # create temp folder
+        
+        # TODO authenticate google drive
+    # drive_integration.authenticate()
+        # TODO mount drive folder
+
     tracks = get_sub_folders()
     for track in tracks:
         path = f"{CONTENT}/{track}"
@@ -133,23 +139,28 @@ def main():
         track_info = json.load(open(f"{path}/metadata.json"))
         track_name = track_info["name"]
         # TODO create track folder in drive
+        os.mkdir(f"{temp_folder}/{track}")
 
-        # debugging
-        print(track_name)
 
         for unit in units:
             unit_info = json.load(open(f"{path}/{unit}/metadata.json"))
             unit_name = unit_info["name"]
             
             # debugging
-            print(f"\t{unit_name}")
+            print(f"\033[KGenerating: {unit_name}",end="\r",flush=True)
             # TODO create unit folder in drive
+            os.mkdir((dest := f"{temp_folder}/{track}/{unit}"))
 
             if (colabs := unit_info.get("colabs")):
                 for nb in colabs:
+                    loc = f"{path}/{unit}/{nb}"
+                    with open(loc,mode="r") as f
+                        text = open("rawnb.txt",mode="w")
+                        
                     # TODO copy to drive
+                    shutil.copy(loc,f"{dest}/{nb}")
                     # TODO update metadata.json to link to copy
                     pass
-
+    print("\033[KDone",)
 if __name__ == "__main__":
     main()
