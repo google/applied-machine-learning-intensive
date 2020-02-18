@@ -30,24 +30,6 @@ Pandas provides data structures and tools that are similar to R and help with da
 
 ---
 
-# Why Pandas?
-
-* Good for data manipulation
-* As you might have noticed when making visualizations, while we were able to represent the data, we were not modifying it in any way.
-  * Pandas offers us this capability
-
-<!--
-
-Motivation: 
-Situating pandas within the rest of the course and contrasting it with previous work so they can see why it’s useful
-
-For the class:
-Sometimes the data we get is not in the right format for what we need, so Pandas can help us change that.
-
--->
-
----
-
 # Pandas Data Structures: Dataframes
 
 Dataframes are set up like tables, with columns, column headers, and rows of data.
@@ -143,15 +125,9 @@ flavors = pd.Series(
 )
 ```
 
-![](res/series_flavors.png) #TODO 
-
 <!--
 
-Motivation: 
-* Showing code on slide so students can ask questions before dealing with it on their own.
-
-For the class:
-* We created a Series indexed by 0, 1, 2, 3.
+We created a Series indexed by 0, 1, 2, 3. It is one column called "flavors" with entries ['Mint', 'Raspberry', 'Orange', 'Coffee']
 
 -->
 
@@ -169,8 +145,6 @@ num_in_stock = pd.Series(['14', '13', '20', '7'])
 pd.DataFrame({ 'Truffle': flavors, 'Number': num_in_stock })
 ```
 
-![](res/df_flavors_stock.png) #TODO 
-
 <!--
 Motivation: 
 * Showing code on slide so students can ask questions before dealing with it on their own.
@@ -179,12 +153,27 @@ For the class:
 * In this code, we are first making two series, flavors and num_in_stock.
 * After that, we make a dataframe, giving each series a title (“Truffle” and “Number”).
 
+-->
+
+---
+
+# Creating Pandas Data Structures: Reading a .csv
+
+```python
+my_dataframe = pd.read_csv("movies_metadata.csv")
+```
+
+
+<!--
+
 This method reads in a file in the format “csv”, meaning that the data in the file is separated by commas.
 A CSV is a file type, meaning “comma separated values”. Essentially, it signifies that the data has commas between each value to signify where one entry ends and the next begins.
 
 The first argument is a string and can either be the name of a local file (as shown) or the url of a file on the internet.
 
-The 'sep' field denotes what character (or characters) are used in the file to separate fields. For a csv, this will most likely be a comma.
+The data in for this example come from Kaggle https://www.kaggle.com/rounakbanik/the-movies-dataset
+
+The MovieLens Dataset consists of movies released on or before July 2017. Data points include cast, crew, plot keywords, budget, revenue, posters, release dates, languages, production companies, countries, TMDB vote counts and vote averages.
 
 -->
 
@@ -194,47 +183,41 @@ The 'sep' field denotes what character (or characters) are used in the file to s
 
 Pandas has some methods to get basic information about both `Series` and `DataFrame` objects:
 
-* `describe()`
+* `shape()`
 * `head()`
 * `tail`
+* `describe()`
 * `hist()`
 
 <!--
 
-Motivation: 
-Showing code on slide so students can ask questions before dealing with it on their own.
-
-For the class:
 We’ll go through each of these methods in turn. None of them modify the data, but rather they let us view the data in a few different ways so we can get a sense of what we’re looking at.
 
 -->
 
 ---
 
-# Exploring `Series` and `DataFrame`: Describe
+# Exploring `Series` and `DataFrame`: `shape`
 
-Gives statistics about all of the numerical data in the dataframe
+Prints out (number of rows, number of columns)
 
 ```python
-my_dataframe.describe()
+my_dataframe.shape()
 ```
 
-![](res/describe.png) #TODO 
+![](res/shape.png) 
 
 <!--
 
-Motivation: 
-Showing code on slide so students can ask questions before dealing with it on their own.
+shape() prints (number of rows, number of columns)
 
-For the class:
-* My_dataframe is a pandas dataframe.
-* describe() gives statistics such as mean and median about numerical data
+Source: Google Copyright
 
 -->
 
 ---
 
-# Exploring `Series` and `DataFrame`: Head
+# Exploring `Series` and `DataFrame`: `head`
 
 Prints out the first few rows of the dataframe
 
@@ -242,60 +225,74 @@ Prints out the first few rows of the dataframe
 my_dataframe.head()
 ```
 
-![](res/head.png) #TODO 
+![](res/head.png) 
 
 <!--
 
-Motivation: 
-Showing code on slide so students can ask questions before dealing with it on their own.
+head() prints the full contents of the first 5 rows.
 
-For the class:
-* My_dataframe is a pandas dataframe.
-* head() prints the full contents of the first 5 rows.
+Source: Google Copyright
 
 -->
 
 ---
 
-# Exploring `Series` and `DataFrame`: Tail
+# Exploring `Series` and `DataFrame`: `tail`
 
 Prints out the last few rows of the dataframe
 
 ```python
 my_dataframe.tail()
 ```
-![](res/tail.png) #TODO 
+![](res/tail.png)
 
 <!--
 
-Motivation: 
-Showing code on slide so students can ask questions before dealing with it on their own.
+tail() prints the full contents of the last 5 rows.
 
-For the class:
-* My_dataframe is a pandas dataframe.
-* tail() prints the full contents of the last 5 rows.
+Source: Google Copyright
 
 -->
 
 ---
 
-# Exploring `Series` and `DataFrame`: Histogram
+# Exploring `Series` and `DataFrame`: `describe`
 
-Makes a histogram of any numerical data (calculates the frequency of each number)
+Gives statistics about all of the NUMERICAL data in the dataframe
+
+```python
+my_dataframe.describe()
+```
+
+![](res/describe.png) 
+
+<!--
+
+describe() gives statistics such as mean and median about numerical data
+
+Note that any columns without numerical data are not included 
+
+Source: Google Copyright
+
+-->
+
+
+---
+
+# Exploring `Series` and `DataFrame`: `histogram`
+
+Makes a histogram of any numerical columns (calculates the frequency of each number)
 
 ```python
 my_dataframe.hist()
 ```
-![](res/hist.png) #TODO 
+![](res/hist.png) 
 
 <!--
 
-Motivation: 
-Showing code on slide so students can ask questions before dealing with it on their own.
+One column in my_dataframe is the average vote of users. The histogram shows number of movies vs. vote average.
 
-For the class:
-* My_dataframe is a pandas dataframe.
-* For example, if one column was the ages of participants in a study, the histogram would show how many participants were of each age. 
+Source: Google Copyright
 
 -->
 
@@ -309,12 +306,9 @@ my_dataframe['Names']
 Returns the series with the title ‘Names’ from the dataframe
 
 <!--
-Motivation: 
-Showing code on slide so students can ask questions before dealing with it on their own.
 
-For the class:
-* My_dataframe is still a pandas dataframe
-* If you have a column called “Names”, this command will give you only the contents of that column.
+If you have a column called “Names”, this command will give you only the contents of that column.
+
 -->
 
 ---
@@ -327,12 +321,8 @@ my_dataframe['Names'][1]
 Returns the first element of the series with the title ‘Names’
 
 <!--
-Motivation: 
-Showing code on slide so students can ask questions before dealing with it on their own.
 
-For the class:
-* My_dataframe is still a pandas dataframe
-* Since series can be indexed like arrays, this command will return a single element from the series.
+Since series can be indexed like arrays, this command will return a single element from the series.
 
 -->
 
@@ -346,13 +336,10 @@ my_dataframe[0:2]
 Returns the first three rows of the dataframe
 
 <!--
-Motivation: 
-Showing code on slide so students can ask questions before dealing with it on their own.
 
-For the class:
-* My_dataframe is still a pandas dataframe
-* Like python arrays again, you can specify a group of rows to be shown. In this case, the first three will be returned.
-* Note that even though the square bracket syntax is the same, this command returns row data rather than column data.
+Like python arrays again, you can specify a group of rows to be shown. In this case, the first three will be returned.
+
+Note that even though the square bracket syntax is the same, this command returns row data rather than column data.
 
 -->
 
@@ -363,6 +350,8 @@ For the class:
 If you want to access row(s) of data you can use `iloc`.
 
 <!--
+
+#TODO
 
 iloc is purely integer-location based indexing for selection by position. 
 
@@ -379,6 +368,8 @@ https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc
 If you want to access specific rows and columns of data you can use `loc`.
 
 <!--
+
+#TODO
 
 loc can be used to access a group of rows and columns by label(s) or a boolean array.
 
@@ -401,13 +392,9 @@ my_data['percent'] = my_data['proportion'] * 100
 
 <!--
 
-Motivation: 
-Showing code on slide so students can ask questions before dealing with it on their own.
+The series my_data[‘percent’], which is added to the my_data dataframe, will be equal to 100 times the series ‘proportion’.
 
-For the class:
-* My_data is a dataframe
-* The series my_data[‘percent’], which is added to the my_data dataframe, will be equal to 100 times the series ‘proportion’.
-* This means for each row, the entry in the ‘percent’ column will be 100 times the entry in the ‘proportion’ column.
+This means for each row, the entry in the ‘percent’ column will be 100 times the entry in the ‘proportion’ column.
 
 -->
 
@@ -422,13 +409,10 @@ my_data['density'] = my_data['atoms'] / my_data['volume']
 ```
 
 <!--
-Motivation: 
-Showing code on slide so students can ask questions before dealing with it on their own.
 
-For the class:
-* My_data is a dataframe
-* In this case, one series is being divided by another.
-* For each row, the entry in the ‘density’ column is equal to the entry in the ‘atoms’ column divided by the entry in the ‘volume’ column.
+In this case, one series is being divided by another.
+
+For each row, the entry in the ‘density’ column is equal to the entry in the ‘atoms’ column divided by the entry in the ‘volume’ column.
 
 -->
 
@@ -449,5 +433,7 @@ my_data['prices'].apply(my_function)
 ```
 
 <!--
+
+My_function is a function that takes in a value and returns a value. In this case, we can imagine that my_function takes in an integer (the ‘price’) and returns a boolean value indicating whether or not the item is expensive.
 
 -->
