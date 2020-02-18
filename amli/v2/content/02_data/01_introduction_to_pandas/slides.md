@@ -22,8 +22,9 @@ Source: https://pixabay.com/photos/panda-giant-panda-bear-red-panda-317980/
 
 <!--
 
-Python is popular language for working on files and data munging, but to more data analysis and modeling means switching to a more domain specific language like R.
-Pandas provide data structures and tools to perform data analysis.  Hence by combining Python and Pandas, you will be able to carry out the entire data analysis workflow using Python.
+Python is popular language for working on files and data munging, but to do more data analysis and modeling you may feel tempted to switch to a more domain specific language like R.
+
+Pandas provides data structures and tools that are similar to R and help with data analysis.  Hence by combining Python and Pandas, you will be able to carry out the entire data analysis workflow using Python.
 
 -->
 
@@ -38,7 +39,7 @@ Pandas provide data structures and tools to perform data analysis.  Hence by com
 <!--
 
 Motivation: 
-Situating pandas within the rest of the course for students and contrasting it with previous work so they can see why it’s useful
+Situating pandas within the rest of the course and contrasting it with previous work so they can see why it’s useful
 
 For the class:
 Sometimes the data we get is not in the right format for what we need, so Pandas can help us change that.
@@ -47,7 +48,7 @@ Sometimes the data we get is not in the right format for what we need, so Pandas
 
 ---
 
-# Pandas Data Structures
+# Pandas Data Structures: Dataframes
 
 Dataframes are set up like tables, with columns, column headers, and rows of data.
 
@@ -70,7 +71,7 @@ Source: Google Copyright
 
 ---
 
-# Pandas Data Structures
+# Pandas Data Structures: Series
 
 One column of a Dataframe is called a “Series”
 
@@ -91,7 +92,7 @@ Source: Google Copyright
 
 ---
 
-# Pandas Data Structures
+# Pandas Data Structures: Index
 
 The primary column of the dataframe, without a title, is the “Index”
 
@@ -125,26 +126,13 @@ requirement, but it is a convention that you'll see in quite a bit of code that 
 in documentation and on help sites. Aliasing `pandas` as `pd` will make it easier to utilize these
 resources.
 
--->
-
----
-
-# Installing Pandas
-
-```shell
-pip install pandas
-```
-
-<!--
-
-Pandas is pre-installed in the enviornment Colab uses. If you are running your code elsewhere you
-might need to install Pandas. A common way to do that is to use `pip`.
+If you are using Colab, you can import Pandas without needing to install it. If you are using Jupyter or scripting in a texteditor, you may need to download and update the Pandas library (i.e. pip install pandas -- if you are using pip). See the documentation https://pandas.pydata.org/pandas-docs/stable/
 
 -->
 
 ---
 
-# Creating Pandas Data Structures
+# Creating Pandas Data Structures: Series
 
 
 When coding, we can make a `Series` in the following way:
@@ -155,19 +143,21 @@ flavors = pd.Series(
 )
 ```
 
+![](res/series_flavors.png) #TODO 
+
 <!--
 
 Motivation: 
 * Showing code on slide so students can ask questions before dealing with it on their own.
 
 For the class:
-* Do not feel pressured to write down the code on these slides, it will be provided to you in the colab notebook as well. 
+* We created a Series indexed by 0, 1, 2, 3.
 
 -->
 
 ---
 
-# Creating Pandas Data Structures
+# Creating Pandas Data Structures: Combining Series
 
 Multiple Series can be combined into a Dataframe:
 
@@ -178,6 +168,8 @@ num_in_stock = pd.Series(['14', '13', '20', '7'])
 
 pd.DataFrame({ 'Truffle': flavors, 'Number': num_in_stock })
 ```
+
+![](res/df_flavors_stock.png) #TODO 
 
 <!--
 Motivation: 
@@ -219,13 +211,15 @@ We’ll go through each of these methods in turn. None of them modify the data, 
 
 ---
 
-# Exploring `Series` and `DataFrame`
+# Exploring `Series` and `DataFrame`: Describe
 
 Gives statistics about all of the numerical data in the dataframe
 
 ```python
 my_dataframe.describe()
 ```
+
+![](res/describe.png) #TODO 
 
 <!--
 
@@ -240,13 +234,15 @@ For the class:
 
 ---
 
-# Exploring `Series` and `DataFrame`
+# Exploring `Series` and `DataFrame`: Head
 
 Prints out the first few rows of the dataframe
 
 ```python
 my_dataframe.head()
 ```
+
+![](res/head.png) #TODO 
 
 <!--
 
@@ -261,13 +257,14 @@ For the class:
 
 ---
 
-# Exploring `Series` and `DataFrame`
+# Exploring `Series` and `DataFrame`: Tail
 
 Prints out the last few rows of the dataframe
 
 ```python
 my_dataframe.tail()
 ```
+![](res/tail.png) #TODO 
 
 <!--
 
@@ -282,13 +279,14 @@ For the class:
 
 ---
 
-# Exploring `Series` and `DataFrame`
+# Exploring `Series` and `DataFrame`: Histogram
 
 Makes a histogram of any numerical data (calculates the frequency of each number)
 
 ```python
 my_dataframe.hist()
 ```
+![](res/hist.png) #TODO 
 
 <!--
 
@@ -297,33 +295,13 @@ Showing code on slide so students can ask questions before dealing with it on th
 
 For the class:
 * My_dataframe is a pandas dataframe.
-* For example, if one column was the ages of participants in a study, the histogram would show how many participants were of each age.
-* We will explore all of these methods in more detail in the Colab notebook
+* For example, if one column was the ages of participants in a study, the histogram would show how many participants were of each age. 
 
 -->
 
 ---
 
-# Accessing Data
-
-We can access elements of the Dataframe using familiar Python list operations:
-
-* `my_dataframe['Names']`
-* `my_dataframe['Names'][1]`
-* `my_dataframe[0:2]`
-
-<!--
-Motivation: 
-Showing code on slide so students can ask questions before dealing with it on their own.
-
-For the class:
-* My_dataframe is still a pandas dataframe
-* These are still all methods to view the dataframe, rather than modify it.
--->
-
----
-
-# Accessing Data
+# Accessing Data: Column
 
 ```python
 my_dataframe['Names']
@@ -341,7 +319,7 @@ For the class:
 
 ---
 
-# Accessing Data
+# Accessing Data: Column Entry
 
 ```python
 my_dataframe['Names'][1]
@@ -360,10 +338,10 @@ For the class:
 
 ---
 
-# Accessing Data
+# Accessing Data: Slice
 
 ```python
-my_dataframe['Names'][1]
+my_dataframe[0:2]
 ```
 Returns the first three rows of the dataframe
 
@@ -380,43 +358,31 @@ For the class:
 
 ---
 
-# Accessing Data
-
-```python
-my_dataframe['Names']     # column access
-my_dataframe['Names'][1]  # row access
-```
-Notice how square brackets can be used to see specific rows or specific columns.
-
-<!--
-Motivation: 
-Showing code on slide so students can ask questions before dealing with it on their own.
-
-For the class:
-* My_dataframe is still a pandas dataframe
-* The difference is whether there is a numeric index or a string column name.
-
--->
-
----
-
-# Accessing Data
+# Accessing Data: iloc
 
 If you want to access row(s) of data you can use `iloc`.
 
 <!--
 
-TODO: describe iloc
+iloc is purely integer-location based indexing for selection by position. 
+
+df.iloc[0] returns the first row (i.e. the 0th indexed row) of df.
+
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html
 
 -->
 
 ---
 
-# Accessing Data
+# Accessing Data: loc
 
 If you want to access specific rows and columns of data you can use `loc`.
 
 <!--
+
+loc can be used to access a group of rows and columns by label(s) or a boolean array.
+
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html
 
 TODO: describe loc. Be sure to mention that it directly access the data and doesn't make a copy of
 it. This allows `loc` to be on the left-hand side of assignment.
@@ -481,3 +447,7 @@ def my_function(price):
 my_data['is_expensive'] = 
 my_data['prices'].apply(my_function)
 ```
+
+<!--
+
+-->
