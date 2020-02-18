@@ -42,7 +42,7 @@ Source: Google Copyright
 
 # Notebooks
 
--![](res/notebook.png) 
+![](res/notebook.png) 
 
  <!--
  
@@ -66,7 +66,7 @@ Source: Google Copyright
 
 # Other Options
 
-![](https://i.imgur.com/OvMZBs9.jpg) #TODO: find or create an image
+![](res/matlab.png)
 
 <!--
 
@@ -173,8 +173,8 @@ It doesn't matter what order the cells appear in. What matters is the order in w
 
 # Text Cells
 
-* Text cell contain explanatory text and images
-* Text cells are formatted using using a simple markup language called [markdown](https://colab.sandbox.google.com/notebooks/markdown_guide.ipynb)
+* Contain explanatory text and images
+* Are formatted using using a simple markup language called [markdown](https://colab.sandbox.google.com/notebooks/markdown_guide.ipynb)
 
 -![](res/text_cells.png) #TODO
 
@@ -186,11 +186,9 @@ It doesn't matter what order the cells appear in. What matters is the order in w
 
 # Markdown: Bold & Italic & Strikethrough
 
-\*\*bold\*\* = **bold**
-\_\_bold\_\_ = __bold__
+\*\*bold\*\* = **bold** OR \_\_bold\_\_ = __bold__
 
-\*italic\* = *italic*
-\_italic\_ = _italic_
+\*italic\* = *italic* OR \_italic\_ = _italic_
 
 \~\~strikethrough\~\~ = ~~strikethrough~~
 
@@ -202,15 +200,15 @@ You can easily format text with specific markdown syntax.
 
 ---
 
-#Markdown: Lists
+# Markdown: Lists
 
-Ordered List
+Create an Ordered List
 ```
 1. Item 1
 1. Item 2
 ```
 
-Unordered List
+Create an Unordered List
 ```
 * Item
 * Item
@@ -218,13 +216,13 @@ Unordered List
 
 <!--
 
-You can create numbered and bulleted lists. 
+You can create numbered and bulleted lists. What is shown here is what the user should type in markdown. The output of an ordered list will contain the correct linear number 1. 2. 3. etc. 
 
 -->
 
 ---
 
-#Markdown: Embedded Lists
+# Markdown: Embedded Lists
 
 ```
 * Item
@@ -237,13 +235,13 @@ You can create numbered and bulleted lists.
 
 <!--
 
-You can also create sublists. 
+You can also easily create sublists. 
 
 -->
 
 ---
 
-#Markdown: Links
+# Markdown: Links
 
 ```
 [Text](http://...)
@@ -251,13 +249,13 @@ You can also create sublists.
 
 <!--
 
-TODO: Notes?
+The [Text] portion indicates what will appear in your document, and the (http://...) should have the appropriate URL.
 
 -->
 
 ---
 
-#Markdown: Tables
+# Markdown: Tables
 
 ```
 Language | Creator(s)
@@ -269,7 +267,7 @@ Java | James Gosling
 
 <!--
 
-TODO: Notes?
+Tables are created using | and -. They will be formatted automatically with lines at each delimiter. 
 
 -->
 
@@ -283,25 +281,9 @@ $\sqrt{3x-1}+(1+x)^2$
 
 <!--
 
-TODO: Notes?
+LaTeX is a powerful document preparation system for typsetting mathematical equations. Markdown supports basic LaTeX commands. 
 
--->
-
----
-
-
-
----
-
-# Runtimes
-
-<!--
-
-Runtimes used in this lab are virtual machines running on Google Cloud that run notebook code cells
-through IPython. You can use different runtimes though, including those that support other
-languages like R. The default runtime for Colab has specific modules and features enabled. If you
-need other modules you can install them in an active runtime. You can also use your own custom
-runtime.
+https://www.latex-project.org/help/documentation/
 
 -->
 
@@ -310,19 +292,21 @@ runtime.
 # Notebook Sharing
 
 * Sharing a Colab notebook is as easy as sharing a Google Doc
-* Can export the notebook to Github or download the file
+* Can export the notebook to Github or download the file as .ipynb
 * Downloaded file is compatible for use with Jupyter Notebook or compatible environments
 * Use [Seedbank](https://research.google.com/seedbank/) to find shared Colab notebook 
 * Limited collaborative editing works (use with caution!)
 
 <!--
+
 Since a Colab notebook is stored in Google Drive, sharing a Colab notebook is as easy as sharing Google Doc.  Just like Google Doc sharing, you decide on the share permissions, eg: view-only or edit privilege.
 
 If you prefer, you can export the notebook to Github repository or download the notebook as a file.  The downloaded file is written in standard Jupyter notebook format and can be use in Jupyter Notebook or other compatible framework
 
-Seedbank is an example of search engine for Colab notebooks for material for exploration and learning of ML.
+Seedbank is an example of search engine for Colab notebooks for material for exploration and learning of ML. https://research.google.com/seedbank/guide/faq
 
-Seedbank FAQ
+Some of the collaborative features in Colab are quite limited, and it can be challenging to have two people editing the same lab at the same time. Furthermore, you can open labs in sandbox mode which does not save chagnes. Use collaborative features with caution. 
+
 -->
 
 ---
