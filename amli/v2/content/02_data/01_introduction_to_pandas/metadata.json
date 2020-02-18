@@ -1,11 +1,14 @@
 {
   "name": "Introduction to Pandas",
-  "bug": "b/129331485",
+  "learning objectives": [
+    "Create, analyze, and modify a Pandas Series",
+    "Create, analyze, and modify a Pandas DataFrame"
+  ],
   "colabs": [
     "colab.ipynb"
   ],
   "slides": [
-    "https://docs.google.com/presentation/d/1tTlQoMPOryYg5u6i6AN1Z19aHgKtxHQe_KFaxZ9Lv1U/edit"
+    "slides.md"
   ],
   "materials": [],
   "resources": [],

@@ -3,7 +3,7 @@
   "learning objectives": [
     "Understand where Colab fits in the development environment space",
     "Edit markdown in a notebook",
-    "Edit and run code in a notebook",
+    "Edit and run code in a notebook"
   ],
   "colabs": [
     "colab.ipynb"
