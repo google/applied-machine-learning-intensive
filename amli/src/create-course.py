@@ -66,7 +66,7 @@ script will:
 """
 
 # from pygithub import Github # currently unused
-import os, sys, getopt, re
+import os, sys, getopt, re, json
 from tools import drive_integration
 
 
@@ -103,6 +103,15 @@ def update_colabl_link():
 
     with open("slidesTest.md", 'w') as f:    
         f.write(x)
+
+def scan_metadata():
+    with open("metadata.json", "r+") as f:
+        data = json.load(f)
+        for label in data:
+            if 'slides' in label:
+                data[label] = ["link"] #need to change to be correct
+    with open("metadate.json", 'w') as f:
+        f.write(json.dumps(data))
 
 
 def main():
