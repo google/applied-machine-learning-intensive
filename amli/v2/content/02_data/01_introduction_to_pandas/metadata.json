@@ -10,6 +10,10 @@
   "slides": [
     "slides.md"
   ],
+  "duration": {
+    "lecture": 60,
+	"colab": 60
+  },
   "materials": [],
   "resources": [],
   "handouts": []
