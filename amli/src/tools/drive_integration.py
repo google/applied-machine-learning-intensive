@@ -150,10 +150,12 @@ def main(argv):
       #print(file_metadata)
       if f in colabs_in_drive: # UPDATE
         print("Updating based on full name")
-        print(service.files().update(fileId=colabs_in_drive[f]['colabFileId'], body=file_metadata, media_body=media).execute())
+        print(service.files().update(fileId=colabs_in_drive[f]['colabFileId'],
+              body=file_metadata, media_body=media).execute())
       elif just_name in colabs_in_drive: # UPDATE
         print("Updating based on just name")
-        print(service.files().update(fileId=colabs_in_drive[just_name]['colabFileId'], body=file_metadata, media_body=media).execute())
+        print(service.files().update(fileId=colabs_in_drive[just_name]['colabFileId'], 
+              body=file_metadata, media_body=media).execute())
       else: # CREATE
         print("Creating")
         file_metadata['parents']=[tracks[f[0:3]]]

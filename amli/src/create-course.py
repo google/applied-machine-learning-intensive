@@ -65,10 +65,13 @@ script will:
         of the Google Drive passed to the script.
 """
 
-# from pygithub import Github # currently unused
+from absl import app
 import os, sys, shutil, getopt, re
-from tools import drive_integration
-# from google.colab import drive as gd
+import json
+
+from googleapiclient.discovery import build
+from google.auth.transport.requests import Request
+from tools import drive_integration, format_colab
 
 
 
@@ -76,17 +79,15 @@ from tools import drive_integration
 CONTENT = "../content" 
 
 def get_sub_folders(folder: str = ""):
-    """
-    Returns a list of subfolders folders as strings. Defaults to the top level
+    """ Returns a list of subfolders folders as strings. Defaults to the top level
     content folder if not given an argument.
 
     Args:
         folder: str
-    specifies a folder to open. Optional, Defaults to the top-level content 
-    folder
-
+            specifies a folder to open. Optional, Defaults to the top-level 
+            content folder
     Returns:    
-    a list of subfolders within the given folder.
+        a list of subfolders within the given folder.
     """
     path = f"{CONTENT}/{folder}"
     contents = [sub_folder for sub_folder 
@@ -94,6 +95,18 @@ def get_sub_folders(folder: str = ""):
                 if os.path.isdir(f"{path}/{sub_folder}")]
     return contents
 
+def get_id_from_link(url: str) -> str:
+    """ Returns the id for a file on Google Drive when given a link to that file
+    Input:
+        url: a link to a file on Google Drive
+    Returns:
+        a string containing a file id
+    """
+    if url[-12:] == "?usp=sharing": # Convert share links to direct links
+        url = url[:-12]
+    folder_id = re.split(r"[/.]",url)[-1] # extract id from drive link
+    return folder_id
+    
 
 def update_colabl_link():
     f = open("slidesTest.md","r", encoding="latin1")
@@ -107,14 +120,14 @@ def update_colabl_link():
         f.write(x)
 
 
-def main():
+def main(args):
     # Get arguments for source and destination folders
-    opts, args = getopt.getopt(sys.argv[1:],"g")
-    if opts and "-g" in opts[0]: # Can use '-g' to specify local repository
-        drive = args[0]
-    elif len(args) > 1:
-        repo = args[0]
-        drive = args[1]
+    # opts, args = getopt.getopt(sys.argv[1:],"g")
+    # if opts and "-g" in opts[0]: # Can use '-g' to specify local repository
+    #     drive = args[0]
+    if len(args) > 1:
+        # repo = args[0]
+        folder_id = get_id_from_link(args[1])
     else:
         raise SystemExit("\x1b[31m" # Set text color to red
                          "Error: No source or destination given.\n"
@@ -123,16 +136,14 @@ def main():
                          "<Google-Drive folder shareable link>"
                          "\x1b[0m" # Reset text color
                         )
-    if drive[-12:] == "?usp=sharing": # Convert share links to direct links
-        drive = drive[:-12]
+    
+    
+    
+    # authenticate google drive
+    creds = drive_integration.authenticate()
 
-    temp_folder = os.path.expanduser("~/Desktop/amli") 
-    # print(temp_folder)
-    os.mkdir(temp_folder)  # create temp folder
-        
-        # TODO authenticate google drive
-    # drive_integration.authenticate()
-        # TODO mount drive folder
+    # Connect to drive api
+    service = build('drive', 'v3', credentials=creds)
 
     tracks = get_sub_folders()
     for track in tracks:
@@ -140,29 +151,38 @@ def main():
         units = get_sub_folders(track)
         track_info = json.load(open(f"{path}/metadata.json"))
         track_name = track_info["name"]
-        # TODO create track folder in drive
-        os.mkdir(f"{temp_folder}/{track}")
+        
+        # Create track folder in drive
+        file_metadata = {
+            "name": track,
+            "mimeType": "application/vnd.google-apps.folder",
+            "parents": [folder_id]
+        }
+        file = service.files().create(body=file_metadata, fields='id').execute() # pylint: disable=no-member
+        track_id = file.get('id')
+        print(f"Folder ID: {track_id}")
+
+        # os.mkdir(f"{temp_folder}/{track}")
 
 
-        for unit in units:
-            unit_info = json.load(open(f"{path}/{unit}/metadata.json"))
-            unit_name = unit_info["name"]
+        # for unit in units:
+        #     unit_info = json.load(open(f"{path}/{unit}/metadata.json"))
+        #     unit_name = unit_info["name"]
             
-            # debugging
-            print(f"\033[KGenerating: {unit_name}",end="\r",flush=True)
-            # TODO create unit folder in drive
-            os.mkdir((dest := f"{temp_folder}/{track}/{unit}"))
+        #     # debugging
+        #     print(f"\033[KGenerating: {unit_name}",end="\r",flush=True)
+        #     # TODO create unit folder in drive
+        #     os.mkdir((dest := f"{temp_folder}/{track}/{unit}"))
 
-            if (colabs := unit_info.get("colabs")):
-                for nb in colabs:
-                    loc = f"{path}/{unit}/{nb}"
-                    with open(loc,mode="r") as f
-                        text = open("rawnb.txt",mode="w")
-                        
-                    # TODO copy to drive
-                    shutil.copy(loc,f"{dest}/{nb}")
-                    # TODO update metadata.json to link to copy
-                    pass
-    print("\033[KDone",)
+        #     if (colabs := unit_info.get("colabs")):
+        #         for nb in colabs:
+        #             src = f"{path}/{unit}/{nb}"
+        #             dest_nb = f"{dest}/{nb}"                        
+        #             shutil.copy(src,dest_nb)
+        #             format_colab.format_colab(dest_nb)
+        #             # TODO update metadata.json to link to copy
+        #             pass
+    print("\033[KDone")
+
 if __name__ == "__main__":
-    main()
+    app.run(main)
