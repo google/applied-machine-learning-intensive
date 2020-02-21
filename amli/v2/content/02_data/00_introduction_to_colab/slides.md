@@ -64,6 +64,8 @@ Source: Google Copyright
 
 -->
 
+---
+
 # Other Options
 
 ![](res/matlab.png)
@@ -104,7 +106,7 @@ Source: Google Copyright
 
 <!--
 
-Notebooks run by connecting to virtual machines that have maximum lifetimes that can be as much as 12 hours. Notebooks will also disconnect from VMs when left idle for too long. Maximum VM lifetime and idle timeout behavior may vary over time, or based on your usage. 
+Colab notebooks run by connecting to virtual machines that have maximum lifetimes that can be as much as 12 hours. Notebooks will also disconnect from VMs when left idle for too long. Maximum VM lifetime and idle timeout behavior may vary over time, or based on your usage. 
 
 Colab focuses on supporting Python and its ecosystem of third-party tools. There is currently not support for other Jupyter kernels like R or Scala.
 
@@ -118,7 +120,7 @@ A good introductory notebook can be found here https://colab.sandbox.google.com/
 
 # Cells in a Colab Notebook 
 
-A notebook of movable cells which are either code or text cell
+A notebook contains movable cells which are either code or text cells
 
 ![](res/notebook_cells.png) 
 
@@ -145,11 +147,13 @@ As of January 1, 2020, the Python team is no longer supporting Python 2, and as 
 
 ---
 
-# Code Cells: Python Print
+# Code Cells: Basic Python Print
 
 ![](res/python_print.png) 
 
 <!--
+
+Writing Python code in a notebook is just like writing Python code anywhere else.
 
 Source: Google Copyright
 
@@ -157,7 +161,7 @@ Source: Google Copyright
 
 ---
 
-# Code Cells: Order of Cells vs. Order of Running Cells
+# Code Cells: Order of Cells vs. Cell Run Order
 
 * Variables that you define in one cell can later be used in other cells
 * It DOES NOT matter what order the cells appear in
@@ -165,7 +169,7 @@ Source: Google Copyright
 
 <!--
 
-It doesn't matter what order the cells appear in. What matters is the order in which they are run. The run-order is captured by the numebrs to the left of each cell. 
+It doesn't matter what order the cells appear in. What matters is the order in which they are run. The run-order is captured by the numbers to the left of each cell. 
 
 -->
 
@@ -200,17 +204,37 @@ You can easily format text with specific markdown syntax.
 
 # Markdown: Lists
 
-Create an Ordered List
+**Create an Ordered List**  
+Input:
+
 ```
 1. Item 1
 1. Item 2
 ```
 
-Create an Unordered List
+Output:
+
+1. Item 1
+1. Item 2
+
+.
+
+{.column}
+
+**Create an Unordered List**  
+Input:
+
 ```
 * Item
 * Item
 ```
+Output:
+
+* Item 1
+* Item 2
+
+.
+
 
 <!--
 
@@ -222,6 +246,8 @@ You can create numbered and bulleted lists. What is shown here is what the user 
 
 # Markdown: Embedded Lists
 
+**Input:**
+
 ```
 * Item
   1. Item 1
@@ -230,10 +256,18 @@ You can create numbered and bulleted lists. What is shown here is what the user 
   1. Item 1
   1. Item 2
 ```
+
+{.column}
+
+**Output:**
+
+![](res/nested-list.png) 
 
 <!--
 
 You can also easily create sublists. 
+
+Source: Google Copyright
 
 -->
 
@@ -241,9 +275,17 @@ You can also easily create sublists.
 
 # Markdown: Links
 
+**Input:**
+
 ```
 [Text](http://...)
 ```
+
+{.column}
+
+**Output:**
+
+[Text](http://...)
 
 <!--
 
@@ -255,6 +297,8 @@ The [Text] portion indicates what will appear in your document, and the (http://
 
 # Markdown: Tables
 
+**Input:**
+
 ```
 Language | Creator(s)
 --- | ---
@@ -263,9 +307,21 @@ R | Ross Ihaka, Robert Gentleman
 Java | James Gosling
 ```
 
+.
+
+{.column}
+
+**Output:**
+
+![](res/table.png) 
+
+.
+
 <!--
 
 Tables are created using | and -. They will be formatted automatically with lines at each delimiter. 
+
+Source: Google Copyright
 
 -->
 
@@ -273,15 +329,25 @@ Tables are created using | and -. They will be formatted automatically with line
 
 # Markdown: LaTeX
 
+**Input:**
+
 ```
 $\sqrt{3x-1}+(1+x)^2$
 ```
 
+{.column}
+
+**Output:**
+
+![](res/latex.png) 
+
 <!--
 
-LaTeX is a powerful document preparation system for typsetting mathematical equations. Markdown supports basic LaTeX commands. 
+LaTeX is a powerful document preparation system for typesetting mathematical equations. Markdown in Colab supports basic LaTeX commands. 
 
 https://www.latex-project.org/help/documentation/
+
+Source: Google Copyright
 
 -->
 
@@ -292,19 +358,17 @@ https://www.latex-project.org/help/documentation/
 * Sharing a Colab notebook is as easy as sharing a Google Doc
 * Can export the notebook to Github or download the file as .ipynb
 * Downloaded file is compatible for use with Jupyter Notebook or compatible environments
-* Use [Seedbank](https://research.google.com/seedbank/) to find shared Colab notebook 
+* Use [Seedbank](https://research.google.com/seedbank/) to find shared Colab notebooks
 * Limited collaborative editing works (use with caution!)
 
 <!--
 
-Since a Colab notebook is stored in Google Drive, sharing a Colab notebook is as easy as sharing Google Doc.  Just like Google Doc sharing, you decide on the share permissions, eg: view-only or edit privilege.
+Since a Colab notebook is stored in Google Drive, sharing a Colab notebook is as easy as sharing a Google Doc.  Just like Google Doc sharing, you decide on the share permissions, eg: view-only or edit privilege.
 
-If you prefer, you can export the notebook to Github repository or download the notebook as a file.  The downloaded file is written in standard Jupyter notebook format and can be use in Jupyter Notebook or other compatible framework
+If you prefer, you can export the notebook to a Github repository or download the notebook as a file.  The downloaded file is written in standard Jupyter notebook format and can be use in Jupyter Notebook or any other compatible framework.
 
-Seedbank is an example of search engine for Colab notebooks for material for exploration and learning of ML. https://research.google.com/seedbank/guide/faq
+Seedbank is a search engine for Colab notebooks for material for exploration and learning of ML. https://research.google.com/seedbank/guide/faq
 
-Some of the collaborative features in Colab are quite limited, and it can be challenging to have two people editing the same lab at the same time. Furthermore, you can open labs in sandbox mode which does not save chagnes. Use collaborative features with caution. 
+Some of the collaborative features in Colab are quite limited, and it can be challenging to have two people editing the same lab at the same time. Furthermore, you can open labs in sandbox mode which does not save changes. Use collaborative features with caution. 
 
 -->
-
----
