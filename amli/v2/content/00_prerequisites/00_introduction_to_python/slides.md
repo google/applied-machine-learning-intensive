@@ -13,46 +13,24 @@ Source: Wikipedia
 ![](res/introtopython1.png)
 
 <!--
-Interpreted means portability, ease of use (no compiling) and that the code can be run interactively (as illustrated above). 
-
-High-level means closer to human languages and further from machine languages
-
-General-purpose because it can be used for anything from creating web apps (YouTube), to small scripts (automatically renaming photos based on data from the camera) and many, many things in between including a lot of data science
+* "Interpreted" means portability, ease of use (no compiling), and that the code can be run interactively. 
+* "High-level" means closer to human languages and further from machine languages.
+* "General-purpose" means it can be used for anything, including creating web apps (e.g. YouTube), small scripts (e.g. automatically renaming photos based on data from the camera), machine learning, data visualization, and much more.
 
 One of the powers of Python is that it has many built-in libraries and many more third-party libraries to give it specialized abilities. We'll explore many of these specialized libraries over the course of this program. 
 -->
 
 ---
 
-# Python 2 vs. Python 3
+# Python3
 
-Python2:
-* deprecated
-* support will stop in 2020
-* still a lot of code out there
+There are multiple versions of Python in the world:
 
-Most visible diff: print vs. print()
-
-![](res/introtopyton2.png)
-
-<!--
-There are multiple versions of Python in the world. 1.x is long gone. 2.x is deprecated and support will soon stop but there's still a lot of code and code samples out there that use it. 
-
-We'll be focusing on Python3 since that's the modern version and how all new code should be written. 
-
-Here are some ways to tell the difference.
+* 1.x is long gone.
+* 2.x is deprecated and support will soon stop but there's still a lot of code and code samples out there that use it
+* We'll be focusing on Python3 since that's the modern version and how all new code should be written. 
 
 When looking at Python reference docs, look for the version number in the URL.
--->
-
----
-
-![](res/introtopython3.png)
-
-<!--
-When using StackOverflow (or other online resources), look for python-3.x tag and parenthesis around values to be printed.
-
-Besides print, the other differences between python2 and python3 are unlikely to come up in the context of this course. 
 -->
 
 ---
@@ -60,66 +38,54 @@ Besides print, the other differences between python2 and python3 are unlikely to
 ![](res/introtopython4.png)
 
 <!--
-There are multiple ways to run python.
-You can open the interactive interpreter and type arbitrary code
-You can run a python file and all the code inside will get executed
-You can run cell fulls of Python code in a notebook environment like CoLab
-If you're in a notebook, you can run all the cells in order (recommended) but you can also choose to run individual cells which might lead to unexpected results. 
+There are multiple ways to run python:
+* You can open the interactive interpreter and type arbitrary code.
+* You can run a python file and all the code inside will get executed.
+* You can run cell fulls of Python code in a notebook environment like Colab.
+* If you're in a notebook, you can run all the cells in order (recommended) but you can also choose to run individual cells which might lead to unexpected results. 
 -->
 
 ---
 
-# White spaces matter
+# White space matters
 
-* 2- or 4-space indents are used to delineate blocks instead of {}
-* Tabs can be used too but should not be mixed with spaces indent (Recommendation: just use spaces)
-* Indents can be nested to arbitrary depths
+* 2- or 4-space indents are used to delineate code blocks instead of `{}`.
+* Tabs can be used too but should not be mixed with spaces (Recommendation: just use spaces).
+* Indents can be nested to arbitrary depths.
 
 ![](res/introtopython5.png)
 
 <!--
-In practice, the indents makes it hard to have long functions with many levels of nesting. That's actually a good thing, use decomposition (breaking code into smaller functions) instead. 
+In practice, indentation makes it hard to have long functions with several levels of nesting. That's actually a good thing, as it encourages using decomposition (breaking code into smaller functions) instead. 
 -->
 
 ---
 
 # Variables are dynamically typed
 
-* This applies to function parameters too
-* Interpreter will not help you catch mistyped variables
-* It's only when you try to do an operation for another type that the error will manifest itself
-* Avoid changing the type of a variable
-* This almost means that lists can contain objects of different types. Avoid doing that.
+* This applies to function parameters too.
+* Interpreter will not help you catch mistyped variables.
+* It's only when you try to do an operation for another type that the error will manifest itself.
+* Avoid changing the type of a variable.
 
 ![](res/introtopython6.png)
 
 ---
 
-# String delimiters are ', ", ''', and """
+# String are defined with ', ", ''', and """
 
-* Makes it easy to make strings that contains quotes
-* Avoid triple-single quotes
-* There is no char type
-* When you want to deal with characters, just use single-character strings
-* Strings are immutable
+* Avoid triple-single quotes where possible.
+* There is no `char` type. When you want to deal with characters, just use single-character strings.
+* Strings are immutable.
 
 ![](res/introtopython7.png)
 
 ---
 
-# Retire the semicolon
+# `for` loops always loop over iterables (lists, tuples etc.)
 
-Commands end at the line break unless in the middle of a parenthesis, a triple-quoted string or an object definition.
-
-
-
----
-
-# For-loops always loop over iterables (lists, etc.)
-
-* Great for linearly processing lists
-* Looping over numbers requires creating a list of numbers. The function range makes that pretty easy.
-* You can create elaborate numbering schemes with range. 
+* `for` is great for linearly processing lists and tuples.
+* Looping over numbers requires creating a list of numbers. The `range` function makes that pretty easy.
 
 ![](res/introtopython8.png)
 
@@ -127,12 +93,12 @@ Commands end at the line break unless in the middle of a parenthesis, a triple-q
 
 # Python fast facts
 
-* There is no NULL, it's None
-* else if must be shortened to elif
-* Don't forget the colon at the end of your for-loops, while-loops, if-statements and function definitions
-* help(some_object) to get the man page
-* dir(some_object) to see its content (including methods)
-* len to get the length of many objects (strings, lists, dictionaries, …) but it's a function, not a method
+* There is no `NULL`, it's `None`.
+* `else if` is shortened to `elif`.
+* Don't forget the colon at the end of your `for` loops, `while` loops, `if` statements, and function definitions.
+* Use `help(some_object)` to get the man page.
+* Use `dir(some_object)` to see its content (including methods).
+* Use `len` to get the length of many objects (strings, lists, dictionaries, etc.).
 
 ![](res/introtopython9.png)
 
