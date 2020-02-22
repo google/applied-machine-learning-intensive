@@ -212,7 +212,7 @@ Source: Google Copyright
 
 # Exploring `Series` and `DataFrame`: `head`
 
-Prints out the first few rows of the dataframe
+Prints out the first few rows of the DataFrame
 
 ```python
 my_dataframe.head()
@@ -234,7 +234,7 @@ Source: Google Copyright
 
 # Exploring `Series` and `DataFrame`: `tail`
 
-Prints out the last few rows of the dataframe
+Prints out the last few rows of the DataFrame
 
 ```python
 my_dataframe.tail()
@@ -256,7 +256,7 @@ Source: Google Copyright
 
 # Exploring `Series` and `DataFrame`: `describe`
 
-Gives statistics about all of the NUMERICAL data in the dataframe
+Gives statistics about all of the **numerical** data in the DataFrame
 
 ```python
 my_dataframe.describe()
@@ -281,7 +281,7 @@ Source: Google Copyright
 
 # Exploring `Series` and `DataFrame`: `histogram`
 
-Makes a histogram of any numerical columns (calculates the frequency of each number)
+Makes a histogram of any **numerical** columns (calculates the frequency of each number)
 
 ```python
 my_dataframe.hist()
@@ -306,7 +306,7 @@ Source: Google Copyright
 ```python
 my_dataframe['Names']
 ```
-Returns the series with the title ‘Names’ from the dataframe
+Returns the series with the title ‘Names’ from the DataFrame
 
 <!--
 
@@ -336,7 +336,7 @@ Since series can be indexed like arrays, this command will return a single eleme
 ```python
 my_dataframe[0:2]
 ```
-Returns the first three rows of the dataframe
+Returns the first three rows of the DataFrame
 
 <!--
 
