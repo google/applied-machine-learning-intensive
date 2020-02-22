@@ -137,8 +137,6 @@ def main(args):
                          "\x1b[0m" # Reset text color
                         )
     
-    
-    
     # authenticate google drive
     creds = drive_integration.authenticate()
 
@@ -148,30 +146,38 @@ def main(args):
     tracks = get_sub_folders()
     for track in tracks:
         path = f"{CONTENT}/{track}"
-        units = get_sub_folders(track)
         track_info = json.load(open(f"{path}/metadata.json"))
         track_name = track_info["name"]
         
         # Create track folder in drive
-        file_metadata = {
+        track_metadata = {
             "name": track,
             "mimeType": "application/vnd.google-apps.folder",
             "parents": [folder_id]
         }
-        file = service.files().create(body=file_metadata, fields='id').execute() # pylint: disable=no-member
+        file = service.files().create(body=track_metadata, fields='id').execute() # pylint: disable=no-member
         track_id = file.get('id')
-        print(f"Folder ID: {track_id}")
+        print(f"Track ID: {track_id}")
 
-        # os.mkdir(f"{temp_folder}/{track}")
+        units = get_sub_folders(track)
 
-
-        # for unit in units:
-        #     unit_info = json.load(open(f"{path}/{unit}/metadata.json"))
-        #     unit_name = unit_info["name"]
+        for unit in units:
+            unit_metadata = {
+                "name": unit,
+                "mimeType": "application/vnd.google-apps.folder",
+                "parents": [folder_id,track_id]
+            }
+            file = service.files().create(body=track_metadata, fields='id').execute() # pylint: disable=no-member
+            unit_id = file.get('id')
+            print(f"Unit ID: {unit_id}")
             
-        #     # debugging
-        #     print(f"\033[KGenerating: {unit_name}",end="\r",flush=True)
-        #     # TODO create unit folder in drive
+            
+            unit_info = json.load(open(f"{path}/{unit}/metadata.json"))
+            unit_name = unit_info["name"]
+            
+            # debugging
+            print(f"\033[KGenerating: {unit_name}",end="\r",flush=True)
+            # TODO create unit folder in drive
         #     os.mkdir((dest := f"{temp_folder}/{track}/{unit}"))
 
         #     if (colabs := unit_info.get("colabs")):
