@@ -9,7 +9,7 @@
 
 These animals are adorable but we are going to talk to about a Python library called Pandas which is a popular tool for handling and analyzing input data.
 
-Source: https://pixabay.com/photos/panda-giant-panda-bear-red-panda-317980/
+Source: https://pixabay.com/photos/panda-giant-panda-bear-red-panda-317980/ (Pixabay License)
 
 -->
 
@@ -22,7 +22,7 @@ Source: https://pixabay.com/photos/panda-giant-panda-bear-red-panda-317980/
 
 <!--
 
-Python is popular language for working on files and data munging, but to do more data analysis and modeling you may feel tempted to switch to a more domain specific language like R.
+Python is a popular language for working on files and data munging, but to do more data analysis and modeling you may feel tempted to switch to a more domain specific language like R.
 
 Pandas provides data structures and tools that are similar to R and help with data analysis.  Hence by combining Python and Pandas, you will be able to carry out the entire data analysis workflow using Python.
 
@@ -30,20 +30,19 @@ Pandas provides data structures and tools that are similar to R and help with da
 
 ---
 
-# Pandas Data Structures: Dataframes
+# Pandas Data Structures: DataFrames
 
-Dataframes are set up like tables, with columns, column headers, and rows of data.
+DataFrames are set up like tables, with columns, headers, and rows of data.
 
 ![](res/dataframe.png)
 
 <!--
 
 Motivation: 
-Giving a visual for the Dataframes so students who are visual learners can interact intuitively with the structure.
+Giving a visual for DataFrames so students who are visual learners can interact intuitively with the structure.
 
 For the class:
-* Pandas data structure is very much like a table with one or more columns - which means it works well with CSV type of data file format.
-* Let’s start with a data structure: DataFrame
+* The DataFrame is Pandas' data structure. It is very much like a table with one or more columns - which means it works well with the CSV data file format.
   * Looks like a table which consists of rows and columns
   * The first row contains column headers
 
@@ -55,7 +54,7 @@ Source: Google Copyright
 
 # Pandas Data Structures: Series
 
-One column of a Dataframe is called a “Series”
+One column of a DataFrame is called a “Series”
 
 ![](res/dataframe-column.png)
 
@@ -65,8 +64,8 @@ Motivation:
 * Continuing to give visuals to help out students.
 
 For the class:
-* Pandas Series is 1-dimensional and contains homogeneously-typed array
-* So, in summary a DataFrame contains 1 or more Series
+* Pandas Series is 1-dimensional and contains a homogeneously-typed array
+* So, in summary, a DataFrame contains 1 or more Series
 
 Source: Google Copyright
 
@@ -86,7 +85,7 @@ Motivation:
 * Continuing to give visuals to help out students.
 
 For the class:
-* Lastly, the first column is an index column and in this case it’s numeric values, but it can be non-numeric as you’ll see as you dig deeper into Pandas usage
+* Lastly, the first column is an index column. In this case it’s numeric values, but it can be non-numeric as you’ll see as you dig deeper into Pandas usage.
 
 Source: Google Copyright
 
@@ -108,7 +107,7 @@ requirement, but it is a convention that you'll see in quite a bit of code that 
 in documentation and on help sites. Aliasing `pandas` as `pd` will make it easier to utilize these
 resources.
 
-If you are using Colab, you can import Pandas without needing to install it. If you are using Jupyter or scripting in a texteditor, you may need to download and update the Pandas library (i.e. pip install pandas -- if you are using pip). See the documentation https://pandas.pydata.org/pandas-docs/stable/
+If you are using Colab, you can import Pandas without needing to install it. If you are using Jupyter or scripting in a text editor, you may need to download and update the Pandas library (i.e. pip install pandas -- if you are using pip). See the documentation at: https://pandas.pydata.org/pandas-docs/stable/
 
 -->
 
@@ -127,7 +126,7 @@ flavors = pd.Series(
 
 <!--
 
-We created a Series indexed by 0, 1, 2, 3. It is one column called "flavors" with entries ['Mint', 'Raspberry', 'Orange', 'Coffee']
+Here, we create a Series indexed by 0, 1, 2, 3. It is one column called "flavors" with entries ['Mint', 'Raspberry', 'Orange', 'Coffee']
 
 -->
 
@@ -146,12 +145,7 @@ pd.DataFrame({ 'Truffle': flavors, 'Number': num_in_stock })
 ```
 
 <!--
-Motivation: 
-* Showing code on slide so students can ask questions before dealing with it on their own.
-
-For the class:
-* In this code, we are first making two series, flavors and num_in_stock.
-* After that, we make a dataframe, giving each series a title (“Truffle” and “Number”).
+In this code, we first create two series, flavors and num_in_stock. Then, we make a DataFrame, giving each series a title (“Truffle” and “Number”).
 
 -->
 
@@ -160,20 +154,17 @@ For the class:
 # Creating Pandas Data Structures: Reading a .csv
 
 ```python
-my_dataframe = pd.read_csv("movies_metadata.csv")
+my_dataframe = pd.read_csv("city_populations.csv")
 ```
 
 
 <!--
 
 This method reads in a file in the format “csv”, meaning that the data in the file is separated by commas.
+
 A CSV is a file type, meaning “comma separated values”. Essentially, it signifies that the data has commas between each value to signify where one entry ends and the next begins.
 
 The first argument is a string and can either be the name of a local file (as shown) or the url of a file on the internet.
-
-The data in for this example come from Kaggle https://www.kaggle.com/rounakbanik/the-movies-dataset
-
-The MovieLens Dataset consists of movies released on or before July 2017. Data points include cast, crew, plot keywords, budget, revenue, posters, release dates, languages, production companies, countries, TMDB vote counts and vote averages.
 
 -->
 
@@ -191,7 +182,7 @@ Pandas has some methods to get basic information about both `Series` and `DataFr
 
 <!--
 
-We’ll go through each of these methods in turn. None of them modify the data, but rather they let us view the data in a few different ways so we can get a sense of what we’re looking at.
+We’ll go through each of these methods in turn. Each of these methods works with both Series and DataFrame objects. None of them modify the data, but rather they let us view the data in a few different ways so we can get a sense of what we’re looking at.
 
 -->
 
@@ -199,11 +190,13 @@ We’ll go through each of these methods in turn. None of them modify the data, 
 
 # Exploring `Series` and `DataFrame`: `shape`
 
-Prints out (number of rows, number of columns)
+Prints out `(number of rows, number of columns)`
 
 ```python
 my_dataframe.shape()
 ```
+
+{.column}
 
 ![](res/shape.png) 
 
@@ -225,6 +218,8 @@ Prints out the first few rows of the dataframe
 my_dataframe.head()
 ```
 
+{.column}
+
 ![](res/head.png) 
 
 <!--
@@ -244,6 +239,9 @@ Prints out the last few rows of the dataframe
 ```python
 my_dataframe.tail()
 ```
+
+{.column}
+
 ![](res/tail.png)
 
 <!--
@@ -264,13 +262,15 @@ Gives statistics about all of the NUMERICAL data in the dataframe
 my_dataframe.describe()
 ```
 
+{.column}
+
 ![](res/describe.png) 
 
 <!--
 
-describe() gives statistics such as mean and median about numerical data
+describe() gives statistics such as mean and median about numerical data.
 
-Note that any columns without numerical data are not included 
+Note that any columns without numerical data are not included.
 
 Source: Google Copyright
 
@@ -286,11 +286,14 @@ Makes a histogram of any numerical columns (calculates the frequency of each num
 ```python
 my_dataframe.hist()
 ```
+
+{.column}
+
 ![](res/hist.png) 
 
 <!--
 
-One column in my_dataframe is the average vote of users. The histogram shows number of movies vs. vote average.
+hist() visualizes the frequency of various results for one or more numerical columns.
 
 Source: Google Copyright
 
@@ -351,13 +354,8 @@ If you want to access row(s) of data you can use `iloc`.
 
 <!--
 
-#TODO
-
-iloc is purely integer-location based indexing for selection by position. 
-
+the iloc command takes an integer index and accesses the row located at that index.
 df.iloc[0] returns the first row (i.e. the 0th indexed row) of df.
-
-https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html
 
 -->
 
@@ -369,14 +367,8 @@ If you want to access specific rows and columns of data you can use `loc`.
 
 <!--
 
-#TODO
-
-loc can be used to access a group of rows and columns by label(s) or a boolean array.
-
-https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html
-
-TODO: describe loc. Be sure to mention that it directly access the data and doesn't make a copy of
-it. This allows `loc` to be on the left-hand side of assignment.
+The loc command is like a combination of column indexing and row indexing.
+It allows you to access a group of rows *and* columns by label(s) or a boolean array.
 
 -->
 
@@ -384,7 +376,7 @@ it. This allows `loc` to be on the left-hand side of assignment.
 
 # Adding Series to a Dataframe
 
-We can create a new series of the same length by modifying all of the elements by a singular value.
+We can create a new series of the same length of an existing series by modifying all of the elements by a singular value and storing them in the dataframe under a new name.
 
 ```python
 my_data['percent'] = my_data['proportion'] * 100
@@ -428,8 +420,7 @@ def my_function(price):
 		return True
 	return False
 
-my_data['is_expensive'] = 
-my_data['prices'].apply(my_function)
+my_data['is_expensive'] = my_data['prices'].apply(my_function)
 ```
 
 <!--
