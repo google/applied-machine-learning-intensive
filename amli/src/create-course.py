@@ -119,6 +119,15 @@ def update_colabl_link():
     with open("slidesTest.md", 'w') as f:    
         f.write(x)
 
+def scan_metadata():
+    with open("metadata.json", "r+") as f:
+        data = json.load(f)
+        for label in data:
+            if 'slides' in label:
+                data[label] = ["link"] #need to change to be correct
+    with open("metadate.json", 'w') as f:
+        f.write(json.dumps(data))
+
 
 def main(args):
     # Get arguments for source and destination folders
