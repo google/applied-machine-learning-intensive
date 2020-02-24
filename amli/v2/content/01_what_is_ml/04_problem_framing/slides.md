@@ -1,6 +1,8 @@
 # Problem Framing
 
 <!--
+Before we can dive into building an ML model, we need understand the problem at hands.  In turns, it will help us determine if using ML is the right approach, and how to frame it in a way that ML model can bring insights toward solving the problem.
+
 Background content for the slides:
 https://developers.google.com/machine-learning/amli-content/what-is-ml/is-ml-right-for-you
 https://developers.google.com/machine-learning/amli-content/problem-framing/good
@@ -11,7 +13,9 @@ https://developers.google.com/machine-learning/amli-content/problem-framing/good
 # Is ML Right for You?
 
 <!--
-Topics: Quick mention of bias and fairness
+Machine learning is not magic, and ML is not a good fit for all problems.  The principles underlying machine learning are not new but are possible today because of the amount of available public data and processing power.
+
+In the next few minutes, we’ll discuss the attributes of problems that will make a good ML problem and how to frame the problem.
 -->
 
 --- 
@@ -21,18 +25,38 @@ Topics: Quick mention of bias and fairness
 ![](res/hammerwrench.png)
 
 <!--
-When you have a hammer, everything looks like a nail.
+ML is one of the newer problem solving tool that is now available in your toolbox.  The natural tendency is to try to use it to solve all the problems you encountered.  When you have a hammer, everything looks like a nail…
+
+You’ll want to use the right tool out of your toolbox that are best at solving the problem at hands.  Next, let’s try to understand what is the benefits and drawbacks of using ML.
+
 -->
 
----
+## ML Benefits and Drawbacks
 
-## What Kind of Tool?
+* Makes predictions
+* Based on previous data (labeled or not)
 
-![](res/patent.png)
+**Good**
+
+* Robust to changes unforeseen details
+* Handles highly complex tasks very well
+* "One size fits all" algorithm
+
+.
+
+{.column}
+
+**Bad**
+
+* Hard to debug, no insight into how model works
+* Takes a lot of energy
+* Takes a lot of time
+* Energy and time cost money
+
+.
 
 <!--
 What does ML do? What are its benefits? What are its drawbacks?
-List on whiteboard
 Key points:
 Makes predictions
 Based on previous data (labeled or not)
@@ -43,6 +67,16 @@ Bad: hard to debug, no insight into how model works (can be biased)
 Bad: takes a lot of energy (think coffee pots, or how fast tensorflow drains your laptop battery)
 Bad: takes a lot of time
 Bad: energy and time cost money
+-->
+
+---
+
+## What Kind of Tool?
+
+![](res/patent.png)
+
+<!--
+
 -->
 
 ---
@@ -60,7 +94,6 @@ Look at definition, brainstorm other ways to accomplish goals
 Traditional Software Engineering
 
   * Requirements --> Workable Design
-
 
 Machine Learning
 
