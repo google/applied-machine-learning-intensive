@@ -182,6 +182,8 @@ Similar to statistics or data science approaches, ML cannot be used to show caus
 
 ---
 
+# Dataset Quality
+
 What attributes of a dataset would you consider ideal?
 
 * Large size / High diversity
