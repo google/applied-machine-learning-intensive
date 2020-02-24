@@ -245,9 +245,12 @@ Image Details:
 <!--
 Before machine learning, many problems used a “rules-based approach," which makes predictions based on a list of rules. In some situations it’s useful to have this human input, but it’s challenging to maintain as new rules are needed for each change in user needs or ecosystem.
 
-Consider the problem of deciding whether an animal picture is a lion. A rules-based approach might check for various things: if the animal has 2 ears, whiskers, walks on 4 legs, and is large. But what if you forget to include a rule for no stripes? What if the picture is of a lion cub, which isn’t large?
+Consider the problem of deciding whether an animal picture is a lion. A rules-based approach might check for various things: if the animal has two ears, whiskers, walks on four legs, and is large. But what if you forget to include a rule for no stripes? What if the picture is of a lion cub, which isn’t large?
 
 A machine learning approach would be able to look through a large number of examples to find the patterns of what a lion looks like without being explicitly told. ML systems are easier to update as user needs and the ecosystem changes. Some more advantages and disadvantages of both approaches are shown here.
+
+References:
+https://en.wikipedia.org/wiki/Rule-based_system
 -->
 
 ---
@@ -365,7 +368,9 @@ Some machine learning approaches (like deep learning) can automatically detect i
 Video recommendation?
 
 <!--
-Say your goal is to give good video recommendations to viewers. What features or distinguishing information might be useful?
+Say your goal is to give good video recommendations to viewers. 
+
+Quick discussion: What features or distinguishing information might be useful?
 
 Examples include video topic, number of views, creator of video
 -->
@@ -375,7 +380,7 @@ Examples include video topic, number of views, creator of video
 Price of a house?
 
 <!--
-What if your goal is to predict the price of a house?
+Quick discussion: What if your goal is to predict the price of a house?
 
 Examples include location, number of bedrooms, size of property
 -->
@@ -385,7 +390,7 @@ Examples include location, number of bedrooms, size of property
 Which ad to display?
 
 <!--
-What if you’re predicting which ad to display to someone using google search?
+Quick discussion: What if you’re predicting which ad to display to someone using google search?
 
 Examples include user’s query, type of device, time of day
 -->
@@ -405,7 +410,9 @@ These features are used in a model to make predictions.
 a mathematical way the patterns and insights that a machine learning system learns from examples and is used to make predictions
 
 <!-- 
-A model specifies how your machine learning system will actually learn patterns and insights. The model will then make predictions based on what it learned. Different models perform better on different problems. We’ll discuss several common types of models in a later lecture. For example, (price of house) = 100 * (square footage of house). If the house is 1500ft^2, then we forecast the price to be $150,000.
+A model specifies how your machine learning system will actually learn patterns and insights. The model will then make predictions based on what it learned. Different models perform better on different problems. 
+
+We’ll discuss several common types of models in a later lecture. For example, (price of house) = 100 * (square footage of house). If the house is 1500ft^2, then we forecast the price to be $150,000.
 -->
 
 ---
@@ -447,5 +454,7 @@ when a model conforms too much to its training data and cannot generalize to mak
 <!--
 Overfitting occurs when a model conforms too much to its training data and cannot generalize to make predictions about new data. For example, if none of the tigers in the training data have white fur, the model could assume all tigers have orange fur.
 
-Just like the child from the zoo, a machine learning model will do the best it can with the information it has. Overfitting can be mitigated by looking for blind spots and bias in data and processes. It might also be a sign you need more training data. We’ll have a deeper discussion of how to improve performance of machine learning models, including reducing overfitting, later in the class.
+Just like the child from the zoo, a machine learning model will do the best it can with the information it has. Overfitting can be mitigated by looking for blind spots and bias in data and processes. It might also be a sign you need more training data. 
+
+We’ll have a deeper discussion of how to improve performance of machine learning models, including reducing overfitting, later in the class.
 -->
