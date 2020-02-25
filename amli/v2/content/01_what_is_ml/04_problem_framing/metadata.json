@@ -1,7 +1,7 @@
 {
-  "name": "Machine Learning Fairness",
+  "name": "Machine Learning Problem Framing",
   "learning objectives": [
-    "Understand some ways in which ML biases can have real ethical consequences."
+    "Understand when machine learning is useful and when it is not"
   ],
   "colabs": [],
   "duration": {

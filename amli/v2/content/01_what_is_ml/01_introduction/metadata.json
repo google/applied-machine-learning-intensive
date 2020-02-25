@@ -1,30 +1,12 @@
 {
   "name": "Introduction to Machine Learning",
-  "bug": "b/129331119",
-  "colabs": [],
-
-  "Learning-objectives": [
-    "Understand basic machine learning terminology.",
+  "learning objectives": [
+    "Understand basic machine learning terminology."
   ],
-
-  "concepts": {
-    "prerequisite": [
-      "programming:python",
-      "linear-algebra",
-      "statistics:probability",
-    ],
-    
-    "introduced": [
-      "models",
-	  "models:training",
-	  "models:training:overfitting"
-    ]
-  },
-
+  "colabs": [],
   "duration": {
     "lecture": 60
   },
-
   "materials": [],
   "handouts": [],
   "resources": [],
