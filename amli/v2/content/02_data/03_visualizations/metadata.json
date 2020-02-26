@@ -1,12 +1,20 @@
 {
   "name": "Visualizations",
-  "bug": "b/129331483",
   "colabs": [
-    "colab1.ipynb",
-    "colab2.ipynb"
+    "colab.ipynb"
   ],
   "slides": [
-    "https://docs.google.com/presentation/d/1owLr7j_oaf8zLCw4S6L0VYjWbbPcypIlNGSJ7i-KGTk/edit"
+    "slides.md"
+  ],
+  "learning objectives": [
+    "Create and interpret pie charts.",
+    "Create and interpret bar charts.",
+    "Create and interpret line charts.",
+    "Create and interpret scatter plots.",
+    "Create and interpret heat maps.",
+    "Create charts with Matplotlib.",
+    "Create charts with seaborn.",
+    "Determine which visualization is most appropriate for a dataset"
   ],
   "materials": [],
   "resources": [],
