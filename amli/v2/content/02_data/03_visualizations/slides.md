@@ -9,14 +9,14 @@ patterns to better understand our datasets. There are many varieties of
 visualizations, and in this lecture we will go over some of the most common
 visualizations. We will show scenarios when each visualization is useful.
 
-To start, we want to examine a scenario when a visualization is particularly helpfu
+To start, we want to examine a scenario when a visualization is particularly helpful
 -->
 
 ---
 
 # Visualizations: Raw Data
 
-What patterns can you see in this raw data of common PIN numbers?
+What patterns can you see in these raw data of common PIN numbers?
 
 {.column}
 
@@ -24,7 +24,8 @@ What patterns can you see in this raw data of common PIN numbers?
 
 <!--
 Here you can see a dataset containing pin numbers. Given the raw data shown, can
-you see any patterns?
+you see any patterns?  .... Not really. You may notice that 1111 is repeated a few times, 
+but other than that it's difficult. 
 
 Source: Copyright Google
 -->
@@ -51,10 +52,10 @@ Source: Copyright Google
 
 # Visualizations: Heatmap
 
-![](res/heatmap-repeated.png)
+![](res/heatmap-repeat.png)
 
 <!--
-Here we see that repeated pairs of number are common. This is shown by the
+Here we see that repeated pairs of numbers are common. This is shown by the
 diagonal line.
 
 Source: Copyright Google
@@ -87,18 +88,6 @@ Source: Copyright Google
 
 ---
 
-# Visualizations: Misleading
-
-# TODO
-
-<!--
-# TODO: Find or create a good image of a misleading chart.
-
-Student slide: https://docs.google.com/presentation/d/11qcomwiyMURtVlMA9Toxrl8fj-MwVrjymhctJTLbxyg/edit#slide=id.p10
--->
-
----
-
 # Visualizations: Chart Types
 
 ![](res/charts.png)
@@ -107,8 +96,7 @@ Student slide: https://docs.google.com/presentation/d/11qcomwiyMURtVlMA9Toxrl8fj
 There are many different types of charts. This is just a sample of types of
 charts that you might see to visualize data.
 
-# TODO: I'm pretty sure that we need to make our own images or find permissible
-ones.
+Source: Copyright Google
 -->
 
 ---
@@ -120,7 +108,7 @@ ones.
 <!--
 Pie Charts are good for representing percentages of a whole. Pie charts are great for representing data that is in the form of fractions adding up to 1 or percentages adding up to 100. They create a natural comparison between portions of a whole.
 
-# TODO: Check with the students about the source of this image
+Source: Copyright Google
 -->
 
 ---
@@ -139,7 +127,7 @@ Problems:
 Think pair share: How could it be better represented?
 Would appear better as a bar chart; comparing the pieces side by side rather than as parts of a whole.
 
-# TODO: Check with the students about the source of this image
+Source: Copyright Google
 -->
 
 ---
@@ -158,7 +146,7 @@ Why:
 
 In general bar charts are good for representing categorical data, as the x axis can be used to represent categories very easily and the bars create a natural comparison between categories.
 
-# TODO: Check with the students about the source of this image
+Source: Copyright Google
 -->
 
 ---
@@ -179,7 +167,7 @@ Context around it makes it bad - if you want a max from the hours of the tempera
 Also: Usually bar charts go in descending order of size but since these x values have a meaningful ordering we can’t properly construct the chart
 
 
-# TODO: Check with the students about the source of this image
+Source: Copyright Google
 -->
 
 ---
@@ -200,7 +188,7 @@ Why:
 
 In general for data that could be well fit with a function (i.e. an x,y category where every x has just one correlating y value that strongly correlate in a mathematical way) a line graph is a fantastic choice. It allows you to make inferences on what values would be that weren’t in the original dataset, expanding your ability to analyze your data.
 
-# TODO: Check with the students about the source of this image
+Source: Copyright Google
 -->
 
 ---
@@ -220,7 +208,7 @@ Problems:
   * These gaps are missing when seeing it as a continuous line
 
 
-# TODO: Check with the students about the source of this image
+Source: Copyright Google
 -->
 
 ---
@@ -238,8 +226,7 @@ Why:
 
 In general if you have x,y data where you have multiple y values for every x, a scatter plot is a good choice as it allows you to see all the data clearly and doesn’t average out y values for a given x like a line graph would.
 
-
-# TODO: Check with the students about the source of this image
+Source: Copyright Google
 -->
 
 ---
@@ -255,7 +242,7 @@ Problems:
 * Too many points to draw conclusions
 * There may be a higher concentration of points in some areas, but in this format we cannot tell
 
-# TODO: Check with the students about the source of this image
+Source: Copyright Google
 -->
 
 ---
@@ -279,7 +266,32 @@ Answers:
 * Data with a linear (or other basic math) correlation (an x,y category that strongly correlate in a mathematically easy to fit way)
 * Data with representing different proportions of a whole (percentages)
 
-# TODO: Check with the students about the source of this image
+Source: Copyright Google
+-->
+
+---
+
+# Which Visualization is Best?
+
+Which type of visualization do you think would best represent following data?
+
+* Line chart
+* Bar chart 
+* Scatter Plot
+* Line chart or Bar Chart with averages
+* Heat map
+* Pie Chart
+
+<!--
+
+Think pair share: Have students discuss the possible charts that would be good for each of these types of data. It might be heloful to write the following list on the board, or have the students take notes, so they can reference it during their discussions with peers.
+
+* Line chart or bar chart depending on scope of the data
+* Scatter Plot
+* Line chart or Bar Chart w/averages?
+* Heat map - maybe on a US map
+* Pie Chart
+
 -->
 
 ---
@@ -292,6 +304,8 @@ Which type of visualization do you think would best represent the data below?
 
 <!--
 Quickly look at the data come up with a prediction for which type of visualization should be used.
+
+Source: Copyright Google
 -->
 
 ---
@@ -309,6 +323,8 @@ Pie Chart - could work, good if you want to see how the bag has been portioned o
 Bar Chart - could work, good because the data is categorical better for analysis between individual candy types
 Scatter Plot - not good, draws correlation + x axis has no meaningful ordering
 Line Graph - not good, draw a correlation where there is none in the space between chocolate types - masks the true values
+
+Source: Copyright Google
 -->
 
 ---
