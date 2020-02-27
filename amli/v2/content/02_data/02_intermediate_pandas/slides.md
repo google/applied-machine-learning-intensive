@@ -44,7 +44,10 @@ most basic is the `.shape` property of a DataFrame.
 What is shape?
 
 Shape is a property of a DataFrame that lets you know the number of rows and
-columns in the DataFrame. You might remember that NumPy has a `.shape` attribute
+columns in the DataFrame. Returns a tuple with dimensions of data frame. 
+Specifically, (# rows, # columns).
+
+If you know about NumPy, then you may recall that NumPy has a `.shape` attribute
 on NumPy arrays. Pandas `.shape` has the same functionality. The primary
 difference is that NumPy supports n-dimensional matrices where n can be greater
 than two while Panda's DataFrame objects typically just have two dimensions:
@@ -116,9 +119,12 @@ Let's start by taking a look at row filtering.
 ![](res/table_for_row_filter.png)
 
 <!--
-In this slide we see data from a DataFrame. The DataFrame has five columns
-and four rows. Say that we would like to find people with more than two dogs.
+In this slide we see data from a DataFrame.
+The DataFrame has four rows and five columns, so df.shape would return (4,5).
+Say that we would like to find people with more than two dogs.
 How would we do that?
+
+Source: Copyright Google
 -->
 
 ---
@@ -126,15 +132,22 @@ How would we do that?
 # Filtering: Rows
 
 ```python
-df[df[num_pet_dogs] > 1]
+df[df['num_pet_dogs'] > 1]
 ```
 
 ![](res/table_more_than_two_dogs.png)
 
 <!--
-Here we have put the expression `df[num_pet_dogs] > 1` inside another selector
-for `df`. The inner-expression creates a "boolean index" that is then used to
-select only rows where the expression is true.
+Here we have put the expression `df['num_pet_dogs'] > 1` inside another selector
+for `df`. The inner-expression creates a "boolean index," which is an index that is 
+the same length as the dataframe (in this case the length is 4), where an entry is True if num_pet_dogs > 1. 
+For this specific example,`df['num_pet_dogs'] > 1` returns an index with entries True, False, True, False.
+Then we take df[boolean index], and this selects the rows for which the boolean value is True. 
+
+Note that a dataframe is returned. You may want to assign this to a new variable to work with it further. 
+This filtering is not done in place and does not modify the original dataframe, df. 
+
+Source: Copyright Google
 -->
 
 ---
@@ -150,21 +163,26 @@ locate someone. If we wanted to make the data a little more anonymous we could
 filter out the 'last_name' and 'state' columns.
 
 How would we do that?
+
+Source: Copyright Google
 -->
 
 ---
 
 # Filtering: Columns
 
-![](res/table_less_pii.png)
-
 ```python
 df[[‘first_name’, ‘num_pet_dogs’, ‘num_pet_cats’]]
 ```
+
+![](res/table_less_pii.png)
+
 <!--
 To filter by columns we can also use the DataFrame selector. Instead of passing
 in a boolean index, we pass in a list of string that match the column names that
 we want to keep.
+
+Source: Copyright Google
 -->
 
 ---
@@ -238,6 +256,8 @@ that we can **group** our rows by state and find the mean count of cats and dogs
 per owner per state.
 
 How would we do that?
+
+Source: Copyright Google
 -->
 
 ---
@@ -260,6 +280,8 @@ owner'.
 
 There are many other statistics that we can gather when grouping data in a
 `DataFrame`. These include min, max, count, standard deviation, and more.
+
+Source: Copyright Google
 -->
 
 ---
@@ -281,6 +303,7 @@ columns or even multiple statistics for some columns.
 Here you can see that we are grouping by 'Age' and calculating different
 statistics for the 'Height' and 'Weight' columns. We are doing this by passing a
 dictionary of aggregation requests to the `agg()` function.
+
 -->
 
 ---
@@ -315,6 +338,8 @@ contains first names and a count of the number of children that each person has.
 You can see that 'first_name' is the common column between the two tables.
 
 Let's see how Pandas would merge these tables.
+
+Source: Copyright Google
 -->
 
 ---
@@ -330,6 +355,8 @@ pd.merge(df1, df2)
 <!--
 Here we can see the call to `merge()`. It accepts two `DataFrame` objects and
 merges them on common column names. In this case, 'first_name'.
+
+Source: Copyright Google
 -->
 
 ---
@@ -345,6 +372,8 @@ our prevous slide, Seo-yeon had a zero-count of children. It is common for rows
 with zero values to be missing from tables.
 
 Any guesses on what happens?
+
+Source: Copyright Google
 -->
 
 ---
@@ -362,6 +391,8 @@ In this case we completely lost the record of Seo-yoen! Since Pandas couldn't
 find a match it didn't include the datapoint.
 
 This is standard join functionality. There are ways to get around this though.
+
+Source: Copyright Google
 -->
 
 ---
@@ -383,6 +414,8 @@ keeps unmatch rows found in both tables.
 
 In any of the outer join cases, missing data is filled in with null values.
 `NaN` for numbers. `None` for strings and other objects.
+
+Source: Copyright Google
 -->
 
 ---
@@ -411,6 +444,8 @@ Let's say that we want to view that data sorted by the number of cats owned by
 each person in ascending order.
 
 How would we do that?
+
+Source: Copyright Google
 -->
 
 ---
@@ -426,6 +461,8 @@ df.sort_values('num_pet_cats')
 <!--
 Here we can see the `sort_values()` method in use. We have asked to sort by the
 'num_pet_cats' column. The default sort order is ascending.
+
+Source: Copyright Google
 -->
 
 ---
