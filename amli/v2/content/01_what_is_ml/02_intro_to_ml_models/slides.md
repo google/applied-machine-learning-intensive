@@ -2,8 +2,7 @@
 
 <!--
 We've learned about machine learning and artificial intelligence at a very high level. In this
-session we'll dive a little deeper and talk about what machine learning can do and what types of
-models support different problem domains.
+session we'll dive a little deeper and talk about what machine learning can do and what types of models support different problem domains.
 -->
 
 ---
@@ -11,20 +10,18 @@ models support different problem domains.
 # What **can** Machine Learning do?
 
 <!--
-Though machine learning is not new, its application in modern life has really started to expand over
-the last decade. What are some machine learning products that you know about? How has machine learning
-shown up and improved something you use?
+Though machine learning is not new, its application in modern life has really started to expand over the last decade. 
 
-*Give the class a few minutes to think of and call out answers. There should be a wide variety of
-answers. If not, give some examples like self-driving cars, language recognition, facial
+Quick discussion: What are some machine learning products that you know about? How has machine learning shown up and improved something you use?
+
+*Give the class a few minutes to think of and call out answers. There should be a wide variety of answers. If not, give some examples like self-driving cars, language recognition, facial
 recognition, and whatever else you can think of.*
 
 Think of the diversity of applications of machine learning that we just mentioned. Given that
 diversity, it is obvious machine learning is much more than just one thing. Yes, it involves
 learning from data. But how it learns, what it learns, and what it can predict varies widely.
 
-The machine learning community has settled on a few groupings of model types, each with different
-applications.
+The machine learning community has settled on a few groupings of model types, each with different applications.
 -->
 
 ---
@@ -40,13 +37,10 @@ distinguish between two or more classes. These classes are defined based on your
 the machine learning system.
 
 For example, to answer the question, "Is this a lion?" you would choose the classes "yes" and
-"no" (the problem of choosing between two classes is also called “binary classification”). To
-answer the question, "What type of cat is this?" you might choose the classes "lion," "tiger,"
-and "kitten."
+"no" (the problem of choosing between two classes is also called “binary classification”). To answer the question, "What type of cat is this?" you might choose the classes "lion," "tiger," and "kitten."
 
 Classification can be used to identify objects in images or even identify whether credit card transactions are fraudulent or not.
 
-What are some examples that you know of that would be machine learning classification?
 -->
 
 ---
@@ -62,11 +56,9 @@ the two classes and predict which class a new data point is in.
 The system can predict which class to apply to new data after training on existing data labeled
 with the correct class. 
 
-What are some other examples of a classification system that you can think of?
-*(very open ended, possible ex):
-who is speaking right now?
-identify objects in images
-label emails as spam*
+Quick discussion: What are some other examples of a classification system that you can think of?
+
+*Very open ended. Possible answers: who is speaking right now, identify objects in images, label emails as spam*
 -->
 
 ---
@@ -97,10 +89,8 @@ They might sort the pictures into three groups based on size.
 
 Clustering systems similarly attempt to find “clusters” of similar data examples.
 
-What are other examples of clustering you can think of? What features might a clustering system use to create clusters?
-*(many possible ex):
-suggesting similar videos
-grouping many examples of soft drinks from around the world)
+Quick discussion: What are other examples of clustering you can think of? What features might a clustering system use to create clusters?
+*Very open ended. Possible answers: suggesting similar videos, grouping many examples of soft drinks from around the world*
 -->
 
 ---
@@ -134,11 +124,9 @@ some data points, then makes predictions based on that line.
 Regression may also discover a more complicated pattern, such as this sine-like pattern of sea
 surface temperature every year.
 
-What are other examples of regression? What features might be useful for that
+Quick discussion: What are other examples of regression? What features might be useful for that
 regression system?
-*(possible ex):
-estimate arrival time based on traffic and distance
-predict crop yield based on weather, time of year*
+*Possible answers: estimate arrival time based on traffic and distance, predict crop yield based on weather and time of year*
 
 Note: *logistic* regression is a classification technique (with a binary target), and the similar names can be confusing. But typically, when we say "regression" we mean predicting a continuous variable.
 -->
@@ -161,12 +149,8 @@ Finally, sequence prediction suggests what might come next, based on previous ex
 Autocomplete is an example of a sequence prediction: predicting what word is most likely to be
 entered after typing part of a phrase.
 
-What are some other examples of sequence predictions?
-*(possible ex):
-translations based on context
-password strength (how predictable is the next letter from the previous ones)
-autocomplete
-marketbasket* 
+Quick discussion: What are some other examples of sequence predictions?
+* Possible answers: translations based on context, password strength (how predictable is the next letter from the previous ones), autocomplete, marketbasket* 
 -->
 
 ---
@@ -197,6 +181,8 @@ Similar to statistics or data science approaches, ML cannot be used to show caus
 -->
 
 ---
+
+# Dataset Quality
 
 What attributes of a dataset would you consider ideal?
 
