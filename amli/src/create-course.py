@@ -67,7 +67,7 @@ script will:
 
 from absl import app
 import os, sys, shutil, getopt, re
-import json
+import json, nbformat
 
 from googleapiclient.discovery import build
 from google.auth.transport.requests import Request
@@ -108,7 +108,7 @@ def get_id_from_link(url: str) -> str:
     return folder_id
     
 
-def update_colabl_link():
+def update_colab_link():
     f = open("slidesTest.md","r", encoding="latin1")
     md = f.read()
     f.close()
@@ -124,52 +124,67 @@ def scan_metadata():
         data = json.load(f)
         for label in data:
             if 'slides' in label:
-                data[label] = ["link"] #need to change to be correct
+                update_colab_link()
+                #data[label] = ["link"] #need to change to be correct
+            if 'documents' in label: # would they be label documents or materials, handouts etc
+                # do they have convertor for docs similar to mg2sldies
+                print("")
     with open("metadate.json", 'w') as f:
         f.write(json.dumps(data))
 
+def edit_colabmd():
+    with open("test.ipynb", "r+") as f:
+        notebook = nbformat.read(f, as_version=4)
+        for cell in notebook.cells:
+            if cell.source.startswith('> Concepts'):
+                ## delete concepts block
+                print("la")
+    
+    #nbformat.write(notebook, f)
+
 
 def main(args):
+    edit_colabmd()
     # Get arguments for source and destination folders
     # opts, args = getopt.getopt(sys.argv[1:],"g")
     # if opts and "-g" in opts[0]: # Can use '-g' to specify local repository
     #     drive = args[0]
-    if len(args) > 1:
-        # repo = args[0]
-        folder_id = get_id_from_link(args[1])
-    else:
-        raise SystemExit("\x1b[31m" # Set text color to red
-                         "Error: No source or destination given.\n"
-                         "\x1b[32m" # Set text color to green
-                         "Usage: create-course.py [-g | <repo folder>] "
-                         "<Google-Drive folder shareable link>"
-                         "\x1b[0m" # Reset text color
-                        )
+    # if len(args) > 1:
+    #     # repo = args[0]
+    #     folder_id = get_id_from_link(args[1])
+    # else:
+    #     raise SystemExit("\x1b[31m" # Set text color to red
+    #                      "Error: No source or destination given.\n"
+    #                      "\x1b[32m" # Set text color to green
+    #                      "Usage: create-course.py [-g | <repo folder>] "
+    #                      "<Google-Drive folder shareable link>"
+    #                      "\x1b[0m" # Reset text color
+    #                     )
     
     
     
-    # authenticate google drive
-    creds = drive_integration.authenticate()
+    # # authenticate google drive
+    # creds = drive_integration.authenticate()
 
-    # Connect to drive api
-    service = build('drive', 'v3', credentials=creds)
+    # # Connect to drive api
+    # service = build('drive', 'v3', credentials=creds)
 
-    tracks = get_sub_folders()
-    for track in tracks:
-        path = f"{CONTENT}/{track}"
-        units = get_sub_folders(track)
-        track_info = json.load(open(f"{path}/metadata.json"))
-        track_name = track_info["name"]
+    # tracks = get_sub_folders()
+    # for track in tracks:
+    #     path = f"{CONTENT}/{track}"
+    #     units = get_sub_folders(track)
+    #     track_info = json.load(open(f"{path}/metadata.json"))
+    #     track_name = track_info["name"]
         
-        # Create track folder in drive
-        file_metadata = {
-            "name": track,
-            "mimeType": "application/vnd.google-apps.folder",
-            "parents": [folder_id]
-        }
-        file = service.files().create(body=file_metadata, fields='id').execute() # pylint: disable=no-member
-        track_id = file.get('id')
-        print(f"Folder ID: {track_id}")
+    #     # Create track folder in drive
+    #     file_metadata = {
+    #         "name": track,
+    #         "mimeType": "application/vnd.google-apps.folder",
+    #         "parents": [folder_id]
+    #     }
+    #     file = service.files().create(body=file_metadata, fields='id').execute() # pylint: disable=no-member
+    #     track_id = file.get('id')
+    #     print(f"Folder ID: {track_id}")
 
         # os.mkdir(f"{temp_folder}/{track}")
 
