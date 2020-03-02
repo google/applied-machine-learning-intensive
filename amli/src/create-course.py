@@ -99,6 +99,7 @@ def get_sub_folders(folder: str = ""):
 
 def get_id_from_link(url: str) -> str:
     """ Returns the id for a file on Google Drive when given a link to that file
+    
     Input:
         url: a link to a file on Google Drive
     Returns:
@@ -111,6 +112,17 @@ def get_id_from_link(url: str) -> str:
 
 
 def create_file(service, filename: str, parent: str) -> str:
+    """Creates a new folder in a specified parent directory in Google Drive 
+    using the API
+
+    Inputs:
+        service:        An API resource that the call is being made to 
+        filename: str - A name for the file to be created
+        parent:   str - The id of the parent directory for the file to be 
+                        created in
+    Returns:    
+        The id of the newly created file
+    """
     file_metadata = {
             "name": filename,
             "mimeType": "application/vnd.google-apps.folder",
@@ -118,36 +130,64 @@ def create_file(service, filename: str, parent: str) -> str:
         }
     print(f"Creating File: {file_metadata['name']}" \
           f" in folder with ID: {file_metadata['parents']}")
-    file = service.files().create(body=file_metadata, fields='id').execute() # pylint: disable=no-member
-    file_id = file.get('id')
+    file = service.files().create(body=file_metadata,   # pylint: disable=no-member
+                                  fields="id",
+                                  supportsAllDrives=True)
+    file = file.execute()
+    file_id = file.get("id")
     # print(f"Track ID: {file_id}")
     return file_id
+
+def upload(service, filename: str, parent: str):
+    """ Uploads a file to Google Drive using the API
+    
+    Inputs:
+
+    Returns:
+
+    """
+    if re.match(r".ipynb",filename):
+        mimeType = "application/vnd.google.colaboratory"
+    elif re.match(r".md",filename):
+        mimeType = "text/markdown"
+    else:
+        mimeType = "text/plain"
+    file_metadata = {"name": filename,
+                     "mimeType": mimeType,
+                     "parents": [parent]
+                    }
+    
+    file = service.files().create(body=file_metadata,
+                                  uploadType="multipart",
+                                  fields="id").execute()
+    print(f"File ID: {file.get('id')}")
+
 
 def update_colab_link():
     f = open("slidesTest.md","r", encoding="latin1")
     md = f.read()
     f.close()
     newLink = "test"
-    x = re.sub(r'https://colab.research.google.com/drive/[a-zA-Z0-9\-]+', 
+    x = re.sub(r"https://colab.research.google.com/drive/[a-zA-Z0-9\-]+", 
         "https://colab.research.google.com/drive/" + newLink, md) #matches for re- 
 
-    with open("slidesTest.md", 'w') as f:    
+    with open("slidesTest.md", "w") as f:    
         f.write(x)
 
 def scan_metadata():
     with open("metadata.json", "r+") as f:
         data = json.load(f)
         for label in data:
-            if 'slides' in label:
+            if "slides" in label:
                 data[label] = ["link"] #need to change to be correct
-    with open("metadate.json", 'w') as f:
+    with open("metadate.json", "w") as f:
         f.write(json.dumps(data))
 
 
 def main(args):
     # Get arguments for source and destination folders
     # opts, args = getopt.getopt(sys.argv[1:],"g")
-    # if opts and "-g" in opts[0]: # Can use '-g' to specify local repository
+    # if opts and "-g" in opts[0]: # Can use "-g" to specify local repository
     #     drive = args[0]
     if len(args) > 1:
         # repo = args[0]
@@ -166,7 +206,7 @@ def main(args):
     creds = drive_integration.authenticate()
 
     # Connect to drive api
-    service = build('drive', 'v3', credentials=creds)
+    service = build("drive", "v3", credentials=creds)
 
     tracks = get_sub_folders()
     for track in tracks:
@@ -186,7 +226,7 @@ def main(args):
             unit_name = unit_info["name"]
             
             # debugging
-            print(f"\033[KGenerating: {unit_name}",end="\r",flush=True)
+            # print(f"\033[KGenerating: {unit_name}",end="\r",flush=True)
             # TODO create unit folder in drive
         #     os.mkdir((dest := f"{temp_folder}/{track}/{unit}"))
 
@@ -198,7 +238,8 @@ def main(args):
         #             format_colab.format_colab(dest_nb)
         #             # TODO update metadata.json to link to copy
         #             pass
-    print("\033[KDone")
+    # print("\033[KDone")
+    print("Done")
 
 if __name__ == "__main__":
     app.run(main)
