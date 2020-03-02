@@ -18,6 +18,8 @@ Source: Wikipedia
 * "General-purpose" means it can be used for anything, including creating web apps (e.g. YouTube), small scripts (e.g. automatically renaming photos based on data from the camera), machine learning, data visualization, and much more.
 
 One of the powers of Python is that it has many built-in libraries and many more third-party libraries to give it specialized abilities. We'll explore many of these specialized libraries over the course of this program. 
+
+Source: Copyright Google
 -->
 
 ---
@@ -41,8 +43,10 @@ When looking at Python reference docs, look for the version number in the URL.
 There are multiple ways to run python:
 * You can open the interactive interpreter and type arbitrary code.
 * You can run a python file and all the code inside will get executed.
-* You can run cell fulls of Python code in a notebook environment like Colab.
+* You can run cell fulls of Python code in a notebook environment like Colab or Jupyter.
 * If you're in a notebook, you can run all the cells in order (recommended) but you can also choose to run individual cells which might lead to unexpected results. 
+
+Source: Copyright Google
 -->
 
 ---
@@ -70,6 +74,10 @@ In practice, indentation makes it hard to have long functions with several level
 
 ![](res/introtopython6.png)
 
+<!--
+Source: Copyright Google
+-->
+
 ---
 
 # String are defined with ', ", ''', and """
@@ -80,6 +88,10 @@ In practice, indentation makes it hard to have long functions with several level
 
 ![](res/introtopython7.png)
 
+<!--
+Source: Copyright Google
+-->
+
 ---
 
 # `for` loops always loop over iterables (lists, tuples etc.)
@@ -88,6 +100,10 @@ In practice, indentation makes it hard to have long functions with several level
 * Looping over numbers requires creating a list of numbers. The `range` function makes that pretty easy.
 
 ![](res/introtopython8.png)
+
+<!--
+Source: Copyright Google
+-->
 
 ---
 
@@ -102,12 +118,18 @@ In practice, indentation makes it hard to have long functions with several level
 
 ![](res/introtopython9.png)
 
+<!--
+Source: Copyright Google
+-->
+
 ---
 
 ![](res/introtopythonkeyboard.png)
 
 <!--
 Enough talking, let's get to doing!
+
+Source: #TODO
 -->
 
 ---
@@ -117,3 +139,7 @@ Enough talking, let's get to doing!
 [Full device library](https://standards.google/downloads/)
 
 ![](res/introtopythonlaptop.png)
+
+<!-- 
+Source: #TODO
+-->
