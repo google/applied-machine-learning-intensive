@@ -35,8 +35,8 @@ spell = SpellChecker()
 
 # Global Variables
 outputFile = "TestResults.md"
-contentFolder = "../content/"
-inContentFolder = "../content/"
+contentFolder = "../v2/content/"
+inContentFolder = "../v2/content/"
 #Why are these two variables the same?
 
 def spellCheck(track, unit, colabs, slides):
