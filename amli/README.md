@@ -66,10 +66,6 @@ Sites approved for finding stock images with open licenses are:
    * [Pixabay](https://pixabay.com) using the
      [Pixabay License](https://pixabay.com/service/license/)
 
-Every slide should also have a 'Concepts' section that lists the concepts
-mentioned in the slides. These concepts should map to concepts found in AMLI's
-`concepts.yaml` file.
-
 Here is an example slide:
 
 ```
@@ -83,9 +79,6 @@ Here is an example slide:
 
   Image Details:
   * [tree.png](https://pixabay.com/vectors/tree-silhouette-winter-plant-3979965/): Pixabay License
-
-  Concepts:
-  * models:decision trees
 ```
 
 Before submitting slides, be sure to run the `md2gslides` utility found at

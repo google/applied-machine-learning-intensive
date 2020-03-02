@@ -1,0 +1,16 @@
+{
+  "name": "Machine Learning Problem Framing",
+  "learning objectives": [
+    "Understand when machine learning is useful and when it is not"
+  ],
+  "colabs": [],
+  "duration": {
+    "lecture": 60
+  },
+  "materials": [],
+  "handouts": [],
+  "resources": [],
+  "slides": [
+    "slides.md"
+  ]
+}

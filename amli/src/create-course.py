@@ -67,7 +67,8 @@ script will:
 
 from absl import app
 import os, sys, shutil, getopt, re
-import json, nbformat
+import json
+import nbformat
 
 from googleapiclient.discovery import build
 from google.auth.transport.requests import Request
@@ -79,8 +80,8 @@ from tools import drive_integration, format_colab
 CONTENT = "../content" 
 
 def get_sub_folders(folder: str = ""):
-    """ Returns a list of subfolders folders as strings. Defaults to the top level
-    content folder if not given an argument.
+    """ Returns a list of subfolders folders as strings. Defaults to the top 
+    level content folder if not given an argument.
 
     Args:
         folder: str
@@ -95,6 +96,7 @@ def get_sub_folders(folder: str = ""):
                 if os.path.isdir(f"{path}/{sub_folder}")]
     return contents
 
+
 def get_id_from_link(url: str) -> str:
     """ Returns the id for a file on Google Drive when given a link to that file
     Input:
@@ -106,7 +108,20 @@ def get_id_from_link(url: str) -> str:
         url = url[:-12]
     folder_id = re.split(r"[/.]",url)[-1] # extract id from drive link
     return folder_id
-    
+
+
+def create_file(service, filename: str, parent: str) -> str:
+    file_metadata = {
+            "name": filename,
+            "mimeType": "application/vnd.google-apps.folder",
+            "parents": [parent]
+        }
+    print(f"Creating File: {file_metadata['name']}" \
+          f" in folder with ID: {file_metadata['parents']}")
+    file = service.files().create(body=file_metadata, fields='id').execute() # pylint: disable=no-member
+    file_id = file.get('id')
+    # print(f"Track ID: {file_id}")
+    return file_id
 
 def update_colab_link():
     f = open("slidesTest.md","r", encoding="latin1")
@@ -114,7 +129,7 @@ def update_colab_link():
     f.close()
     newLink = "test"
     x = re.sub(r'https://colab.research.google.com/drive/[a-zA-Z0-9\-]+', 
-        "https://colab.research.google.com/drive/" + newLink, md) #mathces for re- 
+        "https://colab.research.google.com/drive/" + newLink, md) #matches for re- 
 
     with open("slidesTest.md", 'w') as f:    
         f.write(x)
@@ -149,53 +164,45 @@ def main(args):
     # opts, args = getopt.getopt(sys.argv[1:],"g")
     # if opts and "-g" in opts[0]: # Can use '-g' to specify local repository
     #     drive = args[0]
-    # if len(args) > 1:
-    #     # repo = args[0]
-    #     folder_id = get_id_from_link(args[1])
-    # else:
-    #     raise SystemExit("\x1b[31m" # Set text color to red
-    #                      "Error: No source or destination given.\n"
-    #                      "\x1b[32m" # Set text color to green
-    #                      "Usage: create-course.py [-g | <repo folder>] "
-    #                      "<Google-Drive folder shareable link>"
-    #                      "\x1b[0m" # Reset text color
-    #                     )
+    if len(args) > 1:
+        # repo = args[0]
+        folder_id = get_id_from_link(args[1])
+        print(folder_id)
+    else:
+        raise SystemExit("\x1b[31m" # Set text color to red
+                         "Error: No source or destination given.\n"
+                         "\x1b[32m" # Set text color to green
+                         "Usage: create-course.py [-g | <repo folder>] "
+                         "<Google-Drive folder shareable link>"
+                         "\x1b[0m" # Reset text color
+                        )
     
-    
-    
-    # # authenticate google drive
-    # creds = drive_integration.authenticate()
+    # authenticate google drive
+    creds = drive_integration.authenticate()
 
-    # # Connect to drive api
-    # service = build('drive', 'v3', credentials=creds)
+    # Connect to drive api
+    service = build('drive', 'v3', credentials=creds)
 
-    # tracks = get_sub_folders()
-    # for track in tracks:
-    #     path = f"{CONTENT}/{track}"
-    #     units = get_sub_folders(track)
-    #     track_info = json.load(open(f"{path}/metadata.json"))
-    #     track_name = track_info["name"]
+    tracks = get_sub_folders()
+    for track in tracks:
+        path = f"{CONTENT}/{track}"
         
-    #     # Create track folder in drive
-    #     file_metadata = {
-    #         "name": track,
-    #         "mimeType": "application/vnd.google-apps.folder",
-    #         "parents": [folder_id]
-    #     }
-    #     file = service.files().create(body=file_metadata, fields='id').execute() # pylint: disable=no-member
-    #     track_id = file.get('id')
-    #     print(f"Folder ID: {track_id}")
+        track_info = json.load(open(f"{path}/metadata.json"))
+        track_name = track_info["name"]
+        
+        # Create track folder in drive
+        track_id = create_file(service, track, folder_id)
 
-        # os.mkdir(f"{temp_folder}/{track}")
-
-
-        # for unit in units:
-        #     unit_info = json.load(open(f"{path}/{unit}/metadata.json"))
-        #     unit_name = unit_info["name"]
+        units = get_sub_folders(track)
+        for unit in units:
+            unit_id = create_file(service, unit, track_id)
             
-        #     # debugging
-        #     print(f"\033[KGenerating: {unit_name}",end="\r",flush=True)
-        #     # TODO create unit folder in drive
+            unit_info = json.load(open(f"{path}/{unit}/metadata.json"))
+            unit_name = unit_info["name"]
+            
+            # debugging
+            print(f"\033[KGenerating: {unit_name}",end="\r",flush=True)
+            # TODO create unit folder in drive
         #     os.mkdir((dest := f"{temp_folder}/{track}/{unit}"))
 
         #     if (colabs := unit_info.get("colabs")):
