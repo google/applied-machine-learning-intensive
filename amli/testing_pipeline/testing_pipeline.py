@@ -35,8 +35,8 @@ spell = SpellChecker()
 
 # Global Variables
 outputFile = "TestResults.md"
-contentFolder = "../content/"
-inContentFolder = "../content/"
+contentFolder = "../v2/content/"
+inContentFolder = "../v2/content/"
 #Why are these two variables the same?
 
 def spellCheck(track, unit, colabs, slides):
@@ -118,11 +118,11 @@ def imagesLicensed(track, unit, slides):
             tempstring = tempstring[m.end():]
             m = re.search(r'!\[\]\(.*\)', tempstring)
         tempstring = slide
-        m = re.search(r'https?://', tempstring)
+        m = re.search(r'Source: ?https?://', tempstring)
         while m != None:
             sourcecount += 1
             tempstring = tempstring[m.end():]
-            m = re.search(r'https?://', tempstring)
+            m = re.search(r'Source: ?https?://', tempstring)
         if(imagecount > sourcecount):
             toPrint += track + "/" + unit + "/" + slideset + " has unsourced image on slide " + str(slideno) + ".\n\n"
         slideno += 1
