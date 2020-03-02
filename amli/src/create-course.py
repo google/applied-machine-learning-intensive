@@ -139,12 +139,27 @@ def scan_metadata():
         data = json.load(f)
         for label in data:
             if 'slides' in label:
-                data[label] = ["link"] #need to change to be correct
+                update_colab_link()
+                #data[label] = ["link"] #need to change to be correct
+            if 'documents' in label: # would they be label documents or materials, handouts etc
+                # do they have convertor for docs similar to mg2sldies
+                print("")
     with open("metadate.json", 'w') as f:
         f.write(json.dumps(data))
 
+def edit_colabmd():
+    with open("test.ipynb", "r+") as f:
+        notebook = nbformat.read(f, as_version=4)
+        for cell in notebook.cells:
+            if cell.source.startswith('> Concepts'):
+                ## delete concepts block
+                print("la")
+    
+    #nbformat.write(notebook, f)
+
 
 def main(args):
+    edit_colabmd()
     # Get arguments for source and destination folders
     # opts, args = getopt.getopt(sys.argv[1:],"g")
     # if opts and "-g" in opts[0]: # Can use '-g' to specify local repository
