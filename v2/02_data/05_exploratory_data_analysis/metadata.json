@@ -1,11 +1,14 @@
 {
-  "name": "Data Analysis and Manipulation",
-  "bug": "b/129331108",
+  "name": "Exploratory Data Analysis",
   "slides": [
-     "https://docs.google.com/presentation/d/1FuooAOi_v3MbkxQbg1q4vEp_Ful-ucLJ7lFBixnQd9g/edit"
-   ],
+     "slides.md"
+  ],
+  "learning-objectives": [
+    ""
+  ],
   "colabs": [
-    "colab.ipynb"
+    "colab-part1.ipynb",
+    "colab-part2.ipynb"
   ],
   "materials": [],
   "resources": [],
