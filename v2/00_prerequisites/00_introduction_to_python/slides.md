@@ -122,24 +122,4 @@ Source: Copyright Google
 Source: Copyright Google
 -->
 
----
 
-![](res/introtopythonkeyboard.png)
-
-<!--
-Enough talking, let's get to doing!
-
-Source: #TODO
--->
-
----
-
-# Device library: Laptop
-
-[Full device library](https://standards.google/downloads/)
-
-![](res/introtopythonlaptop.png)
-
-<!-- 
-Source: #TODO
--->
