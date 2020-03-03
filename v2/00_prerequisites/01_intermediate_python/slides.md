@@ -103,7 +103,6 @@ For the class:
 
 # Now that we have an instance, we can call **methods** on it
 
-
 ![](res/intermediatepython06.png)
 
 <!--
@@ -187,7 +186,7 @@ Helpful reads:
 
 # **Encapsulation** restricts access to variables and methods in a class
 
-![](res/intermediatepython011.png)
+![](res/intermediatepython11.png)
 
 <!--
 Motivation: Give a few examples of private methods to ensure they have an understanding of what work v. doesn’t practically
@@ -200,7 +199,7 @@ Compare with a partner the  print() options
 
 # **Encapsulation** restricts access to variables and methods in a class
 
-![](res/intermediatepython012.png)
+![](res/intermediatepython12.png)
 
 <!--
 Motivation: Give a few examples of private methods to ensure they have an understanding of what work v. doesn’t practically
@@ -217,7 +216,7 @@ print(Elon._Student__grade) - this does work, if you add the class name before i
 
 # Classes use **naming conventions** to tell you information about what element in the class a variable represents
 
-![](res/intermediatepython013.png)
+![](res/intermediatepython13.png)
 
 <!--
 Motivation: Show the general naming conventions for python classes, as variable names are important here!
@@ -295,12 +294,121 @@ Walk through the different variables and reinforce the super() concept
 # Methods can also be inherited and can be overwritten by child classes
 
 ![](res/intermediatepython18.png)
+
+<!--
+Motivation: Show how inherited methods work
+
+For the class:
+We can call them as normal on Elon our student
+Or we can modify them inside a child class and override the parent method
+-->
+
+---
+
+# You can use code in many ways to generate your own lists of data...
+
 ![](res/intermediatepython19.png)
+
+<!--
+Motivation: Motivate creating data in a concise and easy way with list comprehensions
+
+For the class:
+* Talk with a partner about other ways we could create data other than directly hard coding our list
+* Hints: 
+ * what coding concepts are often used for repetitive actions like adding something to a list 
+ * Can you think of a way to generate random data?
+-->
+
+---
+
+# You can use code in many ways to generate your own lists of data...
+
 ![](res/intermediatepython20.png)
-![](res/intermediatepython021.png)
-![](res/intermediatepython022.png)
-![](res/intermediatepython023.png)
+
+<!--
+Motivation: Motivate creating data in a concise and easy way with list comprehensions
+
+For the class:
+* Walk through each way to generate a list of data
+ * Note: for loop without the variable - we don’t even use the variable inside the for loop so we don’t have to declare one!
+* None of these are that elegant.. Can we think of a more efficient way?
+-->
+
+---
+
+# **List Comprehensions** are compact ways to create lists of data
+
+![](res/intermediatepython21.png)
+
+<!--
+Motivation: Show list comprehensions in a structure that mirrors structures they are already familiar with
+
+For the class:
+* List comprehensions provide a concise way to create lists. 
+* It consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses. The expressions can be anything, meaning you can put in all kinds of objects in lists.
+* The result will be a new list resulting from evaluating the expression in the context of the for and if clauses which follow it.
+* The list comprehension always returns a result list.
+-->
+
+---
+
+# Try to make this code into a list comprehension
+
+
+![](res/intermediatepython21.png)
+
+<!--
+Motivation: Give them an easy way to get to know the syntax of list comprehensions
+
+For the class:
+* Try to write the for loop we have into a list comprehension!
+-->
+
+---
+
+# Try to make this code into a list comprehension
+
+![](res/intermediatepython22.png)
+
+<!--
+Motivation: Give them an easy way to get to know the syntax of list comprehensions
+
+For the class:
+We can see that it follows the exact formula in the bottom, and can still use our for loop without the variable!
+-->
+
+---
+
+# We can also write list comprehensions with conditional statements
+
+![](res/intermediatepython23.png)
+
+<!--
+Motivation: Show how to incorporate conditionals into list comprehensions
+
+For the class:
+If you want to check something before adding it to the list, you can! 
+-->
+
+--- 
+
+# Try to make this code into a list comprehension
+
 ![](res/intermediatepython24.png)
+
+<!--
+Motivation: Show how to incorporate conditionals into list comprehensions
+
+For the class:
+Try to make this into a list comprehension including the conditional statement 
+-->
+
+---
+
+
+
 ![](res/intermediatepython25.png)
 ![](res/intermediatepython26.png)
+
+
 ![](res/intermediatepython27.png)
