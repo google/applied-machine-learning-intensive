@@ -28,8 +28,8 @@ import re # for regex
 
 # Global Variables
 outputFile = "Map.md"
-contentFolder = "../content"
-inContentFolder = "../content/"
+contentFolder = "../v2/content/"
+inContentFolder = "../v2/content/"
 
 def parseJSON(lines):
     ''' Helper that parses JSON
@@ -45,27 +45,61 @@ def parseJSON(lines):
     parsed_json = json.loads(content)
     return parsed_json
 
+def getSlideDuration(slides, track, unit):
+    ''' Helper that gets the slide duration from the speaker notes
+        Asssumes a speaking rate of 130 words/ minute
+        Uses token (@Exercise: description: length) to find exercise duration
+        in speaker notes
+    '''
+    toPrint = ""
+    for slideset in slides:
+        slidefile = open(inContentFolder + str(track) + "/" + str(unit) + "/" + slideset)
+        slidecontent = slidefile.read()
+        slidecontent = re.sub(r'\"id\": \"............\"', '', slidecontent)
+        slidewords = slidecontent.split()
+        newslidewords = []
+        for index in range(len(slidewords)):
+            if(len(slidewords[index]) > 1):
+                if(slidewords[index][0] == "(") or (slidewords[index][0] == "'") or (slidewords[index][0] == "\""):
+                    slidewords[index] = slidewords[index][1:]
+            if(slidewords[index][-1] == ")") or (slidewords[index][-1] == "'") or (slidewords[index][-1] == "\"") or (slidewords[index][-1] == ".") or (slidewords[index][-1] == ",")or (slidewords[index][-1] == "?") or (slidewords[index][-1] == "!")or (slidewords[index][-1] == ":") or (slidewords[index][-1] == ";"):
+                slidewords[index] = slidewords[index][:-1]
+            if(len(slidewords[index]) > 1):
+                if(slidewords[index][-1] == "'"):
+                    slidewords[index] = slidewords[index][:-1]
+            if(len(slidewords[index]) > 1):
+                if(slidewords[index][0] == "'"):
+                    slidewords[index] = slidewords[index][1:]
+        m = re.search(r'[^a-zA-Z\']', slidewords[index])
+        if(m == None) and (len(slidewords[index]) > 0):
+          newslidewords += [slidewords[index]]
+        # Add exercises with Key (@Exercise: description: length)
+        duration = len(slidewords)/130
+        toPrint += "     * Duration:" + duration + "minutes \n"
+        
+    return toPrint
+
+
 def main():
     # Opening a markdown file to write all of the output to
     outmd = open(outputFile, "w")
     outmd.write("# AMLI Course Map\n\n")
 
     # Get all folders in the content folder
-    tracks = [dI for dI in os.listdir(contentFolder) if os.path.isdir(
-        os.path.join(contentFolder,dI))]
-
+    tracks = [dI for dI in os.listdir(contentFolder) if os.path.isdir(os.path.join(contentFolder,dI))]
+    
     # Separating the numbered tracks from the extra content
     sequencetracks = []
     extratracks = []
     for track in tracks:
-        if (track[0:2] == "t0") or (track[0:2] == "t1"):
+        if (track[0:1] == "0") or (track[0:1] == "1"):
             sequencetracks += [track]
         else:
             extratracks += [track]
 
     sequencetracks.sort()
     extratracks.sort()
-
+    print(tracks)
     # Write our Track Count - currently doesn't contain extra tracks
     outmd.write("Sequence Track Count: " + str(len(sequencetracks)) + "\n")
 
@@ -76,109 +110,130 @@ def main():
     # Goes through each track, gets official track name and unit names
     unitcount = 0
     for track in sequencetracks:
-        # Look through track metadata
-        jsonfile = open(inContentFolder + str(track) + "/metadata.json", "r")
-        lines = jsonfile.readlines()
-        for line in lines:
-            if "name" in line:
-                linelist = line.split('"')
-                string = "### " + track[1:3] + ": " + linelist[-2] + "\n"
-                delayprint += string
-        jsonfile.close()
-        
-        # Counts up units and gets names
-        units = [dI for dI in os.listdir(inContentFolder + track) if os.path.isdir(
-            os.path.join(inContentFolder + track,dI))]
-        units.sort()
-        for unit in units:
-            unitcount += 1
-            jsonfile = open(inContentFolder + str(track) + "/" + str(unit) 
-                + "/metadata.json", "r")
+        if (track[0:2] == "00") or (track[0:2] == "01") or (track[0:2] == "02"):
+            '''
+            # Look through track metadata
+            jsonfile = open(inContentFolder + str(track) + "/metadata.json", "r")
             lines = jsonfile.readlines()
-            parsed_json = parseJSON(lines)
-            #print(parsed_json["name"])
-            string = " * **" + unit[0:2] + ": " + parsed_json["name"] + "**\n"
-            delayprint += string
-            colabs = []
-            if "colabs" in parsed_json.keys():
-                #print(str(len(parsed_json["colabs"])) + " Colab notebooks")
-                string = "   * " + str(len(parsed_json["colabs"])) + " Colab notebooks\n"
-                delayprint += string
-                colabs += parsed_json["colabs"]
-            elif "colab" in parsed_json.keys():
-                #print(str(len(parsed_json["colab"])) + " Colab notebooks")
-                string = "   * " + str(len(parsed_json["colab"])) + " Colab notebooks\n"
-                delayprint += string
-                colabs += parsed_json["colab"]
-            
-            # Counts all of the exercises from all colabs
-            exercisecount = 0
-            mins = 0
-            for colab in colabs:
-                colabfile = open(inContentFolder + str(track) + "/" + str(unit) 
-                + "/" + colab)
-                colabcontent = colabfile.read()
-                saved_colabcontent = colabcontent[:]
-                m = re.search(r'## *[Ee]xercise ', colabcontent)
-                while m != None:
-                    exercisecount += 1
-                    colabcontent = colabcontent[m.end():]
-                    m = re.search(r'## *[Ee]xercise ', colabcontent)
-                colabcontent = saved_colabcontent[:]
-                m = re.search(r'minutes?', colabcontent)
-                if (m != None):
-                    where_minutes_are = colabcontent[:m.start()]
-                    where_minutes_are = where_minutes_are[-5:]
-                    min_list = where_minutes_are.split('"')
-                    minutes = min_list[-1][:-1]
-                    mins += int(minutes)
-            if len(colabs) > 0:
-                string = "     * " + str(exercisecount) + " Exercises\n"
-                delayprint += string
-                string = "     * " + str(mins) + " minutes\n"
-                delayprint += string
-            if ("slides" in parsed_json.keys()) and (len(parsed_json["slides"]) > 0):
-                string = "   * Slides:\n"
-                delayprint += string
-                slides = parsed_json["slides"]
-                for slideshow in slides:
-                    string = "     * " + slideshow + "\n"
-                    delayprint += string
-            # Gets materials, resources, and handouts links from json file
-            if ("materials" in parsed_json.keys()) and (len(parsed_json["materials"]) > 0):
-                #print("Materials:")
-                string = "   * Materials:\n"
-                delayprint += string
-                slides = parsed_json["materials"]
-                for slideshow in slides:
-                    #print(" * " + slideshow)
-                    string = "     * " + slideshow + "\n"
-                    delayprint += string
-            if ("resources" in parsed_json.keys()) and (len(parsed_json["resources"]) > 0):
-                #print("Resources:")
-                string = "   * Resources:\n"
-                delayprint += string
-                slides = parsed_json["resources"]
-                for slideshow in slides:
-                    #print(" * " + slideshow)
-                    string = "     * " + slideshow + "\n"
-                    delayprint += string
-            if ("handouts" in parsed_json.keys()) and (len(parsed_json["handouts"]) > 0):
-                #print("Handouts:")
-                string = "   * Handouts:\n"
-                delayprint += string
-                slides = parsed_json["handouts"]
-                for slideshow in slides:
-                    #print(" * " + slideshow)
-                    string = "     * " + slideshow + "\n"
+            for line in lines:
+                if "name" in line:
+                    linelist = line.split('"')
+                    string = "### " + track[1:3] + ": " + linelist[-2] + "\n"
                     delayprint += string
             jsonfile.close()
+'''
+
+            # Counts up units and gets names
+            units = [dI for dI in os.listdir(inContentFolder + track) if os.path.isdir(
+                os.path.join(inContentFolder + track,dI))]
+            units.sort()
+            for unit in units:
+                if (unit[0:1] == "0") or (unit[0:1] == "1"):
+                    print(unit)
+                    unitcount += 1
+                    jsonfile = open(inContentFolder + str(track) + "/" + str(unit) + "/metadata.json", "r")
+                    lines = jsonfile.readlines()
+                    parsed_json = parseJSON(lines)
+                    #print(parsed_json["name"])
+                    string = " * **" + unit[0:2] + ": " + parsed_json["name"] + "**\n"
+                    delayprint += string
+                    colabs = []
+                    if "colabs" in parsed_json.keys():
+                        #print(str(len(parsed_json["colabs"])) + " Colab notebooks")
+                        string = "   * " + str(len(parsed_json["colabs"])) + " Colab notebooks\n"
+                        delayprint += string
+                        colabs += parsed_json["colabs"]
+                    elif "colab" in parsed_json.keys():
+                        #print(str(len(parsed_json["colab"])) + " Colab notebooks")
+                        string = "   * " + str(len(parsed_json["colab"])) + " Colab notebooks\n"
+                        delayprint += string
+                        colabs += parsed_json["colab"]
+                    
+                    # Counts all of the exercises from all colabs
+                    exercisecount = 0
+                    mins = 0
+                    for colab in colabs:
+                        colabfile = open(inContentFolder + str(track) + "/" + str(unit) 
+                        + "/" + colab)
+                        colabcontent = colabfile.read()
+                        saved_colabcontent = colabcontent[:]
+                        m = re.search(r'## *[Ee]xercise ', colabcontent)
+                        while m != None:
+                            exercisecount += 1
+                            colabcontent = colabcontent[m.end():]
+                            m = re.search(r'## *[Ee]xercise ', colabcontent)
+                        colabcontent = saved_colabcontent[:]
+                        m = re.search(r'minutes?', colabcontent)
+                        if (m != None):
+                            where_minutes_are = colabcontent[:m.start()]
+                            where_minutes_are = where_minutes_are[-5:]
+                            min_list = where_minutes_are.split('"')
+                            minutes = min_list[-1][:-1]
+                            mins += int(minutes)
+                    if len(colabs) > 0:
+                        string = "     * " + str(exercisecount) + " Exercises\n"
+                        delayprint += string
+                        string = "     * " + str(mins) + " minutes\n"
+                        delayprint += string
+                    
+                    slides = []
+                    try:
+                        #print("../v2/content/" + track + "/" + unit + "/")
+                        #slides = os.listdir("../v2/content/" + track + "/" + unit + "/")
+                        #print(slides)
+                        slides = [md for md in os.listdir(inContentFolder + track + "/" + unit + "/") if md[-3:] == ".md"]
+                    except:
+                        slides = [] #redundant but oh well
+            
+    
+                    if ("slides" in parsed_json.keys()) and (len(parsed_json["slides"]) > 0):
+                        string = "   * Slides:\n"
+                        delayprint += string
+                        slidesList = parsed_json["slides"]
+                        for slideshow in slidesList:
+                            string = "     * " + slideshow + "\n"
+                            delayprint += string
+                        if ("duration" in parsed_json.keys()) and (len(parsed_json["duration"]) > 0):
+                            string = "     * Lecture Duration: " + str(parsed_json["duration"]["lecture"]) + "\n"
+                            delayprint += string
+                    
+                    # Gets materials, resources, and handouts links from json file
+                    if ("materials" in parsed_json.keys()) and (len(parsed_json["materials"]) > 0):
+                        #print("Materials:")
+                        string = "   * Materials:\n"
+                        delayprint += string
+                        slides = parsed_json["materials"]
+                        for slideshow in slides:
+                            #print(" * " + slideshow)
+                            string = "     * " + slideshow + "\n"
+                            delayprint += string
+                    if ("resources" in parsed_json.keys()) and (len(parsed_json["resources"]) > 0):
+                        #print("Resources:")
+                        string = "   * Resources:\n"
+                        delayprint += string
+                        slides = parsed_json["resources"]
+                        for slideshow in slides:
+                            #print(" * " + slideshow)
+                            string = "     * " + slideshow + "\n"
+                            delayprint += string
+                    if ("handouts" in parsed_json.keys()) and (len(parsed_json["handouts"]) > 0):
+                        #print("Handouts:")
+                        string = "   * Handouts:\n"
+                        delayprint += string
+                        slides = parsed_json["handouts"]
+                        for slideshow in slides:
+                            #print(" * " + slideshow)
+                            string = "     * " + slideshow + "\n"
+                            delayprint += string
+                    jsonfile.close()
 
     # Print our stored information
     outmd.write("Unit Count: " + str(unitcount) + "\n\n")
     outmd.write(delayprint)
     outmd.write("## Extra Tracks\n")
-
+    outmd.close()
+#broken in v2
+'''
     # Iterates throguh extra tracks + prints name
     for track in extratracks:
         jsonfile = open(inContentFolder + str(track) + "/metadata.json", "r")
@@ -188,8 +243,9 @@ def main():
                 linelist = line.split('"')
                 outmd.write("### " + linelist[-2] + "\n")
         jsonfile.close()
+'''
 
-    outmd.close()
+    
 
 # Call our main function to run our script!
 main()
