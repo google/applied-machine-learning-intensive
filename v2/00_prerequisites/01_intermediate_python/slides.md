@@ -354,8 +354,7 @@ For the class:
 
 # Try to make this code into a list comprehension
 
-
-![](res/intermediatepython21.png)
+![](res/intermediatepython22.png)
 
 <!--
 Motivation: Give them an easy way to get to know the syntax of list comprehensions
@@ -405,10 +404,40 @@ Try to make this into a list comprehension including the conditional statement
 
 ---
 
-
+# Try to make this code into a list comprehension
 
 ![](res/intermediatepython25.png)
+
+<!--
+Motivation: Show how to incorporate conditionals into list comprehensions
+
+For the class:
+Try to make this into a list comprehension including the conditional statement 
+-->
+
+---
+
+# Try to make this code into a list comprehension
+
 ![](res/intermediatepython26.png)
 
+<!--
+Motivation: Show how to incorporate conditionals into list comprehensions
+
+For the class:
+Here is the answer, what kind of list will we end up with?
+-->
+
+---
+
+# Try to make this code into a list comprehension
 
 ![](res/intermediatepython27.png)
+
+<!--
+Motivation: Show how to incorporate conditionals into list comprehensions
+
+For the class:
+Because we added the condition that x had to be an even number (dividing by 2 gave no remainder) we only got 5 items in this list instead of 10 even though we called it in range(10)
+-->
+
