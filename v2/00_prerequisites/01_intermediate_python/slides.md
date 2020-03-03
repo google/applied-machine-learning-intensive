@@ -3,13 +3,10 @@
 <!--
 SciKit Learn and Tensorflow both require users to understand objects and inheritance for some common use cases. Intermediate Python introduces the concept of Object Oriented Programming (OOP) to prepare students for using the SciKit Learn and Tensorflow features that require object extension. List comprehension and lambdas are also included since they are popular Python features that can be very useful, especially during data prep and exploration. Finally, this unit introduces exceptions to help students write code that handles errors elegantly. 
 
-
 Students will be able to:
 * Use and identify cases for using lambda and list comprehension syntax.
 * Identify when it is appropriate to design exceptions into their program.
 * Create and work with classes, objects, and inheritance.
-
-
 
 ---
 
@@ -360,20 +357,7 @@ For the class:
 Motivation: Give them an easy way to get to know the syntax of list comprehensions
 
 For the class:
-* Try to write the for loop we have into a list comprehension!
--->
-
----
-
-# Try to make this code into a list comprehension
-
-![](res/intermediatepython22.png)
-
-<!--
-Motivation: Give them an easy way to get to know the syntax of list comprehensions
-
-For the class:
-We can see that it follows the exact formula in the bottom, and can still use our for loop without the variable!
+Try to write the for loop we have into a list comprehension!
 -->
 
 ---
@@ -383,11 +367,11 @@ We can see that it follows the exact formula in the bottom, and can still use ou
 ![](res/intermediatepython23.png)
 
 <!--
-Motivation: Show how to incorporate conditionals into list comprehensions
+Motivation: Give them an easy way to get to know the syntax of list comprehensions
 
 For the class:
-If you want to check something before adding it to the list, you can! 
--->
+We can see that it follows the exact formula in the bottom, and can still use our for loop without the variable!
+--> 
 
 --- 
 
@@ -399,7 +383,7 @@ If you want to check something before adding it to the list, you can!
 Motivation: Show how to incorporate conditionals into list comprehensions
 
 For the class:
-Try to make this into a list comprehension including the conditional statement 
+If you want to check something before adding it to the list, you can! 
 -->
 
 ---
@@ -440,4 +424,3 @@ Motivation: Show how to incorporate conditionals into list comprehensions
 For the class:
 Because we added the condition that x had to be an even number (dividing by 2 gave no remainder) we only got 5 items in this list instead of 10 even though we called it in range(10)
 -->
-
