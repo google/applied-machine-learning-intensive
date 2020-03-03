@@ -1,5 +1,9 @@
 # History of ML Trivia
 
+<!--
+Today we're going to play a multiple choice trivia game. All of the questions are on the history and some milestones of the history of machine learning thus far. We haven't gone over these dates, advancements, famous people, and accomplishments, so you're going to have to rely on any prior knowledge and good old fashioned luck. Let's get started!
+-->
+
 ---
 
 # How to Play:
@@ -11,6 +15,18 @@
 1. A final question will be worth **five points**.
 1. You may not reference outside materials. Laptops down and cell phones off!
 1. Let’s get started! 
+
+<!--
+First, I'm going to count everyone off in groups of 3-4 and give each team a piece of printer paper. One person on each team should tear the paper into four pieces and write A, B, C, and D on each quarter sheet.
+
+Each slide will disply one question at a time. Each team will have 30 seconds to deliberate and decide on your answer. One person from each team will show their team's answer by holding up the corresponding sheet of paper: A, B, C, or D. 
+
+Each correct answer earns a team one point. No points will be deducted for wrong answers. A final question will be worth five points.
+
+You may not reference outside materials. 
+
+Any questions?
+-->
 
 ---
 
@@ -621,6 +637,10 @@ a. AutoML Boost, AutoML Decipher, AutoML Vision
 c. AutoML Translate, AutoML Recommendations, AutoML Vision
 
 d. AutoML Personalization, AutoML Camera, AutoML Translate
+
+<!--
+Now, let's tally up the final scores!
+-->
 
 ---
 
