@@ -4,7 +4,6 @@
   "colabs": [
     "colab.ipynb"
   ],
-  
   "learning-objectives": [
     "Train a linear regression model using scikit-learn on real data",
     "Use root mean squared error (RMSE) to evaluate a linear regression model",
@@ -12,30 +11,10 @@
     "(Optional) Create a linear regression model using the normal equation and optimize using the pseudoinverse",
     "(Optional) Practice stochastic gradient descent and mini batching"
   ],
-  
-  "concepts": {
-    "prerequisite": [
-      "toolkits:scikit-learn",
-      "toolkits:pandas",
-      "toolkits:numpy",
-      "toolkits:matplotlib",
-      "visualizations:scatterplot"
-    ],
-    
-    "introduced": [
-      "toolkits:scikit-learn:LinearRegression",
-      "models:types:regression",
-      "models:measurement:root_mean_squared_error",
-      "models:algorithms:linear_regression",
-      "models:tuning"
-    ]
-  },  
-  
   "duration": {
     "lecture": 45,
     "colab": 60
   },
-  
   "materials": [],
   "resources": [],
   "slides": [
