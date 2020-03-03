@@ -1,54 +1,306 @@
 # Intermediate Python
 
+<!--
+SciKit Learn and Tensorflow both require users to understand objects and inheritance for some common use cases. Intermediate Python introduces the concept of Object Oriented Programming (OOP) to prepare students for using the SciKit Learn and Tensorflow features that require object extension. List comprehension and lambdas are also included since they are popular Python features that can be very useful, especially during data prep and exploration. Finally, this unit introduces exceptions to help students write code that handles errors elegantly. 
+
+
+Students will be able to:
+* Use and identify cases for using lambda and list comprehension syntax.
+* Identify when it is appropriate to design exceptions into their program.
+* Create and work with classes, objects, and inheritance.
+
+
+
 ---
 
-# OOP
+# **Object Oriented Programming** is a programming paradigm that organizes data into classes 
 
-* Object Oriented programming paradigm
-* Classes and instances
-* Instance variables and methods
-* Method calling
-
-![](res/intermediatepython1.png)
+![](res/intermediatepython01.png)
 
 <!--
-Make sure everyone knows what “programming paradigm” means
-Compare and contrast OOP with procedural and functional (procedural programming is mentioned on colab, so make sure to explain it and give examples so the distinction is clear)
-Clearly define objects, instances, and classes. Eg: Classes are like blueprints, while instances are the actual object, ie, the actual physical representation in memory of a “thing” of the type defined by the class. Ex: the class student has the instance variables name, age, and student_id. “Bobby” is not a class, but rather an instance of the class Student. Objects and instances are often used interchangeably.
+Motivation: Giving the students an idea of why object oriented programming and classes are helpful, by giving them a real life example
+
+For the class:
+* Make sure everyone knows what “programming paradigm” means
+  * It is a style of programming, object oriented programming is one particular stye that organizes data into objects within classes
+  * Compare and contrast OOP with procedural and functional (procedural programming is mentioned on colab, so make sure to explain it and give examples so the distinction is clear)
+  * Sometime when the data structures available are not complex or specialized enough, you need a class to hold your data!
+* Ex. A teacher wants to create a program where they can keep track of students grades
+  * Wants a way to hold student id, grade
+  * Wants methods to get a grade, change a grade, and print a grade
+  * How could they organize all this capability in one program?!?!
 -->
 
 ---
 
-![](res/intermediatepython2.png)
+# We can use a **class** to create objects and methods that can be called them
+
+![](res/intermediatepython02.png)
 
 <!--
-Give a full example of defining a class, creating methods, instantiating an object, and calling functions.
+Motivation: Giving the students an idea of what a whole class would look like before we break it down so they can understand how the class might look together and identify pieces of code they don’t understand/ understand so they can know what to make sure to listen for in the coming slides!
+
+For the class:
+Have students look at the code and decide what looks familiar/new and maybe even predict how those new items will work!
 -->
 
 ---
 
-![](res/intermediatepython3.png)
+# We can use a **class** to create objects and methods that can be called them
+
+![](res/intermediatepython03.png)
 
 <!--
-Explain str vs repr
-Explain the concept of encapsulation and why it’s important
-See http://www.cems.uwe.ac.uk/~jsa/UMLJavaShortCourse09/CGOutput/Unit3/unit3(0809)/page_13.htm for a summary)
-Compare print(p002341.get_grade()) with print(p002341.__grade())
-Note that print(p002341._Student__grade()) would work
-Helpful read: https://dbader.org/blog/meaning-of-underscores-in-python
+Motivation: Giving the students an idea of what a whole class would look like before we break it down so they can understand how the class might look together and identify pieces of code they don’t understand/ understand so they can know what to make sure to listen for in the coming slides!
+
+For the class:
+Looking at the code
+* Class → keyword to tell python you are starting a class declaration, this is always followed by the class name and a colon
+  * Everything following this declaration is like a blueprint for instances of this class
+  * Shows the data each instance will hold + methods that can be called on it
+* __init__ → called a constructor for a class
+  * Every class is required to have one, shows the data each object of a class will hold
+  * Note: it is a private member - we will learn more about this later!
+* __grade: indicates that grade is a private member variable (it can’t be accessed or edited outside of the class). More about this later!
+* Self → used to refer to objects in a class
+  *  When “self” is an argument coming into a method, you don’t actually need to include that when calling the method
+  * “Self” is implied as the instance of the class you declare before the dot
+* STUDENT_ROSTER → a constant value. In this case, presumably a constant list of students in the class.
+* Methods → collection of functions that can be run on an object of a given class
+-->
+
+--- 
+
+# We can use a **class** to create objects and methods that can be called them
+
+![](res/intermediatepython04.png)
+
+<!--
+Motivation: Giving the students an idea of what a whole class would look like before we break it down so they can understand how the class might look together and identify pieces of code they don’t understand/ understand so they can know what to make sure to listen for in the coming slides!
+
+For the class:
+Let them know that we will now break it all down!
+-->
+
+--- 
+
+# You can create an singular **“instance”** of a class...
+
+![](res/intermediatepython05.png)
+
+<!--
+Motivation: Giving the students an introduction to a constructor and how an instance/object is created!
+
+For the class:
+* instances are the actual object, ie, the actual physical representation in memory of a “thing” of the type defined by the class
+* Syntax → Created using the name of the class and the data members required for that instance in order of how they are in the constructor
+  * Every class needs a constructor to show the computer what data members it should be allocating memory for everytime an instance is created
+* Now that we have an instance of a class we can manipulate that instance with methods defined in the class
+* “Elon” is an instance of our class
 -->
 
 ---
 
-# Inheritance
+# Now that we have an instance, we can call **methods** on it
 
 
-![](res/intermediatepython4.png)
+![](res/intermediatepython06.png)
 
 <!--
-Explain inheritance:
+Motivation: Giving the students an introduction to how a method in a class interacts with instances.
+
+For the class:
+* This is an example of how an function can be called on an instance of a class
+* Notice how you call the function
+  * When “self” is an argument coming into a method, you don’t actually need to include that when calling the method
+  * “Self” is implied as the instance of the class you declare before the dot 
+* This type of method is called a “getter” method, it is used to get access to variables in a class
+  * We will see why this might be necessary later!
+-->
+
+---
+
+# We can create methods that manipulate our instance
+
+![](res/intermediatepython07.png)
+
+<!--
+Motivation: Giving the students an introduction to using methods to manipulate instances
+
+For the class:
+* This is an example of how an function can be created to change the data an instance of a class is representing
+* Notice how you call the function
+  * “Self” is still implied as Elon
+  * However, this time we also need a new_grade and this is passed in as function arguments usually are in python
+* This type of method is called a “setter” and we will see why later!
+-->
+
+---
+
+# We can create helper functions that are only **internal** to the class
+
+![](res/intermediatepython08.png)
+
+<!--
+Motivation: Giving the students an introduction to using private methods
+
+For the class:
+* This is an instance of a private method!
+* These are methods that are only helper methods to others in the class and cannot be accessed outside of it
+  * Can be helpful for methods you want such
+* We will go into more detail on these, later
+-->
+
+---
+
+# We can create helper functions that are only internal to the class
+
+![](res/intermediatepython09.png)
+
+<!--
+Motivation: Motivate why you would possibly want a private method
+
+For the class:
+Here we can see that having the private helper function can stop you from accidentally screwing up and adding a grade for an unknown student!
+-->
+
+---
+
+# **Encapsulation** restricts access to variables and methods in a class
+
+![](res/intermediatepython10.png)
+
+<!--
+Motivation: Go more in depth into private variables + methods as those are often confusing
+
+For the class:
+* Remember the “getter” and “setter” method - this is why we had it!
+  * Getters and setters allow safe ways to access private variables
+* Private Methods allow you the ability to maintain functionality you want for helper functions while not allowing anything outside of the class to manipulate it in a way you do not want - more examples of this later will make it more clear what kind of use cases this is helpful for!
+
 Helpful reads:
-https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1152/preview-inheritance.shtml
-http://www.jesshamrick.com/2011/05/18/an-introduction-to-classes-and-inheritance-in-python/
-Also Multiple inheritance in Python (https://pythonbasics.org/multiple-inheritance/)
+* See http://www.cems.uwe.ac.uk/~jsa/UMLJavaShortCourse09/CGOutput/Unit3/unit3(0809)/page_13.htm for a summary
+* https://dbader.org/blog/meaning-of-underscores-in-python
 -->
+
+---
+
+# **Encapsulation** restricts access to variables and methods in a class
+
+![](res/intermediatepython011.png)
+
+<!--
+Motivation: Give a few examples of private methods to ensure they have an understanding of what work v. doesn’t practically
+
+For the class:
+Compare with a partner the  print() options
+-->
+
+---
+
+# **Encapsulation** restricts access to variables and methods in a class
+
+![](res/intermediatepython012.png)
+
+<!--
+Motivation: Give a few examples of private methods to ensure they have an understanding of what work v. doesn’t practically
+
+For the class:
+Compare with a partner the  print() options
+print(Elon.student_id) - this works! We’re just accessing a public member variable
+print(Elon.__grade) - this doesn’t work! Our variable isn’t accessible outside of our class
+print(Elon.get_grade()) - this does work, our method is accessible outside of our class and will return the grade!
+print(Elon._Student__grade) - this does work, if you add the class name before it, you are allowed to access internal variables and Methods
+-->
+
+---
+
+# Classes use **naming conventions** to tell you information about what element in the class a variable represents
+
+![](res/intermediatepython013.png)
+
+<!--
+Motivation: Show the general naming conventions for python classes, as variable names are important here!
+
+For the class:
+* Go through them all, tell them to save this slide as a reference!
+-->
+
+---
+
+# Functions outside of the class can interact with objects from the class
+
+![](res/intermediatepython14.png)
+
+<!--
+Motivation: Show how a outside function can interact with different parts of a class
+
+For the class:
+* You can add functions outside of classes that will interact with objects much like they do inside the class, just using Student instead of self
+* NOTICE - How student_id and __grade are handled differently
+-->
+
+---
+
+# Classes can **inherit** characteristics from other classes
+
+![](res/intermediatepython15.png)
+
+<!--
+Motivation: Motivate inheritance as a way to have clarity + condense work when working with a number of types of instances
+
+For the class:
+Here we can see a scenario in which it could be helpful to have a way to make classes closely related as they share similar data structures!
+-->
+
+--- 
+
+# We can use **inheritance** to create a hierarchical relationship between classes
+
+![](res/intermediatepython16.png)
+
+<!--
+Motivation: Give an introduction to how to create the hierarchy with code
+
+For the class:
+* Inheritance structures are hierarchical relationships between classes
+  * Can have any number of classes inherit from other classes + create complex hierarchies
+* for now we will just look at one parent class with 3 child classes
+* He child class inherits all characteristics of the parent class + you can add on
+  * Look how we declare variables in Student(Person)
+  * We get all the variables from super() and we can declare our own
+* Note: A student is a person, but a person is not a student
+  * Like - A square is a rectangle is a polygon, But not the other way around
+
+
+Helpful reads:
+* https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1152/preview-inheritance.shtml
+* http://www.jesshamrick.com/2011/05/18/an-introduction-to-classes-and-inheritance-in-python/
+* Also Multiple inheritance in Python (https://pythonbasics.org/multiple-inheritance/)
+-->
+
+---
+
+![](res/intermediatepython17.png)
+
+<!--
+Motivation: Show how the code inits look for a few different options of variable declaration/expansion
+
+For the class:
+Walk through the different variables and reinforce the super() concept
+-->
+
+---
+
+# Methods can also be inherited and can be overwritten by child classes
+
+![](res/intermediatepython18.png)
+![](res/intermediatepython19.png)
+![](res/intermediatepython20.png)
+![](res/intermediatepython021.png)
+![](res/intermediatepython022.png)
+![](res/intermediatepython023.png)
+![](res/intermediatepython24.png)
+![](res/intermediatepython25.png)
+![](res/intermediatepython26.png)
+![](res/intermediatepython27.png)
