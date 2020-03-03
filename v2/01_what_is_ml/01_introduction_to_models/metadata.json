@@ -1,0 +1,16 @@
+{
+  "name": "Intro to ML Models",
+  "learning objectives": [
+    "Be able to distinguish between different types of ML models."
+  ],
+  "colabs": [],
+  "duration": {
+    "lecture": 30
+  },
+  "materials": [],
+  "handouts": [],
+  "resources": [],
+  "slides": [
+    "slides.md"
+  ]
+}

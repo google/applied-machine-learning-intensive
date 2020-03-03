@@ -1,0 +1,19 @@
+{
+  "name": "Introduction to Colab",
+  "learning objectives": [
+    "Understand where Colab fits in the development environment space",
+    "Edit markdown in a notebook",
+    "Edit and run code in a notebook"
+  ],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
+  ],
+  "resources": [
+    "https://research.google.com/colaboratory/faq.html"
+  ],
+  "materials": [],
+  "handouts": []
+}
