@@ -284,7 +284,7 @@ Which type of visualization do you think would best represent following data?
 
 <!--
 
-Think pair share: Have students discuss the possible charts that would be good for each of these types of data. It might be heloful to write the following list on the board, or have the students take notes, so they can reference it during their discussions with peers.
+Think pair share: Have students discuss the possible charts that would be good for each of these types of data. It might be helpful to write the following list on the board, or have the students take notes, so they can reference it during their discussions with peers.
 
 * Line chart or bar chart depending on scope of the data
 * Scatter Plot
@@ -317,7 +317,7 @@ Which visualization best represents the data?
 ![](res/candy-count-charts.png)
 
 <!--
-Think pair share - which visualizations work wellt, which work poorly
+Think pair share - which visualizations work well, which work poorly
 
 Pie Chart - could work, good if you want to see how the bag has been portioned out as a whole
 Bar Chart - could work, good because the data is categorical better for analysis between individual candy types
