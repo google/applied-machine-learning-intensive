@@ -1,7 +1,7 @@
 # Intermediate Pandas
 
 <!--
-Welcome to 'Intermediate Pandas'. At this point in the course you should be
+Welcome to 'Intermediate Pandas.' At this point in the course you should be
 familiar with Pandas' Series and DataFrame objects. If these words are
 unfamiliar to you, you probably want to go back and revisit the 'Introduction to
 Pandas' unit.
@@ -314,7 +314,7 @@ Combining two or more `DataFrame` objects
 
 <!--
 So far we have worked with individual `DataFrame` objects. Often the data that
-we will work with will be stored in mulitple sources. In these cases it is often
+we will work with will be stored in multiple sources. In these cases it is often
 useful to **merge** the data in order to process it.
 
 In order to merge data a common **key** must exist between the `DataFrame`
@@ -368,7 +368,7 @@ Source: Copyright Google
 <!--
 What about this case? We have four rows in one table and three in the other.
 'Seo-yeon' is missing from the table that counts children. If you remember from
-our prevous slide, Seo-yeon had a zero-count of children. It is common for rows
+our previous slide, Seo-yeon had a zero-count of children. It is common for rows
 with zero values to be missing from tables.
 
 Any guesses on what happens?
