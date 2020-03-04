@@ -33,8 +33,7 @@ These development environments are also useful for developing code supported by
 unit tests and code that will be packaged and deployed on server systems.
 
 Image Details:
-* [ide.png](http://www.google.com): Google Copyright
--->
+* [ide.png](http://www.google.com): Copyright Google
 
 ---
 
@@ -58,8 +57,7 @@ wide variety of choice in what languages and libraries they use. In this course,
 we will use Python.
 
 Image Details:
-* [notebook.png](http://www.google.com): Google Copyright
--->
+* [notebook.png](http://www.google.com): Copyright Google
 
 ---
 
@@ -87,8 +85,7 @@ is designed, they might then switch over to a more traditional environment to
 create a deployable package.
 
 Image Details:
-* [matlab.png](http://www.google.com): Google Copyright
--->
+* [matlab.png](http://www.google.com): Copyright Google
 
 ---
 
@@ -125,8 +122,7 @@ Hovering above or below a current cell will bring up the option to add a new cod
 You can run code cells and typeset text cells using Shift+Enter.
 
 Image Details:
-* [notebook_cells.png](http://www.google.com): Google Copyright
--->
+* [notebook_cells.png](http://www.google.com): Copyright Google
 
 ---
 
@@ -147,8 +143,7 @@ As of January 1, 2020, the Python team no longer supports Python 2. And as of th
 Writing Python code in a notebook is just like writing Python code anywhere else.
 
 Image Details:
-* [python_print.png](http://www.google.com): Google Copyright
--->
+* [python_print.png](http://www.google.com): Copyright Google
 
 ---
 
@@ -256,8 +251,7 @@ You can create numbered and bulleted lists. What is shown here is what the user 
 You can also easily create sublists.
 
 Image Details:
-* [nested-list.png](http://www.google.com): Google Copyright
--->
+* [nested-list.png](http://www.google.com): Copyright Google
 
 ---
 
@@ -307,8 +301,7 @@ Java | James Gosling
 Tables are created using | and -. They will be formatted automatically with lines at each delimiter.
 
 Image Details:
-* [table.png](http://www.google.com): Google Copyright
--->
+* [table.png](http://www.google.com): Copyright Google
 
 ---
 
@@ -332,8 +325,7 @@ LaTeX is a powerful document preparation system for typesetting mathematical equ
 https://www.latex-project.org/help/documentation/
 
 Image Details:
-* [latex.png](http://www.google.com): Google Copyright
--->
+* [latex.png](http://www.google.com): Copyright Google
 
 ---
 
