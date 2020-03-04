@@ -70,7 +70,7 @@ Source: Copyright Google
 
 <!--
 The first time you upload a file to an active lab you will see a warning telling
-you that the files won't stick around forever. Colab enviornments run for a
+you that the files won't stick around forever. Colab environments run for a
 fixed amount of time, less than a day, and then the environment gets recycled.
 
 For this class and for small data science and machine learning projects, this is
