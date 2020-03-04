@@ -171,7 +171,7 @@ Image Details:
 Would you be surprised? Maybe the child has not seen a lion before, but does have a kitten at home, so they said the closest thing they could think of.
 
 Image Details:
-* [kitten.jpg](https://unsplash.com/photos/2Nca6Aum17o): Usplash License
+* [kitten.jpg](https://unsplash.com/photos/2Nca6Aum17o): Unsplash License
 -->
 
 ---
