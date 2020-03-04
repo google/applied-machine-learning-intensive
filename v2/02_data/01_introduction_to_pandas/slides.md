@@ -6,12 +6,10 @@
 ![](res/pandas.jpg)
 
 <!--
-
-These animals are adorable but we are going to talk to about a Python library called Pandas which is a popular tool for handling and analyzing input data.
+These animals are adorable, but we are going to talk to about a Python library called Pandas, which is a popular tool for handling and analyzing input data.
 
 Image Details:
 * [pandas.jpg](https://pixabay.com/photos/panda-giant-panda-bear-red-panda-317980/): Pixabay License
-
 -->
 
 ---
@@ -19,14 +17,12 @@ Image Details:
 # What is Pandas?
 
 * Open source data analysis tool for Python programming language
-* In use in a wide variety of academic and commercial domains, including Finance, Neuroscience, Economics, Statistics, Advertising, and more
+* Used in a wide variety of academic and commercial domains, including finance, neuroscience, economics, statistics, advertising, and more
 
 <!--
+Python is a popular language for working on files and data munging. But to do more data analysis and modeling, you may feel tempted to switch to a more domain-specific language like R.
 
-Python is a popular language for working on files and data munging, but to do more data analysis and modeling you may feel tempted to switch to a more domain specific language like R.
-
-Pandas provides data structures and tools that are similar to R and help with data analysis.  Hence by combining Python and Pandas, you will be able to carry out the entire data analysis workflow using Python.
-
+Pandas provides data structures and tools similar to R that also help with data analysis. Hence by combining Python and Pandas, you will be able to carry out the entire data analysis workflow using Python.
 -->
 
 ---
@@ -38,7 +34,6 @@ DataFrames are set up like tables, with columns, headers, and rows of data.
 ![](res/dataframe.png)
 
 <!--
-
 Motivation:
 Giving a visual for DataFrames so students who are visual learners can interact intuitively with the structure.
 
@@ -49,7 +44,6 @@ For the class:
 
 Image Details:
 * [dataframe.png](http://www.google.com): Copyright Google
-
 -->
 
 ---
@@ -61,17 +55,15 @@ One column of a DataFrame is called a “Series”
 ![](res/dataframe-column.png)
 
 <!--
-
 Motivation:
 * Continuing to give visuals to help out students.
 
 For the class:
-* Pandas Series is 1-dimensional and contains a homogeneously-typed array
-* So, in summary, a DataFrame contains 1 or more Series
+* Pandas Series is one-dimensional and contains a homogeneously-typed array
+* So, in summary, a DataFrame contains one or more Series
 
 Image Details:
 * [dataframe-column.png](http://www.google.com): Copyright Google
-
 -->
 
 ---
@@ -83,16 +75,14 @@ The primary column of the dataframe, without a title, is the “Index”
 ![](res/dataframe-index.png)
 
 <!--
-
 Motivation:
 * Continuing to give visuals to help out students.
 
 For the class:
-* Lastly, the first column is an index column. In this case it’s numeric values, but it can be non-numeric as you’ll see as you dig deeper into Pandas usage.
+* Last, the first column is an index column. In this case it’s numeric values, but it can be non-numeric as you’ll see as you dig deeper into Pandas usage.
 
 Image Details:
 * [dataframe-index.png](http://www.google.com): Copyright Google
-
 -->
 
 ---
@@ -104,7 +94,6 @@ import pandas as pd
 ```
 
 <!--
-
 Pandas isn't a core part of Python. To use it you'll need to import it. You could do this by simply
 writing `import pandas`. In practice however, you'll see `import pandas as pd`. This isn't a
 requirement, but it is a convention that you'll see in quite a bit of code that uses Pandas and
@@ -112,13 +101,11 @@ in documentation and on help sites. Aliasing `pandas` as `pd` will make it easie
 resources.
 
 If you are using Colab, you can import Pandas without needing to install it. If you are using Jupyter or scripting in a text editor, you may need to download and update the Pandas library (i.e. pip install pandas -- if you are using pip). See the documentation at: https://pandas.pydata.org/pandas-docs/stable/
-
 -->
 
 ---
 
 # Creating Pandas Data Structures: Series
-
 
 When coding, we can make a `Series` in the following way:
 
@@ -129,9 +116,7 @@ flavors = pd.Series(
 ```
 
 <!--
-
 Here, we create a Series indexed by 0, 1, 2, 3. It is one column called "flavors" with entries ['Mint', 'Raspberry', 'Orange', 'Coffee']
-
 -->
 
 ---
@@ -150,7 +135,6 @@ pd.DataFrame({ 'Truffle': flavors, 'Number': num_in_stock })
 
 <!--
 In this code, we first create two series, flavors and num_in_stock. Then, we make a DataFrame, giving each series a title (“Truffle” and “Number”).
-
 -->
 
 ---
@@ -163,13 +147,11 @@ my_dataframe = pd.read_csv("city_populations.csv")
 
 
 <!--
+This method reads in a file in the format “csv," meaning that the data in the file is separated by commas.
 
-This method reads in a file in the format “csv”, meaning that the data in the file is separated by commas.
-
-A CSV is a file type, meaning “comma separated values”. Essentially, it signifies that the data has commas between each value to signify where one entry ends and the next begins.
+A CSV is a file type, meaning “comma separated values." Essentially, it signifies that the data has commas between each value to signify where one entry ends and the next begins.
 
 The first argument is a string and can either be the name of a local file (as shown) or the url of a file on the internet.
-
 -->
 
 ---
@@ -185,9 +167,7 @@ Pandas has some methods to get basic information about both `Series` and `DataFr
 * `hist()`
 
 <!--
-
 We’ll go through each of these methods in turn. Each of these methods works with both Series and DataFrame objects. None of them modify the data, but rather they let us view the data in a few different ways so we can get a sense of what we’re looking at.
-
 -->
 
 ---
@@ -205,12 +185,10 @@ my_dataframe.shape()
 ![](res/shape.png)
 
 <!--
-
 shape() prints (number of rows, number of columns)
 
 Image Details:
 * [shape.png](http://www.google.com): Copyright Google
-
 -->
 
 ---
@@ -228,12 +206,10 @@ my_dataframe.head()
 ![](res/head.png)
 
 <!--
-
 head() prints the full contents of the first 5 rows.
 
 Image Details:
 * [head.png](http://www.google.com): Copyright Google
-
 -->
 
 ---
@@ -251,7 +227,6 @@ my_dataframe.tail()
 ![](res/tail.png)
 
 <!--
-
 tail() prints the full contents of the last 5 rows.
 
 Image Details:
@@ -273,14 +248,12 @@ my_dataframe.describe()
 ![](res/describe.png)
 
 <!--
-
 describe() gives statistics such as mean and median about numerical data.
 
 Note that any columns without numerical data are not included.
 
 Image Details:
 * [describe.png](http://www.google.com): Copyright Google
-
 -->
 
 
@@ -299,12 +272,10 @@ my_dataframe.hist()
 ![](res/hist.png)
 
 <!--
-
 hist() visualizes the frequency of various results for one or more numerical columns.
 
 Image Details:
 * [hist.png](http://www.google.com): Copyright Google
-
 -->
 
 ---
@@ -317,9 +288,7 @@ my_dataframe['Names']
 Returns the series with the title ‘Names’ from the DataFrame
 
 <!--
-
 If you have a column called “Names”, this command will give you only the contents of that column.
-
 -->
 
 ---
@@ -332,9 +301,7 @@ my_dataframe['Names'][1]
 Returns the first element of the series with the title ‘Names’
 
 <!--
-
 Since series can be indexed like arrays, this command will return a single element from the series.
-
 -->
 
 ---
@@ -347,11 +314,9 @@ my_dataframe[0:2]
 Returns the first three rows of the DataFrame
 
 <!--
-
 Like python arrays again, you can specify a group of rows to be shown. In this case, the first three will be returned.
 
 Note that even though the square bracket syntax is the same, this command returns row data rather than column data.
-
 -->
 
 ---
@@ -361,10 +326,8 @@ Note that even though the square bracket syntax is the same, this command return
 If you want to access row(s) of data you can use `iloc`.
 
 <!--
-
 the iloc command takes an integer index and accesses the row located at that index.
 df.iloc[0] returns the first row (i.e. the 0th indexed row) of df.
-
 -->
 
 ---
@@ -374,10 +337,8 @@ df.iloc[0] returns the first row (i.e. the 0th indexed row) of df.
 If you want to access specific rows and columns of data you can use `loc`.
 
 <!--
-
 The loc command is like a combination of column indexing and row indexing.
 It allows you to access a group of rows *and* columns by label(s) or a boolean array.
-
 -->
 
 ---
@@ -391,11 +352,9 @@ my_data['percent'] = my_data['proportion'] * 100
 ```
 
 <!--
-
 The series my_data[‘percent’], which is added to the my_data dataframe, will be equal to 100 times the series ‘proportion’.
 
 This means for each row, the entry in the ‘percent’ column will be 100 times the entry in the ‘proportion’ column.
-
 -->
 
 ---
@@ -409,11 +368,9 @@ my_data['density'] = my_data['atoms'] / my_data['volume']
 ```
 
 <!--
-
 In this case, one series is being divided by another.
 
 For each row, the entry in the ‘density’ column is equal to the entry in the ‘atoms’ column divided by the entry in the ‘volume’ column.
-
 -->
 
 ---
@@ -432,7 +389,5 @@ my_data['is_expensive'] = my_data['prices'].apply(my_function)
 ```
 
 <!--
-
 My_function is a function that takes in a value and returns a value. In this case, we can imagine that my_function takes in an integer (the ‘price’) and returns a boolean value indicating whether or not the item is expensive.
-
 -->
