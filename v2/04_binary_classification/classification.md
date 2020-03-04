@@ -12,7 +12,8 @@ These should be cut out so all images and the surrounding boxes with image label
 
 When they’re done, come together and ask what they labeled chickens.
 
-Source: Photo by Kazi Faiz Ahmed Jeem on Unsplash
+Image Details:
+* [classification1.jpg](https://unsplash.com/photos/hXXncjTJJ1g): Unsplash License
 -->
 
 ---
@@ -22,18 +23,22 @@ Source: Photo by Kazi Faiz Ahmed Jeem on Unsplash
 <!--
 What did they label dogs?
 
-Source: Photo by Baptist Standaert on Unsplash
+Image Details:
+* [classification2.jpg](https://unsplash.com/photos/mx0DEnfYxic): Unsplash License
 -->
 
 ---
+
+![](res/classification3.jpg)
 
 <!--
 What did they label horses? (many cultures eat horse meat, so likely depends on whether you chose the [food] or [pet] cards)
 
 Source: Photo by David Dibert on Unsplash
--->
 
-![](res/classification3.jpg)
+Image Details:
+* [classification3.jpg](https://unsplash.com/photos/Huza8QOO3tc): Unsplash License
+-->
 
 ---
 
@@ -44,7 +49,10 @@ Last week we explored linear regression. Recall that a linear regression attempt
 
 We judge the quality of our regression by measuring the distance of the actual data from our prediction line. Measurements such as mean squared error (MSE), and root mean squared error (RMSE) are common.
 
-We learned that optimal linear regressions can be calculated with a closed-form solution as long as the data set is small enough. We also learned about strategies for discovering the regression when working with large datasets that exceed the memory or computational limits of the closed-form solution (i.e. gradient descent). 
+We learned that optimal linear regressions can be calculated with a closed-form solution as long as the data set is small enough. We also learned about strategies for discovering the regression when working with large datasets that exceed the memory or computational limits of the closed-form solution (i.e. gradient descent).
+
+Image Details:
+* [classification4.gif](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -55,6 +63,9 @@ We learned that optimal linear regressions can be calculated with a closed-form 
 This week we will move into a group of problems that don't rely on predicting a continuous value, but instead attempt to predict the "class" of a data point. These classification algorithms can be as simple as determining between two states, such as spam or not spam, through systems that determine the probability that a data point is one of dozens or even thousands of classes.
 
 The 2-class model is often referred to as a "binary classifier". When more than two classes are being considered the problem is referred to as "multi-class classification". There are some algorithms that only work in binary classification states while others can be successful in both binary and multi-class applications.
+
+Image Details:
+* [classification5.gif](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -75,6 +86,9 @@ Classification model results are often returned as a list of confidences. The mo
 Notice that these confidences do not necessarily sum to 1, so they aren’t quite probabilities. You can perform a mathematical transformation, such as a “softmax” function, so you can interpret them as probabilities instead.
 
 Source: Photo by Nick Karvounis on Unsplash
+
+Image Details:
+* [classification6.png](https://unsplash.com/photos/-KNNQqX9rqY): Unsplash License
 -->
 
 ---
@@ -83,6 +97,9 @@ Source: Photo by Nick Karvounis on Unsplash
 
 <!--
 Here is an example of a model returning confusing predictions. The model is decently confident that the picture contains both a parakeet and a tiger. What would you do?
+
+Image Details:
+* [classification7.png](http://www.example.com): Unlicensed
 -->
 
 ---
@@ -125,6 +142,9 @@ Confusion matrix {.big}
 Most of the performance measures that we look at will be based on values taken from the confusion matrix. For the sake of simplicity we'll stick to evaluating model quality for binary classification or at least from the perspective of a single class.
 
 Think of the two classes as one “positive” and one “negative” class. False Positive means the model predicted “positive” but the correct class is “negative”, and vice versa for False Negative.
+
+Image Details:
+* [classification8.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -138,15 +158,18 @@ Accuracy is a very basic measure of quantity. It is simply the number of predict
 
 Discuss how accuracy isn't a good measure, especially for skewed datasets (class imbalance: when positives or negatives are rare). Consider a dataset predicting some rare disease. In most cases, the disease isn't present so a model that always predicted the disease was not present would likely have a high accuracy.
 
-Color blindness in women: 1 in 200, or .5% of women 
+Color blindness in women: 1 in 200, or .5% of women
 If my model always predicted false, what would be the accuracy?
 
 ***
 Even with balanced classes accuracy is problematic because it ignores the context. Sometimes you care more about performance for one class vs. another. Depending on the consequences of your decision, you will use a different threshold to make the decision.
 
-Ex: If you’re predicting a disease that would require invasive surgery, you will require a much higher probability for your classification as positive than if it only required recommending two aspirin. Or you might even have three different decisions although there are only two classes (sick vs. healthy): "go home and don't worry" vs. "run another test because the one we have is inconclusive" vs. "operate immediately".” 
+Ex: If you’re predicting a disease that would require invasive surgery, you will require a much higher probability for your classification as positive than if it only required recommending two aspirin. Or you might even have three different decisions although there are only two classes (sick vs. healthy): "go home and don't worry" vs. "run another test because the one we have is inconclusive" vs. "operate immediately".”
 
 https://stats.stackexchange.com/questions/312780/why-is-accuracy-not-the-best-measure-for-assessing-classification-models
+
+Image Details:
+* [classification9.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -168,6 +191,9 @@ what happens if we classify everything as negative except for 1 that we’re 100
 100% precision
 
 Write formula on the whiteboard
+
+Image Details:
+* [classification10.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -181,6 +207,9 @@ Recall {.big}
 Recall: (true positive / all actual positive)
 Out of all the possible positives, how many did the model correctly identify?
 Intuition: Did it miss any positives?
+
+Image Details:
+* [classification11.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -195,6 +224,8 @@ If we want to increase precision, only predict positive when we’re absolutely 
 In general, raising the classification threshold reduces false positives, thus raising precision.
 
 Source: Photo by Anna Samoylova on Unsplash
+Image Details:
+* [classification12.jpg](https://unsplash.com/photos/w55SpMmoPgE): Unsplash License
 -->
 
 ---
@@ -209,6 +240,9 @@ What is a good way to determine if precision and recall are balanced? The F1 sco
 Compare color blindness example: accuracy vs F1 when everyone is predicted as negative.
 
 Expand formula to get optimized F1 (can calculate F1 directly from the TP/TN/FP/FN counts)
+
+Image Details:
+* [classification13.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -219,7 +253,10 @@ F1: optimized {.big}
 
 <!--
 The F1 formula can be reduced to this formula… math.
---> 
+
+Image Details:
+* [classification11.png](http://www.google.com): Copyright Google
+-->
 
 ---
 

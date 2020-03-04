@@ -207,8 +207,6 @@ my_address_book = [
  Person('Austin Power', '301-345-5839'),
  Person('Mary McMillan', '345-353-6324')]
 
-Source: Photo by Essentialiving on Unsplash
-
 Image Details:
 * [bigO06.jpg](https://unsplash.com/photos/na8jHogEXPg): Unsplash License
 -->
