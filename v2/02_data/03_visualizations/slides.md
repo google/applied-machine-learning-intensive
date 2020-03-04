@@ -412,7 +412,7 @@ What are the possible charts that would be good for this data?
 <!--
 So how do we build these visualizations?
 
-There are actually many toolkits for building visualizaitons that range from
+There are actually many toolkits for building visualizations that range from
 low-level libraries where you are rending shapes manually to automated systems
 that you feed data and get a chart back.
 
