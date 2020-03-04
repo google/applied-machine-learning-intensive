@@ -102,7 +102,6 @@ Image Details:
 * Available at https://colab.research.google.com
 
 <!--
-
 Colab notebooks run by connecting to virtual machines that have maximum lifetimes of up to 12 hours. Notebooks will also disconnect from VMs when left idle for too long. Maximum VM lifetime and idle timeout behavior may vary over time, or based on your usage.
 
 Colab focuses on supporting Python and its ecosystem of third-party tools. There is not currently support for other Jupyter kernels like R or Scala.
@@ -171,7 +170,11 @@ It doesn't matter what order the cells appear in. What matters is the order in w
 * Are formatted using using a simple markup language called [markdown](https://colab.sandbox.google.com/notebooks/markdown_guide.ipynb)
 
 <!--
+Text cells are a great way to explain what you are doing in a notebook. Think of them like high-powered code comments.
 
+These cells can look like normal plain text, but you can also format the text in those cells using a markup language called markdown. Markdown allows you to do things like bold and italicize your text. It also allows you to add links, images, tables, and other things to your notebook.
+
+We'll look at a few key features of markdown in the next few slides.
 -->
 
 ---
