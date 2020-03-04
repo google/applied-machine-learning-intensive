@@ -43,7 +43,7 @@ When looking at Python reference docs, look for the version number in the URL.
 There are multiple ways to run python:
 * You can open the interactive interpreter and type arbitrary code.
 * You can run a python file and all the code inside will get executed.
-* You can run cell fulls of Python code in a notebook environment like Colab or Jupyter.
+* You can run cells full of Python code in a notebook environment like Colab or Jupyter.
 * If you're in a notebook, you can run all the cells in order (recommended) but you can also choose to run individual cells which might lead to unexpected results. 
 
 Source: Copyright Google
