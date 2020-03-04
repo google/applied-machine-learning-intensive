@@ -20,9 +20,9 @@ Image Details:
 * Used in a wide variety of academic and commercial domains, including finance, neuroscience, economics, statistics, advertising, and more
 
 <!--
-Python is a popular language for working on files and data munging, but to do more data analysis and modeling you may feel tempted to switch to a more domain specific language like R.
+Python is a popular language for working on files and data munging. But to do more data analysis and modeling, you may feel tempted to switch to a more domain-specific language like R.
 
-Pandas provides data structures and tools that are similar to R and help with data analysis. Hence by combining Python and Pandas, you will be able to carry out the entire data analysis workflow using Python.
+Pandas provides data structures and tools similar to R that also help with data analysis. Hence by combining Python and Pandas, you will be able to carry out the entire data analysis workflow using Python.
 -->
 
 ---
@@ -59,8 +59,8 @@ Motivation:
 * Continuing to give visuals to help out students.
 
 For the class:
-* Pandas Series is 1-dimensional and contains a homogeneously-typed array
-* So, in summary, a DataFrame contains 1 or more Series
+* Pandas Series is one-dimensional and contains a homogeneously-typed array
+* So, in summary, a DataFrame contains one or more Series
 
 Image Details:
 * [dataframe-column.png](http://www.google.com): Copyright Google
@@ -79,7 +79,7 @@ Motivation:
 * Continuing to give visuals to help out students.
 
 For the class:
-* Lastly, the first column is an index column. In this case it’s numeric values, but it can be non-numeric as you’ll see as you dig deeper into Pandas usage.
+* Last, the first column is an index column. In this case it’s numeric values, but it can be non-numeric as you’ll see as you dig deeper into Pandas usage.
 
 Image Details:
 * [dataframe-index.png](http://www.google.com): Copyright Google
@@ -106,7 +106,6 @@ If you are using Colab, you can import Pandas without needing to install it. If 
 ---
 
 # Creating Pandas Data Structures: Series
-
 
 When coding, we can make a `Series` in the following way:
 
@@ -148,9 +147,9 @@ my_dataframe = pd.read_csv("city_populations.csv")
 
 
 <!--
-This method reads in a file in the format “csv”, meaning that the data in the file is separated by commas.
+This method reads in a file in the format “csv," meaning that the data in the file is separated by commas.
 
-A CSV is a file type, meaning “comma separated values”. Essentially, it signifies that the data has commas between each value to signify where one entry ends and the next begins.
+A CSV is a file type, meaning “comma separated values." Essentially, it signifies that the data has commas between each value to signify where one entry ends and the next begins.
 
 The first argument is a string and can either be the name of a local file (as shown) or the url of a file on the internet.
 -->
