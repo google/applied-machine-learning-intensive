@@ -2,7 +2,7 @@
 
 <!--
 Exercises handout (gdoc): https://docs.google.com/document/d/1s5XGYWdHlRRM0mi5ZEb80FsncQW6sjlu-yJGoEqa-ps/edit
-Exercises handout (pdf): https://drive.google.com/file/d/10hiIWcdrwy3Nk7rLnrSfvi3-xZgk2L6R/view 
+Exercises handout (pdf): https://drive.google.com/file/d/10hiIWcdrwy3Nk7rLnrSfvi3-xZgk2L6R/view
 Solutions: https://colab.research.google.com/drive/1r2xOKjinPi31A7iAjZVtLLKymKLopOOO
 -->
 
@@ -14,7 +14,7 @@ Given the following list:
 
 ![](res/bigO01.png)
 
-How many steps does it take to insert the integer 100 in the 9th position? 
+How many steps does it take to insert the integer 100 in the 9th position?
 
 How many steps does it take to check if 63 is in the list?
 
@@ -26,20 +26,23 @@ Lst[8] = 100   → 1 step
 If we had a larger list, would the number of steps change?
 No, so we call that constant time.
 
-2. 
+2.
 for item in lst:	       → worst case: item not found. Takes 12 steps, where 12 is the size of the list
 	if item == 63:
-		print(“Found!”)  
+		print(“Found!”)
 
 If we had a larger list, would the number of steps change?
 Yes! The bigger the list, the more steps. We call it linear.
 
 Does that change if the list is sorted?
 
-Search in an unordered list is always at least linear. 
+Search in an unordered list is always at least linear.
 
 If the list is ordered, how can we do better?
-Go over binary search example on the board, and calculate how long it takes to search in the worst case (item not found). 
+Go over binary search example on the board, and calculate how long it takes to search in the worst case (item not found).
+
+Image Details:
+* [bigO01.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -56,7 +59,7 @@ Consider the code:
 i = 0
 while i < len(lst):
 	if item == 63:
-		print(“Found!”)  
+		print(“Found!”)
 
 What’s the problem?
 Infinite loop. It’ll never stop executing…
@@ -67,6 +70,9 @@ Print statements / debugging messages help us track what’s going on and if any
 That also allows us to estimate how much time there’s left… (give example)
 
 This process of estimating how much time it’ll take for a piece of code to execute in the worst case is the basis of the concept of Big-O.
+
+Image Details:
+* [bigO02.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -79,13 +85,14 @@ Example: write a function to find all duplicates in a list
 
 <!--
 What happens when you ask your computer to try out every possible combination of features?
-That’s something we’ll come across a lot when working with big data. 
+That’s something we’ll come across a lot when working with big data.
 Give examples from class (eg, using apply vs nested for loop with iloc for example)
 
 When we write code, we need to be able to tell how much time that code is likely to take to execute based on the size of the input. Similarly, we need to know whether we have enough space in memory. Otherwise, how would you be able to tell whether you can run a given dataset through a model on a given computer? Just trying it out and risking running out of memory is not a good idea! And imagine if you leave your laptop running all day and then you need to close it to go home… will you just lose all of your progress?
 In industry, you will work with problems like this at a much bigger scale. So it’s important to have the language and conceptual understanding of these limitations to be able to work efficiently.
 
-Source: Photo by Stas Svechnikov on Unsplash
+Image Details:
+* [bigO03.jpg](https://unsplash.com/photos/rEgveRa_5ds)
 -->
 
 ---
@@ -96,11 +103,14 @@ Source: Photo by Stas Svechnikov on Unsplash
 
 <!--
 Big O is a way to talk about this, to express runtime and space usage.
+
+Image Details:
+* [bigO04.png](http://www.google.com): Copyright Google
 -->
 
 ---
 
-# Example: increment all values within a column by 1 
+# Example: increment all values within a column by 1
 
 ![](res/bigO05.png)
 
@@ -110,6 +120,9 @@ iloc: work on position
 ix: You can get data from dataframe without it being in the index
 at: get scalar values. It's a very fast loc
 iat: Get scalar values. It's a very fast iloc
+
+Image Details:
+* [bigO05.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -195,6 +208,9 @@ my_address_book = [
  Person('Mary McMillan', '345-353-6324')]
 
 Source: Photo by Essentialiving on Unsplash
+
+Image Details:
+* [bigO06.jpg](https://unsplash.com/photos/na8jHogEXPg): Unsplash License
 -->
 
 ---
@@ -222,7 +238,7 @@ def constant(lst):
 
 Which is faster?
 
-Explain Omega (lower bound) and Theta (tight bound) 
+Explain Omega (lower bound) and Theta (tight bound)
 In both of these cases, the worst and best case are the same. They are an example of Theta.
 In our earlier search example with had a return statement in the for loop. What happens in the best case? What about the worst?
 The best and worst case are not the same, so we use Omega and Big-O.
@@ -230,7 +246,7 @@ The best and worst case are not the same, so we use Omega and Big-O.
 Example: for loops without break statements vs while loop
 
 Explain theta with linear function ( c1* g(x) <= f(x) <= c2 * g(x) )
-For example, in our earlier example, if we had: 
+For example, in our earlier example, if we had:
 def quadratic(lst):
  n = len(lst)
  for i in range(n):
@@ -243,7 +259,8 @@ This is still Big Theta, because n^2 <= n^2 <= 10 * n^2
 
 but in industry you really only need to know Big O
 
-Source: http://www.cs.utsa.edu/~bylander/cs3343/notes/asymptotic.pdf
+Image Details:
+* [bigO07.png](http://www.cs.utsa.edu/~bylander/cs3343/notes/asymptotic.pdf): Unlicensed
 -->
 
 ---
@@ -264,7 +281,8 @@ Put the following in order:
 <!--
 Highlight most common (1, log n, n, n^2, etc)
 
-Source: http://bigocheatsheet.com/ 
+Image Details:
+* [bigO08.png](http://bigocheatsheet.com/): Unlicensed
 -->
 
 ---
@@ -278,6 +296,9 @@ Walk through example of how to analyze code.
 Pay special attention to how to calculate the number of instructions in each line
 
 Hand out exercise sheet and give 15 min for students to complete
+
+Image Details:
+* [bigO09.png](http://www.google.com): Copyright Google
 -->
 
 ---

@@ -3,11 +3,12 @@
 ![](https://colab.research.google.com/img/colab_favicon_256px.png)
 
 <!--
-We have talked about machine learning and data science in the abstract. 
-Now it's time to actually start applying our skills. To do this, we will 
+We have talked about machine learning and data science in the abstract.
+Now it's time to actually start applying our skills. To do this, we will
 need some sort of development environment. There are a plethora of options in this space.
 
-Source: Google Copyright
+Image Details:
+* [colab_favicon_256px.png](https://colab.research.google.com): Externally Linked
 -->
 
 ---
@@ -31,14 +32,15 @@ had experience with them.
 These development environments are also useful for developing code supported by
 unit tests and code that will be packaged and deployed on server systems.
 
-Source: Google Copyright
+Image Details:
+* [ide.png](http://www.google.com): Google Copyright
 -->
 
 ---
 
 # Notebooks
 
-![](res/notebook.png) 
+![](res/notebook.png)
 
 <!--
 Notebooks are another option that you will see regularly, and they are the
@@ -52,10 +54,11 @@ structured document. The document can be executed, modified, and iterated on.
 
 Though you'll see many Jupyter notebooks that contain Python code, they aren't
 limited to Python. Jupyter supports many different 'kernels,' which allow users a
-wide variety of choice in what languages and libraries they use. In this course, 
-we will use Python. 
+wide variety of choice in what languages and libraries they use. In this course,
+we will use Python.
 
-Source: Google Copyright
+Image Details:
+* [notebook.png](http://www.google.com): Google Copyright
 -->
 
 ---
@@ -83,7 +86,8 @@ might explore and build a small model using a notebook. Later, once the model
 is designed, they might then switch over to a more traditional environment to
 create a deployable package.
 
-Source: Google Copyright
+Image Details:
+* [matlab.png](http://www.google.com): Google Copyright
 -->
 
 ---
@@ -99,50 +103,52 @@ Source: Google Copyright
 
 <!--
 
-Colab notebooks run by connecting to virtual machines that have maximum lifetimes of up to 12 hours. Notebooks will also disconnect from VMs when left idle for too long. Maximum VM lifetime and idle timeout behavior may vary over time, or based on your usage. 
+Colab notebooks run by connecting to virtual machines that have maximum lifetimes of up to 12 hours. Notebooks will also disconnect from VMs when left idle for too long. Maximum VM lifetime and idle timeout behavior may vary over time, or based on your usage.
 
 Colab focuses on supporting Python and its ecosystem of third-party tools. There is not currently support for other Jupyter kernels like R or Scala.
 
-More documentation on Colab can be found at https://research.google.com/colaboratory/faq.html 
+More documentation on Colab can be found at https://research.google.com/colaboratory/faq.html
 
 A good introductory notebook can be found here https://colab.sandbox.google.com/notebooks/intro.ipynb#scrollTo=GJBs_flRovLc
 -->
 
 ---
 
-# Cells in a Colab Notebook 
+# Cells in a Colab Notebook
 
 A notebook contains movable cells which are either code or text cells
 
-![](res/notebook_cells.png) 
+![](res/notebook_cells.png)
 
 <!--
-Hovering above or below a current cell will bring up the option to add a new code or text cell. 
+Hovering above or below a current cell will bring up the option to add a new code or text cell.
 
 You can run code cells and typeset text cells using Shift+Enter.
 
-Source: Google Copyright
+Image Details:
+* [notebook_cells.png](http://www.google.com): Google Copyright
 -->
 
 ---
 
 # Code Cells: Python
-Write all code in Python 3. 
+Write all code in Python 3.
 
 <!--
-As of January 1, 2020, the Python team no longer supports Python 2. And as of the same date, Colab has stopped supporting Python 2 runtimes. 
+As of January 1, 2020, the Python team no longer supports Python 2. And as of the same date, Colab has stopped supporting Python 2 runtimes.
 -->
 
 ---
 
 # Code Cells: Basic Python Print
 
-![](res/python_print.png) 
+![](res/python_print.png)
 
 <!--
 Writing Python code in a notebook is just like writing Python code anywhere else.
 
-Source: Google Copyright
+Image Details:
+* [python_print.png](http://www.google.com): Google Copyright
 -->
 
 ---
@@ -154,7 +160,7 @@ Source: Google Copyright
 * It DOES matter the order in which cells are run
 
 <!--
-It doesn't matter what order the cells appear in. What matters is the order in which they are run. The run-order is captured by the numbers to the left of each cell. 
+It doesn't matter what order the cells appear in. What matters is the order in which they are run. The run-order is captured by the numbers to the left of each cell.
 -->
 
 ---
@@ -186,7 +192,7 @@ You can easily format text with specific markdown syntax.
 
 # Markdown: Lists
 
-**Create an Ordered List**  
+**Create an Ordered List**
 Input:
 
 ```
@@ -203,7 +209,7 @@ Output:
 
 {.column}
 
-**Create an Unordered List**  
+**Create an Unordered List**
 Input:
 
 ```
@@ -219,7 +225,7 @@ Output:
 
 
 <!--
-You can create numbered and bulleted lists. What is shown here is what the user should type in markdown. The output of an ordered list will contain the correct linear number 1. 2. 3. etc. 
+You can create numbered and bulleted lists. What is shown here is what the user should type in markdown. The output of an ordered list will contain the correct linear number 1. 2. 3. etc.
 -->
 
 ---
@@ -241,12 +247,13 @@ You can create numbered and bulleted lists. What is shown here is what the user 
 
 **Output:**
 
-![](res/nested-list.png) 
+![](res/nested-list.png)
 
 <!--
-You can also easily create sublists. 
+You can also easily create sublists.
 
-Source: Google Copyright
+Image Details:
+* [nested-list.png](http://www.google.com): Google Copyright
 -->
 
 ---
@@ -289,14 +296,15 @@ Java | James Gosling
 
 **Output:**
 
-![](res/table.png) 
+![](res/table.png)
 
 .
 
 <!--
-Tables are created using | and -. They will be formatted automatically with lines at each delimiter. 
+Tables are created using | and -. They will be formatted automatically with lines at each delimiter.
 
-Source: Google Copyright
+Image Details:
+* [table.png](http://www.google.com): Google Copyright
 -->
 
 ---
@@ -313,14 +321,15 @@ $\sqrt{3x-1}+(1+x)^2$
 
 **Output:**
 
-![](res/latex.png) 
+![](res/latex.png)
 
 <!--
-LaTeX is a powerful document preparation system for typesetting mathematical equations. Markdown in Colab supports basic LaTeX commands. 
+LaTeX is a powerful document preparation system for typesetting mathematical equations. Markdown in Colab supports basic LaTeX commands.
 
 https://www.latex-project.org/help/documentation/
 
-Source: Google Copyright
+Image Details:
+* [latex.png](http://www.google.com): Google Copyright
 -->
 
 ---
@@ -340,5 +349,5 @@ If you prefer, you can export the notebook to a Github repository or download th
 
 Seedbank is a search engine for Colab notebooks for material for exploration and learning of ML. https://research.google.com/seedbank/guide/faq
 
-Some of the collaborative features in Colab are quite limited, and it can be challenging to have two people editing the same lab at the same time. Furthermore, you can open labs in sandbox mode which does not save changes. Use collaborative features with caution. 
+Some of the collaborative features in Colab are quite limited, and it can be challenging to have two people editing the same lab at the same time. Furthermore, you can open labs in sandbox mode which does not save changes. Use collaborative features with caution.
 -->

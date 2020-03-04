@@ -9,7 +9,8 @@
 
 These animals are adorable but we are going to talk to about a Python library called Pandas which is a popular tool for handling and analyzing input data.
 
-Source: https://pixabay.com/photos/panda-giant-panda-bear-red-panda-317980/ (Pixabay License)
+Image Details:
+* [pandas.jpg](https://pixabay.com/photos/panda-giant-panda-bear-red-panda-317980/): Pixabay License
 
 -->
 
@@ -38,7 +39,7 @@ DataFrames are set up like tables, with columns, headers, and rows of data.
 
 <!--
 
-Motivation: 
+Motivation:
 Giving a visual for DataFrames so students who are visual learners can interact intuitively with the structure.
 
 For the class:
@@ -46,7 +47,8 @@ For the class:
   * Looks like a table which consists of rows and columns
   * The first row contains column headers
 
-Source: Google Copyright
+Image Details:
+* [dataframe.png](http://www.google.com): Copyright Google
 
 -->
 
@@ -60,14 +62,15 @@ One column of a DataFrame is called a “Series”
 
 <!--
 
-Motivation: 
+Motivation:
 * Continuing to give visuals to help out students.
 
 For the class:
 * Pandas Series is 1-dimensional and contains a homogeneously-typed array
 * So, in summary, a DataFrame contains 1 or more Series
 
-Source: Google Copyright
+Image Details:
+* [dataframe-column.png](http://www.google.com): Copyright Google
 
 -->
 
@@ -81,13 +84,14 @@ The primary column of the dataframe, without a title, is the “Index”
 
 <!--
 
-Motivation: 
+Motivation:
 * Continuing to give visuals to help out students.
 
 For the class:
 * Lastly, the first column is an index column. In this case it’s numeric values, but it can be non-numeric as you’ll see as you dig deeper into Pandas usage.
 
-Source: Google Copyright
+Image Details:
+* [dataframe-index.png](http://www.google.com): Copyright Google
 
 -->
 
@@ -198,13 +202,14 @@ my_dataframe.shape()
 
 {.column}
 
-![](res/shape.png) 
+![](res/shape.png)
 
 <!--
 
 shape() prints (number of rows, number of columns)
 
-Source: Google Copyright
+Image Details:
+* [shape.png](http://www.google.com): Copyright Google
 
 -->
 
@@ -220,13 +225,14 @@ my_dataframe.head()
 
 {.column}
 
-![](res/head.png) 
+![](res/head.png)
 
 <!--
 
 head() prints the full contents of the first 5 rows.
 
-Source: Google Copyright
+Image Details:
+* [head.png](http://www.google.com): Copyright Google
 
 -->
 
@@ -248,8 +254,8 @@ my_dataframe.tail()
 
 tail() prints the full contents of the last 5 rows.
 
-Source: Google Copyright
-
+Image Details:
+* [tail.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -264,7 +270,7 @@ my_dataframe.describe()
 
 {.column}
 
-![](res/describe.png) 
+![](res/describe.png)
 
 <!--
 
@@ -272,7 +278,8 @@ describe() gives statistics such as mean and median about numerical data.
 
 Note that any columns without numerical data are not included.
 
-Source: Google Copyright
+Image Details:
+* [describe.png](http://www.google.com): Copyright Google
 
 -->
 
@@ -289,13 +296,14 @@ my_dataframe.hist()
 
 {.column}
 
-![](res/hist.png) 
+![](res/hist.png)
 
 <!--
 
 hist() visualizes the frequency of various results for one or more numerical columns.
 
-Source: Google Copyright
+Image Details:
+* [hist.png](http://www.google.com): Copyright Google
 
 -->
 
@@ -408,7 +416,7 @@ For each row, the entry in the ‘density’ column is equal to the entry in the
 
 -->
 
---- 
+---
 
 # Adding Series to a Dataframe
 

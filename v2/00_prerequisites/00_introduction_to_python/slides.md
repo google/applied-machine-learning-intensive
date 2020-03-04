@@ -13,13 +13,14 @@ Source: Wikipedia
 ![](res/introtopython1.png)
 
 <!--
-* "Interpreted" means portability, ease of use (no compiling), and that the code can be run interactively. 
+* "Interpreted" means portability, ease of use (no compiling), and that the code can be run interactively.
 * "High-level" means closer to human languages and further from machine languages.
 * "General-purpose" means it can be used for anything, including creating web apps (e.g. YouTube), small scripts (e.g. automatically renaming photos based on data from the camera), machine learning, data visualization, and much more.
 
-One of the powers of Python is that it has many built-in libraries and many more third-party libraries to give it specialized abilities. We'll explore many of these specialized libraries over the course of this program. 
+One of the powers of Python is that it has many built-in libraries and many more third-party libraries to give it specialized abilities. We'll explore many of these specialized libraries over the course of this program.
 
-Source: Copyright Google
+Image Details:
+* [introtopython1.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -30,7 +31,7 @@ There are multiple versions of Python in the world:
 
 * 1.x is long gone.
 * 2.x is deprecated and support will soon stop but there's still a lot of code and code samples out there that use it
-* We'll be focusing on Python3 since that's the modern version and how all new code should be written. 
+* We'll be focusing on Python3 since that's the modern version and how all new code should be written.
 
 When looking at Python reference docs, look for the version number in the URL.
 -->
@@ -44,9 +45,10 @@ There are multiple ways to run python:
 * You can open the interactive interpreter and type arbitrary code.
 * You can run a python file and all the code inside will get executed.
 * You can run cells full of Python code in a notebook environment like Colab or Jupyter.
-* If you're in a notebook, you can run all the cells in order (recommended) but you can also choose to run individual cells which might lead to unexpected results. 
+* If you're in a notebook, you can run all the cells in order (recommended) but you can also choose to run individual cells which might lead to unexpected results.
 
-Source: Copyright Google
+Image Details:
+* [introtopython4.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -60,7 +62,7 @@ Source: Copyright Google
 ![](res/introtopython5.png)
 
 <!--
-In practice, indentation makes it hard to have long functions with several levels of nesting. That's actually a good thing, as it encourages using decomposition (breaking code into smaller functions) instead. 
+In practice, indentation makes it hard to have long functions with several levels of nesting. That's actually a good thing, as it encourages using decomposition (breaking code into smaller functions) instead.
 -->
 
 ---
@@ -75,7 +77,8 @@ In practice, indentation makes it hard to have long functions with several level
 ![](res/introtopython6.png)
 
 <!--
-Source: Copyright Google
+Image Details:
+* [introtopython6.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -89,7 +92,8 @@ Source: Copyright Google
 ![](res/introtopython7.png)
 
 <!--
-Source: Copyright Google
+Image Details:
+* [introtopython7.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -102,7 +106,8 @@ Source: Copyright Google
 ![](res/introtopython8.png)
 
 <!--
-Source: Copyright Google
+Image Details:
+* [introtopython8.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -119,7 +124,8 @@ Source: Copyright Google
 ![](res/introtopython9.png)
 
 <!--
-Source: Copyright Google
+Image Details:
+* [introtopython9.png](http://www.google.com): Copyright Google
 -->
 
 

@@ -24,10 +24,11 @@ What patterns can you see in these raw data of common PIN numbers?
 
 <!--
 Here you can see a dataset containing pin numbers. Given the raw data shown, can
-you see any patterns?  .... Not really. You may notice that 1111 is repeated a few times, 
-but other than that it's difficult. 
+you see any patterns?  .... Not really. You may notice that 1111 is repeated a few times,
+but other than that it's difficult.
 
-Source: Copyright Google
+Image Details:
+* [pins.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -45,7 +46,8 @@ What patterns do you see?
 
 Note that the dark square on the right represents a very unpopular pin.
 
-Source: Copyright Google
+Image Details:
+* [heatmap.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -58,7 +60,8 @@ Source: Copyright Google
 Here we see that repeated pairs of numbers are common. This is shown by the
 diagonal line.
 
-Source: Copyright Google
+Image Details:
+* [heatmap-repeat.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -70,7 +73,8 @@ Source: Copyright Google
 <!--
 Here we see that using a year in the 1900's is pretty common too.
 
-Source: Copyright Google
+Image Details:
+* [heatmap-year.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -83,7 +87,8 @@ Source: Copyright Google
 Small numbers are also very popular. There tend to be lots of zeros and ones at
 the start and end of pins.
 
-Source: Copyright Google
+Image Details:
+* [heatmap-01.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -96,7 +101,8 @@ Source: Copyright Google
 There are many different types of charts. This is just a sample of types of
 charts that you might see to visualize data.
 
-Source: Copyright Google
+Image Details:
+* [charts.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -108,7 +114,8 @@ Source: Copyright Google
 <!--
 Pie Charts are good for representing percentages of a whole. Pie charts are great for representing data that is in the form of fractions adding up to 1 or percentages adding up to 100. They create a natural comparison between portions of a whole.
 
-Source: Copyright Google
+Image Details:
+* [pie-chart.png)(http://www.google.com): Copyright Google
 -->
 
 ---
@@ -127,7 +134,8 @@ Problems:
 Think pair share: How could it be better represented?
 Would appear better as a bar chart; comparing the pieces side by side rather than as parts of a whole.
 
-Source: Copyright Google
+Image Details:
+* [bad-pie-chart.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -146,7 +154,8 @@ Why:
 
 In general bar charts are good for representing categorical data, as the x axis can be used to represent categories very easily and the bars create a natural comparison between categories.
 
-Source: Copyright Google
+Image Details:
+* [bar-chart.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -167,7 +176,8 @@ Context around it makes it bad - if you want a max from the hours of the tempera
 Also: Usually bar charts go in descending order of size but since these x values have a meaningful ordering we can’t properly construct the chart
 
 
-Source: Copyright Google
+Image Details:
+* [bad-bar-chart.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -188,7 +198,8 @@ Why:
 
 In general for data that could be well fit with a function (i.e. an x,y category where every x has just one correlating y value that strongly correlate in a mathematical way) a line graph is a fantastic choice. It allows you to make inferences on what values would be that weren’t in the original dataset, expanding your ability to analyze your data.
 
-Source: Copyright Google
+Image Details:
+* [line-chart.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -208,7 +219,8 @@ Problems:
   * These gaps are missing when seeing it as a continuous line
 
 
-Source: Copyright Google
+Image Details:
+* [bad-line-chart.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -226,7 +238,8 @@ Why:
 
 In general if you have x,y data where you have multiple y values for every x, a scatter plot is a good choice as it allows you to see all the data clearly and doesn’t average out y values for a given x like a line graph would.
 
-Source: Copyright Google
+Image Details:
+* [scatter-plot.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -242,7 +255,8 @@ Problems:
 * Too many points to draw conclusions
 * There may be a higher concentration of points in some areas, but in this format we cannot tell
 
-Source: Copyright Google
+Image Details:
+* [bad-scatter-plot.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -266,7 +280,8 @@ Answers:
 * Data with a linear (or other basic math) correlation (an x,y category that strongly correlate in a mathematically easy to fit way)
 * Data with representing different proportions of a whole (percentages)
 
-Source: Copyright Google
+Image Details:
+* [heat-map.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -276,7 +291,7 @@ Source: Copyright Google
 Which type of visualization do you think would best represent following data?
 
 * Line chart
-* Bar chart 
+* Bar chart
 * Scatter Plot
 * Line chart or Bar Chart with averages
 * Heat map
@@ -305,7 +320,8 @@ Which type of visualization do you think would best represent the data below?
 <!--
 Quickly look at the data come up with a prediction for which type of visualization should be used.
 
-Source: Copyright Google
+Image Details:
+* [candy-count.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -324,7 +340,8 @@ Bar Chart - could work, good because the data is categorical better for analysis
 Scatter Plot - not good, draws correlation + x axis has no meaningful ordering
 Line Graph - not good, draw a correlation where there is none in the space between chocolate types - masks the true values
 
-Source: Copyright Google
+Image Details:
+* [candy-count-charts.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -427,7 +444,8 @@ and can produce eye-pleasing charts easily.
 In the lab you'll get to use both to create the types of charts that we've
 discussed in this lecture.
 
-Source: Externally Linked
+Image Details:
+* [logo2_compressed.svg](https://matplotlib.org/): Externally Linked
 -->
 
 

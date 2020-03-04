@@ -27,7 +27,7 @@ We can't teach you machine learning without discussing clustering. However, we a
 <!--
 Do the fastener clustering exercise. Have the students divide the fasteners they have into 6 groups, then 4, then 2. Explain why.
 
-Examine the groupings across teams. Did some group on function? color? 
+Examine the groupings across teams. Did some group on function? color?
 
 Prose:
 
@@ -53,7 +53,8 @@ Notice that your choice of 'k' is very important to the makeup of your groups.
 
 This is important when we start examining clustering algorithms.
 
-Source: https://pixabay.com/photos/darkness-panorama-background-3075379/
+Image Details:
+* [clustering01.jpg](https://pixabay.com/photos/darkness-panorama-background-3075379/): Pixabay License
 -->
 
 ---

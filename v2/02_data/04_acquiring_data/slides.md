@@ -34,7 +34,8 @@ Click on the "Files" icon
 <!--
 First, click on the 'Files' icon on the left side of the screen.
 
-Source: Copyright Google
+Image Details:
+* [files.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -46,7 +47,8 @@ Source: Copyright Google
 <!--
 Next, click on the 'Upload' link.
 
-Source: Copyright Google
+Image Details:
+* [upload.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -59,7 +61,8 @@ Source: Copyright Google
 You will then be presented with a file selector dialog box. Find the file on
 your local machine and then press the 'Open' button.
 
-Source: Copyright Google
+Image Details:
+* [file-selector.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -82,7 +85,8 @@ Do be warned though, if you do a lot of processing on data and save that data to
 a file, you will want to download the file before the Colab environment gets
 recycled.
 
-Source: Copyright Google
+Image Details:
+* [warning.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -95,7 +99,8 @@ Source: Copyright Google
 Once your file is uploaded, you will be able to see it in the left 'Files' panel
 of Colab.
 
-Source: Copyright Google
+Image Details:
+* [uploaded-files.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -114,7 +119,8 @@ uploads you do will go to root and not to `/content/`.
 
 Why does this matter?
 
-Source: Copyright Google
+Image Details:
+* [root-folder.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -148,7 +154,8 @@ Let's think about what is happening when we are uploading data to Colab. We have
 the data on our local computer and then we copy/upload that data to Colab
 running on the cloud.
 
-Source: Copyright Google
+Image Details:
+* [to-cloud.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -170,7 +177,8 @@ This is especially true in a classroom setting where many of us are uploading
 and downloading large files at the same time. A session of this class actually
 crashed the network at one of the schools it was taught at!
 
-Source: Copyright Google
+Image Details:
+* [to-from-cloud.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -186,7 +194,8 @@ bring it down to your local computer. You can write code in Colab to perform
 is copied and keeps the data from having to transfer over your network
 connection.
 
-Source: Copyright Google
+Image Details:
+* [cloud-to-cloud.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -300,7 +309,8 @@ Now we'll talk about getting data from Kaggle into your Colab. We talk about
 Kaggle specifically because it does require authentication to download data from
 Kaggle and we use Kaggle quite a bit in this course.
 
-Source: External
+Image Details:
+* [site-logo.png](https://www.kaggle.com): Externally Linked
 -->
 
 ---
@@ -317,7 +327,8 @@ in first.
 After you have downloaded the file to your local machine, you can then upload it
 to Colab.
 
-Source: Copyright Google
+Image Details:
+* [kaggle-download.png](http://www.google.com): Copyright Google
 -->
 
 ---

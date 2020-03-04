@@ -12,16 +12,28 @@ Classification and Regression {.big}
 
 ![](res/supvecmac01.png)
 
+<!--
+Image Details:
+* [supvecmac01.png](http://www.oreilly.com): Unlicensed
+-->
 ---
 
 ![](res/supvecmac02.png)
 
+<!--
+Image Details:
+* [supvecmac02.png](http://www.oreilly.com): Unlicensed
+-->
 ---
 
 # Soft vs. Hard Margin
 
 ![](res/supvecmac03.png)
 
+<!--
+Image Details:
+* [supvecmac03.png](http://www.oreilly.com): Unlicensed
+-->
 ---
 
 # C Hyperparameter
@@ -30,6 +42,9 @@ Classification and Regression {.big}
 
 <!--
 Smaller values allow more data in the highway and create wider highways.
+
+Image Details:
+* [supvecmac04.png](http://www.oreilly.com): Unlicensed
 -->
 
 ---
@@ -40,6 +55,9 @@ Smaller values allow more data in the highway and create wider highways.
 
 <!--
 The support vectors are the distances between the data points and the margin.
+
+Image Details:
+* [supvecmac05.png](http://www.oreilly.com): Unlicensed
 -->
 
 ---

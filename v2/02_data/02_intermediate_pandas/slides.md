@@ -44,7 +44,7 @@ most basic is the `.shape` property of a DataFrame.
 What is shape?
 
 Shape is a property of a DataFrame that lets you know the number of rows and
-columns in the DataFrame. Returns a tuple with dimensions of data frame. 
+columns in the DataFrame. Returns a tuple with dimensions of data frame.
 Specifically, (# rows, # columns).
 
 If you know about NumPy, then you may recall that NumPy has a `.shape` attribute
@@ -124,7 +124,8 @@ The DataFrame has four rows and five columns, so df.shape would return (4,5).
 Say that we would like to find people with more than two dogs.
 How would we do that?
 
-Source: Copyright Google
+Image Details:
+* [table_for_row_filter.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -139,15 +140,16 @@ df[df['num_pet_dogs'] > 1]
 
 <!--
 Here we have put the expression `df['num_pet_dogs'] > 1` inside another selector
-for `df`. The inner-expression creates a "boolean index," which is an index that is 
-the same length as the dataframe (in this case the length is 4), where an entry is True if num_pet_dogs > 1. 
+for `df`. The inner-expression creates a "boolean index," which is an index that is
+the same length as the dataframe (in this case the length is 4), where an entry is True if num_pet_dogs > 1.
 For this specific example,`df['num_pet_dogs'] > 1` returns an index with entries True, False, True, False.
-Then we take df[boolean index], and this selects the rows for which the boolean value is True. 
+Then we take df[boolean index], and this selects the rows for which the boolean value is True.
 
-Note that a dataframe is returned. You may want to assign this to a new variable to work with it further. 
-This filtering is not done in place and does not modify the original dataframe, df. 
+Note that a dataframe is returned. You may want to assign this to a new variable to work with it further.
+This filtering is not done in place and does not modify the original dataframe, df.
 
-Source: Copyright Google
+Image Details:
+* [table_more_than_two_dogs.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -164,7 +166,8 @@ filter out the 'last_name' and 'state' columns.
 
 How would we do that?
 
-Source: Copyright Google
+Image Details:
+* [table_for_column_filter.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -182,7 +185,8 @@ To filter by columns we can also use the DataFrame selector. Instead of passing
 in a boolean index, we pass in a list of string that match the column names that
 we want to keep.
 
-Source: Copyright Google
+Image Details:
+* [table_less_pii.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -257,7 +261,8 @@ per owner per state.
 
 How would we do that?
 
-Source: Copyright Google
+Image Details:
+* [table_to_group.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -281,7 +286,8 @@ owner'.
 There are many other statistics that we can gather when grouping data in a
 `DataFrame`. These include min, max, count, standard deviation, and more.
 
-Source: Copyright Google
+Image Details:
+* [table_grouped](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -339,7 +345,8 @@ You can see that 'first_name' is the common column between the two tables.
 
 Let's see how Pandas would merge these tables.
 
-Source: Copyright Google
+Image Details:
+* [tables_to_merge.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -356,7 +363,8 @@ pd.merge(df1, df2)
 Here we can see the call to `merge()`. It accepts two `DataFrame` objects and
 merges them on common column names. In this case, 'first_name'.
 
-Source: Copyright Google
+Image Details:
+* [tables_merged.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -373,7 +381,8 @@ with zero values to be missing from tables.
 
 Any guesses on what happens?
 
-Source: Copyright Google
+Image Details:
+* [tables_to_merge_uneven.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -392,7 +401,8 @@ find a match it didn't include the datapoint.
 
 This is standard join functionality. There are ways to get around this though.
 
-Source: Copyright Google
+Image Details:
+* [tables_merged_uneven.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -415,7 +425,8 @@ keeps unmatch rows found in both tables.
 In any of the outer join cases, missing data is filled in with null values.
 `NaN` for numbers. `None` for strings and other objects.
 
-Source: Copyright Google
+Image Details:
+* [tables_merged_outer.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -445,7 +456,8 @@ each person in ascending order.
 
 How would we do that?
 
-Source: Copyright Google
+Image Details:
+* [table_to_sort.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -462,7 +474,8 @@ df.sort_values('num_pet_cats')
 Here we can see the `sort_values()` method in use. We have asked to sort by the
 'num_pet_cats' column. The default sort order is ascending.
 
-Source: Copyright Google
+Image Details:
+* [table_sorted.png](http://www.google.com): Copyright Google
 -->
 
 ---

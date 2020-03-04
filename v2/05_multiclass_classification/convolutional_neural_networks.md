@@ -7,7 +7,8 @@
 <!--
 Biological science from the 80s
 
-Source: https://pixabay.com/illustrations/wallpapper-music-colors-80-s-778185/
+Image Details:
+* [conNN01.png](https://pixabay.com/illustrations/wallpapper-music-colors-80-s-778185/): Pixabay License
 -->
 
 ---
@@ -17,7 +18,8 @@ Source: https://pixabay.com/illustrations/wallpapper-music-colors-80-s-778185/
 <!--
 Visual cortex; small receptive field; overlap; react to different line orientations; can stack
 
-Source: https://pixabay.com/photos/eye-iris-pupil-vision-eyeball-3221498/
+Image Details:
+* [conNN02.jpg](https://pixabay.com/photos/eye-iris-pupil-vision-eyeball-3221498/): Pixabay License
 -->
 
 ---
@@ -27,7 +29,8 @@ Source: https://pixabay.com/photos/eye-iris-pupil-vision-eyeball-3221498/
 <!--
 Small receptive field
 
-Source: https://pixabay.com/illustrations/grid-block-cube-square-design-684983/
+Image Details:
+* [conNN03.jpg](https://pixabay.com/illustrations/grid-block-cube-square-design-684983/): Pixabay License
 -->
 
 ---
@@ -37,7 +40,8 @@ Source: https://pixabay.com/illustrations/grid-block-cube-square-design-684983/
 <!--
 Overlap
 
-Source: https://pixabay.com/vectors/circles-colors-primary-red-blue-27975/
+Image Details:
+* [conNN04.png](https://pixabay.com/vectors/circles-colors-primary-red-blue-27975/): Pixabay License
 -->
 
 ---
@@ -47,7 +51,8 @@ Source: https://pixabay.com/vectors/circles-colors-primary-red-blue-27975/
 <!--
 Stack
 
-Source: https://pixabay.com/photos/pancake-crepes-eat-food-crepe-640869/
+Image Details:
+* [conNN05.jpg](https://pixabay.com/photos/pancake-crepes-eat-food-crepe-640869/): Pixabay License
 -->
 
 ---
@@ -57,7 +62,8 @@ Source: https://pixabay.com/photos/pancake-crepes-eat-food-crepe-640869/
 <!--
 Lines
 
-Source: https://pixabay.com/photos/industry-strommast-power-line-pylon-3112436/
+Image Details:
+* [conNN06.jpg](https://pixabay.com/photos/industry-strommast-power-line-pylon-3112436/): Pixabay License
 -->
 
 ---
@@ -69,7 +75,8 @@ Source: https://pixabay.com/photos/industry-strommast-power-line-pylon-3112436/
 <!--
 LeNet
 
-http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf
+Image Details:
+* [conNN07.png](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf): Unlicensed
 -->
 
 ---
@@ -78,18 +85,28 @@ http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf
 
 <!--
 Convolutional Layers
+
+Image Details:
+* [conNN08.png](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf): Unlicensed
 -->
 
 ---
 
 ![](res/conNN09.png)
 
+<!--
+Image Details:
+* [conNN09.png](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf): Unlicensed
+-->
 ---
 
 ![](res/conNN10.png)
 
 <!--
 Feature Maps
+
+Image Details:
+* [conNN10.png](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf): Unlicensed
 -->
 
 ---
@@ -98,6 +115,9 @@ Feature Maps
 
 <!--
 Pooling
+
+Image Details:
+* [conNN11.png](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf): Unlicensed
 -->
 
 ---
@@ -109,6 +129,9 @@ Pooling
 <!--
 GoogLe-Net
 http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf
+
+Image Details:
+* [conNN12.png](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf): Unlicensed
 -->
 
 ---
