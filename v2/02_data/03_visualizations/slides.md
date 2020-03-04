@@ -9,7 +9,7 @@ patterns to better understand our datasets. There are many varieties of
 visualizations, and in this lecture we will go over some of the most common
 visualizations. We will show scenarios when each visualization is useful.
 
-To start, we want to examine a scenario when a visualization is particularly helpful
+To start, we want to examine a scenario when a visualization is particularly helpful.
 -->
 
 ---
@@ -23,8 +23,10 @@ What patterns can you see in these raw data of common PIN numbers?
 ![](res/pins.png)
 
 <!--
-Here you can see a dataset containing pin numbers. Given the raw data shown, can
-you see any patterns?  .... Not really. You may notice that 1111 is repeated a few times,
+Here you can see a dataset containing PIN numbers. Given the raw data shown, can
+you see any patterns? 
+
+Not really. You may notice that 1111 is repeated a few times,
 but other than that it's difficult.
 
 Image Details:
@@ -38,13 +40,13 @@ Image Details:
 ![](res/heatmap.png)
 
 <!--
-Here we have a heatmap of the pin numbers in the previous dataset. The first two
+Here we have a heatmap of the PIN numbers in the previous dataset. The first two
 digits are along the x-axis and the last two digits are along the y-axis. In
 this particular map yellow means that the pattern occurs more often.
 
 What patterns do you see?
 
-Note that the dark square on the right represents a very unpopular pin.
+Note that the dark square on the right represents a very unpopular PIN.
 
 Image Details:
 * [heatmap.png](http://www.google.com): Copyright Google
@@ -71,7 +73,7 @@ Image Details:
 ![](res/heatmap-year.png)
 
 <!--
-Here we see that using a year in the 1900's is pretty common too.
+Here we see that using a year in the 1900s is pretty common too.
 
 Image Details:
 * [heatmap-year.png](http://www.google.com): Copyright Google
@@ -85,7 +87,7 @@ Image Details:
 
 <!--
 Small numbers are also very popular. There tend to be lots of zeros and ones at
-the start and end of pins.
+the start and end of PINs.
 
 Image Details:
 * [heatmap-01.png](http://www.google.com): Copyright Google
@@ -112,7 +114,7 @@ Image Details:
 ![](res/pie-chart.png)
 
 <!--
-Pie Charts are good for representing percentages of a whole. Pie charts are great for representing data that is in the form of fractions adding up to 1 or percentages adding up to 100. They create a natural comparison between portions of a whole.
+Pie Charts are good for representing percentages of a whole. Pie charts are great for representing data that is in the form of fractions adding up to one or percentages adding up to 100. They create a natural comparison between portions of a whole.
 
 Image Details:
 * [pie-chart.png)(http://www.google.com): Copyright Google
@@ -125,14 +127,14 @@ Image Details:
 ![](res/bad-pie-chart.png)
 
 <!--
-Pie charts cannot be used for all data, and can create misleading conclusions.
+Pie charts cannot be used for all data, and they can create misleading conclusions.
 
 Problems:
-* creating percentages where they are not necessary or helpful, just in order to put it into the visualization
-* the states have separate budgets - indicates correlation when there is none
+* creating percentages where they're not necessary or helpful, solely to put it into the visualization
+* the states have separate budgets, so this visualization indicates correlation when there is none
 
 Think pair share: How could it be better represented?
-Would appear better as a bar chart; comparing the pieces side by side rather than as parts of a whole.
+It would appear better as a bar chart, comparing the pieces side-by-side, rather than as parts of a whole.
 
 Image Details:
 * [bad-pie-chart.png](http://www.google.com): Copyright Google
@@ -148,11 +150,12 @@ Image Details:
 Bar charts can help compare categorical data.
 
 The same data is much easier to see and compare in a bar chart form!
-Why:
-* You can see the actual number and not the arbitrary percentage because bar charts have axis
-* Easier to compare between them as seeing them side by side gives a better natural comparison
 
-In general bar charts are good for representing categorical data, as the x axis can be used to represent categories very easily and the bars create a natural comparison between categories.
+Why:
+* You can see the actual number and not the arbitrary percentage because bar charts have axes
+* Easier to compare between them, as seeing them side by side gives a better natural comparison
+
+In general bar charts are good for representing categorical data, as the x-axis can be used to represent categories very easily, and the bars create a natural comparison between categories.
 
 Image Details:
 * [bar-chart.png](http://www.google.com): Copyright Google
@@ -168,13 +171,13 @@ Image Details:
 For continuous data, bar charts might not be the best choice.
 
 Problems:
-* Unable to put specific times, just within an hour in general, could be more specific
+* Unable to put specific times, just within an hour in general. So it could be more specific.
 * Unable to gather many trends from this other than which hour had the highest or lowest temperature is most popular
 * Hours are continuous, whereas separated bars like this give the impression that for an entire hour the temperature was the same.
 
-Context around it makes it bad - if you want a max from the hours of the temperature, this would be good but if you want to predict temperatures,etc. This is bad
-Also: Usually bar charts go in descending order of size but since these x values have a meaningful ordering we can’t properly construct the chart
+Context around it makes it bad; if you want a max from the hours of the temperature, this would be good. But if you want to predict temperatures, etc, this is bad.
 
+Also, usually bar charts go in descending order of size but since these x values have a meaningful ordering we can’t properly construct the chart
 
 Image Details:
 * [bad-bar-chart.png](http://www.google.com): Copyright Google
@@ -189,14 +192,15 @@ Image Details:
 <!--
 Line graphs can help estimate missing data points and find trends.
 
-This is much more useful visualization than the bar chart!
+This is a much more useful visualization than the bar chart!
+
 Why:
 * Shows a relationship between the two things that is relevant and helpful!
 * This relationship can now be fit mathematically
 * Now we can estimate missing points and make predictions!
-* We can use the meaningful ordering on the x axis to actually make a prediction, whereas bar charts are usually organized in decrementing order of size
+* We can use the meaningful ordering on the x-axis to actually make a prediction, whereas bar charts are usually organized in decrementing order of size.
 
-In general for data that could be well fit with a function (i.e. an x,y category where every x has just one correlating y value that strongly correlate in a mathematical way) a line graph is a fantastic choice. It allows you to make inferences on what values would be that weren’t in the original dataset, expanding your ability to analyze your data.
+In general for data that could be well fit with a function (i.e. an x,y category where every x has just one correlating y value that strongly correlate in a mathematical way), a line graph is a fantastic choice. It allows you to make inferences on what values would be that weren’t in the original dataset, expanding your ability to analyze your data.
 
 Image Details:
 * [line-chart.png](http://www.google.com): Copyright Google
@@ -212,12 +216,11 @@ Image Details:
 When there are multiple data points for the same place on the x-axis, line charts are not as useful.
 
 Problems:
-* Students with different study habits will have different GPAs, despite studying the same amount (and vice versa) - the a visualization with a continuous line masks these values
-  * These values could have been interesting to analyze and without losing the ability to see other trends this can be encapsulated in other visualizations
-* Indicates a continuous correlation where there might not be one
-  * Ex. does an extra ½ hour of work per day really boost you an extra little bit on GPA or is it actually that you have to jump to a whole hour?
-  * These gaps are missing when seeing it as a continuous line
-
+* Students with different study habits will have different GPAs, despite studying the same amoun, and vice versa. A visualization with a continuous line masks these values.
+  * These values could have been interesting to analyze and -- without losing the ability to see other trends -- this can be encapsulated in other visualizations.
+* Indicates a continuous correlation where there might not be one.
+  * Ex. Does an extra ½ hour of work per day really boost you an extra little bit on GPA, or is it actually that you have to jump to a whole hour?
+  * These gaps are missing when seeing it as a continuous line.
 
 Image Details:
 * [bad-line-chart.png](http://www.google.com): Copyright Google
@@ -269,12 +272,13 @@ Image Details:
 Heatmaps are good for visualizing concentrated, continuous data.
 
 Why:
-* We can now see the maximums and minimum amounts where before we could only estimate
+* We can now see the maximums and minimum amounts, where before we could only estimate
 * We can better analyze trends when we know the concentrations of points in each area
 
-In general heatmaps are good when you have lots of overlapping points in an x,y format. It allows you to see trends in very large datasets, and can often be overlayed on maps or other graphics to show concentrations in an even more clear visual format.
+In general heatmaps are good when you have lots of overlapping points in an x,y format. It allows you to see trends in very large datasets, and can often be overlayed on maps or other graphics to show concentrations in an even clearer visual format.
 
-Think Pair Share: We can imagine a heatmap wouldn’t work as well for other types of data, what types wouldn’t be as good with a heatmap?
+Think Pair Share: We can imagine a heatmap wouldn’t work as well for other types of data. What types wouldn’t be as good with a heatmap?
+
 Answers:
 * Categorical data
 * Data with a linear (or other basic math) correlation (an x,y category that strongly correlate in a mathematically easy to fit way)
@@ -299,7 +303,9 @@ Which type of visualization do you think would best represent following data?
 
 <!--
 
-Think pair share: Have students discuss the possible charts that would be good for each of these types of data. It might be helpful to write the following list on the board, or have the students take notes, so they can reference it during their discussions with peers.
+Think pair share: Discuss the possible charts that would be good for each of these types of data. 
+
+*It might be helpful to write the following list on the board, or have the students take notes, so they can reference it during their discussions with peers.*
 
 * Line chart or bar chart depending on scope of the data
 * Scatter Plot
@@ -333,7 +339,7 @@ Which visualization best represents the data?
 ![](res/candy-count-charts.png)
 
 <!--
-Think pair share - which visualizations work well, which work poorly
+Think pair share: Which visualizations work well? Which work poorly?
 
 Pie Chart - could work, good if you want to see how the bag has been portioned out as a whole
 Bar Chart - could work, good because the data is categorical better for analysis between individual candy types
