@@ -6,7 +6,7 @@ labs. As we begin to move deeper into data science we will need to work with
 larger and more complex datasets. In order to do that, we need to know how to
 get the datasets into our Colab environments.
 
-Remember that Colab is running "in the cloud", so for it to process data you
+Remember that Colab is running "in the cloud," so for it to process data you
 have to get that data onto the server that Colab is running on.
 
 We'll cover a few ways of doing that in this lecture.
@@ -23,11 +23,12 @@ you can do so with just a few clicks.
 
 Let's walk through an example.
 -->
+
 ---
 
 # Uploading Data
 
-Click on the "Files" icon
+Click on the "Files" icon.
 
 ![](res/files.png)
 
@@ -77,11 +78,11 @@ you that the files won't stick around forever. Colab environments run for a
 fixed amount of time, less than a day, and then the environment gets recycled.
 
 For this class and for small data science and machine learning projects, this is
-okay. For longer running projects, there are ways to point Colab at a different
+okay. For longer-running projects, there are ways to point Colab at a different
 environment. You can also download Colab notebooks and run them in Jupyter on a
 machine that can store the files longer-term.
 
-Do be warned though, if you do a lot of processing on data and save that data to
+Do be warned, though, if you do a lot of processing on data and save that data to
 a file, you will want to download the file before the Colab environment gets
 recycled.
 
@@ -175,7 +176,7 @@ large files at the same time
 For small files this might be okay, but for large files this can be slow.
 This is especially true in a classroom setting where many of us are uploading
 and downloading large files at the same time. A session of this class actually
-crashed the network at one of the schools it was taught at!
+crashed the network at one of the schools where it was taught!
 
 Image Details:
 * [to-from-cloud.png](http://www.google.com): Copyright Google
@@ -231,7 +232,7 @@ pd.read_csv(
 <!--
 Pandas can also read data directly into a `DataFrame` using the `read_csv`
 function. The only required argument is the URL to download. Another common
-argument is `names=` which allows you to set column names if the data file
+argument is `names=, which allows you to set column names if the data file
 doesn't have them.
 -->
 
@@ -253,7 +254,7 @@ df = pd.DataFrame(query, columns=column_names)
 ```
 
 <!--
-If your data is stored in a database you can use SQL to read data into a
+If your data is stored in a database, you can use SQL to read data into a
 `DataFrame`. To do this you need to create a database connection. Then create a
 query to read the data you are interested in. Finally, you can pass the query to
 Pandas to create a new `DataFrame` containing the data.
@@ -307,7 +308,7 @@ trying to use any API directly.
 <!--
 Now we'll talk about getting data from Kaggle into your Colab. We talk about
 Kaggle specifically because it does require authentication to download data from
-Kaggle and we use Kaggle quite a bit in this course.
+Kaggle, and we use Kaggle quite a bit in this course.
 
 Image Details:
 * [site-logo.png](https://www.kaggle.com): Externally Linked
@@ -320,7 +321,7 @@ Image Details:
 ![](res/kaggle-download.png)
 
 <!--
-Once you navigate to a dataset in Kaggle you can download the dataset by
+Once you navigate to a dataset in Kaggle, you can download the dataset by
 clicking the 'Download' link. If you aren't logged in, you'll be prompted to log
 in first.
 
@@ -343,7 +344,7 @@ kaggle datasets download rtatman/chocolate-bar-ratings
 You can also use the `kaggle` command to directly download a dataset into Colab,
 bypassing the need to download the dataset to your computer.
 
-You can an example of downloading a dataset on this slide. You run the `kaggle`
+You can add an example of downloading a dataset on this slide. You run the `kaggle`
 shell command. This program can work with numerous Kaggle objects such as
 contents, notebooks, and datasets. In this case we are working with datasets. We
 then say that we want to download a dataset. Finally, we tell the command the
