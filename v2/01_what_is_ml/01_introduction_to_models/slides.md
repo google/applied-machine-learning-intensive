@@ -27,7 +27,7 @@ The machine learning community has settled on a few groupings of model types, ea
 ---
 
 # Classification
-Determine which class or category an example belongs to using labeled data as a guide
+Using labeled data as a guide, determine which class or category an example belongs to.
 
 <!--
 Classification is a very common machine learning model type.
@@ -64,7 +64,7 @@ Quick discussion: What are some other examples of a classification system that y
 ---
 
 # Clustering
-Find relationships between data, typically without a labeled training set
+Find relationships between data, typically without a labeled training set.
 
 <!--
 Clustering looks for similar examples in a dataset. It is an example of unsupervised machine
@@ -134,7 +134,7 @@ Note: *logistic* regression is a classification technique (with a binary target)
 --- 
 
 # Sequences
-Suggest the next value in a sequence
+Suggest the next value in a sequence.
 
 <!--
 Finally, sequence prediction suggests what might come next, based on previous examples.
