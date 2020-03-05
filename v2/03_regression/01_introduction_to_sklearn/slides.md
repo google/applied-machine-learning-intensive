@@ -9,7 +9,7 @@
 <!--
 * scikit-learn.org is the primary website for the scikit-learn project. Here you will find information pertaining to the project including instructions on installation, documentation, and even the project source code.
 * Let's take a few moments to look around the project website.
-* At this point, be sure to point out...
+* *At this point, be sure to point out...*
   * The classification, regression, clustering, dimensionality reduction, model selection, and preprocessing sections on the main page. These represent core groupings of features provided by scikit-learn.
   * The top-page navigation with links on how to install the toolkit, documentation, and examples.
   * The banner on the upper-right corner that says "Fork me on GitHub". This leads to the source code.
@@ -19,7 +19,7 @@
 
 ---
 
-datasets {.big}
+# Datasets
 
 <!--
 scikit-learn comes with support for acquiring and generating datasets. The library even comes packaged with some datasets that are commonly used for exploring new models.
@@ -28,7 +28,7 @@ Let's look at some of the ways you can acquire data with scikit-learn.
 
 ---
 
-loading {.big}
+# Loading
 
 ![](res/introtoscikit2.png)
 
@@ -38,7 +38,7 @@ scikit-learn has a few datasets that are installed alongside the library. To acc
 
 ---
 
-fetching {.big}
+# Fetching
 
 ![](res/introtoscikit3.png)
 
@@ -48,7 +48,7 @@ Some common datasets aren't installed alongside scikit-learn, but the library do
 
 ---
 
-generating {.big}
+# Generating
 
 ![](res/introtoscikit4.png)
 
@@ -58,7 +58,7 @@ Some common datasets aren't installed alongside scikit-learn, but the library do
 
 ---
 
-bunches {.big}
+# Bunches
 
 <!--
 Bunch objects are scikit-learn objects that are sometimes used to store datasets. If you find yourself using a load or fetch method, you'll likely encounter a bunch object.
@@ -69,7 +69,7 @@ For the most part in this course, we will convert scikit-learn Bunch objects int
 
 ---
 
-estimators {.big}
+# Estimators
 
 ![](res/introtoscikit5.png)
 
@@ -81,7 +81,7 @@ Most of the models in scikit-learn are considered estimators. An estimator is ex
 
 ---
 
-transformers {.big}
+# Transformers
 
 ![](res/introtoscikit6.png)
 
@@ -92,7 +92,7 @@ Transformers implement fit and transform methods. The fit method calculates para
 
 ---
 
-pipelines {.big}
+# Pipelines
 
 ![](res/introtoscikit7.png)
 
@@ -104,7 +104,7 @@ A pipeline is simply a series of transformers, often with an estimator at the en
 
 ---
 
-metrics {.big}
+# Metrics
 
 ![](res/introtoscikit8.png)
 
@@ -115,7 +115,7 @@ In this case we are calculating the "mean squared error". Don't worry too much a
 
 ---
 
-Your Turn {.big}
+# Your Turn
 
 <!--
 Scroll through the colab associated with this unit. Be sure to point out the exercise, the number of points available, and the grading scale.
