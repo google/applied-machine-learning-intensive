@@ -68,6 +68,7 @@ script will:
 from absl import app
 import os, sys, shutil, getopt, re
 import json
+import subprocess
 import nbformat
 
 from googleapiclient.discovery import build
@@ -77,7 +78,7 @@ from tools import drive_integration, format_colab
 
 
 # TODO make this work when executed from root directory of repository
-CONTENT = "../content" 
+CONTENT = "../v2/content" 
 
 def get_sub_folders(folder: str = ""):
     """ Returns a list of subfolders folders as strings. Defaults to the top 
@@ -152,6 +153,7 @@ def upload(service, filename: str, parent: str):
         mimeType = "text/markdown"
     else:
         mimeType = "text/plain"
+
     file_metadata = {"name": filename,
                      "mimeType": mimeType,
                      "parents": [parent]
@@ -227,8 +229,8 @@ def main(args):
     for track in tracks:
         path = f"{CONTENT}/{track}"
         
-        track_info = json.load(open(f"{path}/metadata.json"))
-        track_name = track_info["name"]
+        # track_info = json.load(open(f"{path}/metadata.json"))
+        # track_name = track_info["name"]
         
         # Create track folder in drive
         track_id = create_file(service, track, folder_id)
@@ -239,7 +241,13 @@ def main(args):
             
             unit_info = json.load(open(f"{path}/{unit}/metadata.json"))
             unit_name = unit_info["name"]
-            
+            if (slides := unit_info.get('slides')):
+                if re.search(r"\.md$",slides[0]):
+                    gslides = subprocess.run(
+                        [f"md2gslides {path}/{unit}/{slides[0]}"],
+                        capture_output=True
+                    )
+                    print(gslides)
             # debugging
             # print(f"\033[KGenerating: {unit_name}",end="\r",flush=True)
             # TODO create unit folder in drive
