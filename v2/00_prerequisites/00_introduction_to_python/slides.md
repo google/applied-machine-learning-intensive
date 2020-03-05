@@ -53,7 +53,7 @@ Image Details:
 
 ---
 
-# White space matters
+# White Space Matters
 
 * 2- or 4-space indents are used to delineate code blocks instead of `{}`.
 * Tabs can be used too but should not be mixed with spaces (Recommendation: just use spaces).
@@ -67,7 +67,7 @@ In practice, indentation makes it hard to have long functions with several level
 
 ---
 
-# Variables are dynamically typed
+# Variables Are Dynamically Typed
 
 * This applies to function parameters too.
 * Interpreter will not help you catch mistyped variables.
@@ -83,7 +83,7 @@ Image Details:
 
 ---
 
-# String are defined with ', ", ''', and """
+# String Are Defined With ', ", ''', and """
 
 * Avoid triple-single quotes where possible.
 * There is no `char` type. When you want to deal with characters, just use single-character strings.
@@ -98,7 +98,7 @@ Image Details:
 
 ---
 
-# `for` loops always loop over iterables (lists, tuples etc.)
+# `for` Loops Always Loop Over Iterables (lists, tuples etc.)
 
 * `for` is great for linearly processing lists and tuples.
 * Looping over numbers requires creating a list of numbers. The `range` function makes that pretty easy.
@@ -112,7 +112,7 @@ Image Details:
 
 ---
 
-# Python fast facts
+# Python Fast Facts
 
 * There is no `NULL`, it's `None`.
 * `else if` is shortened to `elif`.
