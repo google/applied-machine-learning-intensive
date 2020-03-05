@@ -7,9 +7,9 @@
 ![](res/lossfunction1.png)
 
 <!--
-Loss functions are essential to machine learning -- at its core, machine learning “learns” by trying to optimize some loss function. A loss function is simply a way to evaluate how well your algorithm models your data. You can think of it as similar to a measure of error: higher loss means your model is performing worse, while lower loss is a sign of better performance.
+Loss functions are essential to machine learning. At its core, machine learning “learns” by trying to optimize a loss function. A loss function is simply a way to evaluate how well your algorithm models your data. You can think of it as similar to a measure of error: higher loss means your model is performing worse, and lower loss is a sign of better performance.
 
-Two of the most common loss functions for regression are L1 and L2. L1 minimizes the sum of *absolute* differences between the true value and the predicted value of all samples while L2 minimizes the sum of *squared* differences.
+Two of the most common loss functions for regression are called L1 and L2. L1 minimizes the sum of *absolute* differences between the true value and the predicted value of all samples, and L2 minimizes the sum of *squared* differences.
 -->
 
 ---
@@ -19,7 +19,7 @@ Two of the most common loss functions for regression are L1 and L2. L1 minimizes
 ![](res/lossfunction2.png)
 
 <!--
-It’s common to either take the sum or average over all data points to calculate overall loss. “Mean Squared Error” is another widely used loss function that is closely related to L2 loss -- instead of the sum of squared differences, it’s the *average* of squared differences.
+It’s common to either take the sum or average over all data points to calculate overall loss. “Mean Squared Error” is another widely used loss function that is closely related to L2 loss, but instead of the sum of squared differences, it’s the *average* of squared differences.
 
 You should choose a loss function based on your specific problem and dataset. L1 and L2 loss are used for regression problems. We’ll discuss loss functions used for other machine learning problems, such as classification, later. 
 -->
@@ -41,7 +41,7 @@ L1 loss: example {.big}
 ![](res/lossfunction4.png)
 
 <!--
-The first step is to find the differences (y_true - y_predicted)
+The first step is to find the differences (y_true - y_predicted).
 -->
 
 ---
@@ -49,7 +49,7 @@ The first step is to find the differences (y_true - y_predicted)
 L1 loss: example {.big}
 
 <!--
-Take absolute value of each difference
+Take the absolute value of each difference.
 -->
 
 ![](res/lossfunction5.png)
@@ -59,7 +59,7 @@ Take absolute value of each difference
 L1 loss: example {.big}
 
 <!--
-Add all absolute values
+Add all absolute value differences.
 -->
 
 ![](res/lossfunction6.png)
@@ -69,7 +69,7 @@ Add all absolute values
 # L2 loss: example
 
 <!--
-Work through same example with L2 loss
+Work through same example with L2 loss.
 -->
 
 ![](res/lossfunction7.png)
@@ -79,7 +79,7 @@ Work through same example with L2 loss
 L2 loss: example {.big}
 
 <!--
-First step is again to find the differences (y_true - y_predicted)
+First step is again to find the differences (y_true - y_predicted).
 -->
 
 ![](res/lossfunction8.png)
@@ -89,7 +89,7 @@ First step is again to find the differences (y_true - y_predicted)
 L2 loss: example {.big}
 
 <!--
-Now square each difference
+Now square each difference.
 -->
 
 ![](res/lossfunction9.png)
@@ -99,7 +99,7 @@ Now square each difference
 L2 loss: example {.big}
 
 <!--
-Add the squared values
+Add the squared differences.
 -->
 
 ![](res/lossfunction10.png)
@@ -128,7 +128,7 @@ Resolve any discrepancies.
 <!--
 End by asking what’s the difference between L1 and L2 as summary measures? Why might you want to use one over the other?
 
-Answer: L2 is more sensitive to outliers in the data set.
+Answer: L2 is more sensitive to outliers in the data set, because squaring the difference makes the difference more extreme.
 -->
 
 ---
