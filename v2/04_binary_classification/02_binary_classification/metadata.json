@@ -1,0 +1,11 @@
+{
+    "learning objectives": [
+        "Differentiate between classification and regression models.",
+        "Create a logistic regression model for a binary classification problem.",
+        "Interpret a confusion matrix for a binary classification model.",
+        "Use a grid search to find optimal hyperparameters for a model.",
+        "Create an image using color data.",
+        "Create and interpret box-and-whisker charts.",
+        "Standardize data to improve model training performance."
+    ]
+}

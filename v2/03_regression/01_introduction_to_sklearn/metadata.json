@@ -1,0 +1,25 @@
+{
+  "name": "Introduction to Scikit Learn",
+  "bug": "b/129330666",
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "learning-objectives": [
+    "Demonstrate the ability to do the following in scikit-learn:",
+    "load sample data",
+    "generate sample data",
+    "transform data",
+    "train a model",
+    "make predictions using a model"
+  ],
+  "duration": {
+    "lecture": 15,
+    "colab": 75
+  },
+  "materials": [],
+  "resources": [],
+  "slides": [
+    "slides.md"
+  ],
+  "handouts": []
+}

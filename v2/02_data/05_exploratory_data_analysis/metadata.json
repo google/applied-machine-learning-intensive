@@ -1,0 +1,16 @@
+{
+  "name": "Exploratory Data Analysis",
+  "slides": [
+     "slides.md"
+  ],
+  "learning-objectives": [
+    ""
+  ],
+  "colabs": [
+    "colab-part1.ipynb",
+    "colab-part2.ipynb"
+  ],
+  "materials": [],
+  "resources": [],
+  "handouts": []
+}
