@@ -391,3 +391,61 @@ my_data['is_expensive'] = my_data['prices'].apply(my_function)
 <!--
 My_function is a function that takes in a value and returns a value. In this case, we can imagine that my_function takes in an integer (the ‘price’) and returns a boolean value indicating whether or not the item is expensive.
 -->
+
+---
+
+# Modifying Data
+
+```python
+# Do This
+df.loc[5, 'Count'] = 3
+
+# Not This
+df.iloc[5]['Count'] = 3
+```
+
+<!--
+It is possible to modify individual data points. To do this, it is best to use
+the `.loc[]` accessor as shown in this slide. The modificiation still works most
+of the time when you use `.iloc[]` or other methods, but some funny things are
+going on internally. When you reference data in a `DataFrame`, sometimes you are
+referencing the data in the `DataFrame` itself and sometimes you are access a
+copy of the data. In the `.iloc[]` case, a copy is involved. In the `.loc[]`
+case it is not.
+-->
+
+---
+
+# Modifying Data
+
+```
+/usr/local/lib/python3.6/dist-packages/ipykernel_launcher.py:13: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata<...>ing-a-view-versus-a-copy
+  del sys.path[0]
+```
+
+<!--
+If you do have code that is or could potentially be working with copies, you'll
+see a warning like the one shown in this slide. Typically this warning can be
+avoided by moving from whatever data referencing scheme you are using to
+`.loc[]` on the left-hand side of the expression.
+-->
+
+---
+
+# Modifying Data
+
+```python
+# Replace Column
+df.loc[:, 'Count'] = [1,1,1,1,1,1,1]
+
+# Replace Row
+df.loc[6, :] = ['Name', 0, 0]
+```
+
+<!--
+Entire rows and columns can be replaced using the all-slice, ':', Smaller scoped
+slices can also be used.
+-->
