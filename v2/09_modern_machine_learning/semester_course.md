@@ -1,5 +1,11 @@
 ![](res/TTXgreen.png)
 
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Goals of This Class
@@ -9,14 +15,19 @@
 * Learn how to evaluate the quality of your solution
 * Machine learning is a very broad field -- we only just touch upon some of the most common machine learning algorithms
 
----
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **get to know each other!** {.big}
 
 * Find someone you don’t know and talk about what is your expectation of this ML course.
 * You will introduce your partner and share your partner’s expectation briefly in 1-2 min.
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -24,9 +35,21 @@
 
 # Applications
 
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXblue01.png)
+
+
+<!--
+Image Details:
+* ![TTXblue01.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -46,11 +69,16 @@
 Goal here is to make sure the students see the wide range of applications of machine learning.  First just some sample applications from a wide range of areas and then some explicit examples where ML is used at Google.
 -->
 
----
 
 # Google Products Using Machine Learning
 
 ![](res/TTXpic01.png)
+
+
+<!--
+Image Details:
+* ![TTXpic01.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -64,6 +92,12 @@ Voice recognition
 Ranking - which pages to show
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic02.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Google Photos: Searching Images via Text
@@ -75,7 +109,13 @@ Image collections are growing rapidly with digital cameras, especially our phone
 Extremely hard to label every image to be able to find it when needed
 There are people who do that
 Google labels your pictures - allows you to search without ever adding a label
-(Source: image: Photos taken by Wolff Dobson in Tokyo 2016 -- have permission to use here)
+(Source: image: Photos taken by Wolff Dobson in Tokyo 2016 - have permission to use here)
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic03.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -90,6 +130,12 @@ A lunch invitation from a colleague
 Makes good suggestions for simple replies to emails
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic04.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Google Play Music: Recommending Music
@@ -99,6 +145,12 @@ Makes good suggestions for simple replies to emails
 <!--
 Deep Learning is also used in everyday applications, like Google Play Music.
 Here, it’s used to recommend artists you might enjoy
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic05.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -114,11 +166,23 @@ In 1997, it defeated the world champion - Garry Kasparov.
 But to do it, DeepBlue used mostly brute force. In fact, it used an algorithm demonstrated by Claude Shannon, back in 1949! (recommendation: go read about Claude Shannon on Wikipedia)
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic05.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Google Play Music: Recommending Music
 
 ![](res/TTXpic06.png)
+
+
+<!--
+Image Details:
+* ![TTXpic06.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -131,9 +195,15 @@ Deep Learning can also be used for text recognition and translation
 Machine Learning powers translation from and to 90+ different languages, in Google Translate.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic07.gif](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **your favorite ML applications** {.big}
 
@@ -141,11 +211,23 @@ Machine Learning powers translation from and to 90+ different languages, in Goog
 * Where are some places you think machine learning might be helpful?
 * Where do you think machine learning might be harmful?
 
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXgreen.png)
 
 # Introduction to AI and Machine Learning
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -156,15 +238,13 @@ There are many ways to define ML.
 * ML systems learn how to combine data to produce useful predictions on *never before seen data*
 * ML algorithms find patterns in data and use these patterns to react correctly to brand *new data.*
 
----
 
-# ML is a branch of Artificial Intelligence 
+# ML is a branch of Artificial Intelligence
 
 Artificial Intelligence (AI) focuses on the creation of computer programs that appear to work and react like humans
 
----
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **AI & ML** {.big}
 
@@ -172,13 +252,24 @@ Discuss about the relationship between AI and ML.
 * What are examples of AI technologies?
 * What are examples of ML technologies?
 
----
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
+
 
 ![](res/TTXgreen.png)
 
 # Introduction to Linear Regression
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -190,11 +281,23 @@ Discuss about the relationship between AI and ML.
 Begin with a very simple example.  The goal here is to help the students really understand what we mean by a linear model.  Goal is to slowly build up from a line in two dimensions to a higher-dimension linear model.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic08.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Sample Machine Learning Problem (cont)
 
 ![](res/TTXpic09.png)
+
+
+<!--
+Image Details:
+* ![TTXpic09.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -202,13 +305,25 @@ Begin with a very simple example.  The goal here is to help the students really 
 
 ![](res/TTXpic10.png)
 
+
+<!--
+Image Details:
+* ![TTXpic10.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **prediction** {.big}
 
 Given our model of the data y = 7x - 30, how might we predict cricket chirps/minute (y) for a temperature (x) that we don't have a measurement for?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -218,6 +333,12 @@ Given our model of the data y = 7x - 30, how might we predict cricket chirps/min
 
 <!--
 The goal of the green line is to illustrate using the model to make a prediction visually as well as algebraically.
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic11.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -230,6 +351,12 @@ The goal of the green line is to illustrate using the model to make a prediction
 First introduce the notion of a model for the parameters of the network, and what is meant by a linear model.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic12.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Definition: Linear Regression
@@ -240,11 +367,23 @@ First introduce the notion of a model for the parameters of the network, and wha
 Begin defining linear regression. We are going to introduce some notation in the next few slides.  The goal is to step through this slowly so the students have time to get comfortable with the notation.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic13.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXgreen.png)
 
 # Linear Regression with Many Features
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -258,6 +397,12 @@ Imagine the problem of building an ML model to predict apartment rental price.
 * Describe some unlabeled examples
 * Find a way to describe this as a regression task
 
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Linear Regression with Many Features
@@ -266,6 +411,12 @@ Imagine the problem of building an ML model to predict apartment rental price.
 
 <!--
 This is a good chance to discuss the w_1 is a weight giving the importance of x_1 (# of bedrooms) to predicting the rent and w_2 is the importance of x_2 (condition of the building) in predicting the rent.
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic14.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -278,6 +429,12 @@ This is a good chance to discuss the w_1 is a weight giving the importance of x_
 Here we transition to an n-dimensional model.  In TF b is used for the bias but I think it’s also good to introduce the convention of using w_0 for b.  But after this slide, the convention is to stick with using b.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic15.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Summary of Linear Regression
@@ -288,11 +445,23 @@ Here we transition to an n-dimensional model.  In TF b is used for the bias but 
 Close with a single slide summarizing linear regression.  Stop here and ask the students if there are any questions about the slide.  Return to earlier slides if needed.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic16.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXgreen.png)
 
 # Visualizing Loss With a Scatter Plot
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -304,19 +473,30 @@ Close with a single slide summarizing linear regression.  Stop here and ask the 
 First, we want to show some ways to visualize the model to evaluate if it is good.  Even after we define a mathematical definition of loss this is important as a way to evaluate if the model is good.  For example, looking at the RMSE doesn’t really tell you if the model is any good.  We’ll make this concrete later.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic17.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Evaluating if a Linear Model is Good
 
-* We will eventually look at mathematical ways to evaluate the quality of a model but that should not replace more informal yet intuitive ways to evaluate a model 
+* We will eventually look at mathematical ways to evaluate the quality of a model but that should not replace more informal yet intuitive ways to evaluate a model
 * When you just have one variable, drawing a line on a scatter plot that shows the model predictions is a good tool.
 * Let’s look at two different models to predict the price of a car from its engine’s horsepower.
 
----
 
 # Which Model is Better?
 
 ![](res/TTXpic18.png)
+
+
+<!--
+Image Details:
+* ![TTXpic18.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -324,11 +504,23 @@ First, we want to show some ways to visualize the model to evaluate if it is goo
 
 # Visualizing Loss with a Calibration Plot
 
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Calibration Plots To Visualize a Model
 
 ![](res/TTXpic19.png)
+
+
+<!--
+Image Details:
+* ![TTXpic19.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -336,15 +528,20 @@ First, we want to show some ways to visualize the model to evaluate if it is goo
 
 ![](res.TTXpic21.png)
 
----
 
 ![](res/TTXgreen.png)
 
 # Quantifying Loss
 
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **measuring loss** {.big}
 
@@ -354,17 +551,35 @@ What are some mathematical ways to measure loss? Remember that
 
 Lots of ideas are reasonable here; be creative.
 
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXgreen.png)
 
-# Squared Loss and RMSE 
+# Squared Loss and RMSE
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
-# A Convenient Loss Function for Regression 
+# A Convenient Loss Function for Regression
 
 ![](res/TTXpic22.png)
+
+
+<!--
+Image Details:
+* ![TTXpic22.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -374,10 +589,16 @@ Lots of ideas are reasonable here; be creative.
 
 <!--
 Talk through the notation and also re-iterate the vector notation so they understand it when it shows up later.
-  -- x is our input example.  It’s bold because it’s a vector with many dimensions (features).
-  -- y is our label.
-  -- D is a data set containing many labeled examples, which are (x, y) pairs.
-  -- (y-y’)2 is the loss for any given example; prediction(x) gives y’ for a given x.
+  - x is our input example.  It’s bold because it’s a vector with many dimensions (features).
+  - y is our label.
+  - D is a data set containing many labeled examples, which are (x, y) pairs.
+  - (y-y’)2 is the loss for any given example; prediction(x) gives y’ for a given x.
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic23.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -386,15 +607,27 @@ Talk through the notation and also re-iterate the vector notation so they unders
 
 ![](res/TTXpic24.png)
 
+
+<!--
+Image Details:
+* ![TTXpic24.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXgroupchat.png)
 
 **RMSE** {.big}
 
-Why is minimizing root mean squared error (RMSE) the same as minimizing mean squared error (MSE)? 
+Why is minimizing root mean squared error (RMSE) the same as minimizing mean squared error (MSE)?
 
 (Reminder: The only difference is that RMSE is the square root of MSE.)
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -402,9 +635,21 @@ Why is minimizing root mean squared error (RMSE) the same as minimizing mean squ
 
 # Intro to SGD (Stochastic Gradient Descent)
 
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXblue02.png)
+
+
+<!--
+Image Details:
+* ![TTXblue02.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -412,11 +657,23 @@ Why is minimizing root mean squared error (RMSE) the same as minimizing mean squ
 
 ![](res/TTXpic25.png)
 
+
+<!--
+Image Details:
+* ![TTXpic25.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Pictorial View of Gradient Descent
 
 ![](res/TTXpic26.png)
+
+
+<!--
+Image Details:
+* ![TTXpic26.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -424,11 +681,23 @@ Why is minimizing root mean squared error (RMSE) the same as minimizing mean squ
 
 ![](res/TTXpic27.png)
 
+
+<!--
+Image Details:
+* ![TTXpic27.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Pictorial View of Gradient Descent
 
 ![](res/TTXpic28.png)
+
+
+<!--
+Image Details:
+* ![TTXpic28.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -438,26 +707,44 @@ Why is minimizing root mean squared error (RMSE) the same as minimizing mean squ
 
 <!--
 Visual explanation of gradient descent in 3 slides:
-First slide gives our starting point.  Can point out the shape of the loss function and the global minimum, noting that this is convex. 
+First slide gives our starting point.  Can point out the shape of the loss function and the global minimum, noting that this is convex.
 Second slide shows the direction of the (negative gradient), and the particular step size we decide to take.  (more on step size in a bit)
 Third slide shows where we end up on loss when we take a step.  It’s a bit closer to the minimum (hooray!) but we’ll need to iterate more.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic29.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **gradient ascent** {.big}
 
-What would happen if we took a step in the positive gradient direction instead of the negative gradient direction? 
+What would happen if we took a step in the positive gradient direction instead of the negative gradient direction?
 
 When might we do this?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
 ![](res/TTXgreen.png)
 
 # Using SGD in Tensorflow
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -469,7 +756,6 @@ Later in the course we will present **Gradient Descent** in more depth.  For now
 Step through all the arguments here
 -->
 
----
 
 # Learning Rate: Size of Step to Make
 
@@ -477,6 +763,12 @@ Step through all the arguments here
 
 <!--
 This all just applies to a convex function but for now we’ll not discuss this unless someone asks.
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic30.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -489,11 +781,23 @@ This all just applies to a convex function but for now we’ll not discuss this 
 Step through all the arguments here.
 -->
 
---- 
+
+<!--
+Image Details:
+* ![TTXpic31.png](http://www.google.com): Copyright Google
+-->
+
+---
 
 # Training a Model with Gradient Descent
 
 ![](res/TTXpic32.png)
+
+
+<!--
+Image Details:
+* ![TTXpic32.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -506,19 +810,30 @@ Step through all the arguments here.
 * **What Features to Use**
   * This is very important and will be our next main topic
 
----
 
 ![](res/TTXgreen.png)
 
 # Using Learning Curve to Adjust the Learning Rate
 
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **learning rate** {.big}
 
 What might happen if the learning rate is set much too small? Much too large?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -526,11 +841,23 @@ What might happen if the learning rate is set much too small? Much too large?
 
 ![](res/TTXpic34.png)
 
+
+<!--
+Image Details:
+* ![TTXpic34.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Learning Rate Way Too High
 
 ![](res/TTXpic35.png)
+
+
+<!--
+Image Details:
+* ![TTXpic35.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -538,11 +865,23 @@ What might happen if the learning rate is set much too small? Much too large?
 
 ![](res/TTXpic36.png)
 
+
+<!--
+Image Details:
+* ![TTXpic36.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Need More Steps (loss still going down)
 
 ![](res/TTXpic37.png)
+
+
+<!--
+Image Details:
+* ![TTXpic37.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -550,25 +889,42 @@ What might happen if the learning rate is set much too small? Much too large?
 
 ![](res/TTXpic38.png)
 
+
+<!--
+Image Details:
+* ![TTXpic38.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Converging to a Poor Model
 
 ![](res/TTXpic39.png)
 
-<!--Make sure the students recognize the from the learning curve it looks like the model is good.  ALso looking at the RMSE it looks good.  However when looking at the calibration plot you can see that the model is not good. 
+<!--
+Make sure the students recognize the from the learning curve it looks like the model is good.  ALso looking at the RMSE it looks good.  However when looking at the calibration plot you can see that the model is not good.
+
+Image Details:
+* ![TTXpic39.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **loss curves** {.big}
 
-So far we have only been thinking about the loss curve for mean squared error, which looks like a bowl. 
+So far we have only been thinking about the loss curve for mean squared error, which looks like a bowl.
 
-How well do you think gradient descent would work for other loss function shapes? 
+How well do you think gradient descent would work for other loss function shapes?
 
 What would it mean if your loss function was flat? How would gradient descent work if your loss function was very bumpy?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -576,9 +932,21 @@ What would it mean if your loss function was flat? How would gradient descent wo
 
 # Introduction to Feature Engineering
 
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXblue03.png)
+
+
+<!--
+Image Details:
+* ![TTXblue03.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -586,11 +954,23 @@ What would it mean if your loss function was flat? How would gradient descent wo
 
 ![](res/TTXpic40.png)
 
+
+<!--
+Image Details:
+* ![TTXpic40.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Feature Engineering
 
 ![](res/TTXpic41.png)
+
+
+<!--
+Image Details:
+* ![TTXpic41.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -598,15 +978,27 @@ What would it mean if your loss function was flat? How would gradient descent wo
 
 ![](res/TTXpic42.png)
 
+
+<!--
+Image Details:
+* ![TTXpic42.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **linear models** {.big}
 
-Say you are predicting the price of a room on Craigslist and two features you have are the room's length and width. 
+Say you are predicting the price of a room on Craigslist and two features you have are the room's length and width.
 
 Can a linear model compute the room's area (length * width) when making predictions? How or why not?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -614,21 +1006,39 @@ Can a linear model compute the room's area (length * width) when making predicti
 
 ![](res/TTXpic43.png)
 
+
+<!--
+Image Details:
+* ![TTXpic43.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Transforming Numeric Features
 
 ![](res/TTXpic44.png)
 
+
+<!--
+Image Details:
+* ![TTXpic44.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **feature scales** {.big}
 
 What if you are creating a linear model to predict city mpg of a car from highway mpg (x1) and price (x2)
 
 What happens if you directly use these features?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -640,17 +1050,36 @@ What happens if you directly use these features?
 
 ![](res/TTXpic46.png)
 
+
+<!--
+Image Details:
+* ![TTXpic45.png](http://www.google.com): Copyright Google
+* ![TTXpic46.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXgreen.png)
 
 # Scaling and Clipping Numeric Features
 
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Transforming Numeric Features
 
 ![](res/TTXpic47.png)
+
+
+<!--
+Image Details:
+* ![TTXpic47.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -662,15 +1091,27 @@ What happens if you directly use these features?
 On the board help them derive this formula.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic48.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **linear scaling** {.big}
 
-What would happen if you used linear scaling, but there was an outlier? 
+What would happen if you used linear scaling, but there was an outlier?
 
 What other feature transformation could you use to prevent this?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -678,22 +1119,40 @@ What other feature transformation could you use to prevent this?
 
 ![](res/TTXpic49.png)
 
+
+<!--
+Image Details:
+* ![TTXpic49.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Log Scaling
 
 ![](res/TTXpic50.png)
 
+
+<!--
+Image Details:
+* ![TTXpic50.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **log scaling** {.big}
 
 
-Why does log-scaling help spread out power-law data? 
+Why does log-scaling help spread out power-law data?
 
 As an example, what is log10(10)? log10(10^2)? log10(10^3)?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -701,11 +1160,23 @@ As an example, what is log10(10)? log10(10^2)? log10(10^3)?
 
 ![](res/TTXpic51.png)
 
+
+<!--
+Image Details:
+* ![TTXpic51.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXgreen.png)
 
 # Introducing Non-Linearities via Bucketizing Features
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -713,11 +1184,23 @@ As an example, what is log10(10)? log10(10^2)? log10(10^3)?
 
 ![](res/TTXpic52.png)
 
+
+<!--
+Image Details:
+* ![TTXpic52.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Motivation: Bucketizing Numeric Features
 
 ![](res/TTXpic53.png)
+
+
+<!--
+Image Details:
+* ![TTXpic53.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -725,11 +1208,23 @@ As an example, what is log10(10)? log10(10^2)? log10(10^3)?
 
 ![](res/TTXpic54.png)
 
+
+<!--
+Image Details:
+* ![TTXpic54.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Using Raw and Bucketized Features
 
 ![](res/TTXpic55.png)
+
+
+<!--
+Image Details:
+* ![TTXpic55.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -737,11 +1232,23 @@ As an example, what is log10(10)? log10(10^2)? log10(10^3)?
 
 ![](res/TTXpic56.png)
 
+
+<!--
+Image Details:
+* ![TTXpic56.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXgreen.png)
 
 # Using Quantiles to Compute Bucket Boundaries
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -749,15 +1256,27 @@ As an example, what is log10(10)? log10(10^2)? log10(10^3)?
 
 ![](res/TTXpic56a.png)
 
+
+<!--
+Image Details:
+* ![TTXpic56a.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Creating Bins by Quantiles
 
 ![](res/TTXpic56b.png)
 
+
+<!--
+Image Details:
+* ![TTXpic56b.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **quantiles** {.big}
 
@@ -765,15 +1284,29 @@ What is the advantage of using quantiles (left) versus equal width bins (right)?
 
 ![](res/TTXpic56c.png)
 
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+* ![TTXpic56c.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **quantiles** {.big}
 
 How could we transform the data so that uniform scaling makes more sense?
 
 ![](res/TTXpic56d.png)
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+* ![TTXpic56d.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -783,11 +1316,16 @@ How could we transform the data so that uniform scaling makes more sense?
 * Using quantiles gives more resolution in areas where there is more data
 * For both techniques, you can adjust the number of bins to vary the amount of resolution versus the number of features introduced.
 
----
 
 ![](res/TTXgreen.png)
 
 # Representing Categorical Features
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -800,7 +1338,6 @@ How could we transform the data so that uniform scaling makes more sense?
   * The movies a person has rated
 * Remember a linear model can only take a weighted combination of features.
 
----
 
 # Graphical View of a Linear Model
 
@@ -810,11 +1347,23 @@ How could we transform the data so that uniform scaling makes more sense?
 Remind students that this is one way to represent a linear model.  We have three inputs, x1, x2, and x3, shown by the blue circles.  They’re combined with some weight (given on each edge) to produce an output.  Bias term isn’t shown.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic57.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Transforming Categorical Features
 
 ![](res/TTXpic58.png)
+
+
+<!--
+Image Details:
+* ![TTXpic58.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -822,11 +1371,23 @@ Remind students that this is one way to represent a linear model.  We have three
 
 ![](res/TTXpic59.png)
 
+
+<!--
+Image Details:
+* ![TTXpic59.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Efficiently Representing One-Hot Encoding
 
 ![](res/TTXpic60.png)
+
+
+<!--
+Image Details:
+* ![TTXpic60.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -834,34 +1395,64 @@ Remind students that this is one way to represent a linear model.  We have three
 
 ![](res/TTXpic61.png)
 
+
+<!--
+Image Details:
+* ![TTXpic61.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # One-Hot Encoding vs Single Numeric Feature
 
 ![](res/TTXpic62.png)
 
---- 
+
+<!--
+Image Details:
+* ![TTXpic62.png](http://www.google.com): Copyright Google
+-->
+
+---
 
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **numerical vs. one-hot** {.big}
 
-Can you think of a type of data where a one-hot representation makes more sense than a numerical one? 
+Can you think of a type of data where a one-hot representation makes more sense than a numerical one?
 
 What about vice versa?
 
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-# Encoding Features that are Sets/Phrases 
+# Encoding Features that are Sets/Phrases
 
 ![](res/TTXpic63.png)
 
+
+<!--
+Image Details:
+* ![TTXpic63.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-# Encoding Features that are Sets/Phrases 
+# Encoding Features that are Sets/Phrases
 
 ![](res/TTXpic64.png)
+
+
+<!--
+Image Details:
+* ![TTXpic64.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -869,15 +1460,27 @@ What about vice versa?
 
 ![](res/TTXpic65.png)
 
---- 
 
-![](res/TTXgroupchat.png) 
+<!--
+Image Details:
+* ![TTXpic65.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+![](res/TTXgroupchat.png)
 
 **vocabulary** {.big}
 
-Can you think of a potential issue with using a fixed vocabulary? 
+Can you think of a potential issue with using a fixed vocabulary?
 
 Hint: Think about what would happen if you tried to encode the sentence "it costs a badrillion dollars."
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -885,15 +1488,27 @@ Hint: Think about what would happen if you tried to encode the sentence "it cost
 
 ![](res/TTXpic66.png)
 
+
+<!--
+Image Details:
+* ![TTXpic66.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **OOV** {.big}
 
-Can you think of a potential issue with using a single OOV indicator? 
+Can you think of a potential issue with using a single OOV indicator?
 
 Hint: Think about the representations for "it costs a badrillion dollars" and "it costs a coupla dollars.”
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -901,23 +1516,41 @@ Hint: Think about the representations for "it costs a badrillion dollars" and "i
 
 ![](res/TTXpic67.png)
 
+
+<!--
+Image Details:
+* ![TTXpic67.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXgreen.png)
 
-# When to Treat Numerical Data as Categorical 
+# When to Treat Numerical Data as Categorical
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **categorical vs. numerical** {.big}
 
-How would you encode a feature such as zipcode? 
+How would you encode a feature such as zipcode?
 
-Does it make more sense as a categorical or numerical feature? 
+Does it make more sense as a categorical or numerical feature?
 
 Can you think of any domain-specific feature transformations which would make sense here?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -929,20 +1562,24 @@ Can you think of any domain-specific feature transformations which would make se
 * You could use domain knowledge to group zipcodes that are geographically nearby into a single bucket.
 * **You need to think about raw features and how to best use them.**
 
----
 
 # Feature Engineering: Missing Features
 
-Often data sets are missing features. 
+Often data sets are missing features.
 
 * If this is extremely rare we could just skip those examples, but otherwise what do we do?
 * For non-numerical data?
 
----
 
 ![](res/TTXgreen.png)
 
 # Handling Missing Data
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -954,7 +1591,6 @@ Often data sets are missing features. If this is extremely rare we could just sk
   * A common solution is to just introduce a feature value for “missing”
 * How do we handle this for numerical data?
 
----
 
 # Feature Engineering: Missing Features
 
@@ -966,11 +1602,16 @@ Often data sets are missing features. If this is extremely rare we could just sk
   * Use the average value (or some common value)
   * Bin the data and introduce a “missing” bin
 
----
 
 ![](res/TTXgreen.png)
 
 # Introducing Non-Linearities via Feature Crosses
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -982,8 +1623,7 @@ Often data sets are missing features. If this is extremely rare we could just sk
 * Other ways to introduce non-linearities:
   * Feature Crosses
   * Adding Artificial Variables
-  
----
+
 
 # Preview: Feature Crosses
 
@@ -991,27 +1631,44 @@ Often data sets are missing features. If this is extremely rare we could just sk
 * In a linear model the contribution captured for each feature is independent of the others and this is often not the case in data.
 * **Feature Crosses** introduce non-linear behavior between a set of two or more features by capturing dependencies between the features.
 
----
 
 # Feature Cross Example
 
 ![](res/TTXpic68.png)
 
+
+<!--
+Image Details:
+* ![TTXpic68.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **feature cross cost** {.big}
 
 If we have one feature which can take on M values and another feature which can take on N values, how many values will the cross of these two features take on?
 
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **numerical crosses** {.big}
 
 How can we apply feature crossing to numerical data? Is there a feature transformation that makes sense here?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1027,7 +1684,6 @@ Mention that “cross products” is a synonym.  For folks wondering more about 
 This is where we hit the idea of sparsity.  Sparse feature vectors are feature vectors where most of the values are 0.  For example, in the latitude binning example from the previous section, we ended up with a just a single “1” bin-feature and the remaining 9 bin-features were 0’s.  This idea can be taken to the extreme for large scale data, as may be appropriate for presence / non-presence of words in a text snippet as one example.
 -->
 
----
 
 # Feature Crosses: Some Examples
 
@@ -1035,6 +1691,12 @@ This is where we hit the idea of sparsity.  Sparse feature vectors are feature v
 
 <!--
 A fine intuition here is to say that some words in a pet description are only “good” at certain times of day.  For example, jumping up excitedly is often a nice way for a pet to welcome its owner home, but may be very unwelcome at 3am.
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic69.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -1048,10 +1710,9 @@ A fine intuition here is to say that some words in a pet description are only �
 * Are there downsides to adding more and more crosses?
 
 <!--
-If you feel like getting into it, you can mention that part of the extreme efficiency of these systems comes from exploiting sparsity in the data -- out of potentially billions of potential crosses, only a few hundred are likely present with non-zero values in a given example.
+If you feel like getting into it, you can mention that part of the extreme efficiency of these systems comes from exploiting sparsity in the data - out of potentially billions of potential crosses, only a few hundred are likely present with non-zero values in a given example.
 -->
 
----
 
 # Feature Engineering: Be Creative!
 
@@ -1059,15 +1720,20 @@ If you feel like getting into it, you can mention that part of the extreme effic
 * Remember, there’s not one right answer.  Sometimes you need to try a few things and see what gives you the best predictions.
 
 
----
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **last example** {.big}
 
-If you wanted to predict the rental price for an apartment and you had a street address, how might you represent that? 
+If you wanted to predict the rental price for an apartment and you had a street address, how might you represent that?
 
 What kind of additional useful features could you collect based on the street address?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1075,15 +1741,33 @@ What kind of additional useful features could you collect based on the street ad
 
 # Mathematics of Stochastic Gradient Descent (SGD)
 
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXblue04.png)
+
+
+<!--
+Image Details:
+* ![TTXblue04.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
 # Review of Overview of Gradient Descent
 
 ![](res/TTXpic70.png)
+
+
+<!--
+Image Details:
+* ![TTXpic70.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1093,9 +1777,15 @@ What kind of additional useful features could you collect based on the street ad
 
 <!--
 Visual explanation of gradient descent in 3 slides:
-First slide gives our starting point.  Can point out the shape of the loss function and the global minimum, noting that this is convex. 
+First slide gives our starting point.  Can point out the shape of the loss function and the global minimum, noting that this is convex.
 Second slide shows the direction of the (negative gradient), and the particular step size we decide to take.  (more on step size in a bit)
 Third slide shows where we end up on loss when we take a step.  It’s a bit closer to the minimum (hooray!) but we’ll need to iterate more.
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic71.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -1106,9 +1796,15 @@ Third slide shows where we end up on loss when we take a step.  It’s a bit clo
 
 <!--
 Visual explanation of gradient descent in 3 slides:
-First slide gives our starting point.  Can point out the shape of the loss function and the global minimum, noting that this is convex. 
+First slide gives our starting point.  Can point out the shape of the loss function and the global minimum, noting that this is convex.
 Second slide shows the direction of the (negative gradient), and the particular step size we decide to take.  (more on step size in a bit)
 Third slide shows where we end up on loss when we take a step.  It’s a bit closer to the minimum (hooray!) but we’ll need to iterate more.
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic72.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -1117,11 +1813,23 @@ Third slide shows where we end up on loss when we take a step.  It’s a bit clo
 
 ![](res/TTXpic73.png)
 
+
+<!--
+Image Details:
+* ![TTXpic73.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Learning Rate (Size of Step) Too Large
 
 ![](res/TTXpic74.png)
+
+
+<!--
+Image Details:
+* ![TTXpic74.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1129,19 +1837,31 @@ Third slide shows where we end up on loss when we take a step.  It’s a bit clo
 
 ![](res/TTXpic75.png)
 
+
+<!--
+Image Details:
+* ![TTXpic75.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **gradient at minimum** {.big}
 
-What is the gradient of the loss curve we were just looking at at its minimum (lowest point)? 
+What is the gradient of the loss curve we were just looking at at its minimum (lowest point)?
 
 Can you think of any other ways for the curve to have this gradient?
 
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-# Local Minimum 
+# Local Minimum
 
 When the loss function we are optimizing is not convex we can get stuck in local minimum
 
@@ -1151,15 +1871,27 @@ When the loss function we are optimizing is not convex we can get stuck in local
 Just show a simplest example of a non-convex function with a local minimum.  In reality, of course there are many local minimum.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic76.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **local minima** {.big}
 
-If you have a loss function where you know there are multiple local minimum, can you think of how you would end up in one local minimum versus another? 
+If you have a loss function where you know there are multiple local minimum, can you think of how you would end up in one local minimum versus another?
 
 Are there any ways to use gradient descent to find many different local minimum?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1168,7 +1900,6 @@ Are there any ways to use gradient descent to find many different local minimum?
 * Computing  gradient over the entire dataset for every step is expensive and unnecessary
 * Mini-Batch Gradient Descent: Compute gradient on **batches** typically of 10-1000 samples
 
----
 
 # Stochastric Gradient Descent (SGD)
 
@@ -1177,11 +1908,16 @@ Are there any ways to use gradient descent to find many different local minimum?
 * Many data sets are arranged in some order (e.g. imagine if the automobile data set was sorted by price).
 * Easy way to get random samples is to randomly “shuffle” the data and then just take first batch-size examples, then next batch-size examples, ...
 
----
 
 # Update Step in SGD
 
 ![](res/TTXpic77.png)
+
+
+<!--
+Image Details:
+* ![TTXpic77.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1191,7 +1927,13 @@ Are there any ways to use gradient descent to find many different local minimum?
 
 <!--
 I recognize that some students will have issues with the math.  However, I found that a lot of students appreciated this slide and it helped them understand the gradient computation much better.  I think it’s worth doing and just see how many students can stick with it.  I’d recommend doing the gradient computation on the board to help keep the students with you.
---> 
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic78.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1201,6 +1943,12 @@ I recognize that some students will have issues with the math.  However, I found
 
 <!--
 I recognize that some students will have issues with the math.  However, I found that a lot of students appreciated this slide and it helped them understand the gradient computation much better.  I think it’s worth doing and just see how many students can stick with it.  I’d recommend doing the gradient computation on the board to help keep the students with you.
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic79.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -1213,19 +1961,38 @@ I recognize that some students will have issues with the math.  However, I found
 I recognize that some students will have issues with the math.  However, I found that a lot of students appreciated this slide and it helped them understand the gradient computation much better.  I think it’s worth doing and just see how many students can stick with it.  I’d recommend doing the gradient computation on the board to help keep the students with you.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic80.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **gradient magnitude** {.big}
 
 ![](res/TTXpic81.png)
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+* ![TTXpic81.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
 ![](res/TTXgreen.png)
 
 # Recognizing and Preventing Overfitting
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1236,11 +2003,16 @@ I recognize that some students will have issues with the math.  However, I found
 * We can measure the loss for our model on the sample D but how can we know if it will predict well on new data?
 * **Performance Measure**: A measure of how well the model predicts on unseen data.  This is usually related to the loss function.
 
----
 
 # Example Performance Measure
 
 ![](res/TTXpic82.png)
+
+
+<!--
+Image Details:
+* ![TTXpic82.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1248,19 +2020,37 @@ I recognize that some students will have issues with the math.  However, I found
 
 ![](res/TTXpic83.png)
 
+
+<!--
+Image Details:
+* ![TTXpic83.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # “Perfect” Model
 
 ![](res/TTXpic84.png)
 
+
+<!--
+Image Details:
+* ![TTXpic84.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **overfitting** {.big}
 
 Given that we can can find a model which fits the training data perfectly, why might this not be useful? (Hint: Remember that our goal in machine learning is often to do prediction on data not in our training set)
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1268,11 +2058,23 @@ Given that we can can find a model which fits the training data perfectly, why m
 
 ![](res/TTXpic85.png)
 
+
+<!--
+Image Details:
+* ![TTXpic85.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Generalization for Linear Model
 
 ![](res/TTXpic86.png)
+
+
+<!--
+Image Details:
+* ![TTXpic86.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1280,37 +2082,73 @@ Given that we can can find a model which fits the training data perfectly, why m
 
 ![](res/TTXpic87.png)
 
+
+<!--
+Image Details:
+* ![TTXpic87.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-# Generalization for “Perfect” Model  
+# Generalization for “Perfect” Model
 
 ![](res/TTXpic88.png)
 
+
+<!--
+Image Details:
+* ![TTXpic88.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-# Overfitting 
+# Overfitting
 
 ![](res/TTXpic89.png)
 
+
+<!--
+Image Details:
+* ![TTXpic89.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **underfitting** {.big}
 
 Can you think of any datasets where a linear model would be too simple?
 
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-# An Underfit Model  
+# An Underfit Model
 
 ![](res/TTXpic90.png)
+
+
+<!--
+Image Details:
+* ![TTXpic90.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
 ![](res/TTXgreen.png)
 
 # Model Complexity and Occam’s Razor
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1321,11 +2159,16 @@ Can you think of any datasets where a linear model would be too simple?
 * How can we define how complex a learning model is?
 * How can we measure how well our model generalizes?
 
----
 
 # Model Complexity
 
 ![](res/TTXpic91.png)
+
+
+<!--
+Image Details:
+* ![TTXpic91.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1339,19 +2182,37 @@ Can you think of any datasets where a linear model would be too simple?
   * The test set is independent of the training set so it truly represents new data
   * We don’t cheat by using the test set more than once
 
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **test set vs. real world** {.big}
 
 The purpose of the test set is to estimate performance in the "real world" that the model has never seen before, so that we can get a feel for how well it would work when deployed. Can you think of any difficulties that may come up when trying to predict "real-world" performance?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
 # Generalization Curve and Overfitting
 
 ![](res/TTXpic92.png)
+
+
+<!--
+Image Details:
+* ![TTXpic92.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1363,11 +2224,23 @@ The purpose of the test set is to estimate performance in the "real world" that 
 Finding the minimum of the train loss curve may not give you the minimum of the test loss curve.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic93.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXgreen.png)
 
 # Training, Validation, and Test Data Sets
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1381,13 +2254,26 @@ Training set:  Used for training.
 Test set: Used for double-checking your eval after you think you’ve found your best model.  Avoids human-overfitting of the validation set.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic94.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **a possible workflow?** {.big}
 
 ![](res/TTXpic95.png)
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+* ![TTXpic95.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1403,11 +2289,23 @@ Validation set:  Used for eval during training.
 Test set: Used for double-checking your eval after you think you’ve found your best model.  Avoids human-overfitting of the validation set.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic96.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-# Better Workflow: Use a Validation Data 
+# Better Workflow: Use a Validation Data
 
 ![](res/TTXpic97.png)
+
+
+<!--
+Image Details:
+* ![TTXpic97.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1423,14 +2321,19 @@ Training set:  Used for training.
 Test set: Used for double-checking your eval after you think you’ve found your best model.  Avoids human-overfitting of the validation set.
 -->
 
----
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **small validation set** {.big}
 
 If your training dataset was very small (say, 100 examples), and you use 5% of it for your validation set, how big would your validation set be? Can you think of any issues with using a validation set of this size?
 
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1445,7 +2348,6 @@ If your training dataset was very small (say, 100 examples), and you use 5% of i
 Stress that we assume there is a separate test data set that has been set aside.  If needed you could instead use one of the folds as test data but it is really preferred not to do this since you would then be using the test data from one phase as training or validation in the others.
 -->
 
----
 
 # Illustration of k-fold Cross-Validation
 
@@ -1455,11 +2357,23 @@ Stress that we assume there is a separate test data set that has been set aside.
 The next set of slides is a visualization of 5-fold cross validation.  Here the data divides perfectly into the 5 groups but that is not necessary
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic98.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Illustration of k-fold Cross-Validation
 
 ![](res/TTXpic99.png)
+
+
+<!--
+Image Details:
+* ![TTXpic99.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1467,11 +2381,23 @@ The next set of slides is a visualization of 5-fold cross validation.  Here the 
 
 ![](res/TTXpic100.png)
 
+
+<!--
+Image Details:
+* ![TTXpic100.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Illustration of k-fold Cross-Validation
 
 ![](res/TTXpic101.png)
+
+
+<!--
+Image Details:
+* ![TTXpic101.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1479,15 +2405,27 @@ The next set of slides is a visualization of 5-fold cross validation.  Here the 
 
 ![](res/TTXpic102.png)
 
+
+<!--
+Image Details:
+* ![TTXpic102.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **high-variance performance** {.big}
 
-Say you perform k-fold cross validation and find that for a single hyperparameter setting, the model's performance varies significantly across different folds. 
+Say you perform k-fold cross validation and find that for a single hyperparameter setting, the model's performance varies significantly across different folds.
 
 What are some reasons this might happen?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1497,7 +2435,6 @@ What are some reasons this might happen?
 * Now run the algorithm with the chosen hyperparameters using all examples (other than those set aside as test data throughout) as the training data to obtain the final model.
 * Use the test data, which has not been used during cross validation to check for any issues with overfitting.
 
----
 
 # k-fold Cross-Validation: Pros and Cons
 
@@ -1505,17 +2442,28 @@ What are some reasons this might happen?
 * The disadvantage is that k different models need to be trained for every set of hyperparameters being considered, which is slow.
 * Only use k-fold cross-validation if you don’t have enough labeled data to split into independent train, validate and test sets.
 
----
 
 ![](res/TTXgreen.png)
 
 # Regularization for Simplicity
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
 # Ways to Prevent Overfitting
 
 ![](res/TTXpic103.png)
+
+
+<!--
+Image Details:
+* ![TTXpic103.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1528,7 +2476,13 @@ Notation of Loss(Data|Model) reads as “minimize loss of the data, given the mo
 
 Mention tradeoff parameter lambda for controlling how much you value simplicity vs. fitting the training data.  Optimal value for any given problem is data dependent, which means we almost always need to spend some time tuning this (either manually or via automated search).
 
-Talk through what happens if we only minimize model complexity (without worrying about training error) -- we’d end up with a null model. 
+Talk through what happens if we only minimize model complexity (without worrying about training error) - we’d end up with a null model.
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic104.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -1542,7 +2496,13 @@ Notation of Loss(Data|Model) reads as “minimize loss of the data, given the mo
 
 Mention tradeoff parameter lambda for controlling how much you value simplicity vs. fitting the training data.  Optimal value for any given problem is data dependent, which means we almost always need to spend some time tuning this (either manually or via automated search).
 
-Talk through what happens if we only minimize model complexity (without worrying about training error) -- we’d end up with a null model. 
+Talk through what happens if we only minimize model complexity (without worrying about training error) - we’d end up with a null model.
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic105.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -1555,16 +2515,28 @@ Talk through what happens if we only minimize model complexity (without worrying
 Using regularization can make the model simpler, which can avoid bad solutions.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic106.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-# Regularization 
+# Regularization
 
 ![](res/TTXpic107.png)
 
 <!--
-What do we mean by “prior belief”?  It’s a belief we go into training the model with -- not something learned from the data.  This is a way of encouraging the model to follow some structure (a.k.a simplicity) on the model.
+What do we mean by “prior belief”?  It’s a belief we go into training the model with - not something learned from the data.  This is a way of encouraging the model to follow some structure (a.k.a simplicity) on the model.
 
-Normal distribution on weights -- if you have a lot of weights (which in a linear model corresponds to having a lot of input variables), you could plot a histogram of the weight values and see a nice normal curve.
+Normal distribution on weights - if you have a lot of weights (which in a linear model corresponds to having a lot of input variables), you could plot a histogram of the weight values and see a nice normal curve.
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic107.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -1573,6 +2545,12 @@ Normal distribution on weights -- if you have a lot of weights (which in a linea
 
 # L2 Regularization to Reduce Overfitting
 
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # L2 Regularlization
@@ -1580,16 +2558,22 @@ Normal distribution on weights -- if you have a lot of weights (which in a linea
 <!--
 Note that there’s a new parameter here: lambda.  This lambda is a simple scalar value that balances how much we weigh each of these goals in our total loss function.  This is a tuning parameter, and must be explicitly set.  The best value for any given problem is data dependent, so you’ll need to do some tuning, either manually (for example, via a grid search along a set of possible values) or automatically using a tool like Vizier.  We’ll talk about Vizier in the Lab.
 
-The 2 in the formula is supposed to be a subscript -- if you squint you’ll see that it’s on a slightly different level.
+The 2 in the formula is supposed to be a subscript - if you squint you’ll see that it’s on a slightly different level.
 
 Note that although we say “L2 norm”, it’s really the square of the L2 norm.  Among other things, this makes the derivative trivial to work with.
 -->
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **Regularization hyperparams** {.big}
 
 What's a method you might use to choose the value of λ?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1603,10 +2587,16 @@ What's a method you might use to choose the value of λ?
   * for example, prob(click) * bid = expected revenue
 * Also useful for when we need a binary classification
   * click or not click? → prob(click)
-  * spam or not spam?  → prob(spam) 
-  
+  * spam or not spam?  → prob(spam)
+
 <!--
-Define calibration as the fact that the outputs are real world values like probabilities -- contrast to uncalibrated outputs like an embedding vector (that is internally informative but the values have no real world correlation).
+Define calibration as the fact that the outputs are real world values like probabilities - contrast to uncalibrated outputs like an embedding vector (that is internally informative but the values have no real world correlation).
+-->
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -1616,7 +2606,13 @@ Define calibration as the fact that the outputs are real world values like proba
 ![](res/TTXpic108.png)
 
 <!--
-Define calibration as the fact that the outputs are real world values like probabilities -- contrast to uncalibrated outputs like an embedding vector (that is internally informative but the values have no real world correlation).
+Define calibration as the fact that the outputs are real world values like probabilities - contrast to uncalibrated outputs like an embedding vector (that is internally informative but the values have no real world correlation).
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic108.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -1630,9 +2626,15 @@ Partner chat: why are asymptotes interesting?
 Unlike MSE, never guesses 1.0 probability.  Will keep trying to drive loss closer and closer to zero, in the absence of regularization.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic109.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **Sigmoid derivative** {.big}
 
@@ -1640,11 +2642,24 @@ Look at the sigmoid curve. How much does the value of y change as you make x big
 
 ![](res/TTXpic110.png)
 
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+* ![TTXpic110.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXgreen.png)
 
 # Log Loss and Need for Regularization
+
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1654,6 +2669,12 @@ Look at the sigmoid curve. How much does the value of y change as you make x big
 
 <!--
 Note that this has a convenient derivative with respect to w.
+-->
+
+
+<!--
+Image Details:
+* ![TTXpic111.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -1669,10 +2690,9 @@ Note that this has a convenient derivative with respect to w.
   * Early stopping -- limiting training steps or learning rate.
 
 <!--
-Potentially useful insight here -- imagine you assign a unique id to each example, and map each id to its own feature.  If you use un-regularized logistic regression, this will lead to absolute overfitting, as the model tries to drive loss to zero on all examples and never gets there, the weights for each indicator feature will be driven to +inf or -inf.  This can happen in practice in high dimensional data with feature crosses -- often there’s a huge mass of rare crosses that happens only on one example each.  Fortunately, in practice, we always use both explicit regularization (L1 and L2), and also some amount of early stopping regularization.
+Potentially useful insight here - imagine you assign a unique id to each example, and map each id to its own feature.  If you use un-regularized logistic regression, this will lead to absolute overfitting, as the model tries to drive loss to zero on all examples and never gets there, the weights for each indicator feature will be driven to +inf or -inf.  This can happen in practice in high dimensional data with feature crosses - often there’s a huge mass of rare crosses that happens only on one example each.  Fortunately, in practice, we always use both explicit regularization (L1 and L2), and also some amount of early stopping regularization.
 -->
 
----
 
 ![](res/TTXgreen.png)
 
@@ -1696,6 +2716,12 @@ Useless
 Binary class
 -->
 
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Calibration Plots show Bucketed Bias
@@ -1710,22 +2736,33 @@ This can happen when parts of the data space is not well represented, or because
 The bucketing can be done in a couple of ways.  You can bucket by linearly breaking up the target predictions, or you can bucket by quantiles.
 -->
 
+
+<!--
+Image Details:
+* ![TTXpic111.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 ![](res/TTXgreen.png)
 
 # Evaluation Metrics for Linear Classification
 
+
+<!--
+Image Details:
+* ![TTXgreen.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
 # Classification via Threshold
 
 * Sometimes, we use the output from logistic regression to predict the probability an event occurs.
-* Another common use for logistic regression is to use it for binary classification by introducing a threshold. 
+* Another common use for logistic regression is to use it for binary classification by introducing a threshold.
 
 * Choice of threshold is a very important choice, and can be tuned.
 
----
 
 # Evaluation Metrics: Accuracy
 
@@ -1733,13 +2770,18 @@ The bucketing can be done in a couple of ways.  You can bucket by linearly break
 * One possible measure: Accuracy
     * the fraction of predictions we got right
 
----
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **accuracy** {.big}
 
 Devise a scenario in which accuracy would be a misleading metric of a model's usefulness
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1748,8 +2790,7 @@ Devise a scenario in which accuracy would be a misleading metric of a model's us
 * In many cases, accuracy is a poor or misleading metric. Two common situations that case this are:
   * Class imbalance, when positives or negatives are extremely rare
   * Different kinds of mistakes have different costs
-  
----
+
 
 # Confusion Matrix
 
@@ -1757,13 +2798,25 @@ Useful to separate out different kinds of errors. Let’s use spam detection as 
 
 ![](res/TTXpic113.png)
 
+
+<!--
+Image Details:
+* ![TTXpic113.png](http://www.google.com): Copyright Google
+-->
+
 ---
 
-![](res/TTXgroupchat.png) 
+![](res/TTXgroupchat.png)
 
 **error costs** {.big}
 
 In spam classification, which is worse: False negatives or false positives?
+
+
+<!--
+Image Details:
+* ![TTXgroupchat.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -1776,11 +2829,16 @@ In spam classification, which is worse: False negatives or false positives?
 * Recall: (True Positives) / (All Actual Positives)
   * Out of all the possible positives, how many did the model correctly identify?
   * Intuition: Did it classify as “not spam” too often?
-  
----
+
 
 # F-measure
 
 ![](res/TTXpic114.png)
+
+
+<!--
+Image Details:
+* ![TTXpic114.png](http://www.google.com): Copyright Google
+-->
 
 ---

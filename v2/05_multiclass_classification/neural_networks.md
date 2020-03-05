@@ -7,10 +7,12 @@
 <!--
 Nature can be a source of inspiration. Birds inspired man to fly. The burdock plant was the inspiration for velcro. Even in the computer science realm we hear references to trees, forests, and other things that occur in nature.
 
-https://pixabay.com/photos/burdock-thistle-prickly-stick-barb-745306/
-https://pixabay.com/photos/nike-baby-shoes-shoe-baby-velcro-1201595/
-https://pixabay.com/photos/bird-seagull-flying-wings-gull-3158784/
-https://pixabay.com/photos/plane-aircraft-take-off-sky-50893/
+Image Details:
+
+* [neurnet01.png](https://pixabay.com/photos/burdock-thistle-prickly-stick-barb-745306/): Pixabay License
+* [neurnet01.png](https://pixabay.com/photos/nike-baby-shoes-shoe-baby-velcro-1201595/): Pixabay License
+* [neurnet01.png](https://pixabay.com/photos/bird-seagull-flying-wings-gull-3158784/): Pixabay License
+* [neurnet01.png](https://pixabay.com/photos/plane-aircraft-take-off-sky-50893/): Pixabay License
 -->
 
 ---
@@ -19,7 +21,9 @@ https://pixabay.com/photos/plane-aircraft-take-off-sky-50893/
 
 <!--
 This is a brain
-Source: https://pixabay.com/vectors/brain-think-knowledge-mind-science-2845862/
+
+Image Details:
+* [neurnet02.png](https://pixabay.com/vectors/brain-think-knowledge-mind-science-2845862/): Pixabay License
 -->
 
 ---
@@ -31,7 +35,8 @@ This is the building block of the brain: a neuron.
 
 A neuron is just a cell with a nucleus and cell body like any other cell. One of the distinguishing features of the neuron is the 'axon', which is the long tail of the neuron. The tip of the axon has synaptic terminals that attach to other neuron bodies. A neuron body receives signals from the synapse of neurons before it. When those signals reach a critical point within a fixed period of time, the receiving neuron fires, sending a signal to later neurons.
 
-Source: https://pixabay.com/vectors/neuron-nerve-cell-axon-dendrite-296581/
+Image Details:
+* [neurnet03.png](https://pixabay.com/vectors/neuron-nerve-cell-axon-dendrite-296581/): Pixabay License
 -->
 
 ---
@@ -43,7 +48,8 @@ This builds a web of neurons called a "neural network"
 
 This simplification of the brain signaling pathway lead to research into "artificial neural networks" with different types of neurons.
 
-Source: https://pixabay.com/illustrations/neurons-brain-cells-brain-structure-440660/
+Image Details:
+* [neurnet04.png](https://pixabay.com/illustrations/neurons-brain-cells-brain-structure-440660/): Pixabay License
 -->
 
 ![](res/neurnet05.png)
@@ -57,7 +63,8 @@ Computing power and data storage that we have today is nearly unimaginable compa
 
 The idea of deep learning is not new. There were even a few "AI winters" over the last 80 years that stalled development and research in deep learning. It feels like we might finally be at a point where the theoretical ideas of the past can be fulfilled with the technologies of today.
 
-Source: https://pixabay.com/photos/albert-einstein-1-october-1940-1165218/
+Imate Details:
+* [neurnet05.png](https://pixabay.com/photos/albert-einstein-1-october-1940-1165218/)
 -->
 
 ---
@@ -78,6 +85,9 @@ ANN is a big umbrella. There are "feed-forward" networks. There is a concept of 
 Let's first take a look at a naive neuron. This type of neuron receives signals and makes a decision. There are pass-through/identity neurons, "And" neurons. "Or" neurons. And "Not" neurons.
 
 These neurons are the building blocks from the 40s. They can build a computational system of signals that can be used to make decisions.
+
+Image Details:
+* [neurnet06.png](http://www.oreilly.com): Unliscensed
 -->
 
 ---
@@ -96,6 +106,9 @@ The simple on/off model can be effective, but in practice there is a better type
 The perceptron (circa 1957) is a different type of neuron layer. It is composed of TLUs. Each TLU is a neuron which inputs weighted values and has a step function that only fires if the weights are over some threshold.
 
 These are built on TLUs (Threshold Logic Units).
+
+Image Details:
+* [neurnet07.png](http://www.oreilly.com): Unliscensed
 -->
 
 ---
@@ -106,6 +119,9 @@ These are built on TLUs (Threshold Logic Units).
 This perceptron has two inputs (plus a bias) and three TLUs.
 
 The perceptron is trained by reinforcing connections that fire together and produce a correct output.
+
+Image Details:
+* [neurnet08.png](http://www.oreilly.com): Unliscensed
 -->
 
 ---
@@ -114,6 +130,9 @@ The perceptron is trained by reinforcing connections that fire together and prod
 
 <!--
 Multilayer perceptron. This is used to get more advanced calculations, such as XOR, but also obfuscates the decision making rationale of the algorithm. 
+
+Image Details:
+* [neurnet09.png](http://www.oreilly.com): Unliscensed
 -->
 
 ---
@@ -130,6 +149,9 @@ Let’s make this even shorter: for each training instance the backpropagation a
 
 <!--
 The choice of activation function is important. RELU makes differentiation difficult, but actually works in practice. The other functions are also very useful.
+
+Image Details:
+* [neurnet10.png](http://www.oreilly.com): Unliscensed
 -->
 
 ---
@@ -138,4 +160,7 @@ The choice of activation function is important. RELU makes differentiation diffi
 
 <!--
 Softmax is often used at the end of a neural network in classification functions. It can pick the most probable output neuron.
+
+Image Details:
+* [neurnet11.png](http://www.oreilly.com): Unliscensed
 -->

@@ -16,7 +16,8 @@ Interacting meaningfully with other people to exchange information and develop c
 * As a student, you’ll begin having many opportunities to begin making connections with others and building your network, so now is a great time to begin learning the skills of networking.
 * Many people believe that networking is something you’re born with; some people are just better than others. The truth is that anyone can learn how to network effectively and you’ll also improve a lot with practice, and I will make sure to work some time in for some practice today.
 
-Source: Photo by LinkedIn Sales Navigator on Unsplash
+Image Details:
+* [artofnetworking01.jpg](https://unsplash.com/photos/W3Jl3jREpDY): Usplash License
 -->
 
 ---
@@ -31,7 +32,7 @@ Both formal and informal settings:
 * Anywhere - coffee shops, elevators, riding the bus, and through many kinds of activities
 
 <!--
-* You may be thinking that networking only takes place in formal settings - at a career fair, or an actual advertised “networking” event. While that’s true and you should be extra prepared for those kinds of events where you KNOW networking will be explicitly taking place, you may be surprised to learn that meaningful networking can be accomplished almost anywhere. Definitely through on campus events like a visiting speaker or activity, and through affinity groups you may join now or after college, like an Alumnae group. 
+* You may be thinking that networking only takes place in formal settings - at a career fair, or an actual advertised “networking” event. While that’s true and you should be extra prepared for those kinds of events where you KNOW networking will be explicitly taking place, you may be surprised to learn that meaningful networking can be accomplished almost anywhere. Definitely through on campus events like a visiting speaker or activity, and through affinity groups you may join now or after college, like an Alumnae group.
 * But networking can also happen in places you visit all the time, like in your daily commute, at Starbucks, or even at your next family event.
 * You never know who you’ll meet, which is why you should practice networking skills so you’ll be absolutely ready to network whenever you meet people who could be helpful to you, or to whom you could be helpful.
 * Feel free to share your own examples here: (one from Meggie) “I was on the Airtrain to JFK and ran into an NYU student who saw my Google bag and asked enthusiastically about if I worked for Google. We had a great conversation and after finding out he was in CS, I gave him my email and connected him to the NYU specialist. He didn't get an internship but it was a great experience for him to practice pitching himself and skills to potential contacts/employers.”
@@ -53,7 +54,7 @@ Both formal and informal settings:
 * Following up
 
 <!--
-* In a more formal setting, like a career fair where everyone is there expecting to hear about opportunities, networking would probably be more formulaic - you would introduce yourself - who you are and what you study or are there for, perhaps make a bit of small talk depending on if others are waiting (the weather, have they visited here before, are they an alumna?) and then asking questions, listening closely, and either an offer to follow up, or maybe a request from you before parting. Then, you’d need to follow up on whatever was decided. 
+* In a more formal setting, like a career fair where everyone is there expecting to hear about opportunities, networking would probably be more formulaic - you would introduce yourself - who you are and what you study or are there for, perhaps make a bit of small talk depending on if others are waiting (the weather, have they visited here before, are they an alumna?) and then asking questions, listening closely, and either an offer to follow up, or maybe a request from you before parting. Then, you’d need to follow up on whatever was decided.
 * For instance, if you got to a career fair, you may walk up and say “Hi! How are you?”, followed by a tiny bit of small talk and then “I’m NAME, a senior at Spelman College, studying Computer Science. I’m interested in summer internships - is your company offering any summer internships in software engineering?” You can listen carefully and ask follow up questions, including asking if the representative will take your resume, or if you should email it. You should also ask for a card or a way to stay in contact, and then make a request “May I send you my resume for you to review?” or “May I follow up with you directly on the opportunities you mentioned?” or the rep may say “I’ll email you with opportunities”. Either way, you’ve decided on next steps and you would take go home, and send a thank you email or any next step you decided on.
 -->
 
@@ -66,7 +67,8 @@ Both formal and informal settings:
 <!--
 In the next few slides, we will go over ways to effectively network, as well as some things that may detract from building a good network.
 
-Source: Photo by Akson on Unsplash
+Image Details:
+* [artofnetworking02.jpg](https://unsplash.com/photos/1K8pIbIrhkQ): Unsplash License
 -->
 
 ---
@@ -81,7 +83,7 @@ Source: Photo by Akson on Unsplash
   * Give context! Remind them of your name and any specifics of your convo
      1. “I was also a Girl Scout Gold Award recipient and I love coding in Java.”
   * Try to follow up within two days
-  
+
 <!--
 * If you can believe it, you used to have to exchange paper resumes to network professionally, which made everything much slower and more complicated
 * Now, thanks to technology, we can network with one another more easily than ever before using a myriad of platforms.
@@ -100,8 +102,8 @@ Source: Photo by Akson on Unsplash
 * Pay it forward
 
 <!--
-* Continuously look for ways to give back to the people in your online networks. 
-* Don't approach them only when you need a favor. Reach out to say hello or to contribute something you think will be valuable to them. 
+* Continuously look for ways to give back to the people in your online networks.
+* Don't approach them only when you need a favor. Reach out to say hello or to contribute something you think will be valuable to them.
 * Networking is a two-way street. Plus, in the end, it's your reputation that counts.
 * Also, because you will benefit from networking, look for ways to also help others. Opportunities to help colleagues who may be younger than you or even just in need of networking help themselves will increase as you become more successful. Whether you pay it forward by introducing a friend to a contact you think could be helpful to them or eventually become a mentor yourself, it completes the full cycle when you’re also in a place to give back to others.
 * (Consider using a real world example of inappropriate use of calling people, LinkedIn requests, etc)
@@ -120,7 +122,7 @@ Source: Photo by Akson on Unsplash
 * When you approach someone for career help via social media, know what you want out of the interaction and ask specific questions that show you've done your research. Often, people send messages along the lines of "I'm looking to go into marketing. Any advice or leads would be greatly appreciated!" or "Can you tell me more about this job?" in a Twitter DM. These types of messages are so broad that it's difficult to provide a meaningful and relevant response.
 * Working professionals are strapped for time. Make it easy for them to help you — specify what you're looking for. Is it the person's time? Connections to certain individuals? Advice on a particular topic? Knowledge about a company? Do you want them to act as a reference? Introduce you to a recruiter at their organization? Provide a critique of your resume?
   * Example: do not email a recruiter and say “I’m a junior CS student - where does my profile fit within Google?
-  * What you could say is: I have a Math minor and know from reading that Chrome needs engineers with this background. Do you think there would be opportunities for me here? 
+  * What you could say is: I have a Math minor and know from reading that Chrome needs engineers with this background. Do you think there would be opportunities for me here?
 * You need to showcase your skills and value, show us you’ve done their research on roles and qualifications, and ask specific questions when you have them.
 -->
 
@@ -211,7 +213,7 @@ You don’t just want to connect with this person—you want to learn from them.
 What do we want to keep in mind as we write this email?
 
 <!--
-Ask a student to read the slide. Before clicking on the next slide, get some answers from the audience. 
+Ask a student to read the slide. Before clicking on the next slide, get some answers from the audience.
 Possible ideas:
 * Who you are
 * How you know about them (or if you met them briefly - when and where)
@@ -236,7 +238,7 @@ If you’re open to it, I’d love to buy you a cup of coffee sometime soon so I
 
 Looking forward to hearing from you, [Name]!
 
-Best, 
+Best,
 
 [Your Name]
 
@@ -276,7 +278,7 @@ Your friend or colleague recommended that you reach out to one of his acquaintan
 What do we want to be sure to include in this instance?
 
 <!--
-Before clicking on the next slide, get some answers from the audience. 
+Before clicking on the next slide, get some answers from the audience.
 Possible ideas:
 * The person you have in common
 * How you know that common contact
@@ -327,7 +329,7 @@ All the best,
 Sidnie
 
 <!--
-Here’s a good reminder that these best practices can be used for personal networking and hobbies as well as purely professional. 
+Here’s a good reminder that these best practices can be used for personal networking and hobbies as well as purely professional.
 -->
 
 ---
@@ -361,7 +363,7 @@ Here’s a good reminder that these best practices can be used for personal netw
 * If you are not sure of the gender of the person you are emailing for some reason, use their name only. “Miss” and “Mrs.” guess at a woman’s married status and are pretty passeé now. “Mx.” is gaining traction as a gender neutral greeting, but hasn’t fully caught on yet. However, if someone refers to themselves this way, by all means use it
 * As a general rule, follow the lead of the person introducing you, or how the person refers to themselves. You always start more formal - unless the person is close in age to you, I would say. If the person then asks you to refer to them by their first name, do that
 * If you’re not sure if someone has an MD or PhD and your research doesn’t give you an answer, use your best judgment. If they are faculty, you can always say “Professor” this still shows respect for their education and role, even if you aren’t sure of their credentials
-* For signing off, use your best judgment. I like “Best” - “Best Wishes” sounds a little too fluffy to me, but is still fine. “Regards” also works, but is pretty formal and a little stiff. Personally, “Cheers” and “Yours” don’t work for me. 
+* For signing off, use your best judgment. I like “Best” - “Best Wishes” sounds a little too fluffy to me, but is still fine. “Regards” also works, but is pretty formal and a little stiff. Personally, “Cheers” and “Yours” don’t work for me.
 Does anyone have a signoff they use that they want advice on? [Elicit student contributions and respond to each.]
 -->
 
@@ -387,12 +389,12 @@ Does anyone have a signoff they use that they want advice on? [Elicit student co
 
 8.) DO: craft your elevator pitch {.big}
 
-* Be ready to succinctly describe who you are, what you do, and what your goals are 
+* Be ready to succinctly describe who you are, what you do, and what your goals are
 * Practice!
 * Keep your “pitch” up to date
 
 <!--
-* You should practice being able to describe who you are, what your goals are, and what you’re involved in. Trust me, you’ll use this at everything from career fairs to family weddings. 
+* You should practice being able to describe who you are, what your goals are, and what you’re involved in. Trust me, you’ll use this at everything from career fairs to family weddings.
 * You may want to slightly tailor your pitch based on different roles you hold  - for instance, you may have a “pitch” about where you go to school, what you want to study, and the kinds of careers or opportunities you are looking for when you got to something like a career fair, but if you are at a meeting for club presidents and you head up the Computer Science club, you may have a pitch of what your club does, how many members you have, and your goals for this year.
 * There will always be a reason to sell what you do in a very short window of time. It will always play in your favor if you maintain the ability to do that in a way that manages to cover who you are, what you do, and why it’s relevant. Try to come off as casual, efficient, and not forced or pushy. Easy, right? We know it’s not, which is why you should practice ahead of time. * In a mirror. Repeatedly. And, like a resume, elevator pitches need periodic updating.
 -->
@@ -406,7 +408,8 @@ Does anyone have a signoff they use that they want advice on? [Elicit student co
 <!--
 What questions do you have?
 
-Source: Photo by Alejandro Escamilla on Unsplash
+Image Details:
+* [artofnetworking03.jpg](https://unsplash.com/photos/BbQLHCpVUqA): Unsplash License
 -->
 
 ---
@@ -435,5 +438,6 @@ If you do not have a LinkedIn profile, please make one and be sure to include AM
 <!--
 Circulate to help students formulate emails, respond to recruiters, etc. If students say they don’t have anyone to reach out to - how about a faculty speaker, or just someone they can send a “thank you” and update to? Doesn’t have to be a cold email.
 
-Source: Photo by Avel Chuklanov on Unsplash
+Image Details:
+* [artofnetworking04.jpg](https://unsplash.com/photos/DUmFLtMeAbQ): Unsplash License
 -->

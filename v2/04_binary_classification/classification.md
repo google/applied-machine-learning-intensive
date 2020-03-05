@@ -34,8 +34,6 @@ Image Details:
 <!--
 What did they label horses? (many cultures eat horse meat, so likely depends on whether you chose the [food] or [pet] cards)
 
-Source: Photo by David Dibert on Unsplash
-
 Image Details:
 * [classification3.jpg](https://unsplash.com/photos/Huza8QOO3tc): Unsplash License
 -->
@@ -84,8 +82,6 @@ Binary classification can be as simple as a yes/no decision as to which side of 
 Classification model results are often returned as a list of confidences. The model will predict the probability that the given data point is part of each class. The model makes predictions. Your code will need to make decisions based on these decisions.
 
 Notice that these confidences do not necessarily sum to 1, so they aren’t quite probabilities. You can perform a mathematical transformation, such as a “softmax” function, so you can interpret them as probabilities instead.
-
-Source: Photo by Nick Karvounis on Unsplash
 
 Image Details:
 * [classification6.png](https://unsplash.com/photos/-KNNQqX9rqY): Unsplash License
@@ -223,7 +219,6 @@ If we want to increase recall, predict positive more often
 If we want to increase precision, only predict positive when we’re absolutely sure (raise classification threshold)
 In general, raising the classification threshold reduces false positives, thus raising precision.
 
-Source: Photo by Anna Samoylova on Unsplash
 Image Details:
 * [classification12.jpg](https://unsplash.com/photos/w55SpMmoPgE): Unsplash License
 -->
