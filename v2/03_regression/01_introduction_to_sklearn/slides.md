@@ -53,7 +53,7 @@ Some common datasets aren't installed alongside scikit-learn, but the library do
 ![](res/introtoscikit4.png)
 
 <!--
-Some common datasets aren't installed alongside scikit-learn, but the library does know how to access them. For these datasets we use 'fetch' functions which pull the dataset down from the internet if necessary.
+Some common datasets aren't installed alongside scikit-learn, but the library does know how to access them. For these datasets we use 'fetch' functions, which pull the dataset down from the internet if necessary.
 -->
 
 ---
@@ -62,7 +62,7 @@ Some common datasets aren't installed alongside scikit-learn, but the library do
 
 <!--
 Bunch objects are scikit-learn objects that are sometimes used to store datasets. If you find yourself using a load or fetch method, you'll likely encounter a bunch object.
-The colab goes into more details on Bunch objects and explores the data store within them. You'll encounter data that is composed of named features, as well as, target values paired with sets of features.
+The colab goes into more details on Bunch objects and explores the data store within them. You'll encounter data that is composed of named features, as well as target values paired with sets of features.
 
 For the most part in this course, we will convert scikit-learn Bunch objects into Pandas DataFrame objects or TensorFlow DataSet objects. The aforementioned objects work a little more intuitively with the methods and frameworks that we'll cover in this course.
 -->
@@ -75,8 +75,8 @@ For the most part in this course, we will convert scikit-learn Bunch objects int
 
 <!--
 Most of the models in scikit-learn are considered estimators. An estimator is expected to implement two methods: fit and predict.
-* fit is used to train the model. At a minimum it is passed the feature data used to train the model. In supervised models it is also passed the target data.
-* predict is used to get predictions from the model. This method is passed features and returns target predictions.
+* Fit is used to train the model. At a minimum it is passed the feature data used to train the model. In supervised models it is also passed the target data.
+* Predict is used to get predictions from the model. This method is passed features and returns target predictions.
 -->
 
 ---
@@ -87,7 +87,7 @@ Most of the models in scikit-learn are considered estimators. An estimator is ex
 
 <!--
 In practice it is rare that you will get perfectly clean data that is ready to feed into your model for training. Most of the time, you will need to perform some type of cleaning on the data first.
-Transformers implement fit and transform methods. The fit method calculates parameters necessary to perform the data transformation. transform actually applies the transformation. There is a convenience fit_transform method that performs both fitting and transformation in one method call.
+Transformers implement fit and transform methods. The fit method calculates parameters necessary to perform the data transformation. Transform actually applies the transformation. There is a convenience fit_transform method that performs both fitting and transformation in one method call.
 -->
 
 ---
@@ -110,7 +110,7 @@ A pipeline is simply a series of transformers, often with an estimator at the en
 
 <!--
 Scikit-learn also comes with many functions for measuring model performance in the metrics package.
-In this case we are calculating the "mean squared error". Don't worry too much about what that means for now. We have a unit dedicated to calculating error in your models that you will see soon.
+In this case we are calculating the "mean squared error." Don't worry too much about what that means for now. We have a unit dedicated to calculating error in your models that you will see soon.
 -->
 
 ---
