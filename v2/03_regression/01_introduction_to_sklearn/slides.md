@@ -1,8 +1,8 @@
-# Intro to Scikit Learn
+# Intro to scikit-learn
 
 ---
 
-# [Scikit-Learn](https://scikit-learn.org) 
+# [scikit-Learn](https://scikit-learn.org) 
 
 ![](res/introtoscikit1.png)
 

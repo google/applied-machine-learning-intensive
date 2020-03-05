@@ -1,10 +1,10 @@
 # Intermediate Pandas
 
 <!--
-Welcome to 'Intermediate Pandas.' At this point in the course you should be
+Welcome to Intermediate Pandas. At this point in the course you should be
 familiar with Pandas' Series and DataFrame objects. If these words are
-unfamiliar to you, you probably want to go back and revisit the 'Introduction to
-Pandas' unit.
+unfamiliar to you, you probably want to go back and revisit the Introduction to
+Pandas unit.
 -->
 
 ---
@@ -20,8 +20,7 @@ Pandas' unit.
 You might be asking, "Why more Pandas? I'm ready to do some data science!".
 Well, it turns out that quite a bit of the work in data science and machine
 learning involves getting quality data ready to feed into our models. Pandas is
-a toolkit that you'll regularly see used for this part of the data science
-pipeline.
+a toolkit you'll regularly see used for this part of the data science pipeline.
 
 In this unit we will take a closer look at DataFrames. We will learn more ways
 to explore the data in a DataFrame. This includes merging, grouping, filtering,
@@ -40,11 +39,10 @@ print(df.shape) # (2452431, 8)
 First, we will explore a few more ways to get data about a DataFrame. One of the
 most basic is the `.shape` property of a DataFrame.
 
-
 What is shape?
 
 Shape is a property of a DataFrame that lets you know the number of rows and
-columns in the DataFrame. Returns a tuple with dimensions of data frame.
+columns in the DataFrame. Returns a tuple with dimensions of DataFrame.
 Specifically, (# rows, # columns).
 
 If you know about NumPy, then you may recall that NumPy has a `.shape` attribute
@@ -64,8 +62,8 @@ print(df.columns) # Index(...)
 
 <!--
 DataFrames are typically thought of as tabular structures containing rows and
-columns. Rows are often indexed by number (but not always) while columns
-typically have meaningful names like 'Games Played' or 'Square Meters'.
+columns. Rows are often indexed by number (but not always), while columns
+typically have meaningful names like 'Games Played' or 'Square Meters.'
 
 Monotonically increasing numbers are easy enough to iterate over, but
 arbitrarily-named columns are a different story.
@@ -76,7 +74,7 @@ This returns an `Index` object that allows you to iterate over all of the column
 names of the DataFrame in left-to-right order.
 
 `Index` is a Pandas object, but it is also a Python iterable. This allows you to
-loop over the columns names, extract them into a list, or perform any other
+loop over the columns' names, extract them into a list, or perform any other
 iterable operation supported by Python.
 -->
 
@@ -145,7 +143,7 @@ the same length as the dataframe (in this case the length is 4), where an entry 
 For this specific example,`df['num_pet_dogs'] > 1` returns an index with entries True, False, True, False.
 Then we take df[boolean index], and this selects the rows for which the boolean value is True.
 
-Note that a dataframe is returned. You may want to assign this to a new variable to work with it further.
+Note that a DataFrame is returned. You may want to assign this to a new variable to work with it further.
 This filtering is not done in place and does not modify the original dataframe, df.
 
 Image Details:
