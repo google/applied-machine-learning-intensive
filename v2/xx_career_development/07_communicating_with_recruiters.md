@@ -19,7 +19,7 @@ Hopefully this discussion clears up some of that uncertainty and provides you wi
 * Q&A
 
 <!--
-First we’ll go over the role your recruiter serves in your hiring process. This can slightly differ by employer but is generally similar across the board. Then we’ll talk about how to effectively communicate with your recruiter and how to navigate all the minor and major details of scheduling and participating in interviews. Then we’ll close out with some sample emails to recruiters and Q&A. 
+First we’ll go over the role your recruiter serves in your hiring process. This can slightly differ by employer but is generally similar across the board. Then we’ll talk about how to effectively communicate with your recruiter and how to navigate all the minor and major details of scheduling and participating in interviews. Then we’ll close out with some sample emails to recruiters and Q&A.
 -->
 
 ---
@@ -34,10 +34,8 @@ First we’ll go over the role your recruiter serves in your hiring process. Thi
 <!--
 * Your recruiter is your advocate and partner.  Be kind, respectful, friendly, and honest in your communications. They’re there to help you, provide you with helpful resources, and to guide you through the overall process.
 * While you may also be in touch with a hiring manager, your recruiter is typically your main point of contact during an interview process with a company. Make sure to keep them in the loop with any updates that affect your candidacy.
-* Your recruiter will also guide you through the process and keep you updated. They will provide you with regular updates, so keep an eye on your inbox! Only your recruiter -- not your referral or friend. They can keep you updated on your stage of the interview/hiring process. You should always respond to your recruiter within 48 hours at most.
-* Tip: It’s always good to express your thanks and show your appreciation. Your recruiters work hard to ensure that your process is as informative, timely, and smooth as possible. Show your positivity and gratitude -- it can go a long way!
-
-Source: Photo by Webaroo.com.au on Unsplash
+* Your recruiter will also guide you through the process and keep you updated. They will provide you with regular updates, so keep an eye on your inbox! Only your recruiter - not your referral or friend. They can keep you updated on your stage of the interview/hiring process. You should always respond to your recruiter within 48 hours at most.
+* Tip: It’s always good to express your thanks and show your appreciation. Your recruiters work hard to ensure that your process is as informative, timely, and smooth as possible. Show your positivity and gratitude - it can go a long way!
 -->
 
 ---
@@ -49,7 +47,8 @@ Source: Photo by Webaroo.com.au on Unsplash
 <!--
 Let’s move on to some guidelines for effectively communicating with your recruiter.
 
-Source: Photo by Webaroo.com.au on Unsplash
+Image Details:
+* [commrecruiter01.jpg](https://unsplash.com/photos/3Mhgvrk4tjM): Unsplash License
 -->
 
 ---
@@ -81,7 +80,7 @@ When to contact your recruiter {.big}
 <!--
 Students often ask, “Should I update my recruiter about that?” Here are some guidelines for when you definitely want to communicate with your recruiter:
 
-University deadlines: Some universities have specific guidelines on when its students can or should accept internship or full-time job offers. These guidelines exist to serve YOU and make sure you have sufficient time to make the best decision for yourself. Check to see if your university has “NACE Guidelines” and mark your calendar accordingly. 
+University deadlines: Some universities have specific guidelines on when its students can or should accept internship or full-time job offers. These guidelines exist to serve YOU and make sure you have sufficient time to make the best decision for yourself. Check to see if your university has “NACE Guidelines” and mark your calendar accordingly.
 
 Company deadlines: If you’re interviewing with another company and receive an offer, let your recruiter know! You’ll hear recruiters refer to this as a “competing offer.” Having a competing offer can sometimes speed up the offer process at the other places where you’re interviewing. It would be a shame if you had to accept an offer with other possibilities on the table, so it’s important to be transparent with your recruiter to let them know if you have other offers or may soon.
 
@@ -103,7 +102,8 @@ TIP: Always be truthful, open and honest with your recruiter! If they have the f
 <!--
 Now let’s move on to scheduling and going through interviews at a company.
 
-Source: Photo by Nik MacMillan on Unsplash
+Image Details:
+* [commrecruiter02.jpg](https://unsplash.com/photos/YXemfQiPR_E): Unsplash License
 -->
 
 ---
@@ -157,7 +157,7 @@ Interviews are scheduled {.big}
 <!--
 Like we mentioned earlier, if you need any accommodations for your interview, let us know as soon as possible
 
-Rescheduling an interview 
+Rescheduling an interview
 * If an interview absolutely needs to be rescheduled, let your recruiter and recruiting coordinator know on one email as soon as possible. It’s best practice to reply all to the email where your interview was originally scheduled.
 * Keep rescheduling to a minimum - if you’re sick or there’s an emergency, we understand! But once your interview date is set, make sure to prepare yourself for that day
 * Rescheduling multiple times might make you more anxious so it’s generally best to stick with your originally planned interview date.
@@ -180,6 +180,8 @@ Thank you
 Now that we’ve gone over some important information to consider when working with your recruiter, let’s put these best practices to use!
 
 Source: Photo by NeONBRAND on Unsplash
+Image Details:
+* [commrecruiter03.jpg](https://unsplash.com/photos/IhsaTDKzdwg): Unsplash License
 -->
 
 ---
@@ -190,6 +192,9 @@ Example email from recruiter to candidate {.big}
 
 <!--
 [Have 1-2 student volunteers read this email from a recruiter out loud to the class.]
+
+Image Details:
+* [commrecruiter04.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -215,14 +220,17 @@ Now that we’ve read an email exchange between a recruiter and candidate, take 
 
 Response should include:
 * The initial email from the recruiter states that there will be two technical interviews - remember to read all emails from top to bottom!
-* Availability for interviews is given in EST, not PST like recruiter requested. 
-* Availability for interviews is outside of general workings hours (late in the evening and on a Saturday). 
+* Availability for interviews is given in EST, not PST like recruiter requested.
+* Availability for interviews is outside of general workings hours (late in the evening and on a Saturday).
 * Screenshot of transcript is pasted in body of email. Recruiter requested a pdf of both transcript and resume
 * Availability should be specific: for example, list dates as Tuesday, May 29
 * Initial email from recruiter says that the project questionnaire will be sent out within 24-48 hours. This usually means business hours. If you still haven’t received it within 48 business hours, you should reach out to your recruiter then.
 * Don’t expect an immediate response especially when it’s outside of our general working hours. Notice that this person was replying to their recruiter very early hours in EST. Remember, Googlers try to get back to everyone within 24 hours.
-* This person is sending multiple emails back to back. While it’s not necessarily a bad thing, it isn’t preferred for most recruiters. Keep you emails clear and concise. 
+* This person is sending multiple emails back to back. While it’s not necessarily a bad thing, it isn’t preferred for most recruiters. Keep you emails clear and concise.
 * It’s always nice to sign off with a thank you and your name! Be friendly!
+
+Image Details:
+* [commrecruiter05.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -233,6 +241,9 @@ Sample response {.big}
 
 <!--
 Here’s a good example of a positive response from a candidate to a recruiter. What are some things Jane did well here?  [Elicit and respond to student contributions]
+
+Image Details:
+* [commrecruiter06.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -250,7 +261,7 @@ What would be some things to include in an email to a recruiter for a role you a
 * If a recruiter contacts you out of the blue, you should respond at least once. Ask clarifying questions and do some homework to see if this is at all a good match for you. You don’t want them to waste your time, but don’t waste theirs, either.
 * It may not be the PERFECT role, but if it is at all interesting to you, you should go forward. You’ll learn a lot through the application process.
 * But if an opportunity truly is not for you, your should respond honestly and courteously. You don’t have to write a long email or provide too much detail, but you can definitely feel free to give some feedback and you should follow up promptly.
-* It is not good professional etiquette to not respond, nor to lie. For example, don’t say you have a job if you don’t. 
+* It is not good professional etiquette to not respond, nor to lie. For example, don’t say you have a job if you don’t.
 * Remember you are still looking for a role and that people move around a lot. This recruiter could end up in a role or company years from now that could be your dream job, so you don’t want to burn bridges. Be polite, and if it seems like a good opportunity, you can ask to connect on LinkedIn or to be kept in mind for future roles that maybe be a better fit.
 * Pose to audience - What would be some things to include in an email to a Recruiter for a role you are NOT interested in? [Elicit and respond to student contributions.]
 -->
@@ -263,6 +274,9 @@ The “no, thank you” email example {.big}
 
 <!--
 This could be sent as an email or copied and pasted into LinkedIn messages. Just remember best practices of spelling the recruiter’s name correctly and making sure details are correct. If you want to connect over LinkedIn or otherwise keep this person in your contacts (even if this role is not a good fit at this time) then follow up promptly on doing so. Keep it brief. Even if you give a specific detail on why this is not a fit, you don’t have to get too specific. Remember that it is not okay to lie, so keep it honest and courteous.
+
+Image Details:
+* [commrecruiter07.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -275,7 +289,7 @@ This could be sent as an email or copied and pasted into LinkedIn messages. Just
 * Proofread, be professional and thankful.
 
 <!--
-Don’t forget that you and your recruiter both want you to have a clear, efficient, and overall great hiring process -- regardless of whether or not the job is a best fit for you. They are your advocate. Be sure you read all aspects of the emails they send you, links included, and respond to their emails within 48 hours at the latest. Be transparent with them about your offers and ask for help when you need it or when you feel uncertain about something. Be professional and be grateful for their time and work with you. 
+Don’t forget that you and your recruiter both want you to have a clear, efficient, and overall great hiring process - regardless of whether or not the job is a best fit for you. They are your advocate. Be sure you read all aspects of the emails they send you, links included, and respond to their emails within 48 hours at the latest. Be transparent with them about your offers and ask for help when you need it or when you feel uncertain about something. Be professional and be grateful for their time and work with you.
 -->
 
 ---

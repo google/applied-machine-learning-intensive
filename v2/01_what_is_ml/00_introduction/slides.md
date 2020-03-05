@@ -58,7 +58,7 @@ Let's touch a bit more on what we'll actually be covering in this course by look
 the course.
 
 The first word is 'Applied,' which means that we are going to put something to practical use. We
-aren't going to create new algorithms or methods for machine learning. Instead, we will take 
+aren't going to create new algorithms or methods for machine learning. Instead, we will take
 well-known models and apply them to different data sets in order to get some practical outcome.
 
 *Source: https://www.lexico.com/en/definition/applied
@@ -153,7 +153,7 @@ Image Details:
 ![](res/toddler.jpg)
 
 <!--
-Machine learning uses examples to identify patterns and make predictions on new examples. 
+Machine learning uses examples to identify patterns and make predictions on new examples.
 
 Imagine if you brought a young child to the zoo, and upon arriving at the lion exhibit, the child pointed at a lion and said, “It’s a kitty!”
 
@@ -258,7 +258,7 @@ https://en.wikipedia.org/wiki/Rule-based_system
 ![](res/product-development-process.png)
 
 <!--
-Machine learning is an iterative process that requires large amounts of data to learn useful, generalizable patterns. 
+Machine learning is an iterative process that requires large amounts of data to learn useful, generalizable patterns.
 
 Your first step when approaching a problem should always be to define a clear, user-focused goal. Then, decide whether to take a rules-based or machine learning approach based on how the advantages of each fit your goal. (Generally, if you have a large amount of diverse data, machine learning is the way to go.)
 
@@ -312,7 +312,7 @@ a specific field of AI where a system learns to find patterns in examples, typic
 Machine learning is a strategy through which AI can appear “intelligent” when performing tasks.
 -->
 
---- 
+---
 
 # Deep Learning {.big}
 
@@ -358,7 +358,7 @@ Now let’s dive deeper into what goes into a machine learning system.
 information drawn from examples which distinguish one example from another are the features in a machine learning system
 
 <!--
-For example, if we're trying to decide whether an image is of a lion or a tiger, useful features could be whether an animal has a mane or stripes. 
+For example, if we're trying to decide whether an image is of a lion or a tiger, useful features could be whether an animal has a mane or stripes.
 
 Some machine learning approaches (like deep learning) can automatically detect important features. But very often, you’ll need to define what features to include based on your specific goal.
 -->
@@ -368,7 +368,7 @@ Some machine learning approaches (like deep learning) can automatically detect i
 Video recommendation?
 
 <!--
-Say your goal is to give good video recommendations to viewers. 
+Say your goal is to give good video recommendations to viewers.
 
 Quick discussion: What features or distinguishing information might be useful?
 
@@ -409,8 +409,8 @@ These features are used in a model to make predictions.
 
 a mathematical way the patterns and insights that a machine learning system learns from examples and is used to make predictions
 
-<!-- 
-A model specifies how your machine learning system will actually learn patterns and insights. The model will then make predictions based on what it learned. Different models perform better on different problems. 
+<!--
+A model specifies how your machine learning system will actually learn patterns and insights. The model will then make predictions based on what it learned. Different models perform better on different problems.
 
 We’ll discuss several common types of models in a later lecture. For example, (price of house) = 100 * (square footage of house). If the house is 1500ft^2, then we forecast the price to be $150,000.
 -->
@@ -424,7 +424,7 @@ Teaching a model the difference between a lion photo and a tiger photo requires 
 
 In one type of machine learning, known as supervised learning, the examples are labeled. For example, the title of an image could be "lion" or "not a lion." The model could use these titles as feedback, learning better how to classify images.
 
-Especially with more data, models can become so complex that the details of how the model makes its predictions are difficult to understand. It’s important to continually evaluate and try to understand the output of your models. 
+Especially with more data, models can become so complex that the details of how the model makes its predictions are difficult to understand. It’s important to continually evaluate and try to understand the output of your models.
 -->
 
 ---
@@ -454,7 +454,7 @@ when a model conforms too much to its training data and cannot generalize to mak
 <!--
 Overfitting occurs when a model conforms too much to its training data and cannot generalize to make predictions about new data. For example, if none of the tigers in the training data have white fur, the model could assume all tigers have orange fur.
 
-Just like the child from the zoo, a machine learning model will do the best it can with the information it has. Overfitting can be mitigated by looking for blind spots and bias in data and processes. It might also be a sign you need more training data. 
+Just like the child from the zoo, a machine learning model will do the best it can with the information it has. Overfitting can be mitigated by looking for blind spots and bias in data and processes. It might also be a sign you need more training data.
 
 We’ll have a deeper discussion of how to improve performance of machine learning models, including reducing overfitting, later in the class.
 -->

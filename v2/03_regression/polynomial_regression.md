@@ -15,6 +15,9 @@
 
 <!--
 We have seen linear regression and have implemented it using multiple toolkits. We found our line using both the "closed form" solution and using optimizers such as gradient descent. Though linear regression can be a powerful predictive tool, it isn't appropriate for all types of regression problems.
+
+Image Details:
+* [polynomialregression1.gif](http://ww.google.com): Copyright Google
 -->
 
 ---
@@ -23,6 +26,9 @@ We have seen linear regression and have implemented it using multiple toolkits. 
 
 <!--
 Take a look at this dataset for a few seconds and see if you can find a good spot to place a line.
+
+Image Details:
+* [polynomialregression2.png](http://ww.google.com): Copyright Google
 -->
 
 ---
@@ -31,6 +37,9 @@ Take a look at this dataset for a few seconds and see if you can find a good spo
 
 <!--
 This is the line that the closed form of linear regression would create. It doesn't look like a very good fit does it? The r-squared score for this line is actually 0.2278666166017529.
+
+Image Details:
+* [polynomialregression3.png](http://ww.google.com): Copyright Google
 -->
 
 ---
@@ -39,6 +48,9 @@ This is the line that the closed form of linear regression would create. It does
 
 <!--
 We can see that if we introduce a polynomial line (in this case a 2nd degree polynomial), we get a much better looking fit. The r-squared score is now 0.7900240657338337.
+
+Image Details:
+* [polynomialregression4.png](http://ww.google.com): Copyright Google
 -->
 
 ---
@@ -47,6 +59,9 @@ We can see that if we introduce a polynomial line (in this case a 2nd degree pol
 
 <!--
 Here are a few examples of polynomial equations. The topmost is the linear equation that we know and love. The next is commonly called a "quadratic" equation. The third is a "cubic" equation. The number of factors you can add to equation is theoretically unbounded, though you'll pay a computational expense for very large equations and also introduce the risk of overfitting (which we'll talk about soon).
+
+Image Details:
+* [polynomialregression5.png](http://ww.google.com): Copyright Google
 -->
 
 ---
@@ -55,6 +70,9 @@ Here are a few examples of polynomial equations. The topmost is the linear equat
 
 <!--
 Have students talk to one another and answer the above two questions.
+
+Image Details:
+* [polynomialregression5.png](http://ww.google.com): Copyright Google
 -->
 
 ---
@@ -63,6 +81,9 @@ Have students talk to one another and answer the above two questions.
 
 <!--
 This dataset was actually randomly generated based on a polynomial equation with a bit of random noise. You can see that line drawn in green on the chart. Our red predicted line isn't perfect by any means, you can see a much sharper slope at both ends, but it is still better than a straight-line fit.
+
+Image Details:
+* [polynomialregression7.png](http://ww.google.com): Copyright Google
 -->
 
 ---
@@ -73,6 +94,9 @@ This dataset was actually randomly generated based on a polynomial equation with
 Have students talk to one another and answer the above two questions.
 
 Transition remarks: we will now discuss using different order polynomials for regression and in particular explore potential dangers of using higher and higher order polynomial fits
+
+Image Details:
+* [polynomialregression8.png](http://ww.google.com): Copyright Google
 -->
 
 ---
@@ -81,6 +105,9 @@ Transition remarks: we will now discuss using different order polynomials for re
 
 <!--
 Question to students: What could go possibly go wrong if we use a polynomial to fit the following data? Have them brainstorm some ideas
+
+Image Details:
+* [polynomialregression9.png](http://ww.google.com): Copyright Google
 -->
 
 ---
@@ -90,6 +117,9 @@ Question to students: What could go possibly go wrong if we use a polynomial to 
 <!--
 -Discuss which appear to be viable
 -Pretend to throw one more data about in (B) in region where curve does not pass through to show one point could throw off entire fit!
+
+Image Details:
+* [polynomialregression10.png](http://ww.google.com): Copyright Google
 -->
 
 ---
@@ -104,6 +134,9 @@ Question to students: What could go possibly go wrong if we use a polynomial to 
 Let's think of overfitting by looking into clothing. Here we have a person wearing a reasonably well-fitting suit.
 
 Source: photo by NordWood Themes on Unsplash
+
+Image Details:
+* [polynomialregression11.jpg](https://unsplash.com/photos/q8U1YgBaRQk): Unsplash License
 -->
 
 ---
@@ -114,6 +147,9 @@ Source: photo by NordWood Themes on Unsplash
 Clothing can be a little more form fitting, which reduces the number of people that it will fit. This is overfitting. You can think of it like a custom-tailored suit or a suit of armor.
 
 Source: photo by Hugo L. Casanova on Unsplash
+
+Image Details:
+* [polynomialregression12.jpg](https://unsplash.com/photos/GDre1q4wEJk): Unsplash License
 -->
 
 ---
@@ -122,6 +158,9 @@ Source: photo by Hugo L. Casanova on Unsplash
 
 <!--
 There is the other extreme, where you make clothing so loose that just about anyone could cover up with it. This would be underfitting.
+
+Image Details:
+* [polynomialregression13.jpg](https://unsplash.com/photos/Z1X6cXjn7GQ): Unsplash License
 -->
 
 ---
@@ -130,6 +169,9 @@ There is the other extreme, where you make clothing so loose that just about any
 
 <!--
 Most of the time you just want a simple midsized unisex t-shirt of a model. It fits most of the time at the cost of being a little frumpy.
+
+Image Details:
+* [polynomialregression14.jpg](https://unsplash.com/photos/WWesmHEgXDs): Unsplash License
 -->
 
 ---
@@ -140,6 +182,9 @@ Most of the time you just want a simple midsized unisex t-shirt of a model. It f
 So how does this apply to real data? Here is an illustration of overfitting a regression model. You can see how the regression line perfectly fits the data points on the graph, but probably doesn't project well onto other x-values.
 
 https://en.wikipedia.org/wiki/Overfitting
+
+Image Details:
+* [polynomialregression15.png](http://ww.google.com): Copyright Google
 -->
 
 ---
@@ -205,6 +250,9 @@ xi = the feature value at the given factor of the polynomial equation
 https://en.wikipedia.org/wiki/Residual_sum_of_squares
 
 $$RSS(\beta) = \displaystyle\sum_{i=1}^{n} \left( y_i -\beta_0 - \displaystyle\sum_{j=1}^p \beta_j x_{i}^j \right)^2$$
+
+Image Details:
+* [polynomialregression16.png](http://ww.google.com): Copyright Google
 -->
 
 ---
@@ -218,11 +266,14 @@ Lasso is considered L1 regression. This regression uses the absolute value of th
 
 It actually is an acronym for Least Absolute Shrinkage and Selection Operator.
 
-Due to the L1-Norm, some of the coefficients are more likely set equal to zero, depending on the regularisation parameter λ which needs to be chosen/tuned by the Cross-Validation 
+Due to the L1-Norm, some of the coefficients are more likely set equal to zero, depending on the regularisation parameter λ which needs to be chosen/tuned by the Cross-Validation
 
 https://en.wikipedia.org/wiki/Lasso_(statistics)
 
 $$RSS(\beta) + \lambda \displaystyle \sum_{j=1}^p \left| \beta_j \right|$$
+
+Image Details:
+* [polynomialregression17.png](http://ww.google.com): Copyright Google
 -->
 
 ---
@@ -239,6 +290,9 @@ Ridge regression, also known as Tikhonov Regularisation seeks λ that minimises 
 https://en.wikipedia.org/wiki/Tikhonov_regularization
 
 $$RSS(\beta) + \lambda \displaystyle \sum_{j=1}^p \beta_j^2$$
+
+Image Details:
+* [polynomialregression18.png](http://ww.google.com): Copyright Google
 -->
 
 ---
@@ -249,7 +303,7 @@ $$RSS(\beta) + \lambda \displaystyle \sum_{j=1}^p \beta_j^2$$
 ElasticNet is the combination of L1 and L2 regularization applied to the loss function.
 
 https://en.wikipedia.org/wiki/Elastic_net_regularization
---> 
+-->
 
 ---
 
@@ -282,17 +336,32 @@ What type of function would you use to fit the following data? {.big}
 
 ![](res/polynomialregression19.png)
 
+<!--
+Image Details:
+* [polynomialregression19.png](http://ww.google.com): Copyright Google
+-->
+
 ---
 
 What type of function would you use to fit the following data? {.big}
 
 ![](res/polynomialregression20.png)
 
---- 
+<!--
+Image Details:
+* [polynomialregression20.png](http://ww.google.com): Copyright Google
+-->
+
+---
 
 What type of function would you use to fit the following data? {.big}
 
 ![](res/polynomialregression21.png)
+
+<!--
+Image Details:
+* [polynomialregression21.png](http://ww.google.com): Copyright Google
+-->
 
 ---
 
@@ -300,11 +369,21 @@ What type of function would you use to fit the following data? {.big}
 
 ![](res/polynomialregression22.png)
 
+<!--
+Image Details:
+* [polynomialregression22.png](http://ww.google.com): Copyright Google
+-->
+
 ---
 
 What type of function would you use to fit the following data? {.big}
 
 ![](res/polynomialregression23.png)
+
+<!--
+Image Details:
+* [polynomialregression23.png](http://ww.google.com): Copyright Google
+-->
 
 ---
 
@@ -312,10 +391,20 @@ What type of function would you use to fit the following data? {.big}
 
 ![](res/polynomialregression24.png)
 
+<!--
+Image Details:
+* [polynomialregression24.png](http://ww.google.com): Copyright Google
+-->
+
 ---
 
 Why might this be a bad idea? {.big}
 ![](res/polynomialregression25.png)
+
+<!--
+Image Details:
+* [polynomialregression25.png](http://ww.google.com): Copyright Google
+-->
 
 ---
 
@@ -327,13 +416,22 @@ Polynomial Interpolation  ! =  Polynomial Regression {.big}
 -A linear regression may make more sense; throw in another data point and polynomial may drastically change!
 -Especially true if we are looking for general trends, high order polynomials may be too “curvy”
 -Next slide...also polynomial interpolations generally go crazy outside the region where the data was interpolated (connected)
+
+Image Details:
+* [polynomialregression26.png](http://ww.google.com): Copyright Google
 -->
+
 
 ---
 
 Polynomial Interpolations go nuts outside the data range {.big}
 
 ![](res/polynomialregression27.png)
+
+<!--
+Image Details:
+* [polynomialregression27.png](http://ww.google.com): Copyright Google
+-->
 
 ---
 
