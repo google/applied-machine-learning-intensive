@@ -30,8 +30,8 @@ Image Details:
 There are multiple versions of Python in the world:
 
 * 1.x is long gone.
-* 2.x is deprecated and support will soon stop but there's still a lot of code and code samples out there that use it
-* We'll be focusing on Python3 since that's the modern version and how all new code should be written.
+* 2.x is deprecated, and support will soon stop. But there's still a lot of code and code samples out there that use it.
+* Because it's the modern version and how all new code should be written, we'll focus on Python3.
 
 When looking at Python reference docs, look for the version number in the URL.
 -->
@@ -56,7 +56,7 @@ Image Details:
 # White Space Matters
 
 * 2- or 4-space indents are used to delineate code blocks instead of `{}`.
-* Tabs can be used too but should not be mixed with spaces (Recommendation: just use spaces).
+* Tabs can be used, too, but should not be mixed with spaces. (We recommend just using spaces.)
 * Indents can be nested to arbitrary depths.
 
 ![](res/introtopython5.png)
@@ -69,7 +69,7 @@ In practice, indentation makes it hard to have long functions with several level
 
 # Variables Are Dynamically Typed
 
-* This applies to function parameters too.
+* This applies to function parameters, too.
 * Interpreter will not help you catch mistyped variables.
 * It's only when you try to do an operation for another type that the error will manifest itself.
 * Avoid changing the type of a variable.
@@ -127,5 +127,3 @@ Image Details:
 Image Details:
 * [introtopython9.png](http://www.google.com): Copyright Google
 -->
-
-
