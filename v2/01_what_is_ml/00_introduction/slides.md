@@ -51,7 +51,7 @@ won't, however, get deep into t-tests and p-values.
 
 # Applied {.big}
 
-*put to practical use as opposed to being theoretical*
+*Put to practical use as opposed to being theoretical*
 
 <!--
 Let's touch a bit more on what we'll actually be covering in this course by looking at the name of
@@ -288,7 +288,7 @@ What is artificial intelligence?
 
 # Artificial Intelligence
 
-machines that appear intelligent based on the tasks they perform
+Machines that appear intelligent based on the tasks they perform
 
 <!--
 You might think of crazy robots like in “Ex Machina," or chatbots like Google Home, but AI is a very broad field. In fact, machine learning is actually a specific field of AI.
@@ -306,7 +306,7 @@ What is machine learning then?
 
 # Machine Learning
 
-a specific field of AI where a system learns to find patterns in examples, typically using statistics, in order to make predictions
+A specific field of AI where a system learns to find patterns in examples, typically using statistics, in order to make predictions
 
 <!--
 Machine learning is a strategy through which AI can appear “intelligent” when performing tasks.
@@ -324,7 +324,7 @@ Machine learning is a strategy through which AI can appear “intelligent” whe
 
 # Deep Learning
 
-a machine learning approach that breaks a problem down into many pieces so it can learn more from the training data
+A machine learning approach that breaks a problem down into many pieces, so it can learn more from the training data
 
 <!--
 Deep learning is a specific type of machine learning approach that gets its name from the large number of layers often used to build a neural network. Because these models are so complex, different layers can often learn different insights about the problem.
@@ -355,7 +355,7 @@ Now let’s dive deeper into what goes into a machine learning system.
 
 # Features
 
-information drawn from examples which distinguish one example from another are the features in a machine learning system
+Information drawn from examples which distinguish one example from another are the features in a machine learning system
 
 <!--
 For example, if we're trying to decide whether an image is of a lion or a tiger, useful features could be whether an animal has a mane or stripes.
@@ -449,7 +449,7 @@ It’s important to always have a separate training dataset and testing dataset.
 
 # Overfitting
 
-when a model conforms too much to its training data and cannot generalize to make predictions about new data.
+When a model conforms too much to its training data and cannot generalize to make predictions about new data
 
 <!--
 Overfitting occurs when a model conforms too much to its training data and cannot generalize to make predictions about new data. For example, if none of the tigers in the training data have white fur, the model could assume all tigers have orange fur.
