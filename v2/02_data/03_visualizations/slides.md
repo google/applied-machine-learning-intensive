@@ -1,6 +1,6 @@
 # Visualizations
 
-a powerful way to identify patterns in data that otherwise can be hard to find and analyze
+A powerful way to identify patterns in data that otherwise can be hard to find and analyze
 
 <!--
 One of the most important things in machine learning is understanding your
