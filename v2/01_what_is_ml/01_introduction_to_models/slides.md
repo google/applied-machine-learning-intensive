@@ -96,7 +96,7 @@ Quick discussion: What are other examples of clustering you can think of? What f
 ---
 
 # Regression
-Predict the relationship between multiple variables, where the target is continuous.
+Predict the relationship between multiple variables where the target is continuous.
 
 <!--
 Regression predicts the relationship between two or more variables. If you were interested in 
