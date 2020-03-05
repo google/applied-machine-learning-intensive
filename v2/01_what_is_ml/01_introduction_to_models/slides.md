@@ -7,7 +7,7 @@ session we'll dive a little deeper and talk about what machine learning can do a
 
 ---
 
-# What **can** Machine Learning do?
+# What **Can** Machine Learning Do?
 
 <!--
 Though machine learning is not new, its application in modern life has really started to expand over the last decade. 
@@ -155,7 +155,7 @@ Quick discussion: What are some other examples of sequence predictions?
 
 ---
 
-# What **can't** Machine Learning do?
+# What **Can't** Machine Learning Do?
 
 <!--
 Machine learning is *not* magic, and ML is not a good fit for all problems. The principles underlying
