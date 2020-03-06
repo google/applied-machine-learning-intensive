@@ -2,7 +2,7 @@
 
 <!--
 Welcome to Intermediate Pandas. At this point in the course you should be
-familiar with Pandas' Series and DataFrame objects. If these words are
+familiar with Pandas Series and DataFrame objects. If these words are
 unfamiliar to you, you probably want to go back and revisit the Introduction to
 Pandas unit.
 -->
@@ -63,7 +63,7 @@ print(df.columns) # Index(...)
 <!--
 DataFrames are typically thought of as tabular structures containing rows and
 columns. Rows are often indexed by number (but not always), while columns
-typically have meaningful names like 'Games Played' or 'Square Meters.'
+typically have meaningful names like, 'Games Played' or 'Square Meters.'
 
 Monotonically increasing numbers are easy enough to iterate over, but
 arbitrarily-named columns are a different story.
@@ -94,7 +94,7 @@ is missing and False if the data is present.
 
 You can use this to find missing data that you can then act upon to clean your
 dataset. At this point we won't worry about specific missing data mitigation
-measures. Instead we'll address them in examples throughout the course.
+measures. Instead, we'll address them in examples throughout the course.
 -->
 
 ---
@@ -144,7 +144,7 @@ For this specific example,`df['num_pet_dogs'] > 1` returns an index with entries
 Then we take df[boolean index], and this selects the rows for which the boolean value is True.
 
 Note that a DataFrame is returned. You may want to assign this to a new variable to work with it further.
-This filtering is not done in place and does not modify the original dataframe, df.
+This filtering is not done in place and does not modify the original DataFrame, df.
 
 Image Details:
 * [table_more_than_two_dogs.png](http://www.google.com): Copyright Google
@@ -159,7 +159,7 @@ Image Details:
 <!--
 It is also possible to filter out columns of data. In the pictured DataFrame
 there are pieces of personally identifiable information that could be used to
-locate someone. If we wanted to make the data a little more anonymous we could
+locate someone. If we wanted to make the data a little more anonymous, we could
 filter out the 'last_name' and 'state' columns.
 
 How would we do that?
@@ -179,7 +179,7 @@ df[[‘first_name’, ‘num_pet_dogs’, ‘num_pet_cats’]]
 ![](res/table_less_pii.png)
 
 <!--
-To filter by columns we can also use the DataFrame selector. Instead of passing
+To filter by columns, we can also use the DataFrame selector. Instead of passing
 in a boolean index, we pass in a list of string that match the column names that
 we want to keep.
 
@@ -206,7 +206,7 @@ price > 70 and weight < 5
 ```
 
 You can do similar things with Pandas boolean indices; however, you can't use
-the standard `and`, `or`, and `not` operators. Instead you must use the more
+the standard `and`, `or`, and `not` operators. Instead, you must use the more
 terse `&`, `|`, and `~`.
 
 You might recognize these as the bitwise boolean operators. Pandas has
@@ -241,7 +241,7 @@ Condensing rows within a `DataFrame`
 
 <!--
 Often you can gather insights about the data in a `DataFrame` by condensing
-many rows into one. This is called "grouping". Let's start by looking at an
+many rows into one. This is called "grouping." Let's start by looking at an
 example using renderings of tables.
 -->
 
@@ -253,7 +253,7 @@ example using renderings of tables.
 
 <!--
 Here we have a `DataFrame` that contains pet owner data at an individual level.
-Say we want to know which state has the most cats and dogs per pet owner? To do
+Say we want to know which state has the most cats and dogs per pet owner. To do
 that we can **group** our rows by state and find the mean count of cats and dogs
 per owner per state.
 
@@ -279,7 +279,7 @@ data by the column name or names passed to it. In this case we grouped by
 'state' and then calculated the mean.
 
 From the results we can see that Texas is the clear winner on 'pets per pet
-owner'.
+owner.'
 
 There are many other statistics that we can gather when grouping data in a
 `DataFrame`. These include min, max, count, standard deviation, and more.
@@ -300,9 +300,9 @@ df.groupby('Age').agg({
 ```
 
 <!--
-In the example that we saw earlier we calculated the mean for every numeric
+In the example that we saw earlier, we calculated the mean for every numeric
 column in a `DataFrame`. Often you'll want different statistics for different
-columns or even multiple statistics for some columns.
+columns, or even multiple statistics for some columns.
 
 Here you can see that we are grouping by 'Age' and calculating different
 statistics for the 'Height' and 'Weight' columns. We are doing this by passing a
@@ -321,8 +321,8 @@ So far we have worked with individual `DataFrame` objects. Often the data that
 we will work with will be stored in multiple sources. In these cases it is often
 useful to **merge** the data in order to process it.
 
-In order to merge data a common **key** must exist between the `DataFrame`
-objects to be merged. By default Pandas considers matching column names to be
+In order to merge data, a common **key** must exist between the `DataFrame`
+objects to be merged. By default, Pandas considers matching column names to be
 matching keys.
 
 Let's look at an example.
@@ -395,9 +395,9 @@ pd.merge(df1, df2)
 
 <!--
 In this case we completely lost the record of Seo-yoen! Since Pandas couldn't
-find a match it didn't include the datapoint.
+find a match, it didn't include the datapoint.
 
-This is standard join functionality. There are ways to get around this though.
+This is standard join functionality. There are ways to get around this, though.
 
 Image Details:
 * [tables_merged_uneven.png](http://www.google.com): Copyright Google
@@ -449,7 +449,7 @@ Let's look at an example.
 
 <!--
 Again we have the name-state-pets table that we've seen in this presentation.
-Let's say that we want to view that data sorted by the number of cats owned by
+Let's say we want to view that data sorted by the number of cats owned by
 each person in ascending order.
 
 How would we do that?
@@ -536,12 +536,12 @@ df2.sort_values('num_pet_cats', inplace=True)
 ```
 
 <!--
-If we want to leave the original `DataFrame` in-tact, we can make a copy of it
+If we want to leave the original `DataFrame` intact, we can make a copy of it
 and then work with the copy. Be warned that this can be slow and
 memory-intensive on large `DataFrame` objects.
 
-Often you don't have to worry about if you are working with a reference or a
+Often you don't have to worry whether you're working with a reference or a
 copy. Pandas strives to be efficient and will use references and views as much
-as it can. Sometimes the abstractions break down and you need to know a little
+as it can. Sometimes the abstractions break down, and you need to know a little
 more about what specific data you are working with.
 -->
