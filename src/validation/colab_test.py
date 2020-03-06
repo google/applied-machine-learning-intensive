@@ -175,7 +175,7 @@ class ColabTest(googletest.TestCase):
     msg = f'{colab} [{URL}#exercises]'
 
     exercises_index = -1
-    exercise_indexes = []
+    exercise_indices = []
     end_bound = -1
 
     for i, cell in enumerate(notebook.cells):
@@ -193,7 +193,7 @@ class ColabTest(googletest.TestCase):
             self.fail(f'{msg} individual xercise found after section')
           if not cell.source.startswith('## Exercise'):
             self.fail(f'{msg} exercise headers should be second-level')
-          exercise_indexes.append(i)
+          exercise_indices.append(i)
         elif exercises_index > -1 and cell.source.startswith('# '):
           end_bound = i
           break
@@ -204,22 +204,22 @@ class ColabTest(googletest.TestCase):
     if end_bound < 0:
       end_bound = len(notebook.cells)
 
-    if exercises_index > -1 and not exercise_indexes:
+    if exercises_index > -1 and not exercise_indices:
       self.fail(f'{msg} exercises header, but no actual exercises found')
 
-    if exercises_index == -1 and exercise_indexes:
+    if exercises_index == -1 and exercise_indices:
       self.fail(f'{msg} individual exercises found, but no exercises header')
 
-    if exercises_index == -1 and not exercise_indexes:
+    if exercises_index == -1 and not exercise_indices:
       if '00_introduction_to_colab' not in colab:
         self.fail(f'{msg} no exercises found in colab')
 
     # Ensure each exercise is well-formed
-    for i, exercise_index in enumerate(exercise_indexes):
+    for i, exercise_index in enumerate(exercise_indices):
       start = exercise_index
       exercise_end_index = end_bound
-      if i+1 < len(exercise_indexes):
-        exercise_end_index = exercise_indexes[i+1]
+      if i+1 < len(exercise_indices):
+        exercise_end_index = exercise_indices[i+1]
       self.assertRegex(notebook.cells[start].source, '## Exercise ' + str(i+1)
                        + r'''(: [\(\)\w \d?'",-]+)?$''', msg)
 

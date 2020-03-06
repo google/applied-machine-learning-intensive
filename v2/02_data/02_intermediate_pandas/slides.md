@@ -205,12 +205,12 @@ in standard Python. You can use the operators to make expressions like:
 price > 70 and weight < 5
 ```
 
-You can do similar things with Pandas boolean indexes; however, you can't use
+You can do similar things with Pandas boolean indices; however, you can't use
 the standard `and`, `or`, and `not` operators. Instead you must use the more
 terse `&`, `|`, and `~`.
 
 You might recognize these as the bitwise boolean operators. Pandas has
-overridden these operators to be logical boolean operators for boolean indexes.
+overridden these operators to be logical boolean operators for boolean indices.
 -->
 
 ---
@@ -226,7 +226,7 @@ Here you can see logical operators in action. We are looking at the 'Price'
 column of a DataFrame object and creating a boolean index that is `True` when
 the price is greater than 70. We are also creating a boolean index that is
 `True` when the weight is less than 5. The `&` operator is then used to combine
-these indexes into a single index.
+these indices into a single index.
 
 You might notice that we put parenthesis around each boolean expression. This is
 because the precedence for `&`, `|`, and `~` is higher than `>` and `<` so we
