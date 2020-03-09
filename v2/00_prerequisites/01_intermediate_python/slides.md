@@ -1,7 +1,7 @@
 # Intermediate Python
 
 <!--
-SciKit Learn and Tensorflow both require users to understand objects and inheritance for some common use cases. Intermediate Python introduces the concept of Object Oriented Programming (OOP) to prepare students for using the SciKit Learn and Tensorflow features that require object extension. List comprehension and lambdas are also included since they are popular Python features that can be very useful, especially during data prep and exploration. Finally, this unit introduces exceptions to help students write code that handles errors elegantly. 
+SciKit-learn and Tensorflow both require users to understand objects and inheritance for some common use cases. Intermediate Python introduces the concept of Object Oriented Programming (OOP) to prepare students for using the sciKit-learn and Tensorflow features that require object extension. List comprehension and lambdas are also included since they are popular Python features that can be very useful, especially during data prep and exploration. Finally, this unit introduces exceptions to help you write code that handles errors elegantly. 
 
 Students will be able to:
 * Use and identify cases for using lambda and list comprehension syntax.
@@ -16,10 +16,10 @@ Students will be able to:
 
 <!--
 * What does “programming paradigm” mean?
-  * It is a style of programming, object oriented programming is one particular stye that organizes data into objects within classes
+  * It is a style of programming; object oriented programming is one particular style that organizes data into objects within classes.
   * Compare and contrast OOP with procedural and functional (procedural programming is mentioned on colab, so make sure to explain it and give examples so the distinction is clear)
   * Sometime when the data structures available are not complex or specialized enough, you need a class to hold your data!
-* Ex. A teacher wants to create a program where they can keep track of students grades
+* Ex. A teacher wants to create a program where they can keep track of students' grades
   * Wants a way to hold student id, grade
   * Wants methods to get a grade, change a grade, and print a grade
   * How could they organize all this capability in one program?!?!
@@ -76,7 +76,7 @@ Let them know that we will now break it all down!
 
 --- 
 
-# You can create an singular **“instance”** of a class...
+# You can create a singular **“instance”** of a class...
 
 ![](res/intermediatepython05.png)
 
@@ -86,7 +86,7 @@ Motivation: Giving the students an introduction to a constructor and how an inst
 For the class:
 * instances are the actual object, ie, the actual physical representation in memory of a “thing” of the type defined by the class
 * Syntax → Created using the name of the class and the data members required for that instance in order of how they are in the constructor
-  * Every class needs a constructor to show the computer what data members it should be allocating memory for everytime an instance is created
+  * Every class needs a constructor to show the computer what data members it should be allocating memory for every time an instance is created
 * Now that we have an instance of a class we can manipulate that instance with methods defined in the class
 * “Elon” is an instance of our class
 -->
@@ -101,7 +101,7 @@ For the class:
 Motivation: Giving the students an introduction to how a method in a class interacts with instances.
 
 For the class:
-* This is an example of how an function can be called on an instance of a class
+* This is an example of how a function can be called on an instance of a class
 * Notice how you call the function
   * When “self” is an argument coming into a method, you don’t actually need to include that when calling the method
   * “Self” is implied as the instance of the class you declare before the dot 
@@ -119,7 +119,7 @@ For the class:
 Motivation: Giving the students an introduction to using methods to manipulate instances
 
 For the class:
-* This is an example of how an function can be created to change the data an instance of a class is representing
+* This is an example of how a function can be created to change the data an instance of a class is representing
 * Notice how you call the function
   * “Self” is still implied as Elon
   * However, this time we also need a new_grade and this is passed in as function arguments usually are in python
@@ -224,7 +224,7 @@ For the class:
 ![](res/intermediatepython14.png)
 
 <!--
-Motivation: Show how a outside function can interact with different parts of a class
+Motivation: Show how an outside function can interact with different parts of a class
 
 For the class:
 * You can add functions outside of classes that will interact with objects much like they do inside the class, just using Student instead of self
@@ -257,7 +257,7 @@ For the class:
 * Inheritance structures are hierarchical relationships between classes
   * Can have any number of classes inherit from other classes + create complex hierarchies
 * for now we will just look at one parent class with 3 child classes
-* He child class inherits all characteristics of the parent class + you can add on
+* The child class inherits all characteristics of the parent class + you can add on
   * Look how we declare variables in Student(Person)
   * We get all the variables from super() and we can declare our own
 * Note: A student is a person, but a person is not a student
@@ -337,7 +337,7 @@ Motivation: Show list comprehensions in a structure that mirrors structures they
 
 For the class:
 * List comprehensions provide a concise way to create lists. 
-* It consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses. The expressions can be anything, meaning you can put in all kinds of objects in lists.
+* It consists of brackets containing an expression followed by a clause, then zero or more for or if clauses. The expressions can be anything, meaning you can put in all kinds of objects in lists.
 * The result will be a new list resulting from evaluating the expression in the context of the for and if clauses which follow it.
 * The list comprehension always returns a result list.
 -->
