@@ -13,13 +13,13 @@ and visualizations to find out information about your dataset.
 
 <!--
 Often you'll find that issues with the data actually prevent you from performing
-a quality exploratory data analysis. Missing values. Impossible values. Values
-of the wrong type.
+a quality exploratory data analysis. These issues can include missing values, 
+impossible values, and values of the wrong type.
 
-There are scores of issues that can making analyzing your data difficult.
+There are scores of issues that can make analyzing your data difficult.
 
 Because of this, you'll often find yourself doing some preprocessing of your
-data while you are performing EDA. Strictly EDA is just analysis. In practice
+data while you are performing EDA. Strictly EDA is just analysis. In practice,
 data analysis and data preprocessing and manipulation are intertwined. As you
 look at your data more closely, you'll have to fix parts if it to look further.
 -->
@@ -34,14 +34,14 @@ look at your data more closely, you'll have to fix parts if it to look further.
 * Cross-table analysis
 
 <!--
-There is no offical EDA checklist. Every dataset is different. Every data
+There is no official EDA checklist. Every dataset is different. Every data
 scientist has a different approach.
 
 Some data scientists pre-formulate questions and then perform the analysis and
 preprocessing necessary to answer those questions.
 
 Some data scientists begin with a thorough check of each component of the data,
-fix obvious errors, and the explore through questions, some of which were
+fix obvious errors, and then explore through questions, some of which were
 created during the initial cleaning pass.
 
 Regardless of how you approach the analysis you will gather a few distinct types
@@ -57,7 +57,7 @@ cross-column information, and then cross-table information.
 
 <!--
 Table-level analysis is all about getting to know data about an individual
-table or `DataFrame` of data as whole. Using `describe()` we can see things like
+table or `DataFrame` of data as a whole. Using `describe()` we can see things like
 the column names and the row counts.oo
 
 In this example we can see that there are 1795 rows. We can see that some are
@@ -178,7 +178,7 @@ As we mentioned earlier, it is difficult to successfully perform EDA without
 doing a bit of data preprocessing. Some common issues that you'll encounter
 include those listed on this slide.
 
-Invisible values are probably the least self-explainatory. These are values
+Invisible values are probably the least self-explanatory. These are values
 where a space or some other invisible character is the only value at a data
 point. Technically the data isn't missing, so Pandas will not report it in an
 `isna()` check. However, the data present isn't actually meaningful. We'll
@@ -230,7 +230,7 @@ where possible. Sometimes you just have to get rid of problematic data though.
 It is about time for us to get to practice our EDA skills. We'll use tools that
 we recently learning including Pandas, matplotlib, and seaborn. There are some
 new concepts introduced in this lab; however, it should mostly serve as a
-excercise in bringing the tools that you have already learned together to
+exercise in bringing the tools that you have already learned together to
 perform exploratory data analysis and data preprocessing on a data set.
 
 The lab is divided into two parts. Part 1 is all about individual table and
