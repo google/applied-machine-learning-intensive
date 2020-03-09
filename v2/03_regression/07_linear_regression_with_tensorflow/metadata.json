@@ -1,13 +1,17 @@
 {
   "name": "Linear Regression with TensorFlow",
-  "bug": "b/129327936",
   "slides": [
-    "https://docs.google.com/presentation/d/1ru-QtzmPWIZxhn8dtZF3NXwVpUXg72RLLNK1S7EmuTo/edit"
+    "slides.md"
   ],
   "materials": [],
   "resources": [],
   "colabs": [
     "colab.ipynb"
   ],
-  "handouts": []
+  "handouts": [],
+  "learning-objectives": [
+    "Use the TensorFlow Estimator API to build a model",
+    "Adjust model hyperparameters",
+    "Interpret model performance metrics"
+  ]
 }
