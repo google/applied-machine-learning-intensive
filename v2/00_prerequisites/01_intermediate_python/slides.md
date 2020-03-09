@@ -15,10 +15,7 @@ Students will be able to:
 ![](res/intermediatepython01.png)
 
 <!--
-Motivation: Giving the students an idea of why object oriented programming and classes are helpful, by giving them a real life example
-
-For the class:
-* Make sure everyone knows what “programming paradigm” means
+* What does “programming paradigm” mean?
   * It is a style of programming, object oriented programming is one particular stye that organizes data into objects within classes
   * Compare and contrast OOP with procedural and functional (procedural programming is mentioned on colab, so make sure to explain it and give examples so the distinction is clear)
   * Sometime when the data structures available are not complex or specialized enough, you need a class to hold your data!
@@ -35,8 +32,6 @@ For the class:
 ![](res/intermediatepython02.png)
 
 <!--
-Motivation: Giving the students an idea of what a whole class would look like before we break it down so they can understand how the class might look together and identify pieces of code they don’t understand/ understand so they can know what to make sure to listen for in the coming slides!
-
 For the class:
 Have students look at the code and decide what looks familiar/new and maybe even predict how those new items will work!
 -->
