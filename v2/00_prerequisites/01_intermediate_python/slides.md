@@ -1,7 +1,7 @@
 # Intermediate Python
 
 <!--
-SciKit-learn and Tensorflow both require users to understand objects and inheritance for some common use cases. Intermediate Python introduces the concept of Object Oriented Programming (OOP) to prepare students for using the sciKit-learn and Tensorflow features that require object extension. List comprehension and lambdas are also included since they are popular Python features that can be very useful, especially during data prep and exploration. Finally, this unit introduces exceptions to help students write code that handles errors elegantly. 
+SciKit-learn and Tensorflow both require users to understand objects and inheritance for some common use cases. Intermediate Python introduces the concept of Object Oriented Programming (OOP) to prepare students for using the sciKit-learn and Tensorflow features that require object extension. List comprehension and lambdas are also included since they are popular Python features that can be very useful, especially during data prep and exploration. Finally, this unit introduces exceptions to help you write code that handles errors elegantly. 
 
 Students will be able to:
 * Use and identify cases for using lambda and list comprehension syntax.
@@ -16,7 +16,7 @@ Students will be able to:
 
 <!--
 * What does “programming paradigm” mean?
-  * It is a style of programming, object oriented programming is one particular stye that organizes data into objects within classes
+  * It is a style of programming; object oriented programming is one particular stye that organizes data into objects within classes.
   * Compare and contrast OOP with procedural and functional (procedural programming is mentioned on colab, so make sure to explain it and give examples so the distinction is clear)
   * Sometime when the data structures available are not complex or specialized enough, you need a class to hold your data!
 * Ex. A teacher wants to create a program where they can keep track of students' grades
