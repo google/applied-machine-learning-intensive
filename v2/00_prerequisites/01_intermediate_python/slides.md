@@ -16,7 +16,7 @@ Students will be able to:
 
 <!--
 * What does “programming paradigm” mean?
-  * It is a style of programming; object oriented programming is one particular stye that organizes data into objects within classes.
+  * It is a style of programming; object oriented programming is one particular style that organizes data into objects within classes.
   * Compare and contrast OOP with procedural and functional (procedural programming is mentioned on colab, so make sure to explain it and give examples so the distinction is clear)
   * Sometime when the data structures available are not complex or specialized enough, you need a class to hold your data!
 * Ex. A teacher wants to create a program where they can keep track of students' grades
