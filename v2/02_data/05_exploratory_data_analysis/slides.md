@@ -19,9 +19,9 @@ impossible values, and values of the wrong type.
 There are scores of issues that can make analyzing your data difficult.
 
 Because of this, you'll often find yourself doing some preprocessing of your
-data while you are performing EDA. Strictly EDA is just analysis. In practice,
+data while you are performing EDA. Strictly, EDA is just analysis. In practice,
 data analysis and data preprocessing and manipulation are intertwined. As you
-look at your data more closely, you'll have to fix parts if it to look further.
+look at your data more closely, you'll have to fix parts of it to look further.
 -->
 
 ---
@@ -41,10 +41,10 @@ Some data scientists pre-formulate questions and then perform the analysis and
 preprocessing necessary to answer those questions.
 
 Some data scientists begin with a thorough check of each component of the data,
-fix obvious errors, and then explore through questions, some of which were
-created during the initial cleaning pass.
+fix obvious errors, and then explore through questions. Some of these questions 
+are created during the initial cleaning pass.
 
-Regardless of how you approach the analysis you will gather a few distinct types
+Regardless of how you approach the analysis, you will gather a few distinct types
 of information: single-table information, single-column information,
 cross-column information, and then cross-table information.
 -->
@@ -87,7 +87,7 @@ df.dtypes     # Data types of columns
 ```
 
 <!--
-Here are some examples of other table-level methods and attributes that we can
+Here are some examples of other table-level methods and attributes we can
 use to learn about the data in a `DataFrame`.
 -->
 
@@ -107,9 +107,9 @@ df[column].sample(10)   # Data sample
 
 <!--
 Analysis of a single column/`Series` of data is similar to that of a
-`DataFrame`. You can use many of the same methods. Most statistics that you can
+`DataFrame`. You can use many of the same methods. Most statistics you can
 gather about a `DataFrame` can also be done for an individual column. Sometimes
-it is nice to look at these stats column-by-column so you don't get overwhelmed
+it is nice to look at these stats column-by-column, so you don't get overwhelmed
 with information. Sometimes it is nice to see it all in one view.
 -->
 
@@ -121,8 +121,8 @@ with information. Sometimes it is nice to see it all in one view.
 
 <!--
 Cross-column analysis simply means looking at how the data relates across
-columns. This is often done with charts, but doesn't have to. In the example
-shown we can see the correlation between columns with a call to `corr()`.
+columns. This is often done with charts, but it doesn't have to. In the example
+shown, we can see the correlation between columns with a call to `corr()`.
 
 Image Details:
 * [correlation.png](http://www.google.com): Copyright Google
@@ -150,11 +150,11 @@ Image Details:
 
 <!--
 Often we'll find ourselves working with many sources of data. Even data from the
-same data source often is provided as distinct files that later have to be
+same data source is often provided as distinct files that later have to be
 merged.
 
 For example, here is a country table that contains geo-location data for a set
-of countries. If we have tables in our data set with countries in them, we can
+of countries. If we have tables in our dataset with countries in them, we can
 merge the tables and do analysis based on location. This is really
 cross-table-cross-column analysis, but that is a lot to try to say.
 
@@ -175,7 +175,7 @@ Image Details:
 
 <!--
 As we mentioned earlier, it is difficult to successfully perform EDA without
-doing a bit of data preprocessing. Some common issues that you'll encounter
+doing a bit of data preprocessing. Some common issues you'll encounter
 include those listed on this slide.
 
 Invisible values are probably the least self-explanatory. These are values
@@ -215,8 +215,8 @@ perform these processing steps.
 <!--
 What happens when you do find bad data?
 
-There are a few strategies. If possibly, it is good to fill in and fix data
-where possible. Sometimes you just have to get rid of problematic data though.
+There are a few strategies. If possible, it is good to fill in and fix data
+where possible. Sometimes you just have to get rid of problematic data, though.
 -->
 
 ---
@@ -227,11 +227,11 @@ where possible. Sometimes you just have to get rid of problematic data though.
 * Part 2: Cross tables and columns
 
 <!--
-It is about time for us to get to practice our EDA skills. We'll use tools that
-we recently learning including Pandas, matplotlib, and seaborn. There are some
-new concepts introduced in this lab; however, it should mostly serve as a
-exercise in bringing the tools that you have already learned together to
-perform exploratory data analysis and data preprocessing on a data set.
+It is about time for us to practice our EDA skills. We'll use tools we recently 
+learned including Pandas, matplotlib, and seaborn. There are also some
+new concepts introduced in this lab, but it should mostly serve as an
+exercise in bringing the tools you have already learned together to
+perform exploratory data analysis and data preprocessing on a dataset.
 
 The lab is divided into two parts. Part 1 is all about individual table and
 column analysis and processing. Part 2 will build upon our work in part 1 and
