@@ -510,6 +510,24 @@ okwords = [
   "ptratio",
   "gradientboostingclassifier",
   "json",
-  "settingwithcopywarning"
+  "settingwithcopywarning",
+  "reviewdate",
+  "cocoapercent",
+  "modelers",
+  "ambolikapiky",
+  "beantype",
+  "reassigning",
+  "ambolikapkly",
+  "shattel",
+  "shattell",
+  "companylocation",
+  "credential",
+  "whitespace",
+  "crossreference",
+  "flightcount",
+  "column's",
+  "team's",
+  "subpackage",
+  "akesson"
 ]
 

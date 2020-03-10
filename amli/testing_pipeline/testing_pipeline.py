@@ -178,11 +178,11 @@ def containAnswerKey(track, unit, colabs):
             m = re.search(r'(###? *Question 1.1:)|(###? *Question 1:)', colabcontent)
         colabcontent = saved_colabcontent[:]
         # Count the number of Challenges
-        m = re.search(r'###? *Challenge:', colabcontent)
+        m = re.search(r'###? *Challenge:?', colabcontent)
         while m != None:
             challengecount += 1
             colabcontent = colabcontent[m.end():]
-            m = re.search(r'###? *Challenge:', colabcontent)
+            m = re.search(r'###? *Challenge:?', colabcontent)
         colabcontent = saved_colabcontent[:]
         # Count the number of Answer Keys
         m = re.search(r'(###? *Solutions?)|(###? *Answer Key)', colabcontent)
@@ -191,7 +191,7 @@ def containAnswerKey(track, unit, colabs):
             colabcontent = colabcontent[m.end():]
             # Currently checking for Solution, Solutions, Answer Key
             m = re.search(r'(###? *Solutions?)|(###? *Answer Key)', colabcontent)
-        if questioncount > 0:
+        if (questioncount > 0) or (challengecount > 0):
             exercisecount = exercisecount + questioncount - question1count + challengecount
         # Print if the two numbers don't match
         if exercisecount != answerkeycount:
