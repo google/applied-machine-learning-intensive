@@ -34,6 +34,7 @@ unit tests and code that will be packaged and deployed on server systems.
 
 Image Details:
 * [ide.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -58,6 +59,7 @@ we will use Python.
 
 Image Details:
 * [notebook.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -86,6 +88,7 @@ create a deployable package.
 
 Image Details:
 * [matlab.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -123,6 +126,7 @@ You can run code cells and typeset text cells using Shift+Enter.
 
 Image Details:
 * [notebook_cells.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -144,6 +148,7 @@ Writing Python code in a notebook is just like writing Python code anywhere else
 
 Image Details:
 * [python_print.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -252,6 +257,7 @@ You can also easily create sublists.
 
 Image Details:
 * [nested-list.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -302,6 +308,7 @@ Tables are created using | and -. They will be formatted automatically with line
 
 Image Details:
 * [table.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
@@ -326,6 +333,7 @@ https://www.latex-project.org/help/documentation/
 
 Image Details:
 * [latex.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
