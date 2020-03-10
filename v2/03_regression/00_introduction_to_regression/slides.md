@@ -5,13 +5,19 @@
 ![](res/regression1.jpg)
 
 <!--
-Intro activity: Ask if anyone has seen a crime show / heard of an investigation where they used a footprint to determine a suspect’s height. It’s a tactic frequently mentioned in connection to forensics, but does it actually work? Let’s try it out!
+Has anyone? seen a crime show or heard of an investigation where they used a footprint to determine a suspect’s height? It’s a tactic frequently mentioned in connection to forensics, but does it actually work? Let’s try it out!
 
-Note: Use your shoe size / height as the suspect’s, and tell students to keep in mind that US men’s size = US women’s size - 2.
+*Use your shoe size and height as the suspect’s, and tell students to keep in mind that US men’s size equals US women’s size - 2.*
 
-Split the students into groups of ~6 each and give each group a sheet of graph paper. They should plot their shoe sizes (x-axis) vs. heights (y-axis) and have them guess the suspect’s height based on their shoe size. Then have the groups share data (so each has a plot of the whole class’s info) and make another guess per group. See if anyone comes close...
+*Split the students into groups of ~6 each and give each group a sheet of graph paper.*
 
-They should theoretically have better guesses with more data, but shoe size might not actually be well correlated to height, so they might not.
+Plot each of your shoe sizes on the x-axis and heights on the y-axis. What do you think is the suspect's height based on their shoe size?
+
+*Then have the groups share data, so each has a plot of the whole class’s information. 
+
+Make another guess per group. Does anyone come close?
+
+*They should theoretically have better guesses with more data, but shoe size might not actually be well correlated to height, so they might not.*
 
 Image Details:
 * [regression1.jpg](https://unsplash.com/photos/BqpdGGfezFw): Unsplash License
@@ -32,12 +38,12 @@ Image Details:
 
 ---
 
-# Data goes in, prediction comes out
+# Data Goes In, Prediction Comes Out
 
 ![](res/regression3.png)
 
 <!--
-Recall that the equation for a line is y = m * x + b, where x is input features and y is output targets. If we were trying to predict energy level from coffee intake, amount of coffee would be the input and energy level would be output.
+Recall that the equation for a line is y = m * x + b, where x is input features and y is output targets. If we were trying to predict energy level from coffee intake, amount of coffee would be the input, and energy level would be output.
 
 Image Details:
 * [regression3.png](http://www.google.com): Copyright Google
@@ -45,12 +51,12 @@ Image Details:
 
 ---
 
-# What is the machine "learning"?
+# What is the Machine "Learning?"
 
 ![](res/regression4.png)
 
 <!--
-Using the data, regression “learns” two values. The first is m, which you may have called “slope” and which we’ll refer to as a “weight / coefficient”. This represents how much a change in the feature value (x) should affect our prediction (y). The second is b, which you may have called an “intercept” and which we’ll refer to as a “bias”. This represents the prediction we would make if our input features are all 0.
+Using the data, regression “learns” two values. The first is m, which you may have called “slope” and which we’ll refer to as a “weight / coefficient." This represents how much a change in the feature value (x) should affect our prediction (y). The second is b, which you may have called an “intercept” and which we’ll refer to as a “bias." This represents the prediction we would make if our input features are all zero.
 
 Image Details:
 * [regression4.png](http://www.google.com): Copyright Google
@@ -58,14 +64,14 @@ Image Details:
 
 ---
 
-# Multiple features
+# Multiple Features
 
 ![](res/regression5.png)
 
 <!--
-Realistically, energy level might depend on several factors. Now, our model needs to learn 3 weights (one for each input feature) and one bias.
+Realistically, energy level might depend on several factors. Now, our model needs to learn three weights (one for each input feature) and one bias.
 
-The concept of weights and bias is important to most machine learning models, even complex neural networks. The model uses data to learn how each input feature affects the output, and learns a bias to linearly shift its predictions to fit the data (like shifting a y-intercept).
+The concept of weights and bias is important to most machine learning models, even complex neural networks. The model uses data to learn how each input feature affects the output and how it learns a bias to linearly shift its predictions to fit the data. This is like shifting a y-intercept.
 
 Image Details:
 * [regression5.png](http://www.google.com): Copyright Google
@@ -170,7 +176,7 @@ Image Details:
 
 ---
 
-# "Learned" parameters
+# "Learned" Parameters
 
 Wobble m and b around **iteratively** to **reduce loss**
   * Usually, loss means root mean squared error **(RMSE)**
@@ -179,8 +185,8 @@ Wobble m and b around **iteratively** to **reduce loss**
 ![](res/regression8b.png)
 
 <!--
-Instead, machine learning must iteratively update its parameters (anything that is being “learned”, in this case the weights and bias). It does this based on a loss function that measures how well the current parameters are performing. The model will attempt to incrementally change its weights and bias to decrease loss.
-A common loss function for regression is the root mean squared error - we’ll discuss this and some other common loss functions in more detail later.
+Instead, machine learning must iteratively update its parameters to adjust for anything that is being “learned." In this case, that includes the weights and bias. It does this based on a loss function that measures how well the current parameters are performing. The model will attempt to incrementally change its weights and bias to decrease loss.
+A common loss function for regression is the root mean squared error. We’ll discuss this and some other common loss functions in more detail later.
 
 Image Details:
 * [regression8.gif](http://www.google.com): Copyright Google
@@ -244,31 +250,30 @@ Image Details:
 
 ---
 
-# Gradient descent
+# Gradient Descent
 
 * The computer’s job:
-  * Start with an arbitrary guess of parameters
-  * Tweak it in whichever direction reduces loss more
-  * The less the loss is changing, the less the value should be tweaked
+  * Start with an arbitrary guess of parameters.
+  * Tweak it in whichever direction reduces loss more.
+  * The less the loss is changing, the less the value should be tweaked.
 
 * The human’s job:
-  * Choose the **learning rate**, a constant value which scales how far we tweak the value on each learning step
+  * Choose the **learning rate**, a constant value which scales how far we tweak the value on each learning step.
 
-Learning rate is an example of a **hyperparameter**, not a parameter in the the actual model, but a parameter in the algorithm that tweaks the model.
+Learning rate is an example of a **hyperparameter**. Not a parameter in the the actual model, but a parameter in the algorithm that tweaks the model.
 
 ![](res/regression9.gif)
 
 <!--
-How does the model “iteratively” update its parameters? We can think of our goal as an optimization problem, where we’d like to optimize (minimize) a loss function. Machine learning models then use an “optimizer”, an algorithm to perform that optimization.
+How does the model “iteratively” update its parameters? We can think of our goal as an optimization problem, where we’d like to optimize (minimize) a loss function. Machine learning models then use an “optimizer," an algorithm to perform that optimization.
 
-The most common optimizer is Gradient Descent, where the model starts by picking random values for each parameter. It then changes each in the direction that reduces loss the most. On each iteration or “step”, the model should get closer to the minimal loss until it “converges”, or reaches a point where the loss isn’t changing much between steps. (Usually this is based on some threshold, like the loss function changing by less than 0.001 between steps.) Since this isn’t a closed-form solution, gradient descent isn’t guaranteed to converge to the absolute lowest loss possible. There are more sophisticated optimizers that can sometimes do better.
+The most common optimizer is gradient descent, where the model starts by picking random values for each parameter. It then changes each in the direction that reduces loss the most. On each iteration or “step," the model should get closer to the minimal loss until it “converges," or reaches a point where the loss isn’t changing much between steps. (Usually this is based on some threshold, like the loss function changing by less than 0.001 between steps.) Since this isn’t a closed-form solution, gradient descent isn’t guaranteed to converge to the absolute lowest loss possible. There are more sophisticated optimizers that can sometimes do better.
 
-You can control gradient descent by choosing the learning rate, which determines how much you tweak each parameter on each step. We call this a hyperparameter: a value you can change to change model performance, but isn’t “learned” by the model.
+You can control gradient descent by choosing the learning rate, which determines how much you tweak each parameter on each step. We call this a hyperparameter: a value you can change to change model performance, but one that isn’t “learned” by the model.
 
 Image Details:
 * [regression9.gif](http://www.google.com): Copyright Google
 -->
-
 
 ---
 
@@ -294,19 +299,18 @@ Image Details:
 
 ---
 
-# Multiple Regression (i.e. multiple features)
+# Multiple Regression (i.e. Multiple Features)
 
 ![](res/regression27.png)
 
 <!--
-Realistically, energy level might depend on several factors. Now, our model needs to learn 3 weights (one for each input feature) and one bias.
+Realistically, energy level might depend on several factors. Now, our model needs to learn three weights (one for each input feature) and one bias.
 
-The concept of weight and bias is important to most machine learning models, even complex neural networks. The model uses data to learn how each input feature affects the output, and learns a bias to linearly shift its predictions to fit the data (like shifting a y-intercept).
+The concept of weight and bias is important to most machine learning models, even complex neural networks. The model uses data to learn how each input feature affects the output, and it learns a bias to linearly shift its predictions to fit the data. This is like shifting a y-intercept.
 
 Image Details:
 * [regression27.png](http://www.google.com): Copyright Google
 -->
-
 
 ---
 
@@ -321,7 +325,7 @@ Image Details:
 
 ---
 
-# Closed form, exact solution
+# Closed Form, Exact Solution
 
 ![](res/regression29.png)
 
@@ -336,11 +340,11 @@ Image Details:
 
 ---
 
-# Batched data
+# Batched Data
 
 Break data into smaller batches
-  * We’ll use a new batch on each learning step
-  * New hyperparameter batch size controls how much data is used for each learning step
+  * We’ll use a new batch on each learning step.
+  * New hyperparameter batch size controls how much data is used for each learning step.
 
  ![](res/regression10.png)
 
