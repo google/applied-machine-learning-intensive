@@ -2,7 +2,7 @@
 
 ---
 
-# [scikit-Learn](https://scikit-learn.org) 
+# [scikit-Learn](https://scikit-learn.org)
 
 ![](res/introtoscikit1.png)
 
