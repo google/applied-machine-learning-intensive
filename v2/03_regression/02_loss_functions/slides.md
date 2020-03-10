@@ -21,7 +21,7 @@ Two of the most common loss functions for regression are called L1 and L2. L1 mi
 <!--
 It’s common to either take the sum or average over all data points to calculate overall loss. “Mean Squared Error” is another widely used loss function that is closely related to L2 loss, but instead of the sum of squared differences, it’s the *average* of squared differences.
 
-You should choose a loss function based on your specific problem and dataset. L1 and L2 loss are used for regression problems. We’ll discuss loss functions used for other machine learning problems, such as classification, later. 
+You should choose a loss function based on your specific problem and dataset. L1 and L2 loss are used for regression problems. We’ll discuss loss functions used for other machine learning problems, such as classification, later.
 -->
 
 ---
@@ -115,7 +115,7 @@ Students work on Loss worksheet (give around 5 min):
 * 3 sets of true / predicted data points on page 1
 * intermediate steps on page 2 (can choose to give or not give to students)
 * solution on page 3
-* previous worked through example on page 4 (can choose to give or not give as reference) 
+* previous worked through example on page 4 (can choose to give or not give as reference)
 -->
 
 ---
