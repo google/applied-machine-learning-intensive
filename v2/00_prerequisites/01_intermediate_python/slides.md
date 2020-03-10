@@ -8,6 +8,8 @@ After this unit, you'll be able to
 * Identify when it is appropriate to design exceptions into your program.
 * Create and work with classes, objects, and inheritance.
 
+-->
+
 ---
 
 # Object Oriented Programming is a programming paradigm that organizes data into classes 
