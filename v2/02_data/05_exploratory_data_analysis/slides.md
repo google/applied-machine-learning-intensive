@@ -19,9 +19,10 @@ impossible values, and values of the wrong type.
 There are scores of issues that can make analyzing your data difficult.
 
 Because of this, you'll often find yourself doing some preprocessing of your
-data while you are performing EDA. Strictly, EDA is just analysis. In practice,
-data analysis and data preprocessing and manipulation are intertwined. As you
-look at your data more closely, you'll have to fix parts of it to look further.
+data while you are performing EDA. Strictly speaking, EDA is just analysis. 
+In practice, data analysis and data preprocessing and manipulation are 
+intertwined. As you look at your data more closely, you'll have to fix parts 
+of it to look further.
 -->
 
 ---
@@ -44,9 +45,14 @@ Some data scientists begin with a thorough check of each component of the data,
 fix obvious errors, and then explore through questions. Some of these questions
 are created during the initial cleaning pass.
 
-Regardless of how you approach the analysis, you will gather a few distinct types
-of information: single-table information, single-column information,
-cross-column information, and then cross-table information.
+Your approach to EDA will also depend on the type of data you're working with. 
+For example, are you looking at images/videos or tabular data (like we've been 
+working with in Pandas)? We will talk more about image data in a later unit of 
+this course. 
+
+If you're working with tabular data, then regardless of how you approach the analysis, 
+you will likely gather a few distinct types of information: single-table information, 
+single-column information, cross-column information, and then cross-table information.
 -->
 
 ---
@@ -83,6 +89,8 @@ df.tail()     # Last few rows of data
 
 df.sample(10) # Random sample of data
 
+df.columns    # Column labels
+
 df.dtypes     # Data types of columns
 ```
 
@@ -110,7 +118,7 @@ Analysis of a single column/`Series` of data is similar to that of a
 `DataFrame`. You can use many of the same methods. Most statistics you can
 gather about a `DataFrame` can also be done for an individual column. Sometimes
 it is nice to look at these stats column-by-column, so you don't get overwhelmed
-with information. Sometimes it is nice to see it all in one view.
+with information. 
 -->
 
 ---
@@ -120,9 +128,19 @@ with information. Sometimes it is nice to see it all in one view.
 ![](res/correlation.png)
 
 <!--
-Cross-column analysis simply means looking at how the data relates across
-columns. This is often done with charts, but it doesn't have to. In the example
+Cross-column analysis simply means looking at how the relationships among data
+across columns. This is often done visually, but it doesn't have to be. In the example
 shown, we can see the correlation between columns with a call to `corr()`.
+
+Recall that the Pearson correlation coefficient is used to measure the strength of a 
+linear association between two variables. Note that along the diagonal, we have a 
+correlation of 1.0, since each column is perfectly correlated with itself. A correlation 
+coefficient of 1.0 means that for every positive increase in one variable, there is a 
+positive increase of a fixed proportion in the other. Off the diagonal, we have values 
+between -1 and 1 that indicate the correlation between two columns. A negative correlation
+means that for every positive change (increase) in one variable, there is a negative 
+change (decrease) in the other variable. The magnitude of the correlation coefficient 
+captures the strength of the correlation. 
 
 Image Details:
 * [correlation.png](http://www.google.com): Copyright Google
@@ -137,6 +155,11 @@ Image Details:
 <!--
 Of course, many times visualizations are very helpful. Here we see a boxplot of
 two columns in a `DataFrame`.
+
+On the x-axis, we have the percent of cocoa in the chocolate. On the y-axis, we 
+have the ratings. The line in the center of the box represents the median. We also 
+see the quartiles and any outliers. 
+
 
 Image Details:
 * [boxplot.png](http://www.google.com): Copyright Google
@@ -181,8 +204,8 @@ include those listed on this slide.
 Invisible values are probably the least self-explanatory. These are values
 where a space or some other invisible character is the only value at a data
 point. Technically the data isn't missing, so Pandas will not report it in an
-`isna()` check. However, the data present isn't actually meaningful. We'll
-handle a case like this in our lab.
+`isna()` check. However, the data present isn't actually meaningful. We'll see
+how to handle a case like this in the lab.
 -->
 
 ---
@@ -198,9 +221,17 @@ There are some data processing techniques that aren't necessarily part of the
 EDA phase. A few of those are listed on this slide.
 
 These techniques are used to make your data more palatable to your model. We'll
-dig into each of these during this course. However, at EDA time you likely don't
-even know what model you are going to choose, so it is probably premature to
-perform these processing steps.
+dig into each of these during this course. But here's a quick overview of each one 
+on this list. 
+
+* Normalization usually means rescale the values into a range of [0,1]. 
+* Standardization usually means rescale data to have a mean of 0 and a standard deviation of 1.
+* One-hot encoding is a process of converting categorical variables into 0's and 1's (which 
+is better for many ML algorithms).
+
+Your preprocessing steps are informed by your research questions and the model 
+you intend to build to address your questions. Throughout this course, we will talk about 
+when to use certain preprocessing techniques. 
 -->
 
 ---
@@ -217,6 +248,8 @@ What happens when you do find bad data?
 
 There are a few strategies. If possible, it is good to fill in and fix data
 where possible. Sometimes you just have to get rid of problematic data, though.
+There is no one-size fits all approach, and we will see many examples of 
+these preprocessing steps in the lab and throughout the course. 
 -->
 
 ---

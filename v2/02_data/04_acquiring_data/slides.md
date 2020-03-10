@@ -1,8 +1,8 @@
 # Acquiring Data
 
 <!--
-So far we have only worked with tiny datasets that we have hard-coded into our
-labs. As we begin to move deeper into data science we will need to work with
+So far we have only worked with tiny datasets that we have hard-coded. 
+As we begin to move deeper into data science we will need to work with
 larger and more complex datasets. In order to do that, we need to know how to
 get the datasets into our Colab environments.
 
@@ -75,7 +75,7 @@ Image Details:
 <!--
 The first time you upload a file to an active lab you will see a warning telling
 you that the files won't stick around forever. Colab environments run for a
-fixed amount of time, less than a day, and then the environment gets recycled.
+fixed amount of time, less than a day, and then the runtime gets recycled.
 
 For this class and for small data science and machine learning projects, this is
 okay. For longer-running projects, there are ways to point Colab at a different
@@ -83,7 +83,7 @@ environment. You can also download Colab notebooks and run them in Jupyter on a
 machine that can store the files longer-term.
 
 Do be warned, though, if you do a lot of processing on data and save that data to
-a file, you will want to download the file before the Colab environment gets
+a file, you will want to download the file before the Colab runtime gets
 recycled.
 
 Image Details:
@@ -136,8 +136,8 @@ df = pd.read_csv('/data.csv')   # Reads /
 ```
 
 <!--
-The landing spot of the file effects the way you then read the file into a
-`DataFrame`. By default Colab considers `/content/` to be the working directory
+The landing spot of the file effects the way you read the file into a
+`DataFrame`. By default Colab considers `/content/` to be the working directory,
 so if you upload data to `/content/` you can read it directly as shown in the
 first example of this slide. If you upload data to root you have to use the
 `../` syntax to read from the parent directory or the `/` syntax to read from
@@ -170,13 +170,8 @@ It is actually even more likely, especially in this class, that you are
 downloading data from the internet and then uploading that data back to Colab.
 
 For small files this might be okay, but for large files this can be slow.
-Especially in a classroom setting where many of us are uploading and downloading
-large files at the same time
-
-For small files this might be okay, but for large files this can be slow.
 This is especially true in a classroom setting where many of us are uploading
-and downloading large files at the same time. A session of this class actually
-crashed the network at one of the schools where it was taught!
+and downloading large files at the same time. 
 
 Image Details:
 * [to-from-cloud.png](http://www.google.com): Copyright Google
@@ -192,8 +187,7 @@ Image Details:
 Luckily, there are numerous ways to move data around without ever having to
 bring it down to your local computer. You can write code in Colab to perform
 "cloud-to-cloud" data transfers. This reduces the number of times that the data
-is copied and keeps the data from having to transfer over your network
-connection.
+are copied and reduces the transfers over your network connection.
 
 Image Details:
 * [cloud-to-cloud.png](http://www.google.com): Copyright Google
@@ -337,18 +331,17 @@ Image Details:
 # Kaggle: Command Line
 
 ```shell
-kaggle datasets download rtatman/chocolate-bar-ratings
+kaggle datasets download joshmcadams/oranges-vs-grapefruit
 ```
 
 <!--
 You can also use the `kaggle` command to directly download a dataset into Colab,
 bypassing the need to download the dataset to your computer.
 
-You can add an example of downloading a dataset on this slide. You run the `kaggle`
-shell command. This program can work with numerous Kaggle objects such as
-contents, notebooks, and datasets. In this case we are working with datasets. We
-then say that we want to download a dataset. Finally, we tell the command the
-dataset that we want to download.
+You run the `kaggle`shell command. This program can work with numerous Kaggle 
+objects such as contents, notebooks, and datasets. In this case we are working 
+with datasets. We then say that we want to download a dataset. Finally, we 
+tell the command the dataset that we want to download.
 
 Note that there is some setup required before running `kaggle`. You'll need to
 get API credentials from Kaggle and store them in your lab. Instructions for
