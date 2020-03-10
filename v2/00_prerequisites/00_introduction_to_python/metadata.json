@@ -1,11 +1,19 @@
 {
   "name": "Introduction to Python",
-  "bug": "b/129329117",
   "colabs": [
     "colab.ipynb"
   ],
   "slides": [
-    "https://docs.google.com/presentation/d/1e1Vz9veOsC-Tc7yltqOOT3iPI_2InEruS7wABY3eZwk/edit"
+    "slides.md"
+  ],
+  "duration": {
+    "colab.ipynb": 60,
+    "slides.md": 10
+  },
+  "learning-objectives": [
+    "Create, use, and troubleshoot variables and data structures",
+    "Read and write Python statements, expressions, conditionals, and loops",
+    "Use functions"
   ],
   "materials": [],
   "resources": [],

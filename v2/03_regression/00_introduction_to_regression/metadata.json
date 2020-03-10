@@ -1,9 +1,6 @@
 {
   "name": "Introduction to Linear Regression",
-  "bug": "b/",
-  "colabs": [
-    "colab.ipynb"
-  ],
+  "colabs": [],
   "learning-objectives": [
     "Train a linear regression model using scikit-learn on real data",
     "Use root mean squared error (RMSE) to evaluate a linear regression model",
@@ -12,14 +9,12 @@
     "(Optional) Practice stochastic gradient descent and mini batching"
   ],
   "duration": {
-    "lecture": 45,
-    "colab": 60
+    "slides.md": 45
   },
   "materials": [],
   "resources": [],
   "slides": [
-    "slides.md",
-    "amli/v2/content/03_regression/01_introduction_to_regression/slides.md"
+    "slides.md"
   ],
   "handouts": []
 }

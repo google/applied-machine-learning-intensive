@@ -2,7 +2,7 @@
 
 ---
 
-# "Python is an interpreted, high-level, general-purpose programming language." {.big}
+# "Python is an interpreted, high-level, general-purpose programming language."
 
 <!--
 Source: Wikipedia
@@ -17,7 +17,7 @@ Source: Wikipedia
 * "High-level" means closer to human languages and further from machine languages.
 * "General-purpose" means it can be used for anything, including creating web apps (e.g. YouTube), small scripts (e.g. automatically renaming photos based on data from the camera), machine learning, data visualization, and much more.
 
-One of the powers of Python is that it has many built-in libraries and many more third-party libraries to give it specialized abilities. We'll explore many of these specialized libraries over the course of this program.
+One of Python's powers is that it has many built-in libraries and many more third-party libraries to give it specialized abilities. We'll explore many of these specialized libraries over the course of this program.
 
 Image Details:
 * [introtopython1.png](http://www.google.com): Copyright Google
@@ -41,11 +41,11 @@ When looking at Python reference docs, look for the version number in the URL.
 ![](res/introtopython4.png)
 
 <!--
-There are multiple ways to run python:
+There are multiple ways to run Python:
 * You can open the interactive interpreter and type arbitrary code.
-* You can run a python file and all the code inside will get executed.
+* You can run a Python file and all the code inside will get executed.
 * You can run cells full of Python code in a notebook environment like Colab or Jupyter.
-* If you're in a notebook, you can run all the cells in order (recommended) but you can also choose to run individual cells which might lead to unexpected results.
+* If you're in a notebook, you can run all the cells in order (recommended), but you can also choose to run individual cells, which might lead to unexpected results.
 
 Image Details:
 * [introtopython4.png](http://www.google.com): Copyright Google

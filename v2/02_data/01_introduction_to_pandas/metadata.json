@@ -1,6 +1,6 @@
 {
   "name": "Introduction to Pandas",
-  "learning objectives": [
+  "learning-objectives": [
     "Create, analyze, and modify a Pandas Series",
     "Create, analyze, and modify a Pandas DataFrame"
   ],
@@ -11,8 +11,8 @@
     "slides.md"
   ],
   "duration": {
-    "lecture": 60,
-	"colab": 60
+    "slids.md": 60,
+    "colab.ipynb": 60
   },
   "materials": [],
   "resources": [],

@@ -34,13 +34,9 @@ DataFrames are set up like tables, with columns, headers, and rows of data.
 ![](res/dataframe.png)
 
 <!--
-Motivation:
-Giving a visual for DataFrames so students who are visual learners can interact intuitively with the structure.
-
-For the class:
-* The DataFrame is Pandas' data structure. It is very much like a table with one or more columns - which means it works well with the CSV data file format.
-  * Looks like a table which consists of rows and columns
-  * The first row contains column headers
+The DataFrame is Pandas' data structure. It is very much like a table with one or more columns, which means it works well with the CSV data file format.
+It looks like a table, which consists of rows and columns.
+The first row contains column headers.
 
 Image Details:
 * [dataframe.png](http://www.google.com): Copyright Google
@@ -50,17 +46,13 @@ Image Details:
 
 # Pandas Data Structures: Series
 
-One column of a DataFrame is called a “Series”
+One column of a DataFrame is called a “Series."
 
 ![](res/dataframe-column.png)
 
 <!--
-Motivation:
-* Continuing to give visuals to help out students.
-
-For the class:
-* Pandas Series is one-dimensional and contains a homogeneously-typed array
-* So, in summary, a DataFrame contains one or more Series
+Pandas Series is one-dimensional and contains a homogeneously-typed array. 
+So, in summary, a DataFrame contains one or more Series.
 
 Image Details:
 * [dataframe-column.png](http://www.google.com): Copyright Google
@@ -70,16 +62,13 @@ Image Details:
 
 # Pandas Data Structures: Index
 
-The primary column of the dataframe, without a title, is the “Index”
+The primary column of the DataFrame, without a title, is the “Index.”
 
 ![](res/dataframe-index.png)
 
 <!--
-Motivation:
-* Continuing to give visuals to help out students.
-
-For the class:
-* Last, the first column is an index column. In this case it’s numeric values, but it can be non-numeric as you’ll see as you dig deeper into Pandas usage.
+Last, the first column is an index column. 
+In this case it’s numeric values, but it can be non-numeric as you’ll see as you dig deeper into Pandas usage.
 
 Image Details:
 * [dataframe-index.png](http://www.google.com): Copyright Google
@@ -95,12 +84,12 @@ import pandas as pd
 
 <!--
 Pandas isn't a core part of Python. To use it you'll need to import it. You could do this by simply
-writing `import pandas`. In practice however, you'll see `import pandas as pd`. This isn't a
+writing `import pandas'. In practice, however, you'll see `import pandas as pd`. This isn't a
 requirement, but it is a convention that you'll see in quite a bit of code that uses Pandas and
 in documentation and on help sites. Aliasing `pandas` as `pd` will make it easier to utilize these
 resources.
 
-If you are using Colab, you can import Pandas without needing to install it. If you are using Jupyter or scripting in a text editor, you may need to download and update the Pandas library (i.e. pip install pandas -- if you are using pip). See the documentation at: https://pandas.pydata.org/pandas-docs/stable/
+If you are using Colab, you can import Pandas without needing to install it. If you are using Jupyter or scripting in a text editor, you may need to download and update the Pandas library (i.e. pip install pandas if you are using pip). See the documentation here: https://pandas.pydata.org/pandas-docs/stable/
 -->
 
 ---
@@ -167,7 +156,7 @@ Pandas has some methods to get basic information about both `Series` and `DataFr
 * `hist()`
 
 <!--
-We’ll go through each of these methods in turn. Each of these methods works with both Series and DataFrame objects. None of them modify the data, but rather they let us view the data in a few different ways so we can get a sense of what we’re looking at.
+We’ll go through each of these methods in turn. Each of these methods works with both Series and DataFrame objects. None of them modify the data, but do they let us view the data in a few different ways, so we can get a sense of what we’re looking at.
 -->
 
 ---
@@ -345,14 +334,14 @@ It allows you to access a group of rows *and* columns by label(s) or a boolean a
 
 # Adding Series to a Dataframe
 
-We can create a new series of the same length of an existing series by modifying all of the elements by a singular value and storing them in the dataframe under a new name.
+We can create a new series of the same length of an existing series by modifying all of the elements by a singular value and storing them in the DataFrame under a new name.
 
 ```python
 my_data['percent'] = my_data['proportion'] * 100
 ```
 
 <!--
-The series my_data[‘percent’], which is added to the my_data dataframe, will be equal to 100 times the series ‘proportion’.
+The series my_data[‘percent’], which is added to the my_data dataframe, will be equal to 100 times the series ‘proportion.'
 
 This means for each row, the entry in the ‘percent’ column will be 100 times the entry in the ‘proportion’ column.
 -->
@@ -389,5 +378,63 @@ my_data['is_expensive'] = my_data['prices'].apply(my_function)
 ```
 
 <!--
-My_function is a function that takes in a value and returns a value. In this case, we can imagine that my_function takes in an integer (the ‘price’) and returns a boolean value indicating whether or not the item is expensive.
+My_function is a function that takes in a value and returns a value. In this case, we can imagine that my_function takes in an integer (the ‘price’) and returns a boolean value, indicating whether or not the item is expensive.
+-->
+
+---
+
+# Modifying Data
+
+```python
+# Do This
+df.loc[5, 'Count'] = 3
+
+# Not This
+df.iloc[5]['Count'] = 3
+```
+
+<!--
+It is possible to modify individual data points. To do this, it is best to use
+the `.loc[]` accessor as shown in this slide. The modificiation still works most
+of the time when you use `.iloc[]` or other methods, but some funny things are
+going on internally. When you reference data in a `DataFrame`, sometimes you are
+referencing the data in the `DataFrame` itself and sometimes you are access a
+copy of the data. In the `.iloc[]` case, a copy is involved. In the `.loc[]`
+case it is not.
+-->
+
+---
+
+# Modifying Data
+
+```
+/usr/local/lib/python3.6/dist-packages/ipykernel_launcher.py:13: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata<...>ing-a-view-versus-a-copy
+  del sys.path[0]
+```
+
+<!--
+If you do have code that is or could potentially be working with copies, you'll
+see a warning like the one shown in this slide. Typically this warning can be
+avoided by moving from whatever data referencing scheme you are using to
+`.loc[]` on the left-hand side of the expression.
+-->
+
+---
+
+# Modifying Data
+
+```python
+# Replace Column
+df.loc[:, 'Count'] = [1,1,1,1,1,1,1]
+
+# Replace Row
+df.loc[6, :] = ['Name', 0, 0]
+```
+
+<!--
+Entire rows and columns can be replaced using the all-slice, ':', Smaller scoped
+slices can also be used.
 -->

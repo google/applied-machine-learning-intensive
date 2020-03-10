@@ -137,7 +137,7 @@ class Colab(object):
     The cell list is expect to be a list of cells that have not been previously
     classified as part of a section.
 
-    The cell indexes that constitute the section will be removed from the
+    The cell indices that constitute the section will be removed from the
     provided list of cells.
 
     Args:
@@ -145,7 +145,7 @@ class Colab(object):
       expr: expression that starts the section (inclusive).
 
     Returns:
-      An iterable of all indexes that constitute the section.
+      An iterable of all indices that constitute the section.
     """
 
     section_list = []

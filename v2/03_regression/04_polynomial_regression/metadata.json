@@ -1,0 +1,21 @@
+{
+  "name": "Polynomial Regression",
+  "materials": [],
+  "resources": [],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
+  ],
+  "handouts": [],
+  "learning-objectives": [
+    "Apply polynomial models to regression problems",
+    "Recognize when a model might be overfitting",
+    "Combat overfitting using techniques such as Lasso, Ridge, and ElasticNet regularization"
+  ],
+  "duration": {
+    "slides.md": 20,
+    "colab.ipynb": 60
+  }
+}

@@ -24,7 +24,7 @@ What patterns can you see in these raw data of common PIN numbers?
 
 <!--
 Here you can see a dataset containing PIN numbers. Given the raw data shown, can
-you see any patterns? 
+you see any patterns?
 
 Not really. You may notice that 1111 is repeated a few times,
 but other than that it's difficult.
@@ -303,7 +303,7 @@ Which type of visualization do you think would best represent following data?
 
 <!--
 
-Think pair share: Discuss the possible charts that would be good for each of these types of data. 
+Think pair share: Discuss the possible charts that would be good for each of these types of data.
 
 *It might be helpful to write the following list on the board, or have the students take notes, so they can reference it during their discussions with peers.*
 

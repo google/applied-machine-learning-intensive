@@ -161,9 +161,9 @@ class ColabTest(googletest.TestCase):
 
     ie = self.__shift_individual_exercise(shift)
 
-    # Removing the copyright section causes the indexes of all sections after it
+    # Removing the copyright section causes the indices of all sections after it
     # to shift up by the number of cells that were in the copyright section. The
-    # code below performs that shifting of indexes before calling
+    # code below performs that shifting of indices before calling
     # __make_assertions. This pattern is seen in subsequent testing functions
     # that remove sections.
     self.__make_assertions(lab,

@@ -4,12 +4,27 @@
      "slides.md"
   ],
   "learning-objectives": [
-    ""
+    "Differentiate between Exploratory Data Analysis and Data Preprocessing",
+    "Find statistics about a single `DataFrame`",
+    "Find statistics about each column in a `DataFrame`",
+    "Analyze data across `DataFrame` objects",
+    "Use visualizations to aid in the analysis of a data set",
+    "Select appropriate visualizations to use for analysis",
+    "Reformat visualizations to increase conveyance of information",
+    "Interpret visualizations to answer questions about a data set",
+    "Identify and fill in missing data points in a data set",
+    "Identify and correct broken data points in a data set",
+    "Use advanced Pandas techniques to answer questions about a data set"
   ],
   "colabs": [
     "colab-part1.ipynb",
     "colab-part2.ipynb"
   ],
+  "duration": {
+    "slides.md": 10,
+    "colab-part1.ipynb": 120,
+    "colab-part2.ipynb": 120
+  },
   "materials": [],
   "resources": [],
   "handouts": []
