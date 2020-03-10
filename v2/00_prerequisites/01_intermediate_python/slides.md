@@ -10,24 +10,23 @@ After this unit, you'll be able to
 
 ---
 
-# **Object Oriented Programming** is a programming paradigm that organizes data into classes 
+# Object Oriented Programming is a programming paradigm that organizes data into classes 
 
 ![](res/intermediatepython01.png)
 
 <!--
 * What does “programming paradigm” mean?
   * It is a style of programming; object oriented programming is one particular style that organizes data into objects within classes.
-  * Compare and contrast OOP with procedural and functional (procedural programming is mentioned on colab, so make sure to explain it and give examples so the distinction is clear)
-  * Sometime when the data structures available are not complex or specialized enough, you need a class to hold your data!
+  * Sometimes when the data structures available are not complex or specialized enough, you need a class to hold your data!
 * Let's consider an example where a teacher wants to create a program where they can keep track of students' grades.
-  * Wants a way to hold student ID, grade
+  * Wants a way to hold the values student ID and grade
   * Wants methods to get a grade, change a grade, and print a grade
-  * How could they organize all this capability in one program?!
+  * How could they organize all this capability in one program?
 -->
 
 ---
 
-# We can use a **class** to create objects and methods that can be called them
+# We can use a **class** to create objects and methods that can be called on them
 
 ![](res/intermediatepython02.png)
 
@@ -37,7 +36,7 @@ Look at the code and decide what looks familiar/new and maybe even predict how t
 
 ---
 
-# We can use a **class** to create objects and methods that can be called them
+# We can use a **class** to create objects and methods that can be called on them
 
 ![](res/intermediatepython03.png)
 
@@ -52,7 +51,7 @@ Looking at the code...
 * __grade: indicates that grade is a private member variable (it can’t be accessed or edited outside of the class). More about this later!
 * Self → used to refer to objects in a class
   *  When “self” is an argument coming into a method, you don’t actually need to include that when calling the method
-  * “Self” is implied as the instance of the class you declare before the dot
+  * “self” is implied as the instance of the class you declare before the dot
 * STUDENT_ROSTER → a constant value. In this case, presumably a constant list of students in the class.
 * Methods → collection of functions that can be run on an object of a given class
 -->
