@@ -528,6 +528,12 @@ okwords = [
   "column's",
   "team's",
   "subpackage",
-  "akesson"
+  "akesson",
+  "uppercase",
+  "digitize",
+  "prepping",
+  "country's",
+  "person's",
+  ""
 ]
 

@@ -287,6 +287,7 @@ def main():
             content = content.replace(',}', '}')
             content = content.replace(', ]', ' ]')
             content = content.replace(', }', ' }')
+            print(track + " " + unit)
             parsed_json = json.loads(content)
 
             #if "colabs" in parsed_json.keys():

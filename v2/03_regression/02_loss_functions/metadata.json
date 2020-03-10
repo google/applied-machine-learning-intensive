@@ -13,7 +13,7 @@
     "slides.md": 10,
     "loss.pdf": 20
   },
-  "learning-objectives": {
+  "learning-objectives": [
     "Manually calculate L1 and L2 loss"
-  }
+  ]
 }
