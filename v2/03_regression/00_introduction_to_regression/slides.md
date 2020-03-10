@@ -342,7 +342,7 @@ Image Details:
 
 # Batched Data
 
-Break data into smaller batches
+Break data into smaller batches.
   * We’ll use a new batch on each learning step.
   * New hyperparameter batch size controls how much data is used for each learning step.
 
