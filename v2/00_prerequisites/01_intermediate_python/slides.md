@@ -28,7 +28,7 @@ After this unit, you'll be able to
 
 ---
 
-# We can use a **class** to create objects and methods that can be called on them
+# We can use a **class** to create objects that have attributes and methods
 
 ![](res/intermediatepython02.png)
 
@@ -38,7 +38,7 @@ Look at the code and decide what looks familiar/new and maybe even predict how t
 
 ---
 
-# We can use a **class** to create objects and methods that can be called on them
+# We can use a **class** to create objects that have attributes and methods
 
 ![](res/intermediatepython03.png)
 
@@ -60,39 +60,38 @@ Looking at the code...
 
 --- 
 
-# We can use a **class** to create objects and methods that can be called them
+# We can use a **class** to create objects that have attributes and methods
 
 ![](res/intermediatepython04.png)
 
 <!--
-Now let's break it all down!
+Now let's break it all down in more detail. 
 -->
 
 --- 
 
-# You can create a singular **“instance”** of a class...
+# You can create a singular **“instance”** of a class
 
 ![](res/intermediatepython05.png)
 
 <!--
 * Instances are the actual object, i.e., the actual physical representation in memory of a “thing” of the type defined by the class.
-* Syntax is created using the name of the class and the data members required for that instance, in order of how they are in the constructor.
-  * Every class needs a constructor to show the computer what data members it should be allocating memory for every time an instance is created.
+* Every class needs a constructor to show the computer what data members it should be allocating memory for every time an instance is created.
+* “Elon” is an instance of our class. His student ID is 2341 and his grade is a B+. 
 * Now that we have an instance of a class, we can manipulate that instance with methods defined in the class.
-* “Elon” is an instance of our class.
 -->
 
 ---
 
-# Now that we have an instance, we can call **methods** on it
+# Now that we have an instance, we can call **“methods“** on it
 
 ![](res/intermediatepython06.png)
 
 <!--
-* This is an example of how a function can be called on in an instance of a class.
+* This is an example of how a function can be called on an instance of a class.
 * Notice how you call the function.
-  * When “self” is an argument coming into a method, you don’t actually need to include that when calling the method.
-  * “Self” is implied as the instance of the class you declare before the dot 
+  * When “self” is an argument of a method, you don’t actually need to include that when calling the method.
+  * “self” is implied as the instance of the class you declare before the dot 
 * This type of method is called a “getter” method, as it's used to get access to variables in a class.
   * We will see why this might be necessary later.
 -->
@@ -104,10 +103,10 @@ Now let's break it all down!
 ![](res/intermediatepython07.png)
 
 <!--
-* This is an example of how a function can be created to change the data an instance of a class is representing.
+* This is an example of how a function can be created to change the data in an instance of a class.
 * Notice how you call the function.
-  * “Self” is still implied as Elon
-  * However, this time we also need a new_grade, and this is passed in as function arguments usually are in Python
+  * “self” is still implied as Elon
+  * However, this time we also need a new_grade, and this is passed in as a typical argument in Python
 * This type of method is called a “setter,” and we will see why later.
 -->
 
@@ -120,8 +119,7 @@ Now let's break it all down!
 <!--
 * This is an instance of a private method.
 * These are methods that are only helper methods to others in the class and cannot be accessed outside of it.
-  * It can be helpful for methods you want.
-* We will go into more detail on these later.
+* Let's see how the helper method _check_id can be useful. 
 -->
 
 ---
@@ -157,7 +155,7 @@ Helpful reads:
 ![](res/intermediatepython11.png)
 
 <!--
-Compare with a partner the print() options.
+Talk with the person next to you. What do you think will be printed in each of these cases? 
 -->
 
 ---
@@ -170,8 +168,8 @@ Compare with a partner the print() options.
 Compare with a partner the  print() options:
 print(Elon.student_id) - this works! We’re just accessing a public member variable
 print(Elon.__grade) - this doesn’t work! Our variable isn’t accessible outside of our class
-print(Elon.get_grade()) - this does work, our method is accessible outside of our class and will return the grade!
-print(Elon._Student__grade) - this does work, if you add the class name before it, you are allowed to access internal variables and Methods
+print(Elon.get_grade()) - this works, our method is accessible outside of our class and will return the grade!
+print(Elon._Student__grade) - this works, if you add the class name before it, you are allowed to access internal variables and Methods
 -->
 
 ---
@@ -181,8 +179,7 @@ print(Elon._Student__grade) - this does work, if you add the class name before i
 ![](res/intermediatepython13.png)
 
 <!--
-*Go through each naming convention.*
-Save this slide as a reference!
+Go through each naming convention. It may be helpftul to save this slide as a reference.  
 -->
 
 ---
@@ -193,7 +190,7 @@ Save this slide as a reference!
 
 <!--
 * You can add functions outside of classes that will interact with objects much like they do inside the class, just using Student instead of self.
-* Notice how student_id and __grade are handled differently.
+* Notice how student_id is an atribute and doesnot require () while get_grade is a method and does require (). 
 -->
 
 ---
@@ -250,7 +247,7 @@ Or we can modify them inside a child class and override the parent method.
 
 ---
 
-# You can use code in many ways to generate your own lists of data...
+# You can use code in many ways to generate your own lists of data
 
 ![](res/intermediatepython19.png)
 
@@ -263,7 +260,7 @@ Or we can modify them inside a child class and override the parent method.
 
 ---
 
-# You can use code in many ways to generate your own lists of data...
+# You can use code in many ways to generate your own lists of data
 
 ![](res/intermediatepython20.png)
 
@@ -298,7 +295,7 @@ Try to write the for loop we have into a list comprehension.
 
 ---
 
-# We can also write list comprehensions with conditional statements
+# Try to make this code into a list comprehension
 
 ![](res/intermediatepython23.png)
 
@@ -308,7 +305,7 @@ We can see that it follows the exact formula in the bottom and can still use our
 
 --- 
 
-# Try to make this code into a list comprehension
+# We can also write list comprehensions with conditional statements
 
 ![](res/intermediatepython24.png)
 
