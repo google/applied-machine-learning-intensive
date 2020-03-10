@@ -20,6 +20,11 @@
     "colab-part1.ipynb",
     "colab-part2.ipynb"
   ],
+  "duration": {
+    "slides.md": 10,
+    "colab-part1.ipynb": 120,
+    "colab-part2.ipynb": 120
+  },
   "materials": [],
   "resources": [],
   "handouts": []

@@ -13,7 +13,7 @@ and visualizations to find out information about your dataset.
 
 <!--
 Often you'll find that issues with the data actually prevent you from performing
-a quality exploratory data analysis. These issues can include missing values, 
+a quality exploratory data analysis. These issues can include missing values,
 impossible values, and values of the wrong type.
 
 There are scores of issues that can make analyzing your data difficult.
@@ -41,7 +41,7 @@ Some data scientists pre-formulate questions and then perform the analysis and
 preprocessing necessary to answer those questions.
 
 Some data scientists begin with a thorough check of each component of the data,
-fix obvious errors, and then explore through questions. Some of these questions 
+fix obvious errors, and then explore through questions. Some of these questions
 are created during the initial cleaning pass.
 
 Regardless of how you approach the analysis, you will gather a few distinct types
@@ -227,7 +227,7 @@ where possible. Sometimes you just have to get rid of problematic data, though.
 * Part 2: Cross tables and columns
 
 <!--
-It is about time for us to practice our EDA skills. We'll use tools we recently 
+It is about time for us to practice our EDA skills. We'll use tools we recently
 learned including Pandas, matplotlib, and seaborn. There are also some
 new concepts introduced in this lab, but it should mostly serve as an
 exercise in bringing the tools you have already learned together to
