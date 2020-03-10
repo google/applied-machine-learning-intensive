@@ -6,5 +6,9 @@
   "colabs": [
     "colab.ipynb"
   ],
+  "learning-objectives": [
+    "Extract quantitative measurements of a regression models predictions.",
+    "Perform qualitative judgements of a regression models predictions.",
+  ],
   "handouts": []
 }
