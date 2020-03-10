@@ -1,6 +1,6 @@
 {
   "name": "Intermediate Pandas",
-  "learning objectives": [
+  "learning-objectives": [
     "Apply filters to Pandas DataFrames",
     "Group data contained in Pandas DataFrames",
     "Merge data across multiple Pandas DataFrames",
@@ -12,6 +12,10 @@
   "slides": [
     "slides.md"
   ],
+  "duration": {
+    "slides.md": 10,
+    "colab.ipynb": 90
+  },
   "materials": [],
   "resources": [],
   "handouts": []
