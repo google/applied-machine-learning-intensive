@@ -1,3 +1,14 @@
+---
+marp: true
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Visualizations
 
 A powerful way to identify patterns in data that otherwise can be hard to find and analyze
@@ -18,9 +29,7 @@ To start, we want to examine a scenario when a visualization is particularly hel
 
 What patterns can you see in these raw data of common PIN numbers?
 
-{.column}
-
-![](res/pins.png)
+![center](res/pins.png)
 
 <!--
 Here you can see a dataset containing PIN numbers. Given the raw data shown, can
@@ -37,7 +46,7 @@ Image Details:
 
 # Visualizations: Heatmap
 
-![](res/heatmap.png)
+![center](res/heatmap.png)
 
 <!--
 Here we have a heatmap of the PIN numbers in the previous dataset. The first two
@@ -56,7 +65,7 @@ Image Details:
 
 # Visualizations: Heatmap
 
-![](res/heatmap-repeat.png)
+![center](res/heatmap-repeat.png)
 
 <!--
 Here we see that repeated pairs of numbers are common. This is shown by the
@@ -70,7 +79,7 @@ Image Details:
 
 # Visualizations: Heatmap
 
-![](res/heatmap-year.png)
+![center](res/heatmap-year.png)
 
 <!--
 Here we see that using a year in the 1900s is pretty common too.
@@ -83,7 +92,7 @@ Image Details:
 
 # Visualizations: Heatmap
 
-![](res/heatmap-01.png)
+![center](res/heatmap-01.png)
 
 <!--
 Small numbers are also very popular. There tend to be lots of zeros and ones at
@@ -97,7 +106,7 @@ Image Details:
 
 # Visualizations: Chart Types
 
-![](res/charts.png)
+![center](res/charts.png)
 
 <!--
 There are many different types of charts. This is just a sample of types of
@@ -111,7 +120,7 @@ Image Details:
 
 # Visualizations: Pie Charts
 
-![](res/pie-chart.png)
+![center](res/pie-chart.png)
 
 <!--
 Pie Charts are good for representing percentages of a whole. Pie charts are great for representing data that is in the form of fractions adding up to one or percentages adding up to 100. They create a natural comparison between portions of a whole.
@@ -124,7 +133,7 @@ Image Details:
 
 # Visualizations: Pie Charts
 
-![](res/bad-pie-chart.png)
+![center](res/bad-pie-chart.png)
 
 <!--
 Pie charts cannot be used for all data, and they can create misleading conclusions.
@@ -144,7 +153,7 @@ Image Details:
 
 # Visualizations: Bar Charts
 
-![](res/bar-chart.png)
+![center](res/bar-chart.png)
 
 <!--
 Bar charts can help compare categorical data.
@@ -165,7 +174,7 @@ Image Details:
 
 # Visualizations: Bar Charts
 
-![](res/bad-bar-chart.png)
+![center](res/bad-bar-chart.png)
 
 <!--
 For continuous data, bar charts might not be the best choice.
@@ -187,7 +196,7 @@ Image Details:
 
 # Visualizations: Line Charts
 
-![](res/line-chart.png)
+![center](res/line-chart.png)
 
 <!--
 Line graphs can help estimate missing data points and find trends.
@@ -210,7 +219,7 @@ Image Details:
 
 # Visualizations: Line Charts
 
-![](res/bad-line-chart.png)
+![center](res/bad-line-chart.png)
 
 <!--
 When there are multiple data points for the same place on the x-axis, line charts are not as useful.
@@ -230,7 +239,7 @@ Image Details:
 
 # Visualizations: Scatter Plots
 
-![](res/scatter-plot.png)
+![center](res/scatter-plot.png)
 
 <!--
 Scatterplots can help show correlations between two variables.
@@ -249,7 +258,7 @@ Image Details:
 
 # Visualizations: Scatter Plots
 
-![](res/bad-scatter-plot.png)
+![center](res/bad-scatter-plot.png)
 
 <!--
 When there is too much data, a scatterplot will not be useful.
@@ -266,7 +275,7 @@ Image Details:
 
 # Visualizations: Heat Maps
 
-![](res/heat-map.png)
+![center](res/heat-map.png)
 
 <!--
 Heatmaps are good for visualizing concentrated, continuous data.
@@ -321,7 +330,7 @@ Think pair share: Discuss the possible charts that would be good for each of the
 
 Which type of visualization do you think would best represent the data below?
 
-![](res/candy-count.png)
+![center](res/candy-count.png)
 
 <!--
 Quickly look at the data come up with a prediction for which type of visualization should be used.
@@ -336,7 +345,7 @@ Image Details:
 
 Which visualization best represents the data?
 
-![](res/candy-count-charts.png)
+![center](res/candy-count-charts.png)
 
 <!--
 Think pair share: Which visualizations work well? Which work poorly?
@@ -430,7 +439,7 @@ What are the possible charts that would be good for this data?
 
 # Visualizations: Matplotlib & seaborn
 
-![](https://matplotlib.org/_static/logo2_compressed.svg)
+![center](https://matplotlib.org/_static/logo2_compressed.svg)
 
 <!--
 So how do we build these visualizations?
@@ -453,5 +462,4 @@ discussed in this lecture.
 Image Details:
 * [logo2_compressed.svg](https://matplotlib.org/): Externally Linked
 -->
-
 
