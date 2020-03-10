@@ -1,11 +1,11 @@
 {
   "name": "Machine Learning Fairness",
-  "learning objectives": [
+  "learning-objectives": [
     "Understand some ways in which ML biases can have real ethical consequences."
   ],
   "colabs": [],
   "duration": {
-    "lecture": 60
+    "slides.md": 60
   },
   "materials": [],
   "handouts": [],

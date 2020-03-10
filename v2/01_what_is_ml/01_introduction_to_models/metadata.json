@@ -1,11 +1,11 @@
 {
   "name": "Intro to ML Models",
-  "learning objectives": [
+  "learning-objectives": [
     "Be able to distinguish between different types of ML models."
   ],
   "colabs": [],
   "duration": {
-    "lecture": 30
+    "slides.md": 30
   },
   "materials": [],
   "handouts": [],
