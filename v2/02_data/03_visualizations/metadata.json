@@ -16,6 +16,10 @@
     "Create charts with seaborn.",
     "Determine which visualization is most appropriate for a dataset"
   ],
+  "duration": {
+    "slides.md": 10,
+    "colab.ipynb": 120
+  },
   "materials": [],
   "resources": [],
   "handouts": []
