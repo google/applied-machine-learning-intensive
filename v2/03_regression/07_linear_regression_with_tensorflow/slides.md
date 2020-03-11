@@ -1,19 +1,19 @@
 # Linear Regression With TensorFlow
 
 <!--
-We have learned about how to perform regression with scikit-learn and we have
-taken a peak at TensorFlow. Now it is time to try to train a real model using
+We have learned about how to perform regression with scikit-learn, and we have
+taken a peek at TensorFlow. Now it's time to try to train a real model using
 TensorFlow.
 -->
 
 ---
 
-# But why? {.big}
+# But Why? {.big}
 
 <!--
 Why would we want to build a linear regression using TensorFlow?
 
-It is true that scikit-learn is perfectly adquate much of the time. However,
+It's true that scikit-learn is perfectly adequate much of the time. However,
 TensorFlow has some features like distributed model training that can help you
 build models when you have huge amounts of data.
 -->
@@ -29,9 +29,9 @@ class. `LinearRegressor` is a
 [`Estimator`](https://www.tensorflow.org/api_docs/python/tf/compat/v1/estimator/Estimator).
 `Estimator` is an API and programming model that was introduced in TensorFlow
 version 1. It is a little more difficult to use than modern Keras-style
-TensorFlow, but you will still see it used in practice and support for it will
+TensorFlow, but you will still see it used in practice, and support for it will
 continue in TensorFlow 2 because the `Estimator`-style of programming works
-better for some specfic machine learning applicaitons.
+better for some specific machine learning applications.
 -->
 
 ---
@@ -51,12 +51,13 @@ p = lr.predict(input_fn=testing_input)
 ```
 
 <!--
-Here you can see the main programming flow of the `LinearRegressor`. We:
+Here you can see the main programming flow of the `LinearRegressor.' 
 
-1. Import TensorFlow
-1. Create an estimator class
-1. Train the estimator by passing it a function that provides data
-1. Use the model by passing it a function that provides data
+We:
+1. Import TensorFlow.
+1. Create an estimator class.
+1. Train the estimator by passing it a function that provides data.
+1. Use the model by passing it a function that provides data.
 -->
 
 ---
@@ -83,13 +84,13 @@ Here you can see what an input function might look like. The function:
    acquisition and storage strategies.
 1. Set the number of times to pass the data to the model. Remember that our
    models will be using an optimizer to try to find good weights. In order to do
-   this it helps to pass the data to the model a few times.
+   this, it helps to pass the data to the model a few times.
 1. Shuffles the data between repeats.
 1. Defines the mini-batch size. This is the number of data points that will be
    passed to the model in each training step.
 
-Note that repitition and batch are hyperparameters that you can change in the
-model. You might find that you don't need to repeat the data as much or that you
+Note that repetition and batch are hyperparameters that you can change in the
+model. You might find you don't need to repeat the data as much or that you
 need to repeat it more. You might find that smaller batches work better than big
 batches.
 -->
@@ -110,10 +111,10 @@ linear_regressor = tf.estimator.LinearRegressor(
 
 <!--
 
-Another interesting hypterparameter is the optimizer. By default
+Another interesting hyperparameter is the optimizer. By default
 `LinearRegressor` uses the
 [`Ftrl`](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Ftrl)
-optimizer, however there are many more options. In this example we use the
+optimizer; however, there are many more options. In this example we use the
 [`Adam`](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam)
 optimizer. In this case we also manually set the learning rate. Each optimizer
 has settings like this that you can change to help your model train faster and
@@ -140,7 +141,7 @@ linear_regressor = tf.estimator.LinearRegressor(
 ```
 
 <!--
-In order to distrubte training and evaluation across workers, you can optionally
+In order to distribute training and evaluation across workers, you can optionally
 pass the `LinearRegressor` a distribution method via config. We'll show how to
 do this in the lab, though it doesn't help much on the small virtual machines
 that we'll be working with.
