@@ -58,7 +58,7 @@ Image Details:
 ![](res/polynomialregression5.png)
 
 <!--
-Here are a few examples of polynomial equations. The topmost is the linear equation that we are used to. The next is commonly called a quadratic equation. The third is a cubic equation. The number of factors you can add to equation is theoretically unbounded, though you'll pay a computational expense for very large equations and also introduce the risk of overfitting (which we'll talk about soon).
+Here are a few examples of polynomial equations. The topmost is the linear equation that we are used to. The next is commonly called a quadratic equation. The third is a cubic equation. The number of factors you can add to the equation is theoretically unbounded, though you'll pay a computational expense for very large equations and also introduce the risk of overfitting (which we'll talk about soon).
 
 Image Details:
 * [polynomialregression5.png](http://www.google.com): Copyright Google
@@ -69,7 +69,7 @@ Image Details:
 ![](res/polynomialregression6.png)
 
 <!--
-Have students talk to one another and answer the above two questions.
+Turn to a partner next to you and discuss the above two questions.
 
 Image Details:
 * [polynomialregression5.png](http://www.google.com): Copyright Google
@@ -91,9 +91,9 @@ Image Details:
 ![](res/polynomialregression8.png)
 
 <!--
-Have students talk to one another and answer the above two questions.
+Turn to a partner next to you and discuss the above two questions.
 
-Transition remarks: We will now discuss using different order polynomials for regression. In particular, we will explore potential dangers of using higher order polynomial fits
+We will now discuss using different order polynomials for regression. In particular, we will explore potential dangers of using higher order polynomial fits.
 
 Image Details:
 * [polynomialregression8.png](http://www.google.com): Copyright Google
@@ -104,7 +104,7 @@ Image Details:
 ![](res/polynomialregression9.png)
 
 <!--
-Question to students: What could go possibly go wrong if we use a polynomial to fit the following data? Have them brainstorm some ideas.
+What could possibly go wrong if we use a polynomial to fit the following data? Brainstorm some ideas.
 
 Image Details:
 * [polynomialregression9.png](http://www.google.com): Copyright Google
@@ -115,7 +115,7 @@ Image Details:
 ![](res/polynomialregression10.png)
 
 <!--
-Pretend to throw one more data point about in (B) in a region where the curve does not pass through, to show one point could throw off entire fit.
+*Pretend to throw one more data point about in (B) in a region where the curve does not pass through, to show one point could throw off entire fit.*
 
 Image Details:
 * [polynomialregression10.png](http://www.google.com): Copyright Google
@@ -167,7 +167,7 @@ Image Details:
 ![](res/polynomialregression14.jpg)
 
 <!--
-Most of the time, you probably just want a simple midsized unisex t-shirt of a given style.
+Most of the time, you probably just want a simple, midsized, unisex t-shirt of a given style.
 
 Image Details:
 * [polynomialregression14.jpg](https://unsplash.com/photos/WWesmHEgXDs): Unsplash License
@@ -178,7 +178,7 @@ Image Details:
 ![](res/polynomialregression15.png)
 
 <!--
-So how does this apply to real data? Here is an illustration of overfitting a regression model. You can see how the regression line perfectly fits the data points on the graph, but can't necessarily predict well for future x-values.
+So how does this apply to real data? Here is an illustration of overfitting a regression model. You can see how the regression line perfectly fits the data points on the graph, but it can't necessarily predict well for future x-values.
 
 https://en.wikipedia.org/wiki/Overfitting
 
@@ -191,8 +191,8 @@ Image Details:
 How Do You Avoid This? {.big}
 
 <!--
-Given the problem of a polynomial fitting data too closely, how would you avoid overfitting.
-Give the students some time to throw out some ideas.
+Given the problem of a polynomial fitting data too closely, how would you avoid overfitting?
+*Give students some time to throw out some ideas.*
 -->
 
 ---
@@ -207,13 +207,13 @@ Avoiding Overfitting {.big}
 <!--
 Here are some of the most common ways to avoid overfitting.
 
-Using a polynomial function with fewer degrees is one obvious way. If your model is introducing enough curvature to cross most training data points, then use fewer degrees in your polynomial.
+Using a polynomial function with fewer degrees is one way. If your model is introducing enough curvature to cross most training data points, then use fewer degrees in your polynomial.
 
 Another tactic is to use more data to train your model. As your dataset grows in size, it will likely also grow in diversity and create a model that is less overfit.
 
 If you can't collect more data to train your model, it might be possible to drop some data out of the training set to reduce the ability for your model to overfit.
 
-And finally, there are strategies for adding penalties to the model to make even a high-degree polynomial less likely to overfit. Some common strategies are called LASSO, Ridge, and ElasticNet. We'll look at each of these a little closer and you'll experiment with them in your lab exercise.
+And finally, there are strategies for adding penalties to the model to make even a high-degree polynomial less likely to overfit. Some common strategies are called LASSO, Ridge, and ElasticNet. We'll look at each of these more closely, and you'll experiment with them in your lab exercise.
 -->
 
 ---
@@ -284,7 +284,7 @@ Image Details:
 <!--
 Ridge regularization looks similar to LASSO, but instead of appending the sum of absolute values of coefficients to the loss function, it appends the sum of squares of coefficients.
 
-Ridge regression seeks the value of λ that minimizes the penalized or regularized RSS. As the L2 norm is differentiable, problems using the method can be solved by Gradient Descent.
+Ridge regression seeks the value of λ that minimizes the penalized or regularized RSS. As the L2 norm is differentiable, problems using the method can be solved by gradient descent.
 
 https://en.wikipedia.org/wiki/Tikhonov_regularization
 
