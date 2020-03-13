@@ -52,7 +52,7 @@ Specifically, (# rows, # columns).
 If you know about NumPy, then you may recall that NumPy has a `.shape` attribute
 on NumPy arrays. Pandas `.shape` has the same functionality. The primary
 difference is that NumPy supports n-dimensional matrices where n can be greater
-than two, while Panda's DataFrame objects typically just have two dimensions:
+than two, while Pandas' DataFrame objects typically just have two dimensions:
 rows and columns.
 -->
 
@@ -232,7 +232,7 @@ the price is greater than 70. We are also creating a boolean index that is
 `True` when the weight is less than 5. The `&` operator is then used to combine
 these indices into a single index.
 
-You might notice that we put parenthesis around each boolean expression. This is
+You might notice that we put parentheses around each boolean expression. This is
 because the precedence for `&`, `|`, and `~` is higher than `>` and `<` so we
 must add parenthesis to ensure that the `>` and `<` happen first.
 -->
