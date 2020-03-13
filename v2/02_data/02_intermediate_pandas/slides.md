@@ -21,7 +21,7 @@ Pandas unit.
 * ... and more!
 
 <!--
-You might be asking, "Why more Pandas? I'm ready to do some data science!".
+You might be asking, "Why more Pandas? I'm ready to do some data science!"
 Well, it turns out that quite a bit of the work in data science and machine
 learning involves getting quality data ready to feed into our models. Pandas is
 a toolkit you'll regularly see used for this part of the data science pipeline.
@@ -123,7 +123,7 @@ Let's start by taking a look at row filtering.
 <!--
 In this slide we see data from a DataFrame.
 The DataFrame has four rows and five columns, so df.shape would return (4,5).
-Say that we would like to find people with more than two dogs.
+Let's say that we would like to find people with more than two dogs.
 How would we do that?
 
 Image Details:
@@ -304,7 +304,7 @@ df.groupby('Age').agg({
 ```
 
 <!--
-In the example that we saw earlier, we calculated the mean for every numeric
+In the example we saw earlier, we calculated the mean for every numeric
 column in a `DataFrame`. Often you'll want different statistics for different
 columns, or even multiple statistics for some columns.
 
@@ -524,7 +524,7 @@ df2.sort_values('num_pet_cats', inplace=True)
 When working with `DataFrame` objects it is often important to know when you are
 working with a reference-to or copy-of the original `DataFrame`.
 
-Take for instance this example. We create a new `DataFrame`, `df`, and then
+Take, for instance, this example. We create a new `DataFrame`, `df`, and then
 store a reference to the original `DataFrame` in the variable `df2`. When we then
 ask to sort `df2` and modify it in-place, we change the original `DataFrame`.
 -->
