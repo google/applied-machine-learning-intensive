@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Intermediate Pandas
 
 <!--
@@ -36,8 +40,8 @@ print(df.shape) # (2452431, 8)
 ```
 
 <!--
-First, we will explore a few more ways to get data about a DataFrame. One of the
-most basic is the `.shape` property of a DataFrame.
+First, we will explore a few more ways to get information about a DataFrame. One
+of the most basic is the `.shape` property of a DataFrame.
 
 What is shape?
 
@@ -48,7 +52,7 @@ Specifically, (# rows, # columns).
 If you know about NumPy, then you may recall that NumPy has a `.shape` attribute
 on NumPy arrays. Pandas `.shape` has the same functionality. The primary
 difference is that NumPy supports n-dimensional matrices where n can be greater
-than two while Panda's DataFrame objects typically just have two dimensions:
+than two, while Panda's DataFrame objects typically just have two dimensions:
 rows and columns.
 -->
 
@@ -139,7 +143,7 @@ df[df['num_pet_dogs'] > 1]
 <!--
 Here we have put the expression `df['num_pet_dogs'] > 1` inside another selector
 for `df`. The inner-expression creates a "boolean index," which is an index that is
-the same length as the dataframe (in this case the length is 4), where an entry is True if num_pet_dogs > 1.
+the same length as the DataFrame (in this case the length is 4), where an entry is True if num_pet_dogs > 1.
 For this specific example,`df['num_pet_dogs'] > 1` returns an index with entries True, False, True, False.
 Then we take df[boolean index], and this selects the rows for which the boolean value is True.
 
@@ -180,7 +184,7 @@ df[[‘first_name’, ‘num_pet_dogs’, ‘num_pet_cats’]]
 
 <!--
 To filter by columns, we can also use the DataFrame selector. Instead of passing
-in a boolean index, we pass in a list of string that match the column names that
+in a boolean index, we pass in a list of strings that match the column names that
 we want to keep.
 
 Image Details:
@@ -394,7 +398,7 @@ pd.merge(df1, df2)
 ![](res/tables_merged_uneven.png)
 
 <!--
-In this case we completely lost the record of Seo-yoen! Since Pandas couldn't
+In this case we completely lost the record of Seo-yeon! Since Pandas couldn't
 find a match, it didn't include the datapoint.
 
 This is standard join functionality. There are ways to get around this, though.
@@ -418,7 +422,7 @@ You can instruct Pandas to keep the data in one or both of the tables in a join.
 This is called an outer join. There is a left-outer join that keeps unmatched
 rows in the left table. There is a right-outer join that keeps unmatched rows in
 the right table. And then there is the full outer join, which you see here, that
-keeps unmatch rows found in both tables.
+keeps unmatched rows found in both tables.
 
 In any of the outer join cases, missing data is filled in with null values.
 `NaN` for numbers. `None` for strings and other objects.
@@ -521,7 +525,7 @@ When working with `DataFrame` objects it is often important to know when you are
 working with a reference-to or copy-of the original `DataFrame`.
 
 Take for instance this example. We create a new `DataFrame`, `df`, and then
-store a reference to the orginal `DataFrame` in the variable `df2`. When we then
+store a reference to the original `DataFrame` in the variable `df2`. When we then
 ask to sort `df2` and modify it in-place, we change the original `DataFrame`.
 -->
 
@@ -541,7 +545,7 @@ and then work with the copy. Be warned that this can be slow and
 memory-intensive on large `DataFrame` objects.
 
 Often you don't have to worry whether you're working with a reference or a
-copy. Pandas strives to be efficient and will use references and views as much
-as it can. Sometimes the abstractions break down, and you need to know a little
-more about what specific data you are working with.
+copy. Pandas strives to be efficient and will use references or views depending 
+on which makes most sense in most cases. But sometimes the abstractions break down,
+and you need to know a little more about what specific data you are working with.
 -->
