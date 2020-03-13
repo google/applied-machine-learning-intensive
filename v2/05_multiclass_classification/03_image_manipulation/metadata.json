@@ -5,7 +5,11 @@
     "colab.ipynb"
   ],
   "slides": [
-    "https://docs.google.com/presentation/d/1I86mxmrwg8PsuV3J8U2blJO0I2vpB5whQmr6dzA93bc/edit"
+    "slides.md"
+  ],
+  "learning-objectives": [
+    "Read and write an image file",
+    "Resize, pad, and change the orientation of an image",
   ],
   "materials": [],
   "resources": [],

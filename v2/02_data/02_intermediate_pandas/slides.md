@@ -21,7 +21,7 @@ Pandas unit.
 * ... and more!
 
 <!--
-You might be asking, "Why more Pandas? I'm ready to do some data science!".
+You might be asking, "Why more Pandas? I'm ready to do some data science!"
 Well, it turns out that quite a bit of the work in data science and machine
 learning involves getting quality data ready to feed into our models. Pandas is
 a toolkit you'll regularly see used for this part of the data science pipeline.
@@ -52,7 +52,7 @@ Specifically, (# rows, # columns).
 If you know about NumPy, then you may recall that NumPy has a `.shape` attribute
 on NumPy arrays. Pandas `.shape` has the same functionality. The primary
 difference is that NumPy supports n-dimensional matrices where n can be greater
-than two, while Panda's DataFrame objects typically just have two dimensions:
+than two, while Pandas' DataFrame objects typically just have two dimensions:
 rows and columns.
 -->
 
@@ -123,7 +123,7 @@ Let's start by taking a look at row filtering.
 <!--
 In this slide we see data from a DataFrame.
 The DataFrame has four rows and five columns, so df.shape would return (4,5).
-Say that we would like to find people with more than two dogs.
+Let's say that we would like to find people with more than two dogs.
 How would we do that?
 
 Image Details:
@@ -232,7 +232,7 @@ the price is greater than 70. We are also creating a boolean index that is
 `True` when the weight is less than 5. The `&` operator is then used to combine
 these indices into a single index.
 
-You might notice that we put parenthesis around each boolean expression. This is
+You might notice that we put parentheses around each boolean expression. This is
 because the precedence for `&`, `|`, and `~` is higher than `>` and `<` so we
 must add parenthesis to ensure that the `>` and `<` happen first.
 -->
@@ -304,7 +304,7 @@ df.groupby('Age').agg({
 ```
 
 <!--
-In the example that we saw earlier, we calculated the mean for every numeric
+In the example we saw earlier, we calculated the mean for every numeric
 column in a `DataFrame`. Often you'll want different statistics for different
 columns, or even multiple statistics for some columns.
 
@@ -524,7 +524,7 @@ df2.sort_values('num_pet_cats', inplace=True)
 When working with `DataFrame` objects it is often important to know when you are
 working with a reference-to or copy-of the original `DataFrame`.
 
-Take for instance this example. We create a new `DataFrame`, `df`, and then
+Take, for instance, this example. We create a new `DataFrame`, `df`, and then
 store a reference to the original `DataFrame` in the variable `df2`. When we then
 ask to sort `df2` and modify it in-place, we change the original `DataFrame`.
 -->
