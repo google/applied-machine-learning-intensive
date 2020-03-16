@@ -139,8 +139,8 @@ Image Details:
 Pie charts cannot be used for all data, and they can create misleading conclusions.
 
 Problems:
-* creating percentages where they're not necessary or helpful, solely to put it into the visualization
-* the states have separate budgets, so this visualization indicates correlation when there is none
+* We don't want to create percentages where they're not necessary or helpful, solely to put it into the visualization.
+* The states have separate budgets, so this visualization indicates correlation when there is none.
 
 @Exercise (5 minutes): {
 Think pair share - How could it be better represented?
@@ -163,8 +163,8 @@ Bar charts can help compare categorical data.
 The same data is much easier to see and compare in a bar chart form!
 
 Why?:
-* You can see the actual number and not the arbitrary percentage because bar charts have axes
-* Easier to compare between data points, as seeing them side by side gives a better natural comparison
+* You can see the actual number and not the arbitrary percentage because bar charts have axes.
+* It's easier to compare between data points, as seeing them side by side gives a better natural comparison.
 
 In general, bar charts are good for representing categorical data, as the x-axis can be used to represent categories very easily, and the bars create a natural comparison between categories.
 
@@ -204,12 +204,12 @@ Image Details:
 <!--
 Line graphs can help estimate missing data points and find trends.
 
-This is a much more useful visualization than the bar chart!
+This is a much more useful visualization than the bar chart.
 
 Why?:
 * It shows a relationship between the two things, which is relevant and helpful.
 * This relationship can now be fit mathematically.
-* Now we can estimate missing points and make predictions!
+* Now we can estimate missing points and make predictions.
 * We can use the meaningful ordering on the x-axis to actually make a prediction, whereas bar charts are usually organized in decrementing order of size.
 
 In general, a line graph is a fantastic choice for data that could be well fit with a function (i.e. an x,y category where every x has just one corresponding y value, and where the x,y pairs strongly correlate in a mathematical way). It allows you to make inferences on what values that weren’t in the original dataset might be expanding your ability to analyze your data.
@@ -246,9 +246,9 @@ Image Details:
 <!--
 Scatter plots can help show correlations between two variables.
 
-Why:
+Why?:
 * It's much more clear where the gaps, overlaps, and groups form.
-* We are still able to grasp the general trends (lose very little value) without the line, and now we also have more possibilities for analysis!
+* We are still able to grasp the general trends (lose very little value) without the line, and now we also have more possibilities for analysis.
 
 In general if you have x,y data where you have multiple y values for every x, a scatter plot is a good choice as it allows you to see all the data clearly and doesn’t average out y values for a given x like a line graph would.
 
@@ -266,7 +266,7 @@ Image Details:
 When there is too much data, a scatter plot will not be useful.
 
 Problems:
-* Too many points to draw conclusions
+* There could be too many points to draw conclusions.
 * There may be a higher concentration of points in some areas, but in this format we cannot tell.
 
 Image Details:
@@ -282,7 +282,7 @@ Image Details:
 <!--
 Heatmaps are good for visualizing concentrated, continuous data.
 
-Why:
+Why?:
 * We can now see the maximum and minimum amounts, where before we could only estimate.
 * We can better analyze trends when we know the concentrations of points in each area.
 
