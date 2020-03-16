@@ -1,3 +1,9 @@
+---
+
+marp: true
+
+---
+
 # Intro to TensorFlow
 
 ---
