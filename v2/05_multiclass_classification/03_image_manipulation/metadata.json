@@ -1,0 +1,17 @@
+{
+  "name": "Image Manipulation",
+  "bug": "b/129328747",
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
+  ],
+  "learning-objectives": [
+    "Read and write an image file",
+    "Resize, pad, and change the orientation of an image",
+  ],
+  "materials": [],
+  "resources": [],
+  "handouts": []
+}

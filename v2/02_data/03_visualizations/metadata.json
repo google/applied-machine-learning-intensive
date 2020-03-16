@@ -14,10 +14,10 @@
     "Create and interpret heat maps.",
     "Create charts with Matplotlib.",
     "Create charts with seaborn.",
-    "Determine which visualization is most appropriate for a dataset"
+    "Determine which visualization is most appropriate for a dataset."
   ],
   "duration": {
-    "slides.md": 10,
+    "slides.md": 60,
     "colab.ipynb": 120
   },
   "materials": [],
