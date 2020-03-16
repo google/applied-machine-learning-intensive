@@ -1,5 +1,10 @@
 {
   "name": "Introduction to Python",
+  "learning-objectives": [
+    "Create, use, and troubleshoot variables and data structures.",
+    "Read and write Python statements, expressions, conditionals, and loops.",
+    "Use functions."
+  ],
   "colabs": [
     "colab.ipynb"
   ],
@@ -7,14 +12,9 @@
     "slides.md"
   ],
   "duration": {
-    "colab.ipynb": 60,
-    "slides.md": 10
+    "colab.ipynb": 120,
+    "slides.md": 120
   },
-  "learning-objectives": [
-    "Create, use, and troubleshoot variables and data structures",
-    "Read and write Python statements, expressions, conditionals, and loops",
-    "Use functions"
-  ],
   "materials": [],
   "resources": [],
   "handouts": []
