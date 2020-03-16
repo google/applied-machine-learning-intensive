@@ -1,19 +1,19 @@
 {
   "name": "Acquiring Data",
-  "colabs": [
-    "colab.ipynb"
-  ],
-  "slides": [
-    "slides.md"
-  ],
   "learning-objectives": [
     "Upload data to Colab",
     "Download data from pubic URLs.",
     "Download Obtain data from Kaggle.",
     "Unzip compressed data."
   ],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
+  ],
   "duration": {
-    "slides.md": 10,
+    "slides.md": 30,
     "colab.ipynb": 30
   },
   "materials": [],

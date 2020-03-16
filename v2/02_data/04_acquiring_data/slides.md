@@ -1,3 +1,16 @@
+---
+
+marp: true
+
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Acquiring Data
 
 <!--
@@ -6,7 +19,7 @@ As we begin to move deeper into data science we will need to work with
 larger and more complex datasets. In order to do that, we need to know how to
 get the datasets into our Colab environments.
 
-Remember that Colab is running "in the cloud," so for it to process data you
+Remember that Colab is running "in the cloud," so in order to process any data, you
 have to get that data onto the server that Colab is running on.
 
 We'll cover a few ways of doing that in this lecture.
@@ -18,7 +31,7 @@ We'll cover a few ways of doing that in this lecture.
 
 <!--
 One of the most straight-forward ways of getting data into Colab is to upload it
-into the lab. If you have a file on your machine and want to get it into Colab
+into the lab. If you have a file on your machine and want to get it into Colab,
 you can do so with just a few clicks.
 
 Let's walk through an example.
@@ -30,10 +43,10 @@ Let's walk through an example.
 
 Click on the "Files" icon.
 
-![](res/files.png)
+![center](res/files.png)
 
 <!--
-First, click on the 'Files' icon on the left side of the screen.
+First, click 'Files' (a small folder icon) on the left side of the screen.
 
 Image Details:
 * [files.png](http://www.google.com): Copyright Google
@@ -43,7 +56,7 @@ Image Details:
 
 # Uploading Data
 
-![](res/upload.png)
+![center](res/upload.png)
 
 <!--
 Next, click on the 'Upload' link.
@@ -56,11 +69,11 @@ Image Details:
 
 # Uploading Data
 
-![](res/file-selector.png)
+![center](res/file-selector.png)
 
 <!--
 You will then be presented with a file selector dialog box. Find the file on
-your local machine and then press the 'Open' button.
+your local machine and then click the 'Open' button.
 
 Image Details:
 * [file-selector.png](http://www.google.com): Copyright Google
@@ -70,12 +83,12 @@ Image Details:
 
 # Uploading Data
 
-![](res/warning.png)
+![center](res/warning.png)
 
 <!--
 The first time you upload a file to an active lab you will see a warning telling
 you that the files won't stick around forever. Colab environments run for a
-fixed amount of time, less than a day, and then the runtime gets recycled.
+fixed amount of time (less than a day) and then the runtime gets recycled.
 
 For this class and for small data science and machine learning projects, this is
 okay. For longer-running projects, there are ways to point Colab at a different
@@ -94,7 +107,7 @@ Image Details:
 
 # Uploading Data
 
-![](res/uploaded-files.png)
+![center](res/uploaded-files.png)
 
 <!--
 Once your file is uploaded, you will be able to see it in the left 'Files' panel
@@ -108,10 +121,10 @@ Image Details:
 
 # Uploading Data
 
-![](res/root-folder.png)
+![center](res/root-folder.png)
 
 <!--
-If at any time you end up seeing a list of files and folders like this then you
+If at any time you end up seeing a list of files and folders like this, then you
 clicked on the 'Parent Directory' link instead of the 'Upload' link. This moves
 you from the `/content/` folder on the virtual machine to the `/` (root) folder.
 
@@ -148,7 +161,7 @@ root.
 
 # Uploading Data
 
-![](res/to-cloud.png)
+![center](res/to-cloud.png)
 
 <!--
 Let's think about what is happening when we are uploading data to Colab. We have
@@ -163,7 +176,7 @@ Image Details:
 
 # Uploading Data
 
-![](res/to-from-cloud.png)
+![center](res/to-from-cloud.png)
 
 <!--
 It is actually even more likely, especially in this class, that you are
@@ -181,7 +194,7 @@ Image Details:
 
 # Uploading Data
 
-![](res/cloud-to-cloud.png)
+![center](res/cloud-to-cloud.png)
 
 <!--
 Luckily, there are numerous ways to move data around without ever having to
@@ -249,7 +262,7 @@ df = pd.DataFrame(query, columns=column_names)
 
 <!--
 If your data is stored in a database, you can use SQL to read data into a
-`DataFrame`. To do this you need to create a database connection. Then create a
+`DataFrame`. To do this, you need to create a database connection. Then create a
 query to read the data you are interested in. Finally, you can pass the query to
 Pandas to create a new `DataFrame` containing the data.
 
@@ -283,7 +296,7 @@ for-pay tiers.
 Here is an example of using the `tweepy` API to query Twitter for the term
 'Machine Learning'.
 
-You can see that we first have to authenticate and then once we authenticate we
+You can see that we first have to authenticate, and then once we authenticate we
 can call the `search` functions on the API.
 
 Every API is different. If you have a service that you want to get data from,
@@ -297,7 +310,7 @@ trying to use any API directly.
 
 # Kaggle
 
-![](https://www.kaggle.com/static/images/site-logo.png)
+![center](https://www.kaggle.com/static/images/site-logo.png)
 
 <!--
 Now we'll talk about getting data from Kaggle into your Colab. We talk about
@@ -312,7 +325,7 @@ Image Details:
 
 # Kaggle: Browser Download
 
-![](res/kaggle-download.png)
+![center](res/kaggle-download.png)
 
 <!--
 Once you navigate to a dataset in Kaggle, you can download the dataset by
@@ -338,10 +351,10 @@ kaggle datasets download joshmcadams/oranges-vs-grapefruit
 You can also use the `kaggle` command to directly download a dataset into Colab,
 bypassing the need to download the dataset to your computer.
 
-You run the `kaggle`shell command. This program can work with numerous Kaggle 
-objects such as contents, notebooks, and datasets. In this case we are working 
-with datasets. We then say that we want to download a dataset. Finally, we 
-tell the command the dataset that we want to download.
+1. Type the 'kaggle' command
+2. The `kaggle` shell command can work with numerous Kaggle objects such as contents, notebooks, and datasets. In this case, we are working with datasets, so we type 'datasets'.
+3. We then type 'download' to indicate that we want to download a dataset.
+4. Finally, we tell the command the dataset that we want to download.
 
 Note that there is some setup required before running `kaggle`. You'll need to
 get API credentials from Kaggle and store them in your lab. Instructions for
