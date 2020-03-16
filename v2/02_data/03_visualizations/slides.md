@@ -50,8 +50,8 @@ Image Details:
 
 <!--
 Here we have a heatmap of the PIN numbers in the previous dataset. The first two
-digits are along the x-axis and the last two digits are along the y-axis. In
-this particular map yellow means that the pattern occurs more often.
+digits are along the x-axis, and the last two digits are along the y-axis. In
+this particular map, yellow means that the pattern occurs more often.
 
 What patterns do you see?
 
@@ -82,7 +82,7 @@ Image Details:
 ![center](res/heatmap-year.png)
 
 <!--
-Here we see that using a year in the 1900s is pretty common too.
+Here we see that using a year in the 1900s is pretty common, too.
 
 Image Details:
 * [heatmap-year.png](http://www.google.com): Copyright Google
@@ -162,7 +162,7 @@ Bar charts can help compare categorical data.
 
 The same data is much easier to see and compare in a bar chart form!
 
-Why:
+Why?:
 * You can see the actual number and not the arbitrary percentage because bar charts have axes
 * Easier to compare between data points, as seeing them side by side gives a better natural comparison
 
@@ -206,13 +206,13 @@ Line graphs can help estimate missing data points and find trends.
 
 This is a much more useful visualization than the bar chart!
 
-Why:
-* Shows a relationship between the two things that is relevant and helpful!
+Why?:
+* It shows a relationship between the two things, which is relevant and helpful.
 * This relationship can now be fit mathematically.
 * Now we can estimate missing points and make predictions!
 * We can use the meaningful ordering on the x-axis to actually make a prediction, whereas bar charts are usually organized in decrementing order of size.
 
-In general, a line graph is a fantastic choice for data that could be well fit with a function (i.e. an x,y category where every x has just one corresponding y value, and where the x,y pairs strongly correlate in a mathematical way). It allows you to make inferences on what values that weren’t in the original dataset might be, expanding your ability to analyze your data.
+In general, a line graph is a fantastic choice for data that could be well fit with a function (i.e. an x,y category where every x has just one corresponding y value, and where the x,y pairs strongly correlate in a mathematical way). It allows you to make inferences on what values that weren’t in the original dataset might be expanding your ability to analyze your data.
 
 Image Details:
 * [line-chart.png](http://www.google.com): Copyright Google
@@ -229,9 +229,9 @@ When there are multiple data points for the same place on the x-axis, line chart
 
 Problems:
 * Swimmers with different training habits will be able to swim different lengths, despite training the same amount, and vice versa. In other words, there may be multiple y values for a particular x value. A visualization with a continuous line masks these variations.
-  * These values can be interesting to analyze, and they can be encapsulated in other visualizations, without losing the ability to see other trends.
+  * These values can be interesting to analyze, and they can be encapsulated in other visualizations without losing the ability to see other trends.
 * Line charts always indicate a continuous correlation, even when there might not be one. Gaps (i.e. discrete jumps) in the data are missing when we visualize it as a continuous line.
-  * Ex. Does an extra ½ hour of swimming per week really boost your max distance an extra little bit, or is it actually that you have to jump to a whole hour?
+  * Example: Does an extra ½ hour of swimming per week really boost your max distance an extra little bit, or is it actually that you have to jump to a whole hour?
 
 Image Details:
 * [bad-line-chart.png](http://www.google.com): Copyright Google
@@ -248,7 +248,7 @@ Scatter plots can help show correlations between two variables.
 
 Why:
 * It's much more clear where the gaps, overlaps, and groups form.
-* We are still able to grasp the general trends (lose very little value) without the line and now we also have more possibilities for analysis!
+* We are still able to grasp the general trends (lose very little value) without the line, and now we also have more possibilities for analysis!
 
 In general if you have x,y data where you have multiple y values for every x, a scatter plot is a good choice as it allows you to see all the data clearly and doesn’t average out y values for a given x like a line graph would.
 
@@ -267,7 +267,7 @@ When there is too much data, a scatter plot will not be useful.
 
 Problems:
 * Too many points to draw conclusions
-* There may be a higher concentration of points in some areas, but in this format we cannot tell
+* There may be a higher concentration of points in some areas, but in this format we cannot tell.
 
 Image Details:
 * [bad-scatter-plot.png](http://www.google.com): Copyright Google
@@ -283,10 +283,10 @@ Image Details:
 Heatmaps are good for visualizing concentrated, continuous data.
 
 Why:
-* We can now see the maximum and minimum amounts, where before we could only estimate
-* We can better analyze trends when we know the concentrations of points in each area
+* We can now see the maximum and minimum amounts, where before we could only estimate.
+* We can better analyze trends when we know the concentrations of points in each area.
 
-In general heatmaps are good when you have lots of overlapping points in an x,y format. It allows you to see trends in very large datasets, and can often be overlaid on maps or other graphics to show concentrations in an even clearer visual format.
+In general heatmaps are good when you have lots of overlapping points in an x,y format. It allows you to see trends in very large datasets, and it can often be overlaid on maps or other graphics to show concentrations in an even clearer visual format.
 
 @Exercise (5 minutes): {
 Think Pair Share - We can imagine a heatmap wouldn’t work as well for other types of data. What types wouldn’t be as good with a heatmap?
@@ -321,7 +321,7 @@ Which type of visualization do you think would best represent the data below?
 @Exercise (20 minutes): {
 Think pair share: Discuss the possible charts that would be good for the different types of data on the following slides.
 
-It might be helpful to write the following list on the board, or have the students take notes, so they can reference it during their discussions with peers:
+It might be helpful to write the following list on the board or have students take notes, so they can reference it during their discussions with peers:
 
 * Line chart or bar chart depending on scope of the data
 * Scatter Plot
@@ -340,12 +340,12 @@ It might be helpful to write the following list on the board, or have the studen
 ![center](res/candy-count-charts.png)
 
 <!--
-Here are some example visualizations of the candy count.
+Here are some example visualizations of the candy count:
 
-* Pie Chart - could work, good if you want to see how the bag has been portioned out as a whole
-* Bar Chart - could work, good because the data is categorical better for analysis between individual candy types
-* Scatter Plot - not good, draws correlation + x axis has no meaningful ordering
-* Line Graph - not good, draw a correlation where there is none in the space between chocolate types - masks the true values
+* Pie chart - could work, good if you want to see how the bag has been portioned out as a whole
+* Bar chart - could work, good because the data is categorical better for analysis between individual candy types
+* Scatter plot - not good, draws correlation + x axis has no meaningful ordering
+* Line graph - not good, draw a correlation where there is none in the space between chocolate types - masks the true values
 
 Image Details:
 * [candy-count-charts.png](http://www.google.com): Copyright Google
@@ -437,7 +437,7 @@ What are the possible charts that would be good for this data?
 So how do we build these visualizations?
 
 There are actually many toolkits for building visualizations that range from
-low-level libraries where you are rendering shapes manually to automated systems
+low-level libraries where you are rendering shapes manually, to automated systems
 that simply require you to feed them data and get a chart back.
 
 One library that you'll often see used in data science is
@@ -448,7 +448,7 @@ Another library that you'll often see is
 [seaborn](https://seaborn.pydata.org/). Seaborn is built on top of Matplotlib
 and can produce eye-pleasing charts easily.
 
-In the lab you'll get to use both to create the types of charts that we've
+In the lab you'll get to use both to create the types of charts we've
 discussed in this lecture.
 
 Image Details:
