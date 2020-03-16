@@ -1,5 +1,5 @@
 {
-    "learning objectives": [
+    "learning-objectives": [
         "Differentiate between classification and regression models.",
         "Create a logistic regression model for a binary classification problem.",
         "Interpret a confusion matrix for a binary classification model.",
