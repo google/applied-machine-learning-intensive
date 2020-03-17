@@ -12,7 +12,7 @@ img[alt~="center"] {
 # Introduction to Python
 
 <!--
-Welcome to our Introduction to Python unit. In this unit we'll introduce you to the Python programming language. If you have programmed in another language, you'll likely get up to speed really quickly. Even if you have never programmed before though, you'll find that Python is an easy and approachable language that caters to the beginner while still providing powerful tools for the expert.
+Welcome to our Introduction to Python unit. In this unit we'll introduce you to the Python programming language. If you have programmed in another language, you'll likely get up to speed really quickly. Even if you have never programmed before, you'll find that Python is an easy and approachable language that caters to the beginner while still providing powerful tools for the expert.
 -->
 
 ---
@@ -51,9 +51,9 @@ There are multiple versions of Python in the world.
 
 Python 3 is the modern version and how all new code should be written. In this course, we'll focus on Python 3.
 
-From the outside, the move from Python 2 to Python 3 might be difficult to notice. There are a few syntax differences... we've illustrated some in this slide. There are more subtle differences and a lot of performance improvements that we won't mention here.
+From the outside, the move from Python 2 to Python 3 might be difficult to notice. There are a few syntax differences, some of which we've illustrated in this slide. There are more subtle differences and a lot of performance improvements that we won't mention here.
 
-When looking at Python reference docs, look for the version number in the URL and make sure that you are looking at the documents for Python 3!
+When looking at Python reference docs, look for the version number in the URL, and make sure you're looking at the documents for Python 3!
 -->
 
 ---
@@ -73,7 +73,7 @@ Python 3 can be executed directly from the command line by running the `python3`
 
 You can tell which version you are running by reading the first line in the output of the command. In this example, the particular version that we are using is 3.7.5.
 
-The three greater-than symbols tell us that we are in a interactive Python shell. In this shell we can type Python commands.
+The three greater-than symbols tell us we are in a interactive Python shell. In this shell we can type Python commands.
 -->
 
 ---
@@ -157,7 +157,7 @@ In order to use those libraries you need to import them. Here are three ways to 
 
 In the first, we import the `re` (regular expression) library directly.
 
-In the second, we import the `tensorflow` library but refer to it as `tf` for short. You can use any valid identifier in the place of `tf`, but you'll find that there are many conventions such as using `tf` for `tensorflow` that are expected by the community.
+In the second, we import the `tensorflow` library but refer to it as `tf` for short. You can use any valid identifier in the place of `tf`, but you'll find that there are many conventions, such as using `tf` for `tensorflow` that are expected by the community.
 
 In the third, we import the `mean_squared_error` function from the `sklearn.metrics` library. This makes only this function available to us. We also don't have to use a prefix.
 -->
@@ -237,13 +237,13 @@ It
 ```
 
 <!--
-Strings are powerful data types. In Python 3, they are unicode encoded by default. They are also "immutable". Once you make a string, you can't change it directly.
+Strings are powerful data types. In Python 3, they are unicode encoded by default. They are also "immutable." Once you make a string, you can't change it directly.
 
 Here are a few ways to make strings. The first example uses single quotes.
 
-The second example also uses single quotes, but since the string itself contains a single quote, that quote has to be *escaped*. The backslash before the single quote denotes that the single quote is part of the string. The backslash itself is not part of the string, just the single quote in "I'm". Any ideas how you get a backslash in a string?
+The second example also uses single quotes, but since the string itself contains a single quote, that quote has to be *escaped*. The backslash before the single quote denotes that the single quote is part of the string. The backslash itself is not part of the string, just the single quote in "I'm." Any ideas how you get a backslash in a string?
 
-The third example switches over to using double-quotes for the string. Now there is no need to escape the single quote in "I'm".
+The third example switches over to using double-quotes for the string. Now there is no need to escape the single quote in "I'm."
 
 The final two examples are "triple-quoted" strings. This string type allows you to type newlines in strings. Typically these types of strings are used for documentation.
 -->
@@ -275,7 +275,7 @@ In the third example, we create a list of integers.
 
 In the fourth example, we create a list containing an integer, a float, a string, and a bool. Lists can contains any type of value. This is different than some languages that require lists to all be of the same type.
 
-And in the final example you can see that we have a list that contains another list. You can nest lists as much as you need too.
+And in the final example, you can see that we have a list that contains another list. You can nest lists as much as you need too.
 -->
 
 ---
@@ -297,15 +297,15 @@ tuple()                         # empty tuple
 ```
 
 <!--
-Tuples are a list-like data structure that is core to Python. At a very "hand-wavy" level you can think of a tuple as an immutable list. There are a few other differences, but they aren't necessary at this stage of your Python journey. If you are interested in learning about the intricacies of Python we suggest taking a look at the book 'Fluent Python' published by O'Reilly Media.
+Tuples are a list-like data structure that is core to Python. At a very "hand-wavy" level, you can think of a tuple as an immutable list. There are a few other differences, but they aren't necessary at this stage of your Python journey. If you are interested in learning about the intricacies of Python, we suggest taking a look at the book 'Fluent Python' published by O'Reilly Media.
 
-In the first example, we create an empty tuple using parenthesis and a comma. It is a little awkward syntax, but the comma is required for Python to realize that you actually want a tuple.
+In the first example, we create an empty tuple using parentheses and a comma. It is a little awkward syntax, but the comma is required for Python to realize that you actually want a tuple.
 
 The next example shows creating a tuple using the `tuple()` class.
 
 Similar to a list, you can create tuples containing a single data type.
 
-If you look at the fourth example ,you can see that we can also create a tuple without parenthesis. The presence of commas is enough for Python to know that we want a tuple. This is core to Python. You often pass tuples around this way without thinking twice about it.
+If you look at the fourth example ,you can see that we can also create a tuple without parentheses. The presence of commas is enough for Python to know that we want a tuple. This is core to Python. You often pass tuples around this way without thinking twice about it.
 
 And finally in the last two examples, you can see that we can have a tuple of mixed data types, even list and tuple data types.
 -->
@@ -327,7 +327,7 @@ dict()                        # empty dictionary
 <!--
 Python also supports dictionaries. A dictionary is a bundle of key-value pairs. These are sometimes called maps in other languages.
 
-In the first two examples you can see two ways to create an empty dictionary. The `dict()` method also can populate a dictionary in interesting ways that you might want to explore.
+In the first two examples you can see two ways to create an empty dictionary. The `dict()` method can also populate a dictionary in interesting ways that you might want to explore.
 
 The third example shows a basic pre-populated dictionary. You can see that keys and values can be different data types. The only real constraint is that keys must be immutable. This means that integers, floats, strings, and tuples can all be used as keys. Dictionaries and lists are not allowed. Also, if a tuple contains a mutable data type, it cannot be a key.
 -->
@@ -354,13 +354,13 @@ print(type(c))
 ```
 
 <!--
-Variables are labels that you can use to represent data in your program. You can assign values to them, read those values, and change those values. In the example above, we create variables `a`, `b`, and `c`.
+Variables are labels that you can use to represent data in your program. You can assign values to them, read those values, and change those values. In the example above, we create variables `a`, `b`, and `c'.
 
 In some languages, you have to declare the type of a variable. In Python, you don't. Python is able to determine the type of your variable from context.
 
 The Python interpreter will not help you catch mistyped variables in most cases. You typically only realize a type mistake when you run the code and something goes wrong. For this reason, it is typically a good idea to try to keep a variable set to the same type.
 
-In version 3.5 of Python, type annotations were added. This allows you to give the interpreter hints about the types of the variables that you are using. The hints aren't enforced, but they do allow pre-runtime checkers to find instances where the wrong type is being used. As of the time of the release of this course, early 2020, type annotations aren't yet in wide-spread use so we don't use them in examples in this course.
+In version 3.5 of Python, type annotations were added. This allows you to give the interpreter hints about the types of the variables that you are using. The hints aren't enforced, but they do allow pre-runtime checkers to find instances where the wrong type is being used. As of the time of the release of this course, early 2020, type annotations aren't yet in widespread use, so we don't use them in examples in this course.
 -->
 
 ---
@@ -423,7 +423,7 @@ my stringyour string
 <!--
 Here we have some examples of working with string variables.
 
-Strings are objects. Objects are the combination of data - in this case the value of the string - and methods which can be called on that data. In this case, we call `.upper()` on our string variable to get a copy of the string converted to upper-case.
+Strings are objects. Objects are the combination of data -- in this case, the value of the string -- and methods which can be called on that data. In this case, we call `.upper()` on our string variable to get a copy of the string converted to upper-case.
 
 Strings consist of characters. In our second print statement, we print the second character of the string `a`. Counting starts at 0. In the third print statement, we print a slice of a string. We start at the second character (index 1) and end at index 4. Notice that the character in index 1 is included in the output, but the character at index 4 is not. Slicing always includes the value at the first index and excludes the final index.
 
@@ -521,11 +521,11 @@ cow
 ```
 
 <!--
-In this slide, we can see some examples of how to use a dictionary. Similar to lists and tuples, the dictionary can be indexed. In this case, it is indexed by key (not value) and you can't slice a dictionary since the data stored in a dictionary isn't ordered.
+In this slide we see some examples of how to use a dictionary. Similar to lists and tuples, the dictionary can be indexed. In this case, it is indexed by key (not value), and you can't slice a dictionary since the data stored in a dictionary isn't ordered.
 
 As you can see, dictionaries are modifiable.
 
-In the final two examples, you can see that we can stack indexes to reference deep into embedded lists, tuples, and dictionaries.
+In the final two examples, you can see we can stack indexes to reference deep into embedded lists, tuples, and dictionaries.
 -->
 ---
 
@@ -551,11 +551,11 @@ Here we have an example of the if/elif/else flow control mechanism. Can anyone t
 
 It prints the maximum value out of three values.
 
-The `if` statement checks to see if `a > b` and `a > c`. If both cases are true, then `a` is printed and the other cases aren't considered. If the first condition is false, the `elif` is checked. If that is true `b` is printed. If not we moved to the `else` case, which is the case of last resort.
+The `if` statement checks to see if `a > b` and `a > c`. If both cases are true, then `a` is printed, and the other cases aren't considered. If the first condition is false, the `elif` is checked. If that is true `b` is printed. If not we moved to the `else` case, which is the case of last resort.
 
 `if` is the only required part of this series of blocks. The first block in a conditional statement is always the `if` block, and all subsequent blocks are optional but must be `elif` or `else` blocks.
 
-`elif` is optional and there can be as many `elif` cases that you want. `elif` is short for "else if". `elif` statements are executed in order. The first case to be true has its block executed and none of the following blocks are considered.
+`elif` is optional, and there can be as many `elif` cases that you want. `elif` is short for "else if". `elif` statements are executed in order. The first case, to be true, has its block executed, and none of the following blocks are considered.
 
 The `else` block is run only if none of the cases before ir are true. There can be zero or one `else`. It always has to come last.
 
@@ -617,7 +617,7 @@ a apple
 <!--
 Dictionaries are iterable too. By default for loops pass over the keys of a dictionary. You can use those to index into the dictionary.
 
-In the second example, you can see us looping over values. There is no (efficient) way to get the keys in this case.
+In the second example, you can see us looping over values. There is no efficient way to get the keys in this case.
 
 And finally, you can loop over the keys and values at the same time using `.items()`.
 
@@ -671,7 +671,7 @@ while count < 3:
 <!--
 Python also has a `while` loop. While loops iterate until their condition is met. In this case, we count to 2 and print the values.
 
-Warning! Since while loops aren't iterating over iterables but instead are waiting for a boolean condition to be False, it is possible to create infinite loops.
+Warning! Since while loops aren't iterating over iterables, but instead are waiting for a boolean condition to be False, it is possible to create infinite loops.
 -->
 
 ---
@@ -694,7 +694,7 @@ and a is None
 ```
 
 <!--
-When a value is not known in Python we use the `None` value. `None` is roughly equivalent to `null` or `nil` that you might find in some other languages.
+When a value is not known in Python, we use the `None` value. `None` is roughly equivalent to `null` or `nil` that you might find in some other languages.
 
 One key thing to know about Python's `None` is that `None == None`. This is different than some languages that consider null values to not equal each other.
 
