@@ -15,7 +15,7 @@ img[alt~="center"] {
 
 <!--
 So far we have only worked with tiny datasets that we have hard-coded. 
-As we begin to move deeper into data science we will need to work with
+As we begin to move deeper into data science, we will need to work with
 larger and more complex datasets. In order to do that, we need to know how to
 get the datasets into our Colab environments.
 
@@ -30,7 +30,7 @@ We'll cover a few ways of doing that in this lecture.
 # Uploading Data
 
 <!--
-One of the most straight-forward ways of getting data into Colab is to upload it
+One of the most straightforward ways of getting data into Colab is to upload it
 into the lab. If you have a file on your machine and want to get it into Colab,
 you can do so with just a few clicks.
 
@@ -73,7 +73,7 @@ Image Details:
 
 <!--
 You will then be presented with a file selector dialog box. Find the file on
-your local machine and then click the 'Open' button.
+your local machine, and then click the 'Open' button.
 
 Image Details:
 * [file-selector.png](http://www.google.com): Copyright Google
@@ -88,7 +88,7 @@ Image Details:
 <!--
 The first time you upload a file to an active lab you will see a warning telling
 you that the files won't stick around forever. Colab environments run for a
-fixed amount of time (less than a day) and then the runtime gets recycled.
+fixed amount of time (less than a day), and then the runtime gets recycled.
 
 For this class and for small data science and machine learning projects, this is
 okay. For longer-running projects, there are ways to point Colab at a different
@@ -149,10 +149,10 @@ df = pd.read_csv('/data.csv')   # Reads /
 ```
 
 <!--
-The landing spot of the file effects the way you read the file into a
+The landing spot of the file affects the way you read the file into a
 `DataFrame`. By default Colab considers `/content/` to be the working directory,
 so if you upload data to `/content/` you can read it directly as shown in the
-first example of this slide. If you upload data to root you have to use the
+first example of this slide. If you upload data to root, you have to use the
 `../` syntax to read from the parent directory or the `/` syntax to read from
 root.
 -->
@@ -262,7 +262,7 @@ df = pd.DataFrame(query, columns=column_names)
 
 <!--
 If your data is stored in a database, you can use SQL to read data into a
-`DataFrame`. To do this, you need to create a database connection. Then create a
+`DataFrame`. To do this you need to create a database connection. Then create a
 query to read the data you are interested in. Finally, you can pass the query to
 Pandas to create a new `DataFrame` containing the data.
 
@@ -296,11 +296,11 @@ for-pay tiers.
 Here is an example of using the `tweepy` API to query Twitter for the term
 'Machine Learning'.
 
-You can see that we first have to authenticate, and then once we authenticate we
+You can see that we first have to authenticate, and then once we authenticate, we
 can call the `search` functions on the API.
 
 Every API is different. If you have a service that you want to get data from,
-check and see if they have an API. Then, see if there is a Python wrapper around
+check and see if they have an API. Then see if there is a Python wrapper around
 that API. For example, tweepy is a library that makes working with the Twitter
 API easier. Wrappers exist for many popular services, so always check before
 trying to use any API directly.
