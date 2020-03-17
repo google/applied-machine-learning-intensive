@@ -1,3 +1,14 @@
+---
+marp: true
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # EDA: Exploratory Data Analysis
 
 <!--
@@ -59,12 +70,12 @@ single-column information, cross-column information, and then cross-table inform
 
 # EDA: Table-Level Analysis
 
-![](res/describe.png)
+![center](res/describe.png)
 
 <!--
 Table-level analysis is all about getting to know data about an individual
 table or `DataFrame` of data as a whole. Using `describe()` we can see things like
-the column names and the row counts.oo
+the column names and the row counts.
 
 In this example we can see that there are 1795 rows. We can see that some are
 missing values. We can also see the column names and can infer the column types
@@ -125,11 +136,11 @@ with information.
 
 # EDA: Cross-Column Analysis
 
-![](res/correlation.png)
+![center](res/correlation.png)
 
 <!--
-Cross-column analysis simply means looking at how the relationships among data
-across columns. This is often done visually, but it doesn't have to be. In the example
+Cross-column analysis simply means looking at the relationships among data across
+columns. This is often done visually, but it doesn't have to be. In the example
 shown, we can see the correlation between columns with a call to `corr()`.
 
 Recall that the Pearson correlation coefficient is used to measure the strength of a 
@@ -150,7 +161,7 @@ Image Details:
 
 # EDA: Cross-Column Analysis
 
-![](res/boxplot.png)
+![center](res/boxplot.png)
 
 <!--
 Of course, many times visualizations are very helpful. Here we see a boxplot of
@@ -169,7 +180,7 @@ Image Details:
 
 # EDA: Cross-Table Analysis
 
-![](res/country.png)
+![center](res/country.png)
 
 <!--
 Often we'll find ourselves working with many sources of data. Even data from the
@@ -224,8 +235,8 @@ These techniques are used to make your data more palatable to your model. We'll
 dig into each of these during this course. But here's a quick overview of each one 
 on this list. 
 
-* Normalization usually means rescale the values into a range of [0,1]. 
-* Standardization usually means rescale data to have a mean of 0 and a standard deviation of 1.
+* Normalization usually means rescaling the values into a range of [0,1]. 
+* Standardization usually means rescaling data to have a mean of 0 and a standard deviation of 1.
 * One-hot encoding is a process of converting categorical variables into 0's and 1's (which 
 is better for many ML algorithms).
 
@@ -246,17 +257,17 @@ when to use certain preprocessing techniques.
 <!--
 What happens when you do find bad data?
 
-There are a few strategies. If possible, it is good to fill in and fix data
-where possible. Sometimes you just have to get rid of problematic data, though.
-There is no one-size fits all approach, and we will see many examples of 
-these preprocessing steps in the lab and throughout the course. 
+There are a few strategies. It is best to fill in and fix data wherever possible.
+Sometimes you just have to get rid of problematic data, though. There is no one-size
+fits all approach, and we will see many examples of these preprocessing steps in the
+lab and throughout the course. 
 -->
 
 ---
 
-# EDA: Lab [Chocolate Bar Ratings](https://www.kaggle.com/rtatman/chocolate-bar-ratings)
+# EDA: [Chocolate Bar Ratings Lab](https://www.kaggle.com/rtatman/chocolate-bar-ratings)
 
-* Part 1: Individual tables and column
+* Part 1: Individual tables and columns
 * Part 2: Cross tables and columns
 
 <!--
