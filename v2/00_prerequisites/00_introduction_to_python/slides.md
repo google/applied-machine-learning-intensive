@@ -73,7 +73,7 @@ Python 3 can be executed directly from the command line by running the `python3`
 
 You can tell which version you are running by reading the first line in the output of the command. In this example, the particular version that we are using is 3.7.5.
 
-The three greater-than symbols tell us we are in a interactive Python shell. In this shell we can type Python commands.
+The three greater-than symbols tell us we are in an interactive Python shell. In this shell we can type Python commands.
 -->
 
 ---
@@ -204,7 +204,7 @@ True   # bool
 ```
 
 <!--
-Python supports core data types that you have probably seen if you have programmed in another programing language. Here you can see four basic types:
+Python supports core data types that you have probably seen if you have programmed in another programming language. Here you can see four basic types:
 
 * integer: whole numbers (can be negative)
 * float: decimal numbers (can be negative)
@@ -273,7 +273,7 @@ In the second example, you can see a list created using the `list()` class.
 
 In the third example, we create a list of integers.
 
-In the fourth example, we create a list containing an integer, a float, a string, and a bool. Lists can contains any type of value. This is different than some languages that require lists to all be of the same type.
+In the fourth example, we create a list containing an integer, a float, a string, and a bool. Lists can contain any type of value. This is different from some languages that require lists to all be of the same type.
 
 And in the final example, you can see that we have a list that contains another list. You can nest lists as much as you need too.
 -->
@@ -462,7 +462,7 @@ In this example, we create a list variable. Notice that you can index a list jus
 
 `len()` also works on lists. Notice that in this case it gives the length of the outer list, not the inner list.
 
-Lists are mutable, so we can change values in them, combine lists, sort lists, add values to list, remove values from lists, and more.
+Lists are mutable, so we can change values in them, combine lists, sort lists, add values to lists, remove values from lists, and more.
 
 Lists can also be sliced. Notice that the slice returns another list.
 
@@ -557,7 +557,7 @@ The `if` statement checks to see if `a > b` and `a > c`. If both cases are true,
 
 `elif` is optional, and there can be as many `elif` cases that you want. `elif` is short for "else if". `elif` statements are executed in order. The first case, to be true, has its block executed, and none of the following blocks are considered.
 
-The `else` block is run only if none of the cases before ir are true. There can be zero or one `else`. It always has to come last.
+The `else` block is run only if none of the cases before it are true. There can be zero or one `else`. It always has to come last.
 
 The expressions in the `if` and `elif` lines are boolean expressions. They return True or False. The booleans can be combined with operators like `and`, `or`, and `not`.
 -->
@@ -696,7 +696,7 @@ and a is None
 <!--
 When a value is not known in Python, we use the `None` value. `None` is roughly equivalent to `null` or `nil` that you might find in some other languages.
 
-One key thing to know about Python's `None` is that `None == None`. This is different than some languages that consider null values to not equal each other.
+One key thing to know about Python's `None` is that `None == None`. This is different from some languages that consider null values to not equal each other.
 
 Also, even though you can use `==` to check for `None`, it is much more common to see the expressions `is None`.
 -->
