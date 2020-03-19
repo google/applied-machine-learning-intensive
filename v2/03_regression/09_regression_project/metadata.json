@@ -8,5 +8,12 @@
   "slides": [
     "slides.md"
   ],
-  "handouts": []
+  "handouts": [],
+  "learning-objectives": [
+    "Reason about the feasibility of a regression model",
+    "Reason about the ethics of a regression model",
+    "Independently explore a dataset with minimal guidance",
+    "Independently build a regression model and perform hyperparameter tuning",
+    "Independently judge the quality of a regression model"
+  ]
 }
