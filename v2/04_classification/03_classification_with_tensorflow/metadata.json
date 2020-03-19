@@ -6,5 +6,9 @@
     "colab.ipynb"
   ],
   "handouts": [],
-  "resources": []
+  "resources": [],
+  "learning-objectives": [
+    "Create a classification model with TensorFlow",
+    "Use a trained TensorFlow model to make classification predictions",
+  ],
 }
