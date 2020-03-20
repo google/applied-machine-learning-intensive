@@ -221,7 +221,7 @@ how to handle a case like this in the lab.
 
 ---
 
-# EDA: *Not necessarily* Data Preprocessing
+# EDA: *Not Necessarily* Data Preprocessing
 
 * Normalization
 * Standardization
