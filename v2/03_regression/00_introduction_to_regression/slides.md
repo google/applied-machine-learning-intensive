@@ -224,7 +224,7 @@ Now let's look at a few common loss/cost functions. Remember we use the function
 
 L1 Loss is also known as least absolute deviations (LAD) or least absolute errors (LAE). L1 is resistant to outliers in the data (i.e. robust). If your data has outliers that can be ignored, then L1 is a good choice. If it is important to pay attention to any and all outliers, the method of least squares is a better choice.
 
-L2 Loss is also called least squares (LS). Generally, L2 loss is preferred to L1, but when outliers are present in the data, then L2 may not perform well. The reason for this is because we are suqaring the difference between the actual target and the predicted target. So if the error is large (in the case of an extreme outlier), then the error function will overcompensate.
+L2 Loss is also called least squares (LS). Generally, L2 loss is preferred to L1, but when outliers are present in the data, then L2 may not perform well. The reason for this is because we are squaring the difference between the actual target and the predicted target. So if the error is large (in the case of an extreme outlier), then the error function will overcompensate.
 
 Mean Squared Error (MSE) is the average of the squared differences between predicted targets and actual targets. Due to squaring, predictions which are far away from actual values are penalized heavily in comparison to less deviated predictions (similar to L2). MSE also has nice mathematical properties which make it easier to calculate gradients, which are used to update the model parameters (weights and biases).
 
@@ -301,7 +301,7 @@ Image Details:
   * Choose the **learning rate**, a constant value which scales how far we tweak the value during each iteration. (Learning rate is a **hyperparameter** - not a parameter in the actual model.)
 
 <!--
-A hyperparameter is a not a parameter in the model. In other words, it's not a weight or bias. It is a value that is chosen by the machine learning specialist that controls how the algorithm "learns" the model parameters. This is a subtle but important distinction. 
+A hyperparameter is not a parameter in the model. In other words, it's not a weight or bias. It is a value that is chosen by the machine learning specialist that controls how the algorithm "learns" the model parameters. This is a subtle but important distinction. 
 
 -->
 
