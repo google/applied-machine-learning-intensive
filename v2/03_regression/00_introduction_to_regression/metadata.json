@@ -3,8 +3,8 @@
   "colabs": [],
   "learning-objectives": [
     "Train a linear regression model using scikit-learn on real data",
-    "Use root mean squared error (RMSE) to evaluate a linear regression model",
-    "Visualize features, targets, and predicted targets using a scatterplot",
+    "Use root mean squared error (RMSE) to evaluate a linear regression model.",
+    "Visualize features, targets, and predicted targets using a scatterplot.",
     "(Optional) Create a linear regression model using the normal equation and optimize using the pseudoinverse",
     "(Optional) Practice stochastic gradient descent and mini batching"
   ],

@@ -16,19 +16,21 @@ img[alt~="center"] {
 ![center](res/regression1.jpg)
 
 <!--
-Has anyone? seen a crime show or heard of an investigation where they used a footprint to determine a suspect’s height? It’s a tactic frequently mentioned in connection to forensics, but does it actually work? Let’s try it out!
+Has anyone seen a crime show or heard of an investigation where they used a footprint to determine a suspect’s height? It’s a tactic frequently mentioned in connection to forensics, but does it actually work? Let’s try it out!
 
-*Use your own shoe size and height as the suspect’s, and tell students to keep in mind that US men’s size equals US women’s size - 2.*
+@Exercise (15 minutes): {
+Use your own shoe size and height as the suspect’s, and tell students to keep in mind that US men’s size equals US women’s size - 2. Don't tell them the suspect's height, but tell them the suspect's shoe size and tell them that their task will be to guess the suspect's height.
 
-*Split the students into groups of ~6 each and give each group a sheet of graph paper.*
+Split the students into groups of ~6 each and give each group a sheet of graph paper.
 
-Plot each of your shoe sizes on the x-axis and heights on the y-axis. What do you think is the suspect's height based on their shoe size?
+Ask the groups to plot each group member's shoe size on the x-axis and height on the y-axis. What do they think is the suspect's height based on the suspect's shoe size?
 
-*Then have the groups share data, so each has a plot of the whole class’s information.*
+Then have the groups share data, so each has a plot of the whole class’s information.
 
 Make another guess per group. Does anyone come close?
 
-*They should theoretically have better guesses with more data, but shoe size might not actually be well correlated to height, so they might not.*
+They should theoretically have better guesses with more data, but shoe size might not actually be well correlated to height, so they might not.
+}
 
 Image Details:
 * [regression1.jpg](https://unsplash.com/photos/BqpdGGfezFw): Unsplash License
@@ -54,7 +56,7 @@ Image Details:
 ![center](res/regression3.png)
 
 <!--
-Recall that the equation for a line is y = m * x + b, where x denotes our input variable and y is our output. In the case of machine learning, x is input features and y is target outputs. If we were trying to forecast energy level from coffee intake, amount of coffee would be the input, and energy level would be output.
+Recall that the equation for a line is y = m * x + b, where x denotes our input variable and y is our output. In the case of machine learning, x is input features and y is target outputs. If we were trying to forecast energy level from coffee intake, amount of coffee would be the input, and energy level would be the output.
 
 Image Details:
 * [regression3.png](http://www.google.com): Copyright Google
@@ -82,7 +84,7 @@ Image Details:
 <!--
 Realistically, energy level might depend on several factors (maybe coffee, time of day, and temperature). Now, our model needs to learn three weights (one for each input feature) and one bias.
 
-The concept of weights and biases is important to most machine learning models, even complex neural networks. The model uses data to learn how each input feature affects the output and how it learns a bias to linearly shift its predictions to fit the data. This is like shifting a y-intercept.
+The concept of weights and biases is important to most machine learning models, even complex neural networks. The model uses data to learn how each input feature affects the output and it learns a bias to linearly shift its predictions to fit the data. This is like shifting a y-intercept.
 
 Image Details:
 * [regression5.png](http://www.google.com): Copyright Google
@@ -121,7 +123,7 @@ Image Details:
 
 ---
 
-# Predict Price of a House Using the Machine Learning Process
+# Predict the Price of a House Using the Machine Learning Process
 
 ![center](res/regression13.png)
 
@@ -134,7 +136,7 @@ Image Details:
 
 ---
 
-# Predict Price of a House Using the Machine Learning Process
+# Predict the Price of a House Using the Machine Learning Process
 
 ![center](res/regression14.png)
 
@@ -148,7 +150,7 @@ Image Details:
 
 ---
 
-# Predict Price of a House Using the Machine Learning Process
+# Predict the Price of a House Using the Machine Learning Process
 
 ![center](res/regression15.png)
 
@@ -161,12 +163,12 @@ Image Details:
 
 ---
 
-# Predict Price of a House Using the Machine Learning Process
+# Predict the Price of a House Using the Machine Learning Process
 
 ![center](res/regression16.png)
 
 <!--
-We use the line to forecast predict output values. For each point in our training data set (x_k,y_k), then we calculate y_kpred = m(x_k) + b. 
+We use the line to forecast predicted output values. For each point in our training data set (x_k,y_k), we calculate y_pred = m(x_k) + b. 
 
 Image Details:
 * [regression16.png](http://www.google.com): Copyright Google
@@ -174,7 +176,7 @@ Image Details:
 
 ---
 
-# Predict Price of a House Using the Machine Learning Process
+# Predict the Price of a House Using the Machine Learning Process
 
 ![center](res/regression17.png)
 
@@ -187,12 +189,12 @@ Image Details:
 
 ---
 
-# Predict Price of a House Using the Machine Learning Process
+# Predict the Price of a House Using the Machine Learning Process
 
 ![center](res/regression18.png)
 
 <!--
-Now we move onto step 2, which is to compute error/loss/cost. We calculate the error between the actual target values, and the forecasted values. The metric we use to calculated this error may be simple Euclidean distance, but there are other measures as well. We will talk about error/cost functions in a minute, but for now it's okay to think of the distance between the actual value and the forecasted value. 
+Now we move onto step 2, which is to compute error/loss/cost. We calculate the error between the actual target values, and the forecasted values. The metric we use to calculate this error can be simple Euclidean distance, but there are other measures as well. We will talk about error/cost functions in a minute, but for now it's okay to think of the distance between the actual value and the forecasted value. 
 
 Image Details:
 * [regression18.png](http://www.google.com): Copyright Google
@@ -200,7 +202,7 @@ Image Details:
 
 ---
 
-# Predict Price of a House Using the Machine Learning Process
+# Predict the Price of a House Using the Machine Learning Process
 
 ![center](res/regression19.png)
 
@@ -222,9 +224,9 @@ Now let's look at a few common loss/cost functions. Remember we use the function
 
 L1 Loss is also known as least absolute deviations (LAD) or least absolute errors (LAE). L1 is resistant to outliers in the data (i.e. robust). If your data has outliers that can be ignored, then L1 is a good choice. If it is important to pay attention to any and all outliers, the method of least squares is a better choice.
 
-L2 Loss is also called least squares LS). Generally, L2 loss is preferred to L1, but when outliers are present in the data, then L@ may not perform well. The reason for this is because we are suqaring the difference between the actual target and the predicted target. So if the error is large (in the case of an extreme outlier), then the error function will overcompensate.
+L2 Loss is also called least squares (LS). Generally, L2 loss is preferred to L1, but when outliers are present in the data, then L2 may not perform well. The reason for this is because we are suqaring the difference between the actual target and the predicted target. So if the error is large (in the case of an extreme outlier), then the error function will overcompensate.
 
-Mean Squared Error (MSE) is the average of the squared differences between predicted targets and actual targets. Due to squaring predictions which are far away from actual values are penalized heavily in comparison to less deviated predictions (similar to L2). MSE also has nice mathematical properties which makes it easier to calculate gradients, which is used to update the model parameters (weights and biases).
+Mean Squared Error (MSE) is the average of the squared differences between predicted targets and actual targets. Due to squaring, predictions which are far away from actual values are penalized heavily in comparison to less deviated predictions (similar to L2). MSE also has nice mathematical properties which make it easier to calculate gradients, which are used to update the model parameters (weights and biases).
 
 Image Details:
 * [regression20.png](http://www.google.com): Copyright Google
@@ -239,7 +241,9 @@ Image Details:
 <!--
 Let's practice calculating each of these loss functions for the data in the housing example, with the model y = 160x+1. 
 
-*Have students work in small groups to calculate the loss functions based on the data in the table. It may be helpful to write the loss functions on the board at this point. Or flip back to the slide with the loss functions and allow students to write them down.*
+@Exercise (15 minutes): {
+Have students work in small groups to calculate the loss functions based on the data in the table. It may be helpful to write the loss functions on the board at this point. Or flip back to the slide with the loss functions and allow students to write them down.
+}
 
 Image Details:
 * [regression21.png](http://www.google.com): Copyright Google
@@ -325,7 +329,7 @@ Image Details:
 ![center](res/regression25.png)
 
 <!--
-Here theta_0 is the bias and theta_1 is the weight (i.e. theta_0 = b and theta_1 = m). Using matrix/vector notation we can rewrite the equation of the line more compactly as theta^(transpose) X. 
+Here theta_0 is the bias and theta_1 is the weight (i.e. theta_0 = b and theta_1 = m).  
 
 Image Details:
 * [regression25.png](http://www.google.com): Copyright Google
@@ -394,7 +398,7 @@ Image Details:
 
 Break data into smaller batches.
   * We’ll use a new batch on each learning step.
-  * New hyperparameter batch size controls how much data is used for each learning step.
+  * New hyperparameter **batch size** controls how much data is used for each learning step.
 
  ![center](res/regression10.png)
 
