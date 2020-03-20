@@ -57,8 +57,8 @@ fix obvious errors, and then explore through questions. Some of these questions
 are created during the initial cleaning pass.
 
 Your approach to EDA will also depend on the type of data you're working with. 
-For example, are you looking at images/videos or tabular data (like we've been 
-working with in Pandas)? We will talk more about image data in a later unit of 
+For example, are you looking at images and videos or tabular data (like we've been 
+working within Pandas)? We will talk more about image data in a later unit of 
 this course. 
 
 If you're working with tabular data, then regardless of how you approach the analysis, 
@@ -237,7 +237,7 @@ on this list.
 
 * Normalization usually means rescaling the values into a range of [0,1]. 
 * Standardization usually means rescaling data to have a mean of 0 and a standard deviation of 1.
-* One-hot encoding is a process of converting categorical variables into 0's and 1's (which 
+* One-hot encoding is a process of converting categorical variables into 0s and 1s (which 
 is better for many ML algorithms).
 
 Your preprocessing steps are informed by your research questions and the model 
