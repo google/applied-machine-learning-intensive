@@ -18,7 +18,7 @@ There are times when working with input data that consists of images, one needs 
 
 <!--
 Matplotlib
-* We’ll use the matplotlib Python library that you’re familiar with and have used for creating charts. But in this exercise, we’ll use it to plot an image, instead of chart.
+* We’ll use the matplotlib Python library that you have already used for creating charts. But in this exercise, we’ll use it to plot an image, instead of chart.
 
 PIL (Python Imaging Library)
 * Free library for the Python programming language that adds support for opening, manipulating, and saving many different image file formats
@@ -62,8 +62,8 @@ Let’s see how to do that in code.
 
 <!--
 How do we figure how much to pad the image to make it square shape?
-First, determine the longest dimension between the width and height of the original image
-Figure out how much padding needed in the height and width of the image.  In this case, we need to pad the image’s height to match the image’s width.
+First, determine the longest dimension between the width and height of the original image.
+Figure out how much padding is needed in the height and width of the image.  In this case, we need to pad the image’s height to match the image’s width, since the width is larger than the height.
 -->
 
 ---
@@ -88,7 +88,7 @@ Alright, we are ready to do the padding. We use the PIL module again to do the p
 
 ---
 
-# Resize image
+# Resize the image
 
 ![](res/imagemaninpy8.png)
 
