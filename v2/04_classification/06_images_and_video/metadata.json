@@ -1,8 +1,8 @@
 {
   "name": "Image Manipulation",
   "colabs": [
-    "open_cv.ipynb",
     "pil.ipynb",
+    "open_cv.ipynb",
     "video_processing.ipynb",
   ],
   "slides": [
