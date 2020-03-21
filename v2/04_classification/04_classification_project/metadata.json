@@ -9,5 +9,9 @@
   ],
   "handouts": [],
   "resources": [],
-  "materials": []
+  "materials": [],
+  "learning-objectives": [
+    "Define, build, train and evaluate a Linear Classifier model in TensorFlow",
+    "Submit predictions to a Kaggle challenge",
+  ],
 }
