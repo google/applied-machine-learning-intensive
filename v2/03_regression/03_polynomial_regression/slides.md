@@ -1,17 +1,27 @@
+---
+marp: true
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Polynomial Regression & Overfitting
 
 ---
 
-# What Are We Doing Here?
+# Outline
 
-1.  Remind ourselves of **Linear Regression**
-1.  **Polynomial Regression**: What is it and how is it different?
+1.  Recall **Linear Regression**
+1.  **Polynomial Regression**: What is it and how is it different (or not so different)?
 1.  Caution! **Dangers** of polynomial regression!
-1.  Regression vs. **Interpolation** (connect the dots!)
 
 ---
 
-![](res/polynomialregression1.gif)
+![center](res/polynomialregression1.gif)
 
 <!--
 We have seen linear regression and have implemented it using multiple toolkits. We found the line of best fit using optimizers such as gradient descent. Though linear regression can be a powerful predictive tool, it isn't appropriate for all types of regression problems.
@@ -22,7 +32,7 @@ Image Details:
 
 ---
 
-![](res/polynomialregression2.png)
+![center](res/polynomialregression2.png)
 
 <!--
 Take a look at this dataset for a few seconds. See if you can find a good spot to place a line.
@@ -33,10 +43,10 @@ Image Details:
 
 ---
 
-![](res/polynomialregression3.png)
+![center](res/polynomialregression3.png)
 
 <!--
-This is the line that the closed form of linear regression would create. It doesn't look like a very good fit does it? The r-squared score for this line is actually 0.228.
+This is the line that the closed form of linear regression would create. It doesn't look like a very good fit does it? The R-squared score for this line is actually 0.228.
 
 Image Details:
 * [polynomialregression3.png](http://www.google.com): Copyright Google
@@ -44,10 +54,10 @@ Image Details:
 
 ---
 
-![](res/polynomialregression4.png)
+![center](res/polynomialregression4.png)
 
 <!--
-We can see that if we introduce a polynomial line (in this case a 2nd degree polynomial), we get a much better looking fit. The r-squared score is now 0.790.
+We can see that if we introduce a polynomial line (in this case a 2nd degree polynomial), we get a much better looking fit. The R-squared score is now 0.790.
 
 Image Details:
 * [polynomialregression4.png](http://www.google.com): Copyright Google
@@ -55,10 +65,10 @@ Image Details:
 
 ---
 
-![](res/polynomialregression5.png)
+![center](res/polynomialregression5.png)
 
 <!--
-Here are a few examples of polynomial equations. The topmost is the linear equation that we are used to. The next is commonly called a quadratic equation. The third is a cubic equation. The number of factors you can add to the equation is theoretically unbounded, though you'll pay a computational expense for very large equations and also introduce the risk of overfitting (which we'll talk about soon).
+Here are a few examples of polynomial equations. The topmost is the linear equation that we are used to. The next is commonly called a quadratic equation. The third is a cubic equation. The number of factors you can add to the equation is theoretically unbounded, though you'll pay a computational expense for polynomials of higher degree and also increase the risk of overfitting (which we'll talk about soon).
 
 Image Details:
 * [polynomialregression5.png](http://www.google.com): Copyright Google
@@ -66,7 +76,7 @@ Image Details:
 
 ---
 
-![](res/polynomialregression6.png)
+![center](res/polynomialregression6.png)
 
 <!--
 Turn to a partner next to you and discuss the above two questions.
@@ -77,7 +87,7 @@ Image Details:
 
 ---
 
-![](res/polynomialregression7.png)
+![center](res/polynomialregression7.png)
 
 <!--
 This dataset was actually randomly generated based on a polynomial equation with some random noise. You can see the line drawn in green on the chart. Our predicted line in red isn't perfect by any means. You can see a much sharper slope at both ends, but it is still better than a straight-line fit.
@@ -88,7 +98,7 @@ Image Details:
 
 ---
 
-![](res/polynomialregression8.png)
+![center](res/polynomialregression8.png)
 
 <!--
 Turn to a partner next to you and discuss the above two questions.
@@ -101,7 +111,20 @@ Image Details:
 
 ---
 
-![](res/polynomialregression9.png)
+# Polynomial Regression = Linear Regression
+
+![center](res/polynomialregression19.png)
+
+<!--
+To find the weights and biases for a polynomial regression model, we recast the problem as a multivariate linear regression problem. Then we are able to use all the machinery we've already developed to "learn" the parameters.  
+
+Image Details:
+* [polynomialregression19.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+![center](res/polynomialregression9.png)
 
 <!--
 What could possibly go wrong if we use a polynomial to fit the following data? Brainstorm some ideas.
@@ -112,10 +135,12 @@ Image Details:
 
 ---
 
-![](res/polynomialregression10.png)
+![center](res/polynomialregression10.png)
 
 <!--
-*Pretend to throw one more data point about in (B) in a region where the curve does not pass through, to show one point could throw off entire fit.*
+*Pretend to throw one more data point into (B) in a region where the curve does not pass through (perhaps above the second valley).* 
+
+It is clear that (B) is not able to generalize to new data points. 
 
 Image Details:
 * [polynomialregression10.png](http://www.google.com): Copyright Google
@@ -127,10 +152,10 @@ Image Details:
 
 ---
 
-![](res/polynomialregression11.jpg)
+![center](res/polynomialregression11.jpg)
 
 <!--
-Let's think of overfitting by looking into clothing. Here, we have a person wearing a reasonably well-fitting suit.
+Let's think of overfitting by looking into clothing. Here, we have a person wearing a reasonably well-fitting shirt.
 
 Source: photo by NordWood Themes on Unsplash
 
@@ -140,10 +165,10 @@ Image Details:
 
 ---
 
-![](res/polynomialregression12.jpg)
+![center](res/polynomialregression12.jpg)
 
 <!--
-Clothing can be a little more form-fitting, which reduces the number of people that it will fit. This is overfitting. You can think of it like a custom-tailored suit that you could never lend to someone else.
+Clothing can be a little more form-fitting, which reduces the number of people that it will fit. This is overfitting. You can think of it like a custom-tailored suit of armor that you could never lend to someone else.
 
 Source: photo by Hugo L. Casanova on Unsplash
 
@@ -153,7 +178,7 @@ Image Details:
 
 ---
 
-![](res/polynomialregression13.jpg)
+![center](res/polynomialregression13.jpg)
 
 <!--
 There is the other extreme, where you make clothing so loose that just about anyone could wear it. This would be underfitting.
@@ -164,7 +189,7 @@ Image Details:
 
 ---
 
-![](res/polynomialregression14.jpg)
+![center](res/polynomialregression14.jpg)
 
 <!--
 Most of the time, you probably just want a simple, midsized, unisex t-shirt of a given style.
@@ -175,7 +200,7 @@ Image Details:
 
 ---
 
-![](res/polynomialregression15.png)
+![center](res/polynomialregression15.png)
 
 <!--
 So how does this apply to real data? Here is an illustration of overfitting a regression model. You can see how the regression line perfectly fits the data points on the graph, but it can't necessarily predict well for future x-values.
@@ -188,7 +213,7 @@ Image Details:
 
 ---
 
-How Do You Avoid This? {.big}
+# How Do We Avoid This?
 
 <!--
 Given the problem of a polynomial fitting data too closely, how would you avoid overfitting?
@@ -197,7 +222,7 @@ Given the problem of a polynomial fitting data too closely, how would you avoid 
 
 ---
 
-Avoiding Overfitting {.big}
+# Avoiding Overfitting
 
 * Simpler polynomial
 * More training data
@@ -221,55 +246,55 @@ And finally, there are strategies for adding penalties to the model to make even
 # Regularization
 
 <!--
-Regularization is a method of "shrinking" the coefficients in the learned equation. There are two distinct types we will look at: Lasso and Ridge.
+Regularization is a method of "shrinking" the coefficients in the learned equation. There are many types of regularizers, but we will look at the two most common ones here. They are Lasso and Ridge.
 
 https://medium.com/@yongddeng/regression-analysis-lasso-ridge-and-elastic-net-9e65dc61d6d3
 -->
 
 ---
 
-# Loss
+# Recall: Mean Squared Error
 
-![](res/polynomialregression16.png)
+![center](res/polynomialregression20.png)
 
 <!--
-What does it mean to shrink coefficients? It effectively means to increase the value of the loss function as the coefficients are calculated.
+As a reminder, this is the equation of a common loss function, the mean squared error.
 
-As a reminder, this is the equation of a common loss function, the residual sum of squares.
+In this equation we have, 
 
-In this equation:
+Line 1: (y_true - y_pred) is the error between the true target and the predicted targed from the model. 
+
+Line 2: Recall that y_pred came from a linear regression equation, which can be written in matrix notation. Theta is a vector consisting of the bias term and the weights, and X is out features. 
+
+Line 3: Completing the matrix multiplication and writing the multivariate regression formula using the notation,
 
 n = number of rows in the training data
-p = coefficients in the equation
-yi = target value
-β0 = intercept
-βi = bias at each coefficient of the polynomial equation
-xi = feature value at the given factor of the polynomial equation
-
-https://en.wikipedia.org/wiki/Residual_sum_of_squares
-
-$$RSS(\beta) = \displaystyle\sum_{i=1}^{n} \left( y_i -\beta_0 - \displaystyle\sum_{j=1}^p \beta_j x_{i}^j \right)^2$$
+p = coefficients in the equation (also number of features)
+y_true = true target value
+theta_0 = intercept
+theta_j = coefficients of the polynomial equation
+x_i = feature values.
 
 Image Details:
-* [polynomialregression16.png](http://www.google.com): Copyright Google
+* [polynomialregression20.png](http://www.google.com): Copyright Google
 -->
 
 ---
 
 # Lasso (L1)
 
-![](res/polynomialregression17.png)
+![center](res/polynomialregression17.png)
 
 <!--
-Lasso is L1 regression. This means that it uses the absolute value of the coefficients and appends them to the output of the loss function.
+What does it mean to shrink coefficients? It effectively means to increase the value of the loss function as the coefficients are calculated.
+
+Lasso is L1 regression. This means that it uses the absolute value of the coefficients and appends them to the output of the loss function. We can see that by adding the absolute value of theta_j (a positive number) the cost function is always slightly larger than the regular MSE loss function. This is going to force the model to make the theta's slightly smaller. 
+
+Smaller coefficients make the model "more linear." For example, imagine we have y = theta_0 + theta_1(x) + theta_2(x^2) + theta_3(x^3), where theta_2 and theta_3 are very very small (almost 0). Then the function is almost linear. So smaller coefficients effectively control the model to scale back curvature and reduce overfitting. 
 
 LASSO is an acronym for "Least Absolute Shrinkage and Selection Operator".
 
-Due to the L1 normalization, some of the coefficients are more likely set equal to zero, depending on the regularization parameter λ, which is chosen/tuned by the cross-validation.
-
-https://en.wikipedia.org/wiki/Lasso_(statistics)
-
-$$RSS(\beta) + \lambda \displaystyle \sum_{j=1}^p \left| \beta_j \right|$$
+Due to the L1 regularization, some of the coefficients may actually equal zero. How many coefficients go to zero depends on the regularization parameter λ, which is chosen/tuned by cross-validation. Because of the fact that some coefficients may go to zero, L1 regularization can be used for dimensionality reduction. That is, we can identify which features are most important for predicting our target and removed the features whose coefficient goes to zero. 
 
 Image Details:
 * [polynomialregression17.png](http://www.google.com): Copyright Google
@@ -279,16 +304,12 @@ Image Details:
 
 # Ridge (L2)
 
-![](res/polynomialregression18.png)
+![center](res/polynomialregression18.png)
 
 <!--
 Ridge regularization looks similar to LASSO, but instead of appending the sum of absolute values of coefficients to the loss function, it appends the sum of squares of coefficients.
 
 Ridge regression seeks the value of λ that minimizes the penalized or regularized RSS. As the L2 norm is differentiable, problems using the method can be solved by gradient descent.
-
-https://en.wikipedia.org/wiki/Tikhonov_regularization
-
-$$RSS(\beta) + \lambda \displaystyle \sum_{j=1}^p \beta_j^2$$
 
 Image Details:
 * [polynomialregression18.png](http://www.google.com): Copyright Google
@@ -311,123 +332,11 @@ https://en.wikipedia.org/wiki/Elastic_net_regularization
 <!--
 It depends.
 
-- L1 regularization can drive coefficients to zero, and tends to produce a sparse model.
+- L1 regularization can drive coefficients to zero, and tends to produce a sparse model (and result in feature selection).
 - L2 regularization is less likely to drive coefficients to zero, and tends to produce a more dense model.
 - ElasticNet, as a compromise, works well in many situations.
 
 It is probably worth experimenting with each method to see which works best for your particular model.
--->
-
----
-
-Is there a way we can find a polynomial to go through the data perfectly? {.big}
-
----
-
-Is there a way we can find a polynomial to go through the data perfectly? {.big}
-**If so, should we do it?** {big}
-
----
-
-What type of function would you use to fit the following data? {.big}
-
-![](res/polynomialregression19.png)
-
-<!--
-Image Details:
-* [polynomialregression19.png](http://www.google.com): Copyright Google
--->
-
----
-
-What type of function would you use to fit the following data? {.big}
-
-![](res/polynomialregression20.png)
-
-<!--
-Image Details:
-* [polynomialregression20.png](http://www.google.com): Copyright Google
--->
-
----
-
-What type of function would you use to fit the following data? {.big}
-
-![](res/polynomialregression21.png)
-
-<!--
-Image Details:
-* [polynomialregression21.png](http://www.google.com): Copyright Google
--->
-
----
-
-What type of function would you use to fit the following data? {.big}
-
-![](res/polynomialregression22.png)
-
-<!--
-Image Details:
-* [polynomialregression22.png](http://www.google.com): Copyright Google
--->
-
----
-
-What type of function would you use to fit the following data? {.big}
-
-![](res/polynomialregression23.png)
-
-<!--
-Image Details:
-* [polynomialregression23.png](http://www.google.com): Copyright Google
--->
-
----
-
-What type of function would you use to fit the following data? {.big}
-
-![](res/polynomialregression24.png)
-
-<!--
-Image Details:
-* [polynomialregression24.png](http://www.google.com): Copyright Google
--->
-
----
-
-Why might this be a bad idea? {.big}
-![](res/polynomialregression25.png)
-
-<!--
-Image Details:
-* [polynomialregression25.png](http://www.google.com): Copyright Google
--->
-
----
-
-Polynomial Interpolation != Polynomial Regression {.big}
-
-![](res/polynomialregression26.png)
-
-<!--
-- A linear regression may make more sense; throw in another data point, and polynomial regression results may drastically change!
-- High order polynomials may be too “curvy”.
-- Polynomial interpolations generally go crazy outside the region where the data was interpolated (connected)
-
-Image Details:
-* [polynomialregression26.png](http://www.google.com): Copyright Google
--->
-
-
----
-
-Polynomial interpolations misbehave outside the data range {.big}
-
-![](res/polynomialregression27.png)
-
-<!--
-Image Details:
-* [polynomialregression27.png](http://www.google.com): Copyright Google
 -->
 
 ---
