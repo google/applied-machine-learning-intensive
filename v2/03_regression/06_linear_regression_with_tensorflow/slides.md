@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Linear Regression With TensorFlow
 
 <!--
@@ -8,14 +12,14 @@ TensorFlow.
 
 ---
 
-# But Why? {.big}
+# But Why? 
 
 <!--
 Why would we want to build a linear regression using TensorFlow?
 
-It's true that scikit-learn is perfectly adequate much of the time. However,
+It's true that scikit-learn is perfectly good at linear regression (most of the time). However,
 TensorFlow has some features like distributed model training that can help you
-build models when you have huge amounts of data.
+build models when you have huge amounts of data. It is also useful to learn a new tool by practicing on content that you are familiar with. 
 -->
 
 ---
@@ -90,7 +94,7 @@ Here you can see what an input function might look like. The function:
    passed to the model in each training step.
 
 Note that repetition and batch are hyperparameters that you can change in the
-model. You might find you don't need to repeat the data as much or that you
+model. You might find that you don't need to repeat the data as much or that you
 need to repeat it more. You might find that smaller batches work better than big
 batches.
 -->
@@ -158,4 +162,4 @@ prices in California. We'll examine the data, manipulate the data, and then
 build and adjust a model.
 -->
 
----
+
