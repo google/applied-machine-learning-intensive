@@ -210,7 +210,7 @@ Image Details:
 ![](res/intermediatepython13.png)
 
 <!--
-Go through each naming convention. It may be helpftul to save this slide as a reference.  
+Go through each naming convention. It may be helpful to save this slide as a reference.  
 
 Image Details:
 * [intermediatepython13.png](http://www.google.com): Copyright Google
@@ -224,7 +224,7 @@ Image Details:
 
 <!--
 * You can add functions outside of classes that will interact with objects much like they do inside the class, just using Student instead of self.
-* Notice how student_id is an atribute and doesnot require () while get_grade is a method and does require (). 
+* Notice how student_id is an attribute and does not require () while get_grade is a method and does require (). 
 
 Image Details:
 * [intermediatepython14.png](http://www.google.com): Copyright Google
