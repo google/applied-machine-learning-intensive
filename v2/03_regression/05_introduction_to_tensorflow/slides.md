@@ -1,8 +1,13 @@
 ---
-
 marp: true
 
 ---
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
 
 # Introduction to TensorFlow
 *An end-to-end open source machine learning platform*
@@ -21,7 +26,7 @@ What does this actually mean?
 
 ---
 
-# Why Do You Need TensorFlow?
+# What is TensorFlow Good For? 
 
 * Neural Networks
 * Distributed Computing
@@ -32,7 +37,7 @@ We've been humming along pretty nicely performing machine learning tasks with Nu
 
 We have indeed been able to do quite a bit with the tools that we've seen so far. What TensorFlow adds to the equation is better support for neural networks. Neural networks are the technology that is behind many of the breakthroughs in machine learning that we've seen in recent years. We'll learn more about neural networks soon.
 
-TensorFlow also provides support for distributed computing. Machine learning algorithms thrive with big data. TensorFlow helps you process massive amounts of data, across machines if necessar.
+TensorFlow also provides support for distributed computing. Machine learning algorithms thrive with big data. TensorFlow helps you process massive amounts of data, across many machines if necessary.
 
 TensorFlow also provides support for graphical processing units (GPU) and tensor processing units (TPU). These are specialized microprocessors that can really accelerate machine learning.
 
@@ -44,7 +49,7 @@ That being said, TensorFlow isn't the only toolkit that fills this space. Other 
 # Tensor
 *an N-dimensional array of data*
 
-![](res/introtensorflow1.png)
+![center](res/introtensorflow1.png)
 
 <!--
 So where does the name TensorFlow come from?
@@ -73,7 +78,7 @@ Image Details:
 
 # TensorFlow: Graphs
 
-![](res/introtensorflow2.png)
+![center](res/introtensorflow2.png)
 
 <!--
 TensorFlow internally constructs a graph of operations that it uses to perform machine learning tasks.
@@ -86,7 +91,7 @@ Image Details:
 
 # TensorFlow: Graphs
 
-![](res/introtensorflow3.png)
+![center](res/introtensorflow3.png)
 
 <!--
 The edges of the graph represent tensors of data flowing through the graph.
@@ -99,7 +104,7 @@ Image Details:
 
 # TensorFlow: Graphs
 
-![](res/introtensorflow4.png)
+![center](res/introtensorflow4.png)
 
 <!--
 These graphs pass through data in order to learning weights and biases.
@@ -121,20 +126,20 @@ Image Details:
   * Keras programming model
 
 <!--
-Version 1 of TensorFlow really emphasized the concept of graph. It used a 'lazy' execution model where you build a graph completely. This graph was then put into a session where data was passed through the model.
+Version 1 of TensorFlow really emphasized the concept of graph. It used a 'lazy' execution model where you build a graph completely before anything is run. This graph was then put into a session where data was passed through the model.
 
-This programming model worked, but it was a little clunky. Luckily, a library called Keras showed that machine learning models could be built and training using a more natural eager execution model.
+This programming model worked, but it was a little clunky. Luckily, a library called Keras showed that machine learning models could be built and trained using a more natural eager execution model.
 
-TensorFlow 2 was offically released in late 2019. TensorFlow 2 still supports much of the older programming model through a compatibality layer, but new programs should be written in TensorFlow 2 if possibly.
+TensorFlow 2 was offically released in late 2019. TensorFlow 2 still supports much of the older programming model through a compatibality layer, but new programs should be written in TensorFlow 2 if possible.
 
-TensorFlow 1 also had the concept of Estimators. The interfaces are still supported in TensorFlow 2 and will continue to be for the indifinte futures.
+TensorFlow 1 also had the concept of Estimators (similar to scikit-learn) The interfaces are still supported in TensorFlow 2 and will continue to be for the indifinte futures.
 -->
 
 ---
 
 # TensorFlow is separated into abstraction layers
 
-![](res/introtensorflow8.png)
+![center](res/introtensorflow8.png)
 
 <!--
 TensorFlow is actually not written in Python, but is instead a C++ library. The Python library that we use is a wrapper over the C++ with even more abstraction layers added on top of it. For this class we'll be using the "Core TensorFlow (Python)" layer and above.
@@ -148,5 +153,5 @@ Image Details:
 # The Lab
 
 <!--
-In this lab we'll get a brief introduction to tensors and operators. The goal is to get you familiar with working with the core objects of TensorFlow. Soon we will using higher-level APIs such as `Estimator` and `Keras`. The `Tensor` objects themselves are exposed in these higher-level APIs though, so it is a good idea to at least be familiar with them.
+In this lab you'll get a brief introduction to tensors and operators. The goal is to get you familiar with working with the core objects of TensorFlow. Soon we will be using higher-level APIs. The `Tensor` objects themselves are sometimes exposed in these higher-level APIs though, so it is a good idea to at least be familiar with them.
 -->
