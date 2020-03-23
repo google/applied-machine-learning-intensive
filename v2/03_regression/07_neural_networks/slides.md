@@ -9,8 +9,7 @@ img[alt~="center"] {
 }
 </style>
 
-# Neural Networks
-## *Deep learning inspired by nature*
+# Teaching & Learning Neural Networks
 
 <!--
 So far we have used classic machine learning models. These models are powerful and have proven useful for a wide range of applications.
@@ -69,6 +68,53 @@ Only time will tell if deep learning can live up to expectations. What we can do
 
 Image Details:
 * [hype.jpg](https://unsplash.com/photos/NrtC3y108Ys): Unsplash License
+-->
+
+---
+
+# High Level
+
+![center](res/teacher.png)
+
+<!--
+
+Image Details:
+[teacher.png](http://www.google.com): Unlicensed
+-->
+
+---
+
+# Math Nonsense
+
+![center](res/math_nonsense.png)
+
+<!--
+
+Image Details:
+[math_nonsense.png](http://www.google.com): Unlicensed
+--->
+
+---
+
+# We'll try for some middle ground...
+
+<!--
+
+-->
+
+
+---
+
+# We'll try for some middle ground...
+
+## (but I make no promises)
+
+---
+
+# History & Motivation
+
+<!--
+
 -->
 
 ---
@@ -167,6 +213,20 @@ Today we will talk about artificial neural networks. These are computational net
 
 ANN is a big umbrella. There are "feed-forward" networks. There is a concept of "backpropagation". And there are specific types of networks such as convolutional neural networks (CNN) and recurrent neural networks (RNN) that we will look at in more detail.
 -->
+
+---
+
+# Artificial Neural Networks (ANN)
+
+![center](res/ann.png)
+
+<!--
+
+Image Details:
+* [ann.png](http://www.google.com): Unlicensed
+
+-->
+
 ---
 
 # Neurons
@@ -224,6 +284,268 @@ Multilayer perceptron. This is used to get more advanced calculations, such as X
 
 Image Details:
 * [neurnet09.png](http://www.oreilly.com): Unliscensed
+-->
+
+---
+
+# Perceptron
+
+![center](res/perceptron.png)
+
+<!--
+1958 - Frank Rosenblatt - An American psychologist attempted to build a machine called a perceptron. 
+
+Image Details:
+* [perceptron.png](https://towardsdatascience.com/introducing-deep-learning-and-neural-networks-deep-learning-for-rookies-1-bd68f9cf5883): Unlicensed
+-->
+
+---
+
+# Perceptron
+
+![center](res/perceptron2.png)
+
+<!--
+1958 - Frank Rosenblatt - An American psychologist attempted to build a machine called a perceptron. 
+
+Image Details:
+* [perceptron2.png](https://towardsdatascience.com/introducing-deep-learning-and-neural-networks-deep-learning-for-rookies-1-bd68f9cf5883): Unlicensed
+-->
+
+---
+
+# Perceptron Example
+
+![center](res/perceptron_example.png)
+
+<!--
+
+Image Details:
+* [perceptron_example.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Machine Learning Process
+
+1. Infer/Predict/Forecast
+1. Calculate Error/Loss/Cost
+1. Train/Learn
+1. Iterate (until some stopping condition)
+
+<!--
+
+-->
+
+---
+
+# Perceptron Example
+
+![center](res/perceptron_example_01.png)
+
+<!--
+Image Details:
+* [perceptron_example_01.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Perceptron Example
+
+![center](res/perceptron_example_02.png)
+
+<!--
+Image Details:
+* [perceptron_example_02.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Perceptron Example
+
+![center](res/perceptron_example_03.png)
+
+<!--
+Image Details:
+* [perceptron_example_03.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Perceptron Example
+
+![center](res/perceptron_example_04.png)
+
+<!--
+Image Details:
+* [perceptron_example_04.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Perceptron Example
+
+![center](res/perceptron_example_05.png)
+
+<!--
+Image Details:
+* [perceptron_example_05.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Perceptron Example
+
+![center](res/perceptron_example_06.png)
+
+<!--
+Image Details:
+* [perceptron_example_06.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Perceptron Example
+
+![center](res/perceptron_example_07.png)
+
+<!--
+Image Details:
+* [perceptron_example_07.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Perceptron Example
+
+![center](res/perceptron_example_08.png)
+
+<!--
+Image Details:
+* [perceptron_example_08.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Perceptron Example
+
+![center](res/perceptron_example_09.png)
+
+<!--
+Image Details:
+* [perceptron_example_09.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Perceptron Example
+
+![center](res/perceptron_example_10.png)
+
+<!--
+Image Details:
+* [perceptron_example_10.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Perceptrons
+
+![center](res/perceptrons.png)
+
+<!--
+1958 - Frank Rosenblatt - An American psychologist attempted to build a machine called a perceptron. 
+
+Image Details:
+* [perceptrons.png](https://towardsdatascience.com/introducing-deep-learning-and-neural-networks-deep-learning-for-rookies-1-bd68f9cf5883): Unlicensed
+
+-->
+
+---
+
+# Networks With Hidden Layers
+
+![center](res/hidden_layers.png)
+
+<!--
+Image Details:
+* [hidden_layers.png](http://www.google.com): Unlicensed
+-->
+
+---
+
+# Networks With Hidden Layers
+
+![center](res/hidden_layers_h11.png)
+
+<!--
+Image Details:
+* [hidden_layers.png](http://www.google.com): Unlicensed
+-->
+
+---
+
+# Networks With Hidden Layers
+
+![center](res/hidden_layers_h12.png)
+
+<!--
+Image Details:
+* [hidden_layers.png](http://www.google.com): Unlicensed
+-->
+
+---
+
+# Let’s go through some of this on the board...
+
+<!--
+
+-->
+
+---
+
+# Summary
+
+1. Infer/Predict/Forecast
+    * Compute f(X, W, B) - compositions of f and lots of matrix mult
+1. Calculate Error/Loss/Cost
+    * MSE, MAE, etc.
+1. Train/Learn
+    * Change W and B in direction to minimize cost
+    * Gradient descent -> derivative -> chain rule -> backpropagation
+1. Iterate (until some stopping condidtion)
+
+<!--
+
+-->
+
+---
+
+# Issues with this plan? 
+
+```
+f(x) =  1 if x ≥ 0
+        0 if x < 0
+````
+
+The step function, f, is not the greatest activation function.
+* `f` is not differentiable at 0
+* `f’(x) = 0` for all x other than 0
+* `f` only returns 0 or 1 (as opposed to a confidence) 
+
+<!--
+
+-->
+
+---
+
+# Sigmoid
+
+![center](res/sigmoid.png)
+
+<!--
+Image Details:
+* [sigmoid.png](http://www.gogole.com): Unlicensed
 -->
 
 ---
