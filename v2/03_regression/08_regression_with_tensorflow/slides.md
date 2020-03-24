@@ -11,7 +11,7 @@ We have created numerous regression models in this course using both
 scikit-learn and TensorFlow. These models have all be "classic" models,
 but that is about to change.
 
-In this unit we are going to build a regression model using a deep neural
+In this unit, we are going to build a regression model using a deep neural
 network. The model will take feature data, pass it through hidden neural network
 layers, and output a continuous value.
 -->
@@ -28,7 +28,7 @@ that can be used within TensorFlow.
 
 Don't be put off by the term "deep neural network". Though the math and the
 theory are complex, the actual code that you need to write to create one is as
-easy as creating a linear regression.
+easy as creating a simple linear regression.
 -->
 
 ---
@@ -64,7 +64,7 @@ layer_3 = layers.Dense(1)
 <!--
 A model consists of layers of nodes. In the lab that we are about to do, those layers are `Dense` layers. A dense layer in a neural network is a layer where every node is connected to every node in the next layer.
 
-In the example we have in this slide we create three `Dense` layer classes. This actually creates a neural network that is four layers deep though.
+In the example we have on this slide, we create three `Dense` layer classes. This actually creates a neural network that is four layers deep though.
 
 When we make the first layer we pass in an input shape. This is the shape of the features that you'll be feeding into the model. In this case we chose an input shape of 8. That indicates that we'll be providing 8 features to the model. The input layer is the first layer.
 
@@ -97,6 +97,20 @@ model = keras.Sequential([
 ```
 <!--
 In our previous slide we created layers, but we didn't connect them. In this slide we'll create the layers inside a sequential model. Now the layers are densely connected in sequence.
+
+Questions to ask the class: 
+How many layers are there in this model? Answer: 4
+
+How many nodes are in the first layer? Answer: 8
+
+How many nodes are in the second and their layers? Answer: 64
+
+How many nodes are in the final layer? Answer: 1
+
+How many connections between layer 1 and layer 2? Answer: 8x64
+
+*It may be helpful to draw a schematic of the model on the board while asking students the questions.*
+
 -->
 
 ---
@@ -116,7 +130,7 @@ from tensorflow.keras.layers import ZeroPadding3D
 ```
 
 <!--
-`Dense` isn't the only type of layer. There are dozens of layers that can be found in the `tensorflow.keras.layers` namespace. Here is a sample.
+`Dense` isn't the only type of layer. There are dozens of layers that can be found in the `tensorflow.keras.layers` namespace. Here is a sample. We will discuss some of these layers later in the course. They are all different and some work very well for certain types of data and use cases. 
 -->
 
 ---
@@ -153,7 +167,7 @@ history = model.fit(
 ```
 
 <!--
-Once you have defined your model and setup optimization parameters, it is time to train your model. Training is done with the `fit()` method. `fit()` needs to know the feature and target data.
+Once you have defined your model and setup optimization parameters, it is time to train your model. Training is done with the `fit()` method, which needs to know the feature and target data.
 
 Fit also needs to know how many times to repeat the data. Each repition is called an epoch. In this case we asked for 50 epochs. In the history that is returned we will get measurements for the mean absolute error, mean squared error, and loss at each epoch.
 
@@ -174,7 +188,7 @@ The whole point of building a model is to make predictions. You can use the `pre
 
 ---
 
-# Colab
+# Lab
 ## Regression with TensorFlow
 
 <!--
