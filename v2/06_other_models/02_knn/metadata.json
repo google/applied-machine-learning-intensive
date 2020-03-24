@@ -1,11 +1,10 @@
 {
   "name": "k-Nearest Neighbors",
-  "bug": "b/129292102",
   "slides": [
-    "https://docs.google.com/presentation/d/1mYMxv2DbD0b3zPLgKKee1V2NVxl7K211Hk8iF5Zl1eQ/edit"],
+    "slides.md"
   "colabs": [
     "colab.ipynb"
-    ],
+  ],
   "handouts": [],
   "resources": [],
   "materials": []
