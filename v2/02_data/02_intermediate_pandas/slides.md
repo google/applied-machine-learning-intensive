@@ -545,7 +545,7 @@ and then work with the copy. Be warned that this can be slow and
 memory-intensive on large `DataFrame` objects.
 
 Often you don't have to worry whether you're working with a reference or a
-copy. Pandas strives to be efficient and will use references or views depending 
+copy. Pandas strives to be efficient and will use references or views, depending 
 on which makes most sense in most cases. But sometimes the abstractions break down,
 and you need to know a little more about what specific data you are working with.
 -->
