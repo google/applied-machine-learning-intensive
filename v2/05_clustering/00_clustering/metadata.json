@@ -1,8 +1,7 @@
 {
   "name": "Clustering",
-  "bug": "b/131173058",
   "slides": [
-    "https://docs.google.com/presentation/d/1Dsyrx3O4uCahYHQtHp7UJgkwZE_ZRbewnjuPRgq0EEI/edit"
+    "slides.md"
     ],
   "colabs": [],
   "materials" : [],
