@@ -26,7 +26,7 @@ SciKit-learn and Tensorflow both require us to understand objects and inheritanc
 What does “programming paradigm” mean?
   * It is a style of programming; object-oriented programming is one particular style that organizes data into objects within classes.
 
-Sometimes when the data structures available are not complex or specialized enough, you need a class to hold your data!
+Sometimes when the data structures available are not complex or specialized enough, you need a class to hold your data.
 
 Let's consider an example where a teacher wants to create a program where they can keep track of students' grades.
   * Wants a way to hold the following values: name, student ID, and grade
@@ -58,18 +58,18 @@ Image Details:
 
 <!--
 Looking at the code...
-* Class → keyword to tell Python you are starting a class declaration - this is always followed by the class name and a colon
-  * Everything following this declaration is like a blueprint for instances of this class
-  * Shows the data each instance will hold + methods that can be called on it
-* __init__ → called as a constructor for a class
-  * Every class is required to have one, shows the data each object of a class will hold
-  * Note: it is a private member - we will learn more about this later!
-* __grade: the underscores indicate that grade is a private member variable (it can’t be accessed or edited outside of the class). More about this later!
-* Self → used to refer to objects in a class
-  *  When “self” is an argument coming into a method, you don’t actually need to include that when calling the method
-  * “self” is implied as the instance of the class you declare before the dot
-* STUDENT_ROSTER → a constant value. In this case, presumably a constant list of students in the class.
-* Methods → collection of functions that can be run on an object of a given class
+* Class → This is a keyword to tell Python you are starting a class declaration. This is always followed by the class name and a colon.
+  * Everything following this declaration is like a blueprint for instances of this class.
+  * It shows the data each instance will hold and methods that can be called on.
+* __init__ → It is called as a constructor for a class.
+  * Every class is required to have one; it shows the data each object of a class will hold.
+  * Note that it's a private member. We will learn more about this later.
+* __grade: The underscores indicate that grade is a private member variable, meaning it can’t be accessed or edited outside of the class. We'll get into more about this later.
+* Self → It is used to refer to objects in a class.
+  *  When “self” is an argument coming into a method, you don’t actually need to include that when calling the method.
+  * “self” is implied as the instance of the class you declare before the dot.
+* STUDENT_ROSTER → It's a constant value. In this case, presumably it's a constant list of students in the class.
+* Methods → This is a collection of functions that can be run on an object of a given class.
 
 Image Details:
 * [intermediatepython03.png](http://www.google.com): Copyright Google
@@ -97,7 +97,7 @@ Image Details:
 <!--
 Instances are the actual object, i.e., the actual physical representation in memory of a “thing” of the type defined by the class.
 
-Every class needs a constructor to show the computer what data members it should be allocating memory for every time an instance is created.
+Every class needs a constructor to show the computer what data members it should be allocating memory for each time an instance is created.
 
 “Elon” is an instance of our class. His student ID is 2341 and his grade is a B+. 
 
@@ -118,7 +118,7 @@ This is an example of how a function can be called on an instance of a class.
 
 * Notice how you call the function.
   * When “self” is an argument of a method, you don’t actually need to include that when calling the method.
-  * “self” is implied as the instance of the class you declare before the dot 
+  * “self” is implied as the instance of the class you declare before the dot.
 
 This type of method is called a “getter” method, as it's used to get access to variables in a class.
   * We will see why this might be necessary later.
@@ -137,8 +137,8 @@ Image Details:
 This is an example of how a function can be created to change the data in an instance of a class.
 
 Notice how you call the function.
-  * “self” is still implied as Elon
-  * However, this time we also need a new_grade, and this is passed in as a typical argument in Python
+  * “self” is still implied as Elon.
+  * However, this time we also need a new_grade, and this is passed in as a typical argument in Python.
 
 This type of method is called a “setter,” and we will see why later.
 
