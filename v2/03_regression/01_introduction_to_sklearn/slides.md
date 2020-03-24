@@ -18,16 +18,16 @@ img[alt~="center"] {
 ![center](res/introtoscikit1.png)
 
 <!--
-* scikit-learn.org is the primary website for the scikit-learn project. Here you will find information pertaining to scikit-learn, including instructions on installation, documentation, and even the project source code.
+* Scikit-learn.org is the primary website for the scikit-learn project. Here you will find information pertaining to scikit-learn, including instructions on installation, documentation, and even the project source code.
 * Let's take a few moments to look around the project website.
 
 @Exercise (10 minutes) {
-Either navigate to scikit-learn.org on your own computer and present your computer screen to the students (recommended), or ask them to open their laptops to scikit-learn.org. Take the time to point out the following elements on the website:
+*Either navigate to scikit-learn.org on your own computer and present your computer screen to the students (recommended), or ask them to open their laptops to scikit-learn.org. Take the time to point out the following elements on the website:
   * The classification, regression, clustering, dimensionality reduction, model selection, and preprocessing sections on the main page. These represent core groupings of features provided by scikit-learn.
-  * The top-page navigation with links on how to install the toolkit, documentation, and examples.
-  * The banner on the upper right corner that says "Fork me on GitHub." This leads to the source code.
-  * When you click the 'Documentation' drop-down in the upper navigation, it tells you the current stable version and has a link to 'All available versions.' Tell students to be sure to check the version of scikit-learn they're working with once they start the colab.
-  * The 'Examples' linked in the top navigation are not just API usage examples; they also contain some interesting machine learning insights.
+  * *The top-page navigation with links on how to install the toolkit, documentation, and examples.
+  * *The banner on the upper right corner that says "Fork me on GitHub." This leads to the source code.
+  * *When you click the 'Documentation' drop-down in the upper navigation, it tells you the current stable version and has a *link to 'All available versions.' Tell students to be sure to check the version of scikit-learn they're working with once they start the colab.
+  * *The 'Examples' linked in the top navigation are not just API usage examples; they also contain some interesting machine learning insights.
 }
 Image Details:
 * [introtoscikit1.png](http://www.google.com): Copyright Google  
@@ -86,7 +86,7 @@ Image Details:
 # Bunches
 
 <!--
-Bunch objects are scikit-learn objects that are often used to store datasets. If you find yourself using a load or fetch method, you'll likely encounter a bunch object.
+Bunch objects are scikit-learn objects that are often used to store datasets. If you find yourself using a load or fetch method, you'll likely encounter a Bunch object.
 The lab for this lesson provides more details on Bunch objects and explores the data stored within them. You'll encounter data that is composed of named features, as well as target values paired with sets of features.
 
 For the most part, we will convert scikit-learn Bunch objects into Pandas DataFrame objects or TensorFlow dataset objects. The aforementioned objects are more easily integrated with the methods and frameworks we will cover in this course. 
