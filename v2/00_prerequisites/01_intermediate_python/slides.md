@@ -363,7 +363,8 @@ Image Details:
 <!--
 Walk through each of the listed ways to generate a list of data.
  * Note: An underscore is used instead of a variable in the for loop because we don’t have any use for the variable. It is good practice to avoid initializing variables if you don't need them.
-* None of these are very elegant. Can we think of a more efficient way?
+
+None of these are very elegant. Can we think of a more efficient way?
 
 Image Details:
 * [intermediatepython20.png](http://www.google.com): Copyright Google
@@ -376,10 +377,20 @@ Image Details:
 ![center](res/intermediatepython21.png)
 
 <!--
-* List comprehensions provide a concise way to create lists. 
-* It consists of brackets containing an expression followed by a clause, then zero or more for or if clauses. The expressions can be anything. This means you can put in all kinds of objects in lists.
-* The result will be a new list resulting from evaluating the expression in the context of the for and if clauses which follow it.
-* The list comprehension always returns a result list.
+List comprehensions are a clearer and more concise way of generating lists of data.
+
+They contain the same elements as a normal for loop, just arranged differently and enclosed within brackets.
+
+The basic syntax for a list comprehension can be seen in the slide, and is as follows:
+  * An open bracket,
+  * followed by an expression,
+  * followed by zero or more for clauses,
+  * followed by zero or more if clauses,
+  * followed by a close bracket.
+
+The list comprehension always returns a new list, which contains the result of evaluating the for and if clauses on the expression.
+
+The expression can be anything - from a simple variable to a complex function call - which makes list comprehensions very flexible.
 
 Image Details:
 * [intermediatepython21.png](http://www.google.com): Copyright Google
@@ -392,7 +403,10 @@ Image Details:
 ![center](res/intermediatepython22.png)
 
 <!--
-Try to write the for loop we have into a list comprehension.
+
+@Exercise (5 minutes): {
+Ask students to try to rewrite the for loop on this slide as a list comprehension.
+}
 
 Image Details:
 * [intermediatepython22.png](http://www.google.com): Copyright Google
@@ -431,7 +445,10 @@ Image Details:
 ![center](res/intermediatepython25.png)
 
 <!--
-Try to make this into a list comprehension that includes the conditional statement.
+
+@Exercise (5 minutes): {
+Ask students to try to make the for loop on this slide into a list comprehension that includes the conditional statement.
+}
 
 Image Details:
 * [intermediatepython25.png](http://www.google.com): Copyright Google
