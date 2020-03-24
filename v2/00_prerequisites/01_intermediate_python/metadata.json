@@ -10,25 +10,25 @@
     "slides.md"
   ],
   "learning-objectives": [
-    "Build a basic Python object",
-    "Build a hierarchy of objects",
-    "Distinguish procedural from object-oriented programming styles",
-    "Distinguish a class from an instance",
-    "Understand different types of exception",
-    "Write code that efficiently handles errors",
-    "Create your own exception class",
-    "Define functions using lambda syntax",
-    "Use a lambda function as inputs to another function",
-    "Use a lambda functions to apply a function to elements in a list",
-    "Understand list comprehension notation",
-    "Create lists using list comprehension with for and if statements"
+    "Build a basic Python object.",
+    "Build a hierarchy of objects.",
+    "Distinguish procedural from object-oriented programming styles.",
+    "Distinguish a class from an instance.",
+    "Understand different types of exception.",
+    "Write code that efficiently handles errors.",
+    "Create your own exception class.",
+    "Define functions using lambda syntax.",
+    "Use a lambda function as an input to another function.",
+    "Use a lambda functions to apply a function to elements in a list.",
+    "Understand list comprehension notation.",
+    "Create lists using list comprehension with for and if statements."
   ],
   "duration": {
-    "slides.md": 10,
+    "slides.md": 60,
     "00-objects.ipynb": 60,
-    "01-exceptions.ipynb": 60,
-    "02-lambdas.ipynb": 60,
-    "03-list-comprehension.ipynb": 60
+    "01-exceptions.ipynb": 30,
+    "02-lambdas.ipynb": 30,
+    "03-list-comprehension.ipynb": 30
   },
   "materials": [],
   "resources": [],
