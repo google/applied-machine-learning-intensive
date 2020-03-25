@@ -12,17 +12,20 @@ img[alt~="center"] {
 # Intermediate Python
 
 <!--
-SciKit-learn and Tensorflow both require us to understand objects and inheritance for some common use cases. Intermediate Python introduces the concept of object-oriented programming (OOP) to prepare us to use the scikit-learn and Tensorflow features that require object extension. List comprehension and lambdas are also included since they are popular Python features that can be very useful, especially during data prep and exploration. 
+SciKit-learn and Tensorflow both require us to understand objects and inheritance for some common use cases. Intermediate Python introduces the concept of object-oriented programming (OOP) to prepare us to use the scikit-learn and Tensorflow features that require object extension. List comprehension and lambdas are also included in this unit, since they are popular Python features that can be very useful, especially during data prep and exploration. 
 
 -->
 
 ---
 
-# Object-Oriented Programming is a programming paradigm that organizes data into classes 
+# Object-Oriented Programming
 
 ![center](res/intermediatepython01.png)
 
 <!--
+
+Object-Oriented Programming is a programming paradigm that organizes data into classes.
+
 What does “programming paradigm” mean?
   * It is a style of programming; object-oriented programming is one particular style that organizes data into objects within classes.
 
@@ -39,11 +42,14 @@ Image Details:
 
 ---
 
-# We can use a **class** to create objects that have attributes and methods
+# Objects: Classes
 
 ![center](res/intermediatepython02.png)
 
 <!--
+
+We can use classes to create objects that have attributes and methods.
+
 Look at the code and decide what looks familiar/new and maybe even predict how those new items will work.
 
 Image Details:
@@ -52,7 +58,7 @@ Image Details:
 
 ---
 
-# We can use a **class** to create objects that have attributes and methods
+# Objects: Classes
 
 ![center](res/intermediatepython03.png)
 
@@ -77,7 +83,7 @@ Image Details:
 
 --- 
 
-# We can use a **class** to create objects that have attributes and methods
+# Objects: Classes
 
 ![center](res/intermediatepython04.png)
 
@@ -90,7 +96,7 @@ Image Details:
 
 --- 
 
-# You can create a singular **“instance”** of a class
+# Objects: Instances
 
 ![center](res/intermediatepython05.png)
 
@@ -109,7 +115,7 @@ Image Details:
 
 ---
 
-# Now that we have an instance, we can call **“methods“** on it
+# Objects: Instance Methods
 
 ![center](res/intermediatepython06.png)
 
@@ -129,7 +135,7 @@ Image Details:
 
 ---
 
-# We can create methods that manipulate our instance
+# Objects: Instance Methods
 
 ![center](res/intermediatepython07.png)
 
@@ -148,7 +154,7 @@ Image Details:
 
 ---
 
-# We can create helper functions that are only **internal** to the class
+# Objects: Private Methods
 
 ![center](res/intermediatepython08.png)
 
@@ -165,7 +171,7 @@ Image Details:
 
 ---
 
-# We can create helper functions that are only **internal** to the class
+# Objects: Private Methods
 
 ![center](res/intermediatepython09.png)
 
@@ -178,7 +184,7 @@ Image Details:
 
 ---
 
-# **Encapsulation** restricts access to variables and methods in a class
+# Encapsulation
 
 ![center](res/intermediatepython10.png)
 
@@ -201,7 +207,7 @@ Image Details:
 
 ---
 
-# **Encapsulation** restricts access to variables and methods in a class
+# Encapsulation
 
 ![center](res/intermediatepython11.png)
 
@@ -216,7 +222,7 @@ Image Details:
 
 ---
 
-# **Encapsulation** restricts access to variables and methods in a class
+# Encapsulation
 
 ![center](res/intermediatepython12.png)
 
@@ -232,7 +238,25 @@ Image Details:
 
 ---
 
-# Classes use **naming conventions** to tell you information about what element in the class a variable represents
+
+# Classes: Public Properties
+
+![center](res/intermediatepython14.png)
+
+<!--
+Encapsulation prevents **some** properties of classes from being accessed by outside code, but objects are designed to work with the rest of your codebase. Many properties of classes are made public, which means that they are accessible outside of the class.
+
+You can write functions outside of classes that will interact with objects much like they do inside the class. The difference is that you have to pass the object as an argument, and reference that object instead of self.
+
+Notice how student_id is an attribute and does not require (), while get_grade is a method and does require (). 
+
+Image Details:
+* [intermediatepython14.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Common Naming Conventions
 
 ![center](res/intermediatepython13.png)
 
@@ -245,21 +269,7 @@ Image Details:
 
 ---
 
-# Functions outside of the class can interact with objects from the class
-
-![center](res/intermediatepython14.png)
-
-<!--
-* You can write functions outside of classes that will interact with objects much like they do inside the class. The difference is that you have to pass the object as an argument, and reference that object instead of self.
-* Notice how student_id is an attribute and does not require (), while get_grade is a method and does require (). 
-
-Image Details:
-* [intermediatepython14.png](http://www.google.com): Copyright Google
--->
-
----
-
-# Classes can **inherit** characteristics from other classes
+# Class Inheritance
 
 ![center](res/intermediatepython15.png)
 
@@ -272,7 +282,7 @@ Image Details:
 
 --- 
 
-# We can use **inheritance** to create a hierarchical relationship between classes
+# Class Inheritance
 
 ![center](res/intermediatepython16.png)
 
@@ -312,14 +322,13 @@ Image Details:
 
 ---
 
-# Methods can also be inherited and can be overwritten by child classes
+# Class Inheritance
 
 ![center](res/intermediatepython18.png)
 
 <!--
-We can call inherited methods on Elon our student, just like normal.
 
-Or we can modify methods inside a child class and override the parent method.
+Methods can also be inherited and can be overwritten by child classes. We can call inherited methods on Elon our student, just like normal. Or we can modify methods inside a child class and override the parent method.
 
 Image Details:
 * [intermediatepython18.png](http://www.google.com): Copyright Google
@@ -336,7 +345,7 @@ Now that we've covered classes, let's move on to another popular concept in Pyth
 
 ---
 
-# There are many ways to generate lists of data
+# List Comprehension
 
 ![center](res/intermediatepython19.png)
 
@@ -356,7 +365,7 @@ Image Details:
 
 ---
 
-# There are many ways to generate lists of data
+# List Comprehension
 
 ![center](res/intermediatepython20.png)
 
@@ -372,7 +381,7 @@ Image Details:
 
 ---
 
-# **List Comprehensions** are compact ways to create lists of data
+# List Comprehension
 
 ![center](res/intermediatepython21.png)
 
@@ -398,7 +407,7 @@ Image Details:
 
 ---
 
-# Try to make this code into a list comprehension
+# List Comprehension
 
 ![center](res/intermediatepython22.png)
 
@@ -414,7 +423,7 @@ Image Details:
 
 ---
 
-# Try to make this code into a list comprehension
+# List Comprehension
 
 ![center](res/intermediatepython23.png)
 
@@ -427,7 +436,7 @@ Image Details:
 
 --- 
 
-# We can also write list comprehensions with conditional statements
+# List Comprehension
 
 ![center](res/intermediatepython24.png)
 
@@ -440,7 +449,7 @@ Image Details:
 
 ---
 
-# Try to make this code into a list comprehension
+# List Comprehension
 
 ![center](res/intermediatepython25.png)
 
@@ -456,7 +465,7 @@ Image Details:
 
 ---
 
-# Try to make this code into a list comprehension
+# List Comprehension
 
 ![center](res/intermediatepython26.png)
 
@@ -469,7 +478,7 @@ Image Details:
 
 ---
 
-# Try to make this code into a list comprehension
+# List Comprehension
 
 ![center](res/intermediatepython27.png)
 
