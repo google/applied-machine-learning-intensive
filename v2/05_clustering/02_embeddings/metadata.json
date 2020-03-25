@@ -1,11 +1,14 @@
 {
   "name": "Embeddings",
-  "bug": "b/129289776",
   "colabs": [
     "colab.ipynb"
   ],
   "slides": [
     "https://docs.google.com/presentation/d/17JSXlcoRXzXwE5EXjt1b6XCtvBNkdWu2CSnVy6abfDs/edit"
   ],
-  "handouts": []
+  "handouts": [],
+  "learning-objectives": [
+    "Understand what embeddings are, why they are used, how they are trained",
+    "Use embeddings in practice",
+  ]
 }
