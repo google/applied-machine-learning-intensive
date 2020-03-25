@@ -1,13 +1,16 @@
 {
   "name": "Support Vector Machines",
-  "bug": "b/129291694",
   "slides": [
-    "https://docs.google.com/presentation/d/14JS91pDSdPWA4ffbyeVd5P4tY5pT65oRL_KxUY0tDvQ/edit"
+    "slides.md"
   ],
   "materials": [],
   "colabs": [
     "colab.ipynb"
   ],
   "handouts": [],
-  "resources": []
+  "resources": [],
+  "learning-objectives": [
+    "Define problems for which support vector machines are a good fit",
+    "Understand the primary settings used to tune a support vector machine and their tradeoffs",
+  ]
 }
