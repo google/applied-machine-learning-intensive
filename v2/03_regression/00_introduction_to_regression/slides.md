@@ -379,7 +379,12 @@ Image Details:
 
 # Closed Form, Exact Solution
 
-![center](res/regression29.png)
+## $\theta = (X^{T} \cdot X)^{-1} \cdot X^{T} \cdot y$
+
+* Good for small datasets
+* Finds optimal solution
+* Can be computationally expensive
+* Requires an invertable matrix
 
 <!--
 
