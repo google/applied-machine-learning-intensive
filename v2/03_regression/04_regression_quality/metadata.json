@@ -1,14 +1,17 @@
 {
   "name": "Regression Quality",
-  "bug": "b/129327938",
   "materials": [],
   "resources": [],
   "colabs": [
     "colab.ipynb"
   ],
+  "slides": [],
   "learning-objectives": [
-    "Extract quantitative measurements of a regression models predictions.",
-    "Perform qualitative judgements of a regression models predictions.",
+    "Extract quantitative measurements of a regression model's predictions.",
+    "Perform qualitative judgments of a regression model's predictions."
   ],
-  "handouts": []
+  "handouts": [],
+  "duration": {
+    "colab.ipynb": 60
+  }
 }
