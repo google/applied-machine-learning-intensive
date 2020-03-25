@@ -132,7 +132,7 @@ We'll got into loss and different ways to measure it in later units. For this un
 
 ---
 
-# Train, Test, Validate
+# Train/Validate, Test
 
 ![center](res/train_validate_test.png)
 
@@ -157,6 +157,20 @@ Some models, like `LinearRegression` don't have a validation set since they aren
 
 Image Details:
 * [train_validate_test.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Train/Validate, Test, Validate
+
+![center](res/double-validate.png)
+
+<!--
+The holdout data story gets more complicated when hyperparameter tuning is involved. When you tune hyperparameters you'll still have the same training and validating data available during model fitting. Then you'll use your test data to see how well the model generalizes. However, if you then change hyperparameters and test again you risk over-tuning hyperparameters to the test data set!
+
+In order to prevent this, many data scientists also keep another holdout dataset called the validation dataset. This dataset is used for one final check after you have selected hyperparameters.
+
+There is an unfortunate naming collision with the validation data that the model holds out while optimizing. Luckily you don't really ever interact directly with the validation data that the model uses while training. The most you might do is set the percentage of data to hold out. The final validation set is fully your responsibility though.
 -->
 
 ---
