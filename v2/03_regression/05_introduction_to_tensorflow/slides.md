@@ -13,15 +13,15 @@ img[alt~="center"] {
 *An end-to-end open source machine learning platform*
 
 <!--
-It is time in our machine learning and data science journey to introduce you to TensorFlow. TensorFlow bills itself as "An end-to-end open source machine learning platform".
+It is time in our machine learning and data science journey to introduce you to TensorFlow. TensorFlow bills itself as "an end-to-end open source machine learning platform."
 
 What does this actually mean?
 
-"end-to-end" means that TensorFlow has tooling that allows you to start from nothing and build, train, validate, deploy, and maintain a model.
+"End-to-end" means that TensorFlow has tooling that allows you to start from nothing and build, train, validate, deploy, and maintain a model.
 
-"open source" means that the code is freely available. You can look at how TensorFlow works on the inside if you desire. If you find a bug or need a feature, you can try to contribute code to change TensorFlow.
+"Open source" means that the code is freely available. You can look at how TensorFlow works on the inside if you desire. If you find a bug or need a feature, you can try to contribute code to change TensorFlow.
 
-"machine learning platform" means TensorFlow was designed with machine learning in mind. TensorFlow isn't necessarily restricted to machine learning applications, but it is designed for them.
+"Machine learning platform" means TensorFlow was designed with machine learning in mind. TensorFlow isn't necessarily restricted to machine learning applications, but it is designed for them.
 -->
 
 ---
@@ -39,9 +39,9 @@ We have indeed been able to do quite a bit with the tools that we've seen so far
 
 TensorFlow also provides support for distributed computing. Machine learning algorithms thrive with big data. TensorFlow helps you process massive amounts of data, across many machines if necessary.
 
-TensorFlow also provides support for graphical processing units (GPU) and tensor processing units (TPU). These are specialized microprocessors that can really accelerate machine learning.
+TensorFlow also provides support for graphical processing units (GPUs) and tensor processing units (TPUs). These are specialized microprocessors that can really accelerate machine learning.
 
-That being said, TensorFlow isn't the only toolkit that fills this space. Other options like Torch and Microsoft Cognitive Toolkit (CNTK), as well as many others provide power machine learning capabilities.
+That being said, TensorFlow isn't the only toolkit that fills this space. Other options like Torch and Microsoft Cognitive Toolkit (CNTK), as well as many others, provide powerful machine learning capabilities.
 -->
 
 ---
@@ -66,9 +66,9 @@ And four-dimensional? That is typically just called a 4d or Rank-4 tensor.
 
 But it doesn't have to stop there. You can create tensors with an arbitrarily high number of dimensions.
 
-So we now understand why the 'tensor' part of the name exists, but what about 'flow'.
+So we now understand why the "tensor" part of the name exists, but what about "flow"?
 
-Typically a sequence of operations is performed on tensors in a model. These tensors "flow" through the graph that constitutes the model, hench "TensorFlow".
+Typically, a sequence of operations is performed on tensors in a model. These tensors "flow" through the graph that constitutes the model, hence "TensorFlow."
 
 Image Details:
 * [res/introtensorflow1.png](http://www.oreilly.com): Unlicensed
@@ -126,13 +126,13 @@ Image Details:
   * Keras programming model
 
 <!--
-Version 1 of TensorFlow really emphasized the concept of graph. It used a 'lazy' execution model where you build a graph completely before anything is run. This graph was then put into a session where data was passed through the model.
+Version 1 of TensorFlow really emphasized the concept of graphs. It used a "lazy" execution model where you build a graph completely before anything is run. This graph was then put into a session where data was passed through the model.
 
 This programming model worked, but it was a little clunky. Luckily, a library called Keras showed that machine learning models could be built and trained using a more natural eager execution model.
 
-TensorFlow 2 was offically released in late 2019. TensorFlow 2 still supports much of the older programming model through a compatibality layer, but new programs should be written in TensorFlow 2 if possible.
+TensorFlow 2 was officially released in late 2019. TensorFlow 2 still supports much of the older programming model through a compatibility layer, but new programs should be written in TensorFlow 2 if possible.
 
-TensorFlow 1 also had the concept of Estimators (similar to scikit-learn) The interfaces are still supported in TensorFlow 2 and will continue to be for the indifinte futures.
+TensorFlow 1 placed more of an emphasis on the concept of Estimators (similar to scikit-learn). They are still supported in TensorFlow 2 and will continue to be for the indefinite future.
 -->
 
 ---
@@ -153,5 +153,5 @@ Image Details:
 # The Lab
 
 <!--
-In this lab you'll get a brief introduction to tensors and operators. The goal is to get you familiar with working with the core objects of TensorFlow. Soon we will be using higher-level APIs. The `Tensor` objects themselves are sometimes exposed in these higher-level APIs though, so it is a good idea to at least be familiar with them.
+In this lab, you'll get a brief introduction to tensors and operators. The goal is to get you familiar with working with the core objects of TensorFlow. Soon, we will be using higher-level APIs. The `Tensor` objects themselves are sometimes exposed in these higher-level APIs though, so it is a good idea to at least be familiar with them.
 -->
