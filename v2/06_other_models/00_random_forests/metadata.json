@@ -7,9 +7,9 @@
     "slides.md"
   ],
   "learning-objectives": [
-    "Apply ensemble learning to a machine learning problem using random forests.",
-    "Understand ensemble techniques such as bagging and boosting.",
-    "Modify random forest hyperparameters in order to optimize a model."
+    "Create and apply a decision tree algorithm for classification",
+    "Perform ensemble learning using random forests",
+    "Apply limits to depth and split size to reduce overfitting",
   ],
   "handouts": [],
   "materials": [],
