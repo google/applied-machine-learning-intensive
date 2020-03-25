@@ -2,8 +2,7 @@
 
 <!--
 In this unit we are going to talk about random forests. Random forests build upon a concept that we
-have already learned, decision trees, so let's take a moment to remind ourselves about decision
-trees.
+have already learned: decision trees. Let's take a moment to remind ourselves about decision trees.
 
 Concepts:
 * models:random forests
@@ -35,11 +34,11 @@ Concepts:
 <!--
 
 Let's start by taking a look at a decision tree. This particular example is a tree predicting iris
-species from the popular iris dataset.
+species from the iris dataset.
 
 Decision trees have a single root node and a variable depth number of intermediate nodes, ending in
-many leaf nodes. A decision is made by comparing the one of your features to some derived value at
-the node and then following a path based on the comparison. The leaf node that you arrive at is your
+many leaf nodes. A decision is made by comparing one of your features to some derived value at the
+node and then following a path based on the comparison. The leaf node that you arrive at is your
 "decision".
 
 Image Details:
@@ -53,7 +52,7 @@ Concepts:
 
 # Decision Trees
 
-## Decision support tools
+## Decision Support Tools
 
 * Typically binary
 * Mostly for classification
@@ -66,10 +65,10 @@ A few other highlights that we have already learned about decision trees:
 Typically decision trees have two paths that can be taken at any node (binary tree).
 
 Decision trees are most often used for classification purposes. They can be used for regression, but
-are not a great fit.
+are usually less effective than other regression tools.
 
 Unlike other classification algorithms, decision trees don't provide a list of labels and the a
-numeric confidence in the applicability of each label. Instead you receive a single final decision.
+numeric confidence in the applicability of each label. Instead, we receive a single final decision.
 
 Decision trees are not sensitive to features having different ranges of values. Most machine
 learning algorithms benefit from scaling and/or normalizing data, but decision trees are an
@@ -113,10 +112,10 @@ Concepts:
 ![](res/forest.png)
 
 <!--
-Let's now move to random forests. The word "forest" is very appropriate. A decision tree is a single
-set of comparisons that are made to come to a single classification decision. A random forest is a
-collection of two or more decision trees built with your training data. Each tree is consulted when
-a prediction is being made. The majority classification across all trees is the final classification
+Let's now move to random forests. A decision tree is a single set of comparisons that are made to
+come to a single classification decision. A random forest is a collection of two or more decision
+trees (hence the name "forest") built with your training data. Each tree is consulted when a
+prediction is being made. The majority classification across all trees is the final classification
 decision made by the random forest.
 
 Image Details:
@@ -133,7 +132,8 @@ Concepts:
 <!--
 This is our first foray into "ensemble learning". Ensemble learning is a technique in which multiple
 learners are trained on the training data and their results are aggregated in some way. This
-aggregation is typically majority vote, mode, for classification and mean or median for regression.
+aggregation is typically one of majority vote or mode for classification, and mean or median for
+regression.
 
 Concepts:
 * models:techniques:ensemble learning
@@ -145,11 +145,11 @@ Concepts:
 
 <!--
 You might be asking how training multiple trees with the same dataset would be much better than
-simply training on tree. Typically, you don't actually train every tree in a random forest with the
-same full dataset. Instead, each tree is trained with a sample of the data from the dataset. This
-sampling is called bootstrapping.
+simply training on a single tree. Typically, you don't actually train every tree in a random
+forest with the same full dataset. Instead, each tree is trained with a sample of the data from
+the dataset. This sampling is called bootstrapping.
 
-For each tree in the forest a random set of data is chosen for training. The samples can overlap.
+For each tree in the forest, a random set of data is chosen for training. The samples can overlap.
 This is considered sampling "with replacement".
 
 You can also choose to train every tree with the entire dataset. In this case you get variation in
@@ -164,17 +164,17 @@ Concepts:
 # Bootstrap Aggregation (Bagging) {.big}
 
 <!--
-A specific form of bootstrapping that you'll hear about in machine learning circles is "bootstrap
+A specific form of bootstrapping that you'll hear about in machine learning is "bootstrap
 aggregation". This term is often shortened to "bagging".
 
 Bagging is a form of bootstrapping that creates multiple full-sized copies of your training dataset
 with slightly different data.
 
-Let's give an example. Say you have a dataset with 1000 items in it and you want a random forest
-with 5 trees in it. If you bag the data, 5 datasets of size 1000 will be created by randomly
-sampling your original dataset with replacement. Since we replace items in the original dataset
-there will likely be duplicates in each generated dataset. This allows each tree to have a slightly
-different view of the data.
+For example, say you have a dataset with 1000 items in it and you want a random forest with 5 trees
+in it. If you bag the data, 5 datasets of size 1000 will be created by randomly sampling your
+original dataset with replacement. Since we replace items in the original dataset there will likely
+be duplicates in each generated dataset. This allows each tree to have a slightly different view of
+the data.
 
 Note that after the datasets are made, trees can be built and used in parallel.
 
@@ -187,12 +187,11 @@ Concepts:
 # Boosting {.big}
 
 <!--
-While we are on the topic of ensemble learning techniques, we'll take a moment to talk about another
-popular technique, boosting. Boosting is a technique of training a model, determining which types of
+While we are on the topic of ensemble learning techniques, let's take a moment to talk about another
+popular technique: boosting. Boosting is a technique of training a model, determining which types of
 predictions it performed poorly on, and then training a subsequent model to focus more on the
-predictions that the model before it got wrong.
-
-You can think of it as an assembly line where each worker has a specialty.
+predictions that the model before it got wrong. You can think of it as an assembly line where each
+worker has a specialty.
 
 The downside of boosting is that it has to be done sequentially.
 
@@ -228,20 +227,18 @@ Concepts:
 
 <!--
 One of the most useful hyperparameters is `n_estimators`. This parameter sets the number of trees
-that will be in the forest. As you increase the number of trees you should expect for the bias in
+that will be in the forest. As you increase the number of trees you should expect that the bias in
 your model to be reduced. This comes at the cost of more resources being needed for training.
 
 If you are training in parallel, then you'll have as many copies of your dataset as you do trees. If
 you are training serially, then the time to train will increase linearly with the number of trees.
 
-Can more trees ever be a bad thing?
+Can more trees ever be a bad thing? Probably not, though there will be diminishing returns as the
+number of trees grows too much.
 
-Probably not, though there will be diminishing returns as the number of trees grows too much.
-
-How to you choose the best number?
-
-Experimentation. Play with different settings and compare training time and model scores until you
-find a value that seems to be fast and "good" enough for your use case.
+How to you choose the best number? Experimentation. Play with different settings and compare
+training time and model scores until you find a value that seems to be fast and "good" enough for
+your use case.
 
 Concepts:
 * models:tuning
@@ -284,8 +281,7 @@ Concepts:
 
 <!--
 By default every decision tree in the random forest will split until every leaf node is as pure as
-it can be. This can lead to overfitting. You can try to prevent this by setting a max depth on the
-tree.
+it can be. This can lead to overfitting. You can prevent this by setting a max depth on the tree.
 
 Can you think of how this parameter might be harmful?
 
@@ -308,11 +304,13 @@ Concepts:
 * How many samples are required in a leaf?
 
 <!--
-These two hyperparameters are very related. The first asks how many samples are required in a node
-for you to be able to split it. Any value greater than one is allowed, with the default being two.
+These two hyperparameters are very related.
 
-The next hyperparameter, min_samples_leaf, tells us the minimum number of samples needed to form a
-leaf node. The default is one, which is very specific.
+`min_samples_split` asks how many samples are required in a node for you to be able to split it.
+Any value greater than one is allowed, with the default being two.
+
+`min_samples_leaf` tells us the minimum number of samples needed to form a leaf node. The default
+is one, which is very specific.
 
 You should be able to see how these are related, and how they can cancel each other out. If I say
 that `min_samples_leaf` is two instead of one, then I've effectively set `min_samples_split` to at
@@ -348,10 +346,10 @@ Concepts:
 
 # Hyperparameters
 
-* Many more exist.
-* Can differ between classifiers and regressors.
-* Apply to all trees in the forest.
-* Experiment to tune.
+* Many more exist
+* Can differ between classifiers and regressors
+* Apply to all trees in the forest
+* Experiment to tune
 
 <!--
 We've just sampled a small sample of hyperparameters that are available for random forests. Many
