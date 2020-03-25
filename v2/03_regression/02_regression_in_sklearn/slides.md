@@ -25,6 +25,9 @@ We have learned about linear regression and we have learned about scikit-learn. 
 
 <!--
 Remember that linear regression involves fitting a straight line to a dataset. Most of the time, the line doesn't fit perfectly for all data points. You can see in this illustration the blue datapoints, the regression line, and then the red lines between the datapoints and the regression line. The red lines indicate the "error". There are many ways to measure this error that we'll talk about in detail in a future unit.
+
+Image Details:
+* [linearregressionwithscikit1.gif](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -151,6 +154,9 @@ Okay, so we all understand the test set, but what is the validation set?
 The validation set is used during training to let the optimizer evaluate the model. The loss calculated with the validation set directly effects decisions the model makes.
 
 Some models, like `LinearRegression` don't have a validation set since they aren't built using an optimizer. Others like `SGDRegressor` do utilize a validation set. The `validation_fraction` parameter can be adjusted to tell the model how much of the data to use for validation.
+
+Image Details:
+* [train_validate_test.png](http://www.google.com): Copyright Google
 -->
 
 ---
