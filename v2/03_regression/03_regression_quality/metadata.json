@@ -5,7 +5,9 @@
   "colabs": [
     "colab.ipynb"
   ],
-  "slides": [],
+  "slides": [
+    "slides.md"
+  ],
   "learning-objectives": [
     "Extract quantitative measurements of a regression model's predictions.",
     "Perform qualitative judgments of a regression model's predictions."
