@@ -1,11 +1,13 @@
 {
-  "name": "Classification with scikit-learn",
+  "name": "Multiclass Classification",
   "colabs": [
     "colab.ipynb"
   ],
   "rearning-objectives": [
-    "Create a classification model with scikit-learn.",
-    "Use scikit-learn to make classification predictions."
+    "Build a classification model for data with more than two classes.",
+    "Use cross-validation to evaluate a model trained with a small amount of data.",
+    "Create a model pipeline for training and predicting.",
+    "Standardize data to improve model performance."
   ],
   "duration": {
     "lecture": 15,

@@ -1,4 +1,11 @@
 {
+    "name": "Binary Classification",
+    "colabs": [
+        "colab.ipynb"
+    ],
+    "slides": [
+        "slides.md"
+    ],
     "learning-objectives": [
         "Differentiate between classification and regression models.",
         "Create a logistic regression model for a binary classification problem.",
@@ -7,5 +14,8 @@
         "Create an image using color data.",
         "Create and interpret box-and-whisker charts.",
         "Standardize data to improve model training performance."
-    ]
+    ],
+    "materials": [],
+    "handouts": [],
+    "resources": []
 }
