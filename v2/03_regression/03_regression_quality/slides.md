@@ -1,5 +1,5 @@
 ---
-
+false
 marp: true
 
 ---
@@ -33,11 +33,11 @@ Before we can define the metric itself, we need to define a few other key terms.
 
 A residual is the difference between the target value $y_i$ and the predicted value $\hat{y_i}$. The residual sum of squares is the summation of the square of every residual in the prediction set.
 
-The total sum of squares is the sum of the squares of the difference between each value $y_i$ and their mean.
+The total sum of squares is the sum of the squared differences between each value $y_i$ and their mean.
 
 Given the total sum of squares and the residual sum of squares, we can calculate the coefficient of determination $R^2$.
 
-The $R^2$ score measures how well the actual variance from $x$-values to $y$-values is represented in the variance between the $x$-values and the predicted $y$-values.
+The $R^2$ score measures how well the actual variance from $x$-values to $y$-values is represented in the variance between the $x$-values and the predicted $\hat{y}$-values.
 
 Typically, this score ranges from 0 to 1, where 0 is bad and 1 is a perfect mapping. However, the score can also be negative. Can you guess why?
 
@@ -73,7 +73,7 @@ The root mean squared error is simply the square root of the mean squared error.
 
 For instance, if you have a model that predicted housing prices and it had an RMSE of 10,000, would that model be good or bad? Since houses cost in the hundreds-of-thousands, if not milliions of dollars, and error of $10,000 doesn't seem too bad.
 
-What about a model that predicted average global temperatures in celsius that had an RMSE of 8. 8 is much smaller than 10,000, but 8 degrees celsius is a big deal in terms of average temperatures. 8 is probably not an acceptable RMSE for this model.
+What about a model that predicted average global temperatures in celsius that had an RMSE of 8. Although 8 is much smaller than 10,000, an 8 degrees celsius change is a big deal in terms of average temperatures. THus, 8 is probably not an acceptable RMSE for this model.
 -->
 
 ---
@@ -87,7 +87,7 @@ Mean absolute error is calculated similarly to mean squared error. Instead of us
 
 A benefit of MAE is that the units remain the same as that of the target.
 
-The primary difference in MAE and MSE is that MSE squares there error, which gives larger differences in value much higher error scores. This give extra penalty to the bad predictions.
+The primary difference in MAE and MSE is that MSE squares there error, which gives larger differences in value much higher error scores. This give extra penalty to really bad predictions.
 -->
 
 ---
@@ -99,7 +99,7 @@ The primary difference in MAE and MSE is that MSE squares there error, which giv
 <!--
 There are numerous ways to visualize regression predictions, but one of the most basic is the "predicted vs. actual" plot.
 
-In this case, the data points scatter pretty evenly around the prediction-to-actual line.
+In this case, the data points scatter pretty evenly around the prediction-to-actual line (i.e. the line y=x, where the actual and predication are equal).
 
 So what does a bad plot look like?
 
