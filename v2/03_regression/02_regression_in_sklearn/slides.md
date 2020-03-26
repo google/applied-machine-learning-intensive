@@ -32,7 +32,7 @@ Image Details:
 
 ---
 
-# scikit-learn: Closed-Form
+# scikit-learn: Using Linear Algebra
 
 ```python
 from sklearn.linear_model import LinearRegression
@@ -41,9 +41,10 @@ lin_reg = LinearRegression()
 lin_reg.fit(X, y)
 lin_reg.coef_, lin_reg.intercept_
 ```
+Note: this is not a learning algorithm.
 
 <!--
-In this unit, we'll perform both closed-form and non-closed-form regressions. To perform a closed-form linear regression in scikit-learn, we use the `LinearRegression` class from the `linear_model` package. As you can see in this example, performing the regression is as simple as instantiating the class and then calling the `fit()` method. The model then calculates the coefficient and intercept for the linear equation.
+To perform linear regression in scikit-learn without learning, we use the `LinearRegression` class from the `linear_model` package. As you can see in this example, performing the regression is as simple as instantiating the class and then calling the `fit()` method. The model then calculates the coefficient and intercept for the linear equation.
 -->
 
 ---
@@ -81,7 +82,7 @@ sgd_reg.coef_, sgd_reg.intercept_
 
 <!--
 
-Using the stochastic gradient descent looks strikingly similar to performing closed-form regression with `LinearRegression`. This is no accident. scikit-learn's API is very consistent.
+Using the stochastic gradient descent looks strikingly similar to using `LinearRegression`. This is no accident. scikit-learn's API is very consistent.
 
 In this example, we load the data into memory, perform SGD, and then print out the coefficient and intercept.
 

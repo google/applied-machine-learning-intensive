@@ -39,9 +39,9 @@ Image Details:
 ![center](res/classification.gif)
 
 <!--
-Classification models don't predict a continuous value, but instead attempt to predict the "class" of a data point. These classification algorithms can be as simple as determining between two states, such as spam or not spam, through systems that determine the probability that a data point is one of dozens or even thousands of classes.
+Classification models don't predict a continuous value, but instead attempt to predict the "class" of a data point. Classification algorithms can be used to choose between two states, such as spam or not spam. They can also be used for to determine determine the probability that a data point is one of dozens or even thousands of classes, such as the species of a particular plant.
 
-The 2-class model is often referred to as a "binary classifier". When more than two classes are being considered the problem is referred to as "multi-class classification". There are some algorithms that only work in binary classification states while others can be successful in both binary and multi-class applications.
+The 2-class problem is often referred to as "binary classification" for which we train a "binary classifier" model. When more than two classes are being considered the problem is referred to as "multi-class classification". There are some algorithms that only work in binary classification states while others can be successful in both binary and multi-class applications.
 
 In the illustration here you can see that we have two classes of data signified by the red and blue dots. We separate the classes using a line. All data on one side of the line is in the blue class and all data on the other side of the line is in the red class.
 
@@ -112,7 +112,7 @@ There are numerous models that can be used for classification. Some of the more 
 # Model performance
 
 <!--
-As mentioned before, determining the performance of a regression model is performed by measuring the distance between continuous values. In the case of classification models, there aren't any good continuous values to measure. Instead we count the number of predictions that the model got correct and the number that were incorrect. Using these counts we can then create various metrics that can be used to calculate model quality.
+As mentioned before, determining the performance of a regression model is calculated by measuring the distance between continuous values. In the case of classification models, there aren't any continuous values to measure and we don't have a good definition of distance. Instead we count the number of predictions that the model got correct and the number that were incorrect. Using these counts we can then create various metrics that can be used to calculate model quality.
 
 We’ll briefly cover the most common measures of classification performance now, and you’ll get more practice with these and more advanced measures later.
 -->
@@ -126,7 +126,13 @@ We’ll briefly cover the most common measures of classification performance now
 <!--
 Most of the performance measures that we look at will be based on values taken from the confusion matrix. For the sake of simplicity we'll stick to evaluating model quality for binary classification or at least from the perspective of a single class.
 
-Think of the two classes as one “positive” and one “negative” class. False Positive means the model predicted “positive” but the correct class is “negative”, and vice versa for False Negative.
+Think of the two classes as one “positive” and one “negative” class. 
+
+*True positice means the model predicted "positive" and the correct class is "positive"
+*False Positive means the model predicted “positive” but the correct class is “negative”
+*False Negative means the model prediceted "negative" but the correct class is "positive"
+*True Negative means the model prediceted "negative" and the correct class is "negative"
+
 
 Image Details:
 * [confusion_matrix.png](http://www.google.com): Copyright Google
