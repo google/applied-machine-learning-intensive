@@ -1,5 +1,5 @@
 ---
-
+false
 marp: true
 
 ---
@@ -48,6 +48,27 @@ In this unit, we'll perform both closed-form and non-closed-form regressions. To
 
 ---
 
+# Optimizers
+
+1. (Batch) Gradient Descent
+1. Stochastic Gradient Descent
+1. Mini-Batch Gradient Descent
+
+<!--
+Recall that our overall goal is to learn parameters that minimize a particular cost/loss function. There are many ways to perform this optimization, but gradient descent is a very popular choice. At a high-level, we use the gradient (i.e. the derivative/slope) of the cost function to determine the direction to adjust the parameters. In other words, if we want to get to hte bottom of the hill, we walk in the direct of the steepest downward slope. 
+
+In regular gradient descent the entire dataset is used to calculate the gradient during each iteration of training. This is sometimes called batch gradient descent, where the "batch" refers to the whole dataset. Note that if you have a particularly large dataset, this will result in A LOT of calculations, and it will quickly become an issue computationally. 
+
+To speed up computation, we often use stochastic gradient descent or mini-batch gradient descent. The word "stochastic" means randomly determined. In stochastic gradient descent (SGD) we randomly choose one data point form our training set to compute the gradient at each iteration (i.e. we use a batch-size of 1). Unlike typical gradient descent (which always changes the parameters in the direction of the steepest slope), the path taken by stochastic gradient descent to reach the minimum is often a little noisy. Due to the noise, SGD may take more iterations to converge, but each iteration is so much faster computationally that completing additional iterations is still a significant computational improvement over typical gradient descent. In the walking down a hill analogy, it can be helpful to think of an inebriated person walking/falling down a hill (stochastic gradient descent) versus a careful mathematician who calculates the best direction before taking each step. Ultimately, both people will arrive at the bottom of the hill. For our purposes, we only care that we find parameters that minimize the cost function (i.e. live at the bottom of the hill), and we'd prefer to get there as quickly as possible. 
+
+Mini-batch gradient descent is a middle ground between batch gradient descent and stochastic gradient descent. In mini-batch gradient descent, a fixed number of training samples (greater than 1, but less than the entire dataset) is used to compute the gradient during each iteration. 
+
+Let's look at how to call SGD in scikit-learn. 
+
+-->
+
+---
+
 # scikit-learn: Stochastic Gradient Descent
 
 ```python
@@ -59,6 +80,7 @@ sgd_reg.coef_, sgd_reg.intercept_
 ```
 
 <!--
+
 Using the stochastic gradient descent looks strikingly similar to performing closed-form regression with `LinearRegression`. This is no accident. scikit-learn's API is very consistent.
 
 In this example, we load the data into memory, perform SGD, and then print out the coefficient and intercept.
@@ -88,13 +110,13 @@ There aren't really any hyperparameters to tune for `LinearRegression`. There ar
 
 `SGDRegressor`, however, has many hyperparameters that can be tuned. You can see some of those hyperparameters in use here.
 
-The first parameter that we have changed is the `max_iter`. This changes the maximum number of times that the model will pass over the data for training. Sometimes you can improve model performance by just training more.
+The first hyperparameter that we have changed is the `max_iter`. This changes the maximum number of times that the data will be passed to the model for training. Sometimes you can improve model performance by just training more.
 
-The second parameter, `n_iter_no_change`, manages "early stopping" for the model. The setting is the number of times the model will pass over the data, not see a meaningful change in loss, and keep going. We have said that if you don't see a meaningful change in 10 epochs, stop. Increasing this number can potentially help your model get out of a plateau of loss that is just a local minimum.
+The second parameter, `n_iter_no_change`, manages "early stopping" for the model. This setting controls the number of times the data will be passed to the model for training, not see a meaningful change in loss, and keep going. We have said that if you don't see a meaningful change in 10 epochs, stop. Increasing this number can potentially help your model get out of a plateau of loss that is just a local minimum.
 
-The `tol` setting defines what that meaningful change in loss is.
+The `tol` setting defines the meaningful change in loss.
 
-And finally the `learning_rate` affects the change in learning rate over time. At each epoch the algorithm adjusts weights by the learning rate and measures loss. This rate can be constant throughout the training, but can also change over time. There are schools of thought that favor making the learning rate smaller as training continues to allow the optimizer to make finer adjustments as it nears an optimal solution.
+And finally the `learning_rate` affects the change in learning rate over time. At each epoch the algorithm adjusts weights in a way that's proportional to the learning rate and measures the loss. This rate can be constant throughout the training, but can also change over time. There are schools of thought that favor making the learning rate smaller as training continues to allow the optimizer to make finer adjustments as it nears an optimal solution.
 
 There are many more hyperparameters that can be found in the SGDRegressor documentation.
 -->
@@ -139,7 +161,7 @@ We'll got into loss and different ways to measure it in later units. For this un
 <!--
 This lab will also be the first time that we'll need to split our data for model training. 
 
-When we train a model, we could use all of the data that we have. However, when we do that we risk overfitting the model to our data. The model might become really good at making predictions that look like the data that it has already seen, but really bad at generalizing.
+When we train a model, we could use all of the data that we have. However, when we do that we risk overfitting the model to our data, and we lose the ability to test our model on "new" data that it hasn't seen. The model might become really good at making predictions that look like the data that it has already seen, but really bad at generalizing.
 
 For this reason we typically hold out some of the data and don't use it to train the model at all. We keep this "test set" of data and use it only to evaluate the model after training has completed. We pass the trained models the features in the test set, get the predictions from the model, and then calculate the difference between the predictions and the actual values.
 
