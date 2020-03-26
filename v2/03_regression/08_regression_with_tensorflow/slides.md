@@ -8,7 +8,7 @@ marp: true
 
 <!--
 We have created numerous regression models in this course using both
-scikit-learn and TensorFlow. These models have all be "classic" models,
+scikit-learn and TensorFlow. These models have all been "classic" models,
 but that is about to change.
 
 In this unit, we are going to build a regression model using a deep neural
@@ -26,7 +26,7 @@ layers, and output a continuous value.
 To build our deep neural network we will be using Keras, a high-level Python API
 that can be used within TensorFlow.
 
-Don't be put off by the term "deep neural network". Though the math and the
+Don't be put off by the term "deep neural network." Though the math and the
 theory are complex, the actual code that you need to write to create one is as
 easy as creating a simple linear regression.
 -->
@@ -64,21 +64,21 @@ layer_3 = layers.Dense(1)
 <!--
 A model consists of layers of nodes. In the lab that we are about to do, those layers are `Dense` layers. A dense layer in a neural network is a layer where every node is connected to every node in the next layer.
 
-In the example we have on this slide, we create three `Dense` layer classes. This actually creates a neural network that is four layers deep though.
+In the example we have on this slide, we create three `Dense` layer classes. This actually creates a neural network that is four layers deep, though.
 
-When we make the first layer we pass in an input shape. This is the shape of the features that you'll be feeding into the model. In this case we chose an input shape of 8. That indicates that we'll be providing 8 features to the model. The input layer is the first layer.
+When we make the first layer, we pass in an input shape. This is the shape of the features that you'll be feeding into the model. In this case we chose an input shape of 8. That indicates that we'll be providing 8 features to the model. The input layer is the first layer.
 
 But you should also notice that we passed the number 32 to the `Dense` constructor. This creates our first hidden layer with 32 nodes.
 
-In review, this first line of code creates two layers. An input layer that accepts 8 features. That layer is densly connected to the next layer, which has 32 nodes. This means that there are 8x32 connections between the layers.
+In review, this first line of code creates two layers. An input layer that accepts 8 features. That layer is densely connected to the next layer, which has 32 nodes. This means that there are 8x32 connections between the layers.
 
-The next line of code creates another dense layer. This layer is 16 nodes wide. Notice that we pass an activation function to this layer. The activation we chose is the relu activation. By default the activation for a dense layer in TensorFlow Keras is a $f(x) = x$. We can adjust the activation function layer by layer.
+The next line of code creates another dense layer. This layer is 16 nodes wide. Notice that we pass an activation function to this layer. The activation we chose is the relu activation. By default the activation for a dense layer in TensorFlow Keras is $f(x) = x$. We can adjust the activation function layer by layer.
 
-There are many activation functions available in the `tensorflow.keras.activations` namespace. Many of these can be referenced by name as shown in this example. There are more activation functions available in `tf.nn`. For these functions you'll need to pass in the class like `tf.nn.leaky_relu` instead of just the name.
+There are many activation functions available in the `tensorflow.keras.activations` namespace. Many of these can be referenced by name as shown in this example. There are more activation functions available in `tf.nn`. For these functions you'll need to pass in the class - like `tf.nn.leaky_relu` - instead of just the name.
 
 The final layer that we create is our output layer. Since we have been doing single output regressions, this output layer has only one node. That node will be our predicted regression value for a given set of input features.
 
-You aren't limited to one output though. As we move into classification we'll see examples with more than one output node.
+You aren't limited to one output though. As we move into classification, we'll see examples with more than one output node.
 -->
 
 ---
@@ -96,18 +96,18 @@ model = keras.Sequential([
 ])
 ```
 <!--
-In our previous slide we created layers, but we didn't connect them. In this slide we'll create the layers inside a sequential model. Now the layers are densely connected in sequence.
+In our previous slide, we created layers, but we didn't connect them. In this slide, we'll create the layers inside a sequential model. Now the layers are densely connected in sequence.
 
 Questions to ask the class: 
 How many layers are there in this model? Answer: 4
 
 How many nodes are in the first layer? Answer: 8
 
-How many nodes are in the second and their layers? Answer: 64
+How many nodes are in the second and third layers? Answer: 64
 
 How many nodes are in the final layer? Answer: 1
 
-How many connections between layer 1 and layer 2? Answer: 8x64
+How many connections are there between layer 1 and layer 2? Answer: 8x64
 
 *It may be helpful to draw a schematic of the model on the board while asking students the questions.*
 
@@ -146,9 +146,9 @@ model.compile(
 ```
 
 <!--
-After we have defined the structure of the model, we need to tell TensorFlow what to optimize for. To do that we compile the model.
+After we have defined the structure of the model, we need to tell TensorFlow what to optimize for. To do that, we compile the model.
 
-In this example we are using the Adam optimizer to optimize for mean squared error, while also tracking mean absolute error and mean squared error. The tracked values will be reported after training.
+In this example, we are using the Adam optimizer to optimize for mean squared error, while also tracking mean absolute error and mean squared error. The tracked values will be reported after training.
 -->
 
 ---
@@ -167,11 +167,11 @@ history = model.fit(
 ```
 
 <!--
-Once you have defined your model and setup optimization parameters, it is time to train your model. Training is done with the `fit()` method, which needs to know the feature and target data.
+Once you have defined your model and set up optimization parameters, it is time to train your model. Training is done with the `fit()` method, which needs to know the feature and target data.
 
-Fit also needs to know how many times to repeat the data. Each repition is called an epoch. In this case we asked for 50 epochs. In the history that is returned we will get measurements for the mean absolute error, mean squared error, and loss at each epoch.
+Fit also needs to know how many times to repeat the data. Each repetition is called an epoch. In this case, we asked for 50 epochs. In the history that is returned we will get measurements for the mean absolute error, mean squared error, and loss at each epoch.
 
-The final arguement that we pass to `fit()` is how much of the data to hold out as a validation set during training. This allows the model to track how it progresses over epochs using data that it isn't training on.
+The final argument that we pass to `fit()` is how much of the data to hold out as a validation set during training. This allows the model to track how it progresses over epochs using data that it isn't training on.
 -->
 
 ---
@@ -192,5 +192,5 @@ The whole point of building a model is to make predictions. You can use the `pre
 ## Regression with TensorFlow
 
 <!--
-For our hands-on exercise we will revisit the California housing prices dataset from an earlier lab. We'll use a sequential model with dense layers to create predictions that outperform the linear regression model we created earlier.
+For our hands-on exercise, we will revisit the California housing prices dataset from an earlier lab. We'll use a sequential model with dense layers to create predictions that outperform the linear regression model we created earlier.
 -->
