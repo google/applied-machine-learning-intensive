@@ -150,20 +150,29 @@ Image Details:
 <!--
 Accuracy is a very basic measure of quantity. It is simply the number of predictions that the classifier got correct over the total number of predictions made.
 
-Discuss how accuracy isn't a good measure, especially for skewed datasets (class imbalance: when positives or negatives are rare). Consider a dataset predicting some rare disease. In most cases, the disease isn't present so a model that always predicted the disease was not present would likely have a high accuracy.
+Accuracy seems like a reasonable thing to check, but it isn't always a good measure. This is especially true for skewed datasets with class imbalances. For example, consider imagine we are trying to diagnose an extremely rare type of cancer. In our training data, we have 995 samples of benign tumors and only 5 samples of malignant tumors. Let's say we train a model and it ALWAYS predicts false, meaning that it always says a tumor is benign. 
 
-Color blindness in women: 1 in 200, or .5% of women
-If my model always predicted false, what would be the accuracy?
+Question: What is the accuracy? Answer: 995/1000 = .995 (or 99.5 percent). 
 
-***
-Even with balanced classes accuracy is problematic because it ignores the context. Sometimes you care more about performance for one class vs. another. Depending on the consequences of your decision, you will use a different threshold to make the decision.
+So from the perspective of acuracy, this is a great model! But in reality, there are some clear issues, especially if we consider that we would be sending people with cancer home thinking their tumor is benign. 
 
-Ex: If you’re predicting a disease that would require invasive surgery, you will require a much higher probability for your classification as positive than if it only required recommending two aspirin. Or you might even have three different decisions although there are only two classes (sick vs. healthy): "go home and don't worry" vs. "run another test because the one we have is inconclusive" vs. "operate immediately".”
+Even with balanced classes accuracy is problematic because it ignores the context. Sometimes you care more about performance for one class over another. Depending on the consequences of your decision, you will use a different threshold to make the decision. For example, if you’re predicting a disease that would require a dangerous and invasive surgery, you may require a much higher probability for your classification as positive than if it only required recommending two aspirin. 
 
 https://stats.stackexchange.com/questions/312780/why-is-accuracy-not-the-best-measure-for-assessing-classification-models
 
 Image Details:
 * [accuracy.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Motivation for Precision
+
+What is the probability that a tumor is actually malignant, given that our model classified it as malignant? 
+
+<!--
+In practice, we need more nuanced measures. The goal of precision is to answer this question. 
+
 -->
 
 ---
@@ -176,21 +185,34 @@ Image Details:
 ![center](res/precision.png)
 
 <!--
-In practice, you need more nuanced measures.
-
 (Students will get more experience with this in the Classification Quality unit. Don't need to spend much time on it here. The slide is just showing that precision is a percentage of the positive cases that were actually correctly predicted over all of the positive case predictions.)
 
-Precision: (true positive / all positive predictions)
-When the model predicted positive, how often was it right?
-Intuition: did the model classify as positive too often?
+Precision = (true positive / all positive predictions)
+Intuition: When the model predicted positive, how often was it right?
 
-what happens if we classify everything as negative except for 1 that we’re 100% sure it’s positive?
-100% precision
+Facts:
+*High precision implies low false positives (i.e. our model does not classify very many benign tumors as malignant).
+*Precision = 1 means all tumors classified as malignant were indeed malignant, but says nothing about the number of malignant tumors that were incorrectly labeled as benign.
 
-Write formula on the whiteboard
+IMPORTANT NOTE: This says nothing about how many malignant tumors our model is missing! 
+
+Language: note that precision is also referred to as positive predictive value (PPV).
+
+*It may be helpful to write the formula on the whiteboard at this point.*
 
 Image Details:
 * [precision.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Motivation for Recall
+
+What is the probability that our model will classify a tumor as malignant, given that it actually is malignant?
+
+<!--
+The goal of recall is to answer this question. 
+
 -->
 
 ---
@@ -204,9 +226,20 @@ Image Details:
 
 <!--
 (Students will get more experience with this in the Classification Quality unit.)
-Recall: (true positive / all actual positive)
-Out of all the possible positives, how many did the model correctly identify?
-Intuition: Did it miss any positives?
+
+Precision = (true positive / all actual positive)
+Intuition: Out of all the possible positives, how many did the model correctly identify?
+
+Facts:
+*High Recall implies low false negatives (i.e. our model does not classify very many malignant tumors as benign).
+*Recall = 1 means all malignant tumors are classified as malignant -- we’re not missing any malignant tumors.  A negative test would definitively rule out malignancy. But we could have a test that always says “malignant.” 
+
+IMPORTANT NOTE: This says nothing about how many positive results are actually correct. 
+
+Language: note that recall is also referred to as sensitivity, hit rate, and true positive rate. 
+
+*It may be helpful to write the formula on the whiteboard at this point.*
+
 
 Image Details:
 * [recall.png](http://www.google.com): Copyright Google
@@ -217,10 +250,10 @@ Image Details:
 ![](res/tug_of_war.jpg)
 
 <!--
-Balancing precision and recall is a tug-of-war between the metrics. Finding the optimal point where these two metrics are acceptable to your model is the goal.
+Balancing precision and recall is a tug-of-war between the metrics. Finding the optimal point where these two metrics are acceptable for your model is the goal.
 
-If we want to increase recall, predict positive more often
-If we want to increase precision, only predict positive when we’re absolutely sure (raise classification threshold)
+If we want to increase recall, predict positive more often.
+If we want to increase precision, only predict positive when we’re absolutely sure (raise classification threshold).
 In general, raising the classification threshold reduces false positives, thus raising precision.
 
 Image Details:
@@ -239,9 +272,7 @@ Image Details:
 <!--
 What is a good way to determine if precision and recall are balanced? The F1 score computes the harmonic mean for the values. This formula penalizes small values of either, so optimizing for a high F1 score helps keep both precision and recall high.
 
-Compare color blindness example: accuracy vs F1 when everyone is predicted as negative.
-
-Expand formula to get optimized F1 (can calculate F1 directly from the TP/TN/FP/FN counts)
+We can expand this formula to get a simplified F1 that can be calculated directly from the TP/TN/FP/FN counts.
 
 Image Details:
 * [f1.png](http://www.google.com): Copyright Google
@@ -249,12 +280,14 @@ Image Details:
 
 ---
 
-# F1: optimized
+# F1: simplified
 
 ![center](res/f1_optimized.png)
 
 <!--
-The F1 formula can be reduced to this formula… math.
+The F1 formula can be reduced to this formula. 
+
+*It may be helpful to write the formula on the whiteboard at this point.*
 
 Image Details:
 * [f1_optimized.png](http://www.google.com): Copyright Google
@@ -271,7 +304,7 @@ In general accuracy isn't a good measure.
 
 F1 is a good measure to balance precision and recall.
 
-We’ll discuss more advanced measures later as well -- it is a good idea to measure the quality of your classifier using many different metrics and graphs, and sometimes directly reporting the confusion matrix is insightful
+We’ll discuss more advanced measures later as well -- it is a good idea to measure the quality of your classifier using many different metrics and graphs, and sometimes directly reporting the confusion matrix is also insightful.
 -->
 
 
@@ -286,8 +319,7 @@ Model to predict if a tumor is malignant
 <!--
 Let's get some practice calculating these metrics using a confusion matrix.
 
-A confusion matrix is often used to describe how well a classification model performs on a dataset where true values are known.  It’s best to think of it as a table with 2 rows and 2 columns
-It’s important to note what is the model trying to predict - which represents a “positive” outcome.  In this example the model is trying to predict if a tumor is malignant.  So positive outcome is a malignant tumor (though not positive in a human sense)
+A confusion matrix is often used to describe how well a classification model performs on a dataset where true values are known.  It’s best to think of it as a table with 2 rows and 2 columns. It’s important to note what the model is trying to predict - which represents a “positive” outcome.  In this example the model is trying to predict if a tumor is malignant.  So positive outcome is a malignant tumor.
 
 The 4 sections of the confusion matrix:
 True Positive (TP)
@@ -322,6 +354,8 @@ Let’s calculate based on the following example data where we have:
 8 counts of FN
 90 counts of TN
 The total number of predictions is 100 counts
+
+*Ask the students to calculate the accuracy, precision, recall, and F1 scores. The answers will be presented in the follpwing slides.*
 
 Image Details:
 * [confusion_matrix_tumor2.png](http://www.google.com): Copyright Google
@@ -384,9 +418,10 @@ Image Details:
 # Weather prediction
 
 ![](res/weather.png)
+Create a confusion matrix for this model.
 
 <!--
-Practice calculations (these are the most common / important metrics to know for classification)
+*Give the students a chance to practice creating a confusion matrix for this model*
 
 Image Details:
 * [weather.png](http://www.google.com): Copyright Google
@@ -396,7 +431,7 @@ Image Details:
 
 # Your Turn
 
-* Given that model to predict if it’s going to rain, construct a confusion matrix, and calculate:
+* Now that you have a confusion matric, calculate
   * Accuracy =
   * Precision =
   * Recall =
@@ -423,12 +458,14 @@ Image Details:
 
 ---
 
-# Precision recall curve
+# Precision vs. Recall Curve
 
 ![center](res/precision_recall_curve.png)
 
 <!--
-Besides F1 score, detailed plots of precision vs. recall can also be used to pick where to find a balance. In this case there is a drastic decrease in recall as precision crosses 80%. Depending on your problem, you'll probably want to keep your model tuned to values close to 80% precision.
+Besides F1 score, detailed plots of precision vs. recall can also be used to pick where to find a balance. This graph is created by varying the threshold value for a positive prediction (ex. malignant). If the model is 60% confident a tumor is malignant, do we classify it as malignant? What if our model returns a 90% confidence a tumor is malignant? This threshold can be chosen by the researcher, and the precision vs. recall curve helps us decide how to set it.
+
+In the curve shown here, there is a drastic decrease in recall as precision crosses 80%. Depending on your problem, you'll probably want to keep your model tuned to values close to 80% precision.
 
 Talk with class about examples where recall or precision might be favored:
 Hiring decision? --precision
@@ -437,8 +474,6 @@ Music / video recommendations? (is it better to play a song the user won’t lik
 Medical treatment? (what happens if a doctor sends you home and you have a terminal disease? What about when they run the exams just in case?) --recall
 criminal justice risk assessment --precision 
 Fraud / identity theft detection --recall ( every once in a while your card gets blocked or you get a call, specially if travelling or diff purchase behavior, because that’s cheaper than having to deal with the consequences of not detecting it early enough)
-
-Point to importance of knowing how the algorithm got to that conclusion: compare early detection of schizophrenia vs criminal justice risk assessment 
 
 Image Details:
 * [precision_recall_curve.png](http://www.google.com): Unlicensed
@@ -450,7 +485,7 @@ Image Details:
 ![center](res/roc_curve.png)
 
 <!--
-Another curve used to visualize model quality is the ROC curve. ROC curve plots True Positive Rate (TPR, or recall) against False Positive Rate for various threshold values. FPR is (1 - the true negative rate).
+Another curve used to visualize model quality is the ROC curve. ROC curve plots True Positive Rate (TPR, or recall) against False Positive Rate (FPR) for various threshold values. FPR is (1 - the true negative rate).
 
 The next slides will detail what these values are.
 
@@ -492,10 +527,28 @@ Image Details:
 
 ![center](res/roc_curve.png)
 
-<!--
-How do you tell if you have a good model? There is a calculation called Area Under Curve (AOC) or Area Under ROC (AUROC). Most toolkits will calculate this value for you. An AOC of 0.5 is a totally random classifier (dotted line) and an AOC of 1.0 is a perfect classifier.
 
-ROC / AOC are complicated metrics that people often misinterpret -- an ideal graph curves high on the upper left and has an AOC closer to 1.0
+<!--
+TRUE POSITIVE RATE (y-axis):
+* The true positive rate in the ROC curve (y-axis) is exactly the recall. 
+* Proportion of correctly classified malignant tumors
+
+FALSE POSITIVE RATE (x-axis):
+* The false positive rate is one minus the true negative rate (TNR). TNR is also called specificity.
+* Proportion of incorrectly classified benign tumors (negative samples falsely predicted as positive). 
+
+DOTTED LINE: 
+* On the dotted line, the True Positive Rate = False Positive Rate. 
+* Probability that you correctly classify a malignant tumor is equal to the probability that you incorrectly classify a benign tumor - i.e. given any sample, malignant or benign, the model has an equal probability of classifying them as malignant. 
+* Above the dotted line, the True Positive Rate > False Positive Rate. i.e. probability that you correctly classify malignant tumors is greater than the probability of incorrectly classifying benign tumors. Want this! 
+
+INTERPRETATION and MODEL COMPARISON:
+* There is a calculation called Area Under Curve (AUC) or Area Under ROC (AUROC).
+* Most toolkits will calculate this value for you.
+* For the dotted line the AUC is 0.5.
+* The AUC allows you to compare two ROC curves - larger area under curve = better model. 
+
+ROC / AUC are complicated metrics that people often misinterpret -- an ideal graph curves high on the upper left and has an AOC closer to 1.0
 
 Image Details:
 * [roc_curve.png](http://www.google.com): Unlicensed
