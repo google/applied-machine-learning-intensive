@@ -7,7 +7,7 @@ So far we have learned about:
 * Classification
 * scikit-learn
 * TensorFlow
-and many more concepts and tools used in machine learning.
+...and many more concepts and tools used in machine learning.
 
 In this unit we are going to combine the concepts about classification that we recently learned and apply them using the scikit-learn toolkit.
 -->
@@ -24,7 +24,7 @@ K Nearest Neighbors (KNN)
 
 One of the simplest **supervised** machine learning algorithms used mostly for classification. 
 
-[Note: We can also use KNN for regression -- example in Colab.]
+[Note: We can also use KNN for regression (example in Colab).]
 
 ---
 
@@ -131,11 +131,11 @@ Example: classify as red or white wine {.big}
 * Large K -- > computationally expensive
 
 **SOME OPTIONS**:
-* Let K = sqrt(m) (i.e. sqrt of sample size)
-* Try K=1, 2, 3, 4, 5, …. with mult training/testing compare F1, accuracy, etc.
+* Let K = sqrt(m) (where m is the sample size)
+* Try K=1, 2, 3, 4, 5, …. with multi training/testing compare F1, accuracy, etc.
 * Try different K and use cross-validation (Colab to come!)
 * Use a clustering algorithm (Colabs to come!)
-* And more!!
+* And more!
 
 ---
 
@@ -145,7 +145,7 @@ Example: classify as red or white wine {.big}
 
 # When to use KNN?
 
-KNN is a “lazy learner” algorithm - doesn’t learn a discriminative function from the training set (no generalization until query is made).
+KNN is a “lazy learner” algorithm - it doesn’t learn a discriminative function from the training set (no generalization until query is made).
 
 Use when:
 * Dataset is relatively small 
