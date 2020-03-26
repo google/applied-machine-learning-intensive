@@ -17,8 +17,7 @@ TensorFlow.
 <!--
 Why would we want to build a linear regression using TensorFlow?
 
-It's true that scikit-learn is perfectly good at linear regression (most of the time). However,
-TensorFlow has some features like distributed model training that can help you
+It's true that scikit-learn is perfectly good at linear regression (most of the time). However, TensorFlow has some features like distributed model training that can help you
 build models when you have huge amounts of data. It is also useful to learn a new tool by practicing on content that you are familiar with. 
 -->
 
@@ -29,7 +28,7 @@ build models when you have huge amounts of data. It is also useful to learn a ne
 
 <!--
 In this lab we'll be using the [`LinearRegressor`](https://www.tensorflow.org/api_docs/python/tf/compat/v1/estimator/LinearRegressor)
-class. `LinearRegressor` is a
+class. `LinearRegressor` is an
 [`Estimator`](https://www.tensorflow.org/api_docs/python/tf/compat/v1/estimator/Estimator).
 `Estimator` is an API and programming model that was introduced in TensorFlow
 version 1. It is a little more difficult to use than modern Keras-style
@@ -59,9 +58,9 @@ Here you can see the main programming flow of the `LinearRegressor.'
 
 We:
 1. Import TensorFlow.
-1. Create an estimator class.
-1. Train the estimator by passing it a function that provides data.
-1. Use the model by passing it a function that provides data.
+2. Create an estimator class.
+3. Train the estimator by passing it a function that provides data.
+4. Use the model by passing it a function that provides data.
 -->
 
 ---
@@ -83,14 +82,14 @@ def training_input():
 <!--
 Here you can see what an input function might look like. The function:
 
-1. Creates a `DataSet` object. This particular `DataSet` is just wrapping a
-   bunch of Pandas `Series` objects, but `DataSet` can represent other data
+1. Creates a `Dataset` object. This particular `Dataset` is just wrapping a
+   bunch of Pandas `Series` objects, but `Dataset` can represent other data
    acquisition and storage strategies.
-1. Set the number of times to pass the data to the model. Remember that our
+2. Set the number of times to pass the data to the model. Remember that our
    models will be using an optimizer to try to find good weights. In order to do
    this, it helps to pass the data to the model a few times.
-1. Shuffles the data between repeats.
-1. Defines the mini-batch size. This is the number of data points that will be
+3. Shuffles the data between repeats.
+4. Defines the mini-batch size. This is the number of data points that will be
    passed to the model in each training step.
 
 Note that repetition and batch are hyperparameters that you can change in the
@@ -120,7 +119,7 @@ Another interesting hyperparameter is the optimizer. By default
 [`Ftrl`](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Ftrl)
 optimizer; however, there are many more options. In this example we use the
 [`Adam`](https://www.tensorflow.org/api_docs/python/tf/keras/optimizers/Adam)
-optimizer. In this case we also manually set the learning rate. Each optimizer
+optimizer. In this case, we also manually set the learning rate. Each optimizer
 has settings like this that you can change to help your model train faster and
 better.
 
@@ -157,7 +156,7 @@ that we'll be working with.
 ## Predicting Housing Prices
 
 <!--
-In the lab we will use United States census data to try to predict housing
+In the lab, we will use United States census data to try to predict housing
 prices in California. We'll examine the data, manipulate the data, and then
 build and adjust a model.
 -->
