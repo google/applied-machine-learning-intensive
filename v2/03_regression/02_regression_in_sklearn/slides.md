@@ -56,11 +56,11 @@ To perform linear regression in scikit-learn without learning, we use the `Linea
 1. Mini-Batch Gradient Descent
 
 <!--
-Recall that our overall goal is to learn parameters that minimize a particular cost/loss function. There are many ways to perform this optimization, but gradient descent is a very popular choice. At a high-level, we use the gradient (i.e. the derivative/slope) of the cost function to determine the direction to adjust the parameters. In other words, if we want to get to hte bottom of the hill, we walk in the direct of the steepest downward slope. 
+Recall that our overall goal is to learn parameters that minimize a particular cost/loss function. There are many ways to perform this optimization, but gradient descent is a very popular choice. At a high-level, we use the gradient (i.e. the derivative/slope) of the cost function to determine the direction to adjust the parameters. In other words, if we want to get to the bottom of the hill, we walk in the direction of the steepest downward slope. 
 
-In regular gradient descent the entire dataset is used to calculate the gradient during each iteration of training. This is sometimes called batch gradient descent, where the "batch" refers to the whole dataset. Note that if you have a particularly large dataset, this will result in A LOT of calculations, and it will quickly become an issue computationally. 
+In regular gradient descent, the entire dataset is used to calculate the gradient during each iteration of training. This is sometimes called batch gradient descent, where the "batch" refers to the whole dataset. Note that if you have a particularly large dataset, this will result in A LOT of calculations, and it will quickly become an issue computationally. 
 
-To speed up computation, we often use stochastic gradient descent or mini-batch gradient descent. The word "stochastic" means randomly determined. In stochastic gradient descent (SGD) we randomly choose one data point form our training set to compute the gradient at each iteration (i.e. we use a batch-size of 1). Unlike typical gradient descent (which always changes the parameters in the direction of the steepest slope), the path taken by stochastic gradient descent to reach the minimum is often a little noisy. Due to the noise, SGD may take more iterations to converge, but each iteration is so much faster computationally that completing additional iterations is still a significant computational improvement over typical gradient descent. In the walking down a hill analogy, it can be helpful to think of an inebriated person walking/falling down a hill (stochastic gradient descent) versus a careful mathematician who calculates the best direction before taking each step. Ultimately, both people will arrive at the bottom of the hill. For our purposes, we only care that we find parameters that minimize the cost function (i.e. live at the bottom of the hill), and we'd prefer to get there as quickly as possible. 
+To speed up computation, we often use stochastic gradient descent or mini-batch gradient descent. The word "stochastic" means randomly determined. In stochastic gradient descent (SGD), we randomly choose one data point from our training set to compute the gradient at each iteration (i.e. we use a batch-size of 1). Unlike typical gradient descent (which always changes the parameters in the direction of the steepest slope), the path taken by stochastic gradient descent to reach the minimum is often a little noisy. Due to the noise, SGD may take more iterations to converge, but each iteration is so much faster computationally that completing additional iterations is still a significant computational improvement over typical gradient descent. In the walking down a hill analogy, it can be helpful to think of an inebriated person walking/falling down a hill (stochastic gradient descent) versus a careful mathematician who calculates the best direction before taking each step. Ultimately, both people will arrive at the bottom of the hill. For our purposes, we only care that we find parameters that minimize the cost function (i.e. live at the bottom of the hill), and we'd prefer to get there as quickly as possible. 
 
 Mini-batch gradient descent is a middle ground between batch gradient descent and stochastic gradient descent. In mini-batch gradient descent, a fixed number of training samples (greater than 1, but less than the entire dataset) is used to compute the gradient during each iteration. 
 
@@ -82,7 +82,7 @@ sgd_reg.coef_, sgd_reg.intercept_
 
 <!--
 
-Using the stochastic gradient descent looks strikingly similar to using `LinearRegression`. This is no accident. scikit-learn's API is very consistent.
+Using the stochastic gradient descent looks strikingly similar to using `LinearRegression`. This is no accident. Scikit-learn's API is very consistent.
 
 In this example, we load the data into memory, perform SGD, and then print out the coefficient and intercept.
 
@@ -189,11 +189,11 @@ Image Details:
 ![center](res/double-validate.png)
 
 <!--
-The holdout data story gets more complicated when hyperparameter tuning is involved. When you tune hyperparameters you'll still have the same training and validating data available during model fitting. Then you'll use your test data to see how well the model generalizes. However, if you then change hyperparameters and test again you risk over-tuning hyperparameters to the test data set!
+The holdout data story gets more complicated when hyperparameter tuning is involved. When you tune hyperparameters, you'll still have the same training and validating data available during model fitting. Then you'll use your test data to see how well the model generalizes. However, if you then change hyperparameters and test again you risk over-tuning hyperparameters to the test data set!
 
 In order to prevent this, many data scientists also keep another holdout dataset called the validation dataset. This dataset is used for one final check after you have selected hyperparameters.
 
-There is an unfortunate naming collision with the validation data that the model holds out while optimizing. Luckily you don't really ever interact directly with the validation data that the model uses while training. The most you might do is set the percentage of data to hold out. The final validation set is fully your responsibility though.
+There is an unfortunate naming collision with the validation data that the model holds out while optimizing. Luckily you don't really ever interact directly with the validation data that the model uses while training. The most you might do is set the percentage of data to hold out. The final validation set is fully your responsibility, though.
 -->
 
 ---
