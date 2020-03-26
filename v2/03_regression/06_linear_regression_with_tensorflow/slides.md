@@ -17,7 +17,7 @@ TensorFlow.
 <!--
 Why would we want to build a linear regression using TensorFlow?
 
-It's true that scikit-learn is perfectly good at linear regression (most of the time). However, TensorFlow has some features like distributed model training that can help you
+It's true that scikit-learn is perfectly good at linear regression most of the time. However, TensorFlow has some features like distributed model training that can help you
 build models when you have huge amounts of data. It is also useful to learn a new tool by practicing on content that you are familiar with. 
 -->
 
@@ -156,7 +156,7 @@ that we'll be working with.
 ## Predicting Housing Prices
 
 <!--
-In the lab, we will use United States census data to try to predict housing
+In the lab we will use United States census data to try to predict housing
 prices in California. We'll examine the data, manipulate the data, and then
 build and adjust a model.
 -->
