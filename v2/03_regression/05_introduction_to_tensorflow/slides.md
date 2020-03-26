@@ -130,7 +130,7 @@ Version 1 of TensorFlow really emphasized the concept of graphs. It used a "lazy
 
 This programming model worked, but it was a little clunky. Luckily, a library called Keras showed that machine learning models could be built and trained using a more natural eager execution model.
 
-TensorFlow 2 was officially released in late 2019. TensorFlow 2 still supports much of the older programming model through a compatibility layer, but new programs should be written in TensorFlow 2 if possible.
+TensorFlow 2 was officially released in late 2019. TensorFlow 2 still supports much of the older programming model through a compatibility layer, but, if possible, new programs should be written in TensorFlow 2's Keras API style. 
 
 TensorFlow 1 placed more of an emphasis on the concept of estimators (similar to scikit-learn). They are still supported in TensorFlow 2 and will continue to be for the indefinite future.
 -->

@@ -6,5 +6,13 @@
     "colab.ipynb"
   ],
   "materials": [],
-  "resources": []
+  "resources": [
+    "http://karpathy.github.io/2015/05/21/rnn-effectiveness/",
+    "http://colah.github.io/posts/2015-08-Understanding-LSTMs/",
+    "https://medium.com/artists-and-machine-intelligence/generative-machine-learning-on-the-cloud-1ccdfeb33ea2",
+  ],
+  "learning-objectives": [
+    "Use TensorFlow to build a recurrent neural network",
+    "Feed time series data to a neural network to make sequence predictions",
+  ]
 }
