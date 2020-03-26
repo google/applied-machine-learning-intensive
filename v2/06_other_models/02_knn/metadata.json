@@ -2,10 +2,15 @@
   "name": "k-Nearest Neighbors",
   "slides": [
     "slides.md"
+  ],
   "colabs": [
     "colab.ipynb"
   ],
   "handouts": [],
   "resources": [],
-  "materials": []
+  "materials": [],
+  "learning-objectives": [
+    "Understand the basic concept of KNN",
+    "Use KNN to solve a classification problem",
+  ]
 }
