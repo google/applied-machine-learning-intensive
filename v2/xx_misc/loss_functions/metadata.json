@@ -10,10 +10,10 @@
   "resources": [],
   "handouts": [],
   "duration": {
-    "slides.md": 10,
+    "slides.md": 45,
     "loss.pdf": 20
   },
   "learning-objectives": [
-    "Manually calculate L1 and L2 loss"
+    "Manually calculate L1 and L2 loss."
   ]
 }
