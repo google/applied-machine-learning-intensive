@@ -161,8 +161,6 @@ Image Details:
 <!--
 Let's think of overfitting by looking into clothing. Here, we have a person wearing a reasonably well-fitting shirt.
 
-Source: photo by NordWood Themes on Unsplash
-
 Image Details:
 * [polynomialregression11.jpg](https://unsplash.com/photos/q8U1YgBaRQk): Unsplash License
 -->
@@ -173,8 +171,6 @@ Image Details:
 
 <!--
 Clothing can be a little more form-fitting, which reduces the number of people that it will fit. This is overfitting. You can think of it like a custom-tailored suit of armor that you could never lend to someone else.
-
-Source: photo by Hugo L. Casanova on Unsplash
 
 Image Details:
 * [polynomialregression12.jpg](https://unsplash.com/photos/GDre1q4wEJk): Unsplash License
