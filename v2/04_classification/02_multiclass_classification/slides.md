@@ -4,97 +4,91 @@ marp: true
 
 ---
 
-# Classification with Scikit-learn
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
+# Multiclass Classification
 
 <!--
-So far we have learned about:
-* Regression (straight-line)
-* Polynomial Regression
-* Classification
-* scikit-learn
-* TensorFlow
-and many more concepts and tools used in machine learning.
+As we continue our journey into classification we will now move into multiclass classification. Multiclass classification is a classification problem where there are more than two classes.
 
-In this unit we are going to combine the concepts about classification that we recently learned and apply them using the scikit-learn toolkit.
+Yes, we know, multi means more than one, not more than two.
+
+Multiclass classification is common nomenclature in machine learning for classifiers that need to distinguish between more than three classes where binary classification is reserved for classifiers that work with only two classes.
+
+If you think about it, there isn't really a single-class classifier since even predicting if some data is in a class or not is technically binary. So binary is the "zero" of classification.
+
+Also many, not all, models just combine binary classifications to create a multiclass classifier, so for binary you have one classification and then you have to have multiple classifiers when you have more classes.
+
+Regardless of why multiclass starts at three isn't too important. The fact is that these are the terms that the industry has adopted.
 -->
 
 ---
 
-# The dataset
+# Multiclass Classification: OvA OvO
 
-![](res/classwithscikit1.png)
-
-<!--
-The dataset that we'll be using in the examples in this colab is the "Iris Dataset". The dataset comes packaged with scikit-learn and contains feature measurements of three different species of iris. This is a classic machine learning dataset that you'll see in many machine learning examples.
-
-Image Details:
-* [classwithscikit1.png](https://pixabay.com/photos/iris-germanica-baardiris-purple-4215370/): Pixabay License
--->
-
----
-
-# Binary classification
-
-![](res/classwithscikit2.png)
-
-<!--
-The first classification example we will build is a "binary classification" model. This model will give us a yes/no decision about if an object falls into a specific class.
-
-Image Details:
-* [classwithscikit2.png](https://pixabay.com/illustrations/yes-no-button-orange-green-icon-1713011/): Pixabay License
--->
-
----
-
-# Binary classification: threshold
-
-![](res/classwithscikit3.png)
-
-<!--
-Despite the name, binary classifiers don't typically give you a yes/no decision. Instead they provide some numeric representation of confidence and it is the responsibility of the consumer of the model output to determine the threshold that divides the classification. Typically there is a default threshold, but depending on your model and use case, you might want to tweak that threshold.
-
-Image Details:
-* [classwithscikit3.png](https://pixabay.com/vectors/speedometer-speed-meter-fast-power-1063350/): Pixabay License
--->
-
----
-
-# Multiclass classification
-
-![](res/classwithscikit4.png)
-
-<!--
-Other models can handle "multi-class" classification. These models understand many different class labels and attempt to predict the likelihood that an prediction matches each label.
-
-Image Details:
-* [classwithscikit4.png](https://pixabay.com/photos/mushrooms-collage-autumn-forest-1798755/): Pixabay License
--->
-
----
-
-# Multiclass classification: chained binary classifications
-
-![](res/classwithscikit5.png)
+![center](res/yesno_yesno.png)
 
 <!--
 An easy way to perform multiclass classification is to simply string together binary predictions and choose the best match. This is "Other vs. All" (OvA) classification. Another option is to pair each class and see which class prevails in an "Other vs. Other" (OvO) competition.
 
 Often this complexity is hidden from us, but it is important to know a little of what is going on under the hood.
 
+Some models, such as decision trees and random forests don't have to be structured in this manner.
+
 Image Details:
-* [classwithscikit5.png](https://pixabay.com/illustrations/yes-no-button-orange-green-icon-1713011/): Pixabay License
+* [yesno_yesno.png](https://pixabay.com/illustrations/yes-no-button-orange-green-icon-1713011/): Pixabay License
 -->
 
 ---
 
-# Exercises: digit identification
+# Lab: The Dataset
 
-![](res/classwithscikit6.png)
+![center](res/iris.jpg)
 
 <!--
-For our exercise we'll create a classifier that identified digits in a popular handwritten digits dataset.
+The dataset that we'll be using in the examples in this colab is the "Iris Dataset". The dataset comes packaged with scikit-learn and contains feature measurements of three different species of iris. This is a classic machine learning dataset that you'll see in many machine learning examples.
 
 Image Details:
-* [classwithscikit6.png](https://pixabay.com/photos/digits-counting-mathematics-4014181/): Pixabay License
+* [iris.jpg](https://pixabay.com/photos/iris-germanica-baardiris-purple-4215370/): Pixabay License
 -->
 
+---
+
+# Lab: Cross-Fold Validation
+
+![center](res/cross_fold.png)
+
+<!--
+In this lab we will introduce the concept of cross-fold validation. Cross-fold validation is a way to train on your entire dataset (minus final validation). The algorithm divides your dataset into even groups and then holds out one-at-a-time for validation while training on the remaining data.
+
+This can be really useful on small datasets.
+
+Image Details:
+* [cross_fold.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Lab: Digit Identification
+
+![center](res/digits.jpg)
+
+<!--
+For our final exercise in the lab we'll create a classifier that identified digits in a popular handwritten digits dataset. This exercise will have minimal guidance and will allow you to really demonstrate your machine learning skills.
+
+Image Details:
+* [digits.png](https://pixabay.com/photos/digits-counting-mathematics-4014181/): Pixabay License
+-->
+
+---
+
+# Your Turn
+
+<!--
+Let's get to the lab!
+-->
