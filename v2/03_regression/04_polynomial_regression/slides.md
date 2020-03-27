@@ -24,7 +24,7 @@ img[alt~="center"] {
 ![center](res/polynomialregression1.gif)
 
 <!--
-We have seen linear regression and have implemented it using multiple toolkits. We found the line of best fit using optimizers such as gradient descent. Though linear regression can be a powerful predictive tool, it isn't appropriate for all types of regression problems.
+We have seen linear regression and have implemented it using scikit-learn. We found the line of best fit using optimizers such as gradient descent. Though linear regression can be a powerful predictive tool, it isn't appropriate for all types of regression problems.
 
 Image Details:
 * [polynomialregression1.gif](http://www.google.com): Copyright Google
