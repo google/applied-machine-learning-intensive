@@ -17,7 +17,7 @@
     "(Optional) Practice stochastic gradient descent and mini batching"
   ],
   "duration": {
-    "slides.md": 5,
+    "slides.md": 45,
     "colab.ipynb": 60
   }
 }

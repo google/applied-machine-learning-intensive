@@ -71,9 +71,9 @@ There is a solution though.
 <!--
 The root mean squared error is simply the square root of the mean squared error. This adjusts the units of the error back to the units of the target, which makes model quality much easier to reason about.
 
-For instance, if you have a model that predicted housing prices and it had an RMSE of 10,000, would that model be good or bad? Since houses cost in the hundreds-of-thousands, if not milliions of dollars, and error of $10,000 doesn't seem too bad.
+For instance, if you have a model that predicted housing prices and it had an RMSE of 10,000, would that model be good or bad? Since houses cost in the hundreds-of-thousands - if not millions - of dollars, an error of $10,000 doesn't seem too bad.
 
-What about a model that predicted average global temperatures in celsius that had an RMSE of 8. Although 8 is much smaller than 10,000, an 8 degrees celsius change is a big deal in terms of average temperatures. THus, 8 is probably not an acceptable RMSE for this model.
+What about a model that predicted average global temperatures in celsius that had an RMSE of 8? Although 8 is much smaller than 10,000, an 8 degrees celsius change is a big deal in terms of average temperatures. THus, 8 is probably not an acceptable RMSE for this model.
 -->
 
 ---
@@ -87,7 +87,7 @@ Mean absolute error is calculated similarly to mean squared error. Instead of us
 
 A benefit of MAE is that the units remain the same as that of the target.
 
-The primary difference in MAE and MSE is that MSE squares there error, which gives larger differences in value much higher error scores. This give extra penalty to really bad predictions.
+The primary difference in MAE and MSE is that MSE squares the error, which gives larger differences in value much higher error scores. This give extra penalty to really bad predictions.
 -->
 
 ---
@@ -129,7 +129,7 @@ Image Details:
 <!--
 Another helpful visualization tool is to plot the regression residuals. As a reminder, residuals are the difference between the actual values and the predicted values.
 
-We plot residuals on the  y -axis against the predicted values on the  x -axis, and draw a horizontal line through  y=0 .
+We plot residuals on the y-axis against the predicted values on the x-axis, and draw a horizontal line through  y=0.
 
 Image Details:
 * [residual.png](http://www.google.com): Copyright Google
@@ -155,5 +155,5 @@ Image Details:
 # Your Turn
 
 <!--
-Let's now move on to the lab portion of the unit. In this lab you'll create and interpret various measures and interpretations of regression model quality.
+Let's now move on to the lab portion of the unit. In this lab, you'll create and interpret various measures and interpretations of regression model quality.
 -->
