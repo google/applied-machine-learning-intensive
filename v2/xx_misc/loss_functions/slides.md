@@ -33,7 +33,7 @@ Image Details:
 ![center](res/lossfunction2.png)
 
 <!--
-It’s common to either take the sum or average of all data points to calculate overall loss. “Mean Squared Error” (also referred to as MSE) is another widely used loss function that is closely related to L2 loss, but instead of the sum of squared differences, it’s the *average* of squared differences.
+It’s common to either take the sum or average of all data points to calculate overall loss. “Mean Squared Error” (also referred to as MSE) is another widely used loss function that is closely related to L2 loss. But instead of the sum of squared differences, it’s the *average* of squared differences.
 
 You should choose a loss function based on your specific problem and dataset. L1, L2, and MSE are used for regression problems. We’ll discuss loss functions used for other machine learning problems, such as classification, later.
 
@@ -161,13 +161,14 @@ Image Details:
 
 <!--
 @Exercise (10 minutes) {
-Have students work individually on the Loss worksheet (give them around 5 min).
 
-The loss worksheet contains:
+*Have students work individually on the Loss worksheet. Given them around five minutes to work.*
+
+*The loss worksheet contains:
 * Page 1: Solutions. (Don't give these to the students.)
-* Page 2: 3 sets of true / predicted data points. (Give these to the students.)
-* Page 3: Intermediate steps to calculating the loss. (You can choose whether or not to give these to the students.)
-* Page 4: The examples we worked through above. (You can choose whether or not to give these to the students as reference.)
+* *Page 2: Three sets of true/predicted data points. (Give these to the students.)
+* *Page 3: Intermediate steps to calculating the loss. (Choose whether or not to give these to the students.)
+* *Page 4: The examples we worked through above. (Choose whether or not to give these to the students as reference.)
 }
 
 Image Details:
@@ -193,6 +194,7 @@ Have students compare their answers with a neighbor and work through any discrep
 ![center](res/lossfunction12.png)
 
 <!-- 
+
 *Prompt students for answers.*
 
 Image Details:
@@ -209,7 +211,7 @@ Image Details:
 
 *End by asking students what the difference is between L1 and L2 as summary measures, and why someone might want to use one over the other.*
 
-*Answer: L2 is more sensitive to outliers in the data set, because squaring the difference makes the difference more extreme.*
+*Answer: L2 is more sensitive to outliers in the data set because squaring the difference makes the difference more extreme.*
 
 Image Details:
 * [lossfunction12.png](http://www.google.com): Copyright Google
