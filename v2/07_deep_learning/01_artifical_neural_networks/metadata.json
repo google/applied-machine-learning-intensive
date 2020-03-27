@@ -1,11 +1,14 @@
 {
   "name": "Artificial Neural Networks",
-  "bug": "b/129291781",
   "slides": [],
   "colabs": [
     "colab.ipynb"
     ],
   "handouts": [],
   "resources": [],
-  "materials": []
+  "materials": [],
+  "learning-objectives": [
+    "Use TensorFlow to implement artificial neural network",
+    "Use DNNClassifier to implement deep neural network classifier",
+  ]
 }
