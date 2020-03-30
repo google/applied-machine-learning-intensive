@@ -260,7 +260,7 @@ Image Details:
 
 # Visualizations: Scatter Plots
 
-![center](res/bad-scatter-plot.png)
+![center](res/visualizationscatyawn1.png)
 
 <!--
 When there is too much data, a scatter plot will not be useful.
@@ -277,7 +277,7 @@ Image Details:
 
 # Visualizations: Heat Maps
 
-![center](res/heat-map.png)
+![center](res/visualizationscatyawn2.png)
 
 <!--
 Heatmaps are good for visualizing concentrated, continuous data.
