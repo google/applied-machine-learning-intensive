@@ -121,7 +121,7 @@ We’ll briefly cover the most common measures of classification performance now
 
 # Confusion Matrix
 
-![](res/Classification1.png)
+![center](res/classification1.png)
 
 <!--
 Most of the performance measures that we look at will be based on values taken from the confusion matrix. For the sake of simplicity, we'll stick to evaluating model quality for binary classification or at least from the perspective of a single class.
@@ -282,7 +282,7 @@ Image Details:
 
 ---
 
-# F1: simplified
+# F1: Simplified
 
 ![center](res/f1_optimized.png)
 
