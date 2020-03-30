@@ -2,7 +2,7 @@
   "name": "Transfer Learning",
   "handouts": [],
   "colabs": [
-    "colab.ipynb
+    "colab.ipynb"
   ],
   "learning-objectives": [
     "Become familiar with PyTorch API",
