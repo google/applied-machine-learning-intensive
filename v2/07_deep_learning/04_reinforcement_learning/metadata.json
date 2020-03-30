@@ -1,5 +1,13 @@
 {
   "name": "Reinforcement Learning",
-  "bug": "b/129287947",
-  "handouts": []
+  "handouts": [],
+  "colabs": [
+    "colab.ipynb",
+  ],
+  "learning-objectives": [
+    "Markov Decision Process",
+    "Planning (Dynamic Programming)",
+    "Policy Gradient Methods",
+    "Deep Reinforcement Learning",
+  ]
 }
