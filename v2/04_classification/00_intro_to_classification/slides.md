@@ -51,7 +51,7 @@ Image Details:
 
 ---
 
-# What Does It Mean to Classify? 
+# What Does It Mean to Classify?
 
 <!--
 Binary classification can be as simple as a yes/no decision as to which side of a "line" a data point falls on, but most of the time classification is presented as a list of confidences that a class applies to a data point.
@@ -121,7 +121,7 @@ We’ll briefly cover the most common measures of classification performance now
 
 # Confusion Matrix
 
-![center](res/classification1.png)
+![center](res/confusion-matrix.png)
 
 <!--
 Most of the performance measures that we look at will be based on values taken from the confusion matrix. For the sake of simplicity, we'll stick to evaluating model quality for binary classification or at least from the perspective of a single class.
