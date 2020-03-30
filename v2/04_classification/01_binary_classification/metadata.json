@@ -15,6 +15,10 @@
         "Create and interpret box-and-whisker charts.",
         "Standardize data to improve model training performance."
     ],
+    "duration": {
+      "slides.md": 10,
+      "colab.ipynb": 120
+    },
     "materials": [],
     "handouts": [],
     "resources": []
