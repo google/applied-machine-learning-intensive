@@ -3,15 +3,15 @@
 <!--
 
 *Note to facilitator: This is an activity best used during the Classification lessons in Track 4.*
-*This activity focuses on small group discussions and involves limited setup and facilitation by the instructor.
-It would best be taught in about 35 minutes, but it could be stretched to 45 minutes depending on the number of groups and how long you want to give for instruction.*
+*It focuses on small group discussions and involves limited setup and facilitation by the instructor.
+It would best be taught in about 35 minutes, but it could be stretched to 45 minutes depending on the number of groups and how long you want to allow for discussion.*
 -->
 
 ---
 
 # What Do You See First?
 
-![](res/classificationgonewrong1.jpg)
+![](res/classificationgonewrong1.jpeg)
 
 <!--
 When you look at this, what do you see first? 
@@ -74,7 +74,7 @@ Image Details:
   * What was the cause of this problem?
   * Are their other mistakes that this model/system could make with this same root problem?
   * What are the short-term and long-term impacts of this?
-1. Each group will present for 5 minutes to the rest of the class.
+3. Each group will present to the class (5 minutes/group)
 
 <!--
 Each group will read their article and discuss these questions. After reading and your group discussion, each group will present to the class. You may have one member of your group present or several. When planning this 5-minute presentation, please allow one minute for questions.
