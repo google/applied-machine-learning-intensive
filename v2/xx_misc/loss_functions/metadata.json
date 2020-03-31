@@ -1,0 +1,23 @@
+{
+  "name": "Loss Functions",
+  "colabs": [],
+  "slides": [
+    "slides.md"
+  ],
+  "materials": [
+    "loss.pdf"
+  ],
+  "resources": [],
+  "handouts": [],
+  "duration": {
+    "slides.md": 45,
+    "loss.pdf": 20
+  },
+  "learning-objectives": [
+<<<<<<< HEAD:v2/03_regression/02_loss_functions/metadata.json
+    "Manually calculate L1 and L2 loss"
+=======
+    "Manually calculate L1 and L2 loss."
+>>>>>>> 9082126a16aa8ef690f63ad9a5bf741600066f70:v2/xx_misc/loss_functions/metadata.json
+  ]
+}

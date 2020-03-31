@@ -1,0 +1,21 @@
+{
+  "name": "Linear Regression with TensorFlow",
+  "materials": [],
+  "resources": [],
+  "slides": [
+    "slides.md"
+  ],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "duration": {
+    "slides.md": 30,
+    "colab.ipynb": 90
+  },
+  "handouts": [],
+  "learning-objectives": [
+    "Use the TensorFlow Estimator API to build a model.",
+    "Adjust model hyperparameters.",
+    "Interpret model performance metrics."
+  ]
+}
