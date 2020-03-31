@@ -1,8 +1,10 @@
 {
   "name": "Advanced Sequence Prediction",
-  "bug": "b/132268760",
   "handouts": [],
   "colabs": [
     "colab.ipynb"
+  ],
+  "learning-objectives": [
+    "Understand and apply advanced RNN models (GRU, LSTM)",
   ]
 }
