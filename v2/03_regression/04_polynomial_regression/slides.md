@@ -132,7 +132,7 @@ We will now explore the potential dangers of using higher-order polynomial fits.
 
 ---
 
-![center](res/polynomialregression9.png)
+![center](res/polynomialregression20.png)
 
 <!--
 What could possibly go wrong if we use a polynomial model to fit the following data? Brainstorm some ideas.
