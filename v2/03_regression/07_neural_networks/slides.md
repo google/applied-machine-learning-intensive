@@ -9,7 +9,7 @@ img[alt~="center"] {
 }
 </style>
 
-# Teaching & Learning Neural Networks
+# Neural Networks
 
 <!--
 So far we have used classic machine learning models. These models are powerful and have proven useful for a wide range of applications.
@@ -72,49 +72,10 @@ Image Details:
 
 ---
 
-# High Level
-
-![center](res/teacher.png)
-
-<!--
-
-Image Details:
-[teacher.png](http://www.google.com): Unlicensed
--->
-
----
-
-# Math Nonsense
-
-![center](res/math_nonsense.png)
-
-<!--
-
-Image Details:
-[math_nonsense.png](http://www.google.com): Unlicensed
---->
-
----
-
-# We'll try for some middle ground...
-
-<!--
-
--->
-
-
----
-
-# We'll try for some middle ground...
-
-## (but I make no promises)
-
----
-
 # History & Motivation
 
 <!--
-
+Let's first look at some history and motivation for neural networks. 
 -->
 
 ---
@@ -139,27 +100,16 @@ Image Details:
 
 # Neural Networks: Inspired by Nature
 
-![center](res/neurons.jpg)
+![center](res/neuron.png)
 
 <!--
 Similar to the examples in the last slide, neural networks are inspired by nature. The brain contains a massive network of neurons that send electrical signals that activate other neurons. Through this network we are able to think.
 
-Neural networks were inspired by the brain, hence the name.
-
-Image Details
-* [neurons.jpg](https://pixabay.com/illustrations/neurons-brain-cells-brain-structure-1773922/)
--->
-
----
-
-# Neural Networks: Inspired by Nature
-
-![center](res/neuron.png)
-
-<!--
 This is the building block of the brain: a neuron.
 
 A neuron is just a cell with a nucleus and cell body like any other cell. One of the distinguishing features of the neuron is the 'axon', which is the long tail of the neuron. The tip of the axon has synaptic terminals that attach to other neuron bodies. A neuron body receives signals from the synapse of neurons before it. When those signals reach a critical point within a fixed period of time, the receiving neuron fires, sending a signal to later neurons.
+
+Neural networks were inspired by neurons and connections between neurons in the brain, hence the name. 
 
 Image Details:
 * [neuron.png](https://pixabay.com/vectors/neuron-nerve-cell-axon-dendrite-296581/): Pixabay License
@@ -211,7 +161,7 @@ Image Details:
 <!--
 Today we will talk about artificial neural networks. These are computational networks inspired by biological systems.
 
-ANN is a big umbrella. There are "feed-forward" networks. There is a concept of "backpropagation". And there are specific types of networks such as convolutional neural networks (CNN) and recurrent neural networks (RNN) that we will look at in more detail.
+ANN is a big umbrella. There are "feed-forward" networks. There is a concept of "backpropagation." And there are specific types of networks such as convolutional neural networks (CNN) and recurrent neural networks (RNN) that we will look at in more detail in future units.
 -->
 
 ---
@@ -221,69 +171,17 @@ ANN is a big umbrella. There are "feed-forward" networks. There is a concept of 
 ![center](res/ann.png)
 
 <!--
+These are the typical diagrams you see to depict an artifical neural network. On the left, we have our "input layer." This is where we feed our feature data into the model. In these two diagrams, there are two features (depicted by the two blue dots on the far left of the schematic).
+
+The feature information then flows into "hidden layers." In these hidden layers matheamtical operations are performed to extract patterns from the feature data. We'll talk more about this math on future slides. 
+
+Finally, the transformed feature data flows to the output layer, which returns our predicted target values. 
+
+The main idea is that if neurons in one layer "fire," then using the connections to the next layer, we can determine which neurons in the next layer will fire. For now, it is useful to think of a neuron firing as a 1 and not firing as a 0. It is true that more sophisticated neural networks take into account the intensity of a "fire" (i.e. fired at 50% vs fired at 100%), but for the sake of discussion let's stick with the 1 or 0 model. 
 
 Image Details:
 * [ann.png](http://www.google.com): Unlicensed
 
--->
-
----
-
-# Neurons
-![center](res/neurnet06.png)
-
-<!--
-Let's first take a look at a naive neuron. This type of neuron receives signals and makes a decision. There are pass-through/identity neurons, "And" neurons. "Or" neurons. And "Not" neurons.
-
-These neurons are the building blocks from the 40s. They can build a computational system of signals that can be used to make decisions.
-
-Image Details:
-* [neurnet06.png](http://www.oreilly.com): Unliscensed
--->
-
----
-
-# Perceptrons
-
-![center](res/neurnet07.png)
-
-<!--
-The simple on/off model can be effective, but in practice there is a better type of neuron for many applications: the perceptron
-
-The perceptron (circa 1957) is a different type of neuron layer. It is composed of TLUs. Each TLU is a neuron which inputs weighted values and has a step function that only fires if the weights are over some threshold.
-
-These are built on TLUs (Threshold Logic Units).
-
-Image Details:
-* [neurnet07.png](http://www.oreilly.com): Unliscensed
--->
-
----
-
-# Perceptrons
-
-![center](res/neurnet08.png)
-
-<!--
-This perceptron has two inputs (plus a bias) and three TLUs.
-
-The perceptron is trained by reinforcing connections that fire together and produce a correct output.
-
-Image Details:
-* [neurnet08.png](http://www.oreilly.com): Unliscensed
--->
-
----
-
-# Multilayer Perceptron
-
-![center](res/neurnet09.png)
-
-<!--
-Multilayer perceptron. This is used to get more advanced calculations, such as XOR, but also obfuscates the decision making rationale of the algorithm. 
-
-Image Details:
-* [neurnet09.png](http://www.oreilly.com): Unliscensed
 -->
 
 ---
@@ -294,6 +192,12 @@ Image Details:
 
 <!--
 1958 - Frank Rosenblatt - An American psychologist attempted to build a machine called a perceptron. 
+
+We can think of the perceptron as the building block of neural networks. The perceptron has no hidden layers. We feed our features into the left side, do computation, and receive a predicted target. 
+
+This looks strikingly similar to the models we've been builing in this course. And that's no accident! We can think of a linear regression model as a perceptron. 
+
+But what are those mystery computations that take place on the black lines? There are weights, w_{1}, ..., w_{m}, that are used in these computations. How does that work? Let's look closer at what's happening behind the scenes along those black lines. 
 
 Image Details:
 * [perceptron.png](https://towardsdatascience.com/introducing-deep-learning-and-neural-networks-deep-learning-for-rookies-1-bd68f9cf5883): Unlicensed
@@ -306,7 +210,13 @@ Image Details:
 ![center](res/perceptron2.png)
 
 <!--
-1958 - Frank Rosenblatt - An American psychologist attempted to build a machine called a perceptron. 
+The green and blue compartments show the computations taking place in the connections bewteen the input layer and output layer of a perceptron. 
+
+This looks strikingly similar to the models we've been builing in this course. And that's no accident! We can think of a linear regression model as a perceptron. 
+
+The features are denoted by x_{i}. The weights w_{i} are playing the same role as the weights in our linear regression model. If we build a vectors W = [w_{1}, w_{2}, ..., w_{m}] and X = [x_{1}, x_{2}, ..., x_{m}], then the green computation is simply  W^{T}X + b  (which is exactly the same as a regression model target = bias + w_{1}x_{1} + w_{2}x_{2} + w_{m}x_{m}).
+
+This information is then sent to an "activation function," which uses the information from the green computation to determine whether or not the next neuron should fire. In a linear regression example, the activation function might be f(x) = x (in other words, the activation function plays no role). But let's look at a slightly more interesting example and walk through these details in a little more depth. 
 
 Image Details:
 * [perceptron2.png](https://towardsdatascience.com/introducing-deep-learning-and-neural-networks-deep-learning-for-rookies-1-bd68f9cf5883): Unlicensed
@@ -319,6 +229,7 @@ Image Details:
 ![center](res/perceptron_example.png)
 
 <!--
+Suppose we want to 
 
 Image Details:
 * [perceptron_example.png](http://www.google.com): Copyright Google
