@@ -1,6 +1,6 @@
 ---
-false
-marp: false
+
+marp: true
 
 ---
 
@@ -54,7 +54,7 @@ There are many models capable of performing binary classification. Some of the m
 ![center](res/classification.gif)
 
 <!--
-In the lab we will build a logistic regression. A logistic regression finds a logistic function and uses it to divide two classes of data. A logistic function is a function in the shape depicted in this slide. It can range in values from  zero to one.
+In the lab, we will build a logistic regression. A logistic regression finds a logistic function and uses it to divide two classes of data. A logistic function is a function in the shape depicted in this slide. It can range in values from zero to one.
 
 This model is relatively easy to interpret and train, but doesn't perform well unless an actual logistic boundary can be found. To create a logistically divisible set of classes, you sometimes have to perform some very heavy data manipulation.
 
@@ -85,9 +85,9 @@ search = GridSearchCV(model, {
 ```
 
 <!--
-In this lab we'll use a few new machine learning techniques. One of these is grid search. Grid search is a way to test different hyperparameters for a model. The search accepts a dictionary containing keys that map to model parameters. The values are lists for hyperparameters that you want to experiment with or single values for parameters that you want to keep constant.
+In this lab, we'll use a few new machine learning techniques. One of these is grid search. Grid search is a way to test different hyperparameters for a model. The search accepts a dictionary containing keys that map to model parameters. The values are lists for hyperparameters that you want to experiment with or single values for parameters that you want to keep constant.
 
-Grid search tries every combination of parameters and finds which performs the best. This can be really useful for testing hyperparameters, but remember that combinations increase at a factorical rate, so running grid search can take quite a while.
+Grid search tries every combination of parameters and finds which performs the best. This can be really useful for testing hyperparameters, but remember that combinations increase at a factorial rate, so running grid search can take quite a while.
 -->
 
 ---

@@ -16,7 +16,7 @@
         "Standardize data to improve model training performance."
     ],
     "duration": {
-      "slides.md": 10,
+      "slides.md": 20,
       "colab.ipynb": 120
     },
     "materials": [],
