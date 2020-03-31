@@ -14,7 +14,7 @@ img[alt~="center"] {
 # Binary Classification
 
 <!--
-Our exploration into classification will start with the simplest case, binary classification. 
+Our exploration of classification will start with the simplest case: binary classification. 
 -->
 
 ---
@@ -24,7 +24,7 @@ Our exploration into classification will start with the simplest case, binary cl
 ![center](res/yes_or_no.png)
 
 <!--
-Binary means that there are only two values to predict. Binary classification is used to predict one of two values.
+Binary means there are only two values to predict. Binary classification is used to predict one of two values.
 
 These can be true/false, hotdog/not hotdog, yes/no, benign/malignant, or any other possible this-or-that options. For simplicity, these options are usually encoded as 1 and 0.
 
@@ -44,7 +44,7 @@ Image Details:
 * *... and more*
 
 <!--
-There are many models capable of performing binary classification. Some of the more common are listed on this slide. Each model has it's strengths and weaknesses. We'll study each of these model-types in this course.
+There are many models capable of performing binary classification. Some of the more common ones are listed on this slide. Each model has its strengths and weaknesses. We'll study each of these model-types in this course.
 -->
 
 ---
@@ -54,9 +54,9 @@ There are many models capable of performing binary classification. Some of the m
 ![center](res/classification.gif)
 
 <!--
-In the lab, we will build a logistic regression. A logistic regression finds a logistic function and uses it to divide two classes of data. A logistic function is a function in the shape depicted in this slide. It can range in values from zero to one.
+In the lab for this unit, we will build a logistic regression. A logistic regression finds a logistic function and uses it to divide two classes of data. A logistic function is a function in the shape depicted in this slide. It can range in values from zero to one.
 
-This model is relatively easy to interpret and train, but doesn't perform well unless an actual logistic boundary can be found. To create a logistically divisible set of classes, you sometimes have to perform some very heavy data manipulation.
+This model is relatively easy to interpret and train, but it doesn't perform well unless an actual logistic boundary can be found. To create a logistically divisible set of classes, you sometimes have to perform some very heavy data manipulation.
 
 Image Details:
 * [classification.gif](http://www.google.com): Copyright Google
@@ -94,7 +94,7 @@ Grid search tries every combination of parameters and finds which performs the b
 
 # The Lab: Confusion Matrix
 
-![center](res/confusion_matrix.png)
+![center](res/Classification1.png)
 
 <!--
 We will also create our first confusion matrix in this lab. Remember that a confusion matrix shows true and false positives and negatives.
