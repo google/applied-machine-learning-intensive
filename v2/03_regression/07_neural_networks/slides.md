@@ -229,7 +229,17 @@ Image Details:
 ![center](res/perceptron_example.png)
 
 <!--
-Suppose we want to 
+Suppose we want to predict whether an individual will start studying machine learning. Our features are given by:
+x_{1} = will the person make more money?
+x_{2} = does the person love programming and mathematics?
+x_{3} = does the person have a project that would benefit from ML?  
+
+We compute W^{T}X = w_{1}x_{1} + w_{2}x_{2} + w_{3}x_{3} + bias. Now assume that we will say "yes" the person will study machine learning if the result is >= 0 and "no" the person will not study machine learning if the result is < 0. 
+
+*It might be helpful to flip back to the previous slide and explain that the specific activation function we're working with in this example is f(x) = 1 if W^{T}X + b >= 0 and f(x) = 0 if W^{T}X + b < 0. Also, for notational conveinece, we flip the sign of b and write w_{1}x_{1} + w_{2}x_{2} + w_{3}x_{3} - b going forward. If we use this model, then the algorithm will learn a negated form of b.*
+
+That is, we ask is w_{1}x_{1} + w_{2}x_{2} + w_{3}x_{3} - bias >= 0? Which is the same as asking is w_{1}x_{1} + w_{2}x_{2} + w_{3}x_{3} >= b. For convenience, we have relabel b as -b.
+
 
 Image Details:
 * [perceptron_example.png](http://www.google.com): Copyright Google
@@ -245,7 +255,7 @@ Image Details:
 1. Iterate (until some stopping condition)
 
 <!--
-
+Let's recall the general machine learning process. This is the same process that we use for all ML models. 
 -->
 
 ---
@@ -255,6 +265,10 @@ Image Details:
 ![center](res/perceptron_example_01.png)
 
 <!--
+Let's assume that we already have our weights and bias. We say that x_{1} and x_{2} have an equal impact on a person's decision to study ML and they both have weight 2. Assume that x_{3} is three times as important in a person's decision to study ML and it's weight is 6. Now let's assume the bias is 5. In other words, we are thresholding at 5, and we say if W^{T}X >= 5, then the person will study machine learning. If W^{T}X < 5, then the person will not study machine learning. 
+
+Let's take a second to think about these numbers critically, and see what they really mean. 
+
 Image Details:
 * [perceptron_example_01.png](http://www.google.com): Copyright Google
 -->
@@ -266,6 +280,9 @@ Image Details:
 ![center](res/perceptron_example_02.png)
 
 <!--
+
+Assume Let's assume that a particular person, Kelly, does not stand to make more money by studying ML and she does not like programming and math (x_{1} = x_{2} = 0). But assume that Kelly does have a project that would benefit from ML (x_{3} = 1).
+
 Image Details:
 * [perceptron_example_02.png](http://www.google.com): Copyright Google
 -->
@@ -277,6 +294,10 @@ Image Details:
 ![center](res/perceptron_example_03.png)
 
 <!--
+Computing W^{T}X we get 6. 
+
+We check that 6 is >= 5, so we say "yes" Kelly will study machine learning. 
+
 Image Details:
 * [perceptron_example_03.png](http://www.google.com): Copyright Google
 -->
@@ -288,6 +309,8 @@ Image Details:
 ![center](res/perceptron_example_04.png)
 
 <!--
+Now let's assume we have another person, Riley, who will make more money in her job by learning ML and she does like programming and math (x_{1} = x_{2} = 1), but she does not have a project that would benefit from ML (x_{3}=0).
+
 Image Details:
 * [perceptron_example_04.png](http://www.google.com): Copyright Google
 -->
@@ -299,77 +322,14 @@ Image Details:
 ![center](res/perceptron_example_05.png)
 
 <!--
+Computing W^{T}X we get 4. 
+
+We check that 4<5, so the model predicts "no" Riley will not study ML. 
+
+In general, this is how we feed input data into our model. If the model had already finished learning the weights and bias, then this is how we would generate our predicted targets. 
+
 Image Details:
 * [perceptron_example_05.png](http://www.google.com): Copyright Google
--->
-
----
-
-# Perceptron Example
-
-![center](res/perceptron_example_06.png)
-
-<!--
-Image Details:
-* [perceptron_example_06.png](http://www.google.com): Copyright Google
--->
-
----
-
-# Perceptron Example
-
-![center](res/perceptron_example_07.png)
-
-<!--
-Image Details:
-* [perceptron_example_07.png](http://www.google.com): Copyright Google
--->
-
----
-
-# Perceptron Example
-
-![center](res/perceptron_example_08.png)
-
-<!--
-Image Details:
-* [perceptron_example_08.png](http://www.google.com): Copyright Google
--->
-
----
-
-# Perceptron Example
-
-![center](res/perceptron_example_09.png)
-
-<!--
-Image Details:
-* [perceptron_example_09.png](http://www.google.com): Copyright Google
--->
-
----
-
-# Perceptron Example
-
-![center](res/perceptron_example_10.png)
-
-<!--
-Image Details:
-* [perceptron_example_10.png](http://www.google.com): Copyright Google
--->
-
----
-
-# Perceptrons
-
-![center](res/perceptrons.png)
-
-<!--
-1958 - Frank Rosenblatt - An American psychologist attempted to build a machine called a perceptron. 
-
-Image Details:
-* [perceptrons.png](https://towardsdatascience.com/introducing-deep-learning-and-neural-networks-deep-learning-for-rookies-1-bd68f9cf5883): Unlicensed
-
 -->
 
 ---
@@ -379,43 +339,41 @@ Image Details:
 ![center](res/hidden_layers.png)
 
 <!--
+If we had a network with more layers, then the same process is happening between each layer. We can think of this as many perceptrons stacked on top of each other. 
+
+For example, in the input layer we have X = [x_{1}, ..., x_{m}]. All these nodes are connected to node h_{1}^{1}. There are weights assigned to each of these that we can combine into a vector, W_{1}^{1}. Then W_{1}^{1}^{T}X + b can be thought of as a perceptron. 
+
+Similarly all the nodes in the first hidden layer are connected to h_{1}^{2}. All these connections have their own individual weights. And this part of the network can be thought of as its own perceptron. 
+
+Thus, feeding data through the hidden layers is equivalent to a composition of many matrix multiplications. 
+
 Image Details:
 * [hidden_layers.png](http://www.google.com): Unlicensed
 -->
 
 ---
 
-# Networks With Hidden Layers
+# Perceptron Example
 
-![center](res/hidden_layers_h11.png)
+![center](res/perceptron_example_06.png)
 
 <!--
+But how does the model actually update the weights and bias during the learning process? 
+
+Let's look back at our example. Note that both of these samples were technically training data. From our dataset, we know that both Kelly and Riley did study ML (y=1), but for Kelly we predicted \hat{y} = 1 and for Riley we predicted \hat{y} = 0. So Kelly's prediction was correct, while Riley's was not correct. 
+
+Now the model needs to adjust the weights. It seems like if a person stands to make more money from studying ML AND they love programming and math, then the model should predict a 1 (whether or not they have a current projec that would benefit from ML).
+
+So the model needs to update the weights and bias via some optimization algorithm like gradient descent. In order to compute the derivative (gradient) to discern the direction of steepest descent, we will need to unravel the many compositions of matrix multiplication. If you remember your calculus, how do we take the derivative of a composition? The chain rule!! That is effectively what backpropagation does. It is a way to compute the gradient when many chain rules are involved through each layer of the network. 
+
 Image Details:
-* [hidden_layers.png](http://www.google.com): Unlicensed
+* [perceptron_example_06.png](http://www.google.com): Copyright Google
 -->
 
 ---
 
-# Networks With Hidden Layers
 
-![center](res/hidden_layers_h12.png)
-
-<!--
-Image Details:
-* [hidden_layers.png](http://www.google.com): Unlicensed
--->
-
----
-
-# Let’s go through some of this on the board...
-
-<!--
-
--->
-
----
-
-# Summary
+# Machine Learning Process
 
 1. Infer/Predict/Forecast
     * Compute f(X, W, B) - compositions of f and lots of matrix mult
@@ -427,14 +385,15 @@ Image Details:
 1. Iterate (until some stopping condidtion)
 
 <!--
-
+Let's put everything together and summarize how a neural network will learn in general. It shouldn't not surprise you that it's the same machine learning process that we've been working with for all our models. Now we've just filled it some high-level details of each step for neural networks. 
 -->
 
 ---
 
+
 # Issues with this plan? 
 
-```
+````
 f(x) =  1 if x ≥ 0
         0 if x < 0
 ````
@@ -445,6 +404,14 @@ The step function, f, is not the greatest activation function.
 * `f` only returns 0 or 1 (as opposed to a confidence) 
 
 <!--
+There are many possible activation functions and some work better than others in certain situations. 
+
+Let's take a closer look at the activation function we used in our simple example. This function is called a step-function. 
+
+There are a few drawbacks to using the step-fuction. 
+* f is not differentiable at 0 - this could create problems for gradient descent, when we need to take a derivative. 
+* f'(x) is 0 whenever x is not 0 - this could also create problems for gradient descent, if we ever multiple by f'(x) the entire function will go to 0, which means no slope. So it can be hard to determine the direction of steepest descent. 
+* f only returns a no or a yes - it would be preferable for f to return a continuous value between 0 and 1. For example, if f returned .9, then we would say that we're 90% confident the answer is "yes this person will study ML." That is far more powerful than just returning a "yes" or "no." We will discuss this further in the section on classification. 
 
 -->
 
@@ -455,16 +422,10 @@ The step function, f, is not the greatest activation function.
 ![center](res/sigmoid.png)
 
 <!--
+The sigmoid function is a far more popular activation function, as it addressed the issues we just discussed with the step-function. Again, we will talk more about this when we get to classification. 
+
 Image Details:
 * [sigmoid.png](http://www.gogole.com): Unlicensed
--->
-
----
-
-# Backpropogation
-
-<!--
-Let’s make this even shorter: for each training instance the backpropagation algorithm first makes a prediction (forward pass), measures the error, then goes through each layer in reverse to measure the error contribution from each connection (reverse pass), and finally slightly tweaks the connection weights to reduce the error (Gradient Descent step).
 -->
 
 ---
@@ -473,21 +434,10 @@ Let’s make this even shorter: for each training instance the backpropagation a
 ![center](res/neurnet10.png)
 
 <!--
-The choice of activation function is important. RELU makes differentiation difficult, but actually works in practice. The other functions are also very useful.
+The choice of activation function is important. RELU makes differentiation difficult, but actually works really well in practice. The other functions are also very useful.
+
+It is important to note that why certain activation functions behave in certain ways is an active area of research. People are testing new ones everyday. Sometimes there is goo theoretical justification for using a particular activation function, and sometimes we us a particular activation function simply because in trained quickly and gave us good results in practice. 
 
 Image Details:
 * [neurnet10.png](http://www.oreilly.com): Unliscensed
--->
-
----
-
-# Activation Functions: Softmax
-
-![center](res/neurnet11.png)
-
-<!--
-Softmax is often used at the end of a neural network in classification functions. It can pick the most probable output neuron.
-
-Image Details:
-* [neurnet11.png](http://www.oreilly.com): Unliscensed
 -->
