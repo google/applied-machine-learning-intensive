@@ -327,7 +327,7 @@ https://en.wikipedia.org/wiki/Elastic_net_regularization
 
 ---
 
-# Which regularization is best?
+# Which Regularization Is Best?
 
 <!--
 It depends.
