@@ -1,0 +1,14 @@
+{
+  "name": "Natural Language Processing",
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
+  ],
+  "handouts": [],
+  "learning-objectives": [
+    "Utilize text processing and feature extraction tools",
+    "Train NLP models using bag-of-words and sequential representations",
+  ]
+}

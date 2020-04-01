@@ -1,0 +1,22 @@
+{
+  "name": "Multiclass Classification",
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "rearning-objectives": [
+    "Build a classification model for data with more than two classes.",
+    "Use cross-validation to evaluate a model trained with a small amount of data.",
+    "Create a model pipeline for training and predicting.",
+    "Standardize data to improve model performance."
+  ],
+  "duration": {
+    "lecture": 30,
+    "colab": 90
+  },
+  "materials": [],
+  "handouts": [],
+  "resources": [],
+  "slides": [
+    "slides.md"
+  ]
+}

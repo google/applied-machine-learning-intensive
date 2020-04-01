@@ -1,0 +1,22 @@
+{
+  "name": "Introduction to TensorFlow",
+  "learning-objectives": [
+    "Distinguish between types of tensors (scalars, vectors, matrices, cubes, etc.).",
+    "Identify key differences between TensorFlow 1 and TensorFlow 2.",
+    "Perform basic linear algebra operations on tensors using TensorFlow.",
+    "Convert tensors to NumPy arrays and Python lists."
+  ],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
+  ],
+  "duration": {
+    "slides.md": 15,
+    "colab.ipynb": 45
+  },
+  "materials": [],
+  "resources": [],
+  "handouts": []
+}

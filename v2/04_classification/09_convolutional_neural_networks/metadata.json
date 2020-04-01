@@ -1,0 +1,16 @@
+{
+  "name": "Convolutional Neural Networks",
+  "slides": [
+    "slides.md"
+  ],
+  "colabs": [
+    "colab.ipynb"
+    ],
+  "handouts": [],
+  "resources": [],
+  "materials": [],
+  "learning-objectives": [
+    "Introduction to Convolutional Neural Networks",
+    "Using TensorFlow to implement CNN",
+  ],
+}
