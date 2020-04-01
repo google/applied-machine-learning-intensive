@@ -7,7 +7,7 @@ you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
     http://www.apache.org/licenses/LICENSE-2.0
 Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
+distributed under the License is distributed on angit "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
@@ -74,10 +74,7 @@ from googleapiclient.discovery import build
 from google.auth.transport.requests import Request
 from tools import drive_integration, format_colab
 
-
-
-# TODO make this work when executed from root directory of repository
-CONTENT = "../content" 
+CONTENT = "../content"
 
 def get_sub_folders(folder: str = ""):
     """ Returns a list of subfolders folders as strings. Defaults to the top 
@@ -123,39 +120,50 @@ def create_file(service, filename: str, parent: str) -> str:
     # print(f"Track ID: {file_id}")
     return file_id
 
-def update_colab_link():
-    f = open("slidesTest.md","r", encoding="latin1")
+def update_colab_link_in_slides():
+    f = open("slidesNoPics.md","r", encoding="latin1")
     md = f.read()
     f.close()
     newLink = "test"
     x = re.sub(r'https://colab.research.google.com/drive/[a-zA-Z0-9\-]+', 
         "https://colab.research.google.com/drive/" + newLink, md) #matches for re- 
 
-    with open("slidesTest.md", 'w') as f:    
+    with open("slidesNoPics2.md", 'w') as f:    
         f.write(x)
+    os.system("md2gslides slidesNoPics2.md")
+
 
 def scan_metadata():
     with open("metadata.json", "r+") as f:
         data = json.load(f)
         for label in data:
             if 'slides' in label:
-                update_colab_link()
-                #data[label] = ["link"] #need to change to be correct
+                update_colab_link_in_slides()
             if 'documents' in label: # would they be label documents or materials, handouts etc
                 # do they have convertor for docs similar to mg2sldies
                 print("")
-    with open("metadate.json", 'w') as f:
-        f.write(json.dumps(data))
 
 def edit_colabmd():
     with open("test.ipynb", "r+") as f:
         notebook = nbformat.read(f, as_version=4)
-        for cell in notebook.cells:
-            if cell.source.startswith('> Concepts'):
-                ## delete concepts block
-                print("la")
+        f.close()
+        length = len(notebook.cells)
+        i = 0
+        print(length)
+        while(i < length):
+            cell = notebook.cells[i]
+            if cell.source.startswith('##### Answer Key'):
+                del notebook.cells[i]
+                del notebook.cells[i + 1]
+                length -= 2
+            i += 1
+        print(length)
+
+                # split on on \n and delete lines startinw <
+    f = open("test2.ipynb", "w+")
+    nbformat.write(notebook, f)
+    f.close()
     
-    #nbformat.write(notebook, f)
 
 
 def main(args):
