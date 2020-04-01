@@ -66,19 +66,53 @@ script will:
 """
 
 from absl import app
-import os, sys, shutil, getopt, re
+import os, sys, shutil, getopt, re, time
 import json
 import subprocess
 import nbformat
 
 from googleapiclient.discovery import build
+from googleapiclient.http import MediaFileUpload
 from google.auth.transport.requests import Request
 from tools import drive_integration, format_colab
 
-
-
 # TODO make this work when executed from root directory of repository
-CONTENT = "../v2/content" 
+CONTENT = "../v2" 
+
+re_slides = re.compile(r"View your presentation at: https://docs\.google\.com/"
+                       r"presentation/d/([a-zA-Z0-9-_]+)")
+
+def md_to_slides(file: str):
+    """
+    """
+    with open(file, "r") as f:
+        head = f.read()
+    print(head)
+    
+    marp = False
+    if re.match(r"^marp:\strue",head):
+        marp = True
+    
+    if marp:
+        pass
+    else:
+        gslides = subprocess.run(
+            [
+                "md2gslides",
+                "-n",
+                "--use-fileio",
+                "-t slides",
+                file],
+            capture_output=True,
+            text=True,
+            timeout=120) # Time out if process takes > 2 min
+        print(f"{gslides.stdout=}\n")
+        match = re.search(re_slides,gslides.stdout)
+
+        if match:
+            presentation_id = match.group(1)
+            print(f"{presentation_id=}\n")
+    return presentation_id
 
 def get_sub_folders(folder: str = ""):
     """ Returns a list of subfolders folders as strings. Defaults to the top 
@@ -139,18 +173,25 @@ def create_file(service, filename: str, parent: str) -> str:
     # print(f"Track ID: {file_id}")
     return file_id
 
-def upload(service, filename: str, parent: str):
+def upload(service, filename: str,loc: str, parent: str, ftype: str = ""):
     """ Uploads a file to Google Drive using the API
     
     Inputs:
-
+        service:    The google API service
+        filename:   The name for the uploaded file on google drive
+        loc:        The location of the file to be uploaded
+        parent:     The id of the parent folder on google drive
+        ftype:      The type of the file being uploaded
     Returns:
 
     """
-    if re.match(r".ipynb",filename):
+    # Set MIME type for upload
+    if re.search(r".ipynb",filename) or ftype == "colab":
         mimeType = "application/vnd.google.colaboratory"
-    elif re.match(r".md",filename):
+    elif re.search(r".md",filename) or ftype == "markdown":
         mimeType = "text/markdown"
+    elif re.search(r".pptx",filename) or ftype == "slides":
+        mimeType = "application/vnd.google-apps.presentation"
     else:
         mimeType = "text/plain"
 
@@ -158,11 +199,15 @@ def upload(service, filename: str, parent: str):
                      "mimeType": mimeType,
                      "parents": [parent]
                     }
-    
+    media = MediaFileUpload(f"{loc}/{filename}", mimetype=mimeType)
+
     file = service.files().create(body=file_metadata,
+                                  media_body=media,
                                   uploadType="multipart",
                                   fields="id").execute()
+
     print(f"File ID: {file.get('id')}")
+    return file.get('id')
 
 
 def update_colab_link():
@@ -201,13 +246,11 @@ def edit_colabmd():
 
 
 def main(args):
+
     edit_colabmd()
     # Get arguments for source and destination folders
     # opts, args = getopt.getopt(sys.argv[1:],"g")
-    # if opts and "-g" in opts[0]: # Can use "-g" to specify local repository
-    #     drive = args[0]
     if len(args) > 1:
-        # repo = args[0]
         folder_id = get_id_from_link(args[1])
         print(folder_id)
     else:
@@ -218,7 +261,7 @@ def main(args):
                          "<Google-Drive folder shareable link>"
                          "\x1b[0m" # Reset text color
                         )
-    
+
     # authenticate google drive
     creds = drive_integration.authenticate()
 
@@ -227,42 +270,41 @@ def main(args):
 
     tracks = get_sub_folders()
     for track in tracks:
-        path = f"{CONTENT}/{track}"
+        if not re.match(r"^xx_.*", track):
+            path = f"{CONTENT}/{track}"
         
-        # track_info = json.load(open(f"{path}/metadata.json"))
-        # track_name = track_info["name"]
-        
-        # Create track folder in drive
-        track_id = create_file(service, track, folder_id)
-
-        units = get_sub_folders(track)
-        for unit in units:
-            unit_id = create_file(service, unit, track_id)
+            # track_info = json.load(open(f"{path}/metadata.json"))
+            # track_name = track_info["name"]
             
-            unit_info = json.load(open(f"{path}/{unit}/metadata.json"))
-            unit_name = unit_info["name"]
-            if (slides := unit_info.get('slides')):
-                if re.search(r"\.md$",slides[0]):
-                    gslides = subprocess.run(
-                        [f"md2gslides {path}/{unit}/{slides[0]}"],
-                        capture_output=True
-                    )
-                    print(gslides)
-            # debugging
-            # print(f"\033[KGenerating: {unit_name}",end="\r",flush=True)
-            # TODO create unit folder in drive
-        #     os.mkdir((dest := f"{temp_folder}/{track}/{unit}"))
+            # Create track folder in drive
+            track_id = create_file(service, track, folder_id)
 
-        #     if (colabs := unit_info.get("colabs")):
-        #         for nb in colabs:
-        #             src = f"{path}/{unit}/{nb}"
-        #             dest_nb = f"{dest}/{nb}"                        
-        #             shutil.copy(src,dest_nb)
-        #             format_colab.format_colab(dest_nb)
-        #             # TODO update metadata.json to link to copy
-        #             pass
-    # print("\033[KDone")
-    print("Done")
+            units = get_sub_folders(track)
+            for unit in units:
+                if not re.match(r"^res$", unit):
+                    unit_id = create_file(service, unit, track_id)
+                    
+                    unit_info = json.load(open(f"{path}/{unit}/metadata.json"))
+                    # unit_name = unit_info.get('name')
+                    if (slides := unit_info.get('slides')):
+                        for slide_deck in slides:
+                            
+                            presentation_id = md_to_slides(
+                                                f"{path}/{unit}/{slide_deck}")
+                            # Retrieve the existing parents to remove
+                            file = service.files().get(fileId=presentation_id, # pylint: disable=no-member
+                                                       fields='parents',
+                                                       supportsAllDrives=True).execute()
+                            previous_parents = ",".join(file.get('parents'))
+                            # Move the file to the new folder
+                            file = service.files().update(fileId=presentation_id, # pylint: disable=no-member
+                                                          addParents=unit_id,
+                                                          removeParents=previous_parents,
+                                                          fields='id, parents',
+                                                          supportsAllDrives=True).execute()
+                            print("Waiting for API rate limit...\n\n")
+                            time.sleep(60) # Wait sixty seconds for API
+    print("\x1b[32mDone")
 
 if __name__ == "__main__":
     app.run(main)
