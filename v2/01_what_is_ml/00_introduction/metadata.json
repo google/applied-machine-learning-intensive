@@ -1,0 +1,16 @@
+{
+  "name": "Introduction to Machine Learning",
+  "learning-objectives": [
+    "Understand basic machine learning terminology."
+  ],
+  "colabs": [],
+  "duration": {
+    "slides.md": 60
+  },
+  "materials": [],
+  "handouts": [],
+  "resources": [],
+  "slides": [
+    "slides.md"
+  ]
+}

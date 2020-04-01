@@ -1,0 +1,22 @@
+{
+  "name": "Image Manipulation",
+  "colabs": [
+    "pil.ipynb",
+    "open_cv.ipynb",
+    "video_processing.ipynb",
+  ],
+  "slides": [
+    "slides.md"
+  ],
+  "learning-objectives": [
+    "Read and write an image file",
+    "Resize, pad, and change the orientation of an image",
+    "Load an image with OpenCV",
+    "Change the color encoding of an image",
+    "Modify the size, cropping, and orientation of an image",
+    "Use OpenCV to process video",
+  ],
+  "materials": [],
+  "resources": [],
+  "handouts": []
+}

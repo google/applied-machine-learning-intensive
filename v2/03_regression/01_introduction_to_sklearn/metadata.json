@@ -1,0 +1,25 @@
+{
+  "name": "Introduction to Scikit Learn",
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "learning-objectives": [
+    "Load sample data packaged with scikit-learn.",
+    "Generate sample data using scikit-learn.",
+    "Transform data using scikit-learn.",
+    "Train a simple model and make predictions using that model.",
+    "Create a data-processing and model-training pipeline.",
+    "Create metrics around model performance.",
+    "Visualize predictions returned from a model."
+  ],
+  "duration": {
+    "slides.md": 45,
+    "colab.ipynb": 75
+  },
+  "materials": [],
+  "resources": [],
+  "slides": [
+    "slides.md"
+  ],
+  "handouts": []
+}

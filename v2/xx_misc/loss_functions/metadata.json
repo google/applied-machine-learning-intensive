@@ -1,0 +1,19 @@
+{
+  "name": "Loss Functions",
+  "colabs": [],
+  "slides": [
+    "slides.md"
+  ],
+  "materials": [
+    "loss.pdf"
+  ],
+  "resources": [],
+  "handouts": [],
+  "duration": {
+    "slides.md": 45,
+    "loss.pdf": 20
+  },
+  "learning-objectives": [
+    "Manually calculate L1 and L2 loss."
+  ]
+}

@@ -1,47 +1,122 @@
 ## Test Results
 
+
 ### Are Colabs using Python 3?
 Success!
 
 ### Are Colabs cleared of all outputs?
-t02_data/03_visualizations/colab1.ipynb has an uncleared output.
-
-t02_data/03_visualizations/colab2.ipynb has an uncleared output.
-
-t02_data/06_probability/colab_dice_rolling.ipynb has an uncleared output.
+Success!
 
 ### Are all Colabs and Slides free of spelling errors?
-t02_data/01_introduction_to_python/colab.ipynb contains nonword acces
+02_data/01_introduction_to_pandas/colab.ipynb contains nonword seatle
 
-t02_data/06_probability/colab1.ipynb contains nonword eah
+02_data/02_intermediate_pandas/colab.ipynb contains nonword familar
 
-t02_data/06_probability/colab1.ipynb contains nonword probabiltiy
+02_data/03_visualizations/colab.ipynb contains nonword coordiantes
 
-t02_data/06_probability/colab1.ipynb contains nonword choclate
+02_data/03_visualizations/colab.ipynb contains nonword catagories
 
-t02_data/06_probability/colab2.ipynb contains nonword probabiltiy
+02_data/03_visualizations/colab.ipynb contains nonword inital
 
-t02_data/06_probability/colab2.ipynb contains nonword indepent
+02_data/04_acquiring_data/colab.ipynb contains nonword virutal
 
-t05_basic_classification/08_support_vector_machines/colab.ipynb contains nonword largets
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword acorss
 
-t05_basic_classification/08_support_vector_machines/colab.ipynb contains nonword multple
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword thand
 
-t05_basic_classification/10_project_classification/colab.ipynb contains nonword fsdfasdfsadfsd
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword niacragua
 
-t08_advanced_topics/01_recurrent_neural_networks/colab.ipynb contains nonword capibable
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword coulmn
 
-t08_advanced_topics/02_natural_language_processing/colab.ipynb contains nonword litle
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword derrive
+
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword catagorical
+
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword originor
+
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword hexidecimal
+
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword furstrating
+
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword eucador
+
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword republicm
+
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword nicaraqua
+
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword examing
+
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword expoloring
+
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword scientiest's
+
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword domincan
+
+02_data/05_exploratory_data_analysis/colab-part1.ipynb contains nonword mispelled
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword consistantly
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword tighest
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword arugment
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword niacragua
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword latitiude
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword addtion
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword proplerly
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword cooca
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword remeber
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword unfufilling
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword originor
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword eucador
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword hisogram
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword republicm
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword nicaraqua
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword distrubtion
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword sould
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword chocoate
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword explination
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword domincan
+
+02_data/05_exploratory_data_analysis/colab-part2.ipynb contains nonword traunches
+
+03_regression/01_introduction_to_sklearn/colab.ipynb contains nonword ubiquitout
+
+03_regression/07_linear_regression_with_tensorflow/colab.ipynb contains nonword finallly
+
+03_regression/07_linear_regression_with_tensorflow/colab.ipynb contains nonword distrubuting
+
+03_regression/07_linear_regression_with_tensorflow/colab.ipynb contains nonword interable
+
+03_regression/07_linear_regression_with_tensorflow/colab.ipynb contains nonword varibility
+
+03_regression/07_linear_regression_with_tensorflow/colab.ipynb contains nonword buld
+
+03_regression/07_linear_regression_with_tensorflow/colab.ipynb contains nonword yorba
+
+03_regression/07_linear_regression_with_tensorflow/colab.ipynb contains nonword f'which
 
 ### Do all exercises have an answer key?
-t02_data/03_visualizations/colab1.ipynb has 2 exercises, and 0 answer keys.
+00_prerequisites/00_introduction_to_python/colab.ipynb has 3 exercises, and 4 answer keys.
 
-t02_data/08_data_analysis_and_manipulation/colab.ipynb has 1 exercises, and 2 answer keys.
-
-t03_regression/01_introduction_to_sklearn/colab.ipynb has 3 exercises, and 4 answer keys.
-
-t03_regression/03_linear_regression_with_sklearn/colab.ipynb has 10 exercises, and 13 answer keys.
+02_data/06_project_data_processing/colab.ipynb has 2 exercises, and 1 answer keys.
 
 ### Are all images correctly licensed?
-Not written yet!
+Success!
 

@@ -1,0 +1,19 @@
+{
+  "name": "Data Processing Project",
+  "slides": [],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "duration": {
+    "colab.ipynb": 240
+  },
+  "materials": [],
+  "resources": [],
+  "handouts": [],
+  "learning-objectives": [
+    "Acquire and load dataset(s) into the Pandas structures",
+    "Inspect data columns description and statistics",
+    "Explore data to understand relationship between features",
+    "Draw data insights"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Regression Quality",
+  "materials": [],
+  "resources": [],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
+  ],
+  "learning-objectives": [
+    "Extract quantitative measurements of a regression model's predictions.",
+    "Perform qualitative judgments of a regression model's predictions."
+  ],
+  "handouts": [],
+  "duration": {
+    "slides.md": 30,
+    "colab.ipynb": 60
+  }
+}

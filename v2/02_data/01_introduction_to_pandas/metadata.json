@@ -1,0 +1,20 @@
+{
+  "name": "Introduction to Pandas",
+  "learning-objectives": [
+    "Create, analyze, and modify a Pandas Series",
+    "Create, analyze, and modify a Pandas DataFrame"
+  ],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
+  ],
+  "duration": {
+    "slids.md": 60,
+    "colab.ipynb": 60
+  },
+  "materials": [],
+  "resources": [],
+  "handouts": []
+}

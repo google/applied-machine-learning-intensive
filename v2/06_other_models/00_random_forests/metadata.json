@@ -1,0 +1,24 @@
+{
+  "name": "Random Forests",
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
+  ],
+  "learning-objectives": [
+    "Create and apply a decision tree algorithm for classification",
+    "Perform ensemble learning using random forests",
+    "Apply limits to depth and split size to reduce overfitting",
+  ],
+  "handouts": [],
+  "materials": [],
+  "resources": [
+    "https://en.wikipedia.org/wiki/Decision_tree",
+    "https://en.wikipedia.org/wiki/Random_forest",
+    "https://en.wikipedia.org/wiki/Ensemble_learning",
+    "https://en.wikipedia.org/wiki/Bootstrapping_(statistics)",
+    "https://en.wikipedia.org/wiki/Bootstrap_aggregating",
+    "https://en.wikipedia.org/wiki/Boosting_(machine_learning)"
+  ]
+}

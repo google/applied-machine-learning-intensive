@@ -35,8 +35,8 @@ spell = SpellChecker()
 
 # Global Variables
 outputFile = "TestResults.md"
-contentFolder = "../content/"
-inContentFolder = "../content/"
+contentFolder = "../../v2/"
+inContentFolder = "../../v2/"
 #Why are these two variables the same?
 
 def spellCheck(track, unit, colabs, slides):
@@ -45,31 +45,33 @@ def spellCheck(track, unit, colabs, slides):
     '''
     toPrint = ""
     for colab in colabs:
-      colabfile = open(inContentFolder + str(track) + "/" + str(unit) 
-            + "/" + colab)
-      colabcontent = colabfile.read()
-      colabcontent = re.sub(r'\"id\": \"............\"', '', colabcontent)
-      colabwords = colabcontent.split()
-      newcolabwords = []
-      for index in range(len(colabwords)):
-        if(len(colabwords[index]) > 1):
-          if(colabwords[index][0] == "(") or (colabwords[index][0] == "'") or (colabwords[index][0] == "\""):
-            colabwords[index] = colabwords[index][1:]
-          if(colabwords[index][-1] == ")") or (colabwords[index][-1] == "'") or (colabwords[index][-1] == "\"") or (colabwords[index][-1] == ".") or (colabwords[index][-1] == ",")or (colabwords[index][-1] == "?") or (colabwords[index][-1] == "!")or (colabwords[index][-1] == ":") or (colabwords[index][-1] == ";"):
-            colabwords[index] = colabwords[index][:-1]
-        if(len(colabwords[index]) > 1):
-          if(colabwords[index][-1] == "'"):
-            colabwords[index] = colabwords[index][:-1]
-        if(len(colabwords[index]) > 1):
-          if(colabwords[index][0] == "'"):
-            colabwords[index] = colabwords[index][1:]
-        m = re.search(r'[^a-zA-Z\']', colabwords[index])
-        if(m == None) and (len(colabwords[index]) > 0):
-          newcolabwords += [colabwords[index]]
-      misspelled = spell.unknown(newcolabwords)
-      for word in misspelled:
-        if not word in okwords:
-          toPrint += track + "/" + unit + "/" + colab + " contains nonword " + word + "\n\n"
+      try: 
+        colabfile = open(inContentFolder + str(track) + "/" + str(unit) + "/" + colab)
+        colabcontent = colabfile.read()
+        colabcontent = re.sub(r'\"id\": \"............\"', '', colabcontent)
+        colabwords = colabcontent.split()
+        newcolabwords = []
+        for index in range(len(colabwords)):
+          if(len(colabwords[index]) > 1):
+            if(colabwords[index][0] == "(") or (colabwords[index][0] == "'") or (colabwords[index][0] == "\""):
+              colabwords[index] = colabwords[index][1:]
+            if(colabwords[index][-1] == ")") or (colabwords[index][-1] == "'") or (colabwords[index][-1] == "\"") or (colabwords[index][-1] == ".") or (colabwords[index][-1] == ",")or (colabwords[index][-1] == "?") or (colabwords[index][-1] == "!")or (colabwords[index][-1] == ":") or (colabwords[index][-1] == ";"):
+              colabwords[index] = colabwords[index][:-1]
+          if(len(colabwords[index]) > 1):
+            if(colabwords[index][-1] == "'"):
+              colabwords[index] = colabwords[index][:-1]
+          if(len(colabwords[index]) > 1):
+            if(colabwords[index][0] == "'"):
+              colabwords[index] = colabwords[index][1:]
+          m = re.search(r'[^a-zA-Z\']', colabwords[index])
+          if(m == None) and (len(colabwords[index]) > 0):
+            newcolabwords += [colabwords[index]]
+        misspelled = spell.unknown(newcolabwords)
+        for word in misspelled:
+          if not word in okwords:
+            toPrint += track + "/" + unit + "/" + colab + " contains nonword " + word + "\n\n"
+      except:
+            toPrint += "this colab does not exist in the github repo: " + str(track) + "/" + str(unit) + "/" + str(colab) + "\n\n"
     for slideset in slides:
       slidefile = open(inContentFolder + str(track) + "/" + str(unit) 
             + "/" + slideset)
@@ -118,11 +120,11 @@ def imagesLicensed(track, unit, slides):
             tempstring = tempstring[m.end():]
             m = re.search(r'!\[\]\(.*\)', tempstring)
         tempstring = slide
-        m = re.search(r'https?://', tempstring)
+        m = re.search(r'Source: ?https?://', tempstring)
         while m != None:
             sourcecount += 1
             tempstring = tempstring[m.end():]
-            m = re.search(r'https?://', tempstring)
+            m = re.search(r'Source: ?https?://', tempstring)
         if(imagecount > sourcecount):
             toPrint += track + "/" + unit + "/" + slideset + " has unsourced image on slide " + str(slideno) + ".\n\n"
         slideno += 1
@@ -137,18 +139,50 @@ def containAnswerKey(track, unit, colabs):
     '''
     toPrint = ""
     for colab in colabs:
-        exercisecount = 0
-        answerkeycount = 0
+      exercisecount = 0
+      answerkeycount = 0
+      questioncount = 0
+      question1count = 0
+      challengecount = 0
+      try:
         colabfile = open(inContentFolder + str(track) + "/" + str(unit) 
             + "/" + colab)
         colabcontent = colabfile.read()
         saved_colabcontent = colabcontent[:]
         # Count the number of Exercises
-        m = re.search(r'## *[Ee]xercise ', colabcontent)
+        m = re.search(r'##? *[Ee]xercise ', colabcontent)
         while m != None:
             exercisecount += 1
             colabcontent = colabcontent[m.end():]
-            m = re.search(r'## *[Ee]xercise ', colabcontent)
+            m = re.search(r'##? *[Ee]xercise ', colabcontent)
+        colabcontent = saved_colabcontent[:]
+        # Count the number of Subquestions labeled Question #
+        m = re.search(r'###? *Question ', colabcontent)
+        while m != None:
+            questioncount += 1
+            colabcontent = colabcontent[m.end():]
+            m = re.search(r'###? *Question ', colabcontent)
+        colabcontent = saved_colabcontent[:]
+        # Count the number of Subquestions labeled Question 1 or 1.1 
+        # to subtract and eliminate double counting
+        m = re.search(r'###? *Question [2-9].1', colabcontent)
+        while m != None:
+            question1count += 1
+            colabcontent = colabcontent[m.end():]
+            m = re.search(r'###? *Question [2-9].1', colabcontent)
+        colabcontent = saved_colabcontent[:]
+        m = re.search(r'(###? *Question 1.1:)|(###? *Question 1:)', colabcontent)
+        while m != None:
+            question1count += 1
+            colabcontent = colabcontent[m.end():]
+            m = re.search(r'(###? *Question 1.1:)|(###? *Question 1:)', colabcontent)
+        colabcontent = saved_colabcontent[:]
+        # Count the number of Challenges
+        m = re.search(r'###? *Challenge:?', colabcontent)
+        while m != None:
+            challengecount += 1
+            colabcontent = colabcontent[m.end():]
+            m = re.search(r'###? *Challenge:?', colabcontent)
         colabcontent = saved_colabcontent[:]
         # Count the number of Answer Keys
         m = re.search(r'(###? *Solutions?)|(###? *Answer Key)', colabcontent)
@@ -157,10 +191,13 @@ def containAnswerKey(track, unit, colabs):
             colabcontent = colabcontent[m.end():]
             # Currently checking for Solution, Solutions, Answer Key
             m = re.search(r'(###? *Solutions?)|(###? *Answer Key)', colabcontent)
+        if (questioncount > 0) or (challengecount > 0):
+            exercisecount = exercisecount + questioncount - question1count + challengecount
         # Print if the two numbers don't match
         if exercisecount != answerkeycount:
             toPrint += track + "/" + unit + "/" + colab + " has " + str(exercisecount) + " exercises, and " + str(answerkeycount) + " answer keys.\n\n"
-
+      except:
+        toPrint += "this colab does not exist in the github repo: " + str(track) + "/" + str(unit) + "/" + str(colab) + "\n\n"
     return toPrint
 
 def usePython3(track, unit, colabs):
@@ -170,12 +207,14 @@ def usePython3(track, unit, colabs):
     '''
     toPrint = ""
     for colab in colabs:
-        colabfile = open(inContentFolder + str(track) + "/" + str(unit) 
-            + "/" + colab)
-        colabcontent = colabfile.read()
-        # Check metadata of colab to ensure running Python 3
-        if not ("\"name\":\"python3\"" in colabcontent) and not ("\"name\": \"python3\"" in colabcontent):
-            toPrint += track + "/" + unit + "/" + colab + " is not using python 3.\n\n" 
+        try: 
+            colabfile = open(inContentFolder + str(track) + "/" + str(unit) + "/" + colab)
+            colabcontent = colabfile.read()
+            # Check metadata of colab to ensure running Python 3
+            if not ("\"name\":\"python3\"" in colabcontent) and not ("\"name\": \"python3\"" in colabcontent):
+                toPrint += track + "/" + unit + "/" + colab + " is not using python 3.\n\n" 
+        except:
+            toPrint += "this colab does not exist in the github repo: " + str(track) + "/" + str(unit) + "/" + str(colab) + "\n\n"
     return toPrint
 
 def outputsOff(track, unit, colabs):
@@ -186,12 +225,14 @@ def outputsOff(track, unit, colabs):
     '''
     toPrint = ""
     for colab in colabs:
-        colabfile = open(inContentFolder + str(track) + "/" + str(unit) 
-            + "/" + colab)
-        colabcontent = colabfile.read()
-        # Checks to ensure all colab outputs in metadata are empty (denoted [])
-        if ("\"outputs\": [{" in colabcontent) or ("\"outputs\":[{" in colabcontent):
-            toPrint += track + "/" + unit + "/" + colab + " has an uncleared output.\n\n" 
+        try:
+            colabfile = open(inContentFolder + str(track) + "/" + str(unit) + "/" + colab)
+            colabcontent = colabfile.read()
+            # Checks to ensure all colab outputs in metadata are empty (denoted [])
+            if ("\"outputs\": [{" in colabcontent) or ("\"outputs\":[{" in colabcontent):
+                toPrint += track + "/" + unit + "/" + colab + " has an uncleared output.\n\n" 
+        except:
+            toPrint += "this colab does not exist in the github repo: " + str(track) + "/" + str(unit) + "/" + str(colab) + "\n\n"
     return toPrint
 
 def main():
@@ -222,6 +263,7 @@ def main():
     spellcheck = ""
     answerkeycheck = ""
     licensecheck = ""
+    exceptionPrint = ""
 
     # Goes through each track, gets track name, unit name, list of colabs
     for track in alltracks:
@@ -245,14 +287,19 @@ def main():
             content = content.replace(',}', '}')
             content = content.replace(', ]', ' ]')
             content = content.replace(', }', ' }')
+            print(track + " " + unit)
             parsed_json = json.loads(content)
 
+            #if "colabs" in parsed_json.keys():
+             #   colabs += parsed_json["colabs"]
+            #elif "colab" in parsed_json.keys():
+             #   colabs += parsed_json["colab"]
             colabs = []
             if "colabs" in parsed_json.keys():
                 colabs += parsed_json["colabs"]
             elif "colab" in parsed_json.keys():
                 colabs += parsed_json["colab"]
-            
+        
             slides = []
             try:
                 #print("../v2/content/" + track + "/" + unit + "/")
@@ -279,6 +326,7 @@ def main():
             jsonfile.close()
     
     # Write out our test results for each
+    outmd.write(exceptionPrint + "\n")
     outmd.write("### Are Colabs using Python 3?\n")
     if (py3check == ""):
         py3check = "Success!\n\n"
@@ -301,7 +349,7 @@ def main():
 
     outmd.write("### Are all images correctly licensed?\n")
     if (licensecheck == ""):
-        licensecheck = "Not written yet!\n\n"
+        licensecheck = "Success!\n\n"
     outmd.write(licensecheck)
 
     outmd.close()
