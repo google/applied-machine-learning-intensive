@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Embeddings
 
 ---

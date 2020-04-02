@@ -1,11 +1,13 @@
+---
+marp: true
+---
+
 # Random Forests
 
 <!--
 In this unit we are going to talk about random forests. Random forests build upon a concept that we
 have already learned: decision trees. Let's take a moment to remind ourselves about decision trees.
 
-Concepts:
-* models:random forests
 -->
 
 ---
@@ -21,8 +23,6 @@ about Decision Trees.
 Image Details:
 * [tree.png](https://pixabay.com/vectors/tree-silhouette-winter-plant-3979965/): Pixabay License
 
-Concepts:
-* models:decision trees
 -->
 
 ---
@@ -44,8 +44,6 @@ node and then following a path based on the comparison. The leaf node that you a
 Image Details:
 * tree.png: Copyright Google
 
-Concepts:
-* models:decision trees
 -->
 
 ---
@@ -74,11 +72,6 @@ Decision trees are not sensitive to features having different ranges of values. 
 learning algorithms benefit from scaling and/or normalizing data, but decision trees are an
 exception.
 
-Concepts:
-* models:decision trees
-* programming:algorithms:binary trees
-* models:types:classification
-* models:types:regression
 -->
 
 ---
@@ -89,7 +82,6 @@ Gini
 
 * Impurity
 
-{.column}
 
 Entropy
 
@@ -100,9 +92,6 @@ Also remember that when building decision trees we must choose what factor to ba
 can use the Gini algorithm to minimize impurity or entropy to maximize information gain. We
 discussed this in our unit about decision trees.
 
-Concepts:
-* models:algorithms:decision trees:gini
-* models:algorithms:decision trees:entrophy
 -->
 
 ---
@@ -121,13 +110,11 @@ decision made by the random forest.
 Image Details:
 * [forest.png](https://pixabay.com/vectors/deciduous-trees-forest-trees-154168/): Pixabay License
 
-Concepts:
-* models:algorithms:random forests
 -->
 
 ---
 
-# Ensemble Learning {.big}
+# Ensemble Learning 
 
 <!--
 This is our first foray into "ensemble learning". Ensemble learning is a technique in which multiple
@@ -135,13 +122,11 @@ learners are trained on the training data and their results are aggregated in so
 aggregation is typically one of majority vote or mode for classification, and mean or median for
 regression.
 
-Concepts:
-* models:techniques:ensemble learning
 -->
 
 ---
 
-# Bootstrapping {.big}
+# Bootstrapping 
 
 <!--
 You might be asking how training multiple trees with the same dataset would be much better than
@@ -155,13 +140,11 @@ This is considered sampling "with replacement".
 You can also choose to train every tree with the entire dataset. In this case you get variation in
 trees based on their random starting points.
 
-Concepts:
-* models:techniques:bootstrapping
 -->
 
 ---
 
-# Bootstrap Aggregation (Bagging) {.big}
+# Bootstrap Aggregation (Bagging) 
 
 <!--
 A specific form of bootstrapping that you'll hear about in machine learning is "bootstrap
@@ -178,13 +161,11 @@ the data.
 
 Note that after the datasets are made, trees can be built and used in parallel.
 
-Concepts:
-* models:techniques:bootstrapping
 -->
 
 ---
 
-# Boosting {.big}
+# Boosting 
 
 <!--
 While we are on the topic of ensemble learning techniques, let's take a moment to talk about another
@@ -195,8 +176,6 @@ worker has a specialty.
 
 The downside of boosting is that it has to be done sequentially.
 
-Concepts:
-* models:techniques:boosting
 -->
 
 ---
@@ -207,15 +186,10 @@ Concepts:
 * [RandomForestRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html)
 
 <!--
-scikit-learn provides a couple of random forest implementations, one for classification and one
+The scikit-learn library provides a couple of random forest implementations, one for classification and one
 for regression. The two implementations share many hyperparameters, but not all. We'll spend the
 next few slides highlighting some of the hyperparameters.
 
-Concepts:
-* toolkits:scikit-learn:random forest classifier
-* toolkits:scikit-learn:random forest regressor
-* models:types:classification
-* models:types:regression
 -->
 
 ---
@@ -240,8 +214,6 @@ How to you choose the best number? Experimentation. Play with different settings
 training time and model scores until you find a value that seems to be fast and "good" enough for
 your use case.
 
-Concepts:
-* models:tuning
 -->
 
 ---
@@ -266,11 +238,6 @@ our model quality discussions that MSE penalizes outliers much more than MAE.
 For classification we can choose to either use Gini, which is an impurity measurement, or Entropy,
 which is a measure of information gain. Both of these are measures of set homogeneity.
 
-Concepts:
-* models:tuning
-* models:measurement:regression:mean absolute error
-* models:measurement:regression:mean squared error
-* models:measurement:classification:homogenity
 -->
 
 ---
@@ -292,8 +259,6 @@ leaves.
 Let's look at another hyperparameter that can help prevent overfitting without having to worry
 about balance.
 
-Concepts:
-* models:tuning
 -->
 
 ---
@@ -322,8 +287,6 @@ The nice thing about these hyperparameters are that they work well with unbalanc
 
 How do you pick a value for these parameters? Trial and error, like most hyperparameters.
 
-Concepts:
-* models:tuning
 -->
 
 ---
@@ -338,8 +301,6 @@ best split for a node. If you have a lot of features this might be computational
 even lead to some overfitting. You can limit the number of features used in any decision so that
 only the most significant features are used at each node.
 
-Concepts:
-* models:tuning
 -->
 
 ---
@@ -358,6 +319,4 @@ and classifiers. Also, any parameters you set apply to all trees in a forest. An
 way to find the best parameters is to experiment with many different options and find which perform
 best for your data.
 
-Concepts:
-* models:tuning
 -->

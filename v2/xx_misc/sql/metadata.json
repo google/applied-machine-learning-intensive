@@ -1,8 +1,7 @@
 {
   "name": "Introduction to SQL",
-  "bug": "b/129316272",
   "slides": [
-    "https://docs.google.com/presentation/d/1mVeBnSLLc_obDzpMefduwvYrL08XcvyO9yA2XeJjf-A/edit"
+    "slides.md"
   ],
   "colabs": [
     "colab.ipynb"
@@ -12,5 +11,10 @@
     "https://www.w3schools.com/sql/",
     "https://www.dofactory.com/sql/join"
   ],
-  "handouts": []
+  "handouts": [],
+  "learning-objectives": [
+    "Write simple SQL queries to perform filtering, sorting, grouping and arithmetic",
+    "Use JOIN to merge tables and concept of the different joint (LEFT, RIGHT, OUTER, INNER)",
+    "Understand the use of keywords, e.g. AS, LIMIT, and HAVING",
+  ]
 }
