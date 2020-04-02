@@ -85,13 +85,13 @@ Image Details:
 
 # Lab: Digit Identification
 
-![center](res/digits.jpg)
+![center](res/wine.jpg)
 
 <!--
-For our final exercise in the lab we'll create a classifier that identifies digits in a popular handwritten digits dataset, MNST. This exercise will have minimal guidance and will allow you to really demonstrate your machine learning skills.
+For our final exercise in the lab we'll create a classifier that identifies the producer of a wine based on various properties of the wine, using a dataset built into scikit-learn. This exercise will have minimal guidance and will allow you to really demonstrate your machine learning skills.
 
 Image Details:
-* [digits.png](https://pixabay.com/photos/digits-counting-mathematics-4014181/): Pixabay License
+* [digits.png](https://pixabay.com/photos/drinks-alcohol-event-1283608/): Pixabay License
 -->
 
 ---
