@@ -6,6 +6,9 @@
   "colab": [
     "colab.ipynb"
   ],
+  "slides": [
+    "slides.md"
+  ],
   "learning-objectives": [
     "Review Bayes' Theorem",
     "Build a Classifier with sklearn",
