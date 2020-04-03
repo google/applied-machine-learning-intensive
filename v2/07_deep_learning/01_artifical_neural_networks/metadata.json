@@ -1,6 +1,8 @@
 {
   "name": "Artificial Neural Networks",
-  "slides": [],
+  "slides": [
+    "slides.md"
+  ],
   "colabs": [
     "colab.ipynb"
     ],
