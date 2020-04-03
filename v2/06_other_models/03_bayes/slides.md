@@ -73,7 +73,7 @@ Image Details:
 
 ## The Naive Bayes Spam Filterer
 
-$$ P(spam|word) = \frac{P(word|spam) P(spam)}{P(word|spam)P(spam) + P(word|ham)P(ham)} $$
+> $$ P(spam|word) = \frac{P(word|spam) P(spam)}{P(word|spam)P(spam) + P(word|ham)P(ham)} $$
 
 <!--
 Walk students through this formula.
