@@ -1,14 +1,16 @@
 {
   "name": "Saving and Loading Models",
-  "bug": "b/0",
   "handouts": [],
   "colabs": [
     "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
   ],
   "resources": [],
   "materials": [],
   "learning-objectives": [
     "Understand how to save the state of a model",
-    "Revive and use a persisted model",
-  ],
+    "Revive and use a persisted model"
+  ]
 }
