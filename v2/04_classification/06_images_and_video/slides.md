@@ -1,5 +1,5 @@
 ---
-false
+
 marp: true
 
 ---
@@ -22,7 +22,7 @@ img[alt~="center"] {
 <!--
 It is common to have input data that consists of images. Just like with tabular data, we still need to perform data cleaning and exploration, and this often involves manipulating the images to ensure they are in a good form for your ML model. For example, we may want to resize the images to a uniform dimension or colorspace.
 
-Our goal in this lecture, is to discuss how to take a rectangular image that is 960 by 640 pixels and produce a thumbnail that is 200 by 200 pixels. 
+Our goal in this lecture is to discuss how to take a rectangular image that is 960 by 640 pixels and produce a thumbnail that is 200 by 200 pixels. 
 
 Image Details:
 * [imagemaninpy1.png](http://www.google.com): Copyright Google  
@@ -35,12 +35,10 @@ Image Details:
 ![center](res/imagemaninpy2.png)
 
 <!--
-Matplotlib
-* We’ll use the matplotlib Python library that you have already used for creating charts. But in this exercise, we’ll use it to plot an image, instead of chart.
 
-PIL (Python Imaging Library)
-* Free library for the Python programming language that adds support for opening, manipulating, and saving many different image file formats
-* A newer fork of PIL is called Pillow
+We’ll use the matplotlib Python library that you have already used for creating charts. But in this exercise, we’ll use it to plot an image, instead of a chart.
+
+PIL (Python Imaging Library) is a free library for the Python programming language that adds support for opening, manipulating, and saving many different image file formats. A newer fork of PIL is called Pillow, so don't be confused if you see it referred to by either name.
 
 Image Details:
 * [imagemaninpy2.png](http://www.google.com): Copyright Google  
@@ -48,7 +46,7 @@ Image Details:
 
 ---
 
-# Open and plot an image and its dimension
+# Open and plot an image and its dimensions
 
 ![center](res/imagemaninpy3.png)
 <!--
@@ -66,7 +64,7 @@ Image Details:
 ![center](res/imagemaninpy4.png)
 
 <!--
-Remember the goal is to end up with a thumbnail image which is square and with 200 by 200 pixels dimension.
+Remember, the goal is to end up with a thumbnail image which is square and with dimensions of 200 by 200 pixels.
 
 Questions for students:
 * How do we get there?
@@ -86,11 +84,11 @@ Image Details:
 ![center](res/imagemaninpy5.png)
 
 <!--
-How do we figure how much to pad the image to make it a square?
+How do we figure out how much to pad the image to make it a square?
 
-First, determine the longest dimension between the width and height of the original image.
+First, determine the largest dimension (width or height) of the original image.
 
-Figure out how much padding is needed in the height and width of the image.  In this case, we need to pad the image’s height to match the image’s width, since the width is larger than the height.
+Then, figure out how much padding is needed in the height and width of the image. In this case, we need to pad the image’s height to match the image’s width, since the width is larger than the height.
 
 Image Details:
 * [imagemaninpy5.png](http://www.google.com): Copyright Google  
@@ -136,6 +134,8 @@ Image Details:
 -->
 
 ---
+
+# Resize the image
 
 ![center](res/imagemaninpy9.png)
 
