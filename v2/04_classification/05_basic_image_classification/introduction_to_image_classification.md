@@ -1,4 +1,4 @@
-# Introduction to Keras
+# Introduction to Image Classification
 
 ---
 
