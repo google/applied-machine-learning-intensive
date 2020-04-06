@@ -1,13 +1,14 @@
 {
-  "name": "Image Classification with Keras",
-  "bug": "b/129326434",
-  "slides": [],
+  "name": "Introduction to Image Classification",
+  "slides": [
+    "slides.md"
+  ],
   "colabs": [
     "colab.ipynb"
   ],
-  "materials": [],
-  "resources": [
-    "https://github.com/zalandoresearch/fashion-mnist"
-  ],
-  "handouts": []
+  "learning-objectives": [
+    "Know effective stratiges for feature reduction in image classification",
+    "Perform multiclass image classification using a deep neural network",
+    "Prevent overfitting using early stopping and dropout"
+  ]
 }
