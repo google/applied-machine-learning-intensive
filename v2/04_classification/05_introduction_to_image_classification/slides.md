@@ -1,112 +1,188 @@
+---
+
+marp: true
+
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Introduction to Image Classification
 
----
-
-What is Keras? {.big}
-
----
-
-Keras: The Python deep learning library {.big}
-
-* Popular high-level API for building & training deep learning models
-* Implemented in Python (2.7-3.6)
-* Uses TensorFlow, CNTK, or Theano for its backend
-* Open-source, developed and maintained by contributors 
-
 <!--
-A collection of high-level APIs that support neural network for deep learning modeling.  Can be used on several backend implementations, eg: TF, CNTK, Theano.
-Microsoft Cognitive Toolkit, previously known as CNTK
-* A deep learning framework developed by Microsoft Research. Microsoft Cognitive Toolkit describes neural networks as a series of computational steps via a directed graph
-* Developer: Microsoft Research
-
-Theano
-* A Python library and optimizing compiler for manipulating and evaluating mathematical expressions, especially matrix-valued ones. In Theano, computations are expressed using a NumPy-esque syntax and compiled to run efficiently on either CPU or GPU architectures.
-* Developer(s): Montreal Institute for Learning Algorithms (MILA), University of Montreal
+We have performed binary and multiclass classificaiton on datasets containing string and numeric values. In this unit we'll perform classification on images.
 -->
 
 ---
 
-Why Keras vs. TensorFlow? {.big}
+# Image Features
 
-* User-friendly interface, optimized for common use cases
-* Modular blocks
-* Shallow learning curve
-* Keras will be even more integrated in upcoming [TF 2.0](https://www.tensorflow.org/community/roadmap)
+![center](res/pixels.jpg)
 
 <!--
-User friendly
-* High level APIs - provides a scikit-learn type APIs
-* Hides complexity of the backend engine (TF, etc)
+What makes image classification different from other forms of classification? One major difference are the features. When classifying an image, each pixel is a features. How are these pixels represented?
 
-Modular blocks
-* Using Keras is much like dealing with Lego blocks
-* Support a large set of neural network models, eg: fully connected, convolutional, pooling, recurrent, embedding, etc.
-* These models can be combined to build more complex models
-
-Shallow learning curve
-* Great place for beginners to start
-* It’s build to help developers perform quick tests, proof of concepts and experiments before going full scale
-* Hopefully allow non-ML developers to solve their ML problems themselves with little overhead
+Image Details:
+* [pixels.jpg](https://pixabay.com/illustrations/square-background-color-mosaic-2724369/): Pixabay License
 -->
 
 ---
 
-**Goal**: Allow the user to focus on defining models (instead of coding) and maximize experiment iteration speed {.big}
+# Image Features
 
----
-
-Using Keras {.big)
-
-![](res/introkeras01.png)
+![center](res/rgb.png)
 
 <!--
-Load
-* As usual either use the built-in data loader function when available, or write one for your specific data set
-* Data sets can potentially divided into: Training set, Validation set, Test set
-* For simplicity, we’ll work with Training and Test set in this example
+So how are those pixels represented?
 
-Define
-* Model is defined by sequencing together pre-built layers
-* It typically consists of input layer, one or more hidden layers in the middle which does the learning, and an output layer
-* We’ll go through a concrete example in the upcoming Image Classification with Keras colab
+Often they are represented as RGB values. These are three numbers that indicate the amount of red, green, and blue in an image. These numbers often range from 0 to 255.
 
-Neural Net
-* We will go deep into neural network model discussion in a couple of weeks but for now focus getting comfortable with Keras APIs and coding flow
+Image Details
+* [rgb.png](https://pixabay.com/vectors/intersection-mix-colors-rgb-red-154782/): Pixabay License
 -->
 
 ---
 
-Sample Code {.big}
+# Image Features
 
-![](res/introkeras02.png)
+How many features would we have for a 1920 × 1920 images if the image was represented by RGB values?
 
 <!--
-Compile
-* As the model train, you can influence how it improve the model between iterations by specifying: Optimizer, Loss Function, Metrics
-
-Train
-* Call model.fit() to start model training
-* Training data in x_train
-* Training labels in y_train
-* Feed the training data 5 times
-* Return: History object containing training accuracy and loss values in each iterations
-
-Evaluate
-* Call model.evaluate() to evaluate the model quality
-* Use a separate test dataset to independently assess quality
-* Return: evaluation accuracy and loss values
+Let's take a moment to think about the number of features that we are dealing with there. Say that we have a 1920 by 1920 pixel image. How many features would we have?
 -->
 
 ---
 
-# Your Turn
+# Image Features
 
-[Image Classification with Keras](https://colab.sandbox.google.com/drive/1OfhoB99E9h7SMWMXwBRLs54aGUMcwXFF)
+$$ 1920 * 1920 * 3 = 11,059,200 $$
 
 <!--
-Let’s work on the Image Classification colab where we can apply the skills we’ve been recently introduced to:
-Keras API
-Image Manipulation with Python
-Introduction to Neural Network
+That's over 11 million input features!
 -->
 
+---
+
+# Image Features
+
+How many features would we have for a 12 megapixel image stored in RGB?
+
+<!--
+Let's try another one. How many features would we have for a 12 megapixel image stored in RGB?
+
+This resolution (or greater) is common in our mobile phones.
+-->
+
+---
+
+# Image Features
+
+$$ 12,000,000 * 3 = 36,000,000 $$
+
+<!--
+This is an insanely huge number of features. No model could handle that many features and still be performant. That is why you'll noticed that the images that we use in this lab are very low resolution.
+-->
+
+---
+
+# Image Features: Grayscale
+
+![center](res/gray.jpg)
+
+<!--
+Another way to reduce the number of features is to convert them to grayscale. Grayscal uses a single number to represent the intensity of color in a pixel, but doesn't specify which color. The range of values that you'll find vary. In this lab we work with one dataset that has a grayscale range of 0 through 255 and another that goes from 0 through 16. Grayscale values might even be in the range from 0.0 through 1.0. For neural networks this smaller range is easier to train on.
+
+Image Details:
+* [gray.jpg](https://pixabay.com/illustrations/abstract-graphic-pattern-grey-952691/): Pixabay License
+-->
+
+---
+
+# Image Features: Other Formats
+
+* HSV: Hue, Saturation, Value
+* HSL: Hue, Saturation, Light
+* CMYK: Cyan, Magenta, Yellow, Black
+* BGR: Blue, Green Red
+
+<!--
+There are more color models than RGB and Grayscale. A few alternatives are listed in this slide.
+
+You'll notice that some, like CMYK, have more values than RGB. Others, like BGR, is just RGB in a differnt order.
+-->
+
+---
+
+# Image Classification: Busy Images
+
+![center](res/street.jpg)
+
+<!--
+Another interesting aspect of image classification is that rarely do images contain just a single item. Take this image for instance. It contains builds, cars, people, and more.
+
+Image Details
+* [streen.jpg](https://pixabay.com/photos/city-street-traffic-cars-731239/): Pixabay License
+-->
+
+---
+
+# Image Classification: Lab
+
+![center](res/shirt.png)
+
+<!--
+In this introduction to image classification we'll be working with some very curated datasets. The first dataset that we work with is the MNIST Fashion dataset.
+
+The dataset contains 70,000 images of different clothing items. Each image is a grayscale image, only contains one item, and is only 28x28 pixels.
+
+Image Details:
+* [shirt.png](https://github.com/zalandoresearch/fashion-mnist): MIT License
+-->
+
+---
+
+# Image Classification: Lab
+
+> Label	| Class
+> ------|------------
+> 0     | T-shirt/top
+> 1     | Trouser
+> 2     | Pullover
+> 3     | Dress
+> 4     | Coat
+> 5     | Sandal
+> 6     | Shirt
+> 7     | Sneaker
+> 8     | Bag
+> 9     | Ankle boot
+
+<!--
+The images in the Fashion MNIST dataset are labeled with one of the shown classes. The numeric label is the target of the model.
+-->
+
+---
+
+# Image Classification: Lab
+
+![center](res/digits.png)
+
+<!--
+We'll also work with the MNIST digits dataset. This dataset contains handwritten digits that we'll classify as 0 through 9. This is also a very clean dataset with one digit per image.
+
+Image Details:
+* [digits.png](https://commons.wikimedia.org/wiki/File:MnistExamples.png): [Creative Commons Attribution-Share Alike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
+-->
+
+---
+
+# Image Classification: Lab
+
+## Your Turn!
+
+<!--
+And now it is time for you to get some hands-on experience with image classification.
+-->
