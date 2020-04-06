@@ -1,6 +1,9 @@
 {
   "name": "Advanced Sequence Prediction",
   "handouts": [],
+  "slides": [
+    "slides.md
+  ],
   "colabs": [
     "colab.ipynb"
   ],
