@@ -18,7 +18,7 @@ change.
 
 # Time Series Data
 
-![](res/time_series.jpg)
+![](res/time_series.png)
 
 <!--
 In this class, we will look at sequence prediction. In sequence prediction, the input data is an *ordered* set of data, most
