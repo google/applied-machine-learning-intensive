@@ -9,8 +9,8 @@ marp: true
 <!--
 So far we have built models and used them immediately. In practice you'll find
 that you need to save your models and load them for use later. You'll also find
-models published online that you can load and start immediately using or use as
-a warm start for building your own model.
+models published online that you can load and start using immediately or use as
+a warm start for training your own model.
 -->
 
 ---
