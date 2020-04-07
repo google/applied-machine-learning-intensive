@@ -37,7 +37,7 @@ Image Details:
 
 -->
 
-## "Deep" Learning
+# "Deep" Learning
 
 ![](res/neural_network.png)
 
