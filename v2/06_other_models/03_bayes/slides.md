@@ -46,7 +46,7 @@ Bayes' Theorem is the basis of the Naive Bayes algorithm, as well as the entire 
 
 ---
 
-## Why "Naive"?
+# Why "Naive"?
 
 - Bayes' Theorem assumes events are independent
 - This assumption works pretty well for Naive Bayes
@@ -62,7 +62,7 @@ Naive Bayes does not perform well for more complex tasks; natural language proce
 
 ---
 
-## The Naive Bayes Classifier
+# The Naive Bayes Classifier
 
 ![](res/sorting_eggs.jpeg)
 
@@ -79,7 +79,7 @@ Image Details:
 
 ---
 
-## The Naive Bayes Spam Filter
+# The Naive Bayes Spam Filter
 
 > $$ P(spam|word) = \frac{P(word|spam) P(spam)}{P(word)} $$
 
@@ -95,7 +95,7 @@ Image Details:
 
 ---
 
-## The Naive Bayes Spam Filter: Multiple Words
+# The Naive Bayes Spam Filter: Multiple Words
 
 
 > $$ P(spam|word_{1}, word_{2}, ..., word_{n} ) = \frac{P(word_{1}|spam)P(word_{2}|spam)\cdot \cdot \cdot P(word_{1}|spam)P(spam)}{P(word_{1})P(word_{2})\cdot \cdot \cdot P(word_{n})} $$
@@ -112,7 +112,7 @@ We want the "spam" value (predicted class: 1 = spam, 0 = ham) that maximizes the
 
 ---
 
-## The Naive Bayes Spam Filter
+# The Naive Bayes Spam Filter
 
 
 > $$ spam = argmax_{spam} P(word_{1}|spam)P(word_{2}|spam)\cdot \cdot \cdot P(word_{1}|spam)P(spam)$$
@@ -126,7 +126,7 @@ Note that argmax or "arguments of the maxima" are the points in the domain that 
 
 ---
 
-## Your Turn!
+# Your Turn!
 
 <!--
 In this lab we will implement a Bayesian Model using a Naive Bayes Classifier from sci-kit learn. Your goal is to predict the likelihood of spam in a sample of text data.
