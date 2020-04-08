@@ -234,25 +234,11 @@ def scan_metadata():
                 print("")
 
 def edit_colabmd():
-    with open("test.ipynb", "r+") as f:
-        notebook = nbformat.read(f, as_version=4)
-        f.close()
-        length = len(notebook.cells)
-        i = 0
-        print(length)
-        while(i < length):
-            cell = notebook.cells[i]
-            if cell.source.startswith('##### Answer Key'):
-                del notebook.cells[i]
-                del notebook.cells[i + 1]
-                length -= 2
-            i += 1
-        print(length)
+    notebook = nbformat.read("test.ipynb", nbformat.NO_CONVERT)
+    notebookNew = notebook
 
-                # split on on \n and delete lines startinw <
-    f = open("test2.ipynb", "w+")
-    nbformat.write(notebook, f)
-    f.close()
+    notebookNew.cells = [cell for cell in notebook.cells if not cell.source.startswith('##### Answer Key')]
+    nbformat.write(notebookNew, "testStudent.ipynb", version=nbformat.NO_CONVERT)
     
 
 
