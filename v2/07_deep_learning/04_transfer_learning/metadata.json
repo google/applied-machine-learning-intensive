@@ -4,6 +4,9 @@
   "colabs": [
     "colab.ipynb"
   ],
+  "slides": [
+    "slides.md"
+  ],
   "learning-objectives": [
     "Become familiar with PyTorch API",
     "Learn fastai API",
