@@ -8,6 +8,6 @@
     "Understand the fundamental structure of autoencoders",
     "Implement an autoencoder for compressing images",
     "Implement an autoencoder for denoising images",
-    "Introduce Variational Autoencoders (VAEs)",
+    "Introduce Variational Autoencoders (VAEs)"
   ]
 }

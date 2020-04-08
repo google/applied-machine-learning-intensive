@@ -82,19 +82,31 @@ CONTENT = "../v2"
 re_slides = re.compile(r"View your presentation at: https://docs\.google\.com/"
                        r"presentation/d/([a-zA-Z0-9-_]+)")
 
-def md_to_slides(file: str):
-    """
+def md_to_slides(file: str, parent, service=None):
+    """ Converts
     """
     with open(file, "r") as f:
         head = f.read()
-    print(head)
+    # print(head)
     
     marp = False
     if re.match(r"^marp:\strue",head):
         marp = True
     
     if marp:
-        pass
+        gslides = subprocess.run(
+            [
+                "marp",
+                "--pptx",
+                "--allow-local-files", # Not Secure
+                "--title slides",
+                file
+            ],
+            capture_output=True,
+            text=True,
+            timeout=120 # Time out if process takes > 2 min
+        )
+        presentation_id = upload(service, "slides", file, parent, "slides")
     else:
         gslides = subprocess.run(
             [
@@ -102,17 +114,34 @@ def md_to_slides(file: str):
                 "-n",
                 "--use-fileio",
                 "-t slides",
-                file],
+                file
+            ],
             capture_output=True,
             text=True,
-            timeout=120) # Time out if process takes > 2 min
-        print(f"{gslides.stdout=}\n")
+            timeout=120 # Time out if process takes > 2 min
+        ) 
+        # print(f"{gslides.stdout=}\n")
         match = re.search(re_slides,gslides.stdout)
 
         if match:
             presentation_id = match.group(1)
-            print(f"{presentation_id=}\n")
+            # print(f"{presentation_id=}\n")
+            # Retrieve the existing parents to remove
+            file = service.files().get(fileId=presentation_id, # pylint: disable=no-member
+                                        fields='parents',
+                                        supportsAllDrives=True).execute()
+            previous_parents = ",".join(file.get('parents'))
+            # Move the file to the new folder
+            file = service.files().update(fileId=presentation_id, # pylint: disable=no-member
+                                            addParents=parent,
+                                            removeParents=previous_parents,
+                                            fields='id, parents',
+                                            supportsAllDrives=True).execute()
+            print("Waiting for API rate limit...\n\n")
+            time.sleep(60) # Wait sixty seconds for API
     return presentation_id
+
+
 
 def get_sub_folders(folder: str = ""):
     """ Returns a list of subfolders folders as strings. Defaults to the top 
@@ -183,7 +212,7 @@ def upload(service, filename: str,loc: str, parent: str, ftype: str = ""):
         parent:     The id of the parent folder on google drive
         ftype:      The type of the file being uploaded
     Returns:
-
+        The id of the uploaded file
     """
     # Set MIME type for upload
     if re.search(r".ipynb",filename) or ftype == "colab":
@@ -290,20 +319,10 @@ def main(args):
                         for slide_deck in slides:
                             
                             presentation_id = md_to_slides(
-                                                f"{path}/{unit}/{slide_deck}")
-                            # Retrieve the existing parents to remove
-                            file = service.files().get(fileId=presentation_id, # pylint: disable=no-member
-                                                       fields='parents',
-                                                       supportsAllDrives=True).execute()
-                            previous_parents = ",".join(file.get('parents'))
-                            # Move the file to the new folder
-                            file = service.files().update(fileId=presentation_id, # pylint: disable=no-member
-                                                          addParents=unit_id,
-                                                          removeParents=previous_parents,
-                                                          fields='id, parents',
-                                                          supportsAllDrives=True).execute()
-                            print("Waiting for API rate limit...\n\n")
-                            time.sleep(60) # Wait sixty seconds for API
+                                                f"{path}/{unit}/{slide_deck}",
+                                                unit_id,
+                                                service
+                                              )
     print("\x1b[32mDone")
 
 if __name__ == "__main__":
