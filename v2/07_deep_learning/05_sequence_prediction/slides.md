@@ -30,6 +30,8 @@ Image Details:
 
 -->
 
+---
+
 # What does sequence prediction predict?
 
 ![](res/time_series_2.png)
@@ -43,6 +45,8 @@ Image Details:
 
 -->
 
+---
+
 # RNNs for Sequence Prediction
 
 - Sequence prediction is traditionally done using a statistical approach
@@ -55,6 +59,8 @@ such as a transition matrix of probabilities, or a normal distribution of noise.
 is a largely non-parametric approach. The downside is that it usually needs more data to make good predictions.
 
 -->
+
+---
 
 # Examples
 
@@ -94,6 +100,8 @@ Image Details:
 * [rain_forecast.png](https://unsplash.com/photos/zNGPmIVPQf4): Unsplash License
 
 -->
+
+---
 
 # Examples
 
