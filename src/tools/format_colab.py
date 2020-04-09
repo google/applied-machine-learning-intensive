@@ -15,12 +15,13 @@ import nbformat
 
 FLAGS = flags.FLAGS
 
-
-def main(argv):
-  if len(argv) != 2:
-    raise app.UsageError('Please specify the file to format.')
-
-  notebook = nbformat.read(argv[1], as_version=4)
+def format_colab(fp):
+  """ Inputs:
+          fp: a file pointer to an ipython notebook and formats it in a human 
+              readable way
+      Output: None, edits in-place.
+  """
+  notebook = nbformat.read(fp, as_version=4)
 
   prior_ids = []
   new_ids = []
@@ -43,7 +44,14 @@ def main(argv):
   notebook.metadata.colab.private_outputs = True
   notebook.metadata.colab.toc_visible = True
 
-  nbformat.write(notebook, argv[1])
+  nbformat.write(notebook, fp)
+
+def main(argv):
+  if len(argv) != 2:
+    raise app.UsageError('Please specify the file to format.')
+
+  format_colab(argv[1])
+
 
 if __name__ == '__main__':
   app.run(main)
