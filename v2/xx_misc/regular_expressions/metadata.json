@@ -1,7 +1,8 @@
 {
   "name": "Regular Expressions",
-  "bug": "b/131174555",
-  "slides": [],
+  "slides": [
+    "slides.md"
+  ],
   "colabs": [
     "colab.ipynb"
     ],
