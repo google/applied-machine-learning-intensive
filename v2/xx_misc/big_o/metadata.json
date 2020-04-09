@@ -1,16 +1,13 @@
 {
   "name": "Big-O",
-  "bug": "b/131173679",
-  "colabs": [],
+  "colabs": [
+    "colab.ipynb"
+  ],
   "slides": [
-    "https://docs.google.com/presentation/d/10n0ZX39qGZb-NawdZAyueJnuuSuMQyrrkiJHHZYC_TQ"
+    "slides.md"
   ],
   "handouts": [
-    "https://drive.google.com/file/d/10hiIWcdrwy3Nk7rLnrSfvi3-xZgk2L6R/view"
+    "activity.md"
   ],
-  "resources": [],
-  "materials": [
-    "colab.ipynb",
-    "https://docs.google.com/document/d/1s5XGYWdHlRRM0mi5ZEb80FsncQW6sjlu-yJGoEqa-ps"
-  ]
+  "resources": []
 }
