@@ -32,6 +32,8 @@ Walk students through the most common activation functions. Direct students
 [here](https://en.wikipedia.org/wiki/Activation_function#Comparison_of_activation_functions) for an exhaustive comparison of
 the most popular activation functions.
 
+-->
+
 ---
 
 # Logistic
