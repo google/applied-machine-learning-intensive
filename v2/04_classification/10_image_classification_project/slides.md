@@ -27,6 +27,9 @@ In this final project you'll get to show off what you've learned in one large pr
 
 <!--
 In the lab we'll download a dataset from Kaggle. The dataset contains images of x-rays of patient lungs. Some of the images are classified as having pneumonia while others are classified as normal.
+
+Image Details:
+* [x-ray.jpg](https://pixabay.com/photos/x-ray-image-x-ray-thorax-lung-x-ray-568241/): Pixabay License
 -->
 
 ---
