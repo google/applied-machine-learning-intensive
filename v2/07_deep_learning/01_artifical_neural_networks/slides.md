@@ -37,6 +37,8 @@ Image Details:
 
 -->
 
+---
+
 # "Deep" Learning
 
 ![](res/neural_network.png)
@@ -51,6 +53,8 @@ Image Details:
 * [neural_network.png](https://pixabay.com/vectors/neural-network-thought-mind-mental-3816319/): Pixabay License
 
 -->
+
+---
 
 # Applications (just a few)
 
