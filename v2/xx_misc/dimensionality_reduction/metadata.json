@@ -1,9 +1,11 @@
 {
   "name": "Dimensionality Reduction",
-  "bug": "b/132255494",
   "colabs": [
     "colab.ipynb"
-    ],
+  ],
+  "slides": [
+    "slides.md"
+  ],
   "materials": [],
   "resources": [],
   "handouts": []
