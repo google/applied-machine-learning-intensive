@@ -1,7 +1,18 @@
 {
   "name": "Activation Functions",
-  "bug": "b/129291176",
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
+  ],
   "handouts": [],
   "resources": [],
-  "materials": []
+  "materials": [],
+  "learning-objectives": [
+    "Types of activation functions",
+    "Where activation functions are used",
+    "Train a CNN model with Keras",
+    "Visualize activations",
+  ]
 }
