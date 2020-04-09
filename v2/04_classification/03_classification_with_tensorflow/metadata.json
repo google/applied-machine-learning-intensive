@@ -1,14 +1,20 @@
 {
   "name": "Classification with TensorFlow",
-  "bug": "b/129328827",
   "materials": [],
   "colabs": [
     "colab.ipynb"
   ],
+  "slides": [
+    "slides.md"
+  ],
+  "duration": {
+    "slides.md": 30,
+    "colab.ipynb": 30
+  },
   "handouts": [],
   "resources": [],
   "learning-objectives": [
-    "Create a classification model with TensorFlow",
-    "Use a trained TensorFlow model to make classification predictions",
-  ],
+    "Create a classification model with TensorFlow.",
+    "Use a trained TensorFlow model to make classification predictions."
+  ]
 }
