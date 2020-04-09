@@ -6,9 +6,13 @@
   "colabs": [
     "colab.ipynb"
   ],
+  "duration": {
+    "slides.md": 30,
+    "colab.ipynb": 180
+  },
   "learning-objectives": [
-    "Know effective stratiges for feature reduction in image classification",
-    "Perform multiclass image classification using a deep neural network",
-    "Prevent overfitting using early stopping and dropout"
+    "Know effective strategies for feature reduction in image classification.",
+    "Perform multiclass image classification using a deep neural network.",
+    "Prevent overfitting using early stopping and dropout."
   ]
 }
