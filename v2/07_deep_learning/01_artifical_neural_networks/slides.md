@@ -37,7 +37,7 @@ Image Details:
 
 -->
 
-## "Deep" Learning
+# "Deep" Learning
 
 ![](res/neural_network.png)
 
@@ -67,7 +67,7 @@ See [here](https://en.wikipedia.org/wiki/Deep_learning#Applications) for some in
 
 ---
 
-## Your Turn!
+# Your Turn!
 
 <!--
 Direct students to the colab.

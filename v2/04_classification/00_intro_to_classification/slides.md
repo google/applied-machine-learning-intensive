@@ -563,23 +563,6 @@ Image Details:
 
 ---
 
-# Cross Entropy Loss
-
-![center](res/cross_entropy_loss.png)
-
-<!--
-Finally, recall our discussion of loss functions from an earlier lecture. For regression, common loss functions were L1 and L2 loss. For classification problems, the most common loss function is Cross Entropy Loss. This will be most useful in neural network models.
-
-This loss function requires that your model outputs *probabilities* (i.e., the confidence for each class should sum to 1). Depending on the classification model used, you may need to apply a mathematical transformation to get a probability distribution. A common transformation is the softmax function: https://en.wikipedia.org/wiki/Softmax_function. (You don’t need to get into the math, but if students are curious, the formula is in the Wikipedia page.) You may notice that softmax squashed the confidences closer together; it preserves relative magnitude but doesn’t necessarily preserve the relative ratios.
-
-Once you have a probability distribution, you calculate Cross Entropy Loss by adding together the log of the probability the model outputted for the correct class for each data point. Since lower loss is better for models, the negative of that sum is your cross entropy loss.
-
-Image Details:
-* [cross_entropy_loss.png](http://www.google.com): Copyright Google
--->
-
----
-
 # Which Do I Use?
 
 <!--
