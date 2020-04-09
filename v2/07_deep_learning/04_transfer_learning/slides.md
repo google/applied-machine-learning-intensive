@@ -32,6 +32,8 @@ Image Details:
 
 -->
 
+---
+
 # Transferring Knowledge
 
 ![](res/learning.jpeg)
@@ -53,6 +55,8 @@ Image Details:
 * [learning.jpeg](https://www.pexels.com/photo/girls-on-desk-looking-at-notebook-159823/): Pexels License
 
 -->
+
+---
 
 # Transfer Learning Models
 
