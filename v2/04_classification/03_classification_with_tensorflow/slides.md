@@ -17,9 +17,9 @@ We have performed binary and multiclass classification with scikit-learn. We'll 
 *Predicting the presence of heart disease*
 
 <!--
-The dataset that we'll be using is the UCI Heart Disease dataset. The dataset contains health information about patients, as well as a "presence of heart disease" indicator. This indicator is a 1 for "has heart disease" and 0 for "does not have heart disease."
+The dataset that we'll use is the UCI Heart Disease dataset. The dataset contains health information about patients, as well as a "presence of heart disease" indicator. This indicator is a 1 for "has heart disease" and 0 for "does not have heart disease."
 
-As you can probably guess, the model that we will be building will be a binary classification model.
+As you can probably guess, the model that we will build will be a binary classification model.
 -->
 
 ---
@@ -33,7 +33,7 @@ As you can probably guess, the model that we will be building will be a binary c
 > cp      | chest pain type<br>1 = typical angina<br>2 = atypical angina<br>3 = non-anginal pain<br>4 = asymptomatic
 
 <!--
-The dataset contains thirteen features.
+The dataset contains 13 features.
 
 'age' is an integer value representing the patient's age in years.
 
@@ -76,9 +76,9 @@ The dataset contains thirteen features.
 > slope     | slope of peak of exercise ST segment<br>1 = upslope<br>2 = flat<br>3 = downslope
 
 <!--
-The next two columns have to do with an exercise stress test that the patients did. 
+The next two columns have to do with an exercise stress test the patients completed. 
 
-'thalach' is maximum heart rate that the patient achieved during the exercise session. 
+'thalach' is the maximum heart rate the patient achieved during the exercise session. 
 
 'exang' is a categorical variable that lets us know if the exercise caused angina.
 
@@ -99,9 +99,9 @@ The next two columns have to do with an exercise stress test that the patients d
 <!--
 'ca' is a count of major blood vessels colored by fluoroscopy. The values are 0, 1, 2, or 3 and are limited by biology. 
 
-'thal' relates to a heart defect. The column answers the questions: Does it exist? Is it reparable?
+'thal' relates to a heart defect. The column answers the following two questions. Does it exist? Is it repairable?
 
-You might notice that the values on the slides for some of these columns differ from the documentation. For instance, the documentation for 'ca' states that the values range from 0-3, but there are 4s in the data. And the documentation for 'thal' says that the values are 3, 6, and 7, but the actual values in the data are 0, 1, 2, and 3.
+You might notice the values on the slides for some of these columns differ from the documentation. For instance, the documentation for 'ca' states that the values range from 0-3, but there are 4s in the data. And the documentation for 'thal' says that the values are 3, 6, and 7, but the actual values in the data are 0, 1, 2, and 3.
 
 The takeaway from this is that you should always read the documentation, but you should also always look at the data and verify that the documentation is accurate. When there are questions, you should do research. If you are in contact with the source of the data, ask for clarification. Though documentation is great and can really help in data science, the dataset itself is the actual ground truth.
 -->
@@ -115,7 +115,7 @@ The takeaway from this is that you should always read the documentation, but you
 ```
 
 <!--
-The model in this lab won't look too different from the TensorFlow Keras models that we built for regression analysis. The primary difference is the final layer in the model.
+The model in this lab won't look too different from the TensorFlow Keras models we built for regression analysis. The primary difference is the final layer in the model.
 
 We want to create a binary prediction that will let us know if a patient has heart disease or not. If we stick with the relu activation function for the output, then there is no bound for the maximum output value, so it would be impossible to understand what the prediction confidence is.
 
@@ -154,9 +154,9 @@ Although we've talked a lot about using gradient descent for optimization, there
 ```
 
 <!--
-We'll also visit early stopping in this lab. Early stopping is a model-fitting strategy where you monitor some metric - say, loss - and stop training when that metric doesn't change enough across a number of epochs.
+We'll also visit early stopping in this lab. Early stopping is a model-fitting strategy where you monitor some metric -- say, loss -- and stop training when that metric doesn't change enough across a number of epochs.
 
-In this example we monitor loss and stop early if the loss hasn't changed at least 0.001 during any of the last 5 epochs.
+In this example we monitor loss and stop early if the loss hasn't changed at least 0.001 during any of the last five epochs.
 -->
 
 ---
