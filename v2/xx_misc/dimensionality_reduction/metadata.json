@@ -8,5 +8,12 @@
   ],
   "materials": [],
   "resources": [],
-  "handouts": []
+  "handouts": [],
+  "learning-objectives": [
+    "Why we use PCA",
+    "How to prepare Data for PCA",
+    "When not to use PCA",
+    "Selecting an Optimal number of components",
+    "Calculate Percent Variance Explained",
+  ],
 }
