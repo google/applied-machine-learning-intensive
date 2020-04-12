@@ -72,7 +72,7 @@ import subprocess
 import nbformat
 
 from googleapiclient.discovery import build
-from googleapiclient.http import MediaFileUpload
+from googleapiclient.http import MediaFileUpload, MediaUpload
 from google.auth.transport.requests import Request
 from tools import drive_integration, format_colab
 
@@ -86,27 +86,36 @@ def md_to_slides(file: str, parent, service=None):
     """ Converts
     """
     with open(file, "r") as f:
-        head = f.read()
+        head = f.read(40)
     # print(head)
     
     marp = False
-    if re.match(r"^marp:\strue",head):
+    if re.search(r"marp:\strue",head):
         marp = True
     
     if marp:
+        print(file)
         gslides = subprocess.run(
             [
                 "marp",
                 "--pptx",
                 "--allow-local-files", # Not Secure
-                "--title slides",
+                "--title", 
+                "'slides'",
                 file
             ],
             capture_output=True,
             text=True,
             timeout=120 # Time out if process takes > 2 min
         )
-        presentation_id = upload(service, "slides", file, parent, "slides")
+        newFile = file[:-2]+"pptx"
+        presentation_id = upload(service, 
+                                 "slides", 
+                                 newFile, 
+                                 parent, 
+                                 "slides"
+                                )
+        os.remove(newFile)
     else:
         gslides = subprocess.run(
             [
@@ -120,7 +129,7 @@ def md_to_slides(file: str, parent, service=None):
             text=True,
             timeout=120 # Time out if process takes > 2 min
         ) 
-        # print(f"{gslides.stdout=}\n")
+        # print(f"\x1b[31m{gslides.stdout=}\x1b[0m\n")
         match = re.search(re_slides,gslides.stdout)
 
         if match:
@@ -137,8 +146,11 @@ def md_to_slides(file: str, parent, service=None):
                                             removeParents=previous_parents,
                                             fields='id, parents',
                                             supportsAllDrives=True).execute()
-            print("Waiting for API rate limit...\n\n")
-            time.sleep(60) # Wait sixty seconds for API
+            # print("Waiting for API rate limit...\n\n")
+            # time.sleep(60) # Wait sixty seconds for API
+        else:
+            presentation_id = "error"
+            # raise ChildProcessError("md2gslides failed to create presentation")
     return presentation_id
 
 
@@ -196,13 +208,12 @@ def create_file(service, filename: str, parent: str) -> str:
           f" in folder with ID: {file_metadata['parents']}")
     file = service.files().create(body=file_metadata,   # pylint: disable=no-member
                                   fields="id",
-                                  supportsAllDrives=True)
-    file = file.execute()
+                                  supportsAllDrives=True).execute()
     file_id = file.get("id")
     # print(f"Track ID: {file_id}")
     return file_id
 
-def upload(service, filename: str,loc: str, parent: str, ftype: str = ""):
+def upload(service, filename: str, loc: str, parent: str, ftype: str = ""):
     """ Uploads a file to Google Drive using the API
     
     Inputs:
@@ -228,14 +239,17 @@ def upload(service, filename: str,loc: str, parent: str, ftype: str = ""):
                      "mimeType": mimeType,
                      "parents": [parent]
                     }
-    media = MediaFileUpload(f"{loc}/{filename}", mimetype=mimeType)
+    print(file_metadata)
+    # media = MediaFileUpload(f"{loc}", mimetype=mimeType, resumable=True)
 
     file = service.files().create(body=file_metadata,
-                                  media_body=media,
-                                  uploadType="multipart",
-                                  fields="id").execute()
-
-    print(f"File ID: {file.get('id')}")
+                                  media_body=f"{loc}",
+                                #   uploadType="resumable",
+                                #   fields="id",
+                                  supportsAllDrives=True
+                                  ).execute()
+  
+    # print(f"File ID: {file.get('id')}")
     return file.get('id')
 
 
@@ -257,7 +271,7 @@ def scan_metadata():
         data = json.load(f)
         for label in data:
             if 'slides' in label:
-                update_colab_link_in_slides()
+                update_colab_link()
             if 'documents' in label: # would they be label documents or materials, handouts etc
                 # do they have convertor for docs similar to mg2sldies
                 print("")

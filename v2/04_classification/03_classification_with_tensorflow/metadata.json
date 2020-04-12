@@ -9,6 +9,6 @@
   "resources": [],
   "learning-objectives": [
     "Create a classification model with TensorFlow",
-    "Use a trained TensorFlow model to make classification predictions",
-  ],
+    "Use a trained TensorFlow model to make classification predictions"
+  ]
 }

@@ -9,6 +9,6 @@
   "materials": [],
   "learning-objectives": [
     "Use TensorFlow to implement artificial neural network",
-    "Use DNNClassifier to implement deep neural network classifier",
+    "Use DNNClassifier to implement deep neural network classifier"
   ]
 }
