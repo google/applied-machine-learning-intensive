@@ -246,6 +246,206 @@ Image Details:
 * [prob15.png](http://www.google.com): Copyright Google
 -->
 
+---
+
+# Sample Exercise: Sum of Two Dice
+
+![](res/prob16.png)
+
+<!--
+Image Details:
+* [prob16.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Sample Exercise: Sum of Two Dice
+
+![](res/prob17.png)
+
+<!--
+Image Details:
+* [prob17.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Sample Exercise: Sum of Two Dice
+
+![](res/prob18.png)
+
+<!--
+Image Details:
+* [prob18.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Let's try it in Colab!
+
+[Probability Exercises: Part 1:](https://colab.sandbox.google.com/drive/1X3eLLYVepttuivIoa8WwjtT7ubdnFjsB?usp=sharing)
+
+---
+
+# Random Variables Can Have Relations
+
+![](res/prob19.png)
+
+<!--
+After coming back from doing some of their first exercises, switch to talking about relationships between random variables, bringing in dependence, conditional variables, and Bayes’ Theorem.
+
+Image Details:
+* [prob19.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Sample Exercise: Sum of Two Dice, Part 2
+
+![](res/prob20.png)
+
+<!--
+Image Details:
+* [prob20.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Sample Exercise: Sum of Two Dice, Part 2
+
+![](res/prob21.png)
+
+<!--
+Image Details:
+* [prob21.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Conditional Probability
+
+![](res/prob22.png)
+
+<!--
+We then imagine that teachers might spend some time on the definition of conditional probability, …
+* Joint probability: the probability that both X and Y occur
+* Marginal probability: the probability that X occurs
+
+Image Details:
+* [prob22.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Conditional Probability
+
+![](res/prob23.png)
+
+<!--
+Image Details:
+* [prob23.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Conditional Probabilities Are Not Joint Probabilities
+
+![](res/prob24.png)
+
+<!--
+For the class: a brief exercise for students to highlight the difference between the conditional probability, the joint probability, and the probability of a function of random variables.
+
+<!--
+Image Details:
+* [prob24.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Conditional, joint, & marginal probabilities are related
+
+![](res/prob25.png)
+
+<!--
+Important properties of conditional probabilities, particularly ones that demonstrate the relationship between conditional, joint, and marginal probabilities
+
+We note that 1 tells us that if X and Y are independent, knowing what Y is does change what X can be (we get no new knowledge about X).
+
+Image Details:
+* [prob25.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Conditional, joint, & marginal probabilities are related
+
+![](res/prob26.png)
+
+<!--
+Important properties of conditional probabilities, particularly ones that demonstrate the relationship between conditional, joint, and marginal probabilities
+
+We note that 1 tells us that if X and Y are independent, knowing what Y is does change what X can be (we get no new knowledge about X),
+
+2 tells us that the probability of X is the sum (over all possible outcomes of Y) of the probability of X given Y is a specific outcome, times that probability that Y was that outcome. 
+
+Image Details:
+* [prob26.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Conditional, joint, & marginal probabilities are related
+
+![](res/prob27.png)
+
+<!--
+Important properties of conditional probabilities, particularly ones that demonstrate the relationship between conditional, joint, and marginal probabilities
+
+We note that 1 tells us that if X and Y are independent, knowing what Y is does change what X can be (we get no new knowledge about X),
+
+2 tells us that the probability of X is the sum (over all possible outcomes of Y) of the probability of X given Y is a specific outcome, times that probability that Y was that outcome. 
+
+3 tells us that the probability of X is the sum (over all possible outcomes of Y) of all the probabilities of having the specific outcome of both X and Y.
+
+Image Details:
+* [prob27.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Conditional, joint, & marginal probabilities are related
+
+![](res/prob28.png)
+
+<!--
+Important properties of conditional probabilities, particularly ones that demonstrate the relationship between conditional, joint, and marginal probabilities
+
+We note that 1 tells us that if X and Y are independent, knowing what Y is does change what X can be (we get no new knowledge about X),
+
+2 tells us that the probability of X is the sum (over all possible outcomes of Y) of the probability of X given Y is a specific outcome, times that probability that Y was that outcome. 
+
+3 tells us that the probability of X is the sum (over all possible outcomes of Y) of all the probabilities of having the specific outcome of both X and Y.
+
+Image Details:
+* [prob28.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Sample Exercise: Dicier and Dicier
+
+![](res/prob29.png)
+
+<!--
+Students can construct Python code to test their answer
+Use dice rolling Colab notebook as a building block to start from
+
+We can also see ways in which this problem can get made more challenging simply by working with a larger number of possible values. Because of this, a later individual “advanced version” of the problem in the Colab notebooks could be an opportunity to recall to mind the exercise they worked on in class while doing their notebook exercises, and could show the power of writing code and running experiments to test their hypotheses (since there are many seemingly correct ways to approach this problem, but only correct ways will give you answers close to what running a large number of experiments would!)
+
+Image Details:
+* [prob29.png](http://www.google.com): Copyright Google
+
+---
 
 
 
