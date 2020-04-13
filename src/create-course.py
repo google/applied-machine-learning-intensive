@@ -79,6 +79,7 @@ from tools import drive_integration, format_colab
 # TODO make this work when executed from root directory of repository
 CONTENT = "../v2" 
 
+# Used for md2gslides
 re_slides = re.compile(r"View your presentation at: https://docs\.google\.com/"
                        r"presentation/d/([a-zA-Z0-9-_]+)")
 
@@ -150,6 +151,7 @@ def md_to_slides(file: str, parent, service=None):
             # time.sleep(60) # Wait sixty seconds for API
         else:
             presentation_id = "error"
+            print("\x1b[31mmd2gslides failed to upload\x1b[0m")
             # raise ChildProcessError("md2gslides failed to create presentation")
     return presentation_id
 
@@ -226,25 +228,26 @@ def upload(service, filename: str, loc: str, parent: str, ftype: str = ""):
         The id of the uploaded file
     """
     # Set MIME type for upload
-    if re.search(r".ipynb",filename) or ftype == "colab":
+    if ftype == "colab":
         mimeType = "application/vnd.google.colaboratory"
-    elif re.search(r".md",filename) or ftype == "markdown":
+    elif ftype == "markdown":
         mimeType = "text/markdown"
-    elif re.search(r".pptx",filename) or ftype == "slides":
+    elif ftype == "slides":
         mimeType = "application/vnd.google-apps.presentation"
     else:
         mimeType = "text/plain"
 
+    print(f"\x1b[32m{mimeType=}\x1b[0m")
     file_metadata = {"name": filename,
                      "mimeType": mimeType,
                      "parents": [parent]
                     }
-    print(file_metadata)
-    # media = MediaFileUpload(f"{loc}", mimetype=mimeType, resumable=True)
+    # print(file_metadata)
+    # media = {f"{loc}", 'mimetype': mimeType, resumable=True}
 
-    file = service.files().create(body=file_metadata,
+    file = service.files().create( #uploadType='multipart',
+                                  body=file_metadata,
                                   media_body=f"{loc}",
-                                #   uploadType="resumable",
                                 #   fields="id",
                                   supportsAllDrives=True
                                   ).execute()
@@ -253,41 +256,31 @@ def upload(service, filename: str, loc: str, parent: str, ftype: str = ""):
     return file.get('id')
 
 
-def update_colab_link():
-    f = open("slidesTest.md","r", encoding="latin1")
-    md = f.read()
-    f.close()
-    newLink = "test"
+def update_colab_link(slides, colab_id):
+    with open(slides,"r", encoding="latin1") as f:
+        md = f.read()
+  
     x = re.sub(r"https://colab.research.google.com/drive/[a-zA-Z0-9\-]+", 
-        "https://colab.research.google.com/drive/" + newLink, md) #matches for re- 
+        "https://colab.research.google.com/drive/" + colab_id, md) #matches for re- 
 
     with open("slidesTest.md", "w") as f:    
         f.write(x)
-    os.system("md2gslides slidesNoPics2.md")
 
 
-def scan_metadata():
-    with open("metadata.json", "r+") as f:
-        data = json.load(f)
-        for label in data:
-            if 'slides' in label:
-                update_colab_link()
-            if 'documents' in label: # would they be label documents or materials, handouts etc
-                # do they have convertor for docs similar to mg2sldies
-                print("")
+def create_student_colab(colab):
+    notebook = nbformat.read(colab, nbformat.NO_CONVERT)
 
-def edit_colabmd():
-    notebook = nbformat.read("test.ipynb", nbformat.NO_CONVERT)
     notebookNew = notebook
+    student = colab.replace(".ipynb", "[student].ipynb")
 
     notebookNew.cells = [cell for cell in notebook.cells if not cell.source.startswith('##### Answer Key')]
-    nbformat.write(notebookNew, "testStudent.ipynb", version=nbformat.NO_CONVERT)
+    nbformat.write(notebookNew, student, version=nbformat.NO_CONVERT)
+    
     
 
 
 def main(args):
 
-    edit_colabmd()
     # Get arguments for source and destination folders
     # opts, args = getopt.getopt(sys.argv[1:],"g")
     if len(args) > 1:
@@ -321,19 +314,48 @@ def main(args):
 
             units = get_sub_folders(track)
             for unit in units:
-                if not re.match(r"^res$", unit):
+                if not re.match(r"^res$", unit): # Don't check img folders
+                    # Create empty folder on google drive and get id
                     unit_id = create_file(service, unit, track_id)
                     
                     unit_info = json.load(open(f"{path}/{unit}/metadata.json"))
                     # unit_name = unit_info.get('name')
+
+                    # Upload colabs
+                    colab_id = ""
+                    if (colabs := unit_info.get('colabs')):
+                        print("test")
+                        for colab in colabs:
+                            create_student_colab(f"{path}/{unit}/{colab}")
+                            student_colab = colab.replace(".ipynb", "[student]")
+                            # Upload teacher version
+                            colab_id = upload(service,
+                                   colab,
+                                   f"{path}/{unit}/{colab}",
+                                   unit_id,
+                                   "colab"
+                                  )
+                            # Upload student version
+                            colab_id = upload(service,
+                                   student_colab,
+                                   f"{path}/{unit}/{student_colab}.ipynb",
+                                   unit_id,
+                                   "colab"
+                                  )
+                            # remove the student version after uploading
+                            os.remove(f"{path}/{unit}/{student_colab}.ipynb")
+                            
+                    
+                    # Upload slides
                     if (slides := unit_info.get('slides')):
                         for slide_deck in slides:
-                            
-                            presentation_id = md_to_slides(
-                                                f"{path}/{unit}/{slide_deck}",
-                                                unit_id,
-                                                service
-                                              )
+                            if not re.match(r"https://docs.google.com/presentation/d/[a-zA-Z0-9\-]+", slide_deck):
+                                # update_colab_link(slide_deck, colab_id)
+                                presentation_id = md_to_slides(
+                                                    f"{path}/{unit}/{slide_deck}",
+                                                    unit_id,
+                                                    service
+                                                  )
     print("\x1b[32mDone")
 
 if __name__ == "__main__":

@@ -11,6 +11,6 @@
   "materials": [],
   "learning-objectives": [
     "Introduction to Convolutional Neural Networks",
-    "Using TensorFlow to implement CNN",
-  ],
+    "Using TensorFlow to implement CNN"
+  ]
 }
