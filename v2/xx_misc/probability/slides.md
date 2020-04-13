@@ -15,6 +15,7 @@
 <!--
 Image Details:
 * [prob01.png](http://www.google.com): Copyright Google
+
 ---
 
 # Dice Rolls Are Uniform Probabilities
@@ -98,6 +99,8 @@ Image Details:
 * [prob04.png](http://www.google.com): Copyright Google
 -->
 
+---
+
 # Expected value is linear
 
 ![](res/prob05.png)
@@ -121,6 +124,8 @@ We find that the expected value of a function of a random variable is simple the
 Image Details:
 * [prob06.png](http://www.google.com): Copyright Google
 -->
+
+---
 
 # Sample Exercise: Dicier and Dicier
 
@@ -283,7 +288,7 @@ Image Details:
 
 # Let's try it in Colab!
 
-[Probability Exercises: Part 1:](https://colab.sandbox.google.com/drive/1X3eLLYVepttuivIoa8WwjtT7ubdnFjsB?usp=sharing)
+[Probability Exercises: Part 1](https://colab.sandbox.google.com/drive/1X3eLLYVepttuivIoa8WwjtT7ubdnFjsB?usp=sharing)
 
 ---
 
@@ -447,6 +452,163 @@ Image Details:
 
 ---
 
+# Sample Exercise: Dicier and Dicier
 
+![](res/prob30.png)
 
+<!--
+We can also see ways in which this problem can get made more challenging simply by working with a larger number of possible values. Because of this, a later individual “advanced version” of the problem in the Colab notebooks could be an opportunity to recall to mind the exercise they worked on in class while doing their notebook exercises, and could show the power of writing code and running experiments to test their hypotheses (since there are many seemingly correct ways to approach this problem, but only correct ways will give you answers close to what running a large number of experiments would!)
 
+Image Details:
+* [prob30.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Sample Exercise: Dicier and Dicier
+
+![](res/prob31.png)
+
+<!--
+We can also see ways in which this problem can get made more challenging simply by working with a larger number of possible values. Because of this, a later individual “advanced version” of the problem in the Colab notebooks could be an opportunity to recall to mind the exercise they worked on in class while doing their notebook exercises, and could show the power of writing code and running experiments to test their hypotheses (since there are many seemingly correct ways to approach this problem, but only correct ways will give you answers close to what running a large number of experiments would!)
+
+Image Details:
+* [prob31.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Sample Exercise: Dicier and Dicier
+
+![](res/prob32.png)
+
+<!--
+We can also see ways in which this problem can get made more challenging simply by working with a larger number of possible values. Because of this, a later individual “advanced version” of the problem in the Colab notebooks could be an opportunity to recall to mind the exercise they worked on in class while doing their notebook exercises, and could show the power of writing code and running experiments to test their hypotheses (since there are many seemingly correct ways to approach this problem, but only correct ways will give you answers close to what running a large number of experiments would!)
+
+\frac{0}{6}\cdot1 + \frac{1}{6}\cdot2 + \frac{5}{6}(\frac{2}{6}\cdot3 + \frac{4}{6}(\frac{3}{6}\cdot 4 + \frac{3}{6}(\frac{4}{6}\cdot5 + \frac{2}{6}(\frac{5}{6}\cdot6 + \frac{1}{6}(1\cdot7)))))
+
+Image Details:
+* [prob32.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Sample Exercise: Dicier and Dicier
+
+![](res/prob33.png)
+
+<!--
+We can also see ways in which this problem can get made more challenging simply by working with a larger number of possible values. Because of this, a later individual “advanced version” of the problem in the Colab notebooks could be an opportunity to recall to mind the exercise they worked on in class while doing their notebook exercises, and could show the power of writing code and running experiments to test their hypotheses (since there are many seemingly correct ways to approach this problem, but only correct ways will give you answers close to what running a large number of experiments would!)
+
+\frac{0}{6}\cdot1 + \frac{1}{6}\cdot2 + \frac{5}{6}(\frac{2}{6}\cdot3 + \frac{4}{6}(\frac{3}{6}\cdot 4 + \frac{3}{6}(\frac{4}{6}\cdot5 + \frac{2}{6}(\frac{5}{6}\cdot6 + \frac{1}{6}(1\cdot7)))))
+
+Image Details:
+* [prob33.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Sample Exercise: Dicier and Dicier
+
+![](res/prob34.png)
+
+<!--
+We can also see ways in which this problem can get made more challenging simply by working with a larger number of possible values. Because of this, a later individual “advanced version” of the problem in the Colab notebooks could be an opportunity to recall to mind the exercise they worked on in class while doing their notebook exercises, and could show the power of writing code and running experiments to test their hypotheses (since there are many seemingly correct ways to approach this problem, but only correct ways will give you answers close to what running a large number of experiments would!)
+
+\frac{0}{6}\cdot1 + \frac{1}{6}\cdot2 + \frac{5}{6}(\frac{2}{6}\cdot3 + \frac{4}{6}(\frac{3}{6}\cdot 4 + \frac{3}{6}(\frac{4}{6}\cdot5 + \frac{2}{6}(\frac{5}{6}\cdot6 + \frac{1}{6}(1\cdot7)))))
+
+Image Details:
+* [prob34.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Sample Exercise: Dicier and Dicier
+
+![](res/prob35.png)
+
+We can also see ways in which this problem can get made more challenging simply by working with a larger number of possible values. Because of this, a later individual “advanced version” of the problem in the Colab notebooks could be an opportunity to recall to mind the exercise they worked on in class while doing their notebook exercises, and could show the power of writing code and running experiments to test their hypotheses (since there are many seemingly correct ways to approach this problem, but only correct ways will give you answers close to what running a large number of experiments would!)
+
+\frac{0}{6}\cdot1 + \frac{1}{6}\cdot2 + \frac{5}{6}(\frac{2}{6}\cdot3 + \frac{4}{6}(\frac{3}{6}\cdot 4 + \frac{3}{6}(\frac{4}{6}\cdot5 + \frac{2}{6}(\frac{5}{6}\cdot6 + \frac{1}{6}(1\cdot7)))))
+
+Image Details:
+* [prob35.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Conditional probabilities are related to each other
+
+![](res/prob36.png)
+
+<!--
+Image Details:
+* [prob36.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Bayes’ Theorem
+
+![](res/prob37.png)
+
+<!--
+Image Details:
+* [prob37.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Sample Exercise: Peanut Chocolate Detector
+
+![](res/prob38.png)
+
+<!--
+Bayes’ Theorems might seem unnecessarily complicated for solving dice problems, but it can be very useful in Machine Learning contexts.
+
+Image Details:
+* [prob38.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Sample Exercise: Peanut Chocolate Detector
+
+![](res/prob39.png)
+
+<!--
+Ask students to discuss the implications of P(p|d) being very low even when P(d|p) and P(not d|not p) are high.
+
+Image Details:
+* [prob39.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Let's try it in Colab
+
+[Probability Exercises: Part 2](https://colab.sandbox.google.com/drive/16CjBhL0FEK7VSM5BnSMbh342sWLHOnEK?usp=sharing)
+
+---
+
+# Brainstorming Exercise
+
+![](res/prob40.png)
+
+<!--
+Image Details:
+* [prob40.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Brainstorming Exercise
+
+![](res/prob41.png)
+
+<!--
+Image Details:
+* [prob41.png](http://www.google.com): Copyright Google
+-->
+
+---
