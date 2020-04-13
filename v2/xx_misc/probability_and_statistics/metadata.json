@@ -1,10 +1,13 @@
 {
-  "name": "Statistical Analysis of Data",
+  "name": "Probability and Statistics",
   "materials": [],
   "resources": [],
   "handouts": [],
   "colabs": [
     "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md",
   ],
   "learning-objectives": [
     "Understand basic statistical sampling, and generate a representative sample from a dataset",
