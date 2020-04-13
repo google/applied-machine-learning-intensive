@@ -105,35 +105,23 @@ Image Details:
 ![](res/SAOD7.png)
 
 <!--
-# Measuring Central Tendency: Mean, Median & Mode
-
-![](res/SAOD7.png)
-
-<!--
-Image Details:
-* [SAOD7.png](http://www.google.com): Copyright Google
--->
 Image Details:
 * [SAOD7.png](http://www.google.com): Copyright Google
 -->
 
 ---
-# Measuring Central Tendency: Mean, Median & Mode
-
-![](res/SAOD7.png)
-
-<!--
-Image Details:
-* [SAOD7.png](http://www.google.com): Copyright Google
--->
 
 # Measuring Central Tendency: Mean, Median & Mode
 
-![](res/.png)
+![](res/SAOD8.png)
+
 <!--
 Image Details:
-* [SAOD7.png](http://www.google.com): Copyright Google
+* [SAOD8.png](http://www.google.com): Copyright Google
 -->
+
+---
+
 # Variance Measures How Spread Out Data Is
 
 ![](res/SAOD9.png)
@@ -145,7 +133,8 @@ Image Details:
 
 ---
 
-# Measuring Variance:  Population vs Sample
+# Measuring Variance: Population vs Sample
 
-
+Population Variance:
+Standard Error:
 
