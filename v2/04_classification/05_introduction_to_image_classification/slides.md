@@ -184,5 +184,5 @@ Image Details:
 ## Your Turn!
 
 <!--
-Now it is time for you to get some hands-on experience with image classification.
+Now it's time for you to get some hands-on experience with image classification.
 -->
