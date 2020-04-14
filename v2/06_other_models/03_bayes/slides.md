@@ -5,8 +5,7 @@ marp: true
 # Naive Bayes
 
 <!--
-This unit is about an algorithm called "Naive Bayes". It is one of the most popular classifier algorithms, especially for spam
-detection and filtering.
+This unit is about an algorithm called "Naive Bayes." It is one of the most popular classifier algorithms, especially for spam detection and filtering.
 
 -->
 
@@ -17,8 +16,7 @@ detection and filtering.
 ![](res/no_spam.png)
 
 <!--
-One of the most common uses of Naive Bayes is in spam detection. It is one of the simplest algorithms to use for detecting
-"spammy" language in a block of text. This is particularly useful in email, for example. 
+One of the most common uses of Naive Bayes is in spam detection. It is one of the simplest algorithms to use for detecting "spammy" language in a block of text. This is particularly useful in email, for example.
 
 Image Details:
 * [no_spam.png](https://pixabay.com/vectors/email-mail-spam-message-e-mail-29853/): Pixabay License
@@ -69,8 +67,7 @@ Naive Bayes does not perform well for more complex tasks; natural language proce
 <!--
 The Naive Bayes classifier is one of the simplest but most effective classifiers.
 
-The classifier calculates the conditional probability of seeing all of the options, given the data, and just chooses the option
-with the highest/maximum probability.
+The classifier calculates the conditional probability of seeing each of the possible options, given the data, and just chooses the option with the highest/maximum probability.
 
 Image Details:
 [sorting_eggs.jpeg](https://unsplash.com/photos/BiZ-_6kNjbI): Unsplash License
@@ -119,7 +116,7 @@ We want the "spam" value (predicted class: 1 = spam, 0 = ham) that maximizes the
 
 <!--
 
-Note that argmax or "arguments of the maxima" are the points in the domain that maximize a given function. So what we're looking for is the "spam" value that mazimizes the probability that an email is spam given whether or not particular words are present. 
+Note that argmax or "arguments of the maxima" are the points in the domain that maximize a given function. So what we're looking for is the "spam" value that maximizes the probability that an email is spam given whether or not particular words are present. 
 
 -->
 
@@ -129,6 +126,6 @@ Note that argmax or "arguments of the maxima" are the points in the domain that 
 # Your Turn!
 
 <!--
-In this lab we will implement a Bayesian Model using a Naive Bayes Classifier from sci-kit learn. Your goal is to predict the likelihood of spam in a sample of text data.
+In this lab, we will implement a Bayesian Model using a Naive Bayes Classifier from scikit-learn. Your goal is to predict the likelihood of spam in a sample of text data.
 
 -->
