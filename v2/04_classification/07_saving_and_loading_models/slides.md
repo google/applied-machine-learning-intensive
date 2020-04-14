@@ -7,9 +7,7 @@ marp: true
 # Saving and Loading Models
 
 <!--
-So far we have built models and used them immediately. In practice you'll find
-that you need to save your models and load them for use later. You'll also find
-models published online that you can load and start using immediately or use as
+So far in this course, we have built models and used them immediately. In practice, you'll find that you need to save your models and load them for use later. You'll also find models published online that you can load and start using immediately or use as
 a warm start for training your own model.
 -->
 
@@ -51,7 +49,7 @@ tf.keras.models.save_model(
 
 ```python
 loaded_model = tf.keras.models.load_model(
-    'linnermy_model.tfud'
+    'my_model.tf'
 )
 ```
 
