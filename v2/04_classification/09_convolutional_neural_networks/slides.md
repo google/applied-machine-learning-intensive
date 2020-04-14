@@ -209,7 +209,7 @@ Image Details:
 <!--
 Here are two very common kernels that can be used to detect lines in an image. 
 
-Overall the goal is to detect sharp changes in intensity. 
+Overall the goal is to detect sharp changes in intensity. Let's see how this works by doing an example with G_{x}.
 
 Image Details:
 * [conNN23.png](http://www.google.com): Copyright Google
@@ -220,9 +220,9 @@ Image Details:
 ![](res/conNN24.png)
 
 <!--
-Here are two very common kernels that can be used to detect lines in an image. 
+On the left we have an image that is similar to the previous example. There is a line down the center, where the shading changes color. Let's see if the kernel G_{x} can detect this line. 
 
-Overall the goal is to detect sharp changes in intensity. 
+Calculate the pixel on the right. 
 
 Image Details:
 * [conNN24.png](http://www.google.com): Copyright Google
@@ -234,7 +234,7 @@ Image Details:
 
 <!--
 
-***
+We get 0. There are no changes in intensity in the 3x3 block that is highlighted in the original image. 
 
 Image Details:
 * [conNN25.png](http://www.google.com): Copyright Google
@@ -246,7 +246,7 @@ Image Details:
 
 <!--
 
-***
+Now, let's move one pixel to the right. 
 
 Image Details:
 * [conNN26.png](http://www.google.com): Copyright Google
@@ -258,7 +258,7 @@ Image Details:
 
 <!--
 
-***
+We get 200/9. 
 
 Image Details:
 * [conNN27.png](http://www.google.com): Copyright Google
@@ -270,7 +270,7 @@ Image Details:
 
 <!--
 
-***
+Again move one pixel to the right. 
 
 Image Details:
 * [conNN28.png](http://www.google.com): Copyright Google
@@ -282,7 +282,7 @@ Image Details:
 
 <!--
 
-***
+We get 300/9.
 
 Image Details:
 * [conNN29.png](http://www.google.com): Copyright Google
@@ -294,7 +294,7 @@ Image Details:
 
 <!--
 
-***
+Finally, let's move one more pixel to the right. 
 
 Image Details:
 * [conNN30.png](http://www.google.com): Copyright Google
@@ -304,9 +304,12 @@ Image Details:
 
 ![](res/conNN31.png)
 
+
 <!--
 
-***
+And again we get 0. 
+
+Thus, we see that a vertical line was detected, when the intensity chenged in the original image. 
 
 Image Details:
 * [conNN31.png](http://www.google.com): Copyright Google
@@ -314,90 +317,62 @@ Image Details:
 
 ---
 
-![](res/conNN31.png)
+![](res/conNN14.png)
 
 <!--
-
-***
+this type of convolution happens in the convolutional layers of a neural network. The values in the kernels are parameters that will be learned during training. Thus, the specific features in the images that the kernels are testing for is something that the model "learns." In other words, you don't say "hey model, test or vertical lines." Instead, the model identifies the features that are important to test for. 
 
 Image Details:
-* [conNN31.png](http://www.google.com): Copyright Google
+* [conNN14.png](??): Unlicensed 
 -->
 
 ---
 
+# Pooling 
 
-# LeNet-5
+1. Pick a window size (usually 2x2 or 3x3)
 
-![](res/conNN07.png)
+
+1. Pick a stride (usually 2)
+
+
+1. Move your window across each of the filtered images
+
+
+1. Take maximum value in each window
 
 <!--
-LeNet
+Pooling is a type of downsampling that often occurs after convolution. The goal is to reduce the size of the training data before it goes into the fully connected network, without losing much information. s
 
-Image Details:
-* [conNN07.png](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf): Unlicensed
 -->
 
 ---
 
-![](res/conNN08.png)
+# Hyperparameters
 
-<!--
-Convolutional Layers
+Convolution 
+* Number of features
+* Size of features 
 
-Image Details:
-* [conNN08.png](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf): Unlicensed
--->
-
----
-
-![](res/conNN09.png)
-
-<!--
-Image Details:
-* [conNN09.png](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf): Unlicensed
--->
----
-
-![](res/conNN10.png)
-
-<!--
-Feature Maps
-
-Image Details:
-* [conNN10.png](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf): Unlicensed
--->
-
----
-
-![](res/conNN11.png)
-
-<!--
 Pooling
+* Window size
+* Stride
 
-Image Details:
-* [conNN11.png](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf): Unlicensed
--->
+Fully Connected Layers
+* Number of nodes
 
----
-
-# GoogLe-Net
-
-![](res/conNN12.png)
+AND How many of each layer and in what order.
 
 <!--
-GoogLe-Net
-http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf
+While a convolutional neural network learns MANY parameters, there are also several hyperparameters that are chosen by the user. Here are the main ones. But as with our previous neural networks, the user can also choose the optimizer, activation function, etc. 
 
-Image Details:
-* [conNN12.png](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf): Unlicensed
 -->
 
----
+--- 
 
-# Why?
+# Your Turn
 
 <!--
-Too many connections on large images
-Recognize shapes anywhere in an image
+Now it's your turn to build a CNN in the lab. 
+
 -->
