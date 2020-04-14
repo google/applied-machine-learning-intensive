@@ -2,6 +2,13 @@
 marp: true
 ---
 
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Naive Bayes
 
 <!--
@@ -13,7 +20,7 @@ This unit is about an algorithm called "Naive Bayes." It is one of the most popu
 
 # Spam Detection
 
-![](res/no_spam.png)
+![center](res/no_spam.png)
 
 <!--
 One of the most common uses of Naive Bayes is in spam detection. It is one of the simplest algorithms to use for detecting "spammy" language in a block of text. This is particularly useful in email, for example.
@@ -62,7 +69,7 @@ Naive Bayes does not perform well for more complex tasks; natural language proce
 
 # The Naive Bayes Classifier
 
-![](res/sorting_eggs.jpeg)
+![center](res/sorting_eggs.jpeg)
 
 <!--
 The Naive Bayes classifier is one of the simplest but most effective classifiers.
