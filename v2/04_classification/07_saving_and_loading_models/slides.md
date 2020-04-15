@@ -7,8 +7,7 @@ marp: true
 # Saving and Loading Models
 
 <!--
-So far in this course, we have built models and used them immediately. In practice, you'll find that you need to save your models and load them for use later. You'll also find models published online that you can load and start using immediately or use as
-a warm start for training your own model.
+So far in this course, we have built models and used them immediately. In practice, you'll find that you need to save your models and load them for use later. You'll also find models published online that you can load and start using immediately or use as a warm start for training your own model.
 -->
 
 ---
@@ -52,7 +51,7 @@ loaded_model = tf.keras.models.load_model(
     'my_model.tf'
 )
 ```
-
+ 
 <!--
 Keras-based models can be saved and loaded using the `save_model` and `load_model` functions. By default the models are in a TensorFlow-specific format. However, the models can be saved as H5, which is another popular file format for storing models.
 -->
@@ -72,7 +71,7 @@ with tf.io.gfile.GFile(frozen_graph, "rb") as f:
 ```
 
 <!--
-There is also the concept of freezing graphs. Some models, such as the one that we are going to use in this lab and in our next project, are distributed in this manner.
+There is also the concept of freezing graphs. Some models, such as the one we're going to use in this lab and in our next project, are distributed in this manner.
 
 In order to "unfreeze" a graph, you must first load the graph into a `GraphDef` object. Notice that this is a TensorFlow version 1 compatibility layer object. This process is useful for loading models built in TensorFlow version 1.
 -->
@@ -118,5 +117,5 @@ And now we can use the model as a function. We pass it in tensor objects and get
 # Your Turn
 
 <!--
-Now it is your turn to practice saving and loading models.
+Now it's your turn to practice saving and loading models.
 -->
