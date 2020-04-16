@@ -5,11 +5,15 @@
   ],
   "colabs": [
     "colab.ipynb"
-    ],
+  ],
   "materials": [],
   "handouts": [],
   "resources": [
     "https://regexone.com/",
     "https://regexone.com/references/python"
-    ]
+  ],
+  "learning-objectives": [
+    "Understand regular expressions",
+    "Using regular expressions with Python",
+  ]
 }
