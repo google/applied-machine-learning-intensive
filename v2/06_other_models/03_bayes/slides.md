@@ -39,13 +39,13 @@ Given two events $A$ and $B$:
 > $$ P(A|B) = \frac{P(B|A) P(A)}{P(B)} $$
 
 <!--
-Recall Bayes' Theorem. It allows us to calculate the probability of one event (A) given another event (B), if we know the probability of the reverse conditionality, B given A.
+Recall Bayes' Theorem. It allows us to calculate the probability of one event (A) given another event (B), if we know the probability of the reverse conditionality -- B given A.
 
-In other words, how often A happens given that B happens (P(A|B)) can be computed if we know how often B happens given that A happens (P(B|A)), the probability that A happens on its own (P(A)), and the probability that B happens on its own (P(B)).
+In other words, how often A happens given that B happens (P(A|B)) can be computed if we know the following: how often B happens given that A happens (P(B|A)), the probability that A happens on its own (P(A)), and the probability that B happens on its own (P(B)).
 
-Some Notation: P(A|B) is often referred to as the posterior probability, and P(A) is often referred to as the prior probability. This language is used in many references for Naive Bayes so it's helpful to know it at the beginning. 
+Some Notation: P(A|B) is often referred to as the posterior probability, and P(A) is often referred to as the prior probability. This language is used in many references for Naive Bayes, so it's helpful to know it upfront. 
 
-Bayes' Theorem is the basis of the Naive Bayes algorithm, as well as the entire field of Bayesian Statistics!
+Bayes' Theorem is the basis of the Naive Bayes algorithm, as well as the entire field of Bayesian statistics!
 
 -->
 
@@ -59,7 +59,7 @@ Bayes' Theorem is the basis of the Naive Bayes algorithm, as well as the entire 
 <!--
 The "naive" assumption can actually be extended from independence to low multicollinearity, or "almost" independence. 
 
-Independence is rarely actually true, and can be cause for error. So we need to be careful when applying this algorithm. 
+Independence is rarely actually true, and it can be cause for error. So we need to be careful when applying this algorithm. 
 
 Naive Bayes does not perform well for more complex tasks; natural language processing (NLP) is usually a better choice. But for spam detection, Naive Bayes works well.
 
@@ -106,9 +106,9 @@ Image Details:
 
 <!--
 
-If we have multiple "spammy" words like GIVEAWAY, Viagra, etc. then Bayes' Theorem still applies and we multiply the probabilities. 
+If we have multiple "spammy" words like GIVEAWAY, Viagra, etc., then Bayes' Theorem still applies, and we multiply the probabilities. 
 
-Note that the denominator is a constant for all datapoints in your dataset. Thus we have that P(spam|word_{1}, word_{2}, ..., word_{n}) is proportional to the numerator. 
+Note that the denominator is a constant for all data points in your dataset. Thus we have that P(spam|word_{1}, word_{2}, ..., word_{n}) is proportional to the numerator. 
 
 We want the "spam" value (predicted class: 1 = spam, 0 = ham) that maximizes the probability on the left hand side. 
 
@@ -133,6 +133,6 @@ Note that argmax or "arguments of the maxima" are the points in the domain that 
 # Your Turn!
 
 <!--
-In this lab, we will implement a Bayesian Model using a Naive Bayes Classifier from scikit-learn. Your goal is to predict the likelihood of spam in a sample of text data.
+In this lab we will implement a Bayesian model using a Naive Bayes classifier from scikit-learn. Your goal is to predict the likelihood of spam in a sample of text data.
 
 -->
