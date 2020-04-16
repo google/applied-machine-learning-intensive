@@ -93,7 +93,7 @@ def md_to_slides(file: str, parent, service=None):
     marp = False
     if re.search(r"marp:\strue",head):
         marp = True
-    
+    presentation_id = "error"
     if marp:
         print(file)
         gslides = subprocess.run(
@@ -114,45 +114,45 @@ def md_to_slides(file: str, parent, service=None):
                                  "slides", 
                                  newFile, 
                                  parent, 
-                                 "slides"
+                                 "pptx"
                                 )
         os.remove(newFile)
-    else:
-        gslides = subprocess.run(
-            [
-                "md2gslides",
-                "-n",
-                "--use-fileio",
-                "-t slides",
-                file
-            ],
-            capture_output=True,
-            text=True,
-            timeout=120 # Time out if process takes > 2 min
-        ) 
-        # print(f"\x1b[31m{gslides.stdout=}\x1b[0m\n")
-        match = re.search(re_slides,gslides.stdout)
+    # else:
+    #     gslides = subprocess.run(
+    #         [
+    #             "md2gslides",
+    #             "-n",
+    #             "--use-fileio",
+    #             "-t slides",
+    #             file
+    #         ],
+    #         capture_output=True,
+    #         text=True,
+    #         timeout=120 # Time out if process takes > 2 min
+    #     ) 
+    #     # print(f"\x1b[31m{gslides.stdout=}\x1b[0m\n")
+    #     match = re.search(re_slides,gslides.stdout)
 
-        if match:
-            presentation_id = match.group(1)
-            # print(f"{presentation_id=}\n")
-            # Retrieve the existing parents to remove
-            file = service.files().get(fileId=presentation_id, # pylint: disable=no-member
-                                        fields='parents',
-                                        supportsAllDrives=True).execute()
-            previous_parents = ",".join(file.get('parents'))
-            # Move the file to the new folder
-            file = service.files().update(fileId=presentation_id, # pylint: disable=no-member
-                                            addParents=parent,
-                                            removeParents=previous_parents,
-                                            fields='id, parents',
-                                            supportsAllDrives=True).execute()
-            # print("Waiting for API rate limit...\n\n")
-            # time.sleep(60) # Wait sixty seconds for API
-        else:
-            presentation_id = "error"
-            print("\x1b[31mmd2gslides failed to upload\x1b[0m")
-            # raise ChildProcessError("md2gslides failed to create presentation")
+    #     if match:
+    #         presentation_id = match.group(1)
+    #         # print(f"{presentation_id=}\n")
+    #         # Retrieve the existing parents to remove
+    #         file = service.files().get(fileId=presentation_id, # pylint: disable=no-member
+    #                                     fields='parents',
+    #                                     supportsAllDrives=True).execute()
+    #         previous_parents = ",".join(file.get('parents'))
+    #         # Move the file to the new folder
+    #         file = service.files().update(fileId=presentation_id, # pylint: disable=no-member
+    #                                         addParents=parent,
+    #                                         removeParents=previous_parents,
+    #                                         fields='id, parents',
+    #                                         supportsAllDrives=True).execute()
+    #         # print("Waiting for API rate limit...\n\n")
+    #         # time.sleep(60) # Wait sixty seconds for API
+    #     else:
+    #         presentation_id = "error"
+    #         print("\x1b[31mmd2gslides failed to upload\x1b[0m")
+    #         # raise ChildProcessError("md2gslides failed to create presentation")
     return presentation_id
 
 
@@ -232,6 +232,8 @@ def upload(service, filename: str, loc: str, parent: str, ftype: str = ""):
         mimeType = "application/vnd.google.colaboratory"
     elif ftype == "markdown":
         mimeType = "text/markdown"
+    elif ftype == "pptx":
+        mimeType = "application/vnd.openxmlformats-officedocument.presentationml.presentation"
     elif ftype == "slides":
         mimeType = "application/vnd.google-apps.presentation"
     else:
@@ -244,11 +246,13 @@ def upload(service, filename: str, loc: str, parent: str, ftype: str = ""):
                     }
     # print(file_metadata)
     # media = {f"{loc}", 'mimetype': mimeType, resumable=True}
+    media = MediaFileUpload(loc, mimetype=mimeType)
+
 
     file = service.files().create( #uploadType='multipart',
                                   body=file_metadata,
-                                  media_body=f"{loc}",
-                                #   fields="id",
+                                  media_body=media,
+                                  fields="id",
                                   supportsAllDrives=True
                                   ).execute()
   
@@ -281,8 +285,7 @@ def create_student_colab(colab):
 
 def main(args):
 
-    # Get arguments for source and destination folders
-    # opts, args = getopt.getopt(sys.argv[1:],"g")
+    # Get argument for destination folder
     if len(args) > 1:
         folder_id = get_id_from_link(args[1])
         print(folder_id)
@@ -290,7 +293,7 @@ def main(args):
         raise SystemExit("\x1b[31m" # Set text color to red
                          "Error: No source or destination given.\n"
                          "\x1b[32m" # Set text color to green
-                         "Usage: create-course.py [-g | <repo folder>] "
+                         "Usage: create-course.py "
                          "<Google-Drive folder shareable link>"
                          "\x1b[0m" # Reset text color
                         )
