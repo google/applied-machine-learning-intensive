@@ -1,11 +1,5 @@
 # Big-O
 
-<!--
-Exercises handout (gdoc): https://docs.google.com/document/d/1s5XGYWdHlRRM0mi5ZEb80FsncQW6sjlu-yJGoEqa-ps/edit
-Exercises handout (pdf): https://drive.google.com/file/d/10hiIWcdrwy3Nk7rLnrSfvi3-xZgk2L6R/view
-Solutions: https://colab.research.google.com/drive/1r2xOKjinPi31A7iAjZVtLLKymKLopOOO
--->
-
 ---
 
 # List Operations
@@ -19,18 +13,21 @@ How many steps does it take to insert the integer 100 in the 9th position?
 How many steps does it take to check if 63 is in the list?
 
 <!--
-Clarify that this is a list with 12 unknown items. (not empty! We just don’t know what’s in each position)
+Clarify that this is a list with 12 unknown items. (Not empty! We just don’t know what’s in each position)
 
 1.
-Lst[8] = 100   → 1 step
+Lst[8] = 100
+
+1 step
 If we had a larger list, would the number of steps change?
 No, so we call that constant time.
 
 2.
-for item in lst:	       → worst case: item not found. Takes 12 steps, where 12 is the size of the list
+for item in lst:
 	if item == 63:
 		print(“Found!”)
 
+Worst case: item not found. Takes 12 steps, where 12 is the size of the list
 If we had a larger list, would the number of steps change?
 Yes! The bigger the list, the more steps. We call it linear.
 
@@ -66,10 +63,12 @@ Infinite loop. It’ll never stop executing…
 
 Sometimes when we’re training a model we seriously start wondering if that’s the case…
 How do we know whether it is?
-Print statements / debugging messages help us track what’s going on and if any progress is being made, and whether it’s fallen in an infinite loop.
-That also allows us to estimate how much time there’s left… (give example)
+Print statements / debugging messages help us track what’s going on and if any progress is being made, and whether it’s fallen
+in an infinite loop.
+That also allows us to estimate how much time there’s left. (Give an example.)
 
-This process of estimating how much time it’ll take for a piece of code to execute in the worst case is the basis of the concept of Big-O.
+This process of estimating how much time it’ll take for a piece of code to execute in the worst case is the basis of the
+concept of Big-O.
 
 Image Details:
 * [bigO02.png](http://www.google.com): Copyright Google
@@ -88,8 +87,13 @@ What happens when you ask your computer to try out every possible combination of
 That’s something we’ll come across a lot when working with big data.
 Give examples from class (eg, using apply vs nested for loop with iloc for example)
 
-When we write code, we need to be able to tell how much time that code is likely to take to execute based on the size of the input. Similarly, we need to know whether we have enough space in memory. Otherwise, how would you be able to tell whether you can run a given dataset through a model on a given computer? Just trying it out and risking running out of memory is not a good idea! And imagine if you leave your laptop running all day and then you need to close it to go home… will you just lose all of your progress?
-In industry, you will work with problems like this at a much bigger scale. So it’s important to have the language and conceptual understanding of these limitations to be able to work efficiently.
+When we write code, we need to be able to tell how much time that code is likely to take to execute based on the size of the
+input. Similarly, we need to know whether we have enough space in memory. Otherwise, how would you be able to tell whether you
+can run a given dataset through a model on a given computer? Just trying it out and risking running out of memory is not a
+good idea! And imagine if you leave your laptop running all day and then you need to close it to go home… will you just lose
+all of your progress?
+In industry, you will work with problems like this at a much bigger scale. So it’s important to have the language and
+conceptual understanding of these limitations to be able to work efficiently.
 
 Image Details:
 * [bigO03.jpg](https://unsplash.com/photos/rEgveRa_5ds)
@@ -140,11 +144,11 @@ time complexity vs space complexity
 
 Alternatives: https://repl.it/repls/SmartSelfreliantMysql
 # Option 1: Linear search O(n)
-def get_phone(name, address_book):
- for person in address_book:
-   if person.name == name:
-     return person.number
- return "Not found"
+# def get_phone(name, address_book):
+#   for person in address_book:
+#     if person.name == name:
+#       return person.number
+# return "Not found"
 
 # Option 2: Sort and binary search O(n log n)
 # def get_phone(name, address_book):
@@ -173,7 +177,6 @@ def get_phone(name, address_book):
 # Tests
 print(get_phone('Jordan Allen', my_address_book))
 print(get_phone('Ju de Heer', my_address_book))
-
 
 # Test code
 class Person:
@@ -227,18 +230,19 @@ def quadratic(lst):
  for i in range(n):
    for j in range(n):
      for k in range(10):
-       print("whassup")
+       print("hello")
 
 def constant(lst):
  n = len(lst)
  for i in range(1000000):
-   print("whassup")
+   print("hello")
 
 Which is faster?
 
 Explain Omega (lower bound) and Theta (tight bound)
 In both of these cases, the worst and best case are the same. They are an example of Theta.
-In our earlier search example with had a return statement in the for loop. What happens in the best case? What about the worst?
+In our earlier search example with had a return statement in the for loop. What happens in the best case? What about the
+worst?
 The best and worst case are not the same, so we use Omega and Big-O.
 
 Example: for loops without break statements vs while loop
@@ -251,11 +255,11 @@ def quadratic(lst):
    for j in range(n):
      if n > 10:
        for k in range(10):
-         print("whassup")
+         print("hello")
 
 This is still Big Theta, because n^2 <= n^2 <= 10 * n^2
 
-but in industry you really only need to know Big O
+But in industry you really only need to know Big O
 
 Image Details:
 * [bigO07.png](http://www.cs.utsa.edu/~bylander/cs3343/notes/asymptotic.pdf): Unlicensed
@@ -298,22 +302,3 @@ Hand out exercise sheet and give 15 min for students to complete
 Image Details:
 * [bigO09.png](http://www.google.com): Copyright Google
 -->
-
----
-
-# Review Solutions
-
-[Big-O Solutions](https://colab.sandbox.google.com/drive/1vlJeQBNnf-BSoF4K31TQsB6Oc4XcZq-f)
-
-<!--
-Go over solutions: https://colab.research.google.com/drive/1r2xOKjinPi31A7iAjZVtLLKymKLopOOO
-
-Explain the use of “for loop prints” to count the number of times a given line executes
--->
-
-
-
-
-
-
-
