@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # K Nearest Neighbors
 
 <!--

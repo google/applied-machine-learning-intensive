@@ -1,12 +1,15 @@
 {
   "name": "Image Classification Project",
-  "bug": "b/131174566",
   "colabs": [
     "colab.ipynb"
-    ],
+  ],
   "handouts": [],
-  "materials": [
-    "https://www.youtube.com/watch?v=ACmydtFDTGs"
+  "slides": [
+    "slides.md"
+  ],
+  "learning-objectives": [
+    "Discuss ethical implications of a model that involves medical decisions",
+    "Create a classification model end-to-end including parameter tuning and final validation"
   ],
   "resources": []
 }

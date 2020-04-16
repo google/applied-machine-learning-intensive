@@ -1,10 +1,19 @@
 {
   "name": "Dimensionality Reduction",
-  "bug": "b/132255494",
   "colabs": [
     "colab.ipynb"
-    ],
+  ],
+  "slides": [
+    "slides.md"
+  ],
   "materials": [],
   "resources": [],
-  "handouts": []
+  "handouts": [],
+  "learning-objectives": [
+    "Why we use PCA",
+    "How to prepare Data for PCA",
+    "When not to use PCA",
+    "Selecting an Optimal number of components",
+    "Calculate Percent Variance Explained",
+  ],
 }

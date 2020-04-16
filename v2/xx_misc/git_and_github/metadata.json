@@ -1,4 +1,6 @@
 {
   "name": "Git",
-  "bug": "b/132267042"
+  "slides": [
+    "slides.md"
+  ]
 }

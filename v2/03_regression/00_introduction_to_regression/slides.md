@@ -253,7 +253,7 @@ Image Details:
 
 # Housing Example
 
-![center](res/regression22.png)
+![center](res/housingexample2.png)
 
 <!--
 *Invite answer from students for L1*
@@ -266,7 +266,7 @@ Image Details:
 
 # Housing Example
 
-![](res/regression23.png)
+![](res/housingexample3.png)
 
 <!--
 *Invite answer from students for L2*
@@ -279,7 +279,7 @@ Image Details:
 
 # Housing Example
 
-![](res/regression24.png)
+![](res/housingexample4.png)
 
 <!--
 *Invite answer from students for MSE* 

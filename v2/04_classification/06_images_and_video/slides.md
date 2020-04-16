@@ -1,5 +1,5 @@
 ---
-false
+
 marp: true
 
 ---
@@ -15,14 +15,14 @@ img[alt~="center"] {
 
 ---
 
-# Resizing an image
+# Resizing an Image
 
 ![center](res/imagemaninpy1.png)
 
 <!--
 It is common to have input data that consists of images. Just like with tabular data, we still need to perform data cleaning and exploration, and this often involves manipulating the images to ensure they are in a good form for your ML model. For example, we may want to resize the images to a uniform dimension or colorspace.
 
-Our goal in this lecture, is to discuss how to take a rectangular image that is 960 by 640 pixels and produce a thumbnail that is 200 by 200 pixels. 
+Our goal in this lecture is to learn how to take a rectangular image that is 960 by 640 pixels and produce a thumbnail that is 200 by 200 pixels. 
 
 Image Details:
 * [imagemaninpy1.png](http://www.google.com): Copyright Google  
@@ -30,17 +30,15 @@ Image Details:
 
 ---
 
-# Python modules
+# Python Modules
 
 ![center](res/imagemaninpy2.png)
 
 <!--
-Matplotlib
-* We’ll use the matplotlib Python library that you have already used for creating charts. But in this exercise, we’ll use it to plot an image, instead of chart.
 
-PIL (Python Imaging Library)
-* Free library for the Python programming language that adds support for opening, manipulating, and saving many different image file formats
-* A newer fork of PIL is called Pillow
+We’ll use the matplotlib Python library you have already used for creating charts. But in this exercise, we’ll use it to plot an image instead of a chart.
+
+PIL (Python Imaging Library) is a free library for the Python programming language. It adds support for opening, manipulating, and saving many different image file formats. A newer fork of PIL is called Pillow, so don't be confused if you see it called either name.
 
 Image Details:
 * [imagemaninpy2.png](http://www.google.com): Copyright Google  
@@ -48,12 +46,12 @@ Image Details:
 
 ---
 
-# Open and plot an image and its dimension
+# Open and Plot an Image and Its Dimensions
 
 ![center](res/imagemaninpy3.png)
 <!--
 
-In the first block of code, we open the image using PIL. In this case, the image is in the same directory as our Python project and the name is running-shoe-371624_960_720.jpg. We then plot the image using Matplotlib. 
+In the first block of code, we open the image using PIL. In this case the image is in the same directory as our Python project, and the name is running-shoe-371624_960_720.jpg. We then plot the image using Matplotlib. 
 
 In the second block of code, we inspect the dimensions of the image. 
 
@@ -66,7 +64,7 @@ Image Details:
 ![center](res/imagemaninpy4.png)
 
 <!--
-Remember the goal is to end up with a thumbnail image which is square and with 200 by 200 pixels dimension.
+Remember the goal is to end up with a thumbnail image that is square and with dimensions of 200 by 200 pixels.
 
 Questions for students:
 * How do we get there?
@@ -82,15 +80,15 @@ Image Details:
 
 ---
 
-# Compute delta width and height
+# Compute Delta Width and Height
 ![center](res/imagemaninpy5.png)
 
 <!--
-How do we figure how much to pad the image to make it a square?
+How do we figure out how much to pad the image to make it a square?
 
-First, determine the longest dimension between the width and height of the original image.
+First, determine the largest dimension (width or height) of the original image.
 
-Figure out how much padding is needed in the height and width of the image.  In this case, we need to pad the image’s height to match the image’s width, since the width is larger than the height.
+Then figure out how much padding is needed in the height and width of the image. In this case we need to pad the image’s height to match the image’s width, since the width is larger than the height.
 
 Image Details:
 * [imagemaninpy5.png](http://www.google.com): Copyright Google  
@@ -98,12 +96,12 @@ Image Details:
 
 ---
 
-# Compute the amount of paddings
+# Compute Amount of Paddings
 
 ![center](res/imagemaninpy6.png)
 
 <!--
-But wait!  In order to keep the shoes centered on the image, we need to pad the height both at the top as well as at the bottom, thus HALF the required padding will be added to the bottom and the other half to the top of the image.
+But wait! In order to keep the shoes centered on the image, we need to pad the height both at the top as well as at the bottom, thus HALF the required padding will be added to the bottom and the other half to the top of the image.
 
 Image Details:
 * [imagemaninpy6.png](http://www.google.com): Copyright Google  
@@ -111,12 +109,12 @@ Image Details:
 
 ---
 
-# Pad the image
+# Pad the Image
 
 ![center](res/imagemaninpy7.png)
 
 <!--
-Alright, we are ready to do the padding. We use the PIL module again to do the padding by passing in the original image, padding figures in pixels (left, top, right, bottom), and the background color of the padding pixels.
+Now we are ready to do the padding. We use the PIL module again to do the padding by passing in the original image, padding figures in pixels (left, top, right, bottom), and the background color of the padding pixels.
 
 Image Details:
 * [imagemaninpy7.png](http://www.google.com): Copyright Google  
@@ -124,7 +122,7 @@ Image Details:
 
 ---
 
-# Resize the image
+# Resize the Image
 
 ![center](res/imagemaninpy8.png)
 
@@ -137,6 +135,8 @@ Image Details:
 
 ---
 
+# Resize the Image
+
 ![center](res/imagemaninpy9.png)
 
 <!--
@@ -148,7 +148,7 @@ Image Details:
 
 ---
 
-# The final image
+# The Final Image
 
 ![center](res/imagemaninpy10.png)
 

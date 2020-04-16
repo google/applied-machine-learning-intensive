@@ -1,12 +1,17 @@
 {
   "name": "Probability",
-  "bug": "b/132253408",
   "materials": [],
   "resources": [],
   "colabs": [
-    "colab_dice_rolling.ipynb",
-    "colab1.ipynb",
-    "colab2.ipynb"
+    "colab.ipynb",
+  ],
+  "slides": [
+    "slides.md",
+  ],
+  "learning-objectives": [
+    "Know how to calculate the probability of an event from a probabiltiy distribution",
+    "Understand the definition of and how to calculate expected value",
+    "Be comfortable doing simple probability calculations and coding simple probability distributions",
   ],
   "handouts": []
 }

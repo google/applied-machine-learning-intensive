@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Support Vector Machines
 
 ---
