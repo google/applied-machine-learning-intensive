@@ -1,1 +1,7 @@
-TODO: https://docs.google.com/presentation/d/1OE7oie-uOmk9fS5lsQCnSeGDW9Z-HKvxl7TUnbcBWnA/edit?usp=sharing
+# Synthetic Features
+
+---
+
+# Your Turn
+
+[Synthetic Features Colab](https://colab.sandbox.google.com/drive/17sl2Rbsa-yVTNzIBY-PCV8-dw0NuwQ73)
