@@ -13,6 +13,6 @@
   "learning-objectives": [
     "Analyze the time and space complexity of a piece of code",
     "Distinguish Big-O, Big-Theta, and Big-Omega",
-    "Recognize the most common running times, and order them from slowest to fastest (constant, logarithmic, linear, quadratic, exponential, factorial)",
+    "Recognize the most common running times, and order them from slowest to fastest (constant, logarithmic, linear, quadratic, exponential, factorial)"
   ]
 }

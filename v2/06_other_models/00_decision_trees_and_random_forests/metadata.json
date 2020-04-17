@@ -9,7 +9,7 @@
   "learning-objectives": [
     "Create and apply a decision tree algorithm for classification",
     "Perform ensemble learning using random forests",
-    "Apply limits to depth and split size to reduce overfitting",
+    "Apply limits to depth and split size to reduce overfitting"
   ],
   "handouts": [],
   "materials": [],

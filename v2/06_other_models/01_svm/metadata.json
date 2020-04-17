@@ -11,6 +11,6 @@
   "resources": [],
   "learning-objectives": [
     "Define problems for which support vector machines are a good fit",
-    "Understand the primary settings used to tune a support vector machine and their tradeoffs",
+    "Understand the primary settings used to tune a support vector machine and their tradeoffs"
   ]
 }

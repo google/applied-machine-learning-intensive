@@ -9,6 +9,6 @@
   "learning-objectives": [
     "Understand the difference between supervised and unsupervised learning",
     "Create a k-means model",
-    "Understand the output of a k-means model",
-  ],
+    "Understand the output of a k-means model"
+  ]
 }

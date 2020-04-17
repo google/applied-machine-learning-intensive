@@ -14,6 +14,6 @@
     "How to prepare Data for PCA",
     "When not to use PCA",
     "Selecting an Optimal number of components",
-    "Calculate Percent Variance Explained",
-  ],
+    "Calculate Percent Variance Explained"
+  ]
 }

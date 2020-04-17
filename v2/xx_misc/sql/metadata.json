@@ -15,6 +15,6 @@
   "learning-objectives": [
     "Write simple SQL queries to perform filtering, sorting, grouping and arithmetic",
     "Use JOIN to merge tables and concept of the different joint (LEFT, RIGHT, OUTER, INNER)",
-    "Understand the use of keywords, e.g. AS, LIMIT, and HAVING",
+    "Understand the use of keywords, e.g. AS, LIMIT, and HAVING"
   ]
 }

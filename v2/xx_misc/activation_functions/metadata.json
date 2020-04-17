@@ -13,6 +13,6 @@
     "Types of activation functions",
     "Where activation functions are used",
     "Train a CNN model with Keras",
-    "Visualize activations",
+    "Visualize activations"
   ]
 }

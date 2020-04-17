@@ -3,15 +3,15 @@
   "materials": [],
   "resources": [],
   "colabs": [
-    "colab.ipynb",
+    "colab.ipynb"
   ],
   "slides": [
-    "slides.md",
+    "slides.md"
   ],
   "learning-objectives": [
     "Know how to calculate the probability of an event from a probabiltiy distribution",
     "Understand the definition of and how to calculate expected value",
-    "Be comfortable doing simple probability calculations and coding simple probability distributions",
+    "Be comfortable doing simple probability calculations and coding simple probability distributions"
   ],
   "handouts": []
 }
