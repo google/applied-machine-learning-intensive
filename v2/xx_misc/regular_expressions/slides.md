@@ -70,7 +70,7 @@ before somewhere on the internet. Don't be afraid to use these resources. It wil
 
 # What do the following regex patterns match?
 
-## `'.*regex\sexpression.*'`
+## `'.*regular\sexpression.*'`
 
 <!--
 Matches any string that contains the phrase "regular expression". Note that spaces must be encoded using `\s`, not with a
