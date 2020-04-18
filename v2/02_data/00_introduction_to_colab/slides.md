@@ -102,7 +102,7 @@ Image Details:
 * Available at https://colab.research.google.com
 
 <!--
-Colab notebooks run by connecting to virtual machines that have maximum lifetimes of up to 12 hours. Notebooks will also disconnect from VMs when left idle for too long. Maximum VM lifetime and idle timeout behavior may vary over time, or based on your usage. 
+Colab notebooks run by connecting to virtual machines that have maximum lifetimes of up to 12 hours. Notebooks will also disconnect from VMs when left idle for too long. Maximum VM lifetime and idle timeout behavior may vary over time, or based on your usage.
 
 Colab focuses on supporting Python and its ecosystem of third-party tools. There is not currently support for other Jupyter kernels like R or Scala.
 
