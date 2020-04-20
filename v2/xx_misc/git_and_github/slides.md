@@ -76,9 +76,9 @@ Image Details:
 1. Fork
 1. Clone
 1. Create upstream remote
-1. Pull before you Code
-1. Stage and Commit
-1. Send Pull Request
+1. Pull before you code
+1. Stage and commit
+1. Send pull request
 
 ![](res/gitandgithub03.png)
 
@@ -167,7 +167,7 @@ Image Details:
 
 [https://github.com/ORG/REPO](https://github.com/ORG/REPO)
 
-[https://github.com/YOU/REPO](https://github.com/YOU/REPO 
+[https://github.com/YOU/REPO](https://github.com/YOU/REPO)
 
 <!--
 Image Details: 
