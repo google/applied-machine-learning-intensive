@@ -73,12 +73,12 @@ Image Details:
 
 # Contributing to An Existing Project
 
-1 Fork
-1 Clone
-1 Create upstream remote
-1 Pull before you Code
-1 Stage and Commit
-1 Send Pull Request
+1. Fork
+1. Clone
+1. Create upstream remote
+1. Pull before you Code
+1. Stage and Commit
+1. Send Pull Request
 
 ![](res/gitandgithub03.png)
 
@@ -111,12 +111,12 @@ Image Details:
 
 # Workflow
 
-1 $ git pull upstream master  // pull = fetch + merge
-1 $ git checkout -b branch_name  // use -b to create a new branch
-1 $ git status
-1 $ git add file_name / $ git rm file_name
-1 $ git commit -m “Message describing commit”
-1 $ git push origin branch_name
+1. $ git pull upstream master  // pull = fetch + merge
+1. $ git checkout -b branch_name  // use -b to create a new branch
+1. $ git status
+1. $ git add file_name / $ git rm file_name
+1. $ git commit -m “Message describing commit”
+1. $ git push origin branch_name
 
 ![](res/gitandgithub04.png)
 
