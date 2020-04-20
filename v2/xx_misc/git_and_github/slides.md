@@ -135,9 +135,9 @@ Image Details:
 
 ![](res/gitandgithub05.png)
 
-1 $ git log
-1 $ git status
-1 $ git diff
+1. $ git log
+1. $ git status
+1. $ git diff
 
 <!--
 git log
@@ -224,7 +224,7 @@ Image Details:
 
 # What About
 
-Creating a new project from Scratch
+Creating a new project from scratch
 
 or
 
