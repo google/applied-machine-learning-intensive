@@ -38,7 +38,7 @@ Image Details:
 ![](res/lifepaths02.png)
 
 <!--
-[Facilitator should prep this slide with their own life path prior to presenting.]
+[Facilitator should prep this slide with their own life path prior to presenting or show this sample.]
 
 “Here’s my life path. First, ___ … Last, ____. Thank you for listening.”
 
