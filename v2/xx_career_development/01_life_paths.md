@@ -1,4 +1,4 @@
-# CD-01: Life Paths
+# Career Development: Life Paths
 
 <!--
 Today we’re going to learn a bit more about each other by creating and sharing a visual representation of our lives thus far.
