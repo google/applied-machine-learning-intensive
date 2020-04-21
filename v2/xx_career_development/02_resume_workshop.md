@@ -92,7 +92,7 @@ Image Details:
 
 ---
 
-**1.) Education** {.big}
+# 1.) Education
 
 Your education should be the first section of your resume.
 
@@ -121,7 +121,7 @@ Technical skills: These should be listed in order of proficiency (strongest firs
 
 ---
 
-**Education Example** {.big}
+**Education Example** 
 
 ![](res/resumeworkshop03.png)
 
@@ -136,7 +136,7 @@ Image Details:
 
 ---
 
-**2.) Work Experiences** {.big}
+# 2.) Work Experiences
 
 Focus on your impact!
 
@@ -156,7 +156,7 @@ If you're early on in your tech career, you may not have technical work experien
 
 ---
 
-“Accomplished [X], as measured by [Y], by doing [Z].” {.big}
+**“Accomplished [X], as measured by [Y], by doing [Z].”**
 
 <!--
 What do we mean when we say “focus on impact?”
@@ -172,7 +172,7 @@ By doing [Z]: what you specifically did to achieve those results (e.g., by restr
 
 ---
 
-**Before** {.big}
+**Before**
 
 ![](res/resumeworkshop04.png)
 
@@ -185,7 +185,7 @@ Image Details:
 
 ---
 
-**After** {.big}
+**After**
 
 ![](res/resumeworkshop05.png)
 
@@ -201,7 +201,7 @@ Image Details:
 
 ---
 
-**3.) Projects** {.big}
+# 3.) Projects
 
 Again, focus on your impact.
 
@@ -220,7 +220,7 @@ As we mentioned before, early on in your technical career, you may not feel that
 
 ---
 
-**Projects example** {.big}
+**Projects Example**
 
 ![](res/resumeworkshop06.png)
 
@@ -236,7 +236,7 @@ Image Details:
 
 ---
 
-**4.) Activities/Leadership** {.big}
+# 4.) Activities/Leadership**
 
 Tell employers what excites you.
 
@@ -267,7 +267,7 @@ Employers want to know what excites you, so take this opportunity to let them kn
 
 ---
 
-**Activities/Leadership example** {.big}
+**Activities/Leadership Example**
 
 ![](res/resumeworkshop07.png)
 
@@ -285,7 +285,7 @@ Image Details:
 
 ---
 
-**5.) Honors/Awards** {.big}
+# 5.) Honors/Awards
 
 What, in addition to what you’ve already shared, sets you apart?
 
@@ -305,7 +305,7 @@ Along your college journey, you may come across opportunities to: 1) be recogniz
 
 ---
 
-**Honors/Awards example** {.big}
+**Honors/Awards Example**
 
 ![](res/resumeworkshop08.png)
 
@@ -362,16 +362,8 @@ Take the next 15 minutes to make some changes to your resume based off of this p
 Please continue to make changes to your resume based on what you learned today.
 
 This is a good time to update or create your LinkedIn profile, too! We will have a separate presentation on LinkedIn soon.
--->
 
----
-
-# Thank You
-
-Thank you. Questions?
-
-<!--
-Thank you so much for participating! Any lingering questions?
+What remaining questions do you have?
 -->
 
 ---
