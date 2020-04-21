@@ -1,4 +1,4 @@
-# CD-02: Resume Workshop
+Resume Workshop
 
 <!--
 Today we'll go over some best practices for your resume. My hope is to provide some very clear guidance regarding what recruiters look for in students’ technical resumes. I also want you to know that no two resumes can and should be the same because you’ve all had different experiences and have different interests. By the end of today’s session you’ll have some industry best practices that you can apply to your resume. Let's get started.
