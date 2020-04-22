@@ -1,18 +1,14 @@
-# CD-03: Working with Different Personality Styles
+# Career Development: Working with Different Personality Styles
 
 <!--
-Today we’re going to learn about a tool for understanding work styles, both ours and others. This tool is called True Colors, and it’s a widely-known and utilized model at Google for understanding how teams can work better together. Today we’ll:
-
-* Identify your work style preference using one widely-known model at Google called COLORS
-* Identify and appreciate other work style preferences
-* Discover ways to flex to work more effectively on a team
+Today we’re going to learn about a tool for understanding work styles, both ours and others. This tool is called True Colors, and it’s a widely-known and utilized model for understanding how teams can work better together.
 -->
 
 ---
 
-Have you ever taken a personality test? {.big}
+#  Have You Ever Taken a Personality Test?
 
-Which one? {.big}
+## Which one? {.big}
 
 <!--
 Have you ever taken a personality test? If so, which one? Did you think it accurately reflected your personality? Why or why not?
@@ -20,7 +16,7 @@ Have you ever taken a personality test? If so, which one? Did you think it accur
 
 --
 
-# Warm-up exercise
+# Warm-up Exercise
 
 * **ORANGE**: Describe a time when you took a risk… and it was thrilling.
 * **GREEN**: Describe a time when you got really absorbed solving an intricate problem.
@@ -28,20 +24,23 @@ Have you ever taken a personality test? If so, which one? Did you think it accur
 * **BLUE**: Describe a time when you invested yourself in helping someone else to grow.
 
 <!--
-[Each participant should have a fun/snack sized bag of M&Ms.]
 
-Activity: “Pull out one M&M without looking. If it’s RED or BROWN, put it aside (or eat it). Depending on the color of M&M pulled, reflect on the corresponding item above (1 minute).  Now turn to a person next to you, and take 2 minutes each to share.”
+*Each participant should have a fun/snack sized bag of M&Ms.*
 
-Debrief: “Any interesting stories to share with the group briefly?”  (Take 2-3 volunteers.)
+Pull out one M&M without looking. If it’s red or brown, put it aside (or eat it). Depending on the color of M&M pulled, reflect on the corresponding item on the screen for one minute.  Now turn to a person next to you and take 1-2 minutes each to share your reflection.
 
-Then wrap up the activity by stating the main takeaway:  “No matter what color M&M you may have picked, you would have been able to think of an instance in your life where that happened.  We are all a mix of these 4 traits - all 4 traits (being risky, being analytical, being committed, being nurturing) exist in all of us.  Today’s session, we’ll take a look at a way to describe different personality types that will help you think about collaboration.”
+Any interesting stories to share with the group briefly?  (Take 2-3 volunteers.)
 
-Talk about why learning to work with different work styles is or has been important to you. (application at work, understanding self, understanding others, being yourself while also meeting others where they are.)
+No matter what color M&M you may have picked, you would have been able to think of an instance in your life where that happened.  We are all a mix of these four traits. Being risky, being analytical, being committed, being nurturing -- these exist in all of us to some degree.
+
+Many of us find, however, that we are inclined toward one type more than the others. This session will give us a new lens to understand ourselves and others at work according to these four personality types.
+
+*Talk about why learning to work with different work styles is or has been important to you. (application at work, understanding self, understanding others, being yourself while also meeting others where they are).*
 -->
 
 ---
 
-# Why use COLORS as a tool?
+# Why Use True Colors as a Tool?
 
 * Simple and easy to apply
 * Based on the same extensive research as Myers-Briggs (MBTI)
@@ -50,7 +49,7 @@ Talk about why learning to work with different work styles is or has been import
 <!--
 So why do we use True Colors as a tool?
 
-First, it’s easy to understand and apply. For those who have taken Myers-Briggs, you know it’s It’s complex!  This is quicker to grasp and easier to apply to ourselves and others in the workplace. In fact, Google’s engineering teams use Colors in leadership training. It’s a common language for discussion and learning within the company.
+First, it’s easy to understand and apply. For those who have taken Myers-Briggs, you know it’s complex. True Colors is quicker to grasp and easier to apply to ourselves and others in the workplace. Some large tech companies even use this framework in their leadership training. 
 
 Also, it’s based on MBTI, which is extensively researched and has stood the test of time.
 
@@ -59,12 +58,12 @@ It helps us better understand ourselves and others, which can save a lot of time
 
 ---
 
-# What are the four COLORS and what do they mean?
+# What Are the Four True Colors?
 
 ![](res/personalitystyles01.jpg)
 
 <!--
-What are the four colors in True Colors and what do they mean?
+Let's dive in. What are the four colors in True Colors and what do they mean?
 
 Image Details:
 * [personalitystyles01.jpg](https://unsplash.com/photos/aHw1G6PdzYQ): Unsplash License
@@ -154,16 +153,17 @@ Image Source:
 
 # Exercise #1: Determine your colors
 
-* Step 1: Look over color description handout
+* Step 1: Look over the True Colors description handout
 * Step 2: Do self-assessment handout
 * Step 3: Determine your color
 
 <!--
-[Pass out True Colors description one-pager]
 
-“Take this quick assessment to determine your primary and secondary colors. Remember that each of us have each of the four colors in us to varying degrees.”
+*Pass out True Colors description one-pager.*
 
-[Allow 3-5 minutes to take assessment]
+Take this quick assessment to determine your primary and secondary True Colors. Remember that each of us have each of the four colors in us to varying degrees.”
+
+*Allow 3-5 minutes to take assessment.*
 -->
 
 ---
@@ -173,9 +173,9 @@ Image Source:
 ![](res/personalitystyles06.png)
 
 <!--
-“Let’s take a count of who has which primary and secondary color.”
+Let’s take a count of who has which primary and secondary color.
 
-[Write names or tally marks to represent each student participating on chart paper or a whiteboard.]
+*Write names or tally marks to represent each student participating on chart paper or a whiteboard.*
 
 Image Details:
 * [personalitystyles06.png](http://www.google.com): Copyright Google
@@ -194,28 +194,30 @@ Image Details:
   * What picture, song, logo that best represents your color?
 
 (20 minutes)
-* Step 3: Get ready to present back to the larger group (5 minutes per group)
+* Step 3: Get ready to present back to the larger group (4-5 minutes per group)
 
 <!--
-[Distribute four large whiteboards or pieces of chart paper throughout the room and label them with one of the four True Colors: orange, gold, blue, green.]
+
+*Distribute four large whiteboards or pieces of chart paper throughout the room and label them with one of the four True Colors: orange, gold, blue, green.*
 
 When I say go, find your primary color group and begin discussing the four questions on the board. You will chart your answers to the questions, either with words, drawings, or whatever you’d like to use to describe your primary true color. You’ll have 15 minutes to work on this and then each group will present out to the group. What questions do you have?”
 
-[Allow students 15 minutes to work and add five additional minutes if they need it.]
+*Allow students 15 minutes to work and add 4-5 additional minutes if they need it.*
 
-[After each presentation, allow non-presenting students an opportunity to ask questions: “What questions do you have for the blue group?”]
+*After each presentation, allow non-presenting students an opportunity to ask questions: “What questions do you have for the blue group?”*
 -->
 
 ---
 
-# Final reflection
+# Final Reflection
 
 * What was this experience like for you?
 * What did you learn?
 * How do you think this will be useful moving forward?
 
 <!--
-“I’d love to close out by hearing about what this experience was like for you, what you learned, or how you feel like you’ll use this moving forward.”
+Thank you for participating.
 
-[Thank students for participating]
+I'd love to conclude by hearing what this experience was like for you, what you learned, or how you feel like you’ll use this moving forward.
+
 -->
