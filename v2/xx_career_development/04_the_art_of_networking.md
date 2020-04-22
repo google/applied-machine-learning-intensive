@@ -1,20 +1,20 @@
 # Career Development: The Art of Networking
 
 <!--
-Today we’re going to talk about the art of networking. If you’re thinking of a LAN, WAN, or MAN or linking computers together, we’re actually talking about a different type of networking today. But DO hold on to the idea of creating a connection or link between two things- in this case, between people.
+This career development session is about the art of networking. If you’re thinking of a LAN, WAN, or MAN or linking computers together, we’re actually talking about a different type of networking today. But do hold on to the idea of creating a connection or link between two things. In this case, the link is between people.
 -->
 
 ---
 
 # What is Networking?
 
-Interacting meaningfully with other people to exchange information and develop contacts, especially to further one’s career.
+Interacting meaningfully with other people to exchange information and develop contacts, especially to further one’s career
 
 ![](res/artofnetworking01.jpg)
 
 <!--
-* As a student, you’ll begin having many opportunities to begin making connections with others and building your network, so now is a great time to begin learning the skills of networking.
-* Many people believe that networking is something you’re born with; some people are just better than others. The truth is that anyone can learn how to network effectively and you’ll also improve a lot with practice, and I will make sure to work some time in for some practice today.
+* As college students you have many opportunities to begin making connections with others and building your network, so now is a great time to begin learning the skills of networking.
+* Many people believe that networking is something you’re born with; some people are just better than others. The truth is that anyone can learn how to network effectively, and you’ll also improve a lot with practice.
 
 Image Details:
 * [artofnetworking01.jpg](https://unsplash.com/photos/W3Jl3jREpDY): Usplash License
@@ -32,13 +32,13 @@ Both formal and informal settings:
 * Anywhere - coffee shops, elevators, riding the bus, and through many kinds of activities
 
 <!--
-* You may be thinking that networking only takes place in formal settings - at a career fair, or an actual advertised “networking” event. While that’s true and you should be extra prepared for those kinds of events where you KNOW networking will be explicitly taking place, you may be surprised to learn that meaningful networking can be accomplished almost anywhere. Definitely through on campus events like a visiting speaker or activity, and through affinity groups you may join now or after college, like an Alumnae group.
-* But networking can also happen in places you visit all the time, like in your daily commute, at Starbucks, or even at your next family event.
-* You never know who you’ll meet, which is why you should practice networking skills so you’ll be absolutely ready to network whenever you meet people who could be helpful to you, or to whom you could be helpful.
-* Feel free to share your own examples here: (one from Meggie) “I was on the Airtrain to JFK and ran into an NYU student who saw my Google bag and asked enthusiastically about if I worked for Google. We had a great conversation and after finding out he was in CS, I gave him my email and connected him to the NYU specialist. He didn't get an internship but it was a great experience for him to practice pitching himself and skills to potential contacts/employers.”
-  * Great time to also discuss reading social cues and making sure it’s an appropriate to discuss
-  * E.g. if someone looks busy or is not receptive don’t continue
-* Being authentic and letting your true self shine through: most important
+* You may think networking only takes place in formal settings. like at a career fair or an advertised “networking” event. You should be extra prepared for those kinds of events where you know networking will be explicitly taking place, but you may be surprised to learn that meaningful networking can be accomplished almost anywhere.
+* Networking can happen in places you visit all the time, such as during your daily commute, at Starbucks, or even at your next family event.
+* You never know who you’ll meet, which is why you should practice networking skills so you’ll be absolutely ready to network whenever you meet people who could be helpful to you or to whom you could be helpful.
+
+*Feel free to share your own example of a time you or someone you know took advantage of a networking opportunity outside of a typical "networking" event. What was the result? What did you or this person learn?
+
+* It's important to read social cues and make sure it’s an appropriate to strike up a conversation. If someone looks busy, is not receptive to a hello, or is on the phone, it might not be a good time to attempt networking.
 -->
 
 ---
@@ -54,8 +54,8 @@ Both formal and informal settings:
 * Following up
 
 <!--
-* In a more formal setting, like a career fair where everyone is there expecting to hear about opportunities, networking would probably be more formulaic - you would introduce yourself - who you are and what you study or are there for, perhaps make a bit of small talk depending on if others are waiting (the weather, have they visited here before, are they an alumna?) and then asking questions, listening closely, and either an offer to follow up, or maybe a request from you before parting. Then, you’d need to follow up on whatever was decided.
-* For instance, if you go to a career fair, you may walk up and say “Hi! How are you?”, followed by a tiny bit of small talk and then “I’m NAME, a senior at Spelman College, studying Computer Science. I’m interested in summer internships - is your company offering any summer internships in software engineering?” You can listen carefully and ask follow up questions, including asking if the representative will take your resume, or if you should email it. You should also ask for a card or a way to stay in contact, and then make a request “May I send you my resume for you to review?” or “May I follow up with you directly on the opportunities you mentioned?” or the rep may say “I’ll email you with opportunities”. Either way, you’ve decided on next steps and you would go home and send a thank you email or any next step you decided on.
+* In a more formal setting, like a career fair where everyone is there expecting to hear about opportunities, networking would probably be more formulaic. You would introduce yourself by saying who you are and what you study or are there for. Perhaps you'd make a bit of small talk (the weather, have they visited here before, if they're an alum), depending on if others are waiting in line behind you. Then it's best to listen closely and either offer to follow up or make a request before parting. Then you’d need to follow up on whatever was decided.
+* For example, if you go to a career fair, you may walk up and say “Hi! How are you?” Maybe you follow that up with a tiny bit of small talk and then “I’m NAME, a senior at Spelman College, studying Computer Science. I’m interested in summer internships. "Is your company offering any summer internships in software engineering?” You can listen carefully and ask follow-up questions, including asking if the representative will take your resume, or if you should email it. You should also ask for a card or a way to stay in contact, and then make a request: “May I send you my resume for you to review?” or “May I follow up with you directly on the opportunities you mentioned?” Or the rep may say, “I’ll email you with opportunities." Either way, you’ve decided on next steps and you would go home and send a thank you email or any next step you decided on.
 -->
 
 ---
