@@ -7,5 +7,13 @@
     "colab.ipynb"
   ],
   "materials": [],
-  "handouts": []
+  "handouts": [],
+  "learning-objectives": [
+    "Authentication with Spotify and Genius API",
+    "Authentication with Google Storage",
+    "Crawling the Spotify index",
+    "Crawling the Genius index",
+    "Parsing data from a json response",
+    "Scraping data from an html response",
+  ]
 }
