@@ -1,4 +1,4 @@
-# CD-04: The Art of Networking
+# Career Development: The Art of Networking
 
 <!--
 Today we’re going to talk about the art of networking. If you’re thinking of a LAN, WAN, or MAN or linking computers together, we’re actually talking about a different type of networking today. But DO hold on to the idea of creating a connection or link between two things- in this case, between people.
@@ -6,7 +6,7 @@ Today we’re going to talk about the art of networking. If you’re thinking of
 
 ---
 
-# What is networking?
+# What is Networking?
 
 Interacting meaningfully with other people to exchange information and develop contacts, especially to further one’s career.
 
@@ -22,7 +22,7 @@ Image Details:
 
 ---
 
-# Where does networking take place?
+# Where Does Networking Take Place?
 
 Both formal and informal settings:
 * Career fairs
@@ -43,7 +43,7 @@ Both formal and informal settings:
 
 ---
 
-# What does networking consist of?
+# What Does Networking Consist Of?
 
 * Introduction
 * Pleasantries
@@ -55,7 +55,7 @@ Both formal and informal settings:
 
 <!--
 * In a more formal setting, like a career fair where everyone is there expecting to hear about opportunities, networking would probably be more formulaic - you would introduce yourself - who you are and what you study or are there for, perhaps make a bit of small talk depending on if others are waiting (the weather, have they visited here before, are they an alumna?) and then asking questions, listening closely, and either an offer to follow up, or maybe a request from you before parting. Then, you’d need to follow up on whatever was decided.
-* For instance, if you got to a career fair, you may walk up and say “Hi! How are you?”, followed by a tiny bit of small talk and then “I’m NAME, a senior at Spelman College, studying Computer Science. I’m interested in summer internships - is your company offering any summer internships in software engineering?” You can listen carefully and ask follow up questions, including asking if the representative will take your resume, or if you should email it. You should also ask for a card or a way to stay in contact, and then make a request “May I send you my resume for you to review?” or “May I follow up with you directly on the opportunities you mentioned?” or the rep may say “I’ll email you with opportunities”. Either way, you’ve decided on next steps and you would take go home, and send a thank you email or any next step you decided on.
+* For instance, if you go to a career fair, you may walk up and say “Hi! How are you?”, followed by a tiny bit of small talk and then “I’m NAME, a senior at Spelman College, studying Computer Science. I’m interested in summer internships - is your company offering any summer internships in software engineering?” You can listen carefully and ask follow up questions, including asking if the representative will take your resume, or if you should email it. You should also ask for a card or a way to stay in contact, and then make a request “May I send you my resume for you to review?” or “May I follow up with you directly on the opportunities you mentioned?” or the rep may say “I’ll email you with opportunities”. Either way, you’ve decided on next steps and you would go home and send a thank you email or any next step you decided on.
 -->
 
 ---
@@ -73,7 +73,7 @@ Image Details:
 
 ---
 
-1. DO: use technology to network {.big}
+# 1. DO: use technology to network 
 
 * Thanks to technology, networking has never been easier
 * But using the right technology to network can be confusing
@@ -88,13 +88,13 @@ Image Details:
 * If you can believe it, you used to have to exchange paper resumes to network professionally, which made everything much slower and more complicated
 * Now, thanks to technology, we can network with one another more easily than ever before using a myriad of platforms.
 * The down side of that is that with so many options for connecting, it can be difficult to decide the right one. Social media is messy. Across Facebook, LinkedIn, Twitter, and other social networks, we are connected to a mix of close friends, college buddies, high school classmates, co-workers, bosses, former bosses, I-met-you-at-a-party-once acquaintances, and people we've never even seen face-to-face. It's important to understand the particular platform that you're using, as well as the type of relationship you have with a person, before attempting to leverage that connection for professional gain. Each social media platform has a certain reputation. For instance, LinkedIn is generally a business site, while Twitter is more "laid back" and often mixes professional and personal content. Respect the way that people use these sites. Adding a professional acquaintance as a friend on Facebook can be invasive, especially if that individual is a traditionalist who uses Facebook purely for personal contact with friends and family. Likewise, asking an old friend for a recommendation on LinkedIn might create awkwardness if the person has no experience with you in a professional capacity. LinkedIn is the quintessential social media site for forging business and work connections. Twitter can be a useful tool for interacting with the business as a whole, or for keeping up with their work, while Facebook and Instagram are more personal outlets.
-* Also, while technology is great for staying in touch and keeping track of contacts, nothing is substitute for a face-to-face conversation and interaction, so whenever possible, be sure to schedule time to actually talk. Social networking is a way to keep track of relationships, but is not necessarily a way to build lasting relationships.
+* Also, while technology is great for staying in touch and keeping track of contacts, nothing is a substitute for a face-to-face conversation and interaction, so whenever possible, be sure to schedule time to actually talk. Social networking is a way to keep track of relationships, but is not necessarily a way to build lasting relationships.
 * Along the same lines, when you meet someone through social media, ask for their preferred method of contact. Some people are big e-mailers, while others love talking on the phone or meeting for coffee. Respect their preferences.
 -->
 
 ---
 
-2. DON'T: come across as transactional {.big}
+# 2. DON'T: come across as transactional
 
 * Don’t approach contacts only when you need a favor
 * Do look for ways to support the other person
@@ -111,7 +111,7 @@ Image Details:
 
 ---
 
-3.) DO: make a specific request {.big}
+# 3. DO: make a specific request
 
 * Vagueness can lead to a lack of results
 * Be respectful of someone’s time
@@ -128,7 +128,7 @@ Image Details:
 
 ---
 
-4.) DO: personalize all communication {.big}
+# 4. DO: personalize all communication
 
 * Do your homework! Make sure to check the the spelling of a person’s name, title, organization, and all other details
   * Also make sure you have the right gender pronoun, when unsure, just use their name instead
@@ -145,7 +145,7 @@ Image Details:
 
 ---
 
-**Practice A - when you are following up with someone you met briefly** {.big}
+**Practice A - Following up With Someone You Met Briefly** 
 
 You made some polite small talk and then exchanged business cards with this person at a networking event. Now—rather than letting that contact information collect dust in your desk drawer—you want to take the next step to forge a relationship.
 
@@ -160,18 +160,15 @@ What are some things we want to include as we craft this email?
 
 ---
 
-**Practice A [Template]** {.big}
+**Practice A [Template]** 
 
 Hello [Name],
 
 I hope you’re having a great [day of the week].
 
-
 It was so nice to meet you at [place where you met] and chat about [topic you talked about]. After our conversation, I found this article about [relevant topic]. I thought you’d find it interesting, so I figured I’d pass it along.
 
-
 Again, I really enjoyed meeting you and I’m looking forward to keeping in touch. Don’t hesitate to reach out if you want to get together and bounce around some more ideas about [topic]. I’d love that!
-
 
 Wishing you the best,
 
@@ -183,32 +180,29 @@ This template is an example and certainly not the only way to follow up after me
 
 ---
 
-**Practice A [Example]** {.big}
+**Practice A [Example]**
 
 Hello Imani,
 
 I hope you’re having a great Friday.
 
-
 It was so nice to meet you at the Code For Good Hackathon and chat about trends in AI. After our conversation, I found this article about how Fortnite uses Artificial Intelligence and Analytics to make the game more fun, which reminded me of our conversation about Gaming and AI. I thought you’d find it interesting, so I figured I’d pass it along.
 
-
 Again, I really enjoyed meeting you and I’m looking forward to keeping in touch. Don’t hesitate to reach out if you want to get together and bounce around some more ideas about click-worthy article titles. I’d love that!
-
 
 Hope to hear from you,
 
 Josh
 
 <!--
-Here, we went with an article to keep the conversation going - a great option if you aren’t sure of exact next steps, but want to keep the conversation open and add this person to your professional network. You could also make your “ask” to pass along your resume. We’ll see an example next that simply asks for an informational meeting as a next step.
+Here, we went with an article to keep the conversation going - a great option if you aren’t sure of the exact next steps, but want to keep the conversation open and add this person to your professional network. You could also make your “ask” to pass along your resume. We’ll see an example next that simply asks for an informational meeting as a next step.
 -->
 
 ---
 
-**Practice B - when you are requesting an informational interview** {.big}
+**Practice B - Requesting an Informational Interview**
 
-You don’t just want to connect with this person—you want to learn from them. You’re eager to setup an informational interview (or even a more informal coffee date or email chat) where you can come prepared with a list of questions you want answers to.
+You don’t just want to connect with this person—you want to learn from them. You’re eager to set up an informational interview (or even a more informal coffee date or email chat) where you can come prepared with a list of questions you want answers to.
 
 What do we want to keep in mind as we write this email?
 
@@ -223,18 +217,15 @@ Possible ideas:
 
 ---
 
-**Practice B [Template]** {.big}
+**Practice B [Template]** 
 
 Hello [Name],
 
 I hope you’re doing well!
 
-
 My name is [Your name], and I’m a [job title] with [Company]. I really admire your [work/experience] with [outlet]. I’m interested in finding out more about [area] myself and was hoping you’d be willing to provide some insights from your experience.
 
-
 If you’re open to it, I’d love to buy you a cup of coffee sometime soon so I can ask you some questions and learn more about you and your [journey/career path]. I understand your schedule may be busy, so, alternatively, I’m also happy to pass along some questions via email or connect by phone.
-
 
 Looking forward to hearing from you, [Name]!
 
@@ -248,7 +239,7 @@ The ask is for the informational meeting is there, but so is the option to follo
 
 ---
 
-**Practice B [Example]** {.big}
+**Practice B [Example]**
 
 Hello Mitch,
 
@@ -271,7 +262,7 @@ Notice this is a very specific request Mitch is making. Also notice he is provid
 
 ---
 
-**Practice C - when you are connecting with the friend of a friend** {.big}
+**Practice C - Connecting With a Friend of a Friend**
 
 Your friend or colleague recommended that you reach out to one of his acquaintances, as he thought you’d have a lot to connect on. Rather than making an introduction, he passed along that person’s contact information and encouraged you to get in touch.
 
@@ -288,7 +279,7 @@ Possible ideas:
 
 ---
 
-**Practice C [Template]** {.big}
+**Practice C [Template]**
 
 Hello [Name],
 
@@ -310,7 +301,7 @@ Maybe it’s a shared passion or interest, or maybe it’s a job or career you m
 
 ---
 
-**Practice C [Example]** {.big}
+**Practice C [Example]**
 
 Hello David,
 
@@ -334,7 +325,7 @@ Here’s a good reminder that these best practices can be used for personal netw
 
 ---
 
-5.) DON'T: forget to say thank you {.big}
+# 5.) DON'T: Forget to Say Thank You
 
 * Send a follow up email, or even better - a handwritten thank you note when possible
 * Let your contacts know the outcome when they’ve helped you out
@@ -348,7 +339,7 @@ Here’s a good reminder that these best practices can be used for personal netw
 
 ---
 
-6.) DO: use appropriate salutations/closings {.big}
+# 6.) DO: Use Appropriate Salutations/Closings
 
 * “Hi” is fine for casual emails, but “Hello” is better for more formal emails
   * “Dear” is probably antiquated at this point
@@ -361,7 +352,7 @@ Here’s a good reminder that these best practices can be used for personal netw
 <!--
 * Just a quick note on how to open and close emails - you can show some personality here, within reason, but you don’t want your opening/closing/or subject line to be silly or distracting.
 * If you are not sure of the gender of the person you are emailing for some reason, use their name only. “Miss” and “Mrs.” guess at a woman’s married status and are pretty passeé now. “Mx.” is gaining traction as a gender neutral greeting, but hasn’t fully caught on yet. However, if someone refers to themselves this way, by all means use it
-* As a general rule, follow the lead of the person introducing you, or how the person refers to themselves. You always start more formal - unless the person is close in age to you, I would say. If the person then asks you to refer to them by their first name, do that
+* As a general rule, follow the lead of the person introducing you, or how the person refers to themselves. You always start more formally, unless the person is very close in age to you. If the person then asks you to refer to them by their first name, do that
 * If you’re not sure if someone has an MD or PhD and your research doesn’t give you an answer, use your best judgment. If they are faculty, you can always say “Professor” this still shows respect for their education and role, even if you aren’t sure of their credentials
 * For signing off, use your best judgment. I like “Best” - “Best Wishes” sounds a little too fluffy to me, but is still fine. “Regards” also works, but is pretty formal and a little stiff. Personally, “Cheers” and “Yours” don’t work for me.
 Does anyone have a signoff they use that they want advice on? [Elicit student contributions and respond to each.]
@@ -369,7 +360,7 @@ Does anyone have a signoff they use that they want advice on? [Elicit student co
 
 ---
 
-7.) DO: be ready to meet people! {.big}
+# 7.) DO: Be Ready to Meet People! 
 
 * Have a firm handshake
 * Have your resume updated and ready to go
@@ -381,13 +372,13 @@ Does anyone have a signoff they use that they want advice on? [Elicit student co
 * A firm handshake is still very important; avoid being TOO firm, but when you shake hands, firmly grasp the right hand of the person with your right hand only, then pump up and down once or twice only while making eye contact and exchanging names, saying “nice to meet” you and remembering to smile between all that! If you know you have sweaty hands (a lot of people do especially when they are nervous, subtly wipe your palms first as you walk up)
 * Always have your resume updated and ready to go, saved as a PDF, or on Google drive. Leave off the objective so you don’t have to continually personalize. Spend time after every new role you take adding that information. You wouldn’t believe how many opportunities people miss by not having an updated resume saved to their computers.
 * Business cards disappear easily, so transfer contacts to your phone, email or another centralized place. If possible, make a quick note of title, company, and anything else as a small note that will remind you of who this person is and what you talked about  - they may not be someone you think will be an important contact now, but you never know, so try to keep a record and details to jog your memory.
-* Along those lines, you never know who will be in a position to help you or give you advice now or in the future, so remember to use you manners an treat everyone with respect.
+* Along those lines, you never know who will be in a position to help you or give you advice now or in the future, so remember to treat everyone with respect.
 * Set a timer for 30 seconds, make everyone get up and PRACTICE an appropriate handshake, eye contact, and a positive, confident introduction!
 -->
 
 ---
 
-8.) DO: craft your elevator pitch {.big}
+# 8.) DO: Craft Your Elevator Pitch
 
 * Be ready to succinctly describe who you are, what you do, and what your goals are
 * Practice!
@@ -427,7 +418,7 @@ Let’s craft or fine-tune our elevator pitches so we’re ready to meaningfully
 
 ---
 
-# Next steps
+# Next Steps
 
 Open up your laptop, reach out to one connection on LinkedIn (or another platform of your choosing) to let them know what you’re up to and share your resume or set up next steps like any of those we reviewed today.
 
