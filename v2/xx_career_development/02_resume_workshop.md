@@ -107,7 +107,7 @@ Your education should be the first section of your resume.
 <!--
 Your education should be the first section of your resume (after your name and contact info, that is). Why do you think that is?
 
-Right! It's becuase you're students! Being a student is an important part of your story, especially when you’re submitting this resume for internship or university graduate roles. Let's take a closer look at what you should include and how. 
+Right! It's because you're students! Being a student is an important part of your story, especially when you’re submitting this resume for internship or university graduate roles. Let's take a closer look at what you should include and how. 
 
 Post-secondary schools attended: Let recruiters know where you’re currently pursuing your education. If you’ve moved on to graduate school and/or transferred, be sure to include your previous institution as well.
 Intended major/minor/degree: Some universities don’t require you to pick a major until the end of your second year, so feel free to note your intended major here if you haven’t yet declared it.
@@ -151,7 +151,7 @@ Employers want to know how, when, and where you’ve already started to make an 
 * Keep bullet points clear, concise, and descriptive: I highly encourage bullet points and concise fragments over full sentences.
 * Consider relevant experiences: Especially if you’re running out of space on your one-page resume, consider leaving off the non-tech-related experience (e.g., worked the front desk at the library, restocked medical supplies at the hospital -- these are important experience, but perhaps not for this role) in favor of the ones that are relevant to the role to which you’re applying.
 
-If you're early on in your tech career, you may not have technical work experiences, and that's okay! Iinternships, student groups, hacks/coding competitions and class projects can be added here under the heading “experiences” instead of “work experiences” until you build up your relevant tech experience throughout your time in college.
+If you're early on in your tech career, you may not have technical work experiences, and that's okay! Internships, student groups, hacks/coding competitions and class projects can be added here under the heading “experiences” instead of “work experiences” until you build up your relevant tech experience throughout your time in college.
 -->
 
 ---
@@ -228,7 +228,7 @@ As we mentioned before, early on in your technical career, you may not feel that
 I want to point out a few things here, too:
 * Notice the use of language/technologies: C++, Objective C.
 * There's a clear delineation of group (class) project vs. personal project.
-* This person listed 300+ downloads with 4.0 rating, which shows the impact and level of interests in project.
+* This person listed 300+ downloads with 4.0 rating, which shows the impact and level of interest in the project.
 
 Image Details:
 * [resumeworkshop06.png](http://www.google.com): Copyright Google
