@@ -1,4 +1,4 @@
-# CD-05: LinkedIn Essentials for Technical Students
+# Career Development: LinkedIn Essentials for Technical Students
 
 <!--
 Today we’re talking about the incredible tool that is LinkedIn. I hope you’ve all made time to create or update your LinkedIn profile since our presentation about the Art of Networking because we’ll be using them later today. Please have your laptops out but closed until we get to that session. Let’s get to it!
