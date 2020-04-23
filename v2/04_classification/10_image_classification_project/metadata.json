@@ -7,9 +7,13 @@
   "slides": [
     "slides.md"
   ],
+  "duration": {
+    "slides.md": 30,
+    "colab.ipynb": 240
+  },
   "learning-objectives": [
-    "Discuss ethical implications of a model that involves medical decisions",
-    "Create a classification model end-to-end including parameter tuning and final validation"
+    "Discuss ethical implications of a model that involves medical decisions.",
+    "Create a classification model end-to-end, including parameter tuning and final validation."
   ],
   "resources": []
 }
