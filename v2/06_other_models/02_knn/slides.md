@@ -224,7 +224,9 @@ Image Details:
 * Large K -- > computationally expensive
 
 <!-- 
-One *****
+There is a balance when choosing K. If we choose K to be very small, say K=3, then outliers in our dataset may have a stronger influence over how we classify new points (i.e. noise has a strong influence). If we choose K too large, then it can be computationally expensive to find the K nearest neighbors everytime we want to classify a new datapoint. 
+
+Another thing to think about is the parity of K. For example, what may happen if we choose and even K for a binary classification problem? We may find that there is a tie (e.g. 2 red and 2 white in the 4 nearest neighbors of a new datapoint). But an even K isn't always bad. What if we had three classes, say cat, dog, and pig. If we choose K=3, then we could have 1 cat, 1 dog, and 1 pig in the 3 nearest neighbors. 
 
 -->
 
@@ -242,36 +244,41 @@ One *****
 * Use a clustering algorithm (Colabs to come!)
 * And more!
 
+<!-- 
+Here are a few of the common ways to choose K.
+-->
+
 ---
 
 ![](res/KNN16.png)
+
+<!-- 
+Here are a couple of different distance metrics you can use. 
+
+The choice is usually dependent on the type of feature variables have. If your features are continuous, then you may use the Euclidean distance (or Minkowski, or Manhattan). If your features are categorical, then a Hamming distance would be preferred (or cosine). 
+
+Image Details:
+* [KNN16.png](http://www.google.com): Copyright Google
+-->
 
 ---
 
 # When to use KNN?
 
-KNN is a “lazy learner” algorithm - it doesn’t learn a discriminative function from the training set (no generalization until query is made).
+KNN is a “lazy learner” algorithm - it doesn’t learn a function from the training set (no generalization until query is made).
 
 Use when:
 * Dataset is relatively small 
 * Dataset is relatively noise-free
 
----
-
-# Overfitting
-
-**QUESTION**:
-
-How might you run the risk of overfitting with KNN?
+<!-- 
+KNN doesn't learn a decision-making function from the training data. Instead, the algorithm is run each time we want to classify a new datapoint. 
+-->
 
 ---
 
-# Overfitting
+# Your Turn!
 
-![](res/KNN17.png)
-
----
-
-# Drawing decision boundary
-
-![](res/KNN18.png)
+<!-- 
+Let's take a look at the lab. 
+-->
