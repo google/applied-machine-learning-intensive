@@ -4,11 +4,18 @@
   "colabs": [
     "colab.ipynb"
   ],
+  "slides": [
+    "slides.md"
+  ],
+  "duration": {
+    "slides.md": 30,
+    "colab.ipynb": 240
+  },
   "resources": [],
   "materials": [],
   "learning-objectives": [
-    "Use OpenCV to process images and video",
-    "Use a pre-trained model to identify and label objects in each frame of a video",
-    "Make judgements about classification quality and when to apply predicted labels",
-  ],
+    "Use OpenCV to process images and video.",
+    "Use a pre-trained model to identify and label objects in each frame of a video.",
+    "Make judgments about classification quality and when to apply predicted labels."
+  ]
 }
