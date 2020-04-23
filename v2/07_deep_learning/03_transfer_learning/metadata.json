@@ -1,0 +1,16 @@
+{
+  "name": "Transfer Learning",
+  "handouts": [],
+  "colabs": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
+  ],
+  "learning-objectives": [
+    "Become familiar with PyTorch API",
+    "Learn fastai API",
+    "Implement CNN classifier with fastai",
+    "Learn how to use transfer learning with fastai",
+  ]
+}
