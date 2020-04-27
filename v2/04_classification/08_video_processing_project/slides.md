@@ -15,7 +15,7 @@ img[alt~="center"] {
 ## Identifying Cars in a Video
 
 <!--
-We are about to combine many of the skills that we have learned over the past few units. We will take a video file and a pre-trained model and we will build bounding boxes around items in each frame of the video.
+We are about to combine many of the skills we've learned over the past few units. We will take a video file and a pre-trained model and build bounding boxes around items in each frame of the video.
 -->
 
 ---
@@ -25,7 +25,7 @@ How is image data typically represented and stored? What are the features?
 
 <!--
 @Exercise(5 minutes) {
-Have students discuss the fact that images are simply pixels. There are different ways to represent pixels, but it's common to use RGB values that each range from 0 to 255. Each pixel is a feature. Be sure to remind them that image data can be challenging to work with because it is often very large. For example, a 12 megapixel image has 36,000,000 features. You may mention that grayscale is one way to cut down on the number of features. 
+Have students discuss the fact that images are simply pixels. There are different ways to represent pixels, but it's common to use RGB values that each range from 0 to 255. Each pixel is a feature. Remind them that image data can be challenging to work with because it is often very large. For example, a 12 megapixel image has 36,000,000 features. You may mention that grayscale is one way to cut down on the number of features. 
 }
 -->
 
@@ -60,9 +60,9 @@ Have students discuss the fact that they used TensorFlow to train a simple class
 <!--
 Now let's talk about the project for today! 
 
-Here you can see a single frame of a video showing a road with a bunch of cars. A machine learning model (like the one you will use) has identified many of the cars in the image and labeled them as "car." One was strangely labeled as a cell phone -- models are not perfect. 
+Here you can see a single frame of a video showing a road with a bunch of cars. A machine learning model, like the one you will use, has identified many of the cars in the image and labeled them as "car." One was strangely labeled as a cell phone. Clearly models are not perfect. 
 
-In this project, we will process a video frame-by-frame and create bounding boxes around items found in those images by the third-party model.
+In this project we will process a video frame-by-frame and create bounding boxes around items found in those images by the third-party model.
 
 Image Details:
 * [boxes.png](https://pixabay.com/videos/cars-motorway-speed-motion-traffic-1900/): Pixabay License
@@ -73,5 +73,5 @@ Image Details:
 # Your Turn
 
 <!--
-In this lab, you will exercise many of your Python and modelling skills. Let's go!
+In this lab you will exercise many of your Python and modeling skills. Let's get started!
 -->
