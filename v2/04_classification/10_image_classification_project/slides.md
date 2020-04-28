@@ -83,8 +83,8 @@ The images in the dataset are already divided into test, train, and validation s
 
 # Image Classification Project: Tips
 
-* You probably want to enable GPU
-* Make sure the dataset matches the documentation
+* You probably want to enable GPU.
+* Make sure the dataset matches the documentation.
 
 <!--
 First tip: enable GPU in Google Colab. This dataset tends to train significantly faster if you enable GPU in the runtime.
