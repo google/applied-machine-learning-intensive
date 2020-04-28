@@ -1,4 +1,4 @@
-# CD-10: Presenting with Confidence
+# Career Development: Presenting with Confidence
 
 <!--
 Today we’re talking about everyone’s favorite topic: public speaking! That was my attempt at a joke, as I know some people enjoy public speaking and a lot of people avoid it like the plague. 
