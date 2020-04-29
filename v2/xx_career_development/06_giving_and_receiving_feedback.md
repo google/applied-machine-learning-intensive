@@ -1,45 +1,45 @@
-# CD-06: Giving and Receiving Feedback
+# Career Develoment: Giving and Receiving Feedback
 
 <!--
-Today we’re talking about two absolutely critical professional skills: giving and receiving feedback. 
+Today we’ll discuss two absolutely critical professional skills: giving and receiving feedback. 
 
-[Give 1-2 anecdotes or reasons why giving and receiving feedback are topics you feel drawn to and why they’re critical skills.]
+*Give 1-2 anecdotes or reasons why giving and receiving feedback are important skills to develop.*
 
-These two skills can be challenging to get good at, and there is always room for improvement. When you leave this session you won’t be an expert on either (I’m certainly not), but you’ll have a broader understanding of why particular kinds of feedback are likely to have their desired effect and why some are not. I hope you’ll also leave with some helpful suggestions for more effectively receiving feedback, no matter who it comes from.
+It can be challenging to both give and receive feedback well, and there is always room for improvement. When you leave this session you won’t be an expert on either (I’m certainly not!), but you’ll have a broader understanding of why particular kinds of feedback are likely to have their desired effect and why others are not. I hope you’ll also leave with some helpful suggestions for more effectively receiving feedback, no matter who it comes from.
 
-I’d also like to call out that giving and receiving feedback can be emotional and feel personal at times. This session will be most meaningful if you share your perspectives and questions. What’s shared in this room, stays in this room.
+I’d also like to mention that giving and receiving feedback can be emotional and feel personal at times. This session will be most meaningful if you share your perspectives and questions. What’s shared within this group should stay within this group.
 
-Integrating the tips from this session will help you make the most of academic and professional work
+Integrating the tips from this session will help you make the most of academic and professional work.
 
-But first, grab the notecard on your desk and take out a pen or pencil. 
+But first, please take the notecard on your desk and a pen or pencil.
 -->
 
 ---
 
-# Journal: describe a time when...
+# Journal: Describe a Time When...
 
 … you received feedback from someone on how to improve at something, and it felt good.
 
 <!--
-Take the notecard in front of you and take two minutes to jot down some notes on the statement presented: describe a time when you received feedback from someone on how to improve at something, and it felt good. 
+Take the notecard in front of you and take two minutes to jot down some thoughts on the prompt: describe a time when you received feedback from someone on how to improve at something, and it felt good. 
 
-[Ask for volunteers: What made it feel good?]
+*Ask for volunteers: What made it feel good?*
 
 Clearly there are ways to suggest improvements that are well-received and can lead to meaningful change.
 -->
 
 ---
 
-# Journal: describe a time when...
+# Journal: Describe a Time When...
 
 … you received feedback from someone on how to improve at something, and it felt bad or was not helpful.
 
 <!--
-Turn the notecard over and take two minutes to jot down some notes on the statement presented: describe a time when you received feedback from someone on how to improve at something, and it felt bad or was not helpful.
+Turn the notecard over and take two minutes to jot down some thoughts on this next prompt: describe a time when you received feedback from someone on how to improve at something, and it felt bad or was not helpful.
 
-[Ask for volunteers: What made it feel bad or made it unhelpful?]
+*Ask for volunteers: What made it feel bad or made it unhelpful?*
 
-Clearly there are ways people choose to deliver feedback that cause other people to ignore the feedback, shut down, and/or lose some faith in them as a colleague, boss, or peer. Sometimes it’s all in how someone chooses to say the same thing in one way instead of another.
+Clearly there are ways people deliver feedback that cause the receiver to ignore the feedback, shut down, and/or lose some faith in them as a colleague, boss, or peer. Sometimes *how* someone says something can make a tremendous difference in whether or not the person welcomes and integrates the feedback.
 -->
 
 ---
@@ -52,12 +52,12 @@ Clearly there are ways people choose to deliver feedback that cause other people
 * Feedback exercise
 
 <!--
-We’re going to start by discussing growth mindset, and then we’ll go into best practices for both giving and receiving feedback in constructive ways. We’ll close out by putting these to use with some practice and talking about how we’ll be using these skills throughout the rest of the AMLI program.
+We’ll start by discussing growth mindset, and then we’ll dive into best practices for both giving and receiving feedback in constructive ways. We’ll close by putting these to use with some practice.
 -->
 
 ---
 
-# Developing a growth mindset
+# Developing a Growth Mindset
 
 * Growth mindset vs. fixed mindset 
 * Shift the focus from a fixed mindset of “being good” to a growth mindset of “getting better”
@@ -70,7 +70,7 @@ We’re going to start by discussing growth mindset, and then we’ll go into be
 
 ---
 
-# Growth vs. Fixed mindset
+# Growth vs. Fixed Mindset
 
 **Growth mindset:**
 
@@ -101,12 +101,14 @@ We’re going to start by discussing growth mindset, and then we’ll go into be
 .
 
 <!--
-These are the differences between growth mindset and fixed mindset. “In a growth mindset, people believe that their most basic abilities can be developed through dedication and hard work—brains and talent are just the starting point. This view creates a love of learning and a resilience that is essential for great accomplishment.” The opposite is a fixed mindset. In a fixed mindset, people think their intelligence and talents are fixed traits, or characteristics they were born with. People with a fixed mindset are likely to believe talent alone creates success and concern themselves with what they’re good at instead of developing skills to improve. Significant research supports the assertion that we are capable of growing our intelligence and skills much like we’re capable of growing and building physical muscles in our body. Teams that operate with a growth mindset work better together, have open discussions, and feel they can surface disagreements in a safe space. Teams that work with a fixed mindset were often anxious about how their ideas would be received and worried about being judged as smart or dumb.
+These are the differences between growth mindset and fixed mindset. If someone has a growth mindset, they think their talents and abilities can be improved through working hard and seeking to grow in a particular area. This view sparks a desire to learn and the buoyancy to persist when challenged. The opposite is a fixed mindset. In a fixed mindset, people think their intelligence and talents are fixed traits, or characteristics they were born with. People with a fixed mindset are likely to believe innate talents alone create success and concern themselves with what they’re good at instead of developing skills to improve. 
+
+Significant research supports the assertion that we are capable of growing our intelligence and skills much like we’re capable of growing and building physical muscles in our body. Teams that operate with a growth mindset work better together, have open discussions, and feel they can surface disagreements in a safe space. Teams that work with a fixed mindset are often anxious about how their ideas would be received and worried about being judged as either smart or dumb.
 -->
 
 ---
 
-# Best practices for giving feedback
+# Best Practices for Giving Feedback
 
 ![](res/feedback02.png)
 
@@ -121,7 +123,7 @@ Are there other best practices you can think of?
 ![](res/feedback03.png)
 
 <!--
-Let’s apply those best practices to some examples. What’s the difference between the two pieces of feedback shown here? [Elicit student contributions and respond.]
+Let’s apply those best practices to some examples. What’s the difference between the two pieces of feedback shown here? 
 
 Truly helpful: “I” statement, behavior- and observation-focused, balanced, looking toward the future
 Er...not so helpful…: person-focused, vague, unkind, entirely critical, “you” statements
@@ -132,7 +134,7 @@ Er...not so helpful…: person-focused, vague, unkind, entirely critical, “you
 ![](res/feedback04.png)
 
 <!--
-What about this one? [Elicit student contributions and respond.]
+What about this one? What’s the difference between the two pieces of feedback shown here? 
 
 Truly helpful: “I” statement, behavior- and observation-focused, balanced, looking toward the future
 Er...not so helpful…: person-focused, vague, unkind, entirely critical, “you” statements
@@ -143,7 +145,7 @@ Er...not so helpful…: person-focused, vague, unkind, entirely critical, “you
 ![](res/feedback05.png)
 
 <!--
-Here’s a last example. What do you think? [Elicit student contributions and respond.]
+Here’s a last example. What do you think? 
 
 Truly helpful: “I” statement, behavior- and observation-focused, balanced, looking toward the future
 Er...not so helpful…: person-focused, vague, unkind, entirely critical, “you” statements
@@ -151,7 +153,7 @@ Er...not so helpful…: person-focused, vague, unkind, entirely critical, “you
 
 ---
 
-# Your turn!
+# Your Turn!
 
 Imagine you’re working with a fellow student on a research project that involves emailing professors to ask them to fill out a survey about their professional paths. Your teammate’s email template includes several run-on sentences and sentences with comma splices instead of accurate punctuation.
 
@@ -159,20 +161,19 @@ Imagine you’re working with a fellow student on a research project that involv
 One of you share a helpful piece of feedback for the teammate. The other share unhelpful feedback.**
 
 <!--
-[Ask a student to read the first paragraph.]
+
+*Ask a student to read the first paragraph.*
 
 Now turn to the person next to you or find a partner sitting elsewhere. One of you share a HELPFUL piece of feedback for this teammate. The other person share an UNHELPFUL piece of feedback. We’ll gather back together and share some examples in 2-3 minutes.
 
-[Circulate around the room, listening for student examples to repeat or ask them to say aloud when the group gets back together.]
-
 Ok, let’s go over some examples! Who wants to share?
 
-[Elicit and respond to student examples. Point out where students have applied specific elements to helpful and unhelpful feedback to their responses.]
+*Point out where students have applied specific elements to helpful and unhelpful feedback to their responses.*
 --> 
 
 ---
 
-**Giving feedback recap** {.big}
+# Giving Feedback Recap
 
 * Kind {.big}
 * Helpful {.big}
@@ -181,12 +182,12 @@ Ok, let’s go over some examples! Who wants to share?
 * Observation-based {.big}
 
 <!--
-To summarize, good constructive feedback is kind, specific, helpful, forward -focused, and observation-based. It doesn’t dwell on the past, it’s not all negative, and it doesn’t focus on the person.
+To summarize, good constructive feedback is kind, specific, helpful, forward-focused, and observation-based. It doesn’t dwell on the past, it’s not all negative, and it doesn’t focus on the person.
 -->
 
 ---
 
-# Receive feedback effectively
+# Receive Feedback Effectively
 
 * Feedback is a gift; the alternative is silence
 * It’s natural to get defensive, shut down, or extrapolate when receiving feedback
@@ -196,15 +197,19 @@ To summarize, good constructive feedback is kind, specific, helpful, forward -fo
 
 <!--
 * It’s not always easy to be open to constructive feedback, and that’ll probably be the understatement of the day. 
-What do you find difficult about receiving critical feedback? [Elicit student contributions and respond to them.]
-One way to become more open to developmental feedback is to think of feedback as a gift. Feedback is a way for people to show investment in you and your growth and development. The alternative is silence. If people -- whether they’re family members or roommates or colleagues -- were NOT interested in seeing you reach your potential in some way, they could always say nothing when you could be doing better OR when you’re doing great! Feedback very often comes from a place of wanting to see you succeed or be an improved version of yourself in some way. It’s best to think of that way way. Be grateful as best as you’re able and say thank you.
-* Also, many of us either get defensive or shut down when receiving feedback. Sometimes we can extrapolate from a small piece of feedback and assume we are terrible or incapable of improving at something. For example, the advertising executive quoted in the prep article you read said when he heard his boss make an offhand joke about his lack of professionalism, he said he was flooded with shame and “all his failings rush to mind, as if he were Googling ‘things wrong with me’ and getting 1.2 million hits, with sponsored ads from his father and his ex. In this state it’s hard to see the feedback at ‘actual size.’” But now that Michael understands his standard operating procedure, he’s able to make better choices about where to go from there: He said he’s now able to reassure himself that he’s exaggerating, and usually after he sleeps on it, he’s in a better place to figure out whether there’s something he can learn. He’s learned what he needs to do to appropriately and constructively ingest and make use of the feedback given to him.
+
+What do you find difficult about receiving critical feedback? 
+
+* One way to become more open to developmental feedback is to think of feedback as a gift. Feedback is a way for people to show investment in you. The alternative is silence. If people (family members, roommates, or colleagues) were not interested in seeing you reach your potential in some way, they could always say nothing when you could be doing better -- or when you’re doing great. Feedback very often derives from someone wanting to see you succeed or improve at something. It’s best to think of that way way. Be grateful as best as you’re able and say thank you.
+* Also, many of us can get defensive or shut down when receiving feedback. Sometimes we extrapolate from a small piece of feedback and assume we are not good or incapable of improving at something. For example, the advertising executive quoted in the prep article you read said when he heard his boss make an offhand joke about his lack of professionalism, he said he was flooded with shame and “all his failings rush to mind, as if he were Googling ‘things wrong with me’ and getting 1.2 million hits, with sponsored ads from his father and his ex. In this state it’s hard to see the feedback at ‘actual size.’” But now that Michael understands his standard operating procedure, he’s able to make better choices about where to go from there. He said he’s now able to reassure himself that he’s exaggerating, and usually after he sleeps on it, he’s in a better place to figure out whether there’s something he can learn. He’s learned what he needs to do to appropriately and constructively ingest and make use of the feedback given to him.
 * Another tip is to work to separate the feedback from the person giving it. If the feedback is on target and the advice is wise, it shouldn’t matter who’s delivering it. But it does. Often our feelings about the feedback giver (or how, when, where he delivered the comments) can override the feedback itself. It’s best to attempt to view feedback on its own. You don’t have to apply every piece of feedback you receive, but it would be foolish to rule out a good piece of advice because of some grievance regarding the person giving it.
+
+Source: 
 -->
 
 ---
 
-# Some helpful frames for responding to feedback:
+# Some Helpful Frames for Responding to Feedback:
 
 
 * *“Thank you for the feedback.”*
@@ -226,7 +231,7 @@ Don’t forget to ask for feedback! As you read in the HBR article, research sho
 
 ---
 
-# Feedback exercise
+# Feedback Exercise
 
 Think of one personal or academic situation where you’d like some feedback or advice, taking 1-2 sentences to describe.  
 
@@ -246,7 +251,7 @@ This is meant to be a fun exercise with an easy-to-describe example. I might say
 
 ---
 
-# Feedback exercise debrief
+# Feedback Exercise Debrief
 
 * What was this experience like? 
 * Can you give me one word to describe it?
@@ -259,7 +264,7 @@ How many of you heard at least one piece of feedback that you liked and might wa
 The most common word that comes up is “fun” -- not painful, not uncomfortable or embarrassing. It’s fun because it shows good ideas can come from everyone around you. They don’t have to be an expert. Focusing on the future feels good. There’s no need to nitpick ideas from others. Just listen and take what you think is useful.
 -->
 
-# Looking ahead
+# Looking Ahead
 
 * Our capabilities are not fixed. We’re always growing if we work to improve.
 * Feedback is a gift.
