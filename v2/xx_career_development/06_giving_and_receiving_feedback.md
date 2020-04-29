@@ -16,7 +16,7 @@ But first, please take the notecard on your desk and a pen or pencil.
 
 ---
 
-# Journal: Describe a Time When...
+# Warm-up: Describe a Time When...
 
 … you received feedback from someone on how to improve at something, and it felt good.
 
@@ -30,7 +30,7 @@ Clearly there are ways to suggest improvements that are well-received and can le
 
 ---
 
-# Journal: Describe a Time When...
+# Warm-up: Describe a Time When...
 
 … you received feedback from someone on how to improve at something, and it felt bad or was not helpful.
 
@@ -196,7 +196,7 @@ To summarize, good constructive feedback is kind, specific, helpful, forward-foc
 * Work to separate the feedback from the person providing it
 
 <!--
-* It’s not always easy to be open to constructive feedback, and that’ll probably be the understatement of the day. 
+It’s not always easy to be open to constructive feedback, and that’ll probably be the understatement of the day. 
 
 What do you find difficult about receiving critical feedback? 
 
@@ -204,13 +204,12 @@ What do you find difficult about receiving critical feedback?
 * Also, many of us can get defensive or shut down when receiving feedback. Sometimes we extrapolate from a small piece of feedback and assume we are not good or incapable of improving at something. For example, the advertising executive quoted in the prep article you read said when he heard his boss make an offhand joke about his lack of professionalism, he said he was flooded with shame and “all his failings rush to mind, as if he were Googling ‘things wrong with me’ and getting 1.2 million hits, with sponsored ads from his father and his ex. In this state it’s hard to see the feedback at ‘actual size.’” But now that Michael understands his standard operating procedure, he’s able to make better choices about where to go from there. He said he’s now able to reassure himself that he’s exaggerating, and usually after he sleeps on it, he’s in a better place to figure out whether there’s something he can learn. He’s learned what he needs to do to appropriately and constructively ingest and make use of the feedback given to him.
 * Another tip is to work to separate the feedback from the person giving it. If the feedback is on target and the advice is wise, it shouldn’t matter who’s delivering it. But it does. Often our feelings about the feedback giver (or how, when, where he delivered the comments) can override the feedback itself. It’s best to attempt to view feedback on its own. You don’t have to apply every piece of feedback you receive, but it would be foolish to rule out a good piece of advice because of some grievance regarding the person giving it.
 
-Source: 
+Source: https://hbr.org/2014/01/find-the-coaching-in-criticism
 -->
 
 ---
 
 # Some Helpful Frames for Responding to Feedback:
-
 
 * *“Thank you for the feedback.”*
 * *“I appreciate your suggestion. Thank you for taking time to make it.”*
@@ -222,11 +221,11 @@ Source:
 <!--
 Here are some helpful frames for how to receive feedback in the moment. 
 
-If you know it’s your tendency to get defensive or shut down when receiving critical feedback, sometimes it’s best to ask for some time to digest before responding. If the person giving the feedback is your boss, this can be especially wise, as it’s important to preserve your relationship with that person and not say things you’ll come to regret. Granted, this extra time isn’t always possible, but it’s worth asking if you can receive your performance review in writing the day before you meet with your boss or put other similar structures in place.
+If you know you tend to get defensive or shut down when receiving critical feedback, sometimes it’s best to ask for time to digest before responding. If the person giving the feedback is your boss, this can be especially wise, as it’s important to preserve your relationship with that person and not say things you’ll regret. Granted, this extra time isn’t always possible. But if you're able to receive your yearly performance review in writing the day before you meet with your boss, why not ask for it?
 
 Don’t forget to ask for feedback! As you read in the HBR article, research shows people who explicitly seek critical feedback tend to get higher performance ratings. This is probably because someone who’s asking for coaching is likely to take what is said and genuinely improve. Asking for feedback also communicates you have humility, respect, a desire to achieve, and confidence.
 
-[Can you think of a time you’ve asked for constructive feedback preemptively?]
+Can you think of a time you’ve asked for constructive feedback preemptively?
 -->
 
 ---
@@ -244,9 +243,9 @@ Think of one personal or academic situation where you’d like some feedback or 
 <!--
 Let’s put this into practice!
 
-[Ask a student to read the slide.]
+*Ask student to read the on-screen directions.*
 
-This is meant to be a fun exercise with an easy-to-describe example. I might say, “My situation is that I take forever to put my clothes away after doing laundry. How can I do better?” OR “I munch on snacks right before dinner, a very bad habit. How can I do better?” OR “I often let personal emails slip deep into my inbox before I’m able to respond, and then I can’t find them. How do I do better?” The point is to proactively ask for feedback from others to benefit our own personal growth. Feedback should be constructive, forward-thinking, and kind. Remember, we’re looking ahead. It’s not, “what have I been doing wrong?” It’s “how can I do better?” Eight minutes --- go!
+This is meant to be a fun exercise with an easy-to-describe example. I might say, “My situation is that I take forever to put my clothes away after doing laundry. How can I do better?” or “I munch on snacks right before dinner, a very bad habit. How can I do better?” or “I often let personal emails slip deep into my inbox before I’m able to respond, and then I can’t find them. How do I do better?” The point is to proactively ask for feedback from others to benefit our own personal growth. Feedback should be constructive, forward-thinking, and kind. Remember, we’re looking ahead. It’s not, “what have I been doing wrong?” It’s “how can I do better?” Take eight minutes starting now.
 -->
 
 ---
@@ -259,9 +258,7 @@ This is meant to be a fun exercise with an easy-to-describe example. I might say
 <!--
 How many of you heard at least one piece of feedback that you liked and might want to try? What was this experience like in one word?
 
-[Elicit student contributions and respond to them.]
-
-The most common word that comes up is “fun” -- not painful, not uncomfortable or embarrassing. It’s fun because it shows good ideas can come from everyone around you. They don’t have to be an expert. Focusing on the future feels good. There’s no need to nitpick ideas from others. Just listen and take what you think is useful.
+The most common word that comes up is “fun." It's not painful, not uncomfortable or embarrassing. The most common word students say is fun because it shows good ideas can come from everyone around you. They don’t have to be an expert. Focusing on the future feels good. There’s no need to nitpick ideas from others. Just listen and take what you think is useful.
 -->
 
 # Looking Ahead
@@ -270,17 +267,12 @@ The most common word that comes up is “fun” -- not painful, not uncomfortabl
 * Feedback is a gift.
 * Good feedback is kind, helpful, specific, forward-focused, and observation-based.
 * Ask, “How can I do better?” Not, “What have I been doing wrong?”
-* [insert opportunities for feedback]
+* *insert opportunities for feedback, if relevant*
 
 <!--
-Let’s recap what we’ve gone over today and look ahead at some opportunities for giving and receiving feedback. 
+Let’s recap what we’ve gone over today.
 
-[Ask students to go over the first four points. Then share what opportunities students will have to give and receive feedback
-
-OPTIONAL: There are three upcoming feedback applications to highlight:
-Design Reviews -- Staff and/or visiting mentors will soon provide feedback and guidance on their project design docs.
-Tech Talks feedback - you’ll give a talk (TBD), and peers will write constructive feedback for you.
-Project Partner feedback -- During Week 7/8, your project partners will share what you did well and offer suggestions for personal growth
+*Ask 1-4 students to read the on-screen summary points. If there are forthcoming opportunities for students to practice giving and/or receiving feedback, list them on this slide and mention them here.
 -->
 
 ---
