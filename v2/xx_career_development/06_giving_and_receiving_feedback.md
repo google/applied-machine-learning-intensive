@@ -1,4 +1,4 @@
-# Career Develoment: Giving and Receiving Feedback
+# Career Development: Giving and Receiving Feedback
 
 <!--
 Today we’ll discuss two absolutely critical professional skills: giving and receiving feedback. 
@@ -74,7 +74,7 @@ We’ll start by discussing growth mindset, and then we’ll dive into best prac
 
 **Growth mindset:**
 
-* "Failture is an opportunity to grow."
+* "Failure is an opportunity to grow."
 * "I can learn to do anything I want."
 * "Challenges help me to grow."
 * "My effort and attitude determine my abilities."
@@ -93,7 +93,7 @@ We’ll start by discussing growth mindset, and then we’ll dive into best prac
 * "My abilities are unchanging."
 * "I can either do it or I can't."
 * "My potential is predetermined."
-* "I don't like to be challened."
+* "I don't like to be challenged."
 * "When I'm frustrated, I give up."
 * "Feedback and criticism are personal."
 * "I stick to what I know."
@@ -200,7 +200,7 @@ It’s not always easy to be open to constructive feedback, and that’ll probab
 
 What do you find difficult about receiving critical feedback? 
 
-* One way to become more open to developmental feedback is to think of feedback as a gift. Feedback is a way for people to show investment in you. The alternative is silence. If people (family members, roommates, or colleagues) were not interested in seeing you reach your potential in some way, they could always say nothing when you could be doing better -- or when you’re doing great. Feedback very often derives from someone wanting to see you succeed or improve at something. It’s best to think of that way way. Be grateful as best as you’re able and say thank you.
+* One way to become more open to developmental feedback is to think of feedback as a gift. Feedback is a way for people to show investment in you. The alternative is silence. If people (family members, roommates, or colleagues) were not interested in seeing you reach your potential in some way, they could always say nothing when you could be doing better -- or when you’re doing great. Feedback very often derives from someone wanting to see you succeed or improve at something. It’s best to think of it that way. Be grateful as best as you’re able and say thank you.
 * Also, many of us can get defensive or shut down when receiving feedback. Sometimes we extrapolate from a small piece of feedback and assume we are not good or incapable of improving at something. For example, the advertising executive quoted in the prep article you read said when he heard his boss make an offhand joke about his lack of professionalism, he said he was flooded with shame and “all his failings rush to mind, as if he were Googling ‘things wrong with me’ and getting 1.2 million hits, with sponsored ads from his father and his ex. In this state it’s hard to see the feedback at ‘actual size.’” But now that Michael understands his standard operating procedure, he’s able to make better choices about where to go from there. He said he’s now able to reassure himself that he’s exaggerating, and usually after he sleeps on it, he’s in a better place to figure out whether there’s something he can learn. He’s learned what he needs to do to appropriately and constructively ingest and make use of the feedback given to him.
 * Another tip is to work to separate the feedback from the person giving it. If the feedback is on target and the advice is wise, it shouldn’t matter who’s delivering it. But it does. Often our feelings about the feedback giver (or how, when, where he delivered the comments) can override the feedback itself. It’s best to attempt to view feedback on its own. You don’t have to apply every piece of feedback you receive, but it would be foolish to rule out a good piece of advice because of some grievance regarding the person giving it.
 
@@ -214,7 +214,7 @@ Source: https://hbr.org/2014/01/find-the-coaching-in-criticism
 * *“Thank you for the feedback.”*
 * *“I appreciate your suggestion. Thank you for taking time to make it.”*
 * *“To clarify my understanding… [ask question about feedback]..?”*
-* *“Thank you. I’d like to think about what you’ve shared with me before I respond. Could I get 10-15 minutes with you tomorrow after I’ve had some time think this this over?”*
+* *“Thank you. I’d like to think about what you’ve shared with me before I respond. Could I get 10-15 minutes with you tomorrow after I’ve had some time to think this over?”*
 * *“I value your feedback and hadn’t thought of it that way. Thank you.”*
 * … don’t forget that you can ask for feedback and should! 
 
