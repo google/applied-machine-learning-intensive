@@ -1,11 +1,11 @@
 # Career Development: Presenting with Confidence
 
 <!--
-Today we’re talking about everyone’s favorite topic: public speaking! That was my attempt at a joke, as I know some people enjoy public speaking and a lot of people avoid it like the plague. 
+Today we’re talking about everyone’s favorite topic: public speaking. That was my attempt at a joke. I'm sure some of you enjoy public speaking and maybe others avoid it like the plague. 
 
-Presenting with confidence is a critical skill though. Your career will hopefully provide opportunities to give presentations to your team, at professional conferences, and/or in academic settings. Being an effective presenter gives you credibility and visibility across all of those environments. Furthermore, hard work can be overlooked or under-appreciated  if we don’t convey our ideas and work products in a clear, understandable, compelling way. 
+Presenting with confidence is a critical skill, though. Your career will hopefully provide opportunities to give presentations to your team, at professional conferences, and/or in academic settings. Being an effective presenter gives you credibility and visibility across all of those environments. Furthermore, hard work can be overlooked or under-appreciated  if we don’t convey our ideas and work products in a clear, understandable, compelling way. 
 
-[Feel free to share any anecdote or personal story about why presenting with confidence is such an important skill.]
+*Share any anecdote or personal story about why presenting with confidence is such an important skill.*
 
 But being a strong presenter takes time to learn and practice. So I hope no matter where you are in your experience with presenting with confidence, you can take a few tips and some extra experience from today’s session.
 -->
@@ -41,7 +41,7 @@ The two main components of giving a presentation are the content - what you say 
 
 ---
 
-# Content: go from good to great! 
+# Content: Go From Good to Great!
 
 * Know your audience
 * Tell a story
@@ -62,7 +62,7 @@ Finally, it’s important to summarize the main points of your presentation -- a
 
 ---
 
-# Delivery: the four Ps of presenting 
+# Delivery: The Four Ps of Presenting 
 
 ![](res/presentconfidence02.png)
 
@@ -71,7 +71,7 @@ Next up is delivery, or, how you get the content across to your audience.
 
 Pitch or ‘musicality’ has to do with the note with which we pitch a word or phrase. Steering away from a monotone and varying your pitch when appropriate grabs attention and emphasizes what you want to express. It also helps convey the urgency or novelty of what you’re saying. 
 
-Pace is the speed at which you talk. The pace is also helpful drive emphasis. For instance, when you want to highlight an important point, slow down and speak distinctly.
+Pace is the speed at which you talk. Pace can also be helpful to drive emphasis. For instance, when you want to highlight an important point, slow down and speak distinctly.
 
 Next is power. Regardless of whether you speak quietly or loudly in day-to-day conversation, being able to project your voice while presenting is a clear sign of confidence. It is impossible to ‘whisper’ and still be heard.
 
@@ -82,7 +82,7 @@ Which of these is something you think your presentation skills should improve on
 
 ---
 
-# Content, delivery, and create: make it visually appealing 
+# Content, Delivery, Creation:
 
 ![](res/presentconfidence03.png)
 
@@ -164,7 +164,7 @@ Let’s do a brief activity and then put these presentation guidelines into prac
 
 ---
 
-Activity {.big}
+**Activity** {.big}
 
 <!--
 [Do NOT click until all the text appears. When this slide appears, only the first two lines will be visible. That text is all students should see until you give the first instructions and allow them time to read the values and underline the 10 that are most important to them. Provide 3-5 minutes.]
@@ -185,7 +185,7 @@ So, why two values, you may ask? Researcher, public speaker, social worker, and 
 
 [Facilitator should feel free to share their own two values here.]
 
-Does anyone want to share what 1 or 2 of their values are? [Solicit students contributions and respond to each, thanking them for sharing.]
+Does anyone want to share what 1 or 2 of their values are? [Solicit students' contributions and respond to each, thanking them for sharing.]
 -->
 
 ---
@@ -206,14 +206,14 @@ Does anyone want to share what 1 or 2 of their values are? [Solicit students con
 <!--
 Now, we’re going to share these values in a brief presentation to a partner. (We’ll also revisit these values in our next career development session, so don’t forget what you chose!)
 
-[Ask a student to read the instructions aloud.]
+*Ask a student to read the instructions aloud.*
 
 Questions before we get started? 
 -->
 
 ---
 
-Practice {.big}
+**Practice** {.big}
 
 * Introduce yourself and your topic
   * Hello, my name is ____ and today I’ll be talking about ____.
@@ -227,19 +227,20 @@ Practice {.big}
  <!--
 Here’s one way you can structure your presentation, but feel free to be creative. Note that this isn’t a likely a place for data, but I wanted to include it as a method of supporting a main point.
 
-[If desired, facilitator can share an example presentation before releasing students.]
+*If desired, facilitator can share an example presentation before releasing students.*
 
-[Flip back to previous slide so those instructions are displayed for students as they work. Give students 10 minutes total for this entire exercise, letting them know when they should transition from preparing the presentations to giving them and switching between partners.]
+*Flip back to previous slide so those instructions are displayed for students as they work. Give students 10 minutes total for this entire exercise, letting them know when they should transition from preparing the presentations to giving them and switching between partners.*
 -->
 
 ---
 
-# Any volunteers?
+# Any Volunteers?
 
 ![](res/presentconfidence04.jpg)
 
 <!--
-[After students have presented to their partners and given and received feedback, ask if anyone would like to present to the class. Thank students who volunteer. Move on to closing if no one volunteers or if running short on time.]
+
+*After students have presented to their partners and given and received feedback, ask if anyone would like to present to the class. Thank students who volunteer. Move on to closing if no one volunteers or if running short on time.*
 
 What was this experience like for you? Which of the best practices we went over were difficult to apply? What did you or your partner do particularly well? What would you work to improve if you gave this presentation again?
 -->
@@ -251,7 +252,7 @@ What was this experience like for you? Which of the best practices we went over 
 <!--
 Thank you all so much for engaging in this session and sharing about yourselves in these presentations. We are going to revisit these two values in our next session about the offer process, so remember what you’ve selected. 
 
-As I mentioned in the beginning of this presentation, becoming a presenter takes time and involves significant, frequent practice. I hope you’ve taken something from today’s session that you can apply to your project presentations and other presentations you give in the future. What remaining questions do you have? [Solicit student questions/comments, and respond to each.]
+As I mentioned in the beginning of this presentation, becoming a presenter takes time and involves significant, frequent practice. I hope you’ve taken something from today’s session that you can apply to your project presentations and other presentations you give in the future. What remaining questions do you have?
 -->
 
 ---
