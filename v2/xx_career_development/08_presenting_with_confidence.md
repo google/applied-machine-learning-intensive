@@ -3,7 +3,7 @@
 <!--
 Today we’re talking about everyone’s favorite topic: public speaking. That was my attempt at a joke. I'm sure some of you enjoy public speaking and maybe others avoid it like the plague. 
 
-Presenting with confidence is a critical skill, though. Your career will hopefully provide opportunities to give presentations to your team, at professional conferences, and/or in academic settings. Being an effective presenter gives you credibility and visibility across all of those environments. Furthermore, hard work can be overlooked or under-appreciated  if we don’t convey our ideas and work products in a clear, understandable, compelling way. 
+Presenting with confidence is a critical skill, though. Your career will hopefully provide opportunities to give presentations to your team, at professional conferences, and/or in academic settings. Being an effective presenter gives you credibility and visibility across all of those environments. Furthermore, hard work can be overlooked or under-appreciated if presenters don’t convey their ideas and work products in clear, understandable, and compelling ways.
 
 *Share any anecdote or personal story about why presenting with confidence is such an important skill.*
 
@@ -36,7 +36,7 @@ We’ll start by going over what makes a successful presentation: content, deliv
 ![](res/presentconfidence01.jpg)
 
 <!--
-The two main components of giving a presentation are the content - what you say - and the delivery - how you say it.
+The two main components of giving a presentation are the content (what you say) and the delivery (how you say it).
 -->
 
 ---
@@ -49,15 +49,15 @@ The two main components of giving a presentation are the content - what you say 
 * Summarize main points
 
 <!--
-First, the content, which is everything you say, display, or show in your presentation. 
+First let's discuss content, which is everything you say, display, or show in your presentation. 
 
-No matter what information you’re sharing, it’s important you tailor it to your audience. If the information you’re presenting to a non-technical or mixed audience is too technical or not well-explained, your audience is likely to tune out. Increase the likelihood that your presentation will be engaging and well-received by your audience by tailoring your slide design, verbiage, and content to them.
+No matter what information you’re sharing, it’s important you tailor it to your audience. If the information you’re presenting to a non-technical or mixed audience is too technical or not well-explained, your audience is likely to tune out. Increase the likelihood that your presentation will be engaging and well-received by tailoring your slide design, verbiage, and content to them.
 
 Second, using examples is a great way to tell a story that keeps your audience engaged. People remember how stories illuminated a particular point better than they will if just the point is presented.
 
 Third, try to maintain a logical progression of ideas, keeping in mind the main purpose of the presentation. When possible, provide an agenda. With long presentations, it’s a good idea to benchmark your progress or potentially create different sections so the audience knows where you are in the presentation. 
 
-Finally, it’s important to summarize the main points of your presentation -- at the end of any presentation and throughout different sections if the presentation is 30 or more minutes.
+Finally, it’s important to summarize the main points of your presentation at the end of any presentation and throughout different sections if the presentation is 30 or more minutes.
 -->
 
 ---
@@ -75,9 +75,9 @@ Pace is the speed at which you talk. Pace can also be helpful to drive emphasis.
 
 Next is power. Regardless of whether you speak quietly or loudly in day-to-day conversation, being able to project your voice while presenting is a clear sign of confidence. It is impossible to ‘whisper’ and still be heard.
 
-Pausing allows you time to think and also be effectively used to create anticipation. Sometimes, silence can get people’s attention more than speaking. It also allows sufficient time for an audience to fully absorb your message.
+Pausing allows you time to think, and it can be effectively used to create anticipation. Sometimes silence can get people’s attention more than speaking. It also allows sufficient time for an audience to fully absorb your message.
 
-Which of these is something you think your presentation skills should improve on? Or what do you feel like you do well? [Solicit student contributions, and respond to each.]
+Which of these is something you think your presentation skills should improve on? Or what do you feel like you do well?
 -->
 
 ---
@@ -93,7 +93,7 @@ It’s important that your slides, tone, and overall presentation are consistent
 
 A presentation should be a simple representation of pieces of information. It only acts as a visual aid to the broader story, project, or conversation. Therefore, the key points in this deck would be explained verbally in a presentation rather than all piled onto a slide.
 
-For all slides, apply the 3-second rule. People should be able to glean what you’re getting at on the slide within three seconds or less.
+For all slides, apply the 3-second rule. People should be able to glean the point you're trying to convey on a slide within three seconds or less.
 -->
 
 ---
@@ -117,13 +117,13 @@ Record yourself when you practice so you can see what the audience will see. Loo
 
 Avoid using comfort/filler words like “um, like, y’know.” This is often subconscious. We don’t always realize when or how often we use fillers, which is another great reason to record yourself practicing.
 
-Fidgeting, like touching your hair, fiddling with your clothes, etc. is very distracting for the audience. Some people roll up a piece of paper or pull on their badge. Work on it if you know you have something like that.
+Fidgeting, like touching your hair, fiddling with your clothes, etc., is very distracting for the audience. Some people roll up a piece of paper or pull on their work badge. Work on it if you know you have something like that.
 
-A key part of presenting with confidence is engaging with your audience. You don’t want to exclude them from the presentation by avoiding eye contact or looking at the floor. Rotate who you make eye contact with to help keep people engaged. Ask them questions, engage them in what you’re doing.
+A key part of presenting with confidence is engaging with your audience. You don’t want to exclude them from the presentation by avoiding eye contact or looking at the floor. Rotate who you make eye contact with to help keep people engaged. Ask them questions, and engage them in what you’re doing.
 
 Don’t speed through your presentation. Your audience wants to hear what you have to say, and it is more inclusive of different kinds of learners and people with varying levels of English language acquisition to speak clearly and not too fast.
 
-Which of these do you fall victim to? [Solicit student responses, and respond to each.]
+Which of these do you fall victim to? 
 -->
 
 ---
@@ -138,9 +138,9 @@ Which of these do you fall victim to? [Solicit student responses, and respond to
 * Record your practice 
 
 <!--
-Take a moment to read over some main points thus far. [Ask a student to read aloud if you’d like.] Also, here’s me putting to use the suggestion to recap for the audience!
+Take a moment to read over some main points thus far. Also, here’s me putting to use the suggestion to recap for the audience!
 
-What questions or comments do you have about the content we’ve covered so far? [Solicit student contributions, and respond to each.]
+What questions or comments do you have about the content we’ve covered so far? 
 -->
 
 ---
@@ -148,7 +148,7 @@ What questions or comments do you have about the content we’ve covered so far?
 # Activity + Practice 
 
 <!--
-Let’s do a brief activity and then put these presentation guidelines into practice!
+Let’s do a brief activity and then put these presentation suggestions into practice!
 
 [Pass out list of values handout.]
 -->
@@ -159,33 +159,30 @@ Let’s do a brief activity and then put these presentation guidelines into prac
 
 * Read the list of values in front of you
 * Underline the 10 values that resonate with you most
-* Star 5 of those 10 values that are most important to you *
-* Finally, circle 2 of those 5 values that feel like your most core values, those you can’t separate yourself from 
+* Star five of those 10 values that are most important to you *
+* Finally, circle two of those five values that feel like your most core values, those you can’t separate yourself from 
 
 ---
 
 **Activity** {.big}
 
 <!--
-[Do NOT click until all the text appears. When this slide appears, only the first two lines will be visible. That text is all students should see until you give the first instructions and allow them time to read the values and underline the 10 that are most important to them. Provide 3-5 minutes.]
+
+*Ensure students have the values handout.*
 
 Take a moment to read over the list of values in front of you. When you’re done, underline the 10 values that resonate with you most.
 
-[Click once so that the third line appears.] 
-
 Looking at this list of 10, star the five values that are most important to you.
 
-[Click once so that the fourth line appears.]
+Now, this part might be the most difficult, but the final task here is to circle two of those five values that are your core values. You may find that some of the other values that resonate with you fall under those two. Think of these values as the ones you hold yourself to in your everyday behavior and future planning, the values you aspire to embody -- maybe so much so that you do so unconsciously. 
 
-Now, this part might be the most difficult, but the final task here is to circle 2 of those 5 values that are your core values. You may find that some of the other values that resonate with you fall under those two. Think of these values as the ones you hold yourself to in your everyday behavior and future planning, the values you aspire to embody -- maybe so much so that you do so unconsciously. 
+*Allow students one minute to find those two values.*
 
-[Allow students one minute to find those two values.]
+Why two values, you may ask? Researcher, public speaker, social worker, and famous author Brene Brown writes extensively about the importance of determining your two core values. If we have too many, they lose meaning and we aren’t able to hold ourselves to them. The two values that feel inextricably intertwined with who you are as a person are those two values.
 
-So, why two values, you may ask? Researcher, public speaker, social worker, and famous author Brene Brown writes extensively about the importance of determining your TWO core values. If we have too many, they lose meaning and we aren’t able to hold ourselves to them. The two values that feel inextricably intertwined with who you are as a person are those two values.
+*Facilitator should feel free to share their own two values here.*
 
-[Facilitator should feel free to share their own two values here.]
-
-Does anyone want to share what 1 or 2 of their values are? [Solicit students' contributions and respond to each, thanking them for sharing.]
+Does anyone want to share what 1 or 2 of their values are? 
 -->
 
 ---
@@ -250,7 +247,7 @@ What was this experience like for you? Which of the best practices we went over 
 # Q&A
 
 <!--
-Thank you all so much for engaging in this session and sharing about yourselves in these presentations. We are going to revisit these two values in our next session about the offer process, so remember what you’ve selected. 
+Thank you all so much for engaging in this session and sharing about yourselves in these presentations. 
 
 As I mentioned in the beginning of this presentation, becoming a presenter takes time and involves significant, frequent practice. I hope you’ve taken something from today’s session that you can apply to your project presentations and other presentations you give in the future. What remaining questions do you have?
 -->
