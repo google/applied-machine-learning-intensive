@@ -9,11 +9,9 @@
   "materials": [],
   "handouts": [],
   "learning-objectives": [
-    "Authentication with Spotify and Genius API",
-    "Authentication with Google Storage",
-    "Crawling the Spotify index",
-    "Crawling the Genius index",
-    "Parsing data from a json response",
-    "Scraping data from an html response",
+    "Practice uthentication with Spotify and Genius API",
+    "Crawl the Spotify index",
+    "Crawl the Genius index",
+    "Parse data from a json response",
   ]
 }
