@@ -41,9 +41,9 @@ node and then following a path based on the comparison. The leaf node that you a
 
 For example, our root node is petal width. We first ask "is the petal width less than .8cm?" For 50 of our samples the answer is "yes" and all those samples are of species #1 For the rest of our 100 samples, the answer is "no," and we still don't have a good sense of how to identify species #2 or #3. For the remaining samples, we ask "is the petal width less than 1.75cm?" We see that the answer is "yes" for a total of 54 samples, where 49 of those are of species #2 and 5 are of species #3. We also see that the answer is "no" for a total of 46 samples, where 1 of those samples is of species #2 and 45 of them are species #3. Continuing in this way we get our entire decision tree. 
 
-Now, the final tree in this form is our trained model. If we were to get a new sample of iris flower, we would use the tree to classify the sample. We'd start at the root node and follow each question until we hit a leaf node. Each of the leaf nodes contains a final classification. For example, if at the root node we asnwer "yes," then we would classify our new sample a species #1. 
+Now, the final tree in this form is our trained model. If we were to get a new sample of iris flower, we would use the tree to classify the sample. We'd start at the root node and follow each question until we hit a leaf node. Each of the leaf nodes contains a final classification. For example, if at the root node we answer "yes," then we would classify our new sample a species #1. 
 
-But this just seems like a a series of if/then statements? How is this machine learning?? 
+But this just seems like a series of if/then statements? How is this machine learning?? 
 
 Well... we need to "learn" things like which feature is most appropriate for the root node (i.e. which one is most important and should go at the top?). In general, the order in which we examine the features is important. Furthermore, we need to learn the parameters for the cutoff values at each node. For example, at the root node the cutoff we use for testing a new sample is .8cm, and this is a learned parameter. 
 
@@ -156,7 +156,7 @@ trees based on their random starting points.
 
 <!--
 A specific form of bootstrapping that you'll hear about in machine learning is "bootstrap
-aggregation". This term is often shortened to "bagging".
+aggregation." This term is often shortened to "bagging."
 
 Bagging is a form of bootstrapping that creates multiple full-sized copies of your training dataset
 with slightly different data.
@@ -177,7 +177,7 @@ Note that after the datasets are made, trees can be built and used in parallel.
 
 <!--
 While we are on the topic of ensemble learning techniques, let's take a moment to talk about another
-popular technique: boosting. Boosting is a technique of training a model, determining which types of
+popular technique: boosting. Boosting is a technique of first training a model, then determining which types of
 predictions it performed poorly on, and then training a subsequent model to focus more on the
 predictions that the model before it got wrong. You can think of it as an assembly line where each
 worker has a specialty.
@@ -261,7 +261,7 @@ it can be. This can lead to overfitting. You can prevent this by setting a max d
 Can you think of how this parameter might be harmful?
 
 What if the tree isn't well balanced and you end up with larger sets of data on one branch of the
-tree. If you put an artificial depth cap on your tree, then the overpopulated branch might not have very pure
+tree? If you put an artificial depth cap on your tree, then the overpopulated branch might not have very pure
 leaves.
 
 Let's look at another hyperparameter that can help prevent overfitting without having to worry
@@ -285,7 +285,7 @@ Any value greater than one is allowed, with the default being two.
 `min_samples_leaf` tells us the minimum number of samples needed to form a leaf node. The default
 is one, which is very specific.
 
-You should be able to see how these are related, and how they can cancel each other out. If I say
+You should be able to see how these are related and how they can cancel each other out. If I say
 that `min_samples_leaf` is two instead of one, then I've effectively set `min_samples_split` to at
 least four because I need four samples in a parent node to make two leaf nodes each with two
 samples.
@@ -334,5 +334,5 @@ best for your data.
 # Your Turn!
 
 <!--
-Now let's hav ea look at the lab. 
+Now let's have a look at the lab. 
 -->
