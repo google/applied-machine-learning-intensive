@@ -19,7 +19,7 @@ img[alt~="center"] {
 
 Like neural networks, convolutional neural networks were inspired by biology. 
 
-In the 1960's Hubel and Wiesel showed that the visual cortex in cats and monkeys contain neurons that fire individually in response to small regions in the field of view. 
+In the 1960s David Hubel and Torsten Wiesel showed that the visual cortex in cats and monkeys contain neurons that fire individually in response to small regions in the field of view. 
 
 Visual cortex; small receptive field; overlap; react to different line orientations; can stack
 
@@ -36,7 +36,7 @@ For a given neuron, the visual space that affects whether or not that neuron wil
 
 Neurons that are spatially close together often have similar and overlapping receptive fields. 
 
-Our eyes and brains then take the information from each of these small receptive fields and melds them together into the images that we see. 
+Our eyes and brains then take the information from each of these small receptive fields and meld them together into the images that we see. 
 
 Image Details:
 * [conNN03.jpg](https://pixabay.com/illustrations/grid-block-cube-square-design-684983/): Pixabay License
@@ -48,7 +48,7 @@ Image Details:
 
 <!--
 
-In the 1980's, researchers were inspired by the visual cortex and used these ideas to create convolutional neural networks. 
+In the 1980s, researchers were inspired by the visual cortex and used these ideas to create convolutional neural networks. 
 
 A convolutional neural network is simply a neural network with additional (or different) types of layers. There are convolutional layers, downsampling layers, and pooling layers. 
 
@@ -62,7 +62,7 @@ Image Details:
 ![](res/conNN05.jpg)
 
 <!--
-You can stack these layers different numbers of these layers in various orders to achieve different results during training.
+You can stack different numbers of these layers in various orders to achieve different results during training.
 
 Image Details:
 * [conNN05.jpg](https://pixabay.com/photos/pancake-crepes-eat-food-crepe-640869/): Pixabay License
@@ -73,7 +73,7 @@ Image Details:
 ![](res/conNN13.png)
 
 <!--
-Recall the simplest building block for a typical neural network, the perceptron. 
+Recall the simplest building block for a typical neural network: the perceptron. 
 
 Image Details:
 * [conNN13.png](https://towardsdatascience.com/introducing-deep-learning-and-neural-networks-deep-learning-for-rookies-1-bd68f9cf5883): Unlicensed 
@@ -86,7 +86,7 @@ Image Details:
 ![](res/conNN15.png)
 
 <!--
-If we are dealing with image data, small (and often insignificant) changes to the training data, can yield large (and often incorrect) changes to the learned parameters in the model. 
+If we are dealing with image data, small and often insignificant changes to the training data can yield large and often incorrect changes to the learned parameters in the model. 
 
 For example, consider a problem where you want to identify a cat in an image. If the cat is translated to a different part of the image, then the model will adjust different weights to recognize the cat. But the cat being on the left or right of an image isn't really a defining feature of a cat, right? We'd prefer to recognize things like ears, fur, etc. 
 
@@ -109,9 +109,7 @@ Image Details:
 
 # Convolution 
 
-
 A way to analyze influence of nearby pixels using a filter
-
 
 (filters are also called kernels, masks, convolution matrices)
 
@@ -172,7 +170,7 @@ Image Details:
 <!--
 First, we think of centering the filter on the pixel. Then we multiply the values in the filter by the values in the image. And finally, we add up the result. 
 
-As you can see, the new pixel value is slightly lower than 100, but higher than 50. So the intensity is getting muted a little. This is because our filter is averaging the instensity of all the pixels around the center point. That is why this filter results in a blurring effect. 
+As you can see, the new pixel value is slightly lower than 100, but higher than 50. So the intensity is getting muted a little. This is because our filter is averaging the intensity of all the pixels around the center point. That is why this filter results in a blurring effect. 
 
 Image Details:
 * [conNN20.png](http://www.google.com): Copyright Google
@@ -309,7 +307,7 @@ Image Details:
 
 And again we get 0. 
 
-Thus, we see that a vertical line was detected, when the intensity chenged in the original image. 
+Thus, we see that a vertical line was detected when the intensity changed in the original image. 
 
 Image Details:
 * [conNN31.png](http://www.google.com): Copyright Google
@@ -320,7 +318,7 @@ Image Details:
 ![](res/conNN14.png)
 
 <!--
-this type of convolution happens in the convolutional layers of a neural network. The values in the kernels are parameters that will be learned during training. Thus, the specific features in the images that the kernels are testing for is something that the model "learns." In other words, you don't say "hey model, test or vertical lines." Instead, the model identifies the features that are important to test for. 
+This type of convolution happens in the convolutional layers of a neural network. The values in the kernels are parameters that will be learned during training. Thus, the specific features in the images that the kernels are testing for is something that the model "learns." In other words, you don't say "hey model, test or vertical lines." Instead, the model identifies the features that are important to test for. 
 
 Image Details:
 * [conNN14.png](??): Unlicensed 
@@ -332,12 +330,9 @@ Image Details:
 
 1. Pick a window size (usually 2x2 or 3x3)
 
-
 1. Pick a stride (usually 2)
 
-
 1. Move your window across each of the filtered images
-
 
 1. Take maximum value in each window
 
