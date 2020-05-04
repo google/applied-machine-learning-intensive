@@ -154,7 +154,7 @@ Image Details:
 
 <!--
 
-There are many hyperparameters that we can set when using scikit-learn's KMeans function. But n_clusters is the most important, as it denotes the number of clusters (i.e. centroids) we want. 
+There are many hyperparameters that we can set when using scikit-learn's k-means function. But n_clusters is the most important, as it denotes the number of clusters (i.e. centroids) we want. 
 
 You can see more details in scikit-learn's documentation. 
 
