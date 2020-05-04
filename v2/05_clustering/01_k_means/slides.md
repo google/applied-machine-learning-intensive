@@ -72,20 +72,18 @@ Image Details:
 
 ---
 
-
 # k-means Algorithm
 
 ![center](res/kmeans04.png)
 
 <!--
-Now, clusters are created around each of those three means. Every datapoint is put into a cluster based on which of the three centroids it's closest to, where close is defined by our distance metric. In this problem, the distance metric is just Euclidean distance in the plane. 
+Now, clusters are created around each of those three means. Every data point is put into a cluster based on which of the three centroids it's closest to, where close is defined by our distance metric. In this problem, the distance metric is just Euclidean distance in the plane. 
 
 Image Details:
 * [kmeans04.png](https://brilliant.org/wiki/k-means-clustering/): Unlicensed
 -->
 
 ---
-
 
 # k-means Algorithm
 
@@ -107,7 +105,7 @@ Image Details:
 ![center](res/kmeans06.png)
 
 <!--
-Again, every datapoint is put into a cluster based on which of the three centroids it's closest to.
+Again, every data point is put into a cluster based on which of the three centroids it's closest to.
 
 Image Details:
 * [kmeans06.png](https://brilliant.org/wiki/k-means-clustering/): Unlicensed
@@ -120,7 +118,7 @@ Image Details:
 ![center](res/kmeans07.png)
 
 <!--
-We repeat steps two and three (recalculating the centroids and re-clustering around those centroids) until convergence is reached. Convergence is typically measured by very little or no change in the centroids. In other words, the assignment of datapoints to clusters is not changing with more iterations. 
+We repeat steps two and three (recalculating the centroids and re-clustering around those centroids) until convergence is reached. Convergence is typically measured by very little or no change in the centroids. In other words, the assignment of data points to clusters is not changing with more iterations. 
 
 Image Details:
 * [kmeans07.png](https://brilliant.org/wiki/k-means-clustering/): Unlicensed
