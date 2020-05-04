@@ -224,7 +224,7 @@ Questions before we get started?
  <!--
 Here’s one way you can structure your presentation, but feel free to be creative. Note that this isn’t a likely a place for data, but I wanted to include it as a method of supporting a main point.
 
-*If desired, facilitator can share an example presentation before releasing students.*
+*If desired, the facilitator can share an example presentation before releasing students.*
 
 *Flip back to previous slide so those instructions are displayed for students as they work. Give students 10 minutes total for this entire exercise, letting them know when they should transition from preparing the presentations to giving them and switching between partners.*
 -->
