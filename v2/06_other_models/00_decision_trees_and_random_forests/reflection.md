@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Random Forests
 ## Review Questions
 
@@ -63,5 +67,4 @@ Reference: https://en.wikipedia.org/wiki/Decision_tree_learning#Gini_impurity
 * min_samples_leaf: how small can a leaf be?
 * max_features: how many features used in a split?
 
-More at [RandomForestRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html)
-and [RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html).
+More at [RandomForestRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html) and [RandomForestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html).

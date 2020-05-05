@@ -4,12 +4,18 @@
     "colab.ipynb"
   ],
   "slides": [
-    "slides.md"
+    "slides.md",
+    "reflection.md"
   ],
+  "duration": {
+    "slides.md": 75,
+    "reflection.md": 30,
+    "colab.ipynb": 120
+  },
   "learning-objectives": [
-    "Create and apply a decision tree algorithm for classification",
-    "Perform ensemble learning using random forests",
-    "Apply limits to depth and split size to reduce overfitting",
+    "Create and apply a decision tree algorithm for classification.",
+    "Perform ensemble learning using random forests.",
+    "Apply limits to depth and split size to reduce overfitting."
   ],
   "handouts": [],
   "materials": [],
