@@ -2,6 +2,13 @@
 marp: true
 ---
 
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Embeddings
 
 ---
@@ -57,6 +64,7 @@ Image Details:
 <!--
 The first number, 15, is the number of possible items.
 The second number, 4, is your chosen embedding size.
+
 Instead of manually specifying embedding values, we can train them (they are treated similarly to weights learned by the model during training).
 No separate training process needed, they are treated as another hidden layer.
 
@@ -71,7 +79,7 @@ Image Details:
 ![](res/embeddings04.png)
 
 <!--
-The embedding layer acts as a “lookup table”, where each item has a unique index that is used to lookup its corresponding embedding. This particular table has 15 rows (corresponding to unique items) and 4 columns (one for each embedding dimension). You’ll investigate this more in the colab.
+The embedding layer acts as a “lookup table” (similar to a python dictionary or hash table) where each item has a unique index that is used to lookup its corresponding embedding. This particular table has 15 rows (corresponding to unique items) and 4 columns (one for each embedding dimension). You’ll investigate this more in the colab.
 
 Image Details:
 * [embeddings04.png](http://www.google.com): Unlicensed
@@ -82,13 +90,13 @@ Image Details:
 # Visualizing embeddings
 
 <!--
-One of the big advantages of embeddings is that they can meaningfully represent items and relationships between items, in a way we can easily visualize. Here we can see that the embeddings for “hotel” and “resort” are fairly close. Based on the dataset used to train these embeddings, this means these two words are used in similar contexts.
+One of the big advantages of embeddings is that they can meaningfully represent items and relationships between items, in a way that we can easily visualize. Here we can see that the embeddings for “hotel” and “resort” are fairly close. Based on the dataset used to train these embeddings, this means these two words are used in similar contexts.
 
 Image Details:
 * [embeddings05.png](http://www.google.com): Unlicensed
 -->
 
-![](res/embeddings05.png)
+![center](res/embeddings05.png)
 
 ---
 
