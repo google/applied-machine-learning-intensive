@@ -18,13 +18,13 @@ img[alt~="center"] {
 ![](res/embeddings01.png)
 
 <!--
-Suppose we’re working with input data with a large number of possible categories, such as words. Our machine learning models can’t work directly on words; they need to take a vector of numbers as input. Traditionally, we could do this using a “one-hot encoding” (as shown). 
+Suppose we’re working with input data with a large number of possible categories, such as words. Our machine learning models can’t work directly on words; they need to take a vector of numbers as input. Traditionally we could do this using a “one-hot encoding” (as shown). 
 
-The dimension of the vectors is the number of possible items. In this case that's words. Each column in the vector corresponds to a different word. In this example, the sixth position in a vector corresponds to the word "motel," so "motel" is encoded as a vector with five leading 0's, a 1 in the 6th position, and zeros everwhere after. Similarly, the eleventh position corresponds to the word "hotel." 
+The dimension of the vectors is the number of possible items. In this case that's words. Each column in the vector corresponds to a different word. In this example, the sixth position in a vector corresponds to the word "motel," so "motel" is encoded as a vector with five leading 0's, a 1 in the 6th position, and zeros everywhere after. Similarly, the eleventh position corresponds to the word "hotel." 
 
-But hotel and motel are very similar words. They are spelled similarly AND they have similar meaning. When thinking about the vector enocdings of these two words, it seems natural to expect that they will be close together in space. 
+But hotel and motel are very similar words. They are spelled similarly AND they have similar meaning. When thinking about the vector encodings of these two words, it seems natural to expect that they will be close together in space. 
 
-This has 2 main problems:
+This has two main problems:
 1) Similar items don’t necessarily have similar encodings (“hotel in Quito” may not lead to similar search results as “motel in Quito”).
 2) We may need huge vectors to encode all possible items.
 
@@ -43,7 +43,7 @@ Image Details:
 ![](res/embeddings02.png)
 
 <!--
-Instead of restricting ourselves to 0's and 1's, we can fill the vectors with real numbers. This will give us more felxibility, and will allow similar words to have similar encodings. 
+Instead of restricting ourselves to 0's and 1's, we can fill the vectors with real numbers. This will give us more flexibility, and will allow similar words to have similar encodings. 
 
 The embedding dimension is a hyperparameter that is specified by the user. Embeddings can be used for dimensionality reduction. In particular, if we specify an embedding dimension that is lower than the total number of items (i.e. words) in your dataset, then we have reduced the total dimension of our dataset. 
 
@@ -121,4 +121,4 @@ Let’s work on the Embeddings colab where we can apply these skills to:
 * Visualizing your trained embeddings
 -->
 
-
+---
