@@ -8,7 +8,7 @@ marp: true
 This lesson is about dimensionality reduction.
 
 This class is largely focused on prediction models and algorithms. Dimensionality reduction is not a prediction algorithm, but
-is a very important preprocessing algorithm. Dimensionality reduction is often performed on a datset before building a
+is a very important preprocessing algorithm. Dimensionality reduction is often performed on a dataset before building a
 prediction model, such as logistic regression.
 
 -->
@@ -64,7 +64,7 @@ any models.
 
 ---
 
-# Principle Component Analysis (PCA)
+# Principal Component Analysis (PCA)
 
 - Find the "principal" components (or features) in the feature set
 - Resulting components are linear combinations of original features
