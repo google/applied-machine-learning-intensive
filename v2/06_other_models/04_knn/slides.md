@@ -34,7 +34,7 @@ KNN is one of the simplest supervised machine learning algorithms. It is mostly 
 <!-- 
 Let's say we have information about a particular wine's sulphur dioxide and chloride content, and we want to be able to say whether the wine is red or white. Let's approach this problem using KNN. 
 
-Consider this graph of sulphur dioxide vs. chloride. Think of the colored dots as our training set. It is labeled, so we know whether each wine in the training set is actually red or white and the datapoints are colored accordingly. 
+Consider this graph of sulphur dioxide vs. chloride. Think of the colored dots as our training set. It is labeled, so we know whether each wine in the training set is actually red or white and the data points are colored accordingly. 
 
 Assume we have a new wine for which we know the sulphur dioxide and chloride content (colored in grey). We want to know if it is red or white. 
 
@@ -161,7 +161,7 @@ Image Details:
 ![center](res/KNN11.png)
 
 <!-- 
-Let's run through the same example with the same datapoints, but we'll change the hyperparameter, K. This time K = 5. 
+Let's run through the same example with the same data points, but we'll change the hyperparameter, K. This time K = 5. 
 
 Image Details:
 * [KNN11.png](http://www.google.com): Copyright Google
@@ -187,7 +187,7 @@ Image Details:
 ![center](res/KNN13.png)
 
 <!-- 
-We see that the four of the five nearest neighbors of the second datapoint are white, so we classify it as white. 
+We see that the four of the five nearest neighbors of the second data point are white, so we classify it as white. 
 
 Image Details:
 * [KNN13.png](http://www.google.com): Copyright Google
@@ -200,7 +200,7 @@ Image Details:
 ![center](res/KNN14.png)
 
 <!-- 
-We see that three of the five nearest neighbors of the third datapoint are white, so we classify it as white. 
+We see that three of the five nearest neighbors of the third data point are white, so we classify it as white. 
 
 Image Details:
 * [KNN14.png](http://www.google.com): Copyright Google
@@ -213,7 +213,7 @@ Image Details:
 ![center](res/KNN15.png)
 
 <!-- 
-Interesting! We classified the third datapoint as red wine when K was 3, but as white wine when K was 5.
+Interesting! We classified the third data point as red wine when K was 3, but as white wine when K was 5.
 
 Image Details:
 * [KNN15.png](http://www.google.com): Copyright Google
@@ -227,9 +227,9 @@ Image Details:
 * Large K -- > computationally expensive
 
 <!-- 
-There is a balance when choosing K. If we choose K to be very small, say K=3, then outliers in our dataset may have a stronger influence over how we classify new points (i.e. noise has a strong influence). If we choose K too large, then it can be computationally expensive to find the K nearest neighbors every time we want to classify a new datapoint. 
+There is a balance when choosing K. If we choose K to be very small, say K=3, then outliers in our dataset may have a stronger influence over how we classify new points (i.e. noise has a strong influence). If we choose K too large, then it can be computationally expensive to find the K nearest neighbors every time we want to classify a new data point. 
 
-Another thing to think about is the parity of K. For example, what may happen if we choose an even K for a binary classification problem? We may find that there is a tie (e.g. 2 red and 2 white in the 4 nearest neighbors of a new datapoint). But an even K isn't always bad. What if we had three classes - cat, dog, and pig? If we choose K=3, then we could end up with 1 cat, 1 dog, and 1 pig in the 3 nearest neighbors.
+Another thing to think about is the parity of K. For example, what may happen if we choose an even K for a binary classification problem? We may find that there is a tie (e.g. 2 red and 2 white in the 4 nearest neighbors of a new data point). But an even K isn't always bad. What if we had three classes - cat, dog, and pig? If we choose K=3, then we could end up with 1 cat, 1 dog, and 1 pig in the 3 nearest neighbors.
 
 -->
 
@@ -275,7 +275,7 @@ Use when:
 * Dataset is relatively noise-free
 
 <!-- 
-KNN doesn't learn a decision-making function from the training data. Instead, the algorithm is run each time we want to classify a new datapoint. 
+KNN doesn't learn a decision-making function from the training data. Instead, the algorithm is run each time we want to classify a new data point. 
 -->
 
 ---
