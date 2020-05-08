@@ -15,20 +15,20 @@ In this unit we will learn about a powerful data processing tool, regular expres
 # What is a regular expression?
 
 - Expressive patterns used for string matching
-- Can also be used to replace or motify text
+- Can also be used to replace or modify text
 - Regex packages exist across almost all languages, including Python
 - Import it in Python using `import re`
 
 <!--
-What is a regular expression? Regular expressions refer to a extremely expressive language that can be used to match patterns in character content. Many of these patterns are simple and easy to interpret. However, the language is expressive enough that you can quickly create a very dense and difficult-to-interpret expression.
+What is a regular expression? Regular expressions refer to an extremely expressive language that can be used to match patterns in character content. Many of these patterns are simple and easy to interpret. However, the language is expressive enough that you can quickly create a very dense and difficult-to-interpret expression.
 
-Beyond matching, these expressions can also be used to modify text. You might simply perform "find-and-replace". But you can also find strings, modify them, and then replace the original string with the modifed version.
+Beyond matching, these expressions can also be used to modify text. You might simply perform "find-and-replace". But you can also find strings, modify them, and then replace the original string with the modified version.
 
-As mentioned earlier, regular expressions are a languge of their own. There is regular expression support in Python, but Python is not the only language to have regular expressions.
+As mentioned earlier, regular expressions are a language of their own. There is regular expression support in Python, but Python is not the only language to have regular expressions.
 
-Though it wasn't the first language to support regular expressions, the Perl programming language is closely tied to regular expressions. Because of this, there is a standard called the "Perl Compatible Regular Expression" (PCRE) standard. Python supports many PCRE expresisons. Since these expressions aren't part of the Python design, you might find some of them less Pythonic than most of the features that we work with in this course.
+Though it wasn't the first language to support regular expressions, the Perl programming language is closely tied to regular expressions. Because of this, there is a standard called the "Perl Compatible Regular Expression" (PCRE) standard. Python supports many PCRE expressions. Since these expressions aren't part of the Python design, you might find some of them less Pythonic than most of the features that we work with in this course.
 
-Most languages have some level of PCRE support, making the expressions themselves somewhat cross-langauge. The APIs that the languages expose to work with regular expressions vary widely.
+Most languages have some level of PCRE support, making the expressions themselves somewhat cross-language. The APIs that the languages expose to work with regular expressions vary widely.
 
 This lesson will work a little differently compared to others. Instead of spending the entire lesson going over new concepts, we will cover just a few key rules in regex, then we will use the rest of the time to go over some examples.
 
@@ -59,7 +59,7 @@ In the next few slides we will highlight some basic regular expression rules. Th
 
 # Repetition: Zero or More
 
-##  `*` means any number of occurences
+##  `*` means any number of occurrences
 
 Expression: `"Go*al!"`
 
@@ -70,7 +70,7 @@ String | Status
 `Gal!` | Matches
 
 <!--
-Here is an example of matching "zero or more" characters. The asterisk character is the regular expression that signals that zero or more characters should be matched. But which characters? With regular expressions it is the immediately preeding character. In our example the asterisk in the expression is bound to the 'o' character so we match all three strings.
+Here is an example of matching "zero or more" characters. The asterisk character is the regular expression that signals that zero or more characters should be matched. But which characters? With regular expressions it is the immediately preceding character. In our example the asterisk in the expression is bound to the 'o' character so we match all three strings.
 
 Looking at this  particular example, that is probably not what we want. Let's look at another expression that only matches variations of the world 'Goal'.
 -->
@@ -79,7 +79,7 @@ Looking at this  particular example, that is probably not what we want. Let's lo
 
 # Repetition: One or More
 
-##  `+` means one or more occurences
+##  `+` means one or more occurrences
 
 Expression: `"Go+al!"`
 
@@ -90,7 +90,7 @@ String | Status
 `Gal!` | Does Not Match
 
 <!--
-In this example the plus sign is the expression for "one or more". Then ensures that we have at least one 'o' in our match.
+In this example the plus sign is the expression for "one or more". Then ensure that we have at least one 'o' in our match.
 
 But what if we want to limit the number of 'o' characters? For instance, we might not want to match [this 'Gooooooo....oooal'](https://www.youtube.com/watch?v=UioCvLN-370).
 -->
@@ -99,7 +99,7 @@ But what if we want to limit the number of 'o' characters? For instance, we migh
 
 # Repetition: M to N
 
-##  `{m,n}` means a range of occurances
+##  `{m,n}` means a range of occurrences
 
 Expression: `"Go{2,4}al!"`
 
@@ -119,7 +119,7 @@ Here we have limited our 'Goal!' to have between 2 and 4 'o' characters. You can
 
 # Repetition: Zero or One
 
-## `?` means zero or one occurance
+## `?` means zero or one occurrence
 
 Expression: `"Goals?"`
 
@@ -130,14 +130,14 @@ String | Status
 `Goalss` | Does Not Match
 
 <!--
-There are sometimes cases where you want to match for zero or one character. A common time is depectied in this slide where we are looking for the singular or plural version of a word. Of course, this doesn't work for all English words, but works for specific cases that you might encounter.
+There are sometimes cases where you want to match for zero or one character. A common time is depicted in this slide where we are looking for the singular or plural version of a word. Of course, this doesn't work for all English words, but works for specific cases that you might encounter.
 -->
 
 ---
 
 # Wildcard
 
-## The lowly, yet powerful `.` is of paired with some repetition like `.*`
+## The lowly, yet powerful `.` is paired with some repetition like `.*`
 
 <!--
 The period/dot is the wildcard character for regular expressions. It translates to "match anything". A wildcard is often followed by a repetition character which will match some number of any character. The `.*` will match all of every character. This can be useful for skipping large amounts of text that you don't care about finding specific patterns in, but that are flanked or suffixed by patterns that you care about.
@@ -171,9 +171,9 @@ You might think of character classes as limited wildcards. They can be created t
 ```
 
 <!--
-Parenthesis are used as grouping elements in regular expressions. By default anything inside parentheis will be "captured" when you perform a match. This captured match can then be accessed directly in the matched expression. In our example we search for the literal "cat" as a capture group.
+Parentheses are used as grouping elements in regular expressions. By default anything inside parentheses will be "captured" when you perform a match. This captured match can then be accessed directly in the matched expression. In our example we search for the literal "cat" as a capture group.
 
-One neat thin about groups is that they can have multiple expressions separated by vertical bar characters. In the second case on the slide we are searching for any one of the literals "cat", "dog", or "python".
+One neat thing about groups is that they can have multiple expressions separated by vertical bar characters. In the second case on the slide we are searching for any one of the literals "cat", "dog", or "python".
 -->
 
 ---
@@ -269,6 +269,6 @@ letters, numbers, and special characters.
 ## `'[aeiou]{2}[a-z]*'`
 
 <!--
-Matches any word that starts with 2 vowels, e.g. aadvark, aim, either.
+Matches any word that starts with 2 vowels, e.g. aardvark, aim, either.
 
 -->
