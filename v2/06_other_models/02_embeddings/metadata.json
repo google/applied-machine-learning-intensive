@@ -4,11 +4,15 @@
     "colab.ipynb"
   ],
   "slides": [
-    "https://docs.google.com/presentation/d/17JSXlcoRXzXwE5EXjt1b6XCtvBNkdWu2CSnVy6abfDs/edit"
+    "slides.md"
   ],
+  "duration": {
+    "slides.md": 30,
+    "colab.ipynb": 90
+  },
   "handouts": [],
   "learning-objectives": [
-    "Understand what embeddings are, why they are used, how they are trained",
-    "Use embeddings in practice",
+    "Understand what embeddings are, why they are used, and how they are trained.",
+    "Use embeddings in practice."
   ]
 }
