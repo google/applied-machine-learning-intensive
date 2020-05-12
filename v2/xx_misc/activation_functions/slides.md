@@ -64,7 +64,7 @@ Image Details:
 
 ---
 
-# ReLu
+# ReLU
 
 ![](res/relu.png)
 
@@ -74,6 +74,38 @@ recognition.
 
 Image Details:
 * [relu.png](http://www.google.com): Copyright Google
+
+-->
+
+---
+
+# Leaky ReLU
+
+![](res/leaky_relu.png)
+
+<!--
+This is the leaky rectified linear unit (leaky ReLu) function. It is used alongside ReLU in keras and tensorflow increasingly.
+
+Image Details:
+* [leaky_relu.png](http://www.google.com): Copyright Google
+
+-->
+
+---
+
+# Keras
+
+Keras uses the following layers in its neural nets. All are derived from the ReLU function.
+
+- ReLU layer
+- Softmax layer
+- LeakyReLU layer
+- PReLU layer
+- ELU layer
+- ThresholdedReLU layer
+
+<!--
+See [here](https://keras.io/api/layers/activation_layers/) for more on how Keras uses activation funtions in its neural nets.
 
 -->
 
