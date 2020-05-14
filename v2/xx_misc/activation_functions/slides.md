@@ -105,7 +105,7 @@ Keras uses the following layers in its neural nets. All are derived from the ReL
 - ThresholdedReLU layer
 
 <!--
-See [here](https://keras.io/api/layers/activation_layers/) for more on how Keras uses activation funtions in its neural nets.
+See [here](https://keras.io/api/layers/activation_layers/) for more on how Keras uses activation functions in its neural nets.
 
 -->
 
