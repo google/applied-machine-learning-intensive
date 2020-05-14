@@ -111,11 +111,11 @@ Another type of neuron that performs very well for sequence tasks alongside, or 
 * Sequence Prediction
 * Sequence Generation
 * Tagging
-* Sumarization
+* Summarization
 * *... and more!*
 
 <!--
-Recurrent neural networks are useful for solving a variety of problems. They are commonly used on problems where there is a sequence of data that needs to be processed. For example, they can convert from one language to another. They are also useful in sequence prediction. For example, you might use an RNN to try to predict stock prices or temperatures over time. Since they also work so well with sequences, they can be used to generate sequences such as musical notes or strokes on a canvas. They can also process data such as video and "tag" those videos. Another applicaiton is summarization. A RNN can injest a large amount of text and create a summary about that text.
+Recurrent neural networks are useful for solving a variety of problems. They are commonly used on problems where there is a sequence of data that needs to be processed. For example, they can convert from one language to another. They are also useful in sequence prediction. For example, you might use an RNN to try to predict stock prices or temperatures over time. Since they also work so well with sequences, they can be used to generate sequences such as musical notes or strokes on a canvas. They can also process data such as video and "tag" those videos. Another application is summarization. A RNN can ingest a large amount of text and create a summary about that text.
 
 There are many many more applications of RNNs.
 -->
@@ -125,7 +125,7 @@ There are many many more applications of RNNs.
 # Sequence Prediction
 
 <!--
-One application that RNNs are particularly good at is sequence prediction. Our lab will actually be a sequence prediciton lab.
+One application that RNNs are particularly good at is sequence prediction. Our lab will actually be a sequence prediction lab.
 
 So far in this course, all of our predictions have assumed the data are time-independent. That is, we could shuffle around all the data points and prediction points in time, and nothing would change.
 
@@ -170,7 +170,7 @@ Image Details:
 - Machine learning and RNNs specifically give us a new tool for sequence prediction that contains less assumptions
 
 <!--
-The standard approach to sequence prediction for several years was a statistical one. (No need, to go into detail but you could mention Markov Chains or ARIMA time series forecasting. Suffice to say, these approaches often require a lot of assumptions, such as a transition matrix of probabilities, or a normal distribution of noise.) RNNs allow the data to "speak for itself", it is a largely non-parametric approach. The downside is that it usually needs more data to make good predictions.
+The standard approach to sequence prediction for several years was a statistical one. (No need to go into detail, but you could mention Markov Chains or ARIMA time series forecasting. Suffice to say, these approaches often require a lot of assumptions, such as a transition matrix of probabilities, or a normal distribution of noise.) RNNs allow the data to "speak for itself", it is a largely non-parametric approach. The downside is that it usually needs more data to make good predictions.
 
 -->
 
@@ -204,7 +204,7 @@ Image Details:
 ![center](res/rain_forecast.png)
 
 <!--
-Predicting the weather based on previous days of weather could also be an important application of sequence prediction. While most meteorogical systems use a parametric approach based on input data (such as air pressure, cloud cover etc.), a sequence prediction model can go surprisingly far.
+Predicting the weather based on previous days of weather could also be an important application of sequence prediction. While most meteorological systems use a parametric approach based on input data (such as air pressure, cloud cover etc.), a sequence prediction model can go surprisingly far.
 
 Image Details:
 * [rain_forecast.png](https://unsplash.com/photos/zNGPmIVPQf4): Unsplash License
