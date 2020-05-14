@@ -39,9 +39,9 @@ Image Details:
 ![](res/learning.jpeg)
 
 <!--
-In reality, humans learn a different way. We are told what cats and dogs looks like, through various media. We learn what
-sounds they make, what they look like from books and movies... The knowledge is "transferred" from others to our own brain.
-We learn, for example that:
+In reality, humans learn a different way. We are told what cats and dogs look like through various media. We learn what
+sounds they make, what they look like from books and movies. The knowledge is "transferred" from others to our own brain.
+We learn, for example, that:
 
 - Cats go "meow" while dogs go "woof"
 - Cats and dogs have different-looking noses and ears
