@@ -11,7 +11,7 @@
 * Standard?
 
 <!--
-SQL has been around since the 70s with the development of relational database.  Large companies developed a suite of tools and relational database servers, eg: Oracle, Sybase, Microsoft and Informix.  It was a popular foundation for data storage for many industries, such as Finance, Healthcare, Retail, etc.
+SQL has been around since the 70s with the development of the relational database.  Large companies developed a suite of tools and relational database servers, eg: Oracle, Sybase, Microsoft and Informix.  It was a popular foundation for data storage for many industries, such as Finance, Healthcare, Retail, etc.
 More recently the open source MySQL is a more popular option and can be hosted in the cloud.  Cloud providers supports instances of MySQL such as AWS, Azure and Google Cloud
 Standard?
 * While standard SQL exists, often each vendors have added their own of extensions that it’s sometime confusing to keep track of
@@ -121,7 +121,7 @@ Now, we don’t always want to get all the values of particular column(s).  That
 * The query begins with SELECT * instead of SELECT followed by one or more column names.  Anyone know what SELECT * stands for?
 * SELECT * means SELECT all columns
 * WHERE ID < 1002 is the filter and ID < 1002 is the conditional
-* So, only rows of data that has an Employee ID smaller than 1002 will be selected.  How many rows would the query results will be?
+* So, only rows of data that have an Employee ID smaller than 1002 will be selected.  How many rows would the query results be?
 
 # Filtering
 
@@ -223,7 +223,7 @@ Data Query Language (DQL)
 * **GROUP BY** COLUMN(S)
 
 <!--
-Beside filtering and sorting, SQL also support aggregation of query results with the GROUP BY one of more columns.
+Beside filtering and sorting, SQL also supports aggregation of query results with the GROUP BY one or more columns.
 In aggregation case, the query results is aggregated based on values in certain columns using the specified aggregation functions
 Let’s look at an example in the next slide
 -->
@@ -360,12 +360,4 @@ A few more useful keywords before you’ll practice with Introduction to SQL col
 
 Introduction to SQL (need link)
 
-
-
-
-
-
-
-
-
-
+---
