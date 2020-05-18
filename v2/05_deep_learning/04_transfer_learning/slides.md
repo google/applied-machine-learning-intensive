@@ -1,84 +1,139 @@
 ---
+
 marp: true
+
 ---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
 
 # Transfer Learning
 
 <!--
-One of the major downsides of non-parametric approaches (and many of the algorithms we have learned are non-parametric; that
-is, they only rely on the data, not on any underlying assumptions about the data) is that we often need a ton of data for the
-model to start making sense. Since these models rely purely on historical data for predictions, we need to train a model to
-learn from scratch.
+The models that we have trained so far have all been trained from scratch. We start with a randomly weighted model and then use large amounts of data and many many epochs over that data in order to build a reasonable model.
 
--->
-
----
-
-# Cat Or Dog?
-
-![](res/cat_dog.jpeg)
-
-<!--
-In a previous lesson, we trained an artificial neural network to tell the difference between a cat and a dog. The model (like
-a human) learned from scratch what different types of cat and dog look like, and used historical data to make predictions.
-
-This model is equivalent to a baby learning what a cat and dog look like just by seeing a ton of cats and dogs and being told
-which photo is a cat and which is a dog.
-
-But that's not really how humans learn, is it?
-
-Image Details:
-* [cat_dog.jpeg](https://www.pexels.com/photo/orange-tabby-cat-beside-fawn-short-coated-puppy-46024/): Pexels License
-
+But is that how we learn?
 -->
 
 ---
 
 # Transferring Knowledge
 
-![](res/learning.jpeg)
+![center](res/learning.jpg)
 
 <!--
-In reality, humans learn a different way. We are told what cats and dogs look like through various media. We learn what
-sounds they make, what they look like from books and movies. The knowledge is "transferred" from others to our own brain.
-We learn, for example, that:
+Well, yes and no.
 
-- Cats go "meow" while dogs go "woof"
-- Cats and dogs have different-looking noses and ears
-- Cat claws tend to be sharper than dog claws
-- Lots more
-
-Therefore, when we do eventually have to see cats and dogs in real life, we are well prepared to know which is which. We don't
-need to see thousands of them to know the difference; usually just a few will do, since we already know so much about them.
+We do indeed learn in self-guided ways by looking at examples. But, we also learn through the transfer of knowledge. Experts can provide insights that can be used to accelerate our learning process.
 
 Image Details:
 * [learning.jpeg](https://www.pexels.com/photo/girls-on-desk-looking-at-notebook-159823/): Pexels License
-
 -->
 
 ---
 
-# Transfer Learning Models
+# Transferring Knowledge
 
-![](res/usb.jpeg)
+![center](res/zebra.jpg)
 
 <!--
-Transfer learning works the same way. We take a model that we have already trained and "plug it in" to our new model. For
-example, we may have a model that knows how to tell the difference between a bunch of animals. This may not have a very high
-accuracy when the sample contains only cats and dogs, but we can use what we know in the pre-existing model, train it on just a
-few new cat vs dog data points, and have a great model to tell the difference between cats and dogs.
+Let's say that I already know what a horse, tiger, and penguin are. If I wanted to learn how to identify a zebra, I could look at pictures of zebras. Or, you might tell me that a zebra is the shape of a horse, has the coat patterns of a tiger, and the colors of a penguin. This would greatly accelerate my ability to identify zebras, even if I only had a handful of pictures of zebras to study.
+
+Transfer learning is similar to this. A model that already knows how to identify some classes of data can be built upon/extended to fit the problem that you are trying to solve. The base model is already good at find key features. The new model can utilize this ability and perform better faster than if it was trained
 
 Image Details:
-* [usb.jpeg](https://www.pexels.com/photo/person-inserting-usb-cable-on-usb-port-3531858/): Pexels License
-
+* [zebra.jpg](https://www.pexels.com/photo/white-and-black-zebra-standing-on-ground-1916645/): Pexels License
 -->
 
 ---
 
-# Your Turn!
+# Transfer Learning
+
+![center](res/high-level.png)
 
 <!--
-Direct students to the colab, where they will use transfer learning to build a model to tell the difference between cats and
-dogs.
+At a very high-level, transfer learning can look a lot like adding an extra few layers to the end of a pre-trained model.
 
+In this diagram the pre-trained model is an existing model that has been trained and performs acceptably well. This model has persisted weights that are packaged with the model.
+
+The customizations model is a new set of untrained layers. They have random (or at leas naive) initial weights. These weights still need to be discovered through training.
+
+As you can decipher from the data flow arrow, data typically still enters the model through the pre-trained input layer. However, the output layer of the pre-trained model then feeds the new model. The final output is the output layer of the new model.
+
+
+Image Details:
+* [high-level.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Do you retrain the pre-trained model?
+
+<!--
+This begs the question: Do you re-train the pre-trained model?
+
+The answer is yes and no.
+
+If the data that you have to train your new model is similar in size or larger than the data used to train the pre-trained model and if the classes that they identify largely overlap, then it is probably fine. Otherwise it is advised to "freeze" the pre-trained model and not update the weights.
+
+This freezing can be for the whole model, or for only a few specific layers (typically those layers closer to the input layer are frozen).
+-->
+
+---
+
+# Output Layer?
+
+![center](res/which-output.png)
+
+<!--
+We also need to think about what layer is actually the output layer from a pre-trained model.
+
+In most classification problems we have multiple layers of high-dimensional matrices, but then at the very end of the model we flatten the data down to a two-dimensional matrix of class estimates.
+
+We actually don't want this flattened data feeding our extended model. Instead we need to use an intermediate high-dimensional layer.
+
+Image Details:
+* [which-output.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Bottom/Top
+
+![center](res/bottom-top.png)
+
+<!--
+We need to introduce a little modelling terminology at this point. You sometimes hear about the "bottom" or "top" of a model. Which end is which?
+
+If you think about a model as a funnel, then it makes sense for the input side to be the top and the output to be the bottom. However, that isn't the terminology that caught on.
+
+Instead, many papers illustrated models with the input layer at the bottom and the output layer at the top of diagrams. Culture now dictates that the bottom of a model is the input and the top of a model is the output.
+
+Image Details:
+* [bottom-top.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Include Top?
+
+![center](res/new-top.png)
+
+<!--
+This terminology is important because some models allow allow you to choose to include the "top" of the model or not. If you leave out the top, then you get a higher-dimensional input for your model that is benefitting from transfer learning. This is typically a good thing.
+
+Image Details:
+* [new-top.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Your Turn
+
+<!--
+Now we'll attempt a little transfer learning on our own. We'll use MobileNetV2, which can classify 1,000 classes, to build a network that can reliably classify cats and dogs.
 -->
