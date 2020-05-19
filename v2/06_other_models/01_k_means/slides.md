@@ -46,13 +46,13 @@ Image Details:
 
 # k-means Mathematics
 
-![center](res/kmeans02.png)
+![center](res/kmeans02b.png)
 
 <!--
 More formally, this is the actual mathematical formula for minimizing the variance within each cluster. 
 
 Image Details:
-* [kmeans02.png](http://www.google.com): Copyright Google
+* [kmeans02b.png](http://www.google.com): Copyright Google
 -->
 
 ---
