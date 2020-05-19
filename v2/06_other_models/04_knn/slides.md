@@ -13,32 +13,30 @@ img[alt~="center"] {
 
 ---
 
-
 # K Nearest Neighbors (KNN)
 
-One of the simplest **supervised** machine learning algorithms, used mostly for classification. 
+One of the simplest **supervised** machine learning algorithms, used mostly for classification 
 
 [Note: We can also use KNN for regression (example in Colab)]
 
 <!--
-KNN is one of the simplest supervised machine learning algorithms. It is mostly used for classification (which we'll talk about in this lecture), but it can also be used for regression (example in Colab). 
+KNN is one of the simplest supervised machine learning algorithms. It is mostly used for classification, which we'll talk about in this lecture. It can also be used for regression, an example of which can be found in this unit's Colab. 
 -->
-
 
 ---
 
-# Example: classify as red or white wine
+# Example: Classify as Red or White Wine
 
 ![center](res/KNN02.png)
 
 <!-- 
 Let's say we have information about a particular wine's sulphur dioxide and chloride content, and we want to be able to say whether the wine is red or white. Let's approach this problem using KNN. 
 
-Consider this graph of sulphur dioxide vs. chloride. Think of the colored dots as our training set. It is labeled, so we know whether each wine in the training set is actually red or white and the data points are colored accordingly. 
+Consider this graph of sulphur dioxide vs. chloride. Think of the colored dots as our training set. It is labeled, so we know whether each wine in the training set is actually red or white, and the data points are colored accordingly. 
 
 Assume we have a new wine for which we know the sulphur dioxide and chloride content (colored in grey). We want to know if it is red or white. 
 
-The hyperparameter K denotes how many "neighbors" we should look at. In this example, assume K = 3. So we will look at the 3 nearest neighbors of the grey dot. 
+The hyperparameter K denotes how many "neighbors" we should look at. In this example, assume K=3. So we will look at the three nearest neighbors of the grey dot. 
 
 Image Details:
 * [KNN02.png](http://www.google.com): Copyright Google
@@ -46,7 +44,7 @@ Image Details:
 
 ---
 
-# Example: classify as red or white wine
+# Example: Classify as Red or White Wine
 
 ![center](res/KNN03.png)
 
@@ -61,7 +59,7 @@ Image Details:
 
 ---
 
-# Example: classify as red or white wine
+# Example: Classify as Red or White Wine
 
 ![center](res/KNN04.png)
 
@@ -74,14 +72,14 @@ Image Details:
 
 ---
 
-# Example: classify as red or white wine 
+# Example: Classify as Red or White Wine
 
 ![center](res/KNN05.png)
 
 <!-- 
 Let's try another example. Again, K=3. 
 
-Prompt the class: What about this grey point? 
+*Prompt the class*: What about this grey point? 
 
 Image Details:
 * [KNN05.png](http://www.google.com): Copyright Google
@@ -89,7 +87,7 @@ Image Details:
 
 ---
 
-# Example: classify as red or white wine
+# Example: Classify as Red or White Wine
 
 ![center](res/KNN06.png)
 
@@ -102,7 +100,7 @@ Image Details:
 
 ---
 
-# Example: classify as red or white wine
+# Example: Classify as Red or White Wine
 
 ![center](res/KNN07.png)
 
@@ -115,7 +113,7 @@ Image Details:
 
 ---
 
-# Example: classify as red or white wine
+# Example: Classify as Red or White Wine
 
 ![center](res/KNN08.png)
 
@@ -130,7 +128,7 @@ Image Details:
 
 ---
 
-# Example: classify as red or white wine
+# Example: Classify as Red or White Wine
 
 ![center](res/KNN09.png)
 
@@ -143,7 +141,7 @@ Image Details:
 
 ---
 
-# Example: classify as red or white wine
+# Example: Classify as Red or White Wine
 
 ![center](res/KNN10.png)
 
@@ -156,12 +154,12 @@ Image Details:
 
 ---
 
-# Example: classify as red or white wine
+# Example: Classify as Red or White Wine
 
 ![center](res/KNN11.png)
 
 <!-- 
-Let's run through the same example with the same data points, but we'll change the hyperparameter, K. This time K = 5. 
+Let's run through the same example with the same data points, but we'll change the hyperparameter, K. This time K=5. 
 
 Image Details:
 * [KNN11.png](http://www.google.com): Copyright Google
@@ -169,7 +167,7 @@ Image Details:
 
 ---
 
-# Example: classify as red or white wine
+# Example: Classify as Red or White Wine
 
 ![center](res/KNN12.png)
 
@@ -182,12 +180,12 @@ Image Details:
 
 ---
 
-# Example: classify as red or white wine
+# Example: Classify as Red or White Wine
 
 ![center](res/KNN13.png)
 
 <!-- 
-We see that the four of the five nearest neighbors of the second data point are white, so we classify it as white. 
+We see that four of the five nearest neighbors of the second data point are white, so we classify it as white. 
 
 Image Details:
 * [KNN13.png](http://www.google.com): Copyright Google
@@ -195,7 +193,7 @@ Image Details:
 
 ---
 
-# Example: classify as red or white wine 
+# Example: Classify as Red or White Wine
 
 ![center](res/KNN14.png)
 
@@ -208,7 +206,7 @@ Image Details:
 
 ---
 
-# Example: classify as red or white wine
+# Example: Classify as Red or White Wine
 
 ![center](res/KNN15.png)
 
@@ -227,9 +225,9 @@ Image Details:
 * Large K -- > computationally expensive
 
 <!-- 
-There is a balance when choosing K. If we choose K to be very small, say K=3, then outliers in our dataset may have a stronger influence over how we classify new points (i.e. noise has a strong influence). If we choose K too large, then it can be computationally expensive to find the K nearest neighbors every time we want to classify a new data point. 
+There is a balance when choosing K. If we choose K to be very small, say K=3, then outliers in our dataset may have a stronger influence over how we classify new points (i.e., noise has a strong influence). If we choose K too large, then it can be computationally expensive to find the K nearest neighbors every time we want to classify a new data point. 
 
-Another thing to think about is the parity of K. For example, what may happen if we choose an even K for a binary classification problem? We may find that there is a tie (e.g. 2 red and 2 white in the 4 nearest neighbors of a new data point). But an even K isn't always bad. What if we had three classes - cat, dog, and pig? If we choose K=3, then we could end up with 1 cat, 1 dog, and 1 pig in the 3 nearest neighbors.
+Another thing to think about is the parity of K. For example, what may happen if we choose an even K for a binary classification problem? We may find that there is a tie (e.g., two red and two white in the four nearest neighbors of a new data point). But an even K isn't always bad. What if we had three classes: cat, dog, and pig? If we choose K=3, then we could end up with one cat, one dog, and one pig in the three nearest neighbors.
 
 -->
 
@@ -266,9 +264,9 @@ Image Details:
 
 ---
 
-# When to use KNN?
+# When to Use KNN?
 
-KNN is a “lazy learner” algorithm - it doesn’t learn a function from the training set (no generalization until query is made).
+KNN is a “lazy learner” algorithm. It doesn’t learn a function from the training set (no generalization until query is made).
 
 Use when:
 * Dataset is relatively small 
