@@ -154,7 +154,7 @@ Image Details:
 ![center](res/time_series_2.png)
 
 <!--
-Sequence prediction is about predicting what happens next in a sequence. For example, if we have a years worth of data, we may
+Sequence prediction is about predicting what happens next in a sequence. For example, if we have a year's worth of data, we may
 want to know what happens in Q1 of the next year.
 
 Image Details:
@@ -217,7 +217,7 @@ Image Details:
 ![center](res/train_station.jpg)
 
 <!--
-You may want to predict the number of travellers at a train station on a given day, given the previous data of how many travellers each day. RNNs pick up on things like varieties of seasonality (e.g. weekday vs weekend, holiday season) and noise.
+You may want to predict the number of travelers at a train station on a given day, given the previous data of how many travellers each day. RNNs pick up on things like varieties of seasonality (e.g. weekday vs weekend, holiday season) and noise.
 
 However, especially for time series with seasonality, we need to have enough data. For example, if we only have data for October and November, we won't do very well at predicting December (since it is a holiday month); we would ideally have data for December of the previous year.
 
@@ -231,5 +231,5 @@ Image Details:
 # Your Turn
 
 <!--
-In the lab, you'll use a recurrent neural network to predict a sequence of vibration readings from an engine. You'll learn how to apply TensorFlow with Keras to easily build, test, and tune your model.
+In the lab, we'll use a recurrent neural network to predict a sequence of vibration readings from an engine. We'll see how to apply TensorFlow with Keras to build, test, and tune your model.
 -->
