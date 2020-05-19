@@ -22,7 +22,7 @@ k-means clustering is different. The training data is not labeled. Unlabeled tra
 
 k-means is the most common clustering algorithm. You performed a k-means clustering during the screw/fastener exercise.
 
-Let's relate k-means back to what you did in the screw/fastener exercise. 
+To bring this topic to life a bit more, let's relate k-means back to what you did in the screw/fastener exercise. 
 -->
 
 ---
@@ -46,13 +46,13 @@ Image Details:
 
 # k-means Mathematics
 
-![center](res/kmeans02.png)
+![center](res/kmeans02b.png)
 
 <!--
 More formally, this is the actual mathematical formula for minimizing the variance within each cluster. 
 
 Image Details:
-* [kmeans02.png](http://www.google.com): Copyright Google
+* [kmeans02b.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -64,7 +64,7 @@ Image Details:
 <!--
 Let's take a closer look at each step in the k-means algorithm. 
 
-We choose our hyperparameter k (i.e. the number of clusters). In this case, k = 3. Then three points are randomly generated within the data. These are our initial "means" often called "centroids." 
+We choose our hyperparameter k (i.e., the number of clusters). In this case, k = 3. Then three points are randomly generated within the data. These are our initial "means" often called "centroids." 
 
 Image Details:
 * [kmeans03.png](https://brilliant.org/wiki/k-means-clustering/): Unlicensed
@@ -77,7 +77,7 @@ Image Details:
 ![center](res/kmeans04.png)
 
 <!--
-Now, clusters are created around each of those three means. Every data point is put into a cluster based on which of the three centroids it's closest to, where close is defined by our distance metric. In this problem, the distance metric is just Euclidean distance in the plane. 
+Now, clusters are created around each of those three means. Every data point is put into a cluster based on which of the three centroids it's closest to, where close is defined by our distance metric. In this problem the distance metric is just Euclidean distance in the plane. 
 
 Image Details:
 * [kmeans04.png](https://brilliant.org/wiki/k-means-clustering/): Unlicensed
@@ -135,7 +135,7 @@ Using Black Friday data to segment shopping customers.
 <!--
 Businesses often segment their customers into groups for marketing purposes. Often these segments are based on some characteristic of the customer: age, gender, spending bracket, etc. These segments are created based on assumptions that marketers have about their customers.
 
-In this lab, we will use k-means clustering to find customer segments instead of relying on traditional segmentation methods.
+In this lab we will use k-means clustering to find customer segments instead of relying on traditional segmentation methods.
 
 Image Details:
 * [blackfriday.jpg](https://pixabay.com/photos/family-shopping-center-purchase-2923690/): Pixabay License
@@ -154,7 +154,7 @@ Image Details:
 
 <!--
 
-There are many hyperparameters that we can set when using scikit-learn's k-means function. But n_clusters is the most important, as it denotes the number of clusters (i.e. centroids) we want. 
+There are many hyperparameters that we can set when using scikit-learn's k-means function. But n_clusters is the most important, as it denotes the number of clusters (i.e., centroids) we want. 
 
 You can see more details in scikit-learn's documentation. 
 
