@@ -6,11 +6,15 @@
   "colabs": [
     "colab.ipynb"
   ],
+  "duration": {
+    "slides.md": 45,
+    "colab.ipynb": 90
+  },
   "handouts": [],
   "resources": [],
   "materials": [],
   "learning-objectives": [
-    "Understand the basic concept of KNN",
-    "Use KNN to solve a classification problem",
+    "Understand the basic concept of KNN.",
+    "Use KNN to solve a classification problem."
   ]
 }
