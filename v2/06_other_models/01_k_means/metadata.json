@@ -4,11 +4,18 @@
   "colabs": [
     "colab.ipynb"
   ],
-  "handouts": [],
-  "resouces": [],
-  "learning-objectives": [
-    "Understand the difference between supervised and unsupervised learning",
-    "Create a k-means model",
-    "Understand the output of a k-means model",
+  "slides": [
+    "slides.md"
   ],
+  "duration": {
+    "slides.md": 30,
+    "colab.ipynb": 60
+  },
+  "handouts": [],
+  "resources": [],
+  "learning-objectives": [
+    "Understand the difference between supervised and unsupervised learning.",
+    "Create a k-means model.",
+    "Understand the output of a k-means model."
+  ]
 }
