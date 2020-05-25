@@ -2,14 +2,19 @@
 marp: true
 ---
 
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Dimensionality Reduction
 
 <!--
 This lesson is about dimensionality reduction.
 
-This class is largely focused on prediction models and algorithms. Dimensionality reduction is not a prediction algorithm, but
-is a very important preprocessing algorithm. Dimensionality reduction is often performed on a dataset before building a
-prediction model, such as logistic regression.
+This class is largely focused on prediction models and algorithms. Dimensionality reduction is not a prediction algorithm, but it is a very important pre-processing algorithm. Dimensionality reduction is often performed on a dataset before building a prediction model, such as logistic regression.
 
 -->
 
@@ -17,10 +22,10 @@ prediction model, such as logistic regression.
 
 # What "dimensions" are being reduced?
 
-![](res/3d_glasses.png)
+![center](res/3d_glasses.png)
 
 <!--
-The dimensionality being reduced here is the number of input features. Say we have a dataset with 100 features. So we
+In this context, "dimension" refers to the number of input features. So the dimensionality being reduced is the number of input features. Say we have a dataset with 100 features. So we
 initially have 100 dimensions in our model. This can be unwieldy and lead to overfitting, in the same way on training on too
 much data and leaving none for testing can lead to overfitting.
 
@@ -38,20 +43,20 @@ Image Details:
 <!--
 Dimensionality reduction is most important when some features may be correlated. Many prediction models actually assume that
 features are independent, or at least have low collinearity or correlation. But this is not always true! Having correlated
-features can lead to violations of model assumptions, which brings the entire model in question.
+features can lead to violations of model assumptions, which brings the validity of the entire model in question.
 
 -->
 
 ---
 
-# Correlated Features
+# Correlated Features Example
 
 - Height (m)
 - Mass (kg)
 - Body Mass Index (BMI) = mass/height^2
 
 <!--
-Take an extreme example:
+Let's consdier this extreme example. 
 
 Say we have a model that uses height, mass, and BMI as features. Now, BMI is entirely a derived feature from height and mass.
 Having all 3 of these features means we *definitely* have correlated features. Even alone, height and mass are extremely
