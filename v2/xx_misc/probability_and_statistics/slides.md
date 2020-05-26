@@ -89,7 +89,7 @@ Image Details:
 
 # Relationships Among Random Variables 
 
-![](res/prob19.png)
+![](res/probstats01.png)
 
 <!--
 We call the relationship between two random variables independent if the value of one random variable does not affect the value of the other. For example, if we roll a die, then flip a coin. Furthermore, we could roll a fair die once observe that it came up a 4, then roll again. These two events are independent.  
@@ -97,7 +97,7 @@ We call the relationship between two random variables independent if the value o
 We call the relationship between two random variables dependent if the value of one does affect the other. For example, we want to probability that the sum of rolling a die twice is 5, if the first roll is a 3. 
 
 Image Details:
-* [prob19.png](http://www.google.com): Copyright Google
+* [probstats01.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -181,13 +181,13 @@ Image Details:
 
 # Conditional, joint, & marginal probabilities are related
 
-![](res/prob26.png)
+![](res/probstats02.png)
 
 <!--
 We can recover the probability of X from summing the conditional probability of X given Y times the probability of Y. 
 
 Image Details:
-* [prob26.png](http://www.google.com): Copyright Google
+* [probstats02.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -235,7 +235,7 @@ Image Details:
 
 # Bayes’ Theorem: Example
 
-![](res/prob37.png)
+![](res/probstats03.png)
 
 <!--
 Let's look at an example. 
@@ -245,14 +245,14 @@ Suppose we want to calculate P(first die = 3 | sum = 5). Note this is the revers
 We can use Bayes' Theorem and the conditional probability that we already computed. 
 
 Image Details:
-* [prob37.png](http://www.google.com): Copyright Google
+* [probstats03.png](http://www.google.com): Copyright Google
 -->
 
 ---
 
 # Sample Exercise: Peanut Chocolate Detector
 
-![](res/prob38.png)
+![](res/probstats04.png)
 
 <!--
 Bayes’ Theorems might seem unnecessarily complicated for solving dice problems, but it can be very useful in Machine Learning
@@ -261,20 +261,20 @@ contexts.
 *(5-10 mins) Give students time to think about this problem in groups. Prompt them for P(p|d), P(d|p) and P(not d|not p) to get them started. *
 
 Image Details:
-* [prob38.png](http://www.google.com): Copyright Google
+* [probstats04.png](http://www.google.com): Copyright Google
 -->
 
 ---
 
 # Sample Exercise: Peanut Chocolate Detector
 
-![](res/prob39.png)
+![](res/probstats05.png)
 
 <!--
 Ask students to discuss the implications of P(p|d) being very low even when P(d|p) and P(not d|not p) are high.
 
 Image Details:
-* [prob39.png](http://www.google.com): Copyright Google
+* [probstats05.png](http://www.google.com): Copyright Google
 -->
 
 ---
