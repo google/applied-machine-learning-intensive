@@ -3,28 +3,28 @@
 ---
 
 # Objective
-Brief description of what are the goals of this project.
+Brief description of the goals of the project.
 
 ---
 
 # Background
-Describe one needs to know to understand the context for this project.
+Briefly describe anything one needs to know to understand the context for this project.
 
 ---
 
 # Overview
-One-page high level overview describe what’s to be done in this project.
+One-page high level overview description what will be accomplished in this project and the gnereal approach.
 
 ---
 
 # Detail Design/Ideas
-Detail write ups on design approaches, ideas/experiment planned, requirements, timeline/schedule, etc.
+Detail write ups on design approaches, ideas/experiments planned, requirements, timeline/schedule, etc.
 
 Tips:
 * Focus on design, not implementation
 * A picture is worth a thousand words.  A diagram or drawing of the data and model at times is much easier to understand than words
 * If describing alternatives, eg: approach, platform, algorithm - explain why it’s not part of the design
-* Do go back and update it during implementation you took a different approach that originally designed
+* Do go back and update it during implementation - explain why you took a different approach that originally designed
 
 ---
 
