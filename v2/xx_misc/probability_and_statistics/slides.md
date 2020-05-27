@@ -126,7 +126,7 @@ Image Details:
 
 # Conditional Probability: Example
 
-![](res/prob23.png)
+![](res/probstats06.png)
 
 <!--
 Consider the example from the previous slide. Namely, P(sum = 5 | first roll = 3) 
@@ -144,7 +144,7 @@ Therefore, we have
 P(sum = 5 | first roll = 3) = (1/36)/(1/6) = 1/6. 
 
 Image Details:
-* [prob23.png](http://www.google.com): Copyright Google
+* [probstats06.png](http://www.google.com): Copyright Google
 -->
 
 ---
