@@ -46,7 +46,7 @@ Image Details:
 
 <!--
 
-In the 1980s, researchers were inspired by the visual cortex and used these ideas to create convolutional neural networks. 
+In the 1980s researchers were inspired by the visual cortex and used these ideas to create convolutional neural networks. 
 
 A convolutional neural network is simply a neural network with additional (or different) types of layers. There are convolutional layers, downsampling layers, and pooling layers. 
 
@@ -109,7 +109,7 @@ Image Details:
 
 A way to analyze influence of nearby pixels using a filter
 
-(filters are also called kernels, masks, convolution matrices)
+(Filters are also called kernels, masks, convolution matrices)
 
 ---
 
@@ -166,9 +166,9 @@ Image Details:
 ![center](res/conNN20.png)
 
 <!--
-First, we think of centering the filter on the pixel. Then we multiply the values in the filter by the values in the image. And finally, we add up the result. 
+First we think of centering the filter on the pixel. Then we multiply the values in the filter by the values in the image. And finally, we add up the result. 
 
-As you can see, the new pixel value is slightly lower than 100, but higher than 50. So the intensity is getting muted a little. This is because our filter is averaging the intensity of all the pixels around the center point. That is why this filter results in a blurring effect. 
+As you can see, the new pixel value is slightly lower than 100, but it's higher than 50. So the intensity is getting muted a little. This is because our filter is averaging the intensity of all the pixels around the center point. That is why this filter results in a blurring effect. 
 
 Image Details:
 * [conNN20.png](http://www.google.com): Copyright Google
@@ -242,7 +242,7 @@ Image Details:
 
 <!--
 
-Now, let's move one pixel to the right. 
+Now let's move one pixel to the right. 
 
 Image Details:
 * [conNN26.png](http://www.google.com): Copyright Google
@@ -316,7 +316,7 @@ Image Details:
 ![center](res/conNN14.png)
 
 <!--
-This type of convolution happens in the convolutional layers of a neural network. The values in the kernels are parameters that will be learned during training. Thus, the specific features in the images that the kernels are testing for is something that the model "learns." In other words, you don't say "hey model, test for vertical lines." Instead, the model identifies the features that are important to test for. 
+This type of convolution happens in the convolutional layers of a neural network. The values in the kernels are parameters that will be learned during training. Thus, the specific features in the images that the kernels are testing for is something that the model "learns." In other words, you don't say "Hey model, test for vertical lines." Instead, the model identifies the features that are important to test for. 
 
 Image Details:
 * [conNN14.png](??): Unlicensed 
@@ -335,7 +335,7 @@ Image Details:
 1. Take maximum value in each window
 
 <!--
-Pooling is a type of downsampling that often occurs after convolution. The goal is to reduce the size of the training data before it goes into the fully connected network, without losing much information.
+Pooling is a type of downsampling that often occurs after convolution. The goal is, without losing much information, to reduce the size of the training data before it goes into the fully connected network.
 
 -->
 
@@ -367,5 +367,4 @@ While a convolutional neural network learns MANY parameters, there are also seve
 
 <!--
 Now it's your turn to build a CNN in the lab. 
-
 -->
