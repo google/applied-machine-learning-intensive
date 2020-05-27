@@ -5,12 +5,16 @@
   ],
   "colabs": [
     "colab.ipynb"
-    ],
+  ],
+  "duration": {
+    "slides.md": 45,
+    "colab.ipynb": 150
+  },
   "handouts": [],
   "resources": [],
   "materials": [],
   "learning-objectives": [
-    "Introduction to Convolutional Neural Networks",
-    "Using TensorFlow to implement CNN",
-  ],
+    "Introduction to Convolutional Neural Networks.",
+    "Using TensorFlow to implement CNN."
+  ]
 }
