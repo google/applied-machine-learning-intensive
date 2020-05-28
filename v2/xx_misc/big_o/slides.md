@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Big-O
 
 ---
@@ -8,12 +12,12 @@ Given the following list:
 
 ![](res/bigO01.png)
 
-How many steps does it take to insert the integer 100 in the 9th position?
+How many operations does it take to insert the integer 100 in the 9th position?
 
-How many steps does it take to check if 63 is in the list?
+How many operations does it take to check if 63 is in the list?
 
 <!--
-Clarify that this is a list with 12 unknown items. (Not empty! We just don’t know what’s in each position)
+First of all, it is important to note that this is a list with 12 unknown items. We know it's not empty, but we don't know what's in each position. 
 
 1.
 Lst[8] = 100
@@ -27,16 +31,16 @@ for item in lst:
 	if item == 63:
 		print(“Found!”)
 
-Worst case: item not found. Takes 12 steps, where 12 is the size of the list
-If we had a larger list, would the number of steps change?
-Yes! The bigger the list, the more steps. We call it linear.
+Worst case: item not found. Takes 12 steps, where 12 is the length of the list. If we had a larger list, would the number of steps change? Yes! The bigger the list, the more steps. 
 
-Does that change if the list is sorted?
+We call this linear.
 
-Search in an unordered list is always at least linear.
+Searching for an item in an unordered list is always at least linear.
 
-If the list is ordered, how can we do better?
-Go over binary search example on the board, and calculate how long it takes to search in the worst case (item not found).
+*Optional*
+Does that change if the list is sorted? Yes! We can do binary search. 
+
+Suggestion: do a binary search example on the board, and calculate how long it takes to search in the worst case (item not found).
 
 Image Details:
 * [bigO01.png](http://www.google.com): Copyright Google
@@ -49,7 +53,7 @@ Image Details:
 ![](res/bigO02.png)
 
 <!--
-(Use whiteboard)
+*Suggestion: use whiteboard*
 
 Consider the code:
 
@@ -61,14 +65,12 @@ while i < len(lst):
 What’s the problem?
 Infinite loop. It’ll never stop executing…
 
-Sometimes when we’re training a model we seriously start wondering if that’s the case…
-How do we know whether it is?
-Print statements / debugging messages help us track what’s going on and if any progress is being made, and whether it’s fallen
-in an infinite loop.
-That also allows us to estimate how much time there’s left. (Give an example.)
+Sometimes when we are training a model we may seriously start to wonder if we have created an infinite loop. 
+How do we know whether we have created an infinite loop or our model is simply taking a long time to train? 
 
-This process of estimating how much time it’ll take for a piece of code to execute in the worst case is the basis of the
-concept of Big-O.
+Print statements / debugging messages help us track what’s going on and if any real progress is being made. We can also use these tools to estimate how much time there is left. 
+
+The process of estimating how much time it should take for a piece of code to execute in the worst case is the basis of the concept of Big-O.
 
 Image Details:
 * [bigO02.png](http://www.google.com): Copyright Google
@@ -85,15 +87,12 @@ Example: write a function to find all duplicates in a list
 <!--
 What happens when you ask your computer to try out every possible combination of features?
 That’s something we’ll come across a lot when working with big data.
-Give examples from class (eg, using apply vs nested for loop with iloc for example)
 
 When we write code, we need to be able to tell how much time that code is likely to take to execute based on the size of the
-input. Similarly, we need to know whether we have enough space in memory. Otherwise, how would you be able to tell whether you
+input. Similarly, we need to know whether we have enough space in memory. Otherwise, how would we be able to tell whether you
 can run a given dataset through a model on a given computer? Just trying it out and risking running out of memory is not a
-good idea! And imagine if you leave your laptop running all day and then you need to close it to go home… will you just lose
-all of your progress?
-In industry, you will work with problems like this at a much bigger scale. So it’s important to have the language and
-conceptual understanding of these limitations to be able to work efficiently.
+good idea! And imagine if we leave our laptop running all day and then we need to close it to go home. Will we just lose all of your progress?
+Industry leaders work with problems like this at a much bigger scale. So it’s important to have the language and conceptual understanding of these limitations to be able to work efficiently.
 
 Image Details:
 * [bigO03.jpg](https://unsplash.com/photos/rEgveRa_5ds)
@@ -223,7 +222,7 @@ Image Details:
 <!--
 Compare the idea of asymptotic analysis with finding limits at infinity. We really only care about arbitrarily big numbers.
 
-Give example of O(1) with a 1 million constant vs O(n^2) with a 10 constant multiplier
+Give example of O(1) with a 1 million constant vs O(n^2) with a 10 constant multiplier.
 
 def quadratic(lst):
  n = len(lst)
@@ -239,10 +238,10 @@ def constant(lst):
 
 Which is faster?
 
-Explain Omega (lower bound) and Theta (tight bound)
-In both of these cases, the worst and best case are the same. They are an example of Theta.
-In our earlier search example with had a return statement in the for loop. What happens in the best case? What about the
-worst?
+Explain Omega (lower bound) and Theta (tight bound). Omega defines an asymptotic lower bound on a function. Theta is bounds the funciton both above and below, so theta describes the true asymptotic behavior. 
+
+In both of the cases above, the worst and best case are the same. They are an example of Theta.
+In our earlier search example with had a return statement in the for loop. What happens in the best case? What about the worst?
 The best and worst case are not the same, so we use Omega and Big-O.
 
 Example: for loops without break statements vs while loop
@@ -294,10 +293,10 @@ Image Details:
 ![](res/bigO09.png)
 
 <!--
-Walk through example of how to analyze code.
-Pay special attention to how to calculate the number of instructions in each line
+Let's look at these examples together. Can anyone justify why we have labeled these pieces of code as linear, binary, and quadratic? 
 
-Hand out exercise sheet and give 15 min for students to complete
+
+*(20 mins) Hand out exercise sheet and give students a chance to work in small groups.*
 
 Image Details:
 * [bigO09.png](http://www.google.com): Copyright Google
