@@ -49,7 +49,7 @@ Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google 
 
 ---
 
-# Project Schedule
+# Project Timeline
 
 **Phase 1:**
 * Form your team 
@@ -83,7 +83,7 @@ Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google 
 
 ---
 
-# Daily and weekly time structure
+# Daily Schedule
 
 
 **Monday**
