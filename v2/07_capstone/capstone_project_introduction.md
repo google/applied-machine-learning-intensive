@@ -35,7 +35,7 @@
 
 # Datasets
 
-Your project team has the option of using one of the datasets below or finding your own dataset:
+Your project team has the option of using one of the datasets below, some of which we have used before, or finding your own dataset:
 
 * [IMDB Movie reviews sentiment classification](https://keras.io/datasets/#imdb-movie-reviews-sentiment-classification) Dataset of 25,000 movies reviews from IMDB, labeled by sentiment (positive/negative).
 * [Boston housing price regression dataset](https://keras.io/datasets/#boston-housing-price-regression-dataset) Dataset taken from the StatLib library, which is maintained at Carnegie Mellon University. Samples contain 13 attributes of houses at different locations around the Boston suburbs in the late 1970s.
