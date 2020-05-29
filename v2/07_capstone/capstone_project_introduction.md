@@ -36,34 +36,34 @@
 The project team has the option of using one of the datasets below or bring their own dataset:
 
 
-* [IMDB Movie reviews sentiment classification](https://keras.io/datasets/#imdb-movie-reviews-sentiment-classification)
-* [Boston housing price regression dataset](https://keras.io/datasets/#boston-housing-price-regression-dataset)
-* [NOAA GSOD dataset](https://www.kaggle.com/noaa/gsod)
-* [UC Irvine ML Repository](https://archive.ics.uci.edu/ml/datasets.html)
-* [Google BigQuery Public dataset](https://cloud.google.com/bigquery/public-data/)
-* [Google AI Datasets](https://ai.google/tools/datasets/)
-* [dataCommons](https://browser.datacommons.org/)
+* [IMDB Movie reviews sentiment classification](https://keras.io/datasets/#imdb-movie-reviews-sentiment-classification) Dataset of 25,000 movies reviews from IMDB, labeled by sentiment (positive/negative).
+* [Boston housing price regression dataset](https://keras.io/datasets/#boston-housing-price-regression-dataset) Dataset taken from the StatLib library, which is maintained at Carnegie Mellon University. Samples contain 13 attributes of houses at different locations around the Boston suburbs in the late 1970s.
+* [NOAA GSOD dataset](https://www.kaggle.com/noaa/gsod) Daily global surface summary from over 9000 weather stations from 1929 to 2016 maintained by National Oceanic and Atmospheric Administration (NOAA)
+* [UC Irvine ML Repository](https://archive.ics.uci.edu/ml/datasets.html) A collection of datasets including Life Sciences, Physical Sciences, Business, CS/Engineering, Social Sciences, etc.
+* [Google BigQuery Public dataset](https://cloud.google.com/bigquery/public-data/) Readily available copies of public datasets including Github actions, US births, Shakespeare, Wikipedia revision history, etc.
+* [Google AI Datasets](https://ai.google/tools/datasets/) A collection of datasets with wide-ranging topics.
+* [dataCommons](https://browser.datacommons.org/) Constructed by synthesizing a single Knowledge Graph from many different data sources. It currently contains data from Wikipedia, the US Census, NOAA, FBI, etc.
 
-Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google Public Data Explorer](https://www.google.com/publicdata/directory) to search for interesting dataset for your project.
+Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google Public Data Explorer](https://www.google.com/publicdata/directory) to search for an interesting dataset for your project.
 
 ---
 
 # Project Schedule
 
-**Week 1:**
+**Phase 1:**
 * Form your team 
 * Explore and pick project datasets
 * Brainstorm problem space and motivating question(s) that you’d like ML to help solve
 * Write a design doc on how you approach building the ML model
 
-**Week 2:**
+**Phase 2:**
 * Get feedback/review on your design doc from guest speaker(s)
 * Create a high level project plan of who’s doing what tasks by when
 * Acquire & prep your dataset
 * Start defining and training  your ML model
 * Friday afternoon lightning talks: project status, share interesting things that you found, lessons learned, etc.
 
-**Week 3:**
+**Phase 3:**
 * Use data to validate your model, and start using your model for prediction
 * Last pivot opportunities (if needed)
 * Friday mid project status check-in: 
@@ -72,11 +72,11 @@ Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google 
   * Group meeting with instructor team
   * Individual meeting with instructor team
 
-**Week 4:**
+**Phase 4:**
 * Final iterations on model predictions
 * Friday afternoon lightning talks: project status, share interesting things that you found, lessons learned, etc.
 
-**Week 5**
+**Phase 5**
 * Review results and prepare conclusions
 * Put together your project presentation or demo
 
@@ -113,47 +113,6 @@ Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google 
 * Project work
 * Afternoon: project status update presentation
 * End week debrief/de-energizer
-
----
-
-# Best practices & useful skills
-
-These could be used to simulate industry setting, and could be presented throughout the project weeks by either the instructor team, guest speaker or students.
-
-Please indicate interest in any of the topics below or suggest a new topic through group chat in Slack.
-
-**Technical topics**
-* Natural Language Understanding
-* Activation Functions
-* Web App development
-* Working with Git/Github
-* Regular Expression: replace or extract string
-* SQL: BigQuery and Pandas
-* Image: Manipulation in Python (part 2)
-* Data: Web Scraping with Beautiful Soup
-* Data: Calculate Geo distances with lat and long
-* SQL: Date arithmetics
-* Chart: Formatting with Matplotlib
-* SQL: DML statements (create, update, delete)
-* Algorithm Series: go over 1 algorithm
-* Data Issues Series: go over 1 data issue to watch for and fix
-
-**Development**
-* Design Doc
-* Coding Guideline and why it’s important
-* Code Review or Pair Programming
-* Gather Feedback
-* Testing
-
-**Project Management**
-* Project Plan
-* Standups
-* Pivots and Adjustments
-
-**Communication**
-* Presentation
-* Effective Slides
-* Demo
 
 ---
 
