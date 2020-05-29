@@ -4,8 +4,9 @@
 
 # Project Goals
 
-* Apply ML concepts and working with data skills learned in the past weeks on a sizeable data and challenging problem
-* Apply professional development skills including working in a group with different personalities, giving and receiving feedback, communicating results, and project management
+* Apply technical ML concepts and data skills learned in the first half of the course on a sizeable dataset and challenging problem
+* Demonstrate professional development skills, such as working in a group with different personalities, giving and receiving feedback, communicating results, and project management
+* Create and facilitate a recorded demo or presentation of capstone project work
 
 ---
 
@@ -16,6 +17,7 @@
 * Describe the dataset(s), data acquisition, and data preparation
 * Explain problem space and motivated questions
 * Approach and list of tasks
+* Who will play what roles (program manager, note taker) during each project phase
 
 **2. Ethical storyboarding worksheet (50 pts)**
 * Colab/codes (100 pts)
@@ -33,8 +35,7 @@
 
 # Datasets
 
-The project team has the option of using one of the datasets below or bring their own dataset:
-
+Your project team has the option of using one of the datasets below or finding your own dataset:
 
 * [IMDB Movie reviews sentiment classification](https://keras.io/datasets/#imdb-movie-reviews-sentiment-classification) Dataset of 25,000 movies reviews from IMDB, labeled by sentiment (positive/negative).
 * [Boston housing price regression dataset](https://keras.io/datasets/#boston-housing-price-regression-dataset) Dataset taken from the StatLib library, which is maintained at Carnegie Mellon University. Samples contain 13 attributes of houses at different locations around the Boston suburbs in the late 1970s.
@@ -113,6 +114,19 @@ Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google 
 * Project work
 * Afternoon: project status update presentation
 * End week debrief/de-energizer
+
+---
+
+# Final Presentations
+
+* Project demo or presentation should adhere to the following format and cover all the points here:
+  * Overview of the project and the problem it seeks to solve, if applicable
+  * Conclusions and findings
+  * Things that went well, things that did not go well, and lessons learned
+  * Next steps, if applicable
+* Presentations should be 15 minutes each and include time for questions. Each member of the team should present for some amount of time. 
+* Presentations should be visually interesting but also follow best practices for verbal presentation skills. Namely, it is important for all points to be conveyed clearly. 
+* You will have a chance to practice presenting for the instructional team during the 2-3 days leading up to final presentations.
 
 ---
 
