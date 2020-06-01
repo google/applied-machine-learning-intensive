@@ -1,3 +1,7 @@
+---
+marp: true
+---
+
 # Capstone Project Introduction
 
 ---
@@ -12,21 +16,21 @@
 
 # Deliverables
 
-**1. Design doc (50 pts)**
+**1. Design doc**
 * Goal(s) for the project - ideal long term, and realistic for the project duration
 * Describe the dataset(s), data acquisition, and data preparation
 * Explain problem space and motivated questions
 * Approach and list of tasks
 * Who will play what roles (program manager, note taker) during each project phase
 
-**2. Ethical storyboarding worksheet (50 pts)**
+**2. Ethical storyboarding worksheet**
 * Colab/codes (100 pts)
 * If code is in GitHub, include the URL to the GitHub repository
 * Add code comments as documentation for each distinct code block
 * Describing the purpose, an overview of how it works, and how to interpret results
 * Discuss current limitations and future improvements (if applicable)
 
-**3. Project demo or presentation (50 pts)**
+**3. Project demo or presentation**
 * Conclusions and findings
 * Things that went well and did not go well, and lessons learned
 * Next steps (if applicable)
