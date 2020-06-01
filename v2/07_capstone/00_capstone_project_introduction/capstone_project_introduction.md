@@ -16,10 +16,10 @@ marp: true
 
 # Capstone Project Deliverables
 
-1.) Design doc - 20%
-2.) Ethical storyboarding worksheet - 10%
-3.) Notebook - 50%
-4.) Project demo or presentation - 20% 
+1. Design doc - 20%
+1. Ethical storyboarding worksheet - 10%
+1. Notebook - 50%
+1. Project demo or presentation - 20% 
 = 100%
 
 --- 
