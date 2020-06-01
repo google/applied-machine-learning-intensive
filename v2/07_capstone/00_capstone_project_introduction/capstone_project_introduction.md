@@ -14,25 +14,38 @@ marp: true
 
 ---
 
-# Deliverables
+# Capstone Project Deliverables
 
-**1. Design doc**
-* Goal(s) for the project - ideal long term, and realistic for the project duration
+1.) Design doc - 20%
+2.) Ethical storyboarding worksheet - 10%
+3.) Notebook - 50%
+4.) Project demo or presentation - 20% 
+= 100%
+
+--- 
+
+# Capstone Project Deliverables
+
+**1.) Design doc - 20%**
+* Goal(s) for the project - ideally long term, and realistic for the project duration
+* Who will play what roles (program manager, note taker) during each project phase
 * Describe the dataset(s), data acquisition, and data preparation
 * Explain problem space and motivated questions
 * Approach and list of tasks
-* Who will play what roles (program manager, note taker) during each project phase
 
-**2. Ethical storyboarding worksheet**
-* Colab/codes (100 pts)
-* If code is in GitHub, include the URL to the GitHub repository
-* Add code comments as documentation for each distinct code block
-* Describing the purpose, an overview of how it works, and how to interpret results
-* Discuss current limitations and future improvements (if applicable)
+**2.) Ethical storyboarding worksheet - 10%
 
-**3. Project demo or presentation**
+**3.) Notebook - 50%**
+* The notebook should read like a formal report and follow a linear flow from start to finish with both narrative and code blocks. 
+* The notebook should be internally complete in the sense that a “reader” should understand the motivating question, goals, dataset, model, and ethical considerations. 
+* Markdown cells with narrative should precede and follow each code block.
+* For each piece of code, describe the purpose, an overview of how it works, and how to interpret results.
+* Discuss current limitations and future improvements (if applicable).
+
+**4.) Project demo or presentation - 20%**
+* Overview of the project and the problem it seeks to solve (if applicable)
 * Conclusions and findings
-* Things that went well and did not go well, and lessons learned
+* Things that went well, things that did not go well, and lessons learned
 * Next steps (if applicable)
 
 ---
@@ -55,7 +68,7 @@ Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google 
 
 # Project Timeline
 
-Phases 1-2 of 4
+## Phases 1-2 of 4
 
 **Project Phase 1**
 * Form teams
@@ -72,7 +85,7 @@ Phases 1-2 of 4
 
 # Project Timeline
 
-Phases 3-4 of 4
+## Phases 3-4 of 4
 
 **Project Phase 3**
 * Use data to tune model and validate
