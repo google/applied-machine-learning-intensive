@@ -20,29 +20,28 @@ marp: true
 1. Ethical storyboarding worksheet - 10%
 1. Notebook - 50%
 1. Project demo or presentation - 20% 
-= 100%
 
 --- 
 
 # Capstone Project Deliverables
 
-**1.) Design doc - 20%**
+* **1.) Design doc - 20%**
 * Goal(s) for the project - ideally long term, and realistic for the project duration
 * Who will play what roles (program manager, note taker) during each project phase
 * Describe the dataset(s), data acquisition, and data preparation
 * Explain problem space and motivated questions
 * Approach and list of tasks
 
-**2.) Ethical storyboarding worksheet - 10%
+* **2.) Ethical storyboarding worksheet - 10%
 
-**3.) Notebook - 50%**
+* **3.) Notebook - 50%**
 * The notebook should read like a formal report and follow a linear flow from start to finish with both narrative and code blocks. 
 * The notebook should be internally complete in the sense that a “reader” should understand the motivating question, goals, dataset, model, and ethical considerations. 
 * Markdown cells with narrative should precede and follow each code block.
 * For each piece of code, describe the purpose, an overview of how it works, and how to interpret results.
 * Discuss current limitations and future improvements (if applicable).
 
-**4.) Project demo or presentation - 20%**
+* **4.) Project demo or presentation - 20%**
 * Overview of the project and the problem it seeks to solve (if applicable)
 * Conclusions and findings
 * Things that went well, things that did not go well, and lessons learned
