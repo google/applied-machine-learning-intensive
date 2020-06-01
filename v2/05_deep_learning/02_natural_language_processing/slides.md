@@ -45,9 +45,9 @@ Image Details
 * *... and so much more!*
 
 <!--
-Here are some examples of what is considered natural language processing. You have likely intereacted with systems that perform these tasks before.
+Here are some examples of what is considered natural language processing. You have likely interacted with systems that perform these tasks before.
 
-There is some argument on speech recogintion actually being NLP. It is possible to convert sound waves into words without actually understanding what those words are. This is technically "processing" of natural language, but it falls short of "Natural Language Understanding." However, many speech recognition systems actually attempt to understand the speeh in order to correctly predict ambiguous words like "there", "their", and "they're".
+There is some argument on whether speech recognition should actually be considered NLP. It is possible to convert sound waves into words without actually understanding what those words are. This is technically "processing" of natural language, but it falls short of "Natural Language Understanding." However, many speech recognition systems actually attempt to understand the speech in order to correctly predict ambiguous words like "there", "their", and "they're".
 -->
 
 ---
@@ -57,7 +57,7 @@ There is some argument on speech recogintion actually being NLP. It is possible 
 ![center](res/character-model.png)
 
 <!--
-Models can process text at different levels. For language generation models you'll see some that use a character-by-character approach such as the RNN shown in this slide.
+Models can process text at different levels. For example, you'll see some language generation models that use a character-by-character approach such as the RNN shown in this slide.
 
 Image Details:
 * [character-model.png](http://www.google.com): Copyright Google
@@ -94,12 +94,12 @@ regex | matches
 `[wW]ood`   | **w**ood, **W**ood
 `beg.n`     | beg**i**n, beg**u**n, beg**3**n
 `o+h`       | **o**h, **ooooo**h
-`[^a-zA-Z]` | a single non**-**alpha character
+`[^a-zA-Z]` | a single non-alpha character
 
 <!--
-Before machine learning, we solved NLP problems using mostly pattern matching. Even now, these text processing techniques can be very important in processing messy natural language. 
+Before machine learning, NLP problems were usually solved by pattern matching. Even now, these text processing techniques can be very important in processing messy natural language. 
 
-Regular expressions are widely used in text processing (imagine needing to extract all the emails from a block of text, or remove prefixes/suffixes from a word). A regex defines a pattern that is used to match certain character combinations, following a set of rules. In this table, we show a few examples of pattern matching rules:
+Regular expressions are widely used in text processing (imagine needing to extract all the email addresses from a block of text, or remove prefixes/suffixes from a word). A regex defines a pattern that is used to match certain character combinations, following a set of rules. In this table, we show a few examples of pattern matching rules:
 * “.” matches any single character
 * “+” matches 1 or more of the previous character
 * “[^...]” negates the rest of the pattern in the brackets
@@ -168,7 +168,7 @@ There are many more linguistic features that you can extract from text. The Pyth
 
 In this example, spaCy breaks “applied machine learning” into three tokens -- two verbs (VERB) and a noun (NOUN).
 
-*It may be interesting to point out that if we instead used "Applied Machine Learning" the code would have returned 
+* It may be interesting to point out that if we instead used "Applied Machine Learning" (with capital letters), the code would have returned: 
 Applied - adjective
 Machine - proper noun
 Learning - proper noun*
@@ -185,7 +185,9 @@ Learning - proper noun*
 <!--
 To build models for NLP tasks, we must have some notion of how words fit together into sentences and text. Language modeling refers to determining how likely a certain sentence is. The simplest language modeling approach is a bag-of-words: treat a sentence like an unordered collection (set) of words.
 
-Take an example movie review, "I love love loved it!", and another, "I HATED it :-(".  As humans, we could deduce which review corresponded to a positive sentiment and which review corresponded to a negative sentiment, even if we looked at these sentences out of order (e.g., "it! I loved love love" and "HATED :-( I it").  So bag-of-words is like saying, "I'm pretty sure I can glean the meaning of sentences, with words in any order, so why bother keeping track of the order? Sounds like more work to me..." But can you think of an example or two where this strategy would fail? Especially consider if you're trying to predict more than just two sentiments ("good" and "bad"). *Prompt class for some discussion.*
+Take an example movie review, "I love love loved it!", and another, "I HATED it :-(".  As humans, we could deduce which review corresponded to a positive sentiment and which review corresponded to a negative sentiment, even if we looked at these sentences out of order (e.g., "it! I loved love love" and "HATED :-( I it").  So bag-of-words is like saying, "I'm pretty sure I can glean the meaning of sentences, with words in any order, so why bother keeping track of the order? Sounds like more work to me..."
+
+But can you think of an example or two where this strategy would fail? Especially consider if you're trying to predict more than just two sentiments ("good" and "bad"). *Prompt class for some discussion.*
 
 Image Details:
 * [bag-of-words.png](http://www.google.com): Copyright Google
@@ -229,5 +231,5 @@ Image Details:
 # Your Turn
 
 <!--
-In this lab we will perform sentiment analysis on reviews as an example. After that we'll write a classifier that determines if a piece of text was written by Jane Austin or Charles Dickens.
+In this lab, we will perform sentiment analysis on reviews as an example. After that we'll write a classifier that determines if a piece of text was written by Jane Austen or Charles Dickens.
 -->
