@@ -55,86 +55,64 @@ Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google 
 
 # Project Timeline
 
-**Phase 1:**
-* Form your team 
-* Explore and pick project datasets
-* Brainstorm problem space and motivating question(s) that you’d like ML to help solve
+Phases 1-2 of 4
+
+**Project Phase 1**
+* Form teams
+* Explore and pick project topics
 * Write a design doc on how you approach building the ML model
-
-**Phase 2:**
-* Get feedback/review on your design doc from guest speaker(s)
 * Create a high level project plan of who’s doing what tasks by when
-* Acquire & prep your dataset
-* Start defining and training  your ML model
-* Friday afternoon lightning talks: project status, share interesting things that you found, lessons learned, etc.
 
-**Phase 3:**
-* Use data to validate your model, and start using your model for prediction
-* Last pivot opportunities (if needed)
-* Friday mid project status check-in: 
-  * project status update
-  * share issues and resolutions, tips, useful tools
-  * Group meeting with instructor team
-  * Individual meeting with instructor team
+**Project Phase 2**
+* Acquire & prep dataset
+* Start defining and training your ML model
+* Beginning project presentation: discuss acquiring data, exploratory data analysis, and justification for first model
 
-**Phase 4:**
+---
+
+# Project Timeline
+
+Phases 3-4 of 4
+
+**Project Phase 3**
+* Use data to tune model and validate
+* Mid project presentation: share iterations of model tuning with a focus on challenges and questions, welcome feedback from peers and instructors
+* Group and individual meetings with the instructional team
+
+**Project Phase 4**
 * Final iterations on model predictions
-* Friday afternoon lightning talks: project status, share interesting things that you found, lessons learned, etc.
-
-**Phase 5**
 * Review results and prepare conclusions
-* Put together your project presentation or demo
+* Practice final presentation and demo, collect, and incorporate final  feedback
 
 ---
 
 # Daily Schedule
 
+Project teams work synchronously or asynchronously, but they must have daily meetings as a whole group. 
 
-**Monday**
-* 9:30: team stand-ups
-* [Optional] ad hoc topic
-* Project work
-* End of day debrief/de-energizer
-
-**Tuesday**
-* 9:30: team stand-ups
-* [Optional] ad hoc topic
-* Project work
-* End of day debrief/de-energizer
-
-**Wednesday**
-* 9:30: team stand-ups
-* Professional Skills session and/or Guest Speaker
-
-**Thursday**
-* 9:30: team stand-ups
-* [Optional] ad hoc topic
-* Project work
-* End of day debrief/de-energizer
-
-**Friday**
-* 9:30: team stand-ups
-* [Optional] ad hoc topic
-* Project work
-* Afternoon: project status update presentation
-* End week debrief/de-energizer
+Sample daily schedule
+* Morning team stand-ups 
+* Project work (multi-hour block)
+* (Optional) ad hoc topic session (at most 2-3 times per phase)
+* Lunch
+* Project work (multi-hour block)
+* (Optional) professional skills session or guest speaker (at most 1 per phase)
+* End of day team meetings and stand-ups
 
 ---
 
 # Final Presentations
 
 * Project demo or presentation should adhere to the following format and cover all the points here:
-  * Overview of the project and the problem it seeks to solve, if applicable
-  * Conclusions and findings
-  * Things that went well, things that did not go well, and lessons learned
-  * Next steps, if applicable
-* Presentations should be 15 minutes each and include time for questions. Each member of the team should present for some amount of time. 
+ * Overview of the project and the problem it seeks to solve, if applicable
+ * Conclusions and findings
+ * Things that went well, things that did not go well, and lessons learned
+ * Next steps, if applicable
+* Presentations should be 15 minutes each plus 5 minutes for questions. Each member of the team should present for roughly the same amount of time. 
 * Presentations should be visually interesting but also follow best practices for verbal presentation skills. Namely, it is important for all points to be conveyed clearly. 
-* You will have a chance to practice presenting for the instructional team during the 2-3 days leading up to final presentations.
+* You will have an opportunity to present to the instructional team during the 2-3 days leading up to final presentations. It's recommended that you incorporate their feedback.
 
 ---
 
-  
-
-
+# Questions?
 
