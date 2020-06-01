@@ -14,7 +14,7 @@ img[alt~="center"] {
 # Transfer Learning
 
 <!--
-The models that we have trained so far have all been trained from scratch. We start with a randomly weighted model and then use large amounts of data and many many epochs over that data in order to build a reasonable model.
+Most of the models that we have trained so far have all been trained from scratch. We start with a randomly weighted model and then use large amounts of data and many many epochs over that data in order to build a reasonable model.
 
 But is that how we learn?
 -->
@@ -28,7 +28,7 @@ But is that how we learn?
 <!--
 Well, yes and no.
 
-We do indeed learn in self-guided ways by looking at examples. But, we also learn through the transfer of knowledge. Experts can provide insights that can be used to accelerate our learning process.
+We do indeed learn in self-guided ways by looking at examples. But, we also learn through the transfer of knowledge. Others can provide insights that can be used to accelerate our learning process.
 
 Image Details:
 * [learning.jpeg](https://www.pexels.com/photo/girls-on-desk-looking-at-notebook-159823/): Pexels License
@@ -41,9 +41,9 @@ Image Details:
 ![center](res/zebra.jpg)
 
 <!--
-Let's say that I already know what a horse, tiger, and penguin are. If I wanted to learn how to identify a zebra, I could look at pictures of zebras. Or, you might tell me that a zebra is the shape of a horse, has the coat patterns of a tiger, and the colors of a penguin. This would greatly accelerate my ability to identify zebras, even if I only had a handful of pictures of zebras to study.
+Let's say that we already know what a horse, tiger, and penguin are. If we wanted to learn how to identify a zebra, we could look at pictures of zebras. Or, someone might tell us that a zebra is the shape of a horse, has the coat patterns of a tiger, and the colors of a penguin. This would greatly accelerate our ability to identify zebras, even if we only had a handful of pictures of zebras to study.
 
-Transfer learning is similar to this. A model that already knows how to identify some classes of data can be built upon/extended to fit the problem that you are trying to solve. The base model is already good at find key features. The new model can utilize this ability and perform better faster than if it was trained
+Transfer learning is a similar idea. A model that can already identify some classes of data can be extended to fit the problem that we are trying to solve. The base model is already good at find key features. The new model can utilize this ability and perform better faster than if it was trained
 
 Image Details:
 * [zebra.jpg](https://www.pexels.com/photo/white-and-black-zebra-standing-on-ground-1916645/): Pexels License
