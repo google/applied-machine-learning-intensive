@@ -12,7 +12,7 @@ img[alt~="center"] {
 # Autoencoders
 
 <!--
-In this unit we will learn about autoencoders. Autoencoders are a special application of deep neural networks. We'll also learn about a different way to build models in TensorFlow. So far we've used the `Estimator` API and the Keras `Sequential` API. We'll cover a new form of building models in Keras that makes building autoencoders a little more intuitive.
+In this unit, we will learn about autoencoders. Autoencoders are a special application of deep neural networks. We'll also learn about a different way to build models in TensorFlow. So far, we've used the `Estimator` API and the Keras `Sequential` API. We'll cover a new form of building models in Keras that makes building autoencoders a little more intuitive.
 -->
 
 ---
@@ -78,7 +78,7 @@ up_sampling2d (UpSampling2D) (None, 8, 8, 16)          0
 <!--
 We use upsampling to add wider dense layers and create the decoder. You can think of upsampling as the reverse of the pooling layers that we used in the convolutional neural networks we created for classification. While a pooling layer shrinks its input, the upsampling layer expands its input.
 
-In TensorFlow Kearas we'll use the `UpSampling2D` layer to decode our encoded data.
+In TensorFlow Keras we'll use the `UpSampling2D` layer to decode our encoded data.
 
 In the example on this slide, you can see a convolutional layer that outputs a 4x4x16 matrix. The upsampling layer doubles the first two dimensions to 8x8x16.
 -->
@@ -113,7 +113,7 @@ Obviously autoencoders are good at lossy data compression. Once trained, the enc
 
 Another application is principal component analysis. If you think about what an autoencoder is doing, it is reducing input data down into the minimal amount of information required to then revive that data. It is finding principal components using a neural network. You can train the model and then use the encoder to reduce the dimensionality of your data before feeding it into another model.
 
-Another interesting application is data cleaning. Autoencoders can be used to remove noise from data. In our lab we'll remove static and watermarks from images. Admittedly there is some data loss, but it is still an interesting application.
+Another interesting application is data cleaning. Autoencoders can be used to remove noise from data. In our lab, we'll remove static and watermarks from images. Admittedly, there is some data loss, but it is still an interesting application.
 -->
 
 ---
@@ -159,9 +159,9 @@ autoencoder = Model(
 ```
 
 <!--
-To build an autoencoder you create an encoder and a decoder. The encoder accepts an input layer and outputs a latent layer. The decoder accepts a latent layer and outputs an output layer.
+To build an autoencoder, you create an encoder and a decoder. The encoder accepts an input layer and outputs a latent layer. The decoder accepts a latent layer and outputs an output layer.
 
-They encoder and decoder are stitched together into a third model, the autoencoder. Notice that the autoencoder accepts the input layer and passes it directly to the encoder. The encoder is the input to the decoder (via the latent later).
+The encoder and decoder are stitched together into a third model, the autoencoder. Notice that the autoencoder accepts the input layer and passes it directly to the encoder. The encoder is the input to the decoder (via the latent layer).
 
 When the autoencoder is trained, the encoder and decoder are also trained and can be used separately.
 -->

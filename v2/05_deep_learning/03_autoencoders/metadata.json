@@ -7,11 +7,15 @@
   "slides": [
     "slides.md"
   ],
+  "duration": {
+    "slides.md": 20,
+    "colab.ipynb": 150
+  },
   "learning-objectives": [
-    "Understand the fundamental structure of autoencoders",
-    "Implement an autoencoder for compressing images",
-    "Implement an autoencoder for denoising images",
-    "Apply upsampling",
-    "Combine multiple models using a wrapper model"
+    "Understand the fundamental structure of autoencoders.",
+    "Implement an autoencoder for compressing images.",
+    "Implement an autoencoder for denoising images.",
+    "Apply upsampling.",
+    "Combine multiple models using a wrapper model."
   ]
 }
