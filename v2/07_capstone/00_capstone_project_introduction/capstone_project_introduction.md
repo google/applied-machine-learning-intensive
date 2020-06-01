@@ -32,7 +32,7 @@ marp: true
 * Explain problem space and motivated questions
 * Approach and list of tasks
 
-**2.) Ethical storyboarding worksheet - 10%
+**2.) Ethical storyboarding worksheet - 10%**
 
 **3.) Notebook - 50%**
 * The notebook should read like a formal report and follow a linear flow from start to finish with both narrative and code blocks. 
