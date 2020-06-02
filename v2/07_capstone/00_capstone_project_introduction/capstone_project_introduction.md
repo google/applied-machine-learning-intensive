@@ -25,6 +25,8 @@ marp: true
 
 # Capstone Project Deliverables
 
+## Deliverables 1-2 of 4
+
 **1.) Design doc - 20%**
 * Goal(s) for the project - ideally long term, and realistic for the project duration
 * Who will play what roles (program manager, note taker) during each project phase
@@ -33,6 +35,12 @@ marp: true
 * Approach and list of tasks
 
 **2.) Ethical storyboarding worksheet - 10%**
+
+---
+
+# Capstone Project Deliverables
+
+## Deliverables 3-4 of 4
 
 **3.) Notebook - 50%**
 * The notebook should read like a formal report and follow a linear flow from start to finish with both narrative and code blocks. 
@@ -98,6 +106,16 @@ Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google 
 
 ---
 
+# Capstone Project Team Roles
+
+Rotating with each of the four project phases, team members will take turns working in different capacities.
+
+**Program Manager:** Everyone will have a turn in the role of “program manager,” or the person who is purposefully directing the team and assigning action items. This role builds useful professional skills, and rotating ensures no one person gets stuck with all of the administrative tasks to keep the team running.
+
+**Note Taker:** Each student team member will be responsible for maintaining a “decision log” during at least one phase of the project. Entries in decision logs may include why the team went forward with one thing over another, how a problem got resolved, unresolved tasks or questions, etc. Decision logs will be housed in a common repo and accessible to students and instructional staff.
+
+---
+
 # Daily Schedule
 
 Project teams work synchronously or asynchronously, but they must have daily meetings as a whole group. 
@@ -110,6 +128,12 @@ Sample daily schedule
 * Project work (multi-hour block)
 * (Optional) professional skills session or guest speaker (at most 1 per phase)
 * End of day team meetings and stand-ups
+
+<!--
+During the capstone project phases, we will have  morning and afternoon “standups.” This is a very common industry practice, and for good reason! They allow group members an opportunity to raise issues or ask for help regarding anything that's blocking their work.
+
+Every morning we'll take 10 minutes or less to share how your group will prioritize your time for the day and what you will feasibly get accomplished. Then at the end of the day, groups will come back together as a class to share what you accomplished during the day, anything you need help with, and what your focus will be the following day. This bookend standup structure will keep us on track and allow instructors to help as needed.
+-->
 
 ---
 
