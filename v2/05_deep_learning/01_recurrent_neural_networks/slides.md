@@ -16,7 +16,7 @@ img[alt~="center"] {
 <!--
 We have encountered numerous deep neural networks throughout this course. In previous tracks, training data flowed through the network (feedforward), and then adjustments were made to the weights in the network from the last layer through the first (backpropagation).
 
-Just to name a few, we've used dense layers, dropout layers, convolutional layers, and pooling layers. In this unit we will learn about recurrent neural networks, which are not strictly feedforward networks.
+Just to name a few, we've used dense layers, dropout layers, convolutional layers, and pooling layers. In this unit, we will learn about recurrent neural networks, which are not strictly feedforward networks.
 -->
 
 ---
@@ -58,7 +58,7 @@ Image Details:
 <!--
 This is what it would look like to "unroll" the flow of data through a recurrent neuron over time. You can see that it typically starts out with a seeded input value of zero for its backfeed. At each point in the series, the neuron both passes data to the next layer of neurons and passes data forward in time to itself the next time it fires.
 
-Also note that we are looking at a single neuron in a layer with one input and one output. In reality you'll have wide layers, so imagine multiple recurrent nodes side by side, each with multiple inputs and outputs.
+Also note that we are looking at a single neuron in a layer with one input and one output. In reality, you'll have wide layers, so imagine multiple recurrent nodes side by side, each with multiple inputs and outputs.
 
 Image Details:
 * [unrolled.png](https://www.google.com): Copyright Google
@@ -77,7 +77,7 @@ On this slide, you can see a very simplified LSTM cell. If you look at the horiz
 
 You can see that the short-term state gets mixed with the weights in a set of activation functions labelled A1 through A4. The outputs of these functions, as well as the long-term state, then get passed through a series of gates that ultimately lead to the output of a new y, c, and h value.
 
-The gates in order are:
+The numbered gates in order are:
 
 1. The forget gate
 2. The input gate
@@ -98,7 +98,7 @@ Image Details:
 * Convolutional Neurons
 
 <!--
-The LSTM cell is pretty complex. There is an alternative called the "Gated Recurrent Unit," GRU neuron. The GRU has a single feedback channel that manages both short- and long-term state.
+The LSTM cell is pretty complex. There is an alternative called the "Gated Recurrent Unit" (GRU) neuron. The GRU has a single feedback channel that manages both short- and long-term state.
 
 Another type of neuron that performs very well for sequence tasks alongside, or in place of, LSTM and GRU neurons are convolutional neurons. We'll see a convolutional neuron in action in our lab.
 -->
@@ -170,7 +170,7 @@ Image Details:
 - Machine learning and RNNs specifically give us a new tool for sequence prediction that contains less assumptions
 
 <!--
-The standard approach to sequence prediction for several years was a statistical one. (No need to go into detail, but you could mention Markov Chains or ARIMA time series forecasting. Suffice to say, these approaches often require a lot of assumptions, such as a transition matrix of probabilities, or a normal distribution of noise.) RNNs allow the data to "speak for itself", it is a largely non-parametric approach. The downside is that it usually needs more data to make good predictions.
+The standard approach to sequence prediction for several years was a statistical one. (No need to go into detail, but you could mention Markov Chains or ARIMA time series forecasting. Suffice to say, these approaches often require a lot of assumptions, such as a transition matrix of probabilities, or a normal distribution of noise.) RNNs allow the data to "speak for itself" - it is a largely non-parametric approach. The downside is that it usually needs more data to make good predictions.
 
 -->
 
@@ -204,7 +204,7 @@ Image Details:
 ![center](res/rain_forecast.png)
 
 <!--
-Predicting the weather based on previous days of weather could also be an important application of sequence prediction. While most meteorological systems use a parametric approach based on input data (such as air pressure, cloud cover etc.), a sequence prediction model can go surprisingly far.
+Predicting the weather based on previous days of weather could also be an important application of sequence prediction. While most meteorological systems use a parametric approach based on input data (such as air pressure, cloud cover, etc.), a sequence prediction model can go surprisingly far.
 
 Image Details:
 * [rain_forecast.png](https://unsplash.com/photos/zNGPmIVPQf4): Unsplash License
@@ -217,7 +217,7 @@ Image Details:
 ![center](res/train_station.jpg)
 
 <!--
-You may want to predict the number of travelers at a train station on a given day, given the previous data of how many travellers each day. RNNs pick up on things like varieties of seasonality (e.g. weekday vs weekend, holiday season) and noise.
+You may want to predict the number of travelers at a train station on a given day, given the previous data of how many travellers were there each day. RNNs pick up on things like varieties of seasonality (e.g. weekday vs weekend, holiday season) and noise.
 
 However, especially for time series with seasonality, we need to have enough data. For example, if we only have data for October and November, we won't do very well at predicting December (since it is a holiday month); we would ideally have data for December of the previous year.
 

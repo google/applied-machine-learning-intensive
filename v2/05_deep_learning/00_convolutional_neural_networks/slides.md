@@ -13,15 +13,13 @@ img[alt~="center"] {
 
 ---
 
-![](res/conNN02.jpg)
+![center](res/conNN02.jpg)
 
 <!--
 
 Like neural networks, convolutional neural networks were inspired by biology. 
 
-In the 1960s David Hubel and Torsten Wiesel showed that the visual cortex in cats and monkeys contain neurons that fire individually in response to small regions in the field of view. 
-
-Visual cortex; small receptive field; overlap; react to different line orientations; can stack
+In the 1960s, David Hubel and Torsten Wiesel showed that the visual cortex in cats and monkeys contain neurons that fire individually in response to small regions in the field of view. 
 
 Image Details:
 * [conNN02.jpg](https://pixabay.com/photos/eye-iris-pupil-vision-eyeball-3221498/): Pixabay License
@@ -29,7 +27,7 @@ Image Details:
 
 ---
 
-![](res/conNN03.jpg)
+![center](res/conNN03.jpg)
 
 <!--
 For a given neuron, the visual space that affects whether or not that neuron will fire is known as its "receptive field." 
@@ -44,11 +42,11 @@ Image Details:
 
 ---
 
-![](res/conNN01.png)
+![center](res/conNN01.png)
 
 <!--
 
-In the 1980s, researchers were inspired by the visual cortex and used these ideas to create convolutional neural networks. 
+In the 1980s researchers were inspired by the visual cortex and used these ideas to create convolutional neural networks. 
 
 A convolutional neural network is simply a neural network with additional (or different) types of layers. There are convolutional layers, downsampling layers, and pooling layers. 
 
@@ -59,7 +57,7 @@ Image Details:
 
 ---
 
-![](res/conNN05.jpg)
+![center](res/conNN05.jpg)
 
 <!--
 You can stack different numbers of these layers in various orders to achieve different results during training.
@@ -70,7 +68,7 @@ Image Details:
 
 ---
 
-![](res/conNN13.png)
+![center](res/conNN13.png)
 
 <!--
 Recall the simplest building block for a typical neural network: the perceptron. 
@@ -83,7 +81,7 @@ Image Details:
 
 # Issues with Multi-Layer Perceptron (plain ANN)
 
-![](res/conNN15.png)
+![center](res/conNN15.png)
 
 <!--
 If we are dealing with image data, small and often insignificant changes to the training data can yield large and often incorrect changes to the learned parameters in the model. 
@@ -96,7 +94,7 @@ Image Details:
 
 ---
 
-![](res/conNN14.png)
+![center](res/conNN14.png)
 
 <!--
 In a convolutional neural network, we first feed our data into convolutional, downsampling, and pooling layers. The results are then fed into a fully connected neural network like we have seen before. 
@@ -111,11 +109,11 @@ Image Details:
 
 A way to analyze influence of nearby pixels using a filter
 
-(filters are also called kernels, masks, convolution matrices)
+(Filters are also called kernels, masks, convolution matrices)
 
 ---
 
-![](res/conNN16.png)
+![center](res/conNN16.png)
 
 <!--
 Let's look at a simple example. Imagine we have the image on the left. It's just a rectangle with two halves shaded different colors. 
@@ -168,9 +166,9 @@ Image Details:
 ![center](res/conNN20.png)
 
 <!--
-First, we think of centering the filter on the pixel. Then we multiply the values in the filter by the values in the image. And finally, we add up the result. 
+First we think of centering the filter on the pixel. Then we multiply the values in the filter by the values in the image. And finally, we add up the result. 
 
-As you can see, the new pixel value is slightly lower than 100, but higher than 50. So the intensity is getting muted a little. This is because our filter is averaging the intensity of all the pixels around the center point. That is why this filter results in a blurring effect. 
+As you can see, the new pixel value is slightly lower than 100, but it's higher than 50. So the intensity is getting muted a little. This is because our filter is averaging the intensity of all the pixels around the center point. That is why this filter results in a blurring effect. 
 
 Image Details:
 * [conNN20.png](http://www.google.com): Copyright Google
@@ -202,7 +200,7 @@ Image Details:
 
 # Line Detectors
 
-![](res/conNN23.png)
+![center](res/conNN23.png)
 
 <!--
 Here are two very common kernels that can be used to detect lines in an image. 
@@ -215,7 +213,7 @@ Image Details:
 
 ---
 
-![](res/conNN24.png)
+![center](res/conNN24.png)
 
 <!--
 On the left we have an image that is similar to the previous example. There is a line down the center, where the shading changes color. Let's see if the kernel G_{x} can detect this line. 
@@ -228,7 +226,7 @@ Image Details:
 
 ---
 
-![](res/conNN25.png)
+![center](res/conNN25.png)
 
 <!--
 
@@ -240,11 +238,11 @@ Image Details:
 
 ---
 
-![](res/conNN26.png)
+![center](res/conNN26.png)
 
 <!--
 
-Now, let's move one pixel to the right. 
+Now let's move one pixel to the right. 
 
 Image Details:
 * [conNN26.png](http://www.google.com): Copyright Google
@@ -252,7 +250,7 @@ Image Details:
 
 ---
 
-![](res/conNN27.png)
+![center](res/conNN27.png)
 
 <!--
 
@@ -264,7 +262,7 @@ Image Details:
 
 ---
 
-![](res/conNN28.png)
+![center](res/conNN28.png)
 
 <!--
 
@@ -276,7 +274,7 @@ Image Details:
 
 ---
 
-![](res/conNN29.png)
+![center](res/conNN29.png)
 
 <!--
 
@@ -288,7 +286,7 @@ Image Details:
 
 ---
 
-![](res/conNN30.png)
+![center](res/conNN30.png)
 
 <!--
 
@@ -300,7 +298,7 @@ Image Details:
 
 ---
 
-![](res/conNN31.png)
+![center](res/conNN31.png)
 
 
 <!--
@@ -315,10 +313,10 @@ Image Details:
 
 ---
 
-![](res/conNN14.png)
+![center](res/conNN14.png)
 
 <!--
-This type of convolution happens in the convolutional layers of a neural network. The values in the kernels are parameters that will be learned during training. Thus, the specific features in the images that the kernels are testing for is something that the model "learns." In other words, you don't say "hey model, test or vertical lines." Instead, the model identifies the features that are important to test for. 
+This type of convolution happens in the convolutional layers of a neural network. The values in the kernels are parameters that will be learned during training. Thus, the specific features in the images that the kernels are testing for is something that the model "learns." In other words, you don't say "Hey model, test for vertical lines." Instead, the model identifies the features that are important to test for. 
 
 Image Details:
 * [conNN14.png](??): Unlicensed 
@@ -337,7 +335,7 @@ Image Details:
 1. Take maximum value in each window
 
 <!--
-Pooling is a type of downsampling that often occurs after convolution. The goal is to reduce the size of the training data before it goes into the fully connected network, without losing much information. s
+Pooling is a type of downsampling that often occurs after convolution. The goal is, without losing much information, to reduce the size of the training data before it goes into the fully connected network.
 
 -->
 
@@ -369,5 +367,6 @@ While a convolutional neural network learns MANY parameters, there are also seve
 
 <!--
 Now it's your turn to build a CNN in the lab. 
-
 -->
+
+---

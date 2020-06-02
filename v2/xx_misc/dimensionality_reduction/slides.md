@@ -2,14 +2,19 @@
 marp: true
 ---
 
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Dimensionality Reduction
 
 <!--
 This lesson is about dimensionality reduction.
 
-This class is largely focused on prediction models and algorithms. Dimensionality reduction is not a prediction algorithm, but
-is a very important preprocessing algorithm. Dimensionality reduction is often performed on a dataset before building a
-prediction model, such as logistic regression.
+This class is largely focused on prediction models and algorithms. Dimensionality reduction is not a prediction algorithm, but it is a very important pre-processing algorithm. Dimensionality reduction is often performed on a dataset before building a prediction model, such as logistic regression.
 
 -->
 
@@ -17,10 +22,10 @@ prediction model, such as logistic regression.
 
 # What "dimensions" are being reduced?
 
-![](res/3d_glasses.png)
+![center](res/3d_glasses.png)
 
 <!--
-The dimensionality being reduced here is the number of input features. Say we have a dataset with 100 features. So we
+In this context, "dimension" refers to the number of input features. So the dimensionality being reduced is the number of input features. Say we have a dataset with 100 features. So we
 initially have 100 dimensions in our model. This can be unwieldy and lead to overfitting, in the same way on training on too
 much data and leaving none for testing can lead to overfitting.
 
@@ -38,26 +43,26 @@ Image Details:
 <!--
 Dimensionality reduction is most important when some features may be correlated. Many prediction models actually assume that
 features are independent, or at least have low collinearity or correlation. But this is not always true! Having correlated
-features can lead to violations of model assumptions, which brings the entire model in question.
+features can lead to violations of model assumptions, which brings the validity of the entire model in question.
 
 -->
 
 ---
 
-# Correlated Features
+# Correlated Features Example
 
 - Height (m)
 - Mass (kg)
 - Body Mass Index (BMI) = mass/height^2
 
 <!--
-Take an extreme example:
+Let's consdier this extreme example. 
 
 Say we have a model that uses height, mass, and BMI as features. Now, BMI is entirely a derived feature from height and mass.
 Having all 3 of these features means we *definitely* have correlated features. Even alone, height and mass are extremely
-correlated, and may lead to issues. Having all 3 is a perfect example of too many dimensions.
+correlated, and may lead to issues. Having all 3 is certainly an example of too many dimensions.
 
-We would run dimensionality reduction on this to find just the dimensions that matter, before running this feature set through
+We would run dimensionality reduction on these data to find just the dimensions that matter most, before running the feature set through
 any models.
 
 -->
@@ -71,7 +76,9 @@ any models.
 - Build a model with components rather than raw features
 
 <!--
-PCA is by far the most widely used algorithm for dimensionality reduction. PCA works by taking the feature matrix and finding
+PCA is by far the most widely used algorithm for dimensionality reduction. The goal of PCA is to identify vectors that explain the most variance in the data. These are the most important components. 
+
+PCA works by taking the feature matrix and finding
 the eigenvalues and eigenvectors of this matrix.
 
 (NOTE: Mentioning this will be useful to those with a linear algebra background, but may intimidate those who haven't heard of
@@ -81,7 +88,9 @@ features is.)
 
 Note that the final components are not a subset of the original features, but a linear combination of features. That is how we
 distinguish between "feature" (an input feature) and a "component" (result of PCA, which is a linear combination of input
-features).
+features). The results of PCA are no longer going to be a physical feature that was measured. This is okay, but it does make interpreting the results of a model slightly more subtle. 
+
+
 
 -->
 
@@ -94,7 +103,9 @@ features).
 - You can let sklearn choose the best number of components
 
 <!--
-As usual, it is probably best to let sklearn choose the optimal number of components, unless you have a set number in mind.
+In general, our goal is to end up with the smallest number of components that explains the most amount of variance. 
+
+As usual, you may let scikit-learn choose the optimal number of components, unless you have a set number in mind for your usecase. 
 
 -->
 
@@ -103,7 +114,6 @@ As usual, it is probably best to let sklearn choose the optimal number of compon
 # Your Turn!
 
 <!--
-Direct students to the colab, where they will apply PCA to a dataset on wine, before applying logistic regression to the
-components.
+We will now turn to the lab, where we will apply PCA to a dataset on wine. Then we will build a logistic regression model. 
 
 -->

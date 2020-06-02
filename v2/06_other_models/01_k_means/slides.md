@@ -128,17 +128,17 @@ Image Details:
 
 # Lab
 
-Using Black Friday data to segment shopping customers.
+Clustering mushrooms to determine whether they're edible or poisonous.
 
-![center](res/blackfriday.jpg)
+![center](res/mushrooms.jpg)
 
 <!--
-Businesses often segment their customers into groups for marketing purposes. Often these segments are based on some characteristic of the customer: age, gender, spending bracket, etc. These segments are created based on assumptions that marketers have about their customers.
+It can often be difficult to identify whether mushrooms are of an edible or poisonous species. Slight variations on a range of features (stalk size, cap color, odor, etc.) can mean the difference between a healthy snack and a mushroom of deadly toxicity. The University of California Irvine has a [dataset] (https://www.kaggle.com/uciml/mushroom-classification) containing various attributes of mushrooms, including edibility.
 
-In this lab we will use k-means clustering to find customer segments instead of relying on traditional segmentation methods.
+In this lab, we want to see if we can find clusters of mushroom attributes that can be used to determine if a mushroom is edible or not.
 
 Image Details:
-* [blackfriday.jpg](https://pixabay.com/photos/family-shopping-center-purchase-2923690/): Pixabay License
+* [mushrooms.jpg](https://pixabay.com/photos/mushroom-mushrooms-agaric-3659165/): Pixabay License
 
 -->
 
