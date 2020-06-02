@@ -58,9 +58,9 @@ Image Details:
 <!--
 At a very high-level, transfer learning can look a lot like adding an extra few layers to the end of a pre-trained model.
 
-In this diagram the pre-trained model is an existing model that has been trained and performs acceptably well. This model has persisted weights that are packaged with the model.
+In this diagram the pre-trained model is an existing model that has been trained and performs acceptably well. This model has persisted weights that are packaged and loaded with the model.
 
-The customizations model is a new set of untrained layers. They have random (or at leas naive) initial weights. These weights still need to be discovered through training.
+The customizations model is a new set of untrained layers. They have random (or at least naive) initial weights. These weights still need to be learned through training.
 
 As you can decipher from the data flow arrow, data typically still enters the model through the pre-trained input layer. However, the output layer of the pre-trained model then feeds the new model. The final output is the output layer of the new model.
 
@@ -76,9 +76,9 @@ Image Details:
 <!--
 This begs the question: Do you re-train the pre-trained model?
 
-The answer is yes and no.
+The answer is usually "no" but not always. 
 
-If the data that you have to train your new model is similar in size or larger than the data used to train the pre-trained model and if the classes that they identify largely overlap, then it is probably fine. Otherwise it is advised to "freeze" the pre-trained model and not update the weights.
+If the data that you have to train your new model is similar in size or larger than the data used to train the pre-trained model and if the classes that they identify largely overlap, then it may be worthwhile. Otherwise it is advised to "freeze" the pre-trained model and not update the weights.
 
 This freezing can be for the whole model, or for only a few specific layers (typically those layers closer to the input layer are frozen).
 -->
@@ -92,9 +92,9 @@ This freezing can be for the whole model, or for only a few specific layers (typ
 <!--
 We also need to think about what layer is actually the output layer from a pre-trained model.
 
-In most classification problems we have multiple layers of high-dimensional matrices, but then at the very end of the model we flatten the data down to a two-dimensional matrix of class estimates.
+In most classification problems we have multiple layers of high-dimensional matrices, but then at the very end of the model we flatten the data down to a vector of class-estimates.
 
-We actually don't want this flattened data feeding our extended model. Instead we need to use an intermediate high-dimensional layer.
+We don't want this flattened data feeding our extended model, so instead we need to use an intermediate high-dimensional layer.
 
 Image Details:
 * [which-output.png](http://www.google.com): Copyright Google
@@ -109,9 +109,7 @@ Image Details:
 <!--
 We need to introduce a little modelling terminology at this point. You sometimes hear about the "bottom" or "top" of a model. Which end is which?
 
-If you think about a model as a funnel, then it makes sense for the input side to be the top and the output to be the bottom. However, that isn't the terminology that caught on.
-
-Instead, many papers illustrated models with the input layer at the bottom and the output layer at the top of diagrams. Culture now dictates that the bottom of a model is the input and the top of a model is the output.
+Many papers illustrated models with the input layer at the bottom and the output layer at the top of diagrams. Culture now dictates that the bottom of a model is the input and the top of a model is the output.
 
 Image Details:
 * [bottom-top.png](http://www.google.com): Copyright Google
@@ -124,7 +122,7 @@ Image Details:
 ![center](res/new-top.png)
 
 <!--
-This terminology is important because some models allow allow you to choose to include the "top" of the model or not. If you leave out the top, then you get a higher-dimensional input for your model that is benefitting from transfer learning. This is typically a good thing.
+This terminology is important because some models allow you to choose to include the "top" of the model or not. If you leave out the top, then you get a higher-dimensional input for your custom model which is typically a good thing.
 
 Image Details:
 * [new-top.png](http://www.google.com): Copyright Google
