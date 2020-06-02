@@ -3,10 +3,23 @@ marp: true
 ---
 
 # Support Vector Machines
+<!--
+Support vector machines (SVM) can be used for both classification and regression tasks, but classification is far more common. In this lecture, we will focus on using SVM for classification. The lab also focuses mainly on classification, but does include a regression example. 
+-->
 
 ---
 
-Linear and Nonlinear Classification {.big}
+# Linear Classification 
+## Hyperplane 
+In p-dimensional space, a hyperplane is a plane of p-1 dimensions. 
+
+* In two dimensions, a hyperplane is a line. 
+* In three dimensions, a hyperplane is a typical plane (2-dimensional).
+
+## Goal - use a hyperplane to separate data. 
+<!--
+
+-->
 
 ---
 

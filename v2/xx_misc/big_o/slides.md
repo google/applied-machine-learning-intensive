@@ -296,8 +296,15 @@ Image Details:
 Let's look at these examples together. Can anyone justify why we have labeled these pieces of code as linear, binary, and quadratic? 
 
 
-*(20 mins) Hand out exercise sheet and give students a chance to work in small groups.*
-
 Image Details:
 * [bigO09.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Your Turn
+
+
+<!--
+There is additional practice with Big-O in the lab. 
 -->
