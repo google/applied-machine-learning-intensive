@@ -12,7 +12,7 @@ img[alt~="center"] {
 # Autoencoders
 
 <!--
-In this unit, we will learn about autoencoders. Autoencoders are a special application of deep neural networks. We'll also learn about a different way to build models in TensorFlow. So far, we've used the `Estimator` API and the Keras `Sequential` API. We'll cover a new form of building models in Keras that makes building autoencoders a little more intuitive.
+In this unit we will learn about autoencoders. Autoencoders are a special application of deep neural networks. We'll also learn about a different way to build models in TensorFlow. So far we've used the `Estimator` API and the Keras `Sequential` API. We'll cover a new form of building models in Keras that makes building autoencoders a little more intuitive.
 -->
 
 ---
@@ -36,7 +36,7 @@ Encoding looks a whole lot like the neural networks that we have already seen, a
 
 The goal of the encoder is to take some form of input data and reduce it down to a smaller representation.
 
-But there has to be some way to know if this smaller representation is useful? We do that with the decoder.
+But there has to be some way to know if this smaller representation is useful. We do that with the decoder.
 
 Image Details:
 * [encoder.png](http://www.google.com): Copyright Google
@@ -51,7 +51,7 @@ Image Details:
 <!--
 As you might expect, the decoder does the opposite of the encoder. The decoder starts with a compressed representation of the data and inflates it back to the original size.
 
-We haven't really seen this before. The networks that we have built tend to get narrower as data flows through them. This widening is less common. Sure, we could add wider and wider dense layers in a deep neural network, but it isn't common to see outside of this context.
+We haven't really seen this before. The networks we have built tend to get narrower as data flows through them. This widening is less common. Sure, we could add wider and wider dense layers in a deep neural network, but it isn't common to see outside of this context.
 
 How do we do this?
 
@@ -76,7 +76,7 @@ up_sampling2d (UpSampling2D) (None, 8, 8, 16)          0
 ```
 
 <!--
-We use upsampling to add wider dense layers and create the decoder. You can think of upsampling as the reverse of the pooling layers that we used in the convolutional neural networks we created for classification. While a pooling layer shrinks its input, the upsampling layer expands its input.
+We use upsampling to add wider dense layers and create the decoder. You can think of upsampling as the reverse of the pooling layers we used in the convolutional neural networks we created for classification. While a pooling layer shrinks its input, the upsampling layer expands its input.
 
 In TensorFlow Keras we'll use the `UpSampling2D` layer to decode our encoded data.
 
@@ -90,7 +90,7 @@ In the example on this slide, you can see a convolutional layer that outputs a 4
 ![center](res/autoencoder.png)
 
 <!--
-What do get when you mix an encoder and a decoder? An autoencoder!
+What do you get when you mix an encoder and a decoder? An autoencoder!
 
 The encoder finds an efficient representation for the data. The decoder is able to revive some approximation of the original data from the encoded data.
 
@@ -113,7 +113,7 @@ Obviously autoencoders are good at lossy data compression. Once trained, the enc
 
 Another application is principal component analysis. If you think about what an autoencoder is doing, it is reducing input data down into the minimal amount of information required to then revive that data. It is finding principal components using a neural network. You can train the model and then use the encoder to reduce the dimensionality of your data before feeding it into another model.
 
-Another interesting application is data cleaning. Autoencoders can be used to remove noise from data. In our lab, we'll remove static and watermarks from images. Admittedly, there is some data loss, but it is still an interesting application.
+Another interesting application is data cleaning. Autoencoders can be used to remove noise from data. In our lab we'll remove static and watermarks from images. Admittedly, there is some data loss, but it is still an interesting application.
 -->
 
 ---
@@ -137,9 +137,9 @@ encoder = Model(input_layer, latent_layer, name='encoder')
 <!--
 You could build an autoencoder with a standard `Sequential` model, but often you'll want to use the encoder and decoder separately. In order to do this, we can use the Keras `Model` class.
 
-In this example, we build an input layer and pass it to a convolutional layer, which is then passed to a pooling layer. The input and output layers are then passed to the `Model`.
+In this example we build an input layer and pass it to a convolutional layer, which is then passed to a pooling layer. The input and output layers are then passed to the `Model`.
 
-You might also notice that we called the output of the encoder the latent layer. This is a common term used to identify the intermediate data representation that is output by the encoder and input to the decoder.
+You might also notice that we called the output of the encoder the "latent layer." This is a common term used to identify the intermediate data representation that is output by the encoder and input to the decoder.
 -->
 
 ---
@@ -171,5 +171,5 @@ When the autoencoder is trained, the encoder and decoder are also trained and ca
 # Your Turn!
 
 <!--
-Now it is your turn. In this lab, we will walk through examples of using an autoencoder for compression and for removing static. For an exercise we'll remove a watermark from a video.
+Now it is your turn. In this lab we will walk through examples of using an autoencoder for compression and for removing static. For an exercise we'll remove a watermark from a video.
 -->
