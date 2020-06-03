@@ -105,7 +105,7 @@ Another type of neuron that performs very well for sequence tasks alongside, or 
 
 ---
 
-# What are RNNs Good For?
+# What Are RNNs Good For?
 
 * Language Translation
 * Sequence Prediction
@@ -149,7 +149,7 @@ Image Details:
 
 ---
 
-# What does sequence prediction predict?
+# What Does Sequence Prediction Predict?
 
 ![center](res/time_series_2.png)
 
@@ -229,7 +229,6 @@ However, especially for time series with seasonality, we need to have enough dat
 Image Details:
 * [train_station.jpg](https://www.pexels.com/photo/grayscale-photography-of-people-walking-in-train-station-735795/): Pexels License
 -->
-
 
 ---
 
