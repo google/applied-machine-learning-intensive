@@ -14,9 +14,9 @@ img[alt~="center"] {
 # Recurrent Neural Networks (RNNs)
 
 <!--
-We have encountered numerous deep neural networks throughout this course. In previous tracks, training data flowed through the network (feedforward), and then adjustments were made to the weights in the network from the last layer through the first (backpropagation).
+We have encountered numerous deep neural networks throughout this course. In previous tracks we've covered, training data flowed through the network (feedforward), and then adjustments were made to the weights in the network from the last layer through the first (backpropagation).
 
-Just to name a few, we've used dense layers, dropout layers, convolutional layers, and pooling layers. In this unit, we will learn about recurrent neural networks, which are not strictly feedforward networks.
+Just to name a few, we've used dense layers, dropout layers, convolutional layers, and pooling layers. In this unit we will learn about recurrent neural networks, which are not strictly feedforward networks.
 -->
 
 ---
@@ -41,7 +41,7 @@ Image Details:
 <!--
 Here is a recurrent neuron. You can see that the recurrent neuron looks a lot like a feedforward neuron, except that it also feeds its output back into its inputs.
 
-Imagine we have a fully connected layer that is 10 nodes wide before this neuron. In a typical feedforward, fully-connected network, we would expect 10 inputs, 1 for each of the nodes in the previous layer. In this case we'll actually have 11 inputs: 1 for each of the nodes in the previous layer and the output of the node itself.
+Imagine we have a fully connected layer that is 10 nodes wide before this neuron. In a typical feedforward, fully-connected network, we would expect 10 inputs, one for each of the nodes in the previous layer. In this case we'll actually have 11 inputs: one for each of the nodes in the previous layer and the output of the node itself.
 
 What does this do? This gives the neuron memory over time. It allows you to pass a series of data points into the network over time.
 
@@ -58,7 +58,7 @@ Image Details:
 <!--
 This is what it would look like to "unroll" the flow of data through a recurrent neuron over time. You can see that it typically starts out with a seeded input value of zero for its backfeed. At each point in the series, the neuron both passes data to the next layer of neurons and passes data forward in time to itself the next time it fires.
 
-Also note that we are looking at a single neuron in a layer with one input and one output. In reality, you'll have wide layers, so imagine multiple recurrent nodes side by side, each with multiple inputs and outputs.
+Also note that we're looking at a single neuron in a layer with one input and one output. In reality you'll have wide layers, so imagine multiple recurrent nodes side by side, each with multiple inputs and outputs.
 
 Image Details:
 * [unrolled.png](https://www.google.com): Copyright Google
@@ -73,7 +73,7 @@ Image Details:
 <!--
 With a typical recurrent neural network, the network tends to have a very short memory. As the sequences passing through the network get longer, the network forgets what it first saw. There have been a few strategies to get around this, one of which is the "long short term memory" (LSTM) neuron.
 
-On this slide, you can see a very simplified LSTM cell. If you look at the horizontal center, you can see the standard neuron: X-in, y-out. However, instead of having a single feedback like a standard recurrent neuron, this neuron passes two weights back to itself. One represents the long-term member, and the other represents the short-term member.
+On this slide you can see a very simplified LSTM cell. If you look at the horizontal center, you can see the standard neuron: X-in, y-out. However, instead of having a single feedback like a standard recurrent neuron, this neuron passes two weights back to itself. One represents the long-term member, and the other represents the short-term member.
 
 You can see that the short-term state gets mixed with the weights in a set of activation functions labelled A1 through A4. The outputs of these functions, as well as the long-term state, then get passed through a series of gates that ultimately lead to the output of a new y, c, and h value.
 
@@ -139,7 +139,7 @@ For example, consider the model we used earlier to predict height from shoe size
 ![center](res/time_series.png)
 
 <!--
-In this unit, we will look at sequence prediction. In sequence prediction, the input data is an *ordered* set of data, most commonly a time series. A time series is a set of data where the index is a date. Since dates have an inherent ordering, time
+In this unit we will look at sequence prediction. In sequence prediction the input data is an *ordered* set of data, most commonly a time series. A time series is a set of data where the index is a date. Since dates have an inherent ordering, time
 series are ordered data.
 
 Image Details:
@@ -170,7 +170,11 @@ Image Details:
 - Machine learning and RNNs specifically give us a new tool for sequence prediction that contains less assumptions
 
 <!--
-The standard approach to sequence prediction for several years was a statistical one. (No need to go into detail, but you could mention Markov Chains or ARIMA time series forecasting. Suffice to say, these approaches often require a lot of assumptions, such as a transition matrix of probabilities, or a normal distribution of noise.) RNNs allow the data to "speak for itself" - it is a largely non-parametric approach. The downside is that it usually needs more data to make good predictions.
+The standard approach to sequence prediction for several years was a statistical one. 
+
+*There may not be a need to go into detail, but you could mention Markov Chains or ARIMA time series forecasting. Suffice to say, these approaches often require a lot of assumptions, such as a transition matrix of probabilities, or a normal distribution of noise.*
+
+RNNs allow the data to "speak for itself." It is a largely non-parametric approach. The downside is that it usually needs more data to make good predictions.
 
 -->
 
@@ -179,7 +183,8 @@ The standard approach to sequence prediction for several years was a statistical
 # Examples
 
 <!--
-Walk the students through the following examples. These are just a few examples, there are many more, so feel free to elaborate on these and/or add some others.
+
+*Walk students through the following examples. These are just a few examples. There are many more, so feel free to elaborate on these and/or add others.*
 
 -->
 
@@ -190,7 +195,7 @@ Walk the students through the following examples. These are just a few examples,
 ![center](res/stock_paper.png)
 
 <!--
-One of the most common examples of sequence prediction is predicting stock prices. Stock prices are notoriously volatile but also incredibly important for many people to predict. (There are entire industries based on this practice.)
+One of the most common examples of sequence prediction is predicting stock prices. Stock prices are notoriously volatile, but a lot of people are involved in the practice of trying to predict them. There are entire industries based on this practice.
 
 Image Details:
 * [stock_paper.png](https://unsplash.com/photos/IT6aov1ScW0): Unsplash License
@@ -217,9 +222,9 @@ Image Details:
 ![center](res/train_station.jpg)
 
 <!--
-You may want to predict the number of travelers at a train station on a given day, given the previous data of how many travellers were there each day. RNNs pick up on things like varieties of seasonality (e.g. weekday vs weekend, holiday season) and noise.
+You may want to predict the number of travelers at a train station on a given day, given the previous data of how many travelers were there each day. RNNs pick up on things like varieties of seasonality (e.g., weekday vs weekend, holiday season) and noise.
 
-However, especially for time series with seasonality, we need to have enough data. For example, if we only have data for October and November, we won't do very well at predicting December (since it is a holiday month); we would ideally have data for December of the previous year.
+However, especially for time series with seasonality, we need to have enough data. For example, if we only have data for October and November, we won't do very well at predicting December because it is a holiday month; we would ideally have data for December of the previous year.
 
 Image Details:
 * [train_station.jpg](https://www.pexels.com/photo/grayscale-photography-of-people-walking-in-train-station-735795/): Pexels License
@@ -231,5 +236,5 @@ Image Details:
 # Your Turn
 
 <!--
-In the lab, we'll use a recurrent neural network to predict a sequence of vibration readings from an engine. We'll see how to apply TensorFlow with Keras to build, test, and tune your model.
+In the lab we'll use a recurrent neural network to predict a sequence of vibration readings from an engine. We'll see how to apply TensorFlow with Keras to build, test, and tune your model.
 -->
