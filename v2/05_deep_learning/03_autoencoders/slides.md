@@ -102,7 +102,7 @@ Image Details:
 
 ---
 
-# What are autoencoders good for?
+# What Are Autoencoders Good For?
 * Lossy data compression
 * Non-linear principal component analysis
 * Cleaning up messy data
