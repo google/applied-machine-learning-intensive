@@ -17,7 +17,7 @@ In this unit we will learn about autoencoders. Autoencoders are a special applic
 
 ---
 
-# What is an autoencoder?
+# What Is an Autoencoder?
 
 <!--
 First things first, what is an autoencoder? It is a model that learns how to encode data and then decode data.
