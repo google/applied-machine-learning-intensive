@@ -5,7 +5,7 @@ marp: true
 # Capstone Project Introduction
 
 <!--
-Today we'll begin discussing the culminating assignment for this course: the capstone project. We'll begin by going over the project goals, guidelines, deliverables, and timeline. Please feel free to ask questions as we go through.
+Today we'll begin discussing the culminating assignment for this course: the capstone project. We'll begin by going over the project goals, guidelines, deliverables, and timeline in this presentation. Please feel free to ask questions as we go through. Later on we'll move into discussing project topic ideation and begin the process of forming teams. 
 -->
 
 ---
@@ -32,7 +32,7 @@ We do this because employers want to see and hear about times you have worked co
 1. Project demo or presentation - 20% 
 
 <!--
-Here are the deliverables for the capstone project. We'll go into each of them in more detail.
+Here are the deliverables for the capstone project. We'll go into each of them in more detail now.
 -->
 
 --- 
@@ -51,9 +51,9 @@ Here are the deliverables for the capstone project. We'll go into each of them i
 **2.) Ethical storyboarding worksheet - 10%**
 
 <!--
-First you'll complete a design doc that lays out the goals for your project, which team members will play what roles during each of the project phases, data-releated information, what problem your project seeks to solve, and a list of tasks you'll complete in pursuit of that solution. A design doc template will be provided.
+First your team will complete a design doc that lays out the goals for your team's unique project, which team members will play what roles during each of the project phases, data-releated information, what problem your project seeks to solve, and a list of tasks you'll complete in pursuit of that solution. A design doc template will be provided.
 
-Second, you'll complete an ethical storyboarding worksheet that facilitates thought and discussion about the ethical implications of your project idea.
+Next you'll complete an ethical storyboarding worksheet that facilitates thought and discussion about the ethical implications of your project idea. Again, a template will be provided. 
 -->
 
 ---
@@ -75,6 +75,12 @@ Second, you'll complete an ethical storyboarding worksheet that facilitates thou
 * Things that went well, things that did not go well, and lessons learned
 * Next steps (if applicable)
 
+<!--
+In addition to the design doc and ethical storyboarding exercise, your team will submit a notebook of your project's narrative and code blocks that reads like a formal report. For each piece of code, you should describe the purpose, an overview of hot it works, and how to interpret the results. If applicable, include a discussion of current limitations and future improvements.
+
+Last is the project demo or presentation. We'll get into the specific requirements for the project presentation later on in this discussion.
+--> 
+
 ---
 
 # Datasets
@@ -90,6 +96,10 @@ Your project team has the option of using one of the datasets below, some of whi
 * [dataCommons](https://browser.datacommons.org/) Constructed by synthesizing a single Knowledge Graph from many different data sources. It currently contains data from Wikipedia, the US Census, NOAA, FBI, etc.
 
 Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google Public Data Explorer](https://www.google.com/publicdata/directory) to search for an interesting dataset for your project.
+
+<!--
+Linked here are some datasets your team can consider using for your project. Alternatively, Kaggle and Google Public Data Explorer have datasets to look through, too.
+-->
 
 ---
 
@@ -108,6 +118,12 @@ Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google 
 * Start defining and training your ML model
 * Beginning project presentation: discuss acquiring data, exploratory data analysis, and justification for first model
 
+<!--
+There are four distinct phases of the capstone project. The first involves forming teams, exploring and picking project topics, and completeing the design doc and project plan to guide your work. Please note a template will NOT be provided for the project plan. The project plan format will be up to your team to decide. You're welcome to use one we worked on the project management session or create a new one.
+
+The second project phase includes acquiring and prepping your team's dataset, defining and training your ML model, and beginning designing your project presentation or demo.
+--> 
+
 ---
 
 # Project Timeline
@@ -122,7 +138,30 @@ Alternatively, you can use [Kaggle](https://www.kaggle.com/datasets) or [Google 
 **Project Phase 4**
 * Final iterations on model predictions
 * Review results and prepare conclusions
-* Practice final presentation and demo, collect, and incorporate final  feedback
+* Practice final presentation and demo, collect, and incorporate final feedback
+
+<!--
+The third project phase involves using data to tune and validate your model and continuing to work on your final presentation with peer and instructor feedback.
+
+The fourth phase incluces final iterations on model predictions, reviewing results and preparing conclusions. And then, finally, you'll present your final presentations to the class. Now we'll transition into the expectations for your final presentations.
+--> 
+
+---
+
+# Final Presentations
+
+* Project demo or presentation should adhere to the following format and cover all the points here:
+ * Overview of the project and the problem it seeks to solve, if applicable
+ * Conclusions and findings
+ * Things that went well, things that did not go well, and lessons learned
+ * Next steps, if applicable
+* Presentations should be 15 minutes each plus 5 minutes for questions. Each member of the team should present for roughly the same amount of time. 
+* Presentations should be visually interesting but also follow best practices for verbal presentation skills. Namely, it is important for all points to be conveyed clearly. 
+* You will have an opportunity to present to the instructional team during the 2-3 days leading up to final presentations. It's recommended that you incorporate their feedback.
+
+<!--
+
+-->
 
 ---
 
@@ -154,19 +193,6 @@ During the capstone project phases, we will have  morning and afternoon “stand
 
 Every morning we'll take 10 minutes or less to share how your group will prioritize your time for the day and what you will feasibly get accomplished. Then at the end of the day, groups will come back together as a class to share what you accomplished during the day, anything you need help with, and what your focus will be the following day. This bookend standup structure will keep us on track and allow instructors to help as needed.
 -->
-
----
-
-# Final Presentations
-
-* Project demo or presentation should adhere to the following format and cover all the points here:
- * Overview of the project and the problem it seeks to solve, if applicable
- * Conclusions and findings
- * Things that went well, things that did not go well, and lessons learned
- * Next steps, if applicable
-* Presentations should be 15 minutes each plus 5 minutes for questions. Each member of the team should present for roughly the same amount of time. 
-* Presentations should be visually interesting but also follow best practices for verbal presentation skills. Namely, it is important for all points to be conveyed clearly. 
-* You will have an opportunity to present to the instructional team during the 2-3 days leading up to final presentations. It's recommended that you incorporate their feedback.
 
 ---
 
