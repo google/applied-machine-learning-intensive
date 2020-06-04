@@ -155,12 +155,16 @@ The fourth phase incluces final iterations on model predictions, reviewing resul
  * Conclusions and findings
  * Things that went well, things that did not go well, and lessons learned
  * Next steps, if applicable
-* Presentations should be 15 minutes each plus 5 minutes for questions. Each member of the team should present for roughly the same amount of time. 
+* Presentations should be 15 minutes each plus five minutes for questions. Each member of the team should present for roughly the same amount of time. 
 * Presentations should be visually interesting but also follow best practices for verbal presentation skills. Namely, it is important for all points to be conveyed clearly. 
 * You will have an opportunity to present to the instructional team during the 2-3 days leading up to final presentations. It's recommended that you incorporate their feedback.
 
 <!--
+Final presentations should include an overview of the project and the problem it seeks to solve, conclusions and findings, lessons learned, and a brief discussion fo what went well and what didn't go well. It should include any next steps your team has as you consider future developments for your project.
 
+Each team's presentation should last 15 minutes, and there will be an additional five minutes allowed for Q&A. Every team member is expected to present for roughly the same amount of time. Please consider presentation best practices and make a presentation that is visually interesting and one that conveys your points clearly. 
+
+You will have opportunities to practice your presentation for instructional staff, and we recommend taking advantage of those opportunities to refine your team's presentation.
 -->
 
 ---
@@ -172,6 +176,14 @@ Rotating with each of the four project phases, team members will take turns work
 **Program Manager:** Everyone will have a turn in the role of “program manager,” or the person who is purposefully directing the team and assigning action items. This role builds useful professional skills, and rotating ensures no one person gets stuck with all of the administrative tasks to keep the team running.
 
 **Note Taker:** Each student team member will be responsible for maintaining a “decision log” during at least one phase of the project. Entries in decision logs may include why the team went forward with one thing over another, how a problem got resolved, unresolved tasks or questions, etc. Decision logs will be housed in a common repo and accessible to students and instructional staff.
+
+<!--
+Next we'll talk briefly about team roles. In order to share the leadership and administrative burdens required for such a project, as well as get experience in both capacities, teams will rotate who is the program manager and who is the note taker. 
+
+Note takers will be in charge of keeping a decision log that will be accessible to students and instructional staff. This log will include why certain courses of action were taken and not others
+
+Program managers will assign tasks and keep the group on track during their respective turn in this role.
+-->
 
 ---
 
