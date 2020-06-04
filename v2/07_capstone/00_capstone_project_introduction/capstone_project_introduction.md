@@ -4,6 +4,10 @@ marp: true
 
 # Capstone Project Introduction
 
+<!--
+Today we'll begin discussing the culminating assignment for this course: the capstone project. We'll begin by going over the project goals, guidelines, deliverables, and timeline. Please feel free to ask questions as we go through.
+-->
+
 ---
 
 # Project Goals
@@ -11,6 +15,12 @@ marp: true
 * Apply technical ML concepts and data skills learned in the first half of the course on a sizeable dataset and challenging problem
 * Demonstrate professional development skills, such as working in a group with different personalities, giving and receiving feedback, communicating results, and project management
 * Create and facilitate a recorded demo or presentation of capstone project work
+
+<!--
+A significant amount of this course and class time are intentionally devoted to the capstone project.
+
+We do this because employers want to see and hear about times you have worked collaboratively with other people in pursuit of a shared goal. Truthfully, that's much of professional life. You are better equipped to make your case to employers that you have experience working with others toward a technical goal if you have specific projects you can speak to, both listed on your resume and in your interview answers. The capstone project is one of those experiences, and it also allows you to apply the skills you've learned so far to create a specific project and present it.
+-->
 
 ---
 
@@ -20,6 +30,10 @@ marp: true
 1. Ethical storyboarding worksheet - 10%
 1. Notebook - 50%
 1. Project demo or presentation - 20% 
+
+<!--
+Here are the deliverables for the capstone project. We'll go into each of them in more detail.
+-->
 
 --- 
 
@@ -35,6 +49,12 @@ marp: true
 * Approach and list of tasks
 
 **2.) Ethical storyboarding worksheet - 10%**
+
+<!--
+First you'll complete a design doc that lays out the goals for your project, which team members will play what roles during each of the project phases, data-releated information, what problem your project seeks to solve, and a list of tasks you'll complete in pursuit of that solution. A design doc template will be provided.
+
+Second, you'll complete an ethical storyboarding worksheet that facilitates thought and discussion about the ethical implications of your project idea.
+-->
 
 ---
 
