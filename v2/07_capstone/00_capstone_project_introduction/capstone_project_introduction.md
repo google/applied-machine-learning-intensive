@@ -210,3 +210,9 @@ Every morning we'll take 10 minutes or less to share how your group will priorit
 
 # Questions?
 
+<!--
+We've covered our capstone project goals, deliverables, phases, team roles, final presentation expectations, and how our daily schedule will shift for the remainder of the course. Now that we have covered these basics, our next capstone-related session will get into project topic ideation and forming groups. Before we move on, however, what questions do you have on what we've gone over here?
+--> 
+
+---
+
