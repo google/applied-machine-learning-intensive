@@ -1,14 +1,7 @@
 # Final Project Ideation
 
 <!--
-Materials needed:
-Dot-stickers
-Self stick easel pads (flipchart)
-Colorful sharpies
-Lots of post-it notes
-
-
-Make sure to go over capstone project requirements and format before this activity
+Now that we've gone over the goals, expectations, timeline, and deliverables for our capstone project, let's brainstorm what topics or questions we may want to explore as the focus of the project.
 -->
 
 ---
@@ -19,37 +12,27 @@ Make sure to go over capstone project requirements and format before this activi
 1.  Encourage wild ideas
 1.  Build on the ideas of others
 1.  Stay focused on the topic
-1.  One conversation at a time
+1.  One idea and one conversation at a time
 1.  Be visual
 1.  Go for quantity
 
 ![](res/projectideation01.jpg)
 
 <!--
-We’ll do 2 rounds of brainstorming: the first is very general, to give them practice brainstorming and get general ideas / areas of interest.
-The second will be much more specific, focused on a specific idea.
+We’ll do two rounds of brainstorming. The first is very general, capturing as many ideas as possible. The second will be more specific, helping us narrow in on our exact idea.
 
-For the first round, go over the brainstorming rules.
-Read and elaborate on each one, highlighting their importance. For example:
-Brainstorming should be completely judgement free
-Crazy ideas are more than welcome (even if they are infeasible, they may inspire another great and more realistic idea)
-Each idea should be on a single post-it note (no post-it notes with multiple ideas)
-They should be as visual as possible. Sometimes just an image can be better than a description.
+First, I'd like for us all to agree on some norms for this exercise:
+* Brainstorming should be completely judgement free.
+* Crazy ideas are more than welcome! Even if it's infeasible they'd get accomplished in the next few weeks, they may inspire another great and more realistic idea.
+* Each idea gets its own post-it note. We want to ensure every idea gets its fair shake.
+* Let's have one conversation and share one idea at a time, so that people don't get spoken over or have their ideas minimized.
+* Feel free to make your ideas visual, with a drawing instead of text. 
 
-After going over the rules, make sure everyone has lots of markers and post-it notes at hand.
-Set a timer for 3 minutes and tell them to come up with as many ideas as possible about what they want to do for their final project.
+Can you think of any other norms we should all agree upon before diving in?
 
-Next step: Share out and cluster
+*Pass out markers and post-it notes. Set a timer for three minutes* 
 
-Reference: The Field Guide to Human-Centered Design - A step-by-step guide that will get you solving problems like a designer. - By IDEO.org - http://www.designkit.org/resources/1 (pages 94-95)
-
-You can get students to move around the class, maybe sit in groups or everybody gets up. Set a 3 minute timer and ask them to write down as many ideas as possible. Go for quantity, not quality. Be visual (images are better than words).
-Watch: https://www.ideou.com/pages/brainstorming
-Read: https://challenges.openideo.com/blog/seven-tips-on-better-brainstorming
-More details on how to direct this activity:
-http://www.designkit.org/methods/1
-http://www.designkit.org/methods/28
-
+Take the next three minutes to write down as many ideas as possible about what could be an idea for your capstone project. Go!
 
 Image Details:
 * [projectideation01.jpg](https://pixabay.com/photos/thought-idea-innovation-imagination-2123970/): Pixabay License
@@ -57,24 +40,16 @@ Image Details:
 
 ---
 
-# Group ideas by theme
+# Group Ideas by Theme
 
 ![](res/projectideation02.jpg)
 
 <!--
-Ask students to come up and share their ideas, one by one, sticking the post-it notes on the whiteboard (make sure there’s a large clean area).
-You may way to ask all of them to get up and gather around the whiteboard, so it’s easier to hear each other and it’s more dynamic.
+Now we'll share out our ideas and, once everyone has shared, start to group the ideas together by theme.
 
-Make sure to enforce the “one conversation at a time.”
-Anyone can start, and others should jump in and share similar ideas or build on the ideas of one another.
+*Ask students to come up and share their ideas, one by one, sticking their post-it notes on the whiteboard. Make sure there’s a large, clean area devoted to this activity. If your classroom is very large, you may consider asking all students to get up and gather around the whiteboard, so it’s easier to hear each other and so it’s more dynamic. Make sure to enforce the “one conversation at a time" rule so students feel heard. Anyone can start, and others should jump in and share similar ideas or build on the ideas of one another. As they share out, ask them to start roughly clustering similar ideas, if possible. 
 
-As they share out, ask them to start roughly clustering similar ideas.
-
-After everyone shares their ideas, give them 5 minutes to group the ideas by theme (create or revise clusters and use markers to identify each cluster).
-
-Next step: Frame a problem and brainstorm again.
-
-For further reading on how to facilitate this part, look at pages 97-98 of the IDEO book.
+*After everyone shares their ideas, give them five minutes to group the ideas by theme. Encourage them to create or revise clusters and use markers to identify each cluster.
 
 Image Details:
 * [projectideation02.jpg](https://unsplash.com/photos/bjemWZcNF34): Unsplash License
@@ -82,9 +57,9 @@ Image Details:
 
 ---
 
-Narrow your problem and brainstorm again {.big}
+# Narrow Your Problem and Brainstorm Again
 
-How might we...? {.big}
+## How Might We...?
 
 ![](res/projectideation03.jpg){.background}
 
