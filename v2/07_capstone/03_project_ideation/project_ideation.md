@@ -61,7 +61,6 @@ Image Details:
 
 ## How Might We...?
 
-![](res/projectideation03.jpg){.background}
 
 <!--
 Now it’s time to narrow down a problem and brainstorm the idea that they are going to pitch.
@@ -76,10 +75,6 @@ They will use these ideas to create a pitch. The best ideas will be selected and
 
 Next step: pitch your idea.
 
-Further reading: pages 85-87 of IDEO book
-
-Image Details:
-* [projectideation03.jpg](https://pixabay.com/photos/focus-telephoto-lens-lens-loupe-407244/): Pixabay License
 -->
 
 ---
@@ -112,7 +107,7 @@ Image Details:
 
 ---
 
-# Create your pitch
+# Create Your Pitch
 
 ![](res/projectideation05.png)
 
