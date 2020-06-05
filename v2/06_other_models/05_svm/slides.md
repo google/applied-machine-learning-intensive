@@ -23,7 +23,18 @@ In p-dimensional space, a hyperplane is a plane of p-1 dimensions.
 
 ---
 
-Classification and Regression {.big}
+# Hyperplane Decision Boundary 
+
+![](res/svm01.png)
+
+<!--
+Here we have two classes of observations. Class 1 is shown in yellow, and class 2 is shown in red. They are linearly separated by the hyperplane (line) X_{2} - m*X_[1} - b = 0
+
+-->
+
+---
+
+
 
 ---
 
