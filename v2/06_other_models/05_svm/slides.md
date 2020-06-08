@@ -2,6 +2,13 @@
 marp: true
 ---
 
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Support Vector Machines
 <!--
 Support vector machines (SVM) can be used for both classification and regression tasks. But using SVM for classification is far more common, so in this lecture, we will focus on classification tasks. The lab also focuses mainly on classification, but does include a regression example. 
@@ -43,7 +50,7 @@ Note that "plane" in the definition refers to an affine subspace.
 
 # Hyperplane Decision Boundary 
 
-![](res/svm01.png)
+![center](res/svm01.png)
 
 <!--
 Here we have two classes of observations. Class 1 is shown in yellow, and class 2 is shown in red. They are linearly separated by the hyperplane X_{2} = m*X_{1} + b. Note that this is just the equation of a line. Equivalently, we can rearrange terms say X_{2} - m*X_[1} - b = 0.
@@ -57,7 +64,7 @@ Image Details:
 # Notation 
 Suppose we have training data with n samples, each consisting of d features. 
 
-![](res/svm02.png)
+![center](res/svm02.png)
 
 We would like to define a separating hyperplane of dimension d-1. 
 
@@ -75,7 +82,7 @@ Image Details:
 
 # Separating Hyperplanes 
 
-![](res/svm03.png)
+![center](res/svm03.png)
 
 <!--
 
@@ -93,7 +100,7 @@ Image Details:
 
 # Maximal Margin Hyperplane
 
-![](res/svm04.png)
+![center](res/svm04.png)
 
 <!--
 We compute the Euclidean distance from each datapoint to the separating hyperplane. The smallest such distance is called the margin. We define the maximal margin hyperplane to be the hyperplane for which the margin is the largest (i.e. we want points from both classes to be as far away from the separating hyperplane as possible).
@@ -107,7 +114,7 @@ Image Details:
 
 # Soft vs. Hard Margin
 
-![](res/svm05.png)
+![center](res/svm05.png)
 
 <!--
 Let's continue to consider the same example, but imagine that we receive one additional piece of training data from class 1 (yellow). The new point is the yellow point that is furthest to the right in the graph. We can still define a separating hyperplane, but the margin is tiny. The maximal margin classifier is also known as a hard margin classifier, meaning that points must be perfectly linearly separated. A hard margin classifier will correctly classify all the training data, but it can be somewhat limiting and not robust to the introduction of new datapoints. 
@@ -119,7 +126,7 @@ Image Details:
 
 # Soft vs. Hard Margin
 
-![](res/svm06.png)
+![center](res/svm06.png)
 
 <!--
 Sometimes it is advantageous to consider a hyperplane that does not perfectly separate all our training data. Here is an example, of a soft margin classifier. We see that the yellow datapoint furthest to the right is incorrectly classified by our model, but we have increased our margin which can lead to greater robustness and better performance on our test data. 

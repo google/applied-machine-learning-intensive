@@ -1,5 +1,4 @@
 ---
-
 marp: true
 
 ---
@@ -139,7 +138,7 @@ For example, consider the model we used earlier to predict height from shoe size
 ![center](res/time_series.png)
 
 <!--
-In this unit we will look at sequence prediction. In sequence prediction the input data is an *ordered* set of data, most commonly a time series. A time series is a set of data where the index is a date. Since dates have an inherent ordering, time
+In this unit, we will look at sequence prediction. In sequence prediction the input data is an *ordered* set of data, most commonly a time series. A time series is a set of data where the index is a date. Since dates have an inherent ordering, time
 series are ordered data.
 
 Image Details:
@@ -149,7 +148,7 @@ Image Details:
 
 ---
 
-# What Does Sequence Prediction Predict?
+# What are we predicting?
 
 ![center](res/time_series_2.png)
 
@@ -170,11 +169,11 @@ Image Details:
 - Machine learning and RNNs specifically give us a new tool for sequence prediction that contains less assumptions
 
 <!--
-The standard approach to sequence prediction for several years was a statistical one. 
+The standard approach to sequence prediction for several years was a statistical one (like Markov chains or ARIMA). 
 
 *There may not be a need to go into detail, but you could mention Markov Chains or ARIMA time series forecasting. Suffice to say, these approaches often require a lot of assumptions, such as a transition matrix of probabilities, or a normal distribution of noise.*
 
-RNNs allow the data to "speak for itself." It is a largely non-parametric approach. The downside is that it usually needs more data to make good predictions.
+RNNs allow the data to "speak for themselves." Using an RNN is a largely non-parametric approach. The downside is that RNNs usually need more data to make good predictions.
 
 -->
 
@@ -224,7 +223,7 @@ Image Details:
 <!--
 You may want to predict the number of travelers at a train station on a given day, given the previous data of how many travelers were there each day. RNNs pick up on things like varieties of seasonality (e.g., weekday vs weekend, holiday season) and noise.
 
-However, especially for time series with seasonality, we need to have enough data. For example, if we only have data for October and November, we won't do very well at predicting December because it is a holiday month; we would ideally have data for December of the previous year.
+However, especially for time series with seasonality, we need to have enough data. For example, if we only have data for October and November, we won't do very well at predicting December because it is a holiday month; we would ideally have data for December of the previous year (if not multiple years).
 
 Image Details:
 * [train_station.jpg](https://www.pexels.com/photo/grayscale-photography-of-people-walking-in-train-station-735795/): Pexels License
