@@ -51,7 +51,7 @@ Here are the deliverables for the capstone project. We'll go into each of them i
 **2.) Ethical storyboarding worksheet - 10%**
 
 <!--
-First your team will complete a design doc that lays out the goals for your team's unique project, which team members will play what roles during each of the project phases, data-releated information, what problem your project seeks to solve, and a list of tasks you'll complete in pursuit of that solution. A design doc template will be provided.
+First your team will complete a design doc that lays out the goals for your team's unique project, which team members will play what roles during each of the project phases, data-related information, what problem your project seeks to solve, and a list of tasks you'll complete in pursuit of that solution. A design doc template will be provided.
 
 Next you'll complete an ethical storyboarding worksheet that facilitates thought and discussion about the ethical implications of your project idea. Again, a template will be provided. 
 -->
@@ -76,7 +76,7 @@ Next you'll complete an ethical storyboarding worksheet that facilitates thought
 * Next steps (if applicable)
 
 <!--
-In addition to the design doc and ethical storyboarding exercise, your team will submit a notebook of your project's narrative and code blocks that reads like a formal report. For each piece of code, you should describe the purpose, an overview of hot it works, and how to interpret the results. If applicable, include a discussion of current limitations and future improvements.
+In addition to the design doc and ethical storyboarding exercise, your team will submit a notebook of your project's narrative and code blocks that reads like a formal report. For each piece of code, you should describe the purpose, an overview of how it works, and how to interpret the results. If applicable, include a discussion of current limitations and future improvements.
 
 Last is the project demo or presentation. We'll get into the specific requirements for the project presentation later on in this discussion.
 --> 
@@ -119,7 +119,7 @@ Linked here are some datasets your team can consider using for your project. Alt
 * Beginning project presentation: discuss acquiring data, exploratory data analysis, and justification for first model
 
 <!--
-There are four distinct phases of the capstone project. The first involves forming teams, exploring and picking project topics, and completeing the design doc and project plan to guide your work. Please note a template will NOT be provided for the project plan. The project plan format will be up to your team to decide. You're welcome to use one we worked on the project management session or create a new one.
+There are four distinct phases of the capstone project. The first involves forming teams, exploring and picking project topics, and completing the design doc and project plan to guide your work. Please note a template will NOT be provided for the project plan. The project plan format will be up to your team to decide. You're welcome to use one we worked on the project management session or create a new one.
 
 The second project phase includes acquiring and prepping your team's dataset, defining and training your ML model, and beginning designing your project presentation or demo.
 --> 
@@ -143,7 +143,7 @@ The second project phase includes acquiring and prepping your team's dataset, de
 <!--
 The third project phase involves using data to tune and validate your model and continuing to work on your final presentation with peer and instructor feedback.
 
-The fourth phase incluces final iterations on model predictions, reviewing results and preparing conclusions. And then, finally, you'll present your final presentations to the class. Now we'll transition into the expectations for your final presentations.
+The fourth phase includes final iterations on model predictions, reviewing results and preparing conclusions. And then, finally, you'll present your final presentations to the class. Now we'll transition into the expectations for your final presentations.
 --> 
 
 ---
@@ -160,7 +160,7 @@ The fourth phase incluces final iterations on model predictions, reviewing resul
 * You will have an opportunity to present to the instructional team during the 2-3 days leading up to final presentations. It's recommended that you incorporate their feedback.
 
 <!--
-Final presentations should include an overview of the project and the problem it seeks to solve, conclusions and findings, lessons learned, and a brief discussion fo what went well and what didn't go well. It should include any next steps your team has as you consider future developments for your project.
+Final presentations should include an overview of the project and the problem it seeks to solve, conclusions and findings, lessons learned, and a brief discussion of what went well and what didn't go well. It should include any next steps your team has as you consider future developments for your project.
 
 Each team's presentation should last 15 minutes, and there will be an additional five minutes allowed for Q&A. Every team member is expected to present for roughly the same amount of time. Please consider presentation best practices and make a presentation that is visually interesting and one that conveys your points clearly. 
 
