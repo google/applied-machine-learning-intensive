@@ -10,14 +10,30 @@ Support vector machines (SVM) can be used for both classification and regression
 ---
 
 # Linear Classification 
-## Hyperplane 
-In p-dimensional space, a hyperplane is a plane of p-1 dimensions. 
+## Maximal Margin Classifier 
 
-* In two dimensions, a hyperplane is a line. 
+<!--
+A support vector machine is a generalization of a much simpler model, called a maximal margin classifier. Let's first discuss the maximal margin classifiers, then we'll see how to extend to a support vector machine. 
+-->
+
+---
+
+# Hyperplane 
+In d-dimensional space, a hyperplane is a plane of (d-1) dimensions. 
+
+* In two dimensions, a hyperplane is a line (1-dimensional).
 * In three dimensions, a hyperplane is a typical plane (2-dimensional).
 
 ## Goal - use a hyperplane to separate data. 
 <!--
+A hyperplane is the analogue of a line in higher dimensions. If we are looking at d-dimensional space, then a hyperplane has dimension d-1. 
+
+For example, if we look at the typical 2-dimensional Cartesian coordinate system, then a hyperplane is a line. 
+
+Similarly, if we consider 3-dimensional space, then a hyperplane is a 2-dimensional plane. 
+
+Although we cannot visualize this in higher dimensions, the analogy carries through. 
+
 
 -->
 
@@ -28,7 +44,10 @@ In p-dimensional space, a hyperplane is a plane of p-1 dimensions.
 ![](res/svm01.png)
 
 <!--
-Here we have two classes of observations. Class 1 is shown in yellow, and class 2 is shown in red. They are linearly separated by the hyperplane (line) X_{2} - m*X_[1} - b = 0
+Here we have two classes of observations. Class 1 is shown in yellow, and class 2 is shown in red. They are linearly separated by the hyperplane X_{2} = m*X_{1} + b. In other words, X_{2} - m*X_[1} - b = 0.
+
+Image Details:
+* [svm01.png](http://www.google.com): Copyright Google
 
 -->
 
