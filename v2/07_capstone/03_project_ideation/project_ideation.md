@@ -1,7 +1,7 @@
 # Final Project Ideation
 
 <!--
-Now that we've gone over the goals, expectations, timeline, and deliverables for our capstone project, let's brainstorm what topics or questions we may want to explore as the focus of the project.
+Now that we've discussed the goals, expectations, timeline, and deliverables for our capstone project, let's brainstorm what topics or questions we may want to explore as the focus of the project.
 -->
 
 ---
@@ -30,7 +30,7 @@ First, I'd like for us all to agree on some norms for this exercise:
 
 Can you think of any other norms we should all agree upon before diving in?
 
-*Pass out markers and post-it notes. Set a timer for three minutes* 
+*Pass out markers and post-it notes. Set a timer for three minutes.* 
 
 Take the next three minutes to write down as many ideas as possible about what could be an idea for your capstone project. Go!
 
@@ -72,12 +72,9 @@ For example, suppose one of the ideas was “identify skin cancer,” which was 
 
 Everyone should have the problem statement written down on a post-it note in front of them (one for each student, as this portion is also individual).
 
-Then, set the timer for another 3 minutes and ask them to come up with ideas to solve that problem. It’s important to stay focused on the problem that they wrote down.
+*Then, set the timer for another three minutes and ask them to come up with ideas to solve that problem. It’s important to stay focused on the problem that they wrote down. They will use these ideas to create a pitch. The best ideas will be selected and we will only form groups at the very end.
 
-They will use these ideas to create a pitch. The best ideas will be selected and we will only form groups at the very end.
-
-Next step: pitch your idea.
-
+The next step we'll take is pitching your idea.
 -->
 
 ---
@@ -88,19 +85,18 @@ The **WHO**
 * Always start by introducing yourself.
 
 The **WHAT**
-* Describe your idea in one sentence.
-* Tell people what makes your idea stand out, not in what way it’s similar to other things.
-* Example: “Ridiculous Fishing is a game about fishing with machine guns.”
+* Describe your idea.
+* Tell people what makes your idea stand out from other, maybe similar, ideas.
 
 The **WHY**
-* What’s the value proposition of your idea?
+* What’s the value proposition of your idea? Why should people consider working with you on this idea?
 
 <!--
-First, go over how to create a pitch. They will have 2 minutes to convey their idea and convince others of how awesome it is. A pitch must have:
+Next you will pitch your idea to the class. Each person will have two minutes to convey their idea and convince others to consider working on it as their capstone project. A pitch must have:
 
-Who: In one or 2 sentences, say who you are with a focus on what makes you qualified to lead the project that you’re proposing. More than that, you want to describe yourself in a way that the person will remember why you’re the most qualified person to make this happen.
-What: This is the meat of the pitch. Describe your idea in one sentence.
-Why: This is all about the value proposition. What are you adding, what are users getting they wouldn’t get otherwise? How will “what you’re pitching” achieve the value proposition. What is the reason for you to be offering them this value proposition. What are your reasons? Why should I care?
+- Who: In one or two sentences, say who you are with a focus on what makes you qualified to propose the project you’re proposing. 
+- What: This is the meat of the pitch. Describe your idea in one sentence.
+- Why: This is all about the value proposition. What are you adding, what are users getting they wouldn’t get otherwise? How will “what you’re pitching” achieve the value proposition. What is the reason for you to be offering them this value proposition. What are your reasons? Why should others care?
 -->
 
 ---
@@ -110,10 +106,7 @@ Why: This is all about the value proposition. What are you adding, what are user
 ![](res/projectideation05.png)
 
 <!--
-
-Distribute the self-stick flipchart paper and give them 15-20 minutes to create their pitch.
-The who/what/why should be clearly stated on each paper (including the student’s name, this will be helpful during group formation).
-Drawings and visual representations are always encouraged!
+You will have 15 minutes and a piece of flip-chart paper to create your two-minute pitch and then share with the class. The who/what/why should be clearly stated on each paper, including your name. Feel free to use text but also drawings and visual representations if you'd like. 
 
 Image Details:
  * [projectideation05.png](https://pixabay.com/vectors/pixel-cells-idea-visualization-3976295/): Pixabay License
@@ -123,27 +116,11 @@ Image Details:
 
 # Pitch
 
+Time to pitch!
+
 <!--
-Leave 45-60 minutes for pitches. Each pitch is 2 minutes.
-Assign a person to keep the timing.
-Assign someone to put the posters up after each presentation. The posters should be clustered by themes, eg, put all posters of healthcare related ideas on 1 wall or corner, all posters with education related ideas on another, etc.
+
+*Leave 45-60 minutes for pitches. Each pitch is two minutes. Assign a person to keep the timing. Assign someone to put the posters up after each presentation. The posters should be clustered by themes, so try to put all posters of healthcare related ideas on one wall or corner and all posters with education related ideas on another, etc.
 -->
 
 ---
-
-# Vote
-
-<!--
-After the pitches, distribute 3 dot stickers to each person. Give them 15 minutes to go around and review the ideas, ask questions, and vote. They can use their 3 votes however they want: they can vote in 1, 2, or 3 projects, and they may or may not vote on their own project. Their vote should reflect which projects they’d like to work on.
--->
-
----
-
-# Vote
-
-<!--
-We will form groups of 3 or 4. (make this a hard rule!)
-Select the x most voted ideas and discard the posters that weren’t selected, where x is the number of groups. (Depending on the number of students, figure out how many groups of 3 or 4 you can form).
-
-Announce the winning ideas and explain the group sizes and how many groups there needs to be. Given the constraints, let them go around the room and talk to their peers to form groups. Once a group is formed, write down their names and project, and give them the rest of the time to brainstorm and organize.
--->
