@@ -7,10 +7,14 @@
   "slides": [
     "slides.md"
   ],
+  "duration": {
+    "slides.md": 20,
+    "colab.ipynb": 120
+  },
   "learning-objectives": [
-    "Become familiar with PyTorch API",
-    "Learn fastai API",
-    "Implement CNN classifier with fastai",
-    "Learn how to use transfer learning with fastai",
+    "Become familiar with the PyTorch API.",
+    "Learn the fastai API.",
+    "Implement CNN classifier with fastai.",
+    "Learn how to use transfer learning with fastai."
   ]
 }
