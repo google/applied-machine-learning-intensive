@@ -146,11 +146,67 @@ As supprt vector machine is a soft margin classifier. We use the idea of the max
 ---
 
 # Kernel Trick 
+## Nonlinear decision boundary
 <!--
-When Linear SVM won’t work, the kernel trick finds a hyperplane boundary in a higher dimension, for low computational power.
-
-Source: https://www.youtube.com/watch?time_continue=2&v=3liCbRZPrZA&feature=emb_logo
+When the data are not linearly separable, the kernel trick can help us find a decision boundary. 
 -->
 
 ---
 
+# Kernel: Example
+
+![center](res/svm07.png)
+
+<!--
+Consider these data. It is clear that we will never be able to find a decision boundary that is a straight line. We can, however, increase the dimension and define a hyperplane in a higher dimension. 
+
+Here is the main idea:
+* transform the features to a higher dimensional space (essentially allowing extra dimensions for the non-linearity).
+
+* use a linear svm in the higher dimension to create a linear decision boundary. 
+
+* transform the linear decision boundary back to our original feature space to obtain a non-linear boundary. 
+
+In this example, it's pretty clear that a circle would be a reasonable boundary. We may try the kernel k((X_{1},X_{2})) = (X_{1}, X_{2}, X_{1}^{2} + X_{2}^{2}). Notice that this maps everything to three-dimensional space. In three dimensions, we can find a linear decision boundary, then pull that back to a non-linear boundary in two-dimensions. We get something like this (next slide).
+
+Image Details:
+* [svm07.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Kernel: Example 
+
+![center](res/svm08.png)
+
+<!--
+Here is the result of using a kernel with X_{1}^{2} + X_{2}^{2} in the third dimension. 
+
+
+Image Details:
+* [svm07.png](http://www.google.com): Copyright Google
+-->
+
+---
+
+# Many Other Kernels
+* linear 
+* polynomial 
+* radial basis function
+* sigmoid 
+* other custom kernels
+
+<!--
+There are so many other possibly kernel functions. A few of the common ones are listed on this slide. When implementing svm with scikit-learn, the kernel can be treated as a hyperparameter that is tuned with your model. 
+
+Reference: https://scikit-learn.org/stable/modules/svm.html#kernel-functions
+
+-->
+
+---
+
+# Your Turn
+
+<!--
+Now let's take a look at the lab where you will practice building support vector machines. 
+-->
