@@ -71,7 +71,7 @@ Image Details:
 
 ---
 
-# Do you retrain the pre-trained model?
+# Do You Retrain the Pre-Trained Model?
 
 <!--
 This begs the question: Do you re-train the pre-trained model?
