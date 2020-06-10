@@ -51,7 +51,7 @@ Here are the deliverables for the capstone project. We'll go into each of them i
 **2.) Ethical storyboarding worksheet - 10%**
 
 <!--
-First your team will complete a design doc that lays out the goals for your team's unique project, which team members will play what roles during each of the project phases, data-related information, what problem your project seeks to solve, and a list of tasks you'll complete in pursuit of that solution. A design doc template will be provided.
+First your team will complete a design doc that lays out the goals for your team's unique project. The design doc will include which team members will play what roles during each of the project phases, data-related information, what problem your project seeks to solve, and a list of tasks you'll complete in pursuit of that solution. A design doc template will be provided.
 
 Next you'll complete an ethical storyboarding worksheet that facilitates thought and discussion about the ethical implications of your project idea. Again, a template will be provided. 
 -->
@@ -201,7 +201,7 @@ Sample daily schedule
 * End of day team meetings and stand-ups
 
 <!--
-During the capstone project phases, we will have  morning and afternoon “standups.” This is a very common industry practice, and for good reason! They allow group members an opportunity to raise issues or ask for help regarding anything that's blocking their work.
+During the capstone project phases, we will have morning and afternoon “standups.” This is a very common industry practice, and for good reason! They allow group members an opportunity to raise issues or ask for help regarding anything that's blocking their work. 
 
 Every morning we'll take 10 minutes or less to share how your group will prioritize your time for the day and what you will feasibly get accomplished. Then at the end of the day, groups will come back together as a class to share what you accomplished during the day, anything you need help with, and what your focus will be the following day. This bookend standup structure will keep us on track and allow instructors to help as needed.
 -->
