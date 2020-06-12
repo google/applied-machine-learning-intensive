@@ -124,6 +124,8 @@ ix: You can get data from dataframe without it being in the index
 at: get scalar values. It's a very fast loc
 iat: Get scalar values. It's a very fast iloc
 
+Reference: Towards Data Science https://towardsdatascience.com/different-ways-to-iterate-over-rows-in-a-pandas-dataframe-performance-comparison-dc0d5dcef8fe
+
 Image Details:
 * [bigO05.png](http://www.google.com): Copyright Google
 -->
