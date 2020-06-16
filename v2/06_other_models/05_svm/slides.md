@@ -53,7 +53,7 @@ Note that "plane" in the definition refers to an affine subspace.
 ![center](res/svm01.png)
 
 <!--
-Here we have two classes of observations. Class 1 is shown in yellow, and class 2 is shown in red. They are linearly separated by the hyperplane X_{2} = m*X_{1} + b. Note that this is just the equation of a line. Equivalently, we can rearrange terms say X_{2} - m*X_[1} - b = 0.
+Here we have two classes of observations. Class 1 is shown in yellow, and class 2 is shown in red. They are linearly separated by the hyperplane X_{2} = m*X_{1} + b. Note that this is just the equation of a line. We can rearrange our terms into this equivalent equation: X_{2} - m*X_[1} - b = 0.
 
 Image Details:
 * [svm01.png](http://www.google.com): Copyright Google
@@ -88,7 +88,7 @@ Image Details:
 
 Here is the same example data from before, and we have drawn three different separating hyperplanes. 
 
-Notice that any of these hyperplans can be used to define a classifier. If X_{2} - m*X_{1} - b > 0, then we classify the point as yellow (class 1). If X_{2} - m*X_{1} - b < 0, then we classify the point as red (class 2). 
+Notice that any of these hyperplanes can be used to define a classifier. If X_{2} - m*X_{1} - b > 0, then we classify the point as yellow (class 1). If X_{2} - m*X_{1} - b < 0, then we classify the point as red (class 2). 
 
 How do we choose a separating hyperplane? Which one is the "best"? 
 
@@ -105,7 +105,7 @@ Image Details:
 <!--
 We compute the Euclidean distance from each datapoint to the separating hyperplane. The smallest such distance is called the margin. We define the maximal margin hyperplane to be the hyperplane for which the margin is the largest (i.e. we want points from both classes to be as far away from the separating hyperplane as possible).
 
-The data points that define the margin, are called the support vectors, because they "support" the maximal margin hyperplane. 
+The datapoints that define the margin are called the support vectors, because they "support" the maximal margin hyperplane. 
 
 Image Details:
 * [svm04.png](http://www.google.com): Copyright Google
@@ -129,7 +129,7 @@ Image Details:
 ![center](res/svm06.png)
 
 <!--
-Sometimes it is advantageous to consider a hyperplane that does not perfectly separate all our training data. Here is an example, of a soft margin classifier. We see that the yellow datapoint furthest to the right is incorrectly classified by our model, but we have increased our margin which can lead to greater robustness and better performance on our test data. 
+Sometimes it is advantageous to consider a hyperplane that does not perfectly separate all our training data. Here is an example of a soft margin classifier. We see that the yellow datapoint furthest to the right is incorrectly classified by our model, but we have increased our margin, which can lead to greater robustness and better performance on our test data. 
 
 Image Details:
 * [svm06.png](http://www.google.com): Copyright Google
@@ -140,12 +140,13 @@ Image Details:
 ## Soft Margin Classifier 
 
 <!--
-As supprt vector machine is a soft margin classifier. We use the idea of the maximal margin classifier, but we allow for some data points to be incorrectly labeled (either because our data wasn't linearly separable to begin with, or we want to increse our margin and reduce overfitting).
+A support vector machine is a soft margin classifier. We use the idea of the maximal margin classifier, but we allow for some datapoints to be incorrectly labeled (either because our data wasn't linearly separable to begin with, or we want to increase our margin and reduce overfitting).
 -->
 
 ---
 
 # Kernel Trick 
+
 <!--
 When Linear SVM won’t work, the kernel trick finds a hyperplane boundary in a higher dimension, for low computational power.
 
@@ -154,3 +155,8 @@ Source: https://www.youtube.com/watch?time_continue=2&v=3liCbRZPrZA&feature=emb_
 
 ---
 
+# Your Turn
+
+<!-- 
+Let's take a look at the lab.
+-->
