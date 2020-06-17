@@ -31,7 +31,7 @@ In d-dimensional space, a hyperplane is a "plane" of (d-1) dimensions.
 * In two dimensions, a hyperplane is a line (1-dimensional).
 * In three dimensions, a hyperplane is a typical plane (2-dimensional).
 
-## Goal - use a hyperplane to separate data. 
+## Goal - use a hyperplane to separate data
 <!--
 A hyperplane is the analogue of a line in higher dimensions. If we are looking at d-dimensional space, then a hyperplane has dimension d-1. 
 
