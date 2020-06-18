@@ -39,7 +39,7 @@ Are you planning to use datasets that are already compiled? Will you need to pul
 Provide a detailed overview of the project design. 
 
 <!--
-How will you approach the problem? What ideas/experiments do you have planned? Where will  Detail write ups on design approaches, ideas/experiment planned, requirements, timeline/schedule, etc.
+How will you approach the problem? What ideas/experiments do you have planned? 
 
 Tips:
 * Focus on design, not implementation.
