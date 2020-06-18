@@ -29,7 +29,7 @@ Binary means there are only two values to predict. Binary classification is used
 These can be true/false, hotdog/not hotdog, yes/no, benign/malignant, or any other possible this-or-that options. For simplicity, these options are usually encoded as 1 and 0.
 
 Image Details:
-* [yesno.png](https://pixabay.com/vectors/button-yes-no-red-green-icon-32259/): Pixabay License
+* [yes_or_no.png](https://pixabay.com/vectors/button-yes-no-red-green-icon-32259/): Pixabay License
 -->
 
 ---

@@ -19,7 +19,7 @@ What questions do you hope to address? What value will you be adding to the spac
 Describe the background and context for this project. 
 
 <!--
-What is the motivation for studying this topic? What other work has been done -- what was good and where does it fall short? If your project is interdisciplinary, give an overview of the key ideas from the connecting disciplines. 
+What is the motivation for studying this topic? What other work has been done: what was good and where does it fall short? If your project is interdisciplinary, give an overview of the key ideas from the connecting disciplines. 
 -->
 
 ---
@@ -43,15 +43,15 @@ How will you approach the problem? What ideas/experiments do you have planned? W
 
 Tips:
 * Focus on design, not implementation.
-* A picture is worth a thousand words.  A diagram or drawing of the data and model at times is much easier to understand than words.
-* If describing alternatives (e.g. approach, platform, algorithm), explain why it’s not part of your design.
+* A picture is worth a thousand words. A diagram or drawing of the data and model at times is much easier to understand than words.
+* If describing alternatives (e.g., approach, platform, algorithm), explain why it’s not part of your design.
 * If you take a different approach than originally designed, come back and update your design docs. 
 -->
 
 ---
 
 # Project Plan 
-Provide a project plan that includes a list of intermediate goals and milestones and timelines. Also include the schedule of when different team members will be taking on the program manager and note taker roles. 
+Provide a project plan that includes a list of intermediate goals, milestones, and timelines. Also include the schedule of when different team members will take on the program manager and note taker roles. 
 
 <!--
 You will update this project plan throughout the project. It will be a guide that keeps you on track and accountable. It may be helpful to think about the project management session as you create your plan. 
@@ -66,7 +66,7 @@ Complete the ethical storyboarding activity.
 You will also complete this again as part of your final project, as it is critical to consider ethical implications early and often throughout any project. 
 
 The ethical storyboarding worksheet asks your group to:
-* descrbe a fictional person who was positively affected by a model trained with these data
+* describe a fictional person who was positively affected by a model trained with these data
 * describe a fictional person who was negatively affected by a model trained with these data
 * describe at least two sources of bias the particular model in your story could have
 * describe at least one way you could modify the model to mitigate this bias

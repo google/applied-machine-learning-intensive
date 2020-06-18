@@ -6,14 +6,18 @@
   "slides": [
     "slides.md"
   ],
+  "duration": {
+    "slides.md": 20,
+    "colab.ipynb": 60
+  },
   "materials": [],
   "resources": [],
   "handouts": [],
   "learning-objectives": [
-    "Why we use PCA",
-    "How to prepare Data for PCA",
-    "When not to use PCA",
-    "Selecting an Optimal number of components",
-    "Calculate Percent Variance Explained",
-  ],
+    "Understand why we use Principal Component Analysis (PCA).",
+    "Understand when not to use PCA.",
+    "Prepare data for PCA.",
+    "Select an optimal number of components for PCA.",
+    "Calculate explained variance."
+  ]
 }
