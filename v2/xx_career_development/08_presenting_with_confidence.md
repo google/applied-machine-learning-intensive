@@ -33,7 +33,7 @@ We’ll start by going over what makes a successful presentation: content, deliv
 
 # Content + Delivery = Success
 
-![](res/presentconfidence01.jpg)
+## What you say and how you say it
 
 <!--
 The two main components of giving a presentation are the content (what you say) and the delivery (how you say it).
@@ -232,8 +232,6 @@ Here’s one way you can structure your presentation, but feel free to be creati
 ---
 
 # Any Volunteers?
-
-![](res/presentconfidence04.jpg)
 
 <!--
 
