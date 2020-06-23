@@ -2,7 +2,18 @@
 marp: true
 ---
 
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Big-O
+
+<!--
+Big-O notation is the most common notation for analyzing time and space complexity for code. In this lesson, we'll explore how and why to make use of Big-O notation.
+-->
 
 ---
 
@@ -10,7 +21,7 @@ marp: true
 
 Given the following list:
 
-![](res/bigO01.png)
+![center](res/bigO01.png)
 
 How many operations does it take to insert the integer 100 in the 9th position?
 
@@ -19,28 +30,30 @@ How many operations does it take to check if 63 is in the list?
 <!--
 First of all, it is important to note that this is a list with 12 unknown items. We know it's not empty, but we don't know what's in each position. 
 
-1.
+How many operations does it take to insert the integer 100 in the 9th position?
+
 Lst[8] = 100
 
 1 step
 If we had a larger list, would the number of steps change?
-No, so we call that constant time.
+No. Regardless of the size of the list, inserting an item into a chosen position always takes the same amount of time. This is called constant time.
 
-2.
+How many operations does it take to check if 63 is in the list?
+
 for item in lst:
 	if item == 63:
 		print(“Found!”)
 
-Worst case: item not found. Takes 12 steps, where 12 is the length of the list. If we had a larger list, would the number of steps change? Yes! The bigger the list, the more steps. 
-
-We call this linear.
+In the worst case, we don't find the item in the list. This would take 12 steps, where 12 is the length of the list. If we had a larger list, would the number of steps change? Yes! The bigger the list, the more steps. This is called linear time.
 
 Searching for an item in an unordered list is always at least linear.
 
 *Optional*
 Does that change if the list is sorted? Yes! We can do binary search. 
 
+@Exercise (10 minutes) {
 Suggestion: do a binary search example on the board, and calculate how long it takes to search in the worst case (item not found).
+}
 
 Image Details:
 * [bigO01.png](http://www.google.com): Copyright Google
@@ -50,7 +63,7 @@ Image Details:
 
 # Infinite loop vs. very slow algorithm
 
-![](res/bigO02.png)
+![center](res/bigO02.png)
 
 <!--
 *Suggestion: use whiteboard*
@@ -63,10 +76,9 @@ while i < len(lst):
 		print(“Found!”)
 
 What’s the problem?
-Infinite loop. It’ll never stop executing…
+This is an infinite loop. It’ll never stop executing, because i is never incremented.
 
-Sometimes when we are training a model we may seriously start to wonder if we have created an infinite loop. 
-How do we know whether we have created an infinite loop or our model is simply taking a long time to train? 
+Sometimes when we are training a model we may seriously start to wonder if we have created an infinite loop. How do we know whether we have created an infinite loop or our model is simply taking a long time to train? 
 
 Print statements / debugging messages help us track what’s going on and if any real progress is being made. We can also use these tools to estimate how much time there is left. 
 
@@ -82,7 +94,7 @@ Image Details:
 
 Example: write a function to find all duplicates in a list
 
-![](res/bigO03.jpg)
+![center](res/bigO03.jpg)
 
 <!--
 What happens when you ask your computer to try out every possible combination of features?
@@ -91,7 +103,7 @@ That’s something we’ll come across a lot when working with big data.
 When we write code, we need to be able to tell how much time that code is likely to take to execute based on the size of the
 input. Similarly, we need to know whether we have enough space in memory. Otherwise, how would we be able to tell whether you
 can run a given dataset through a model on a given computer? Just trying it out and risking running out of memory is not a
-good idea! And imagine if we leave our laptop running all day and then we need to close it to go home. Will we just lose all of your progress?
+good idea! And imagine if we leave our laptop running all day and then we need to close it to go home. Will we just lose all of our progress?
 Industry leaders work with problems like this at a much bigger scale. So it’s important to have the language and conceptual understanding of these limitations to be able to work efficiently.
 
 Image Details:
@@ -102,7 +114,17 @@ Image Details:
 
 # Big-O
 
-![](res/bigO04.png)
+From our previous example:
+
+![center](res/bigO01.png)
+
+How many operations does it take to insert the integer 100 in the 9th position?
+
+-> O(1) Constant
+
+How many operations does it take to check if 63 is in the list?
+
+-> O(n) Linear
 
 <!--
 Big O is a way to talk about this, to express runtime and space usage.
@@ -115,11 +137,11 @@ Image Details:
 
 # Example: increment all values within a column by 1
 
-![](res/bigO05.png)
+![center](res/bigO05.png)
 
 <!--
-loc: only work on index
-iloc: work on position
+loc: only works on index
+iloc: works on position
 ix: You can get data from dataframe without it being in the index
 at: get scalar values. It's a very fast loc
 iat: Get scalar values. It's a very fast iloc
@@ -136,9 +158,9 @@ Image Details:
 
 Given a messy address book, write a function to find phone numbers when searching by name.
 
-Note: the names are not sorted.
+*Note: the names are not sorted.*
 
-![](res/bigO06.jpg)
+![center ](res/bigO06.jpg)
 
 <!--
 time complexity vs space complexity
@@ -219,7 +241,7 @@ Image Details:
 
 # The friends Θ and Ω
 
-![](res/bigO07.png)
+![center](res/bigO07.png)
 
 <!--
 Compare the idea of asymptotic analysis with finding limits at infinity. We really only care about arbitrarily big numbers.
@@ -240,10 +262,10 @@ def constant(lst):
 
 Which is faster?
 
-Explain Omega (lower bound) and Theta (tight bound). Omega defines an asymptotic lower bound on a function. Theta is bounds the funciton both above and below, so theta describes the true asymptotic behavior. 
+Explain Omega (lower bound) and Theta (tight bound). Omega defines an asymptotic lower bound on a function. Theta bounds the function both above and below, so theta describes the true asymptotic behavior. 
 
 In both of the cases above, the worst and best case are the same. They are an example of Theta.
-In our earlier search example with had a return statement in the for loop. What happens in the best case? What about the worst?
+In our earlier search example, we had a return statement in the for loop. What happens in the best case? What about the worst?
 The best and worst case are not the same, so we use Omega and Big-O.
 
 Example: for loops without break statements vs while loop
@@ -279,7 +301,7 @@ Put the following in order:
 * O(1)
 * O(n!)
 
-![](res/bigO08.png)
+![bg](res/bigO08.png)
 
 <!--
 Highlight most common (1, log n, n, n^2, etc)
