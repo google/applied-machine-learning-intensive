@@ -6,6 +6,10 @@
   "colabs": [
     "colab.ipynb"
   ],
+  "duration": {
+    "slides.md": 30,
+    "colab.ipynb": 60
+  },
   "materials": [],
   "handouts": [],
   "resources": [
@@ -13,7 +17,7 @@
     "https://regexone.com/references/python"
   ],
   "learning-objectives": [
-    "Understand regular expressions",
-    "Using regular expressions with Python",
+    "Understand regular expressions.",
+    "Using regular expressions with Python."
   ]
 }
