@@ -130,7 +130,7 @@ How many operations does it take to check if 63 is in the list?
 Big O is a way to talk about this, to express runtime and space usage.
 
 Image Details:
-* [bigO04.png](http://www.google.com): Copyright Google
+* [bigO01.png](http://www.google.com): Copyright Google
 -->
 
 ---
