@@ -11,7 +11,76 @@ img[alt~="center"] {
 }
 </style>
 
-# Image Manipulation in Python
+# Images and Videos
+
+<!--
+In this unit we will move away from machine learning for a bit and instead talk about images
+and videos.
+
+Why images and videos?
+
+Image and video processing is actually very common in machine learning applications. Can you think
+of any examples of images or video processing in machine learning?
+
+Some ideas include:
+
+* Facial recognition
+* Classification
+* Converting video to a textual description (story)
+* Analyzing video for suspicious movements
+* Disease detection in medical images
+* Crop yield estimates based on ariel photos of fields
+
+The list goes on and on. There are many applications of image and video processing in machine learnings.
+
+-->
+
+---
+
+# What is an image?
+
+<!--
+Let's think for a second. What is an image actually?
+
+You likely know that an image is a grid of pixels. And each pixel represents a single color point
+in the image.
+-->
+
+---
+
+# Image Encodings
+
+<!--
+Not all pixels are encoded in the same way though. There are actually quite a few different
+encodings for images.
+-->
+
+---
+
+# Grayscale vs. Color Images
+
+![center](res/color-vs-gray.png)
+
+<!--
+One of the first distinctions to be made is if the image is made up pictures on a "gray scale" or if
+the image is made from a larger spectrum of colors. In this example you can see that the image on
+the right has many colors, including some reds while the image on the right is limited to black,
+white, and the grays in between.
+
+What does this mean for the encoding?
+
+Image Details:
+* [cars-vs-gray.png](https://pixabay.com/photos/running-shoe-shoe-brooks-371624/): Pixabay License
+-->
+
+---
+
+# Grayscale
+
+<!--
+We'll start with the simplest format, grayscale. Grayscale images have a single numeric value
+representing each pixel in the image.
+-->
 
 ---
 
@@ -25,7 +94,8 @@ It is common to have input data that consists of images. Just like with tabular 
 Our goal in this lecture is to learn how to take a rectangular image that is 960 by 640 pixels and produce a thumbnail that is 200 by 200 pixels. 
 
 Image Details:
-* [imagemaninpy1.png](http://www.google.com): Copyright Google  
+* [imagemaninpy1.png](https://pixabay.com/photos/running-shoe-shoe-brooks-371624/): Pixabay License
+
 -->
 
 ---
