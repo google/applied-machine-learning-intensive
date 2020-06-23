@@ -7,15 +7,19 @@
     "colab.ipynb"
   ],
   "slides": [
-    "slides.md",
+    "slides.md"
   ],
+  "duration": {
+    "slides.md": 45,
+    "colab.ipynb": 180
+  },
   "learning-objectives": [
-    "Know how to calculate the probability of an event from a probabiltiy distribution",
-    "Understand the definition of and how to calculate expected value",
-    "Be comfortable doing simple probability calculations and coding simple probability distributions",
-    "Understand basic statistical sampling, and generate a representative sample from a dataset",
-    "Understand and calculate measures of center and measures of spread",
-    "Know some basic probability distributions",
-    "Generate a hypothesis, and compare the means of 2 sample distributions with a t-test, and report on the results",
+    "Know how to calculate the probability of an event from a probability distribution.",
+    "Understand the definition of and how to calculate expected value.",
+    "Be comfortable doing simple probability calculations and coding simple probability distributions.",
+    "Understand basic statistical sampling, and generate a representative sample from a dataset.",
+    "Understand and calculate measures of center and measures of spread.",
+    "Know some basic probability distributions.",
+    "Generate a hypothesis, and compare the means of 2 sample distributions with a t-test, and report on the results."
   ]
 }
