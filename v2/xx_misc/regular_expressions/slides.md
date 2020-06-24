@@ -7,12 +7,12 @@ marp: true
 # Regular Expressions (Regex)
 
 <!--
-In this unit, we will learn about a powerful data processing tool: regular expressions.
+In this unit we will learn about a powerful data processing tool: regular expressions.
 -->
 
 ---
 
-# What are regular expressions?
+# What Are Regular Expressions?
 
 - Expressive patterns used for string matching
 - Can also be used to replace or modify text
@@ -30,19 +30,19 @@ Though it wasn't the first language to support regular expressions, the Perl pro
 
 Most languages have some level of PCRE support, making the expressions themselves somewhat cross-language. 
 
-This lesson will work a little differently compared to others. Instead of spending the entire lesson going over new concepts, we will cover just a few key rules in regex, then we will use the rest of the time to go over some examples.
+This lesson will work a little differently compared to others. Instead of spending the entire lesson going over new concepts, we will cover just a few key rules in regex. Then we will use the rest of the time to go over some examples.
 
 -->
 
 ---
 
-# How to use regex
+# How to Use Regex
 
 - There are so many regex rules
 - If you need help, look online; the internet is your friend!
 
 <!--
-In the workplace, you will find that most of the time you end up using Stack Overflow or a similar place a LOT. Regex is a great
+In the workplace you will find that you end up using Stack Overflow or a similar place a lot. Regex is a great
 example of that. If you ever have a complex regex pattern to match, chances are this (or a similar) question has been answered
 before somewhere on the internet. Don't be afraid to use these resources. It will help your understanding.
 -->
@@ -52,7 +52,7 @@ before somewhere on the internet. Don't be afraid to use these resources. It wil
 # Basic Regular Expression Syntax
 
 <!--
-In the next few slides, we will highlight some basic regular expression rules. These rules are pretty easy to get your mind around and yet are very powerful.
+The next few slides will highlight some basic regular expression rules. These rules are relatively easy to get your mind around, yet are very powerful.
 -->
 
 ---
@@ -90,7 +90,7 @@ String | Status
 `Gal!` | Does Not Match
 
 <!--
-In this example, the plus sign is the expression for "one or more." This ensures that we have at least one 'o' in our match.
+In this example the plus sign is the expression for "one or more." This ensures that we have at least one 'o' in our match.
 
 But what if we want to limit the number of 'o' characters? For instance, we might not want to match [this 'Gooooooo....oooal'](https://www.youtube.com/watch?v=UioCvLN-370).
 -->
@@ -130,7 +130,7 @@ String | Status
 `Goalss` | Does Not Match
 
 <!--
-There are sometimes cases where you want to match for zero or one character. A common example is depicted in this slide where we are looking for the singular or plural version of a word. Of course, this doesn't work for all English words, but works for specific cases that you might encounter.
+There are sometimes cases where you want to match for zero or one character. A common example is depicted in this slide where we are looking for the singular or plural version of a word. Of course, this doesn't work for all English words, but it works for specific cases that you might encounter.
 -->
 
 ---
@@ -219,7 +219,7 @@ Anchors can be used to tie your match to the start or the end of the text you ar
 `
 
 <!--
-Sometimes you need to type in a character that means something special to the regular expression engine or that is difficult to express in a string. For these cases, you can use the regular expression escape (backslash character).
+Sometimes you need to type in a character that means something special to the regular expression engine or that is difficult to express in a string. For these cases, you can use the regular expression escape, or backslash character.
 
 In our examples you can see:
 
@@ -235,17 +235,17 @@ These are just a few of the many escape sequences in regular expressions.
 
 ---
 
-# What do the following regex patterns match?
+# What Do the Following Regex Patterns Match?
 
 <!--
-And we have just scratched the surface of regular expressions. Regular expressions are a language of their own that just happens to have support in Python. Entire large books have been written about regular expressions. You'll definitely want to dig more into the features available to you.
+And we have just scratched the surface of regular expressions. Regular expressions are a language of their own that just happens to have support in Python. Entire lengthy books have been written about regular expressions. You'll definitely want to dig more into the features available to you.
 
 But first, let's look at some sample expressions.
 -->
 
 ---
 
-# What do the following regex patterns match?
+# What Do the Following Regex Patterns Match?
 
 ## `'.*machine\slearning.*'`
 
@@ -256,7 +256,7 @@ Matches any string that contains the phrase "machine learning". Note that spaces
 
 ---
 
-# What do the following regex patterns match?
+# What Do the Following Regex Patterns Match?
 
 ## `'^\d{3}\-\d{3}\-\d{4}$'`
 
@@ -268,7 +268,7 @@ Matches anything of the form of a US-telephone number. The `^` and `$` anchor th
 
 ---
 
-# What do the following regex patterns match?
+# What Do the Following Regex Patterns Match?
 
 ## `'[a-zA-Z0-9]*'`
 
@@ -281,12 +281,12 @@ letters, numbers, and special characters.
 
 ---
 
-# What do the following regex patterns match?
+# What Do the Following Regex Patterns Match?
 
 ## `'[aeiou]{2}[a-z]*'`
 
 <!--
-Matches any word that starts with 2 vowels, e.g. aardvark, aim, either.
+Matches any word that starts with 2 vowels, e.g., aardvark, aim, either.
 
 -->
 
