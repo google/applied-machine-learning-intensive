@@ -87,7 +87,7 @@ Please only include information and events you’re comfortable sharing with the
 
 Source: Photo by Ludovic Fremondiere on Unsplash
 Image Details:
-* [lifepaths04.jpg](https://unsplash.com/photos/J8VWeMr5_Tg) License: Unsplash
+* [lifepaths04.jpg](https://unsplash.com/photos/J8VWeMr5_Tg) Unsplash License
 -->
 
 ---
