@@ -31,7 +31,8 @@ Some ideas include:
 * Disease detection in medical images
 * Crop yield estimates based on ariel photos of fields
 
-The list goes on and on. There are many applications of image and video processing in machine learnings.
+The list goes on and on. There are many applications of image and video processing in machine
+learnings.
 
 -->
 
@@ -43,7 +44,7 @@ The list goes on and on. There are many applications of image and video processi
 Let's think for a second. What is an image actually?
 
 You likely know that an image is a grid of pixels. And each pixel represents a single color point
-in the image.
+in the image. But how is that pixel encoded?
 -->
 
 ---
@@ -51,182 +52,258 @@ in the image.
 # Image Encodings
 
 <!--
-Not all pixels are encoded in the same way though. There are actually quite a few different
+Not all pixels are encoded in the same way. There are actually quite a few different
 encodings for images.
 -->
 
 ---
-
-# Grayscale vs. Color Images
+# Image Encodings
+## Grayscale vs. Color Images
 
 ![center](res/color-vs-gray.png)
 
 <!--
-One of the first distinctions to be made is if the image is made up pictures on a "gray scale" or if
+One of the first distinctions to be made is if the image is made up pixels on a "gray scale" or if
 the image is made from a larger spectrum of colors. In this example you can see that the image on
-the right has many colors, including some reds while the image on the right is limited to black,
+the left has many colors, including some reds while the image on the right is limited to black,
 white, and the grays in between.
 
 What does this mean for the encoding?
 
 Image Details:
-* [cars-vs-gray.png](https://pixabay.com/photos/running-shoe-shoe-brooks-371624/): Pixabay License
+* [color-vs-gray.png](https://pixabay.com/illustrations/car-sports-car-racing-car-speed-49278/): Pixabay License
 -->
 
 ---
 
 # Grayscale
+## [0, 255] or [0.0, 1.0]?
+
+![center](res/grayscale.png)
+
 
 <!--
 We'll start with the simplest format, grayscale. Grayscale images have a single numeric value
 representing each pixel in the image.
+
+But what are those numbers?
+
+Typically they range from 0 to 255 if they are integers or 0.0 to 1.0 if they are floating point
+values.
+
+Even with grayscale images, it is important to know the range of values for the input pixels. If
+the pixels range from 0.0 to 1.0 then many models will be able to more easily train on the images.
+If the values are integers between 0 and 255, then it is typically a good idea to divide the values
+by 255.0 in order to bring them into the 0.0 to 1.0 range that neural networks in order to help the
+models learn more quickly.
+
+Image Details:
+* [color-vs-gray.png](https://pixabay.com/illustrations/car-sports-car-racing-car-speed-49278/): Pixabay License
 -->
 
 ---
 
-# Resizing an Image
+# Color Images
+## RGB, RGBA, BGR, BGRA, CMYK, CMYKA, other?
 
-![center](res/imagemaninpy1.png)
+![center](res/color.png)
 
 <!--
-It is common to have input data that consists of images. Just like with tabular data, we still need to perform data cleaning and exploration, and this often involves manipulating the images to ensure they are in a good form for your ML model. For example, we may want to resize the images to a uniform dimension or colorspace.
+Grayscale images typically are one of the two encodings that we mentioned. It is of course important
+to know which encoding your images are in since a model expects inputs to be on the same scale.
+However, converting between [0.0, 1.0] and [0, 255] is fairly trivial.
 
-Our goal in this lecture is to learn how to take a rectangular image that is 960 by 640 pixels and produce a thumbnail that is 200 by 200 pixels. 
+Color images introduce an entirely new level of encoding complexity. There are scores of encodings
+for color images. One of the more common ones that you might have seen is RGB.
+
+RGB stands for "red", "green", "blue". With these three colors you can make scores of other colors.
+With RGB encoding a value, typically between 0 and 255 (though sometimes between 0.0 and 1.0), you
+can combine the colors to create a rainbow of possibility.
+
+With RGB you have three numeric values for each pixel. This triples the size of your inputs!
+
+But that is not all. There is RGBA, which takes our red, green, and blue and adds an "alpha" channel
+which represents the opacity of the pixel.
+
+Opacity?
+
+Typically when we think of an image, we think about only seeing that image. But what if we put an
+image under the image we were looking at? If there were no opacity, then we'd only see the topmost
+image. If there is opacity (think transparency) then we would see a little bit of the underlying
+image too.
+
+The alpha channel, also typically between 0 and 255 or 0.0 and 1.0, manages how "see-through" our
+pixel is.
+
+But why RGB? Why not BRG or GBR or any other ordering?
+
+It turns out that there are other orderings, one of the more common being BGR. This was a common
+encoding in early digital cameras for hardware reasons that aren't relevant to our topic. Just
+know that color order can change and you need to make sure that your inputs for training and
+predicting have the same encodings.
+
+Of course, this begs the question. Are reds, greens, blues, and maybe alphas the only way to encode
+color?
+
+Of course not!
+
+There are other schemes such as CMYK, which stands for cyan, magenta, yellow, and black.
+
+Encodings aren't complicated individually, but the number and variety of image encodings can be
+difficult to work with.
+
+Know your inputs!
 
 Image Details:
-* [imagemaninpy1.png](https://pixabay.com/photos/running-shoe-shoe-brooks-371624/): Pixabay License
+* [color.png](https://pixabay.com/illustrations/car-sports-car-racing-car-speed-49278/): Pixabay License
 
 -->
 
 ---
 
-# Python Modules
+# Modifying Images
+## Encodings
 
-![center](res/imagemaninpy2.png)
+```python
+  image =  cv.cvtColor(image, cv.COLOR_BGR2RGB)
+
+  image = image / 255.0
+  
+  image = int(image * 255)
+```
 
 <!--
 
-We’ll use the matplotlib Python library you have already used for creating charts. But in this exercise, we’ll use it to plot an image instead of a chart.
+We talked about image encodings and how it is important to feed your model images encoded in the
+same way.
 
-PIL (Python Imaging Library) is a free library for the Python programming language. It adds support for opening, manipulating, and saving many different image file formats. A newer fork of PIL is called Pillow, so don't be confused if you see it called either name.
+In order to do this you have a few options.
 
-Image Details:
-* [imagemaninpy2.png](http://www.google.com): Copyright Google  
+If you are converting encodings, you can use the OpenCV `cvtColor` function to to the conversion
+for you.
+
+If you are scaling the encodings you can use simple Python expressions with NumPy arrays.
 -->
 
 ---
 
-# Open and Plot an Image and Its Dimensions
+# Modifying Images
+## Resizing an Image
 
-![center](res/imagemaninpy3.png)
+![center](res/resize.png)
+
 <!--
+But what about scaling/resizing an image?
 
-In the first block of code, we open the image using PIL. In this case the image is in the same directory as our Python project, and the name is running-shoe-371624_960_720.jpg. We then plot the image using Matplotlib. 
+Some models have a scaling layer as an early step, but not all do. Also, you may want more control
+of your image when you scale it.
 
-In the second block of code, we inspect the dimensions of the image. 
+In the example in this slide we simply scaled the image down to a size that presumptively the model
+expects. We could have also padded it into a proportional square or rectangle before resizing.
 
 Image Details:
-* [imagemaninpy3.png](http://www.google.com): Copyright Google  
+* [resize.png](https://pixabay.com/photos/running-shoe-shoe-brooks-371624/): Pixabay License
+
 -->
 
 ---
 
-![center](res/imagemaninpy4.png)
+# Modifying Images
+## Pad an Image
+
+![center](res/pad.png)
 
 <!--
-Remember the goal is to end up with a thumbnail image that is square and with dimensions of 200 by 200 pixels.
+But you don't always just want to blindly resize an image. That might distort it.
 
-Questions for students:
-* How do we get there?
-* If the image is resized from rectangular (960x640) to square (200x200), what happens to the image?
+In some cases you'll want to pad an image with whatever the background color is and then resize
+it in order to avoid distorting the image.
 
-There are a variety of ways to avoid skewing the image when changing the dimensions. One common technique is called padding. Here we will pad the original image in the vertical direction so that it's square in shape. We will then size it down to 200 by 200 pixels. 
-
-Let’s see how to do that in code.
+To do this, you must find the number of pixels to add to the height of the image and divide those
+pixels across the top and bottom of the image. You must do the same for the left and right of the
+image.
 
 Image Details:
-* [imagemaninpy4.png](http://www.google.com): Copyright Google  
+* [resize.png](https://pixabay.com/photos/running-shoe-shoe-brooks-371624/): Pixabay License
 -->
 
 ---
 
-# Compute Delta Width and Height
-![center](res/imagemaninpy5.png)
+# Modifying Images
+## Centering
+
+![center](res/lines.png)
 
 <!--
-How do we figure out how much to pad the image to make it a square?
-
-First, determine the largest dimension (width or height) of the original image.
-
-Then figure out how much padding is needed in the height and width of the image. In this case we need to pad the image’s height to match the image’s width, since the width is larger than the height.
+If we have images with a predictable solid background, we can actually perform more complex
+processing and try to find the center of the focal object. Using algorithms like the Canny
+algorithm, we can find the key strokes and make our image, hone in on them, and find the center of
+our image. We can then pad around that.
 
 Image Details:
-* [imagemaninpy5.png](http://www.google.com): Copyright Google  
+* [color.png](https://pixabay.com/illustrations/car-sports-car-racing-car-speed-49278/): Pixabay License
+
 -->
 
 ---
 
-# Compute Amount of Paddings
+# Modifying Images
+## Rotating
 
-![center](res/imagemaninpy6.png)
+![center](res/upside-down-color.png)
 
 <!--
-But wait! In order to keep the shoes centered on the image, we need to pad the height both at the top as well as at the bottom, thus HALF the required padding will be added to the bottom and the other half to the top of the image.
+Other image manipulation tricks involve rotations. You can augment an image by spinning it around.
 
 Image Details:
-* [imagemaninpy6.png](http://www.google.com): Copyright Google  
+* [color.png](https://pixabay.com/illustrations/car-sports-car-racing-car-speed-49278/): Pixabay License
+
 -->
 
 ---
 
-# Pad the Image
-
-![center](res/imagemaninpy7.png)
+# Modifying Images
+## Other Augmentations?
 
 <!--
-Now we are ready to do the padding. We use the PIL module again to do the padding by passing in the original image, padding figures in pixels (left, top, right, bottom), and the background color of the padding pixels.
+What are some other image augmentations that you can think of?
 
-Image Details:
-* [imagemaninpy7.png](http://www.google.com): Copyright Google  
+Some others include:
+
+* 'cutting': where images of the same class are spliced together to increase the size of the
+  training data set.
+* 'drop out': where portions of training images are removed during training.
+* Generating fake data based from a model that is then used to train another model.
+
+There are many more strategies and none are right for every model. You have to experiment.
+
 -->
 
 ---
 
-# Resize the Image
-
-![center](res/imagemaninpy8.png)
+# Video
 
 <!--
-Now we need just to reduce the dimension into a thumbnail size of 200x200 pixels.
+This section also talks about video.
 
-Image Details:
-* [imagemaninpy8.png](http://www.google.com): Copyright Google  
--->
+We are going to greatly simplify video.
 
----
+If you think about a video feed, it has images, it has sound, it might have captions and other
+optional features.
 
-# Resize the Image
+For our case in this course, video will simply be a series of images and we will treat it as such.
 
-![center](res/imagemaninpy9.png)
+Much of the video we watch is 30 "frames per second" (fps) or 60 fps. Think of each of these frames
+as a still image. Now thing about how much changes between frames in 1/30th of a second?
 
-<!--
-Again, we use the PIL module to do so by passing in the desired_size.
+Well, it depends on what type of video you are processing.
 
-Image Details:
-* [imagemaninpy9.png](http://www.google.com): Copyright Google  
--->
+Are you watching the spray from a sneeze?
 
----
+Are you watching ice melt?
 
-# The Final Image
-
-![center](res/imagemaninpy10.png)
-
-<!--
-Here’s the final image.
-
-Image Details:
-* [imagemaninpy10.png](http://www.google.com): Copyright Google  
+Video might simply be a "series of images" for our purposes, but you still need to consider what
+you are modelling.
 -->
 
 ---
@@ -234,5 +311,14 @@ Image Details:
 # Your Turn
 
 <!--
-Let's practice in the lab. 
+
+It is time for you to practice working with images and video.
+
+This unit is a bit different because there are three labs to do. Two perform images processing.
+One with PIL (Pillow) and the other with OpenCV. We then do a video processing lab where we open
+a video and extract frames. This all leads to a project where we will take a video and classify
+items in the video.
+
+Have fun!
+
 -->
