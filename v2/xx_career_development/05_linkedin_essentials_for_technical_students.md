@@ -14,18 +14,18 @@ Today we’ll go over some essential best practices for using LinkedIn™ as a t
 
 # Agenda
 
-* Why use LinkedIn?
+* Why use LinkedIn™?
 * LinkedIn™ vs. your resume
-* Building connections on LinkedIn
+* Building connections on LinkedIn™
 * Stand out to recruiters 
 * Skills, endorsements, recommendations
 * Q&A
 
 <!--
-Here’s our agenda for today’s session. We’ll talk about why we should even have a LinkedIn™ profile, the differences between a resume and LinkedIn, how to start building connections on LinkedIn, how to stand out to recruiters, and information about how to have your skills and experiences come to life with endorsements and recommendations from your LinkedIn™ connections. 
+Here’s our agenda for today’s session. We’ll talk about why we should even have a LinkedIn™ profile, the differences between a resume and LinkedIn™, how to start building connections on LinkedIn™, how to stand out to recruiters, and information about how to have your skills and experiences come to life with endorsements and recommendations from your LinkedIn™ connections. 
 -->
 
-# Why use LinkedIn™?
+# Why Use LinkedIn™?
 
 * Professional way to stay connected with friends, former colleagues, etc
 * Modern day resume available to a wide audience
@@ -48,7 +48,7 @@ This question comes up a lot: “My LinkedIn™ is just my resume, right?” To 
 
 ---
 
-# How LinkedIn™ is *similar* to a resume 
+# How LinkedIn™ Is *Similar* to a Resume 
 
 * Experience section
     * List every employer, position, and when you worked there. Flesh it all out as you can.  
@@ -65,7 +65,7 @@ This question comes up a lot: “My LinkedIn™ is just my resume, right?” To 
 
 ---
 
-# How LinkedIn™ is *different* from a resume
+# How LinkedIn™ Is *Different* From a Resume
 
 * About me section
    * Be a self-promoter. Talk about who you are, what you do, what you want to do.
@@ -84,7 +84,7 @@ This question comes up a lot: “My LinkedIn™ is just my resume, right?” To 
 
 ---
 
-# How LinkedIn™ is *different* from a resume
+# How LinkedIn™ Is *Different* From a Resume
 
 * It can be as long as you want
    * Don’t skimp on truthful keywords or skills!
@@ -116,7 +116,7 @@ Now let’s dive into how to build connections on LinkedIn™. You’ll have a p
 
 ---
 
-# Who is it appropriate to add on LinkedIn?
+# Who Is It Appropriate to Add on LinkedIn?
 
 * If Facebook or Instagram is your inner circle, think of LinkedIn™ as an inner circle PLUS the people it would be awkward to add on Facebook or Instagram (professors, managers, leaders of this program).
 * If you’ve met them, add them. If you haven’t, don’t... for now!
@@ -136,7 +136,7 @@ Consider Facebook, Instagram, and SnapChat friends as your personal inner circle
 
 ---
 
-# How do I search for new people to connect with?
+# How Do I Search for New People to Connect With?
 
 ![](res/linkedin01.png)
 
@@ -151,7 +151,7 @@ Image Details:
 
 ---
 
-# How do I search for new people to connect with?
+# How Do I Search for New People to Connect With?
 
 * Next, scroll down to Schools and select your university.
 * Then filter again by Current Company to see the alumni from your university who work at a company you’re interested in.
@@ -165,9 +165,9 @@ Image Details:
 
 ---
 
-# Writing to people you found on LinkedIn™
+# Writing to People You Found on LinkedIn™
 
-**What to do**
+**What to Do**
 
 *  Say how you found them
 *  Say why you’re writing to them
@@ -179,7 +179,7 @@ Image Details:
 
 {.column}
 
-**What not to do**
+**What Not to Do**
 
 *  Ask for a job
 *  Ask for everything 
@@ -205,7 +205,7 @@ Forget to show gratitude. Thank them for responding. Thank them for making time 
 
 ---
 
-# Stand out to recruiters on LinkedIn™
+# Stand Out to Recruiters on LinkedIn™
 
 *  Let them know you’re looking
 *  Update your skills 
@@ -217,7 +217,7 @@ Now that we’ve gone over some basics regarding building out your LinkedIn™ p
 
 ---
 
-# Make sure recruiters know you're looking
+# Make Sure Recruiters Know You're Looking
 
 ![](res/linkedin03.png)
 
@@ -230,7 +230,7 @@ Image Details:
 
 ---
 
-# Update your skills
+# Update Your Skills
 
 ![](res/linkedin04.png)
 
@@ -244,7 +244,7 @@ Image Details:
 
 ---
 
-# Update your skills
+# Update Your Skills
 
 *  Scroll down on your own profile page to Skills & Endorsements
 *  Click Add a new skill
@@ -262,7 +262,7 @@ Image Details:
 
 ---
 
-# Your turn!
+# Your Turn!
 
 Spend **3 minutes** updating your skills section -- 
 
@@ -276,7 +276,7 @@ Let’s update your skills section! But first, what are some skills you should a
 
 ---
 
-# What new skills can you add to your LinkedIn™?
+# What New Skills Can You Add to Your LinkedIn™?
 
 *  HTML
 *  Web app development
@@ -301,7 +301,7 @@ What are some new skills you can add to your LinkedIn™ after this course? Here
 
 ---
 
-# Endorse & recommend your connections
+# Endorse and Recommend Your Connections
 
 What’s the difference?
 
@@ -311,7 +311,7 @@ A skill endorsement is a one-click way for your connections to endorse the skill
 A recommendation is a written statement of endorsement received from a connection. You can request recommendations from your connections, as well as proactively recommend your connections.
 -->
 
-# *Endorse* & recommend your groupmates
+# *Endorse* and Recommend Your Groupmates
 
 ![](res/linkedin06.png)
 
@@ -324,7 +324,7 @@ Image Details:
 
 ---
 
-# Your turn!
+# Your Turn!
 
 Spend **2 minutes** providing endorsements for your group members.
 
@@ -334,7 +334,7 @@ Let’s practice! Spend the next two minutes providing endorsements for your gro
 
 ---
 
-# Endorse and *recommend* your groupmates
+# Endorse and *Recommend* Your Groupmates
 
 *  Go to a LinkedIn™ connection’s page and click More
 *  Click on Recommend
@@ -350,7 +350,7 @@ Image Details:
 
 ---
 
-# Endorse and *recommend* your groupmates
+# Endorse and *Recommend* Your Groupmates
 
 *  Indicate how you know Michael and what his position was at the time.
 *  Write your recommendation!
@@ -372,7 +372,7 @@ Image Details:
 
 ---
 
-# Endorse and *recommend* your groupmates
+# Endorse and *Recommend* Your Groupmates
 
 *  Explain how you know the person
 *  Show, don’t tell 
@@ -386,7 +386,7 @@ In your recommendation it’s important that you explain how you know the person
 
 ---
 
-# Endorse and *recommend* your groupmates
+# Endorse and *Recommend* Your Groupmates
 
 ![](res/linkedin09.png)
 
@@ -401,7 +401,7 @@ Image Details:
 
 ---
 
-# Your turn!
+# Your Turn!
 
 Spend **12 minutes** providing recommendations for your group members. 
 
@@ -411,7 +411,7 @@ Let’s practice! Spend the next 12 minutes providing written recommendations fo
 
 ---
 
-# Let's recap
+# Let's Recap
 
 *  LinkedIn™ profiles serve a number of functions, including helping stay in touch with peers and building new connections.
 *  Your resume and LinkedIn™ share similarities but are not the same.
@@ -425,7 +425,7 @@ What else stood out to you today as something you’ll take with you?
 
 ---
 
-# Next steps
+# Next Steps
 
 Prior to our next session, please take time to review the following article in Harvard Business Review:
 [Harvard Business Review: Find the Coaching in Criticism](https://hbr.org/2014/01/find-the-coaching-in-criticism)
