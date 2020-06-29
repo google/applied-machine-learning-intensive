@@ -144,6 +144,9 @@ Consider Facebook, Instagram, and SnapChat friends as your personal inner circle
 A helpful group of people to connect with is alumni from your university who are working at a company where you may want to work some day. The easiest way to find and connect with those folks is by using the search function on LinkedIn. Please open your computers and log into your LinkedIn profiles for this section of the presentation so you can follow along. 
 
 Begin typing in the search bar at the top of your page. Click People. Then click All Filters.
+
+Image Details:
+* [res/linkedin01.png](http://www.linkedin.com): Copyright LinkedIn™
 -->
 
 ---
@@ -154,6 +157,11 @@ Begin typing in the search bar at the top of your page. Click People. Then click
 * Then filter again by Current Company to see the alumni from your university who work at a company you’re interested in.
 
 ![](res/linkedin02.png)
+
+<!--
+Image Details:
+* [res/linkedin02.png](http://www.linkedin.com): Copyright LinkedIn™
+-->
 
 ---
 
@@ -215,6 +223,9 @@ Now that we’ve gone over some basics regarding building out your LinkedIn prof
 
 <!--
 This may seem simple, but the first thing you want to do is ensure recruiters know you’re looking for a job. You can do that by going to Settings & Privacy, selecting Job seeking preferences, and making sure the toggle for Let Recruiters know you’re open to opportunities is set to Yes.
+
+Image Details:
+* [res/linkedin03.png](http://www.linkedin.com): Copyright LinkedIn™
 -->
 
 ---
@@ -226,6 +237,9 @@ This may seem simple, but the first thing you want to do is ensure recruiters kn
 <!--
 Now that it’s clear to recruiters that you’re open to opportunities, let’s talk about what skills you should list on your LinkedIn so your employability and uniqueness are on display!
 First, some basics. LinkedIn allows you to list 25 skills and allows your connections can endorse you for those skills. Your endorsers can even indicate how skilled you are at them. The three skills with the most endorsements from other people will be the ones prominently featured on your LinkedIn profile page when others look. They can still click and see the others. 
+
+Image Details:
+* [res/linkedin04.png](http://www.linkedin.com): Copyright LinkedIn™
 -->
 
 ---
@@ -241,6 +255,9 @@ First, some basics. LinkedIn allows you to list 25 skills and allows your connec
 
 <!--
 This may seem intuitive, but it’s important to choose skills that reflect the required skills and job requirements for the roles you’re looking for. Obviously you should be truthful about the skills and experiences you have as well.
+
+Image Details:
+* [res/linkedin05.png](http://www.linkedin.com): Copyright LinkedIn™
 -->
 
 ---
@@ -300,6 +317,9 @@ A recommendation is a written statement of endorsement received from a connectio
 
 <!--
 Endorsements are quick and easy one-clicks you can utilize to vouch that your LinkedIn connection has a particular skill or set of skills. You simply go to a LinkedIn connection’s profile page, scroll down to their skills section, and click on the + symbol next to the skill you want to endorse. Once a check mark appears in the circle, you’ve successfully endorsed them. Endorsements frequently serve a “you scratch my back, I’ll scratch yours" function, so hopefully the person you endorsed will return the favor and endorse you for skills they know you have.
+
+Image Details:
+* [res/linkedin06.png](http://www.linkedin.com): Copyright LinkedIn™
 -->
 
 ---
@@ -323,6 +343,9 @@ Let’s practice! Spend the next two minutes providing endorsements for your gro
 
 <!--
 Let’s move onto recommendations. To create a LinkedIn recommendation for someone, go to their page and click More then Recommend. 
+
+Image Details:
+* [res/linkedin07.png](http://www.linkedin.com): Copyright LinkedIn™
 -->
 
 ---
@@ -342,6 +365,9 @@ To leave a recommendation on LinkedIn, that person must have this course listed 
 At this stage you’ll indicate what your relationship is with the person and what their position was at the time.
 
 From here you will have an opportunity to write a recommendation about that person. You should aim for the recommendation to be no more than one paragraph, ideally 3-5 sentences. 
+
+Image Details:
+* [res/linkedin08.png](http://www.linkedin.com): Copyright LinkedIn™
 -->
 
 ---
@@ -368,6 +394,9 @@ In your recommendation it’s important that you explain how you know the person
 Here are some templates as starting points for writing recommendations. What do you notice about these recommendations?
 
 [Potential student responses: it’s concise, to the point, explains how the person knew them, includes personality and hard skills a person brought to their work, etc]
+
+Image Details:
+* [res/linkedin09.png](http://www.linkedin.com): Copyright LinkedIn™
 -->
 
 ---
