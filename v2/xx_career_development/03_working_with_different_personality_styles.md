@@ -8,7 +8,7 @@ Today we’re going to learn about a tool for understanding work styles, both ou
 
 #  Have You Ever Taken a Personality Test?
 
-## Which one? {.big}
+## Which One? {.big}
 
 <!--
 Have you ever taken a personality test? If so, which one? Did you think it accurately reflected your personality? Why or why not?
@@ -16,7 +16,7 @@ Have you ever taken a personality test? If so, which one? Did you think it accur
 
 --
 
-# Warm-up Exercise
+# Warm-Up Exercise
 
 * **ORANGE**: Describe a time when you took a risk… and it was thrilling.
 * **GREEN**: Describe a time when you got really absorbed solving an intricate problem.
@@ -151,7 +151,7 @@ Image Source:
 
 ---
 
-# Exercise #1: Determine your colors
+# Exercise #1: Determine Your Colors
 
 * Step 1: Look over the True Colors description handout
 * Step 2: Do self-assessment handout
@@ -183,7 +183,7 @@ Image Details:
 
 ---
 
-# Exercise #3: Color groups
+# Exercise #3: Color Groups
 
 (15 minutes)
 * Step 1: Find your primary color buddies, go to whiteboards
