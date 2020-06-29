@@ -2,6 +2,8 @@
 
 <!--
 Today we’re going to learn about a tool for understanding work styles, both ours and others. This tool is called True Colors, and it’s a widely-known and utilized model for understanding how teams can work better together.
+
+Source: https://truecolorsintl.com/
 -->
 
 ---
@@ -36,6 +38,8 @@ No matter what color M&M you may have picked, you would have been able to think 
 Many of us find, however, that we are inclined toward one type more than the others. This session will give us a new lens to understand ourselves and others at work according to these four personality types.
 
 *Talk about why learning to work with different work styles is or has been important to you. (application at work, understanding self, understanding others, being yourself while also meeting others where they are).*
+
+Source: https://truecolorsintl.com/
 -->
 
 ---
@@ -65,6 +69,8 @@ It helps us better understand ourselves and others, which can save a lot of time
 <!--
 Let's dive in. What are the four colors in True Colors and what do they mean?
 
+Source: https://truecolorsintl.com/
+
 Image Details:
 * [personalitystyles01.jpg](https://unsplash.com/photos/aHw1G6PdzYQ): Unsplash License
 -->
@@ -85,6 +91,8 @@ I am flexible, spontaneous, adventurous, and fun. I am a natural problem-solver,
 ![](res/personalitystyles02.jpg)
 
 <!--
+Source: https://truecolorsintl.com/
+
 Image Details:
 * [personalitystyles02.jpg](https://unsplash.com/photos/GAM-7l4QzmI): Unsplash License
 -->
@@ -105,6 +113,8 @@ I am accountable and thorough. I dedicate time and energy to maintaining my orga
 ![](res/personalitystyles03.jpg)
 
 <!--
+Source: https://truecolorsintl.com/
+
 Image Details:
 * [personalitystyles03.jpg](https://unsplash.com/photos/SG59-rbcNRg): Unsplash License
 -->
@@ -125,6 +135,8 @@ I am conceptual and an independent thinker. I like to develop models, explore id
 ![](res/personalitystyles04.jpg)
 
 <!--
+Source: https://truecolorsintl.com/
+
 Image Details:
 * [personalitystyles04.jpg](https://unsplash.com/photos/eB1ziPSixlQ): Unsplash License
 -->
@@ -145,6 +157,8 @@ I value people in the organization and seek to draw out their full potential. My
 ![](res/personalitystyles05.jpg)
 
 <!--
+Source: https://truecolorsintl.com/
+
 Image Source:
 * [personalitystyles05.jpg](https://unsplash.com/photos/SGwvtNLmDeU): Unsplash License
 -->
@@ -164,6 +178,8 @@ Image Source:
 Take this quick assessment to determine your primary and secondary True Colors. Remember that each of us have each of the four colors in us to varying degrees.”
 
 *Allow 3-5 minutes to take assessment.*
+
+Source: https://truecolorsintl.com/
 -->
 
 ---
