@@ -1,4 +1,4 @@
-# Career Development: LinkedIn Essentials for Technical Students
+# Career Development: LinkedIn™ Essentials for Technical Students
 
 <!--
 Today we’re talking about the incredible tool that is LinkedIn. We’ll be updating and working with our LinkedIn profiles later today, but for now, please have your laptops down. Let’s get to it!
