@@ -151,7 +151,7 @@ The computing power and data storage that we have today is nearly unimaginable c
 The idea of deep learning is not new. There were even a few "AI winters" over the last 80 years that stalled development and research in deep learning. It feels like we might finally be at a point where the theoretical ideas of the past can be fulfilled with the technologies of today.
 
 Image Details:
-* [einstein.png](https://pixabay.com/photos/albert-einstein-scientists-physicist-62931/)
+* [einstein.jpg](https://pixabay.com/photos/albert-einstein-scientists-physicist-62931/): Pixabay License
 -->
 
 ---
