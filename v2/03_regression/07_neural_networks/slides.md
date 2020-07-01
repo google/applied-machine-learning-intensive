@@ -48,7 +48,7 @@ Societal bias (conscious or not) can become encoded in deep learning algorithms,
 When using deep learning, great care must be taken to remove bias and to understand the implications of mass application of the algorithms.
 
 Image Details:
-* [terminator.jpg](https://pixabay.com/illustrations/bot-cyborg-robot-helper-arm-chair-4875211/: Pixabay License
+* [terminator.jpg](https://pixabay.com/illustrations/bot-cyborg-robot-helper-arm-chair-4875211/): Pixabay License
 -->
 
 ---
@@ -130,7 +130,7 @@ Beyond this network effect, the concept of neural networks tends to break away f
 We find inspiration in nature. We don't have to copy it.
 
 Image Details
-* [neurons.jpg](https://pixabay.com/illustrations/neurons-brain-cells-brain-structure-1773922/)
+* [neurons.jpg](https://pixabay.com/illustrations/neurons-brain-cells-brain-structure-1773922/): Pixabay License
 -->
 
 ---
