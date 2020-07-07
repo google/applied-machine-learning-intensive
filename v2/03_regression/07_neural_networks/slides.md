@@ -423,7 +423,7 @@ There are a few drawbacks to using the step-function.
 The sigmoid function is a far more popular activation function, as it addresses the issues we just discussed with the step-function. Again, we will talk more about this when we get to classification. 
 
 Image Details:
-* [sigmoid.png](http://www.gogole.com): Unlicensed
+* [sigmoid.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
