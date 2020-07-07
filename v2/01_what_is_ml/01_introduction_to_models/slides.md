@@ -1,3 +1,17 @@
+---
+
+marp: true
+
+---
+
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Intro to ML Models
 
 <!--
@@ -46,7 +60,7 @@ Classification can be used to identify objects in images or even identify whethe
 ---
 
 # Classification
-![Image](res/classification.gif)
+![center](res/classification.gif)
 
 <!--
 This animation shows, mathematically, what a binary classification system is trying to do: given
@@ -79,7 +93,7 @@ systems propose their own categories based on patterns found in the examples.
 ---
 
 # Clustering
-![Image](res/clustering.gif)
+![center](res/clustering.gif)
 
 <!--
 For example, let’s say the child from the zoo wants to organize a photo album of many pictures
@@ -108,7 +122,7 @@ involves a continuous value to predict.
 ---
 
 # Regression
-![Image](res/linear_regression.gif)
+![center](res/linear_regression.gif)
 
 <!--
 This graphic shows one simple type of regression, which tries to find the best-fitting line for
@@ -118,17 +132,19 @@ some data points, then makes predictions based on that line.
 ---
 
 # Regression
-![Image](res/regression2.png)
+![center](res/regression2.png)
 
 <!--
-Regression may also discover a more complicated pattern, such as this sine-like pattern of sea
-surface temperature every year.
+Regression may also discover a more complicated pattern, such as this sine-like pattern of sea surface temperature every year.
 
 Quick discussion: What are other examples of regression? What features might be useful for that
 regression system?
 *Possible answers: estimate arrival time based on traffic and distance, predict crop yield based on weather and time of year*
 
 Note: *logistic* regression is a classification technique (with a binary target), and the similar names can be confusing. But typically, when we say "regression" we mean predicting a continuous variable.
+
+Image Details:
+* [regression2.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 --- 
@@ -143,7 +159,7 @@ Finally, sequence prediction suggests what might come next, based on previous ex
 ---
 
 # Sequences
-![Image](res/sequences.gif)
+![center](res/sequences.gif)
 
 <!--
 Autocomplete is an example of a sequence prediction: predicting what word is most likely to be

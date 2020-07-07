@@ -312,7 +312,6 @@ A hyperparameter is not a parameter in the model. In other words, it's not a wei
 ---
 
 # Gradient Descent
-## Loss with changing learning rate
 
 ![center](res/regression9.gif)
 
