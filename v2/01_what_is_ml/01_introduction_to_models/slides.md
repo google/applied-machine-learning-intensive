@@ -166,7 +166,10 @@ Autocomplete is an example of a sequence prediction: predicting what word is mos
 entered after typing part of a phrase.
 
 Quick discussion: What are some other examples of sequence predictions?
-* Possible answers: translations based on context, password strength (how predictable is the next letter from the previous ones), autocomplete, marketbasket* 
+* Possible answers: translations based on context, password strength (how predictable is the next letter from the previous ones), autocomplete, marketbasket*
+
+Image Details
+* [sequences.gif](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
