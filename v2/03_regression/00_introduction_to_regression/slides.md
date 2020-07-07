@@ -360,7 +360,7 @@ This notational convenience can be extended to regression with multiple features
 
 
 Image Details:
-* [regression27.png](http://www.google.com): Copyright Google
+* [regression27.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

@@ -71,7 +71,7 @@ Image Details:
 Here are a few examples of polynomial equations. The topmost is the linear equation we are used to. The next is commonly called a quadratic equation. The third is a cubic equation. The number of factors you can add to the equation is theoretically unbounded, though you'll pay a computational expense for polynomials of higher degree and also increase the risk of overfitting. We'll get to that soon.
 
 Image Details:
-* [polynomialregression5.png](http://www.google.com): Copyright Google
+* [polynomialregression5.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
