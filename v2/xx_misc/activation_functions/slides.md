@@ -44,7 +44,7 @@ the most popular activation functions.
 This is the activation function used in logistic regression. It is also known as the sigmoid function.
 
 Image Details:
-* [logistic.png](http://www.google.com): Copyright Google
+* [logistic.png](https://opensource.google/docs/copyright/): Copyright Google
 
 -->
 
@@ -58,7 +58,7 @@ Image Details:
 The tanh (or hyperbolic tangent) function is very popular for neural networks. It is what you will see in your colab.
 
 Image Details:
-* [tanh.png](http://www.google.com): Copyright Google
+* [tanh.png](https://opensource.google/docs/copyright/): Copyright Google
 
 -->
 
@@ -73,7 +73,7 @@ This is the rectified linear unit (ReLu) function. It is also known as the "ramp
 recognition.
 
 Image Details:
-* [relu.png](http://www.google.com): Copyright Google
+* [relu.png](https://opensource.google/docs/copyright/): Copyright Google
 
 -->
 
@@ -87,7 +87,7 @@ Image Details:
 This is the leaky rectified linear unit (leaky ReLu) function. It is used alongside ReLU in keras and tensorflow increasingly.
 
 Image Details:
-* [leaky_relu.png](http://www.google.com): Copyright Google
+* [leaky_relu.png](https://opensource.google/docs/copyright/): Copyright Google
 
 -->
 
