@@ -142,7 +142,7 @@ In this unit, we will look at sequence prediction. In sequence prediction the in
 series are ordered data.
 
 Image Details:
-* [time_series.png](http://www.google.com): Copyright Google
+* [time_series.png](https://opensource.google/docs/copyright/): Copyright Google
 
 -->
 
