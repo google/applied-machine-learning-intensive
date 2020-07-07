@@ -18,7 +18,7 @@ An up-and-coming model that has shown some real potential is XGBoost. XGBoost is
 # Boosting
 
 <!--
-The 'boost' part of the XGBoost hints that the algorithm uses a boosting algorithm. Boosting simply means that the algorithm works in stages. It first builds a model and tries to make predictions. The best predictions are kept as part of the model and the underperforming predictions are used to train a second model on the lower-quality outputs. Now, the best predications are kept and a third model is traiend on the underpredicting portions, and so on. 
+The 'boost' part of the XGBoost hints that the algorithm uses a boosting algorithm. Boosting simply means that the algorithm works in stages. It first builds a model and tries to make predictions. The best predictions are kept as part of the model, and the underperforming predictions are used to train a second model on the lower-quality outputs. Now, the best predictions are kept, and a third model is trained on the underpredicting portions, and so on. 
 
 -->
 
@@ -29,7 +29,7 @@ The 'boost' part of the XGBoost hints that the algorithm uses a boosting algorit
 <!--
 So what is "gradient boosting"?
 
-This just means that the algorithm uses a gradient to try to find the appropriate number of "boosts" to provide. You don't say: "I want five levels of boosting across my forests". Instead, you let a gradient descent algorithm determine the makeup and number of random forests in this model.
+This just means that the algorithm uses a gradient to try to find the appropriate number of "boosts" to provide. You don't say, "I want five levels of boosting across my forests." Instead, you let a gradient descent algorithm determine the makeup and number of random forests in this model.
 -->
 
 ---
@@ -41,7 +41,7 @@ But why "extreme"?
 
 For one, it is great marketing!
 
-But also, the penalty given to underperforming trees is extreme (or at least unique) according to modern models.
+Additionally, the penalty given to underperforming trees is extreme, or at least unique, according to modern models.
 -->
 
 ---
@@ -75,7 +75,7 @@ Well, XGBoost is built upon random forests, so it can perform classification and
 # How do we use XGBoost?
 
 <!--
-XGBoost is technically a separate library from Tensorflow, scikit-learn, and other libraries that we have learned in this course. However, there are ports of XGBoost into most major libraries. 
+XGBoost is technically a separate library from Tensorflow, scikit-learn, and other libraries we have learned in this course. However, there are ports of XGBoost into most major libraries. 
 -->
 
 ---
@@ -92,7 +92,7 @@ model.fit(X_train, y_train)
 <!--
 XGBoost has a very scikit-learn-style interface. Beware! This interface works, but is very slow.
 
-One of the most amazing parts of XGBoost is the speed of converging on a model. But, that speed relies on a specific data format.
+One of the most amazing parts of XGBoost is the speed of converging on a model. But that speed relies on a specific data format.
 -->
 
 ---
@@ -143,5 +143,5 @@ The trick with the DMatrix is the parameters. They are unwieldy. The `objective`
 # Your Turn
 
 <!--
-And on that note, it is time to experiment with XGBoost in the colab. We'll build a multiclass classifier in the lab and then have you create a binary classifier as an exercise. The most important take away from this lesson is to realize that there are effective non-deep-learning options available.
+And on that note, it is time to experiment with XGBoost in the colab. We'll build a multiclass classifier in the lab and then you'll create a binary classifier as an exercise. The most important takeaway from this lesson is to realize that there are effective non-deep-learning options available.
 -->
