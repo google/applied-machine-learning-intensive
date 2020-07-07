@@ -198,7 +198,7 @@ Image Details:
 Now we move onto step 2, which is to compute error/loss/cost. We calculate the error between the actual target values, and the forecasted values. The metric we use to calculate this error can be simple Euclidean distance, but there are other measures as well. We will talk about error/cost functions in a minute, but for now it's okay to think of the distance between the actual value and the forecasted value. 
 
 Image Details:
-* [regression18.png](http://www.google.com): Copyright Google
+* [regression18.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -211,7 +211,7 @@ Image Details:
 Finally, we update the weight and bias such that we reduce the error. Now we have a new m and b, and we start at step 1 using these new parameters. 
 
 Image Details:
-* [regression19.png](http://www.google.com): Copyright Google
+* [regression19.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -247,7 +247,7 @@ Have students work in small groups to calculate the loss functions based on the 
 }
 
 Image Details:
-* [regression21.png](http://www.google.com): Copyright Google
+* [regression21.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -256,11 +256,12 @@ Image Details:
 
 ![center](res/housingexample2.png)
 
+
 <!--
 *Invite answer from students for L1*
 
 Image Details:
-* [regression22.png](http://www.google.com): Copyright Google
+* [housingexample2.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -273,7 +274,7 @@ Image Details:
 *Invite answer from students for L2*
 
 Image Details:
-* [regression23.png](http://www.google.com): Copyright Google
+* [housingexample3.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -286,7 +287,7 @@ Image Details:
 *Invite answer from students for MSE* 
 
 Image Details:
-* [regression24.png](http://www.google.com): Copyright Google
+* [housingexample4.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -360,7 +361,7 @@ This notational convenience can be extended to regression with multiple features
 
 
 Image Details:
-* [regression27.png](https://opensource.google/docs/copyright/): Copyright Google
+* [regression27.png](http://www.google.com): Copyright Google
 -->
 
 ---
