@@ -28,8 +28,13 @@ To bring this topic to life a bit more, let's relate k-means back to what you di
 ---
 
 # k-means Mathematics
+## Clustering Activity Review
 
-![center](res/kmeans01.png)
+All of the different fasteners == Your dataset: `(X1, X2, ..,  XN)`
+
+Making different numbers of piles == Making clusters (`S1, S2, ..., SK)`
+
+"Minimizing differences" == Minimizing variances (within-cluster sum of squares)
 
 <!--
 The pile of screws and other fasteners on your desk made up your dataset. You can think of labeling each screw as x_{1}, x_{2}, ... x_{n}. So the total number of items in your pile was n. 
@@ -38,21 +43,22 @@ When you were asked to make 2, 4, or 6 clusters, this played the role of k. This
 
 Finally, you were trying to create clusters with "similar" items. That is, they shared some traits. You may have chosen a distance metric based on color (dark screw in one cluster, chrome screw in another, etc.). Or based on shape (1-inch screws in one cluster, 2-inch screws in another, etc.). These choices played the role of your distance metric. When grouping similar items, you were attempting to minimize the variance within each cluster. 
 
-Image Details:
-* [kmeans01.png](http://www.google.com): Copyright Google
 -->
 
 ---
 
 # k-means Mathematics
+## Within-cluster Sum of Squares
 
 ![center](res/kmeans02b.png)
 
 <!--
 More formally, this is the actual mathematical formula for minimizing the variance within each cluster. 
 
+$ arg\, \underset{s}min   \sum_{i=1}^{k} \sum_{x \in S_i} || X - \mu_i ||^2 $
+
 Image Details:
-* [kmeans02b.png](http://www.google.com): Copyright Google
+* [kmeans02b.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
