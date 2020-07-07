@@ -118,7 +118,7 @@ But how do we "learn" the weights and biases? Typically, in machine learning we 
 Here are four data points. THe feature (x-value) is square footage of a house, and the target (y-value) is the price of the house. 
 
 Image Details:
-* [regression12.png](http://www.google.com): Copyright Google
+* [regression12.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -131,7 +131,7 @@ Image Details:
 Here is a different depiction of the same four data points. It is a simple scatter plot, where the x-axis is the size of a house (our feature), and on the y-axis we have the price of the house (our target). 
 
 Image Details:
-* [regression13.png](http://www.google.com): Copyright Google
+* [regression13.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -145,7 +145,7 @@ To begin the iterative machine learning process, we make a guess at the weights 
  
 
 Image Details:
-* [regression14.png](http://www.google.com): Copyright Google
+* [regression14.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -158,7 +158,7 @@ Image Details:
 We now have an initial guess for our model's parameters, and we create the line y = mx + b.
 
 Image Details:
-* [regression15.png](http://www.google.com): Copyright Google
+* [regression15.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -167,11 +167,12 @@ Image Details:
 
 ![center](res/regression16.png)
 
+
 <!--
 We use the line to forecast predicted output values. For each point in our training data set (x_k,y_k), we calculate y_pred = m(x_k) + b. 
 
 Image Details:
-* [regression16.png](http://www.google.com): Copyright Google
+* [regression16.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -184,7 +185,7 @@ Image Details:
 Here we have the actual target outputs (blue) and the forecasted outputs that came from our model (purple). We've completed the infer/predict/forecast step. 
 
 Image Details:
-* [regression17.png](http://www.google.com): Copyright Google
+* [regression17.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
