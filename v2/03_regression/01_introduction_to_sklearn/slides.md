@@ -46,39 +46,46 @@ Let's look at some of the ways you can acquire data with scikit-learn.
 
 # Loading
 
-![center](res/introtoscikit2.png)
+```python
+from sklearn.datasets import load_iris
+
+iris_data = load_iris()
+```
 
 <!--
 Scikit-learn has a few datasets that are installed alongside the library. To access these datasets, you can rely on load functions like the load_iris function shown in this example.
-
-Image Details:
-* [introtoscikit2.png](http://www.google.com): Copyright Google
 -->
 
 ---
 
 # Fetching
 
-![center](res/introtoscikit3.png)
+```python
+from sklearn.datasets import fetch_california_housing
+
+housing_data = fetch_california_housing()
+```
+
 
 <!--
 Some common datasets aren't installed alongside scikit-learn, but the library does know how to access them. For these datasets, we use 'fetch' functions, which pull the dataset down from the internet if necessary.
 
-Image Details:
-* [introtoscikit3.png](http://www.google.com): Copyright Google
 -->
 
 ---
 
 # Generating
 
-![center](res/introtoscikit4.png)
+
+```python
+from sklearn.datasets import make_regression
+
+features, targets = make_regression(n_samples=10, n_features=1, random_state=42)
+```
 
 <!--
 Finally, sometimes it makes more sense to generate a dataset from scratch. For this, we can use one of the many generator functions provided by scikit-learn.
 
-Image Details:
-* [introtoscikit4.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -96,60 +103,83 @@ For the most part, we will convert scikit-learn Bunch objects into Pandas DataFr
 
 # Estimators
 
-![center](res/introtoscikit5.png)
+```python
+from sklearn.datasets import make_regression
+from sklearn.linear_model import LinearRegression
+
+regression = LinearRegression()
+regression.fit(features, targets)
+predictions = regression.predict(features)
+```
 
 <!--
 Most of the models in scikit-learn are considered estimators. An estimator is expected to implement two methods: fit and predict.
 * Fit is used to train the model. At a minimum, it is passed the feature data used to train the model. In supervised models, it is also passed the target data.
 * Predict is used to get predictions from the model. This method is passed features and returns target predictions.
 
-Image Details:
-* [introtoscikit5.png](http://www.google.com): Copyright Google
+
 -->
 
 ---
 
 # Transformers
 
-![center](res/introtoscikit6.png)
+```python
+from sklearn.preprocessing import MinMaxScaler
+
+transformer = MinMaxScaler()
+transformer.fit(features)
+features = transformer.transform(features)
+```
 
 <!--
 In practice, it is rare that you will get perfectly clean data that is ready to feed into your model for training. Most of the time you will need to perform some type of cleaning on the data first.
 
 Transformers implement fit and transform methods. The fit method calculates parameters necessary to perform the data transformation. Transform actually applies the transformation. There is a convenience fit_transform method that performs both fitting and transformation in one method call.
 
-Image Details:
-* [introtoscikit6.png](http://www.google.com): Copyright Google
 -->
 
 ---
 
 # Pipelines
+```python
+from sklearn.pipeline import Pipeline
 
-![center](res/introtoscikit7.png)
+features, targets = make_regression(
+  n_samples=10, n_features=1, 
+  random_state=42, noise=5.0
+)
+
+pipeline = Pipeline([
+  ('scale', MinMaxScaler()),
+  ('regression', LinearRegression())
+])
+
+pipeline.fit(features, targets)
+
+predictions = pipeline.predict(features)
+```
 
 <!--
 It isn't a coincidence that transformers have fit and transform methods and that models have fit methods. The common interface across classes allows scikit-learn to create pipelines for data processing and model building.
 
 A pipeline is simply a series of transformers, often with an estimator at the end.
-
-Image Details:
-* [introtoscikit7.png](http://www.google.com): Copyright Google
 -->
 
 ---
 
 # Metrics
 
-![center](res/introtoscikit8.png)
+```python 
+from sklearn.metrics import mean_squared_error
+
+mean_squared_error(targets, predictions)
+```
 
 <!--
 Scikit-learn also comes with many functions for measuring model performance in the metrics package.
 
 In this case, we are calculating the mean squared error. (In the Introduction to Regression lesson, you saw L1, L2, and MSE.)
-
-Image Details:
-* [introtoscikit8.png](http://www.google.com): Copyright Google
 -->
 
 ---
