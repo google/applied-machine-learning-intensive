@@ -157,7 +157,7 @@ Sequence prediction is about predicting what happens next in a sequence. For exa
 want to know what happens in Q1 of the next year.
 
 Image Details:
-* [time_series_2.png](http://www.google.com): Copyright Google
+* [time_series_2.png](https://opensource.google/docs/copyright/): Copyright Google
 
 -->
 
