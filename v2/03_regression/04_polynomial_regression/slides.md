@@ -1,5 +1,7 @@
 ---
+
 marp: true
+
 ---
 
 <style>
@@ -38,7 +40,7 @@ Image Details:
 Take a look at this dataset for a few seconds. See if you can find a good spot to place a line.
 
 Image Details:
-* [polynomialregression2.png](http://www.google.com): Copyright Google
+* [polynomialregression2.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -49,7 +51,7 @@ Image Details:
 This is the line that the closed form of linear regression would create. It doesn't look like a very good fit, does it? The R-squared score for this line is actually 0.228.
 
 Image Details:
-* [polynomialregression3.png](http://www.google.com): Copyright Google
+* [polynomialregression3.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -60,7 +62,7 @@ Image Details:
 We can see that if we introduce a polynomial line (in this case, a 2nd degree polynomial), we get a much better looking fit. The R-squared score is now 0.790.
 
 Image Details:
-* [polynomialregression4.png](http://www.google.com): Copyright Google
+* [polynomialregression4.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -84,7 +86,7 @@ Ask students to turn to a partner next to them and discuss the two questions on 
 }
 
 Image Details:
-* [polynomialregression5.png](http://www.google.com): Copyright Google
+* [polynomialregression5.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -95,7 +97,7 @@ Image Details:
 This dataset was actually randomly generated based on a polynomial equation with some random noise. You can see the original polynomial line drawn in green on the chart. Our predicted line in red isn't perfect by any means. You can see a much sharper slope at both ends, but it is still better than a straight-line fit.
 
 Image Details:
-* [polynomialregression7.png](http://www.google.com): Copyright Google
+* [polynomialregression7.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -106,12 +108,14 @@ Image Details:
 If we understand the process behind polynomial regression, we can see that it is not so different from linear regression. Ultimately, in order to reduce error in our model, we are still attempting to find the most accurate weights and biases we can find.
 
 Image Details:
-* [polynomialregression8.png](http://www.google.com): Copyright Google
+* [polynomialregression8.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
 
 # Polynomial Regression = Linear Regression
+
+Turn the original polynomial regression probem into a polynomial regression problem with multiple features
 
 ![center](res/polynomialregression19.png)
 
@@ -119,7 +123,7 @@ Image Details:
 To find the weights and biases for a polynomial regression model, we recast the problem as a multivariate linear regression problem. Then we are able to use all the machinery we've already developed to "learn" the parameters.  
 
 Image Details:
-* [polynomialregression19.png](http://www.google.com): Copyright Google
+* [polynomialregression19.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
