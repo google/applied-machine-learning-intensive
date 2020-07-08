@@ -77,7 +77,7 @@ The Naive Bayes classifier is one of the simplest but most effective classifiers
 The classifier calculates the conditional probability of seeing each of the possible options, given the data, and just chooses the option with the highest/maximum probability.
 
 Image Details:
-[sorting_eggs.jpeg](https://unsplash.com/photos/BiZ-_6kNjbI): Unsplash License
+* [sorting_eggs.jpeg](https://unsplash.com/photos/BiZ-_6kNjbI): Unsplash License
 
 -->
 
