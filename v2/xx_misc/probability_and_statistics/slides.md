@@ -15,7 +15,7 @@ img[alt~="center"] {
 
 # Introduction to Probability
 
-![center](res/prob01.png)
+![center](res/prob01.jpg)
 
 <!--
 This lecture focuses on rolling dice as an illustrative example of probability. We will introduce:
@@ -26,8 +26,7 @@ This lecture focuses on rolling dice as an illustrative example of probability. 
 - Bayes' Theorem
 
 Image Details:
-* [prob01.png](http://www.google.com): Copyright Google
-
+* [prob01.jpg](https://unsplash.com/photos/4aB1nGtD_Sg): Unsplash License
 -->
 
 ---
