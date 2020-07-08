@@ -15,8 +15,6 @@ img[alt~="center"] {
 
 # [scikit-Learn](https://scikit-learn.org)
 
-![center](res/introtoscikit1.png)
-
 <!--
 * Scikit-learn.org is the primary website for the scikit-learn project. Here you will find information pertaining to scikit-learn, including instructions on installation, documentation, and even the project source code.
 * Let's take a few moments to look around the project website.
