@@ -107,7 +107,7 @@ good idea! And imagine if we leave our laptop running all day and then we need t
 Industry leaders work with problems like this at a much bigger scale. So it’s important to have the language and conceptual understanding of these limitations to be able to work efficiently.
 
 Image Details:
-* [bigO03.jpg](https://unsplash.com/photos/rEgveRa_5ds)
+* [bigO03.jpg](https://unsplash.com/photos/rEgveRa_5ds): Unsplash License
 -->
 
 ---
