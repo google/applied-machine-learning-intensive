@@ -483,7 +483,7 @@ Criminal justice risk assessment -- precision
 Fraud / identity theft detection -- recall. Every once in a while your card gets blocked or you get a call, especially if travelling or exhibiting unusual purchase behavior, because that’s cheaper than having to deal with the consequences of not detecting it early enough.
 
 Image Details:
-* [precision_recall_curve.png](http://www.google.com): Unlicensed
+* [precision_recall_curve.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 ---
 
@@ -497,7 +497,7 @@ Another curve used to visualize model quality is the ROC curve. ROC curve plots 
 The next slides will detail what these values are.
 
 Image Details:
-* [precision_recall_curve.png](http://www.google.com): Unlicensed
+* [precision_recall_curve.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -558,7 +558,7 @@ INTERPRETATION and MODEL COMPARISON:
 ROC and AUC are complicated metrics that people often misinterpret. An ideal graph curves high on the upper left and has an AOC closer to 1.0.
 
 Image Details:
-* [roc_curve.png](http://www.google.com): Unlicensed
+* [roc_curve.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
