@@ -55,10 +55,8 @@ this particular map, yellow means that the pattern occurs more often.
 
 What patterns do you see?
 
-Note that the dark square on the right represents a very unpopular PIN.
-
 Image Details:
-* [heatmap.png](http://www.google.com): Copyright Google
+* [heatmap.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -72,7 +70,7 @@ Here we see that repeated pairs of numbers are common. This is shown by the
 diagonal line.
 
 Image Details:
-* [heatmap-repeat.png](http://www.google.com): Copyright Google
+* [heatmap-repeat.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -82,24 +80,23 @@ Image Details:
 ![center](res/heatmap-year.png)
 
 <!--
-Here we see that using a year in the 1900s is pretty common, too.
+Here we see that using a year in the 1900s or 2000s is pretty common, too.
 
 Image Details:
-* [heatmap-year.png](http://www.google.com): Copyright Google
+* [heatmap-year.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
 
 # Visualizations: Heatmap
 
-![center](res/heatmap-01.png)
+![center](res/heatmap-pinpoint-hotspots.png)
 
 <!--
-Small numbers are also very popular. There tend to be lots of zeros and ones at
-the start and end of PINs.
+We can also see that specific pins are very popular. From left to right we can see that 0000, 1111, 1234, and 1342 are all very common.
 
 Image Details:
-* [heatmap-01.png](http://www.google.com): Copyright Google
+* [heatmap-pinpoint-hotspots.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
