@@ -180,7 +180,7 @@ Finally, the transformed feature data flows to the output layer, which returns o
 The main idea is that if neurons in one layer "fire." Then, using the connections to the next layer, we can determine which neurons in the next layer will fire. For now, it is useful to think of a neuron firing as a 1 and not firing as a 0. It is true that more sophisticated neural networks take into account the intensity of a "fire" (i.e., fired at 50% vs fired at 100%), but for the sake of discussion, let's stick with the 1 or 0 model. 
 
 Image Details:
-* [ann.png](http://www.google.com): Unlicensed
+* [ann.png](https://opensource.google/docs/copyright/): Copyright Google
 
 -->
 
