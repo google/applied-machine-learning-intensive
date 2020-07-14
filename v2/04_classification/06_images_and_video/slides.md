@@ -294,7 +294,7 @@ optional features.
 For our case in this course, video will simply be a series of images and we will treat it as such.
 
 Much of the video we watch is 30 "frames per second" (fps) or 60 fps. Think of each of these frames
-as a still image. Now thing about how much changes between frames in 1/30th of a second?
+as a still image. Now think about how much changes between frames in 1/30th of a second?
 
 Well, it depends on what type of video you are processing.
 
