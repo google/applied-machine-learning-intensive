@@ -86,10 +86,12 @@ Image Details:
 <!--
 If we are dealing with image data, small and often insignificant changes to the training data can yield large and often incorrect changes to the learned parameters in the model. 
 
-For example, consider a problem where you want to identify a cat in an image. If the cat is translated to a different part of the image, then the model will adjust different weights to recognize the cat. But the cat being on the left or right of an image isn't really a defining feature of a cat, right? We'd prefer to recognize things like ears, fur, etc. 
+For example, consider a problem where you want to identify a cat in an image. If the cat is translated to a different part of the image, then the model will adjust different weights to recognize the cat. But the cat being on the left or right of an image isn't really a defining feature of a cat, right? We'd prefer to recognize things like ears, fur, etc.
+
+CNNs help us solve this problem.
 
 Image Details:
-* [conNN15.png](??): Unlicensed 
+* [conNN15.png](https://opensource.google/docs/copyright/): Unlicensed 
 -->
 
 ---
@@ -100,7 +102,7 @@ Image Details:
 In a convolutional neural network, we first feed our data into convolutional, downsampling, and pooling layers. The results are then fed into a fully connected neural network like we have seen before. 
 
 Image Details:
-* [conNN14.png](??): Unlicensed 
+* [conNN14.png](https://opensource.google/docs/copyright/): Unlicensed 
 -->
 
 ---
