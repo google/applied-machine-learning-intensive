@@ -91,7 +91,7 @@ For example, consider a problem where you want to identify a cat in an image. If
 CNNs help us solve this problem.
 
 Image Details:
-* [conNN15.png](https://opensource.google/docs/copyright/): Unlicensed 
+* [conNN15.png](https://pixabay.com/illustrations/black-cat-is-curious-black-cat-4134136/): Pixabay License 
 -->
 
 ---
