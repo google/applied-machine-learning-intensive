@@ -1,3 +1,14 @@
+---
+marp: true
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Welcome to (insert name of course)
 
 <!--
@@ -49,7 +60,7 @@ won't, however, get deep into t-tests and p-values.
 
 ---
 
-# Applied {.big}
+# Applied
 
 *Put to practical use as opposed to being theoretical*
 
@@ -66,7 +77,7 @@ well-known models and apply them to different data sets in order to get some pra
 
 ---
 
-# Machine Learning {.big}
+# Machine Learning
 
 <!--
 What are we going to apply? We are going to apply machine learning techniques to data.
@@ -95,7 +106,7 @@ traditional programming?*
 
 # Example: Home Prices
 
-![](res/home-for-sale.jpg)
+![center](res/home-for-sale.png)
 
 <!--
 Let's go through a quick example of how traditional programming and machine learning are different.
@@ -104,14 +115,28 @@ Imagine you've been asked to create a home price predictor to help home sellers 
 amount they should sell their homes for. How would a traditional program be created to do this?
 
 Image Details:
-* [home-for-sale.jpg](https://www.pexels.com/photo/white-and-brown-concrete-bungalow-under-clear-blue-sky-210617/): Pexels License
+* [home-for-sale.png](https://www.pexels.com/photo/white-and-brown-concrete-bungalow-under-clear-blue-sky-210617/): Pexels License
 -->
 
 ---
 
 # Example: Home Prices - Traditional Programming
 
-![](res/home-price-traditional.png)
+```python
+price = get_base_price()
+
+if num_bedrooms > 2:
+  price = price * 1.2
+
+if lot_size > 7000:
+  price = price * 1.1
+
+if waterfront:
+  price = price * 1.3
+
+if near_railroad:
+  price = price * 0.9
+```
 
 <!--
 With a traditional programming solution, programmers will do research, talk to subject matter
@@ -127,15 +152,13 @@ of even more that weren't mentioned. The list is huge and it really becomes diff
 It is fragile and is easily affected by the biases of the programmers, the amount of research work
 done on the subject, and the number of conditionals that the programmers can maintain.
 
-Image Details:
-* [home-price-traditional.png](https://www.google.com): Copyright Google
 -->
 
 ---
 
 # Example: Home Prices - Machine Learning
 
-![](res/home-data.jpg)
+![center](res/home-data.jpg)
 
 <!--
 Machine learning takes a different approach. With machine learning, programmers use proven model
@@ -143,14 +166,14 @@ algorithms that analyze data automatically. This analysis of the data 'trains' t
 the programmers having to learn specific information about the data themselves.
 
 Image Details:
-* [home-data.jpg](http://www.google.com): Copyright Google
+* [home-data.jpg](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
 
 ## Learning from Examples
 
-![](res/toddler.jpg)
+![center](res/toddler.png)
 
 <!--
 Machine learning uses examples to identify patterns and make predictions on new examples.
@@ -158,40 +181,40 @@ Machine learning uses examples to identify patterns and make predictions on new 
 Imagine if you brought a young child to the zoo, and upon arriving at the lion exhibit, the child pointed at a lion and said, “It’s a kitty!”
 
 Image Details:
-* [toddler.jpg](https://pixabay.com/photos/african-child-black-child-child-2578559/): Pixabay License
+* [toddler.png](https://pixabay.com/photos/african-child-black-child-child-2578559/): Pixabay License
 -->
 
 ---
 
 ## Learning from Examples
 
-![](res/kitten.jpg)
+![center](res/kitten.png)
 
 <!--
 Would you be surprised? Maybe the child has not seen a lion before, but does have a kitten at home, so they said the closest thing they could think of.
 
 Image Details:
-* [kitten.jpg](https://unsplash.com/photos/2Nca6Aum17o): Unsplash License
+* [kitten.png](https://unsplash.com/photos/2Nca6Aum17o): Unsplash License
 -->
 
 ---
 
 ## Learning from Examples
 
-![](res/lion.jpg)
+![](res/lion.png)
 
 <!--
 You inform the child that this animal is a lion and continue your day at the zoo.
 
 Image Details:
-* [lion.jpg](https://www.pexels.com/photo/lion-sleeping-beside-rock-1187987/): Pexels License
+* [lion.png](https://www.pexels.com/photo/lion-sleeping-beside-rock-1187987/): Pexels License
 -->
 
 ---
 
 ## Learning from Examples
 
-![](res/tiger.jpg)
+![center](res/tiger.png)
 
 <!--
 Later, you arrive at the tiger cage and the child now says, “It’s a lion!” (Perhaps they now think all big cats are lions.) You might clarify for the child that tigers have stripes, while lions don’t.
@@ -201,26 +224,24 @@ We expect children to learn from their surroundings, and when they get something
 Similarly, machine learning makes predictions based on feedback while learning from examples.
 
 Image Details:
-* [tiger.jpg](https://pixabay.com/photos/animal-tiger-big-cat-safari-1868911/): Pixabay License
+* [tiger.png](https://pixabay.com/photos/animal-tiger-big-cat-safari-1868911/): Pixabay License
 -->
 
 ---
 
 ## Learning from Examples
-![](res/cat-lion.jpg)
+![center](res/cat-lion.jpg)
 
 <!--
 A machine learning algorithm might have a hard time determining whether this is a cat or a lion. But then again, so might the child from the zoo.
 
 Image Details:
-* [cat-lion.jpg](https://www.pxfuel.com/en/free-photo-xdsqg/): Creative Commons 0 License
+* [cat-lion.jpg](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
 
-# Options
-
-**Rules-based**
+# Rules-based
 
 * Humans develop the logic flow
 * If/then/else rules
@@ -228,26 +249,10 @@ Image Details:
 * Limited to human reasoning
 * Exposes bias of the implementor
 
-.
-
-{.column}
-
-**Machine Learning**
-
-* Model trained with data
-* Emergent patterns in the data
-* Experiments and refinements in training and models
-* Limited by training data
-* Exposes bias of the training data
-
-.
-
 <!--
 Before machine learning, many problems used a “rules-based approach," which makes predictions based on a list of rules. In some situations it’s useful to have this human input, but it’s challenging to maintain as new rules are needed for each change in user needs or ecosystem.
 
 Consider the problem of deciding whether an animal picture is a lion. A rules-based approach might check for various things: if the animal has two ears, whiskers, walks on four legs, and is large. But what if you forget to include a rule for no stripes? What if the picture is of a lion cub, which isn’t large?
-
-A machine learning approach would be able to look through a large number of examples to find the patterns of what a lion looks like without being explicitly told. ML systems are easier to update as user needs and the ecosystem changes. Some more advantages and disadvantages of both approaches are shown here.
 
 References:
 https://en.wikipedia.org/wiki/Rule-based_system
@@ -255,7 +260,23 @@ https://en.wikipedia.org/wiki/Rule-based_system
 
 ---
 
-![](res/product-development-process.png)
+# Machine Learning
+
+* Model trained with data
+* Emergent patterns in the data
+* Experiments and refinements in training and models
+* Limited by training data
+* Exposes bias of the training data
+
+<!--
+A machine learning approach would be able to look through a large number of examples to find the patterns of what a lion looks like without being explicitly told. ML systems are easier to update as user needs and the ecosystem changes. Some more advantages and disadvantages of both approaches are shown here.
+-->
+
+---
+
+# Product Development Process
+
+![center](res/product-development-process.png)
 
 <!--
 Machine learning is an iterative process that requires large amounts of data to learn useful, generalizable patterns.
@@ -265,7 +286,7 @@ Your first step when approaching a problem should always be to define a clear, u
 No matter your approach, you’ll then need to test and refine your system until goals are met.
 
 Image Details:
-* [product-development-process.png](http://google.com): Copyright Google
+* [product-development-process.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -278,7 +299,7 @@ You'll encounter many terms in this class and in your machine learning work. Her
 
 ---
 
-# Artificial Intelligence {.big}
+# Artificial Intelligence
 
 <!--
 What is artificial intelligence?
@@ -296,7 +317,7 @@ You might think of crazy robots like in “Ex Machina," or chatbots like Google 
 
 ---
 
-# Machine Learning {.big}
+# Machine Learning
 
 <!--
 What is machine learning then?
@@ -314,7 +335,7 @@ Machine learning is a strategy through which AI can appear “intelligent” whe
 
 ---
 
-# Deep Learning {.big}
+# Deep Learning
 
 <!--
 “Deep learning” is a term that has become more and more widely used in recent years, due to the increasing availability of data.
@@ -334,18 +355,18 @@ For example, a neural network classifying images of animals could have a layer t
 
 ---
 
-![](res/deep-learning-hierarchy.png)
+![center](res/deep-learning-hierarchy.png)
 
 <!--
 Sometimes these terms are used interchangeably, but that’s not quite correct. Deep learning is a specific technique in machine learning, which is a subfield in AI.
 
 Image Details:
-* [deep-learning-hierarchy.png](https://google.com): Copyright Google
+* [deep-learning-hierarchy.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
 
-# Features {.big}
+# Features
 
 <!--
 Now let’s dive deeper into what goes into a machine learning system.
@@ -397,7 +418,7 @@ Examples include user’s query, type of device, time of day
 
 ---
 
-# Model {.big}
+# Model
 
 <!--
 These features are used in a model to make predictions.
@@ -417,7 +438,7 @@ We’ll discuss several common types of models in a later lecture. For example, 
 
 ---
 
-# Training {.big}
+# Training
 
 <!--
 Teaching a model the difference between a lion photo and a tiger photo requires training data. Training data is a large set of examples related to the problem you are trying to solve. The model will make predictions based on the patterns found in the training data.
@@ -429,7 +450,7 @@ Especially with more data, models can become so complex that the details of how 
 
 ---
 
-# Testing {.big}
+# Testing
 
 <!--
 Machine learning makes predictions on new data based on previous examples (training data). If your lion-detecting model adequately distinguishes lions from tigers, the model is performing successfully. If not, you can experiment with additional training data or other approaches to improve the results.
@@ -439,7 +460,7 @@ The data you use for testing should be representative of your problem and goal. 
 
 ---
 
-# Overfitting {.big}
+# Overfitting
 
 <!--
 It’s important to always have a separate training dataset and testing dataset. If you observe high performance on the training data but lower performance on the separate testing data, it’s a sign of overfitting.
