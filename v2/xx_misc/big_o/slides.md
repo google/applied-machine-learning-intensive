@@ -56,7 +56,7 @@ Suggestion: do a binary search example on the board, and calculate how long it t
 }
 
 Image Details:
-* [bigO01.png](http://www.google.com): Copyright Google
+* [bigO01.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -85,7 +85,8 @@ Print statements / debugging messages help us track what’s going on and if any
 The process of estimating how much time it should take for a piece of code to execute in the worst case is the basis of the concept of Big-O.
 
 Image Details:
-* [bigO02.png](http://www.google.com): Copyright Google
+* [bigO02.png](https://pixabay.com/vectors/forever-gold-infinite-infinity-2028508/): Pixabay License
+* [bigO02.png](https://pixabay.com/photos/download-mask-empty-forward-2660930/): Pixabay License
 -->
 
 ---
@@ -130,26 +131,67 @@ How many operations does it take to check if 63 is in the list?
 Big O is a way to talk about this, to express runtime and space usage.
 
 Image Details:
-* [bigO01.png](http://www.google.com): Copyright Google
+* [bigO01.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
 
-# Example: increment all values within a column by 1
+# Example: Increment a column by 1
+
+```python
+                    # Using column notation
+                    df['n'] += 1
+
+                    # Using apply
+                    df['n'] = df['n'].apply(lambda x: x + 1)
+
+                    # Using loc
+                    df.loc[:, 'n'] += 1
+
+                    # Using loc row-by-row
+                    for i in range(len(df['n'])):
+                      df.loc[i, 'n'] = df.loc[i, 'n'] + 1
+
+                    # Using iloc row-by-row
+                    for i in range(len(df['n'])):
+                      df.iloc[i]['n'] = df.iloc[i]['n'] + 1
+
+                    # Using at row-by-row
+                    for i in range(len(df['n'])):
+                      df.at[i, 'n'] = df.at[i, 'n'] + 1
+
+                    # Using iat row-by-row
+                    for i in range(len(df['n'])):
+                      df.iat[i, 0] = df.iat[i, 0] + 1
+
+                    # Using iat row-by-row iterating over NumPy array
+                    for i, n in enumerate(df['n'].values):
+                      df.iat[i, 0] = n + 1
+```
+<!--
+Let's take a look at a real world example: incrementing the values in a column.
+
+There are myriad ways to do this in Pandas. We'll specifically look at the methods shown on this
+slide. You can see that we start with the eye-pleasing column notation and the work our way through
+various other methods trying to see which is more performant.
+-->
+---
+
+# Example: Increment a column by 1
 
 ![center](res/bigO05.png)
 
 <!--
-loc: only works on index
-iloc: works on position
-ix: You can get data from dataframe without it being in the index
-at: get scalar values. It's a very fast loc
-iat: Get scalar values. It's a very fast iloc
+So which is better?
 
-Reference: Towards Data Science https://towardsdatascience.com/different-ways-to-iterate-over-rows-in-a-pandas-dataframe-performance-comparison-dc0d5dcef8fe
+We timed multiple runs with different numbers of rows: 1000, 10000, and 100000. On smaller datasets we the column, apply, and loc methods all seem to do pretty well. Once the data size grows, we can
+see that column and loc are both very fast, especially compared to anything using a for loop.
+
+Pandas has many internal optimizations. Even the nice-looking column access syntax does trade off
+readability for speed.
 
 Image Details:
-* [bigO05.png](http://www.google.com): Copyright Google
+* [bigO05.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -285,7 +327,7 @@ This is still Big Theta, because n^2 <= n^2 <= 10 * n^2
 But in industry you really only need to know Big O
 
 Image Details:
-* [bigO07.png](http://www.cs.utsa.edu/~bylander/cs3343/notes/asymptotic.pdf): Unlicensed
+* [bigO07.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -321,7 +363,7 @@ Let's look at these examples together. Can anyone justify why we have labeled th
 
 
 Image Details:
-* [bigO09.png](http://www.google.com): Copyright Google
+* [bigO09.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
