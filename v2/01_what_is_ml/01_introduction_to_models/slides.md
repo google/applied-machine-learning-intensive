@@ -105,6 +105,9 @@ Clustering systems similarly attempt to find “clusters” of similar data exam
 
 Quick discussion: What are other examples of clustering you can think of? What features might a clustering system use to create clusters?
 *Very open ended. Possible answers: suggesting similar videos, grouping many examples of soft drinks from around the world*
+
+Image Details:
+* [clustering.gif](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
