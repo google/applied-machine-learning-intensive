@@ -217,7 +217,7 @@ The features are denoted by x_{i}. The weights w_{i} are playing the same role a
 This information is then sent to an "activation function," which uses the information from the green computation to determine whether or not the next neuron should fire. In a linear regression example, the activation function might be f(x) = x. In other words, the activation function plays no role. But let's look at a slightly more interesting example and walk through these details in a little more depth. 
 
 Image Details:
-* [perceptron2.png](https://towardsdatascience.com/introducing-deep-learning-and-neural-networks-deep-learning-for-rookies-1-bd68f9cf5883): Unlicensed
+* [perceptron2.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

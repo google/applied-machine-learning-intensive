@@ -74,7 +74,7 @@ Image Details:
 Recall the simplest building block for a typical neural network: the perceptron. 
 
 Image Details:
-* [conNN13.png](https://towardsdatascience.com/introducing-deep-learning-and-neural-networks-deep-learning-for-rookies-1-bd68f9cf5883): Unlicensed 
+* [conNN13.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
