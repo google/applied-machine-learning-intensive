@@ -232,7 +232,9 @@ x_{1} = will the person make more money?
 x_{2} = does the person love programming and mathematics?
 x_{3} = does the person have a project that would benefit from ML?  
 
-We compute W^{T}X = w_{1}x_{1} + w_{2}x_{2} + w_{3}x_{3} + bias. Now assume that we will say "yes" --> the person will study machine learning if the result is >= 0 and "no" --> the person will not study machine learning if the result is < 0.
+We compute W^{T}X = w_{1}x_{1} + w_{2}x_{2} + w_{3}x_{3} + bias.
+
+Now assume that we will say "yes": the person will study machine learning if the result is >= 0 and "no": the person will not study machine learning if the result is < 0.
 
 *It might be helpful to flip back to the previous slide and explain that the specific activation function we're working with in this example is f(x) = 1 if W^{T}X + b >= 0 and f(x) = 0 if W^{T}X + b < 0. Also, for notational convenience, we flip the sign of b and write w_{1}x_{1} + w_{2}x_{2} + w_{3}x_{3} - b going forward. If we use this model, then the algorithm will learn a negated form of b.*
 
@@ -294,7 +296,7 @@ Image Details:
 <!--
 Computing W^{T}X we get 6. 
 
-We check that 6 is >= 5, so we say "yes" --> Kelly will study machine learning. 
+We check that 6 is >= 5, so we say "yes": Kelly will study machine learning. 
 
 Image Details:
 * [perceptron_example_03.png](http://www.google.com): Copyright Google
@@ -322,7 +324,7 @@ Image Details:
 <!--
 Computing W^{T}X we get 4. 
 
-We check that 4<5, so the model predicts "no" --> Riley will not study ML. 
+We check that 4<5, so the model predicts "no": Riley will not study ML. 
 
 In general, this is how we feed input data into our model. If the model had already finished learning the weights and bias, then this is how we would generate our predicted targets. 
 
@@ -437,5 +439,5 @@ The choice of activation function is important. RELU makes differentiation diffi
 It is important to note that why certain activation functions behave in certain ways is an active area of research. People are testing new ones every day. Sometimes there is good theoretical justification for using a particular activation function, and sometimes we use a particular activation function simply because it trained quickly and gave us good results in practice. 
 
 Image Details:
-* [neurnet10.png](http://www.oreilly.com): Unlicensed
+* [neurnet10.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
