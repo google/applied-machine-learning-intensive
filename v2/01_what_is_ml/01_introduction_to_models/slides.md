@@ -73,6 +73,10 @@ with the correct class.
 Quick discussion: What are some other examples of a classification system that you can think of?
 
 *Very open ended. Possible answers: who is speaking right now, identify objects in images, label emails as spam*
+
+
+Image Details:
+* [classification.gif](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
