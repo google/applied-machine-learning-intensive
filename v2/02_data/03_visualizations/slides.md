@@ -110,7 +110,7 @@ There are many different types of charts. This is just a sample of types of
 charts that you might see to visualize data.
 
 Image Details:
-* [charts.png](http://www.google.com): Copyright Google
+* [charts.png](https://unsplash.com): Unsplash License
 -->
 
 ---
