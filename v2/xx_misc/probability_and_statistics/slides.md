@@ -70,10 +70,10 @@ Answers:
 ![center](res/prob03.png)
 
 <!--
-Sometimes, we want to know things about a random variable without having to observe it many times. For instance, we might want
+Sometimes we want to know things about a random variable without having to observe it many times. For instance, we might want
 to know what value the random variable is “most likely” to achieve. To find this, we use the concept of an expected value.
 
-We commonly think of the expected value as being the mean -- that is, over a long period of time with many observations of the
+We commonly think of the expected value as being the mean. That is, over a long period of time with many observations of the
 random variable, the expected value would be the average value we would see.
 
 Answers:
@@ -93,7 +93,7 @@ Image Details:
 <!--
 We call the relationship between two random variables independent if the value of one random variable does not affect the value of the other. For example, if we roll a die, then flip a coin. Furthermore, we could roll a fair die once and observe that it came up a 4, then roll again. These two events are independent.  
 
-We call the relationship between two random variables dependent if the value of one does affect the other. For example, say we want the probability that the sum of rolling a die twice is 5, if the first roll is a 3. The two variables involved here (the first and second roll) are dependant variables. 
+We call the relationship between two random variables dependent if the value of one does affect the other. For example, say we want the probability that the sum of rolling a die twice is 5, if the first roll is a 3. The two variables involved here (the first and second roll) are dependent variables. 
 
 Image Details:
 * [probstats01.png](http://www.google.com): Copyright Google
@@ -133,7 +133,7 @@ Consider the example from the previous slide. Namely, P(sum = 5 | first roll = 3
 
 Now, we think through the two pieces of this formula. The simpler part is probably the denominator. We have, P(first roll = 3) = 1/6. 
 
-Now, let's talk about the numerator. We have, P(sum = 5 AND first roll = 3). 
+Now let's talk about the numerator. We have, P(sum = 5 AND first roll = 3). 
 
 How can we get a sum of 5? (1,4) (4,1) (2,3) (3,2).
 
