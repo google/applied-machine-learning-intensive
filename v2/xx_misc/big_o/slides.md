@@ -61,7 +61,7 @@ Image Details:
 
 ---
 
-# Infinite loop vs. very slow algorithm
+# Infinite Loop vs. Very Slow Algorithm
 
 ![center](res/bigO02.png)
 
@@ -76,7 +76,7 @@ while i < len(lst):
 		print(“Found!”)
 
 What’s the problem?
-This is an infinite loop. It’ll never stop executing, because i is never incremented.
+This is an infinite loop. It’ll never stop executing, because it is never incremented.
 
 Sometimes when we are training a model we may seriously start to wonder if we have created an infinite loop. How do we know whether we have created an infinite loop or our model is simply taking a long time to train? 
 
@@ -91,7 +91,7 @@ Image Details:
 
 ---
 
-# Why should I care?
+# Why Should I Care?
 
 Example: write a function to find all duplicates in a list
 
@@ -136,7 +136,7 @@ Image Details:
 
 ---
 
-# Example: Increment a column by 1
+# Example: Increment a Column by 1
 
 ```python
                     # Using column notation
@@ -177,7 +177,7 @@ various other methods trying to see which is more performant.
 -->
 ---
 
-# Example: Increment a column by 1
+# Example: Increment a Column by 1
 
 ![center](res/bigO05.png)
 
@@ -281,14 +281,14 @@ Image Details:
 
 ---
 
-# The friends Θ and Ω
+# The Friends Θ and Ω
 
 ![center](res/bigO07.png)
 
 <!--
 Compare the idea of asymptotic analysis with finding limits at infinity. We really only care about arbitrarily big numbers.
 
-Give example of O(1) with a 1 million constant vs O(n^2) with a 10 constant multiplier.
+Give an example of O(1) with a 1 million constant vs O(n^2) with a 10 constant multiplier.
 
 def quadratic(lst):
  n = len(lst)
@@ -332,7 +332,7 @@ Image Details:
 
 ---
 
-# Order of magnitude
+# Order of Magnitude
 
 Put the following in order:
 * O(n)
@@ -354,7 +354,7 @@ Image Details:
 
 ---
 
-# List of examples:
+# List of Examples:
 
 ![](res/bigO09.png)
 
@@ -369,7 +369,6 @@ Image Details:
 ---
 
 # Your Turn
-
 
 <!--
 There is additional practice with Big-O in the lab. 
