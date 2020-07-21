@@ -6,11 +6,8 @@
   "slides": [
     "slides.md"
   ],
-  "handouts": [
-    "activity.md"
-  ],
   "duration": {
-    "slides.md": 45,
+    "slides.md": 60,
     "colab.ipynb": 240
   },
   "resources": [],
