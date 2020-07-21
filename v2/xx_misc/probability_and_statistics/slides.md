@@ -165,7 +165,7 @@ Image Details:
 
 ---
 
-# Conditional, joint, & marginal probabilities are related
+# Conditional, Joint, & Marginal Probabilities Are Related
 
 ![](res/prob25.png)
 
@@ -178,7 +178,7 @@ Image Details:
 
 ---
 
-# Conditional, joint, & marginal probabilities are related
+# Conditional, Joint, & Marginal Probabilities Are Related
 
 ![](res/probstats02.png)
 
@@ -191,7 +191,7 @@ Image Details:
 
 ---
 
-# Conditional, joint, & marginal probabilities are related
+# Conditional, Joint, & Marginal Probabilities Are Related
 
 ![](res/prob27.png)
 
@@ -204,7 +204,7 @@ Image Details:
 
 ---
 
-# Conditional, joint, & marginal probabilities are related
+# Conditional, Joint, & Marginal Probabilities Are Related
 
 ![](res/prob28.png)
 
@@ -217,7 +217,7 @@ Image Details:
 
 ---
 
-# Conditional probabilities and Bayes' Theorem
+# Conditional Probabilities and Bayes' Theorem
 
 ![center](res/prob36.png)
 
