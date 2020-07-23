@@ -12,7 +12,7 @@ img[alt~="center"] {
 # Random Forests
 
 <!--
-In this unit we are going to talk about random forests. Random forests build upon a concept called decision trees. 
+In this unit we are going to talk about random forests. Random forests build upon a concept called decision trees.
 
 -->
 
@@ -21,7 +21,7 @@ In this unit we are going to talk about random forests. Random forests build upo
 ![center](res/tree.png)
 
 <!--
-Let's take a moment to see how a decision tree works. The idea is to then take many trees and create a forest. 
+Let's take a moment to see how a decision tree works. The idea is to then take many trees and create a forest.
 
 Image Details:
 * [tree.png](https://pixabay.com/vectors/tree-silhouette-winter-plant-3979965/): Pixabay License
@@ -36,24 +36,24 @@ Image Details:
 
 <!--
 
-Let's start by taking a look at a decision tree. This particular example is a tree that predicts iris species from the iris dataset. In each box we have the feature we're testing, the gini impurity score (which we'll talk more about in a bit), the number of samples at that node, and an array called "value," whose entries correspond to classification into one of the three different species of iris flower. 
+Let's start by taking a look at a decision tree. This particular example is a tree that predicts iris species from the iris dataset. In each box we have the feature we're testing, the gini impurity score (which we'll talk more about in a bit), the number of samples at that node, and an array called "value," whose entries correspond to classification into one of the three different species of iris flower.
 
-Recall that in the iris dataset there are four features: petal width, petal length, sepal width, and sepal length. The target variable is a categorical variable representing three different species of iris flower. The dataset contains 150 total samples, and there are 50 samples of each species. 
+Recall that in the iris dataset there are four features: petal width, petal length, sepal width, and sepal length. The target variable is a categorical variable representing three different species of iris flower. The dataset contains 150 total samples, and there are 50 samples of each species.
 
 Decision trees have a single root node and a variable depth number of intermediate nodes, ending in many leaf nodes. A decision is made by comparing one of our features to some derived value at the node and then following a path based on the comparison. The leaf node that you arrive at is your "decision."
 
-For example, our root node is petal width. We first ask, "Is the petal width less than .8cm?" For 50 of our samples the answer is "yes," and all those samples are of species #1. For the rest of our 100 samples, the answer is "no," and we still don't have a good sense of how to identify species #2 or #3. For the remaining samples, we ask, "Is the petal width less than 1.75cm?" We see that the answer is "yes" for a total of 54 samples, where 49 of those are of species #2, and 5 are of species #3. We also see that the answer is "no" for a total of 46 samples, where one of those samples is of species #2, and 45 of them are species #3. Continuing in this way, we get our entire decision tree. 
+For example, our root node is petal width. We first ask, "Is the petal width less than .8cm?" For 50 of our samples the answer is "yes," and all those samples are of species #1. For the rest of our 100 samples, the answer is "no," and we still don't have a good sense of how to identify species #2 or #3. For the remaining samples, we ask, "Is the petal width less than 1.75cm?" We see that the answer is "yes" for a total of 54 samples, where 49 of those are of species #2, and 5 are of species #3. We also see that the answer is "no" for a total of 46 samples, where one of those samples is of species #2, and 45 of them are species #3. Continuing in this way, we get our entire decision tree.
 
-Now, the final tree in this form is our trained model. If we were to get a new sample of iris flower, we would use the tree to classify the sample. We'd start at the root node and follow each question until we hit a leaf node. Each of the leaf nodes contains a final classification. For example, if at the root node we answer "yes," then we would classify our new sample a species #1. 
+Now, the final tree in this form is our trained model. If we were to get a new sample of iris flower, we would use the tree to classify the sample. We'd start at the root node and follow each question until we hit a leaf node. Each of the leaf nodes contains a final classification. For example, if at the root node we answer "yes," then we would classify our new sample a species #1.
 
-But this just seems like a series of if/then statements. How is this machine learning? 
+But this just seems like a series of if/then statements. How is this machine learning?
 
-Well, we need to "learn" things, like which feature is most appropriate for the root node (i.e., which one is most important and should go at the top?). In general, the order in which we examine the features is important. Furthermore, we need to learn the parameters for the cutoff values at each node. For example, at the root node, the cutoff we use for testing a new sample is .8cm, and this is a learned parameter. 
+Well, we need to "learn" things, like which feature is most appropriate for the root node (i.e., which one is most important and should go at the top?). In general, the order in which we examine the features is important. Furthermore, we need to learn the parameters for the cutoff values at each node. For example, at the root node, the cutoff we use for testing a new sample is .8cm, and this is a learned parameter.
 
-There's one last thing to note. Notice we test petal width several times at different levels and with different cutoffs. There is no assumption that each feature will be tested exactly one time, and the cutoff values can change depending on where you are in the tree. In this example, we tested petal width at the root node with a cutoff of .8cm, we also tested petal width in level one with a cutoff of 1.75cm. In other words, for the samples with petal width greater than .8, we then ask, "Well it's bigger than .8cm, but is it still smaller than 1.75cm?" 
+There's one last thing to note. Notice we test petal width several times at different levels and with different cutoffs. There is no assumption that each feature will be tested exactly one time, and the cutoff values can change depending on where you are in the tree. In this example, we tested petal width at the root node with a cutoff of .8cm, we also tested petal width in level one with a cutoff of 1.75cm. In other words, for the samples with petal width greater than .8, we then ask, "Well it's bigger than .8cm, but is it still smaller than 1.75cm?"
 
 Image Details:
-* [decision-tree.png](http://www.google.com): Copyright Google
+* [decision-tree.png](https://opensource.google/docs/copyright/): Copyright Google
 
 -->
 
@@ -71,9 +71,9 @@ Entropy
 * Maximize information gain
 
 <!--
-To choose the cutoff that we split on, we typically use Gini impurity or entropy. The Gini impurity measures the chance that you'll misclassify a random element in the dataset at this decision point. The smaller the Gini score, the better. The best Gini score is 0. Let's look back at the decision tree example with the iris dataset. We see that in the first level after the root node, every data point in the training set with petal width less than .8cm was of type #1. At this leaf we have a Gini value of 0. 
+To choose the cutoff that we split on, we typically use Gini impurity or entropy. The Gini impurity measures the chance that you'll misclassify a random element in the dataset at this decision point. The smaller the Gini score, the better. The best Gini score is 0. Let's look back at the decision tree example with the iris dataset. We see that in the first level after the root node, every data point in the training set with petal width less than .8cm was of type #1. At this leaf we have a Gini value of 0.
 
-Another approach is to use the entropy to maximize information gained at each node.  
+Another approach is to use the entropy to maximize information gained at each node.
 
 -->
 
@@ -94,7 +94,7 @@ Here are a few other highlights about decision trees.
 Typically decision trees have two paths that can be taken at any node (binary tree).
 
 Decision trees are most often used for classification purposes. They can be used for regression, but they
-are usually less effective than other regression tools. 
+are usually less effective than other regression tools.
 
 Unlike other classification algorithms, decision trees don't provide a list of labels and the
 numeric confidence in the applicability of each label. Instead, we receive a single final decision.
@@ -121,7 +121,7 @@ Image Details:
 
 ---
 
-# Ensemble Learning 
+# Ensemble Learning
 
 <!--
 This is our first foray into "ensemble learning." Ensemble learning is a technique in which multiple learners are trained on the training data, and their results are aggregated in some way. This aggregation is typically one of majority vote (mode) for classification and of mean or median for regression.
@@ -130,7 +130,7 @@ This is our first foray into "ensemble learning." Ensemble learning is a techniq
 
 ---
 
-# Bootstrapping 
+# Bootstrapping
 
 <!--
 You might be asking how training multiple trees with the same dataset would be much better than simply training on a single tree. Typically you don't actually train every tree in a random forest with the same full dataset. Instead, each tree is trained with a sample of the data from the dataset. This sampling is called bootstrapping.
@@ -143,7 +143,7 @@ You can also choose to train every tree with the entire dataset. In this case yo
 
 ---
 
-# Bootstrap Aggregation (Bagging) 
+# Bootstrap Aggregation (Bagging)
 
 <!--
 A specific form of bootstrapping that you'll hear about in machine learning is "bootstrap aggregation." This term is often shortened to "bagging."
@@ -152,13 +152,13 @@ Bagging is a form of bootstrapping that creates multiple, full-sized copies of y
 
 For example, say you have a dataset with 1000 items in it, and you want a random forest with five trees in it. If you bag the data, five datasets of size 1000 will be created by randomly sampling your original dataset with replacement. Since we replace items in the original dataset, there will likely be duplicates in each generated dataset. This allows each tree to have a slightly different view of the data.
 
-Note that after the datasets are made, trees can be built and used in parallel. 
+Note that after the datasets are made, trees can be built and used in parallel.
 
 -->
 
 ---
 
-# Boosting 
+# Boosting
 
 <!--
 While we are on the topic of ensemble learning techniques, let's take a moment to talk about another popular technique: boosting. Boosting is a technique that consists of training a model, determining which types of predictions it performed poorly on, and then training a subsequent model to focus on what the previous model got wrong. You can think of it as an assembly line where each worker has a specialty.
@@ -214,7 +214,7 @@ Another parameter that is shared, but different, across implementation is `crite
 
 For regression, the options are mean squared error, MSE, or mean absolute error, MAE. Remember from our model quality discussions that MSE penalizes outliers much more than MAE.
 
-For classification, we can choose to either use Gini, which is an impurity measurement, or entropy, which is a measure of information gain. 
+For classification, we can choose to either use Gini, which is an impurity measurement, or entropy, which is a measure of information gain.
 
 -->
 
@@ -253,7 +253,7 @@ You should be able to see how these are related, and how they can cancel each ot
 
 The nice thing about these hyperparameters is that they work well with unbalanced trees, unlike `max_depth`.
 
-How do you pick a value for these parameters? Like most hyperparameters, the answer is trial and error. 
+How do you pick a value for these parameters? Like most hyperparameters, the answer is trial and error.
 
 -->
 
@@ -287,7 +287,7 @@ We've just talked through a small sample of hyperparameters that are available f
 # Your Turn!
 
 <!--
-Now let's have a look at the lab. 
+Now let's have a look at the lab.
 -->
 
 ---

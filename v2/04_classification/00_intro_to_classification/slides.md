@@ -510,7 +510,7 @@ Image Details:
 The true positive rate in the ROC curve (y-axis) is exactly the recall.
 
 Image Details:
-* [recall.png](http://www.google.com): Copyright Google
+* [recall.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
