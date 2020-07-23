@@ -242,7 +242,7 @@ That is, we ask is w_{1}x_{1} + w_{2}x_{2} + w_{3}x_{3} - bias >= 0? Which is th
 
 
 Image Details:
-* [perceptron_example.png](http://www.google.com): Copyright Google
+* [perceptron_example.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -270,7 +270,7 @@ Let's assume we already have our weights and bias. We say that x_{1} and x_{2} h
 Let's take a second to think about these numbers critically and see what they really mean.
 
 Image Details:
-* [perceptron_example_01.png](http://www.google.com): Copyright Google
+* [perceptron_example_01.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -284,7 +284,7 @@ Image Details:
 Let's assume a particular person, Kelly, does not stand to make more money by studying ML and she does not like programming and math (x_{1} = x_{2} = 0). But assume that Kelly does have a project that would benefit from ML (x_{3} = 1).
 
 Image Details:
-* [perceptron_example_02.png](http://www.google.com): Copyright Google
+* [perceptron_example_02.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -299,7 +299,7 @@ Computing W^{T}X we get 6.
 We check that 6 is >= 5, so we say "yes": Kelly will study machine learning.
 
 Image Details:
-* [perceptron_example_03.png](http://www.google.com): Copyright Google
+* [perceptron_example_03.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -312,7 +312,7 @@ Image Details:
 Now let's assume we have another person, Riley, who will make more money in her job by learning ML and she does like programming and math (x_{1} = x_{2} = 1), but she does not have a project that would benefit from ML (x_{3}=0).
 
 Image Details:
-* [perceptron_example_04.png](http://www.google.com): Copyright Google
+* [perceptron_example_04.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -329,7 +329,7 @@ We check that 4<5, so the model predicts "no": Riley will not study ML.
 In general, this is how we feed input data into our model. If the model had already finished learning the weights and bias, then this is how we would generate our predicted targets.
 
 Image Details:
-* [perceptron_example_05.png](http://www.google.com): Copyright Google
+* [perceptron_example_05.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -368,7 +368,7 @@ Now the model needs to adjust the weights. It seems like if a person stands to m
 So the model needs to update the weights and bias via some optimization algorithm like gradient descent. In order to compute the derivative (gradient) to discern the direction of steepest descent, we will need to unravel the many compositions of matrix multiplication. If you remember your calculus, how do we take the derivative of a composition? The chain rule! That is effectively what backpropagation does. It is a way to compute the gradient when many chain rules are involved through each layer of the network.
 
 Image Details:
-* [perceptron_example_06.png](http://www.google.com): Copyright Google
+* [perceptron_example_06.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

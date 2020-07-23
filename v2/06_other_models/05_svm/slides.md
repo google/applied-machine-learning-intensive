@@ -56,7 +56,7 @@ Note that "plane" in the definition refers to an affine subspace.
 Here we have two classes of observations. Class 1 is shown in yellow, and class 2 is shown in red. They are linearly separated by the hyperplane X_{2} = m*X_{1} + b. Note that this is just the equation of a line. We can rearrange our terms into this equivalent equation: X_{2} - m*X_[1} - b = 0.
 
 Image Details:
-* [svm01.png](http://www.google.com): Copyright Google
+* [svm01.png](https://opensource.google/docs/copyright/): Copyright Google
 
 -->
 
@@ -75,7 +75,7 @@ Let's look back at two dimensions, where we can draw examples.
 
 
 Image Details:
-* [svm02.png](http://www.google.com): Copyright Google
+* [svm02.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -94,7 +94,7 @@ How do we choose a separating hyperplane? Which one is the "best"?
 
 
 Image Details:
-* [svm03.png](http://www.google.com): Copyright Google
+* [svm03.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 ---
 
@@ -108,7 +108,7 @@ We compute the Euclidean distance from each data point to the separating hyperpl
 The data points that define the margin are called the support vectors because they "support" the maximal margin hyperplane.
 
 Image Details:
-* [svm04.png](http://www.google.com): Copyright Google
+* [svm04.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 ---
 
@@ -120,7 +120,7 @@ Image Details:
 Let's continue to consider the same example, but imagine we receive one additional piece of training data from class 1 (yellow). The new point is the yellow point that is furthest to the right in the graph. We can still define a separating hyperplane, but the margin is tiny. The maximal margin classifier is also known as a hard margin classifier, meaning that points must be perfectly, linearly separated. A hard margin classifier will correctly classify all the training data, but it can be somewhat limiting and not robust to the introduction of new data points.
 
 Image Details:
-* [svm05.png](http://www.google.com): Copyright Google
+* [svm05.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 ---
 
@@ -132,7 +132,7 @@ Image Details:
 Sometimes it is advantageous to consider a hyperplane that does not perfectly separate all our training data. Here is an example of a soft margin classifier. We see that the yellow data point furthest to the right is incorrectly classified by our model. But we have increased our margin, which can lead to greater robustness and better performance on our test data.
 
 Image Details:
-* [svm06.png](http://www.google.com): Copyright Google
+* [svm06.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 ---
 
@@ -171,7 +171,7 @@ Here is the main idea:
 In this example, it's pretty clear that a circle would be a reasonable boundary. We may try the kernel k((X_{1},X_{2})) = (X_{1}, X_{2}, X_{1}^{2} + X_{2}^{2}). Notice that this maps everything to three-dimensional space. In three dimensions, we can find a linear decision boundary and then pull that back to a non-linear boundary in two dimensions. We get something like this (next slide).
 
 Image Details:
-* [svm07.png](http://www.google.com): Copyright Google
+* [svm07.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

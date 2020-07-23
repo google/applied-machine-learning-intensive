@@ -212,7 +212,7 @@ So how does this apply to real data? Here is an illustration of overfitting a re
 https://en.wikipedia.org/wiki/Overfitting
 
 Image Details:
-* [polynomialregression15.png](http://www.google.com): Copyright Google
+* [polynomialregression15.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

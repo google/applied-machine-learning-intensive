@@ -178,7 +178,7 @@ The validation set is used during training to let the optimizer evaluate the mod
 Some models, like `LinearRegression` don't have a validation set since they aren't built using an optimizer. Others, like `SGDRegressor`, do utilize a validation set. The `validation_fraction` parameter can be adjusted to tell the model how much of the data to use for validation.
 
 Image Details:
-* [train_validate_test.png](http://www.google.com): Copyright Google
+* [train_validate_test.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

@@ -104,7 +104,7 @@ In this case the data points scatter pretty evenly around the prediction-to-actu
 So what does a bad plot look like?
 
 Image Details:
-* [predicted_vs_actual.png](http://www.google.com): Copyright Google
+* [predicted_vs_actual.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -132,7 +132,7 @@ Another helpful visualization tool is to plot the regression residuals. As a rem
 We plot residuals on the y-axis against the predicted values on the x-axis and draw a horizontal line through  y=0.
 
 Image Details:
-* [residual.png](http://www.google.com): Copyright Google
+* [residual.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -147,7 +147,7 @@ Cases where our predictions were too low are above the line. Cases where our pre
 In the "predicted vs. actual" section above, we plotted a case where there was a large positive bias in our predictions. Plotting the same biased data on a residual plot shows all of the residuals below the zero line.
 
 Image Details:
-* [residual_bias.png](http://www.google.com): Copyright Google
+* [residual_bias.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
