@@ -475,12 +475,12 @@ Besides F1 score, detailed plots of precision vs. recall can also be used to pic
 In the curve shown here, there is a drastic decrease in recall as precision crosses 80%. Depending on your problem, you'll probably want to keep your model tuned to values close to 80% precision.
 
 Talk with class about examples where recall or precision might be favored:
-Hiring decision? -- precision
-YouTube: Marking content that is inappropriate for kids, or copyrighted material -- recall
-Music / video recommendations? Is it better to play a song the user won’t like, or not play something they would? -- accuracy
-Medical treatment? What happens if a doctor sends you home and you have a terminal disease? What about when they run the exams just in case? -- recall
-Criminal justice risk assessment -- precision
-Fraud / identity theft detection -- recall. Every once in a while your card gets blocked or you get a call, especially if travelling or exhibiting unusual purchase behavior, because that’s cheaper than having to deal with the consequences of not detecting it early enough.
+Hiring decision? : precision
+YouTube: Marking content that is inappropriate for kids, or copyrighted material : recall
+Music / video recommendations? Is it better to play a song the user won’t like, or not play something they would? : accuracy
+Medical treatment? What happens if a doctor sends you home and you have a terminal disease? What about when they run the exams just in case? : recall
+Criminal justice risk assessment : precision
+Fraud / identity theft detection : recall. Every once in a while your card gets blocked or you get a call, especially if travelling or exhibiting unusual purchase behavior, because that’s cheaper than having to deal with the consequences of not detecting it early enough.
 
 Image Details:
 * [precision_recall_curve.png](https://opensource.google/docs/copyright/): Copyright Google
@@ -497,7 +497,7 @@ Another curve used to visualize model quality is the ROC curve. ROC curve plots 
 The next slides will detail what these values are.
 
 Image Details:
-* [precision_recall_curve.png](https://opensource.google/docs/copyright/): Copyright Google
+* [roc_curve.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
