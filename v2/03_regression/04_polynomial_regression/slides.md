@@ -86,7 +86,7 @@ Ask students to turn to a partner next to them and discuss the two questions on 
 }
 
 Image Details:
-* [polynomialregression5.png](https://opensource.google/docs/copyright/): Copyright Google
+* [polynomialregression6.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -136,7 +136,7 @@ We will now explore the potential dangers of using higher-order polynomial fits.
 
 ---
 
-![center](res/polynomialregression20.png)
+![center](res/polynomialregression9.png)
 
 <!--
 What could possibly go wrong if we use a polynomial model to fit the following data? Brainstorm some ideas.
@@ -155,7 +155,7 @@ Image Details:
 It is clear that (B) is not able to generalize to new data points.
 
 Image Details:
-* [polynomialregression10.png](http://www.google.com): Copyright Google
+* [polynomialregression10.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -280,7 +280,7 @@ Line 3: Completing the matrix multiplication and writing the multivariate regres
   * x_i = feature values
 
 Image Details:
-* [polynomialregression20.png](http://www.google.com): Copyright Google
+* [polynomialregression20.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -301,7 +301,7 @@ LASSO is an acronym for "Least Absolute Shrinkage and Selection Operator."
 Due to the L1 regularization, some of the coefficients may actually equal zero. How many coefficients go to zero depends on the regularization parameter λ, which is chosen/tuned by cross-validation. Because of the fact that some coefficients may go to zero, L1 regularization can be used for dimensionality reduction. That is, we can identify which features are most important for predicting our target and remove the features whose coefficient goes to zero.
 
 Image Details:
-* [polynomialregression17.png](http://www.google.com): Copyright Google
+* [polynomialregression17.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -316,7 +316,7 @@ Ridge regularization looks similar to LASSO, but instead of appending the sum of
 Ridge regularization seeks the value of λ that minimizes the penalized or regularized RSS (residual sum of squares). As the L2 norm is differentiable, problems using the method can be solved by gradient descent.
 
 Image Details:
-* [polynomialregression18.png](http://www.google.com): Copyright Google
+* [polynomialregression18.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

@@ -61,7 +61,7 @@ Image Details:
 Recall that the equation for a line is y = m * x + b, where x denotes our input variable and y is our output. In the case of machine learning, x is input features and y is target outputs. If we were trying to forecast energy level from coffee intake, amount of coffee would be the input, and energy level would be the output.
 
 Image Details:
-* [regression3.png](http://www.google.com): Copyright Google
+* [regression3.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -74,7 +74,7 @@ Image Details:
 Using the data, simple linear regression “learns” two values. The first is m, which you may have called “slope” and which we’ll refer to as a “weight / coefficient." This represents how much a change in the feature value (x) should affect our prediction (y). In other words, a 1 unit increase in x yields an m unit change in y. The second is b, which you may have called an “intercept” and which we’ll refer to as a “bias." The bias represents the prediction we would make if our input features are all zero. For example, you may expect yourself to have low energy without any coffee, but probably not zero energy.
 
 Image Details:
-* [regression4.png](http://www.google.com): Copyright Google
+* [regression4.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -89,7 +89,7 @@ Realistically, energy level might depend on several factors (maybe coffee, time 
 The concept of weights and biases is important to most machine learning models, even complex neural networks. The model uses data to learn how each input feature affects the output and it learns a bias to linearly shift its predictions to fit the data. This is like shifting a y-intercept.
 
 Image Details:
-* [regression5.png](http://www.google.com): Copyright Google
+* [regression5.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -323,7 +323,7 @@ The most common optimizer is gradient descent, where the model starts by picking
 You can control gradient descent by choosing the learning rate, which determines how much you tweak each parameter on each step. We call this a hyperparameter: a value you can change to change model performance, but one that isn’t “learned” by the model.
 
 Image Details:
-* [regression9.gif](http://www.google.com): Copyright Google
+* [regression9.gif](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -363,7 +363,7 @@ This notational convenience can be extended to regression with multiple features
 
 
 Image Details:
-* [regression27.png](http://www.google.com): Copyright Google
+* [regression27.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
