@@ -348,7 +348,8 @@ Similarly, all the nodes in the first hidden layer are connected to h_{1}^{2}. A
 Thus, feeding data through the hidden layers is equivalent to a composition of many matrix multiplications.
 
 Image Details:
-* [hidden_layers.png](http://www.google.com): Unlicensed
+* [hidden_layers.png](https://opensource.google/docs/copyright/): Copyright Google
+
 -->
 
 ---

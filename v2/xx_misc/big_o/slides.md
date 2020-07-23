@@ -349,7 +349,7 @@ Put the following in order:
 Highlight most common (1, log n, n, n^2, etc)
 
 Image Details:
-* [bigO08.png](http://bigocheatsheet.com/): Unlicensed
+* [bigO08.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

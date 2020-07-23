@@ -39,7 +39,7 @@ Not really. You may notice that 1111 is repeated a few times,
 but other than that it's difficult.
 
 Image Details:
-* [pins.png](http://www.google.com): Copyright Google
+* [pins.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

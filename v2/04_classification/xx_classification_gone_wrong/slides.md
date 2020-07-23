@@ -14,7 +14,7 @@ It would best be taught in about 35 minutes, but it could be stretched to 45 min
 ![](res/classificationgonewrong1.jpeg)
 
 <!--
-When you look at this, what do you see first? 
+When you look at this, what do you see first?
 
 Raise your hand if it's a duck you see first. Raise your hand if it's a rabbit you see first.
 
@@ -25,7 +25,7 @@ But models can make the same kinds of errors, which can lead to some serious iss
 Today we'll discuss three separate scenarios of classifications that did not go as planned and the impact they caused.
 
 Image Details:
-* [classificationgonewrong1.jpg](http://www.stock.adobe.com): Copyright Adobe/tony4urban
+* [classificationgonewrong1.jpg](https://opensource.google/docs/copyright/): Copyright Google
 
 -->
 
@@ -43,7 +43,7 @@ Most people don’t set out to make a harmful or biased system; they set out to 
 
 This happens frequently. You can search for many, many examples of machine learning projects gone awry, some more serious than others.
 
-When these mistakes occur, they're often very difficult to remedy because they require collecting new data, retraining a model, etc. 
+When these mistakes occur, they're often very difficult to remedy because they require collecting new data, retraining a model, etc.
 
 If your dataset was biased to begin with, then focusing your data collection on only one type of data to remedy your initial issue may lead to another type of bias.
 
@@ -55,7 +55,7 @@ These mistakes can have a negative and far-reaching impact on people or entire g
 ![](res/classificationgonewrong2.png)
 
 <!--
-Let's break into groups by counting off 1, 2, and 3. 
+Let's break into groups by counting off 1, 2, and 3.
 
 Group 1, you will read the corresponding article. The same goes for groups 2 and 3.
 
@@ -79,7 +79,7 @@ Image Details:
 <!--
 Each group will read their article and discuss these questions. After reading and your group discussion, each group will present to the class. You may have one member of your group present or several. When planning this 5-minute presentation, please allow one minute for questions.
 
-*Give students a 5-minute warning to begin building a short presentation for the rest of the class. 
+*Give students a 5-minute warning to begin building a short presentation for the rest of the class.
 You can give students easel boards or posters to use as an aid to present or have them just use notes to verbally present.
 -->
 
@@ -96,4 +96,4 @@ You can give students easel boards or posters to use as an aid to present or hav
 <!--
 
 *Note: If time permits, open up the discussion to the entire class after each group has presented. Encourage more follow-up questions and/or reflections of the questions listed on the slide.
---> 
+-->

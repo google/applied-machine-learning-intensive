@@ -102,7 +102,7 @@ Image Details:
 In a convolutional neural network, we first feed our data into convolutional, downsampling, and pooling layers. The results are then fed into a fully connected neural network like we have seen before. 
 
 Image Details:
-* [conNN14.png](https://opensource.google/docs/copyright/): Unlicensed 
+* [conNN14.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -321,7 +321,7 @@ Image Details:
 This type of convolution happens in the convolutional layers of a neural network. The values in the kernels are parameters that will be learned during training. Thus, the specific features in the images that the kernels are testing for is something that the model "learns." In other words, you don't say "Hey model, test for vertical lines." Instead, the model identifies the features that are important to test for. 
 
 Image Details:
-* [conNN14.png](??): Unlicensed 
+* [conNN14.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
