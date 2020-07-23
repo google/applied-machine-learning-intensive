@@ -161,7 +161,7 @@ Even with balanced classes, accuracy is problematic because it ignores the conte
 https://stats.stackexchange.com/questions/312780/why-is-accuracy-not-the-best-measure-for-assessing-classification-models
 
 Image Details:
-* [accuracy.png](http://www.google.com): Copyright Google
+* [accuracy.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -202,7 +202,7 @@ Language: note that precision is also referred to as positive predictive value (
 *It may be helpful to write the formula on the whiteboard at this point.*
 
 Image Details:
-* [precision.png](http://www.google.com): Copyright Google
+* [precision.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -244,7 +244,7 @@ Language: note that recall is also referred to as sensitivity, hit rate, and tru
 
 
 Image Details:
-* [recall.png](http://www.google.com): Copyright Google
+* [recall.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -277,7 +277,7 @@ What is a good way to determine if precision and recall are balanced? The F1 sco
 We can expand this formula to get a simplified F1 that can be calculated directly from the TP/TN/FP/FN counts.
 
 Image Details:
-* [f1.png](http://www.google.com): Copyright Google
+* [f1.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -292,7 +292,7 @@ The F1 formula can be reduced to this formula.
 *It may be helpful to write the formula on the whiteboard at this point.*
 
 Image Details:
-* [f1_optimized.png](http://www.google.com): Copyright Google
+* [f1_optimized.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -337,7 +337,7 @@ The 4 sections of the confusion matrix:
   * A miss scenario, also called Type II error
 
 Image Details:
-* [confusion_matrix_tumor1.png](http://www.google.com): Copyright Google
+* [confusion_matrix_tumor1.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 
@@ -362,7 +362,7 @@ Ask students to calculate the accuracy, precision, recall, and F1 scores. The an
 }
 
 Image Details:
-* [confusion_matrix_tumor2.png](http://www.google.com): Copyright Google
+* [confusion_matrix_tumor2.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -374,7 +374,7 @@ Image Details:
 <!--
 
 Image Details:
-* [confusion_matrix_tumor_accuracy.png](http://www.google.com): Copyright Google
+* [confusion_matrix_tumor_accuracy.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -386,7 +386,7 @@ Image Details:
 <!--
 
 Image Details:
-* [confusion_matrix_tumor_precision.png](http://www.google.com): Copyright Google
+* [confusion_matrix_tumor_precision.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -398,7 +398,7 @@ Image Details:
 <!--
 
 Image Details:
-* [confusion_matrix_tumor_recall.png](http://www.google.com): Copyright Google
+* [confusion_matrix_tumor_recall.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -414,7 +414,7 @@ precision = 1 / 2
 recall = 1 / 9
 
 Image Details:
-* [confusion_matrix_tumor_f1.png](http://www.google.com): Copyright Google
+* [confusion_matrix_tumor_f1.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -431,7 +431,7 @@ Give students a chance to practice creating a confusion matrix for this model.
 }
 
 Image Details:
-* [weather.png](http://www.google.com): Copyright Google
+* [weather.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -456,7 +456,7 @@ Click back to the previous slide to let students calculate.
 
 <!--
 Image Details:
-* [weather_solution.png](http://www.google.com): Copyright Google
+* [weather_solution.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -525,7 +525,7 @@ The false positive rate is one minus the true negative rate (TNR). TNR is also c
 You can interpret this as how many actual negative examples were falsely predicted as positive.
 
 Image Details:
-* [specificity.png](http://www.google.com): Copyright Google
+* [specificity.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

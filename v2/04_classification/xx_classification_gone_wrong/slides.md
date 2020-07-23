@@ -60,7 +60,7 @@ Let's break into groups by counting off 1, 2, and 3.
 Group 1, you will read the corresponding article. The same goes for groups 2 and 3.
 
 Image Details:
-* [classificationgonewrong2.png](http://www.google.com): Copyright Google
+* [classificationgonewrong2.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
