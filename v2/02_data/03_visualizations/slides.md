@@ -111,6 +111,10 @@ charts that you might see to visualize data.
 
 Image Details:
 * [charts.png](https://unsplash.com): Unsplash License
+https://unsplash.com/photos/JKUTrJ4vK00
+https://unsplash.com/photos/IrRbSND5EUc
+https://unsplash.com/photos/jrh5lAq-mIs
+https://unsplash.com/photos/_Jb1TF3kvsA
 -->
 
 ---
