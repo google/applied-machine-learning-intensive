@@ -27,8 +27,6 @@ img[alt~="center"] {
   * *When you click the 'Documentation' drop-down in the upper navigation, it tells you the current stable version and has a *link to 'All available versions.' Tell students to be sure to check the version of scikit-learn they're working with once they start the colab.
   * *The 'Examples' linked in the top navigation are not just API usage examples; they also contain some interesting machine learning insights.
 }
-Image Details:
-* [introtoscikit1.png](http://www.google.com): Copyright Google  
 -->
 
 ---

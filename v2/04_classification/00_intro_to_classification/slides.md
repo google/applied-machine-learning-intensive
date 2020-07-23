@@ -29,7 +29,7 @@ Recall that a regression attempts to predict a continuous value. In the illustra
 We judge the quality of our regression by measuring the distance of the actual data from our prediction line. Measurements such as mean squared error (MSE) and root mean squared error (RMSE) are common.
 
 Image Details:
-* [regression.gif](http://www.google.com): Copyright Google
+* [regression.gif](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -126,7 +126,7 @@ We’ll briefly cover the most common measures of classification performance now
 <!--
 Most of the performance measures that we look at will be based on values taken from the confusion matrix. For the sake of simplicity, we'll stick to evaluating model quality for binary classification or at least from the perspective of a single class.
 
-Think of the two classes as one “positive” and one “negative” class. 
+Think of the two classes as one “positive” and one “negative” class.
 
 * True Positive means the model predicted "positive" and the correct class is "positive."
 * False Positive means the model predicted “positive” but the correct class is “negative.”
@@ -150,13 +150,13 @@ Image Details:
 <!--
 Accuracy is a very basic quantitative measure. It is simply the number of predictions that the classifier got correct divided by the total number of predictions made.
 
-Accuracy seems like a reasonable thing to check, but it isn't always a good measure. This is especially true for skewed datasets with class imbalances. For example, imagine we are trying to diagnose an extremely rare type of cancer. In our training data, we have 995 samples of benign tumors and only 5 samples of malignant tumors. Let's say we train a model and it ALWAYS predicts false, meaning that it always says a tumor is benign. 
+Accuracy seems like a reasonable thing to check, but it isn't always a good measure. This is especially true for skewed datasets with class imbalances. For example, imagine we are trying to diagnose an extremely rare type of cancer. In our training data, we have 995 samples of benign tumors and only 5 samples of malignant tumors. Let's say we train a model and it ALWAYS predicts false, meaning that it always says a tumor is benign.
 
-Question: What is the accuracy? Answer: 995/1000 = .995 (or 99.5 percent). 
+Question: What is the accuracy? Answer: 995/1000 = .995 (or 99.5 percent).
 
-So from the perspective of accuracy, this is a great model. But in reality, there are some clear issues, especially if we consider that we would be sending people with cancer home thinking their tumor is benign. 
+So from the perspective of accuracy, this is a great model. But in reality, there are some clear issues, especially if we consider that we would be sending people with cancer home thinking their tumor is benign.
 
-Even with balanced classes, accuracy is problematic because it ignores the context. Sometimes you care more about performance for one class over another. Depending on the consequences of your decision, you will use a different threshold to make the decision. For example, if you’re predicting a disease that would require a dangerous and invasive surgery, you may require a much higher probability for your classification as positive than if it only required recommending two aspirin. 
+Even with balanced classes, accuracy is problematic because it ignores the context. Sometimes you care more about performance for one class over another. Depending on the consequences of your decision, you will use a different threshold to make the decision. For example, if you’re predicting a disease that would require a dangerous and invasive surgery, you may require a much higher probability for your classification as positive than if it only required recommending two aspirin.
 
 https://stats.stackexchange.com/questions/312780/why-is-accuracy-not-the-best-measure-for-assessing-classification-models
 
@@ -172,7 +172,7 @@ When the model predicted positive, how often was it right?
 *What is the probability that a tumor is actually malignant, given that our model classified it as malignant?*
 
 <!--
-In practice, we need more nuanced measures. The goal of precision is to answer this question. 
+In practice, we need more nuanced measures. The goal of precision is to answer this question.
 
 -->
 
@@ -213,7 +213,7 @@ Out of all the possible positives, how many did the model correctly identify?
 *What is the probability that our model will classify a tumor as malignant, given that it actually is malignant?*
 
 <!--
-The goal of recall is to answer this question. 
+The goal of recall is to answer this question.
 
 -->
 
@@ -234,11 +234,11 @@ Intuition: Out of all the actual positive cases, how many did the model correctl
 
 Facts:
 * High recall implies low false negatives (i.e., our model does not classify very many malignant tumors as benign).
-* Recall = 1 means all malignant tumors are classified as malignant. We’re not missing any malignant tumors. A negative test would definitively rule out malignancy. But we could have a test that always says “malignant.” 
+* Recall = 1 means all malignant tumors are classified as malignant. We’re not missing any malignant tumors. A negative test would definitively rule out malignancy. But we could have a test that always says “malignant.”
 
-IMPORTANT NOTE: This says nothing about how many positive predictions are actually correct. 
+IMPORTANT NOTE: This says nothing about how many positive predictions are actually correct.
 
-Language: note that recall is also referred to as sensitivity, hit rate, and true positive rate. 
+Language: note that recall is also referred to as sensitivity, hit rate, and true positive rate.
 
 *It may be helpful to write the formula on the whiteboard at this point.*
 
@@ -287,7 +287,7 @@ Image Details:
 ![center](res/f1_optimized.png)
 
 <!--
-The F1 formula can be reduced to this formula. 
+The F1 formula can be reduced to this formula.
 
 *It may be helpful to write the formula on the whiteboard at this point.*
 
@@ -338,7 +338,7 @@ The 4 sections of the confusion matrix:
 
 Image Details:
 * [confusion_matrix_tumor1.png](http://www.google.com): Copyright Google
---> 
+-->
 
 
 ---
@@ -443,7 +443,7 @@ Image Details:
   * Precision =
   * Recall =
   * F1 =
-  
+
 <!--
 Click back to the previous slide to let students calculate.
 -->
@@ -479,7 +479,7 @@ Hiring decision? -- precision
 YouTube: Marking content that is inappropriate for kids, or copyrighted material -- recall
 Music / video recommendations? Is it better to play a song the user won’t like, or not play something they would? -- accuracy
 Medical treatment? What happens if a doctor sends you home and you have a terminal disease? What about when they run the exams just in case? -- recall
-Criminal justice risk assessment -- precision 
+Criminal justice risk assessment -- precision
 Fraud / identity theft detection -- recall. Every once in a while your card gets blocked or you get a call, especially if travelling or exhibiting unusual purchase behavior, because that’s cheaper than having to deal with the consequences of not detecting it early enough.
 
 Image Details:
@@ -507,7 +507,7 @@ Image Details:
 ![center](res/recall.png)
 
 <!--
-The true positive rate in the ROC curve (y-axis) is exactly the recall. 
+The true positive rate in the ROC curve (y-axis) is exactly the recall.
 
 Image Details:
 * [recall.png](http://www.google.com): Copyright Google
@@ -537,23 +537,23 @@ Image Details:
 
 <!--
 TRUE POSITIVE RATE (y-axis):
-* The true positive rate in the ROC curve (y-axis) is exactly the recall. 
+* The true positive rate in the ROC curve (y-axis) is exactly the recall.
 * In the medical case, it is the proportion of correctly classified malignant tumors.
 
 FALSE POSITIVE RATE (x-axis):
 * The false positive rate is one minus the true negative rate (TNR). TNR is also called specificity.
-* In the medical case, it is the proportion of incorrectly classified benign tumors (negative samples falsely predicted as positive). 
+* In the medical case, it is the proportion of incorrectly classified benign tumors (negative samples falsely predicted as positive).
 
-DOTTED LINE: 
-* On the dotted line, the True Positive Rate = False Positive Rate. 
-* Probability that you correctly classify a malignant tumor is equal to the probability that you incorrectly classify a benign tumor, i.e., given any sample, malignant or benign, the model has an equal probability of classifying them as malignant. 
-* Above the dotted line, the True Positive Rate > False Positive Rate. i.e. probability that you correctly classify malignant tumors is greater than the probability of incorrectly classifying benign tumors. You want this! 
+DOTTED LINE:
+* On the dotted line, the True Positive Rate = False Positive Rate.
+* Probability that you correctly classify a malignant tumor is equal to the probability that you incorrectly classify a benign tumor, i.e., given any sample, malignant or benign, the model has an equal probability of classifying them as malignant.
+* Above the dotted line, the True Positive Rate > False Positive Rate. i.e. probability that you correctly classify malignant tumors is greater than the probability of incorrectly classifying benign tumors. You want this!
 
 INTERPRETATION and MODEL COMPARISON:
 * There is a calculation called Area Under Curve (AUC) or Area Under ROC (AUROC).
 * Most toolkits will calculate this value for you.
 * For the dotted line the AUC is 0.5.
-* The AUC allows you to compare two ROC curves - larger area under curve = better model. 
+* The AUC allows you to compare two ROC curves - larger area under curve = better model.
 
 ROC and AUC are complicated metrics that people often misinterpret. An ideal graph curves high on the upper left and has an AOC closer to 1.0.
 

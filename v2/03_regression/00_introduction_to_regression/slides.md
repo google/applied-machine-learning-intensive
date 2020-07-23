@@ -71,7 +71,7 @@ Image Details:
 ![center](res/regression4.png)
 
 <!--
-Using the data, simple linear regression “learns” two values. The first is m, which you may have called “slope” and which we’ll refer to as a “weight / coefficient." This represents how much a change in the feature value (x) should affect our prediction (y). In other words, a 1 unit increase in x yields an m unit change in y. The second is b, which you may have called an “intercept” and which we’ll refer to as a “bias." The bias represents the prediction we would make if our input features are all zero. For example, you may expect yourself to have low energy without any coffee, but probably not zero energy. 
+Using the data, simple linear regression “learns” two values. The first is m, which you may have called “slope” and which we’ll refer to as a “weight / coefficient." This represents how much a change in the feature value (x) should affect our prediction (y). In other words, a 1 unit increase in x yields an m unit change in y. The second is b, which you may have called an “intercept” and which we’ll refer to as a “bias." The bias represents the prediction we would make if our input features are all zero. For example, you may expect yourself to have low energy without any coffee, but probably not zero energy.
 
 Image Details:
 * [regression4.png](http://www.google.com): Copyright Google
@@ -102,11 +102,11 @@ Image Details:
 1. Iterate/Repeat (until some stopping condition)
 
 <!--
-But how do we "learn" the weights and biases? Typically, in machine learning we use the following iterative process. 
+But how do we "learn" the weights and biases? Typically, in machine learning we use the following iterative process.
 
-* Given an input value, we forecast (or guess) the potential target value. 
-* We calculate the error (or difference) between the actual target value and the target we guessed. 
-* We update the weights and biases to produce a guess that is closer to the actual target. 
+* Given an input value, we forecast (or guess) the potential target value.
+* We calculate the error (or difference) between the actual target value and the target we guessed.
+* We update the weights and biases to produce a guess that is closer to the actual target.
 * We iterate. That is, we repeat these steps until some stopping condition. (The stopping condition could be a small enough error, or that the error is no longer changing between iterations.)
 -->
 
@@ -117,7 +117,7 @@ But how do we "learn" the weights and biases? Typically, in machine learning we 
 ![center](res/regression12.png)
 
 <!--
-Here are four data points. THe feature (x-value) is square footage of a house, and the target (y-value) is the price of the house. 
+Here are four data points. THe feature (x-value) is square footage of a house, and the target (y-value) is the price of the house.
 
 Image Details:
 * [regression12.png](https://opensource.google/docs/copyright/): Copyright Google
@@ -130,7 +130,7 @@ Image Details:
 ![center](res/regression13.png)
 
 <!--
-Here is a different depiction of the same four data points. It is a simple scatter plot, where the x-axis is the size of a house (our feature), and on the y-axis we have the price of the house (our target). 
+Here is a different depiction of the same four data points. It is a simple scatter plot, where the x-axis is the size of a house (our feature), and on the y-axis we have the price of the house (our target).
 
 Image Details:
 * [regression13.png](https://opensource.google/docs/copyright/): Copyright Google
@@ -143,8 +143,8 @@ Image Details:
 ![center](res/regression14.png)
 
 <!--
-To begin the iterative machine learning process, we make a guess at the weights and biases. In this case, we have one weight, m, and one bias, b. Glancing at the data (but not agonizing too hard), we guess that b = 160 and m = 1. 
- 
+To begin the iterative machine learning process, we make a guess at the weights and biases. In this case, we have one weight, m, and one bias, b. Glancing at the data (but not agonizing too hard), we guess that b = 160 and m = 1.
+
 
 Image Details:
 * [regression14.png](https://opensource.google/docs/copyright/): Copyright Google
@@ -171,7 +171,7 @@ Image Details:
 
 
 <!--
-We use the line to forecast predicted output values. For each point in our training data set (x_k,y_k), we calculate y_pred = m(x_k) + b. 
+We use the line to forecast predicted output values. For each point in our training data set (x_k,y_k), we calculate y_pred = m(x_k) + b.
 
 Image Details:
 * [regression16.png](https://opensource.google/docs/copyright/): Copyright Google
@@ -184,7 +184,7 @@ Image Details:
 ![center](res/regression17.png)
 
 <!--
-Here we have the actual target outputs (blue) and the forecasted outputs that came from our model (purple). We've completed the infer/predict/forecast step. 
+Here we have the actual target outputs (blue) and the forecasted outputs that came from our model (purple). We've completed the infer/predict/forecast step.
 
 Image Details:
 * [regression17.png](https://opensource.google/docs/copyright/): Copyright Google
@@ -197,7 +197,7 @@ Image Details:
 ![center](res/regression18.png)
 
 <!--
-Now we move onto step 2, which is to compute error/loss/cost. We calculate the error between the actual target values, and the forecasted values. The metric we use to calculate this error can be simple Euclidean distance, but there are other measures as well. We will talk about error/cost functions in a minute, but for now it's okay to think of the distance between the actual value and the forecasted value. 
+Now we move onto step 2, which is to compute error/loss/cost. We calculate the error between the actual target values, and the forecasted values. The metric we use to calculate this error can be simple Euclidean distance, but there are other measures as well. We will talk about error/cost functions in a minute, but for now it's okay to think of the distance between the actual value and the forecasted value.
 
 Image Details:
 * [regression18.png](https://opensource.google/docs/copyright/): Copyright Google
@@ -210,7 +210,7 @@ Image Details:
 ![center](res/regression19.png)
 
 <!--
-Finally, we update the weight and bias such that we reduce the error. Now we have a new m and b, and we start at step 1 using these new parameters. 
+Finally, we update the weight and bias such that we reduce the error. Now we have a new m and b, and we start at step 1 using these new parameters.
 
 Image Details:
 * [regression19.png](https://opensource.google/docs/copyright/): Copyright Google
@@ -223,7 +223,7 @@ Image Details:
 ![center](res/regression20.png)
 
 <!--
-Now let's look at a few common loss/cost functions. Remember we use the functions to determine the error that results from a particular set of weights and biases. These are not the only loss functions, but they are very common. 
+Now let's look at a few common loss/cost functions. Remember we use the functions to determine the error that results from a particular set of weights and biases. These are not the only loss functions, but they are very common.
 
 L1 Loss is also known as least absolute deviations (LAD) or least absolute errors (LAE). L1 is resistant to outliers in the data (i.e. robust). If your data has outliers that can be ignored, then L1 is a good choice. If it is important to pay attention to any and all outliers, the method of least squares is a better choice.
 
@@ -242,7 +242,7 @@ Image Details:
 ![center](res/regression21.png)
 
 <!--
-Let's practice calculating each of these loss functions for the data in the housing example, with the model y = 160x+1. 
+Let's practice calculating each of these loss functions for the data in the housing example, with the model y = 160x+1.
 
 @Exercise (15 minutes): {
 Have students work in small groups to calculate the loss functions based on the data in the table. It may be helpful to write the loss functions on the board at this point. Or flip back to the slide with the loss functions and allow students to write them down.
@@ -286,7 +286,7 @@ Image Details:
 ![](res/housingexample4.png)
 
 <!--
-*Invite answer from students for MSE* 
+*Invite answer from students for MSE*
 
 Image Details:
 * [housingexample4.png](https://opensource.google/docs/copyright/): Copyright Google
@@ -305,7 +305,7 @@ Image Details:
   * Choose the **learning rate**, a constant value which scales how far we tweak the value during each iteration. (Learning rate is a **hyperparameter** - not a parameter in the actual model.)
 
 <!--
-A hyperparameter is not a parameter in the model. In other words, it's not a weight or bias. It is a value that is chosen by the machine learning specialist that controls how the algorithm "learns" the model parameters. This is a subtle but important distinction. 
+A hyperparameter is not a parameter in the model. In other words, it's not a weight or bias. It is a value that is chosen by the machine learning specialist that controls how the algorithm "learns" the model parameters. This is a subtle but important distinction.
 
 -->
 
@@ -333,7 +333,7 @@ Image Details:
 ![center](res/regression25.png)
 
 <!--
-Here theta_0 is the bias and theta_1 is the weight (i.e. theta_0 = b and theta_1 = m).  
+Here theta_0 is the bias and theta_1 is the weight (i.e. theta_0 = b and theta_1 = m).
 
 Image Details:
 * [regression25.png](http://www.google.com): Copyright Google
@@ -346,7 +346,7 @@ Image Details:
 ![center](res/regression26.png)
 
 <!--
-Using matrix/vector notation we can rewrite the equation of the line more compactly as theta^(transpose) X. 
+Using matrix/vector notation we can rewrite the equation of the line more compactly as theta^(transpose) X.
 
 Image Details:
 * [regression26.png](http://www.google.com): Copyright Google
@@ -359,7 +359,7 @@ Image Details:
 ![center](res/regression27.png)
 
 <!--
-This notational convenience can be extended to regression with multiple features. Recall our example from before where energy is a function of coffee, time of day, and temperature. 
+This notational convenience can be extended to regression with multiple features. Recall our example from before where energy is a function of coffee, time of day, and temperature.
 
 
 Image Details:
@@ -373,7 +373,7 @@ Image Details:
 ![center](res/regression28.png)
 
 <!--
-Again, we can use theta^(transpose) X to represent the regression equation. 
+Again, we can use theta^(transpose) X to represent the regression equation.
 
 Image Details:
 * [regression28.png](http://www.google.com): Copyright Google
@@ -415,7 +415,7 @@ Break data into smaller batches.
  Another important hyperparameter is batch size. While you could perform gradient descent based on your full dataset every step, it may require too much memory, and take longer to converge. To combat both, we split the data into smaller batches. On each step, we’ll use a new batch to update parameters. You can control how large these batches are.
 
 Image Details:
-* [regression10.png](http://www.google.com): Copyright Google
+* [regression10.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

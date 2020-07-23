@@ -24,7 +24,7 @@ session we'll dive a little deeper and talk about what machine learning can do a
 # What **Can** Machine Learning Do?
 
 <!--
-Though machine learning is not new, its application in modern life has really started to expand over the last decade. 
+Though machine learning is not new, its application in modern life has really started to expand over the last decade.
 
 Quick discussion: What are some machine learning products that you know about? How has machine learning shown up and improved something you use?
 
@@ -68,7 +68,7 @@ data points from two classes (blue and red), learn some mathematical function th
 the two classes and predict which class a new data point is in.
 
 The system can predict which class to apply to new data after training on existing data labeled
-with the correct class. 
+with the correct class.
 
 Quick discussion: What are some other examples of a classification system that you can think of?
 
@@ -91,7 +91,7 @@ process of clustering, a machine learning system defines categories and places e
 each category by quantifying how closely examples are related to one another.
 
 Clustering differs from classification because the categories are not defined by you. Clustering
-systems propose their own categories based on patterns found in the examples. 
+systems propose their own categories based on patterns found in the examples.
 -->
 
 ---
@@ -101,9 +101,9 @@ systems propose their own categories based on patterns found in the examples.
 
 <!--
 For example, let’s say the child from the zoo wants to organize a photo album of many pictures
-from the zoo. They don’t know a lot about animals, but they do notice that some are very small 
-(reptiles, birds), some are medium sized (monkeys, seals) and some are very big (elephants, tigers). 
-They might sort the pictures into three groups based on size. 
+from the zoo. They don’t know a lot about animals, but they do notice that some are very small
+(reptiles, birds), some are medium sized (monkeys, seals) and some are very big (elephants, tigers).
+They might sort the pictures into three groups based on size.
 
 Clustering systems similarly attempt to find “clusters” of similar data examples.
 
@@ -120,7 +120,7 @@ Image Details:
 Predict the relationship between multiple variables where the target is continuous.
 
 <!--
-Regression predicts the relationship between two or more variables. If you were interested in 
+Regression predicts the relationship between two or more variables. If you were interested in
 predicting the price of a house, you might look for patterns in location, square footage, or number
 of bedrooms. While classification involves a discrete, categorical value to predict, regression
 involves a continuous value to predict.
@@ -134,6 +134,9 @@ involves a continuous value to predict.
 <!--
 This graphic shows one simple type of regression, which tries to find the best-fitting line for
 some data points, then makes predictions based on that line.
+
+Image Details:
+* [linear_regression.gif](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -154,7 +157,7 @@ Image Details:
 * [regression2.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
---- 
+---
 
 # Sequences
 Suggest the next value in a sequence.
@@ -186,7 +189,7 @@ Image Details
 <!--
 Machine learning is *not* magic, and ML is not a good fit for all problems. The principles underlying
 machine learning are not new but are possible today because of the amount of available public data and
-processing power. 
+processing power.
 
 What can ML not do?
 
@@ -195,15 +198,15 @@ data or not enough diversity, ie, the data is so biased that you can’t general
 problems that ML actually cannot solve.
 
 Good ML problems:
-* have a clear use case, 
-* reflect developers' solid understanding of the problem, 
-* use lots of historical data, 
+* have a clear use case,
+* reflect developers' solid understanding of the problem,
+* use lots of historical data,
 * and require decisions, not just predictions.
 
-Some examples of current limitations of ML are linked here: https://www.quora.com/What-can-machine-learning-do-and-cant-do) 
+Some examples of current limitations of ML are linked here: https://www.quora.com/What-can-machine-learning-do-and-cant-do)
 an ML system cannot infer a context-free grammar that generates the strings in a language. In other words,
-an ML system can’t achieve true understanding of the grammar that generates a language the same way a human can. 
-Similar to statistics or data science approaches, ML cannot be used to show cause-effect relationships. 
+an ML system can’t achieve true understanding of the grammar that generates a language the same way a human can.
+Similar to statistics or data science approaches, ML cannot be used to show cause-effect relationships.
 -->
 
 ---
@@ -221,9 +224,9 @@ Does the ordering of the data matter? Why?
 
 <!--
 One important consideration is the quality of data -- machine learning models are only as good as
-the examples used to train them. 
+the examples used to train them.
 
-What attributes of a dataset would be ideal? 
+What attributes of a dataset would be ideal?
 *(Correct answer is Large size / High diversity: A large number of examples that cover a variety of use cases is essential for a machine learning system to understand the underlying patterns in the data. A model trained on this type of
 dataset is more likely to perform well on new data. But it also may take a long time to train.)*
 
@@ -234,7 +237,7 @@ A small dataset with lots of variety makes it challenging to find patterns in th
 will lack the confidence a larger dataset provides. And if your dataset is small without much variation,
 you may not even need machine learning.
 
-Does ordering of the data matter? 
+Does ordering of the data matter?
 *(Answer: Kind of)*
 
 Ordering of the data matters when you might have groups of highly correlated examples. For example, if

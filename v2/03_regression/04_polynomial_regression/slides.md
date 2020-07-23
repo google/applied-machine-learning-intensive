@@ -29,7 +29,7 @@ img[alt~="center"] {
 We have seen linear regression and have implemented it using scikit-learn. We found the line of best fit using optimizers such as gradient descent. Though linear regression can be a powerful predictive tool, it isn't appropriate for all types of regression problems.
 
 Image Details:
-* [polynomialregression1.gif](http://www.google.com): Copyright Google
+* [polynomialregression1.gif](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -120,7 +120,7 @@ Turn the original polynomial regression probem into a polynomial regression prob
 ![center](res/polynomialregression19.png)
 
 <!--
-To find the weights and biases for a polynomial regression model, we recast the problem as a multivariate linear regression problem. Then we are able to use all the machinery we've already developed to "learn" the parameters.  
+To find the weights and biases for a polynomial regression model, we recast the problem as a multivariate linear regression problem. Then we are able to use all the machinery we've already developed to "learn" the parameters.
 
 Image Details:
 * [polynomialregression19.png](https://opensource.google/docs/copyright/): Copyright Google
@@ -150,9 +150,9 @@ Image Details:
 ![center](res/polynomialregression10.png)
 
 <!--
-*Pretend to throw one more data point into (B) in a region where the curve does not pass through (perhaps above the second valley).* 
+*Pretend to throw one more data point into (B) in a region where the curve does not pass through (perhaps above the second valley).*
 
-It is clear that (B) is not able to generalize to new data points. 
+It is clear that (B) is not able to generalize to new data points.
 
 Image Details:
 * [polynomialregression10.png](http://www.google.com): Copyright Google
@@ -265,11 +265,11 @@ https://medium.com/@yongddeng/regression-analysis-lasso-ridge-and-elastic-net-9e
 <!--
 As a reminder, this is the equation of a common loss function, the mean squared error.
 
-In this equation we have the following: 
+In this equation we have the following:
 
-Line 1: (y_true - y_pred) is the error between the true target and the predicted target from the model. 
+Line 1: (y_true - y_pred) is the error between the true target and the predicted target from the model.
 
-Line 2: Recall that y_pred came from a linear regression equation, which can be written in matrix notation. Theta is a vector consisting of the bias term and the weights, and X is our features. 
+Line 2: Recall that y_pred came from a linear regression equation, which can be written in matrix notation. Theta is a vector consisting of the bias term and the weights, and X is our features.
 
 Line 3: Completing the matrix multiplication and writing the multivariate regression formula using the notation:
   * n = number of rows in the training data
@@ -292,13 +292,13 @@ Image Details:
 <!--
 What does it mean to shrink coefficients? It effectively means to increase the value of the loss function as the coefficients are calculated.
 
-Lasso is L1 regression. This means that it uses the absolute value of the coefficients and appends them to the output of the loss function. We can see that by adding the absolute value of theta_j (a positive number), the cost function is always slightly larger than the regular MSE loss function. This is going to force the model to make the thetas slightly smaller. 
+Lasso is L1 regression. This means that it uses the absolute value of the coefficients and appends them to the output of the loss function. We can see that by adding the absolute value of theta_j (a positive number), the cost function is always slightly larger than the regular MSE loss function. This is going to force the model to make the thetas slightly smaller.
 
-Smaller coefficients make the model "more linear." For example, imagine we have y = theta_0 + theta_1(x) + theta_2(x^2) + theta_3(x^3), where theta_2 and theta_3 are very very small (almost 0). Then the function is almost linear. So smaller coefficients effectively control the model to scale back curvature and reduce overfitting. 
+Smaller coefficients make the model "more linear." For example, imagine we have y = theta_0 + theta_1(x) + theta_2(x^2) + theta_3(x^3), where theta_2 and theta_3 are very very small (almost 0). Then the function is almost linear. So smaller coefficients effectively control the model to scale back curvature and reduce overfitting.
 
 LASSO is an acronym for "Least Absolute Shrinkage and Selection Operator."
 
-Due to the L1 regularization, some of the coefficients may actually equal zero. How many coefficients go to zero depends on the regularization parameter λ, which is chosen/tuned by cross-validation. Because of the fact that some coefficients may go to zero, L1 regularization can be used for dimensionality reduction. That is, we can identify which features are most important for predicting our target and remove the features whose coefficient goes to zero. 
+Due to the L1 regularization, some of the coefficients may actually equal zero. How many coefficients go to zero depends on the regularization parameter λ, which is chosen/tuned by cross-validation. Because of the fact that some coefficients may go to zero, L1 regularization can be used for dimensionality reduction. That is, we can identify which features are most important for predicting our target and remove the features whose coefficient goes to zero.
 
 Image Details:
 * [polynomialregression17.png](http://www.google.com): Copyright Google
