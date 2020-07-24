@@ -60,7 +60,7 @@ There is some argument regarding whether speech recognition should actually be c
 Models can process text at different levels. For example, you'll see some language generation models that use a character-by-character approach such as the RNN shown in this slide.
 
 Image Details:
-* [character-model.png](http://www.google.com): Copyright Google
+* [character-model.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -77,7 +77,7 @@ Which is better?
 It depends. For some languages and use cases, the character-based approach works well. In practice, you see more word-based models, especially for English and similar languages. The models typically perform well and are quicker to train than character-based models.
 
 Image Details:
-* [word-model.png](http://www.google.com): Copyright Google
+* [word-model.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -122,7 +122,7 @@ Regex rules can be very powerful but also very complex. Many guides exist for ef
 Another important concept for text processing is minimum edit distance, also called Levenshtein distance. This is especially useful for autocorrect tools and evaluating systems that generate language, e.g., translation. There are many open source Python implementations of this metric that you can use.
 
 Image Details:
-* [distance.png](http://www.google.com): Copyright Google
+* [distance.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -189,7 +189,7 @@ Take an example movie review, "I love love loved it!", and another, "I HATED it 
 But can you think of an example or two where this strategy would fail? Especially consider if you're trying to predict more than just two sentiments ("good" and "bad"). *Prompt class for discussion.*
 
 Image Details:
-* [bag-of-words.png](http://www.google.com): Copyright Google
+* [bag-of-words.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -205,7 +205,7 @@ Bag-of-words approaches are surprisingly successful on many tasks (email spam fi
 But fundamentally we know that the order of words matters. Harder NLP tasks build upon sequential approaches, which preserve the order of words in a text. This is exactly what RNNs are useful for. Recurrent Neural Networks handle this well.
 
 Image Details:
-* [sequential-words.png](http://www.google.com): Copyright Google
+* [sequential-words.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -222,7 +222,7 @@ The typical process for an NLP task is:
 4. Perform supervised task
 
 Image Details:
-* [pipeline.png](http://www.google.com): Copyright Google
+* [pipeline.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
