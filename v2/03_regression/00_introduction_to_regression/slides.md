@@ -428,6 +428,6 @@ Image Details:
 After setting up a model, you may find you need to perform “hyperparameter tuning” to achieve better results. Different problems work well with different combinations of hyperparameter values. You’ll often need to experiment or “tune” those combinations. Here are some rough guidelines for potential problems with learning rate and batch size that might suggest increasing or decreasing their values.
 
 Image Details:
-* [regression11.png](http://www.google.com): Copyright Google
+* [regression11.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
