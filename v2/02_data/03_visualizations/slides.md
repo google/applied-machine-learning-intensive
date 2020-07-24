@@ -271,7 +271,7 @@ Problems:
 * There may be a higher concentration of points in some areas, but in this format we cannot tell.
 
 Image Details:
-* [bad-scatter-plot.png](https://opensource.google/docs/copyright/): Copyright Google
+* [visualizationscatyawn1.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -331,6 +331,8 @@ It might be helpful to write the following list on the board or have students ta
 * Pie Chart
 }
 
+Image Details:
+* [candy-count-as-bg.png](https://opensource.google/docs/copyright/): Copyright Google
 
 -->
 
