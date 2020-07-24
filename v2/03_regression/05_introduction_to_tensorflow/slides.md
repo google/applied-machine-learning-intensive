@@ -71,7 +71,7 @@ So we now understand why the "tensor" part of the name exists, but what about "f
 Typically, a sequence of operations is performed on tensors in a model. These tensors "flow" through the graph that constitutes the model, hence "TensorFlow."
 
 Image Details:
-* [res/introtensorflow1.png](http://www.oreilly.com): Unlicensed
+* [res/introtensorflow1.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -84,7 +84,7 @@ Image Details:
 TensorFlow internally constructs a graph of operations that it uses to perform machine learning tasks.
 
 Image Details:
-* [res/introtensorflow2.png](http://www.oreilly.com): Unlicensed
+* [res/introtensorflow2.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -97,7 +97,7 @@ Image Details:
 The edges of the graph represent tensors of data flowing through the graph.
 
 Image Details:
-* [res/introtensorflow3.png](http://www.oreilly.com): Unlicensed
+* [res/introtensorflow3.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -110,7 +110,7 @@ Image Details:
 These graphs pass through data in order to learn weights and biases.
 
 Image Details:
-* [res/introtensorflow4.png](http://www.oreilly.com): Unlicensed
+* [res/introtensorflow4.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -145,7 +145,7 @@ TensorFlow 1 placed more of an emphasis on the concept of estimators (similar to
 TensorFlow is actually not written in Python, but is instead a C++ library. The Python library we use is a wrapper over the C++ with even more abstraction layers added on top of it. For this class we'll be using the "Core TensorFlow (Python)" layer and above.
 
 Image Details:
-* [res/introtensorflow8.png](http://www.oreilly.com): Unlicensed
+* [res/introtensorflow8.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

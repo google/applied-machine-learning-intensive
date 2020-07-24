@@ -193,6 +193,9 @@ The holdout data story gets more complicated when hyperparameter tuning is invol
 In order to prevent this, many data scientists also keep another holdout dataset called the validation dataset. This dataset is used for one final check after you have selected hyperparameters.
 
 There is an unfortunate naming collision with the validation data that the model holds out while optimizing. Luckily you don't ever really interact directly with the validation data that the model uses while training. The most you might do is set the percentage of data to hold out. The final validation set is fully your responsibility, though.
+
+Image Details:
+* [double-validate.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
