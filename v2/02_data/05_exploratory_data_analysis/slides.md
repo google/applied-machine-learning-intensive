@@ -86,7 +86,7 @@ What other information can you see in this output?
 What other methods do we know that can provide us table-level analytics?
 
 Image Details:
-* [describe.png](http://www.google.com): Copyright Google
+* [describe.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -154,7 +154,7 @@ change (decrease) in the other variable. The magnitude of the correlation coeffi
 captures the strength of the correlation. 
 
 Image Details:
-* [correlation.png](http://www.google.com): Copyright Google
+* [correlation.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -173,7 +173,7 @@ see the quartiles and any outliers.
 
 
 Image Details:
-* [boxplot.png](http://www.google.com): Copyright Google
+* [boxplot.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -193,7 +193,7 @@ merge the tables and do analysis based on location. This is really
 cross-table-cross-column analysis, but that is a lot to try to say.
 
 Image Details:
-* [country.png](http://www.google.com): Copyright Google
+* [country.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

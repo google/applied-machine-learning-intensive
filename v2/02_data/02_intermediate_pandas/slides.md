@@ -127,7 +127,7 @@ Let's say that we would like to find people with more than two dogs.
 How would we do that?
 
 Image Details:
-* [table_for_row_filter.png](http://www.google.com): Copyright Google
+* [table_for_row_filter.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -151,7 +151,7 @@ Note that a DataFrame is returned. You may want to assign this to a new variable
 This filtering is not done in place and does not modify the original DataFrame, df.
 
 Image Details:
-* [table_more_than_two_dogs.png](http://www.google.com): Copyright Google
+* [table_more_than_two_dogs.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -169,7 +169,7 @@ filter out the 'last_name' and 'state' columns.
 How would we do that?
 
 Image Details:
-* [table_for_column_filter.png](http://www.google.com): Copyright Google
+* [table_for_column_filter.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -188,7 +188,7 @@ in a boolean index, we pass in a list of strings that match the column names tha
 we want to keep.
 
 Image Details:
-* [table_less_pii.png](http://www.google.com): Copyright Google
+* [table_less_pii.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -264,7 +264,7 @@ per owner per state.
 How would we do that?
 
 Image Details:
-* [table_to_group.png](http://www.google.com): Copyright Google
+* [table_to_group.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -289,7 +289,7 @@ There are many other statistics that we can gather when grouping data in a
 `DataFrame`. These include min, max, count, standard deviation, and more.
 
 Image Details:
-* [table_grouped](http://www.google.com): Copyright Google
+* [table_grouped.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -348,7 +348,7 @@ You can see that 'first_name' is the common column between the two tables.
 Let's see how Pandas would merge these tables.
 
 Image Details:
-* [tables_to_merge.png](http://www.google.com): Copyright Google
+* [tables_to_merge.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -366,7 +366,7 @@ Here we can see the call to `merge()`. It accepts two `DataFrame` objects and
 merges them on common column names. In this case, 'first_name'.
 
 Image Details:
-* [tables_merged.png](http://www.google.com): Copyright Google
+* [tables_merged.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -384,7 +384,7 @@ with zero values to be missing from tables.
 Any guesses on what happens?
 
 Image Details:
-* [tables_to_merge_uneven.png](http://www.google.com): Copyright Google
+* [tables_to_merge_uneven.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -404,7 +404,7 @@ find a match, it didn't include the datapoint.
 This is standard join functionality. There are ways to get around this, though.
 
 Image Details:
-* [tables_merged_uneven.png](http://www.google.com): Copyright Google
+* [tables_merged_uneven.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -428,7 +428,7 @@ In any of the outer join cases, missing data is filled in with null values.
 `NaN` for numbers. `None` for strings and other objects.
 
 Image Details:
-* [tables_merged_outer.png](http://www.google.com): Copyright Google
+* [tables_merged_outer.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -459,7 +459,7 @@ each person in ascending order.
 How would we do that?
 
 Image Details:
-* [table_to_sort.png](http://www.google.com): Copyright Google
+* [table_to_sort.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -477,7 +477,7 @@ Here we can see the `sort_values()` method in use. We have asked to sort by the
 'num_pet_cats' column. The default sort order is ascending.
 
 Image Details:
-* [table_sorted.png](http://www.google.com): Copyright Google
+* [table_sorted.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

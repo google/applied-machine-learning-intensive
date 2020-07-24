@@ -70,6 +70,9 @@ Image Details:
 
 <!--
 In our binary classification lab we will try to differentiate between oranges and grapefruit. We have a dataset with weight, size, and color information. We will build a logistic regression model to try to accomplish this task.
+
+Image Details:
+* [oranges_and_grapefruit.jpg](https://pixabay.com/photos/oranges-orange-grapefruit-3004200/): Pixabay License
 -->
 
 ---
