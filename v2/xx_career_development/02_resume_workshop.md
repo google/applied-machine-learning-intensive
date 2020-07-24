@@ -131,7 +131,7 @@ While including your relevant coursework is not absolutely necessary, we do advi
 Technical skills: How you demonstrate your level of “proficiency” can vary. Here, it’s listed in the number of years of experience using that language. Whatever you decide, be sure to include most proficient -> least proficient. Even more importantly, include examples of how you gained those skills and used those languages in the body of the experience section of your resume.
 
 Image Details:
-* [resumeworkshop03.png](http://www.google.com): Copyright Google
+* [resumeworkshop03.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -180,7 +180,7 @@ By doing [Z]: what you specifically did to achieve those results (e.g., by restr
 This work experience description provides us with some information, but how could it be better? 
 
 Image Details:
-* [resumeworkshop04.png](http://www.google.com): Copyright Google
+* [resumeworkshop04.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -196,7 +196,7 @@ I want to point a few things out here:
 * The description is important, even if you don’t have numbers to share.
 
 Image Details:
-* [resumeworkshop05.png](http://www.google.com): Copyright Google
+* [resumeworkshop05.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -231,7 +231,7 @@ I want to point out a few things here, too:
 * This person listed 300+ downloads with 4.0 rating, which shows the impact and level of interest in the project.
 
 Image Details:
-* [resumeworkshop06.png](http://www.google.com): Copyright Google
+* [resumeworkshop06.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -280,7 +280,7 @@ It's important to include the following:
 * Leadership of 55 TAs as Head TA impacting 500 students
 
 Image Details:
-* [resumeworkshop07.png](http://www.google.com): Copyright Google
+* [resumeworkshop07.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -315,7 +315,7 @@ Use of language: Java
 Clear mention of selectivity of each honor or award
 
 Image Details:
-* [resumeworkshop08.png](http://www.google.com): Copyright Google
+* [resumeworkshop08.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

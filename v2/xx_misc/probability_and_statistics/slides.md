@@ -39,7 +39,7 @@ Image Details:
 X is a random variable, in that it can be any one of 6 values, and it achieves each of these values with a certain probability. In this case, we have a uniform distribution of 1/6. 
 
 Image Details:
-* [prob02.png](http://www.google.com): Copyright Google
+* [prob02.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -81,7 +81,7 @@ Answers:
 * 3.5 = (1/100)*(100*1*(1/6) + 100*2*(1/6) + ... + 100*6*(1/6)) 
 
 Image Details:
-* [prob03.png](http://www.google.com): Copyright Google
+* [prob03.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -96,7 +96,7 @@ We call the relationship between two random variables independent if the value o
 We call the relationship between two random variables dependent if the value of one does affect the other. For example, say we want the probability that the sum of rolling a die twice is 5, if the first roll is a 3. The two variables involved here (the first and second roll) are dependent variables. 
 
 Image Details:
-* [probstats01.png](http://www.google.com): Copyright Google
+* [probstats01.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -118,7 +118,7 @@ Here are two additional definitions that may be useful.
 
 
 Image Details:
-* [prob22.png](http://www.google.com): Copyright Google
+* [prob22.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -143,7 +143,7 @@ Therefore, we have
 P(sum = 5 | first roll = 3) = (1/36)/(1/6) = 1/6. 
 
 Image Details:
-* [probstats06.png](http://www.google.com): Copyright Google
+* [probstats06.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -160,7 +160,7 @@ Let's look at the joint probability in this example. Here we are saying we roll 
 Finally, let's look at the probability that the sum is 5. From the previous slide we saw that the possible ways to have the sum = 5 are given by (1,4), (4,1), (2,3), (3,2). There are four possibilities out of the 36 total combinations for two rolls. Therefore, the probability that the sum equals 5 is 4/36.
 
 Image Details:
-* [prob24.png](http://www.google.com): Copyright Google
+* [prob24.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -173,7 +173,7 @@ Image Details:
 The conditional probability between two independent events is simply the probability of X occurring. 
 
 Image Details:
-* [prob25.png](http://www.google.com): Copyright Google
+* [prob25.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -186,7 +186,7 @@ Image Details:
 We can recover the probability of X by summing the conditional probability of X given Y times the probability of Y, for every possible Y.
 
 Image Details:
-* [probstats02.png](http://www.google.com): Copyright Google
+* [probstats02.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -199,7 +199,7 @@ Image Details:
 We can recover the probability of X from summing the joint probabilities of X and Y for every possible Y.
 
 Image Details:
-* [prob27.png](http://www.google.com): Copyright Google
+* [prob27.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -212,7 +212,7 @@ Image Details:
 Let's review the formulae we saw on the previous slides. 
 
 Image Details:
-* [prob28.png](http://www.google.com): Copyright Google
+* [prob28.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -227,7 +227,7 @@ Bayes' Theorem is a powerful result in probability. It allows us to find P(X|Y) 
 This theorem will come up again when we talk about using Naive Bayes in machine learning. 
 
 Image Details:
-* [prob36.png](http://www.google.com): Copyright Google
+* [prob36.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -244,7 +244,7 @@ Suppose we want to calculate P(first die = 3 | sum = 5). Note this is the revers
 We can use Bayes' Theorem and the conditional probability that we already computed. 
 
 Image Details:
-* [probstats03.png](http://www.google.com): Copyright Google
+* [probstats03.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -262,7 +262,7 @@ Give students time to think about this problem in groups. Prompt them for P(p|d)
 }
 
 Image Details:
-* [probstats04.png](http://www.google.com): Copyright Google
+* [probstats04.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -275,7 +275,7 @@ Image Details:
 Ask students to discuss the implications of P(p|d) being relatively low even when P(d|p) and P(not d|not p) are high.
 
 Image Details:
-* [probstats05.png](http://www.google.com): Copyright Google
+* [probstats05.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

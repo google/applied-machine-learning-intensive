@@ -179,7 +179,7 @@ Image Details:
 *Have 1-2 student volunteers read this email from a recruiter out loud to the class.*
 
 Image Details:
-* [commrecruiter04.png](http://www.google.com): Copyright Google
+* [commrecruiter04.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -217,7 +217,7 @@ Now that we’ve read an email exchange between a recruiter and candidate, take 
 * It’s always nice to sign off with a thank you and your name! Be friendly!
 
 Image Details:
-* [commrecruiter05.png](http://www.google.com): Copyright Google
+* [commrecruiter05.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -230,7 +230,7 @@ Image Details:
 Here’s a good example of a positive response from a candidate to a recruiter. What are some things Jane did well here? 
 
 Image Details:
-* [commrecruiter06.png](http://www.google.com): Copyright Google
+* [commrecruiter06.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -264,7 +264,7 @@ What would be some things to include in an email to a recruiter for a role you a
 This could be sent as an email or copied and pasted into LinkedIn messages. Just remember best practices of spelling the recruiter’s name correctly and making sure details are correct. If you want to connect over LinkedIn or otherwise, keep this person in your contacts (even if this role is not a good fit at this time), and then follow up promptly on doing so. Keep it brief. Even if you give a specific detail on why this is not a fit, you don’t have to get too specific. Remember that it is not okay to lie, so keep it honest and courteous.
 
 Image Details:
-* [commrecruiter07.png](http://www.google.com): Copyright Google
+* [commrecruiter07.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

@@ -194,7 +194,7 @@ Let’s take a count of who has which primary and secondary color.
 *Write names or tally marks to represent each student participating on chart paper or a whiteboard.*
 
 Image Details:
-* [personalitystyles06.png](http://www.google.com): Copyright Google
+* [personalitystyles06.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

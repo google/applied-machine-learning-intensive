@@ -30,7 +30,7 @@ A life path is a visual mapping of the significant events or time periods that h
 You can draw as little or as much as you want to but you will only have two minutes to present.  If you aren’t comfortable with symbols or art, feel free to substitute with written words instead. Again, it’s up to you to disclose as much or as little as you want.
 
 Image Details:
-* [lifepaths01.png](http://www.google.com): Copyright Google
+* [lifepaths01.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -48,7 +48,7 @@ Image Details:
 Here’s my life path. First, ___ … Last, ____. Thank you for listening. 
 
 Image Details:
-* [lifepaths02.png](http://www.google.com): Copyright Google
+* [lifepaths02.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -67,7 +67,7 @@ Now our instructors will take a few moments to share their own life paths.
 *Facilitator models thanking the instructors for presenting. Either make a point of saying a brief, encouraging remark about each person’s life path while presenting OR simply say “thank you for sharing.” Try not to remark about some people’s life paths but not others.*
 
 Image Details:
-* [lifepaths03.png](http://www.google.com): Copyright Google
+* [lifepaths03.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
