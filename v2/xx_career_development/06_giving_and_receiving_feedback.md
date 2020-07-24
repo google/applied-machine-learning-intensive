@@ -116,6 +116,9 @@ Significant research supports the assertion that we are capable of growing our i
 Here are some best practices for giving feedback. How you deliver the feedback can depend on the situation and the person on the receiving end, but these are generally helpful guidelines to keep in mind when delivering feedback.
 
 Are there other best practices you can think of?
+
+Image Details:
+* [feedback02.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -127,6 +130,9 @@ Let’s apply those best practices to some examples. What’s the difference bet
 
 Truly helpful: “I” statement, behavior- and observation-focused, balanced, looking toward the future
 Er...not so helpful…: person-focused, vague, unkind, entirely critical, “you” statements
+
+Image Details:
+* [feedback03.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -138,6 +144,9 @@ What about this one? What’s the difference between the two pieces of feedback 
 
 Truly helpful: “I” statement, behavior- and observation-focused, balanced, looking toward the future
 Er...not so helpful…: person-focused, vague, unkind, entirely critical, “you” statements
+
+Image Details:
+* [feedback04.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -149,6 +158,9 @@ Here’s a last example. What do you think?
 
 Truly helpful: “I” statement, behavior- and observation-focused, balanced, looking toward the future
 Er...not so helpful…: person-focused, vague, unkind, entirely critical, “you” statements
+
+Image Details:
+* [feedback05.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
