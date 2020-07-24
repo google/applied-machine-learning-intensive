@@ -28,7 +28,7 @@ Just to name a few, we've used dense layers, dropout layers, convolutional layer
 Here we see a typical feedforward neuron. Depending on the size of the layers before and after, one or more weights feed into the neuron. These are multiplied by the bias, summed, and then passed through an activation function. The resultant value is then passed to the nodes in the next layer of the network.
 
 Image Details:
-* [ff_neuron.png](https://www.google.com): Copyright Google
+* [ff_neuron.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -45,7 +45,7 @@ Imagine we have a fully connected layer that is 10 nodes wide before this neuron
 What does this do? This gives the neuron memory over time. It allows you to pass a series of data points into the network over time.
 
 Image Details:
-* [r_neuron.png](https://www.google.com): Copyright Google
+* [r_neuron.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -60,7 +60,8 @@ This is what it would look like to "unroll" the flow of data through a recurrent
 Also note that we're looking at a single neuron in a layer with one input and one output. In reality you'll have wide layers, so imagine multiple recurrent nodes side by side, each with multiple inputs and outputs.
 
 Image Details:
-* [unrolled.png](https://www.google.com): Copyright Google
+* [unrolled.png](https://opensource.google/docs/copyright/): Copyright Google
+
 -->
 
 ---
@@ -86,7 +87,7 @@ The numbered gates in order are:
 LSTM cells are often higher-performing than standard recurrent cells. They also often train faster than standard recurrent cells.
 
 Image Details:
-* [lstm_neuron.png](https://www.google.com): Copyright Google
+* [lstm_neuron.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

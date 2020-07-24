@@ -58,7 +58,7 @@ wide variety of choice in what languages and libraries they use. In this course,
 we will use Python.
 
 Image Details:
-* [notebook.png](http://www.google.com): Copyright Google
+* [notebook.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

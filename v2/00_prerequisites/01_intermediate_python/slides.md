@@ -37,7 +37,7 @@ Let's consider an example where a teacher wants to create a program where they c
   * How could they organize all this capability in one program?
 
 Image Details:
-* [intermediatepython01.png](http://www.google.com): Copyright Google
+* [intermediatepython01.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -53,7 +53,7 @@ We can use classes to create objects that have attributes and methods.
 Look at the code and decide what looks familiar/new and maybe even predict how those new items will work.
 
 Image Details:
-* [intermediatepython02.png](http://www.google.com): Copyright Google
+* [intermediatepython02.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -78,7 +78,7 @@ Looking at the code...
 * Methods → This is a collection of functions that can be run on an object of a given class.
 
 Image Details:
-* [intermediatepython03.png](http://www.google.com): Copyright Google
+* [intermediatepython03.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 --- 
@@ -91,7 +91,7 @@ Image Details:
 Now let's break it all down in more detail. 
 
 Image Details:
-* [intermediatepython04.png](http://www.google.com): Copyright Google
+* [intermediatepython04.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 --- 
@@ -110,7 +110,7 @@ Every class needs a constructor to show the computer what data members it should
 Now that we have an instance of a class, we can manipulate that instance with methods defined in the class.
 
 Image Details:
-* [intermediatepython05.png](http://www.google.com): Copyright Google
+* [intermediatepython05.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -130,7 +130,7 @@ This type of method is called a “getter” method, as it's used to get access 
   * We will see why this might be necessary later.
 
 Image Details:
-* [intermediatepython06.png](http://www.google.com): Copyright Google
+* [intermediatepython06.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -149,7 +149,7 @@ Notice how you call the function.
 This type of method is called a “setter,” and we will see why later.
 
 Image Details:
-* [intermediatepython07.png](http://www.google.com): Copyright Google
+* [intermediatepython07.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -166,7 +166,7 @@ These are methods that are only helper methods to others in the class and cannot
 Let's see how the helper method _check_id can be useful. 
 
 Image Details:
-* [intermediatepython08.png](http://www.google.com): Copyright Google
+* [intermediatepython08.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -179,7 +179,7 @@ Image Details:
 Here we can see that having the private helper function can stop you from accidentally messing up and adding a grade for an unknown student.
 
 Image Details:
-* [intermediatepython09.png](http://www.google.com): Copyright Google
+* [intermediatepython09.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -202,7 +202,7 @@ Helpful reads:
 * https://dbader.org/blog/meaning-of-underscores-in-python
 
 Image Details:
-* [intermediatepython10.png](http://www.google.com): Copyright Google
+* [intermediatepython10.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -217,7 +217,7 @@ Ask students to break into pairs and discuss what they think will be printed in 
 }
 
 Image Details:
-* [intermediatepython11.png](http://www.google.com): Copyright Google
+* [intermediatepython11.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -233,7 +233,7 @@ print(Elon.get_grade()) - This works! Our method is accessible outside of our cl
 print(Elon._Student__grade) - This works, too! If you add the class name before the variable or method name, you are allowed to access internal variables and methods.
 
 Image Details:
-* [intermediatepython12.png](http://www.google.com): Copyright Google
+* [intermediatepython12.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -251,7 +251,7 @@ You can write functions outside of classes that will interact with objects much 
 Notice how student_id is an attribute and does not require (), while get_grade is a method and does require (). 
 
 Image Details:
-* [intermediatepython14.png](http://www.google.com): Copyright Google
+* [intermediatepython14.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -264,7 +264,7 @@ Image Details:
 Go through each naming convention. It may be helpful to save this slide as a reference.  
 
 Image Details:
-* [intermediatepython13.png](http://www.google.com): Copyright Google
+* [intermediatepython13.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -277,7 +277,7 @@ Image Details:
 Here we see a scenario where it's helpful to have a way to make classes closely related, as they share similar data structures.
 
 Image Details:
-* [intermediatepython15.png](http://www.google.com): Copyright Google
+* [intermediatepython15.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 --- 
@@ -306,7 +306,7 @@ Helpful reads:
 * Also Multiple inheritance in Python (https://pythonbasics.org/multiple-inheritance/)
 
 Image Details:
-* [intermediatepython16.png](http://www.google.com): Copyright Google
+* [intermediatepython16.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -317,7 +317,7 @@ Image Details:
 Walk through the different variables and reinforce the super() concept.
 
 Image Details:
-* [intermediatepython17.png](http://www.google.com): Copyright Google
+* [intermediatepython17.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -331,7 +331,7 @@ Image Details:
 Methods can also be inherited and can be overwritten by child classes. We can call inherited methods on Elon our student, just like normal. Or we can modify methods inside a child class and override the parent method.
 
 Image Details:
-* [intermediatepython18.png](http://www.google.com): Copyright Google
+* [intermediatepython18.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -360,7 +360,7 @@ Hints:
 }
 
 Image Details:
-* [intermediatepython19.png](http://www.google.com): Copyright Google
+* [intermediatepython19.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -376,7 +376,7 @@ Walk through each of the listed ways to generate a list of data.
 None of these are very elegant. Can we think of a more efficient way?
 
 Image Details:
-* [intermediatepython20.png](http://www.google.com): Copyright Google
+* [intermediatepython20.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -402,7 +402,7 @@ The list comprehension always returns a new list, which contains the result of e
 The expression can be anything - from a simple variable to a complex function call - which makes list comprehensions very flexible.
 
 Image Details:
-* [intermediatepython21.png](http://www.google.com): Copyright Google
+* [intermediatepython21.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -418,7 +418,7 @@ Ask students to try to rewrite the for loop on this slide as a list comprehensio
 }
 
 Image Details:
-* [intermediatepython22.png](http://www.google.com): Copyright Google
+* [intermediatepython22.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -431,7 +431,7 @@ Image Details:
 We can see that it follows the exact formula at the bottom of the slide and can still use our for loop without the variable.
 
 Image Details:
-* [intermediatepython23.png](http://www.google.com): Copyright Google
+* [intermediatepython23.png](https://opensource.google/docs/copyright/): Copyright Google
 --> 
 
 --- 
@@ -444,7 +444,7 @@ Image Details:
 If you want to check something before adding it to the list, you can, by using an if statement.
 
 Image Details:
-* [intermediatepython24.png](http://www.google.com): Copyright Google
+* [intermediatepython24.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -460,7 +460,7 @@ Ask students to try to make the for loop on this slide into a list comprehension
 }
 
 Image Details:
-* [intermediatepython25.png](http://www.google.com): Copyright Google
+* [intermediatepython25.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -473,7 +473,7 @@ Image Details:
 Here is the answer. What kind of list will we end up with?
 
 Image Details:
-* [intermediatepython26.png](http://www.google.com): Copyright Google
+* [intermediatepython26.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -487,5 +487,5 @@ Image Details:
 Because we added the condition that x had to be an even number (dividing by two gave no remainder), we only got five items in this list instead of 10, even though we looped over all the numbers in range(10).
 
 Image Details:
-* [intermediatepython27.png](http://www.google.com): Copyright Google
+* [intermediatepython27.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
