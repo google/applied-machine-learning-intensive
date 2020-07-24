@@ -23,7 +23,7 @@ Loss functions are essential to machine learning. At its core, machine learning 
 Two of the most common loss functions for regression are called L1 and L2. L1 is used to minimize the sum of *absolute* differences between the true value and the predicted value of all samples, and L2 is used to minimize the sum of *squared* differences.
 
 Image Details:
-* [lossfunction1.png](http://www.google.com): Copyright Google
+* [lossfunction1.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -38,7 +38,7 @@ It’s common to either take the sum or average of all data points to calculate 
 You should choose a loss function based on your specific problem and dataset. L1, L2, and MSE are used for regression problems. We’ll discuss loss functions used for other machine learning problems, such as classification, later.
 
 Image Details:
-* [lossfunction2.png](http://www.google.com): Copyright Google
+* [lossfunction2.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -52,7 +52,7 @@ Image Details:
 Let's work through an example of calculating L1 loss, starting from data values and predictions.
 
 Image Details:
-* [lossfunction3.png](http://www.google.com): Copyright Google
+* [lossfunction3.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -65,7 +65,7 @@ Image Details:
 The first step is to find the differences (y_true - y_predicted).
 
 Image Details:
-* [lossfunction4.png](http://www.google.com): Copyright Google
+* [lossfunction4.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -78,7 +78,7 @@ Image Details:
 Take the absolute value of each difference.
 
 Image Details:
-* [lossfunction5.png](http://www.google.com): Copyright Google
+* [lossfunction5.png](https://opensource.google/docs/copyright/): Copyright Google
 
 -->
 
@@ -93,7 +93,7 @@ Image Details:
 Add all absolute value differences. This is the L1 loss of your model.
 
 Image Details:
-* [lossfunction6.png](http://www.google.com): Copyright Google
+* [lossfunction6.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 
@@ -108,7 +108,7 @@ Image Details:
 Now, we'll work through the same example, but calculate L2 loss instead.
 
 Image Details:
-* [lossfunction7.png](http://www.google.com): Copyright Google
+* [lossfunction7.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 
@@ -122,7 +122,7 @@ Image Details:
 The first step is again to find the differences (y_true - y_predicted).
 
 Image Details:
-* [lossfunction8.png](http://www.google.com): Copyright Google
+* [lossfunction8.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 
@@ -136,7 +136,7 @@ Image Details:
 Now square each difference.
 
 Image Details:
-* [lossfunction9.png](http://www.google.com): Copyright Google
+* [lossfunction9.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -149,7 +149,7 @@ Image Details:
 Add the squared differences. This is the L2 loss of your model.
 
 Image Details:
-* [lossfunction10.png](http://www.google.com): Copyright Google
+* [lossfunction10.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 
@@ -172,7 +172,7 @@ Image Details:
 }
 
 Image Details:
-* [lossfunction11.png](http://www.google.com): Copyright Google
+* [lossfunction11.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -198,7 +198,7 @@ Have students compare their answers with a neighbor and work through any discrep
 *Prompt students for answers.*
 
 Image Details:
-* [lossfunction12.png](http://www.google.com): Copyright Google
+* [lossfunction12.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -214,5 +214,5 @@ Image Details:
 *Answer: L2 is more sensitive to outliers in the data set because squaring the difference makes the difference more extreme.*
 
 Image Details:
-* [lossfunction12.png](http://www.google.com): Copyright Google
+* [lossfunction13.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
