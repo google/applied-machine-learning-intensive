@@ -39,7 +39,7 @@ It looks like a table, which consists of rows and columns.
 The first row contains column headers.
 
 Image Details:
-* [dataframe.png](http://www.google.com): Copyright Google
+* [dataframe.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -55,7 +55,7 @@ Pandas Series is one-dimensional and contains a homogeneously-typed array.
 So, in summary, a DataFrame contains one or more Series.
 
 Image Details:
-* [dataframe-column.png](http://www.google.com): Copyright Google
+* [dataframe-column.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -71,7 +71,7 @@ Last, the first column is an index column.
 In this case it’s numeric values, but it can be non-numeric as you’ll see as you dig deeper into Pandas usage.
 
 Image Details:
-* [dataframe-index.png](http://www.google.com): Copyright Google
+* [dataframe-index.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -177,7 +177,7 @@ my_dataframe.shape()
 shape() prints (number of rows, number of columns)
 
 Image Details:
-* [shape.png](http://www.google.com): Copyright Google
+* [shape.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -198,7 +198,7 @@ my_dataframe.head()
 head() prints the full contents of the first 5 rows.
 
 Image Details:
-* [head.png](http://www.google.com): Copyright Google
+* [head.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -219,7 +219,7 @@ my_dataframe.tail()
 tail() prints the full contents of the last 5 rows.
 
 Image Details:
-* [tail.png](http://www.google.com): Copyright Google
+* [tail.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -242,7 +242,7 @@ describe() gives statistics such as mean and median about numerical data.
 Note that any columns without numerical data are not included.
 
 Image Details:
-* [describe.png](http://www.google.com): Copyright Google
+* [describe.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 
@@ -264,7 +264,7 @@ my_dataframe.hist()
 hist() visualizes the frequency of various results for one or more numerical columns.
 
 Image Details:
-* [hist.png](http://www.google.com): Copyright Google
+* [hist.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

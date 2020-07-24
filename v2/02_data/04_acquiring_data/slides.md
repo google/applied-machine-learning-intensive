@@ -49,7 +49,7 @@ Click on the "Files" icon.
 First, click 'Files' (a small folder icon) on the left side of the screen.
 
 Image Details:
-* [files.png](http://www.google.com): Copyright Google
+* [files.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -62,7 +62,7 @@ Image Details:
 Next, click on the 'Upload' link.
 
 Image Details:
-* [upload.png](http://www.google.com): Copyright Google
+* [upload.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -76,7 +76,7 @@ You will then be presented with a file selector dialog box. Find the file on
 your local machine, and then click the 'Open' button.
 
 Image Details:
-* [file-selector.png](http://www.google.com): Copyright Google
+* [file-selector.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -100,7 +100,7 @@ a file, you will want to download the file before the Colab runtime gets
 recycled.
 
 Image Details:
-* [warning.png](http://www.google.com): Copyright Google
+* [warning.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -114,7 +114,7 @@ Once your file is uploaded, you will be able to see it in the left 'Files' panel
 of Colab.
 
 Image Details:
-* [uploaded-files.png](http://www.google.com): Copyright Google
+* [uploaded-files.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -134,7 +134,7 @@ uploads you do will go to root and not to `/content/`.
 Why does this matter?
 
 Image Details:
-* [root-folder.png](http://www.google.com): Copyright Google
+* [root-folder.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -169,7 +169,7 @@ the data on our local computer and then we copy/upload that data to Colab
 running on the cloud.
 
 Image Details:
-* [to-cloud.png](http://www.google.com): Copyright Google
+* [to-cloud.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -187,7 +187,7 @@ This is especially true in a classroom setting where many of us are uploading
 and downloading large files at the same time. 
 
 Image Details:
-* [to-from-cloud.png](http://www.google.com): Copyright Google
+* [to-from-cloud.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -203,7 +203,7 @@ bring it down to your local computer. You can write code in Colab to perform
 are copied and reduces the transfers over your network connection.
 
 Image Details:
-* [cloud-to-cloud.png](http://www.google.com): Copyright Google
+* [cloud-to-cloud.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -336,7 +336,7 @@ After you have downloaded the file to your local machine, you can then upload it
 to Colab.
 
 Image Details:
-* [kaggle-download.png](http://www.google.com): Copyright Google
+* [kaggle-download.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
