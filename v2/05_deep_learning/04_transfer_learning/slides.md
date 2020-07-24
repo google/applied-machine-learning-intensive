@@ -31,7 +31,7 @@ Well, yes and no.
 We do indeed learn in self-guided ways by looking at examples. But we also learn through the transfer of knowledge. Others can provide insights that can be used to accelerate our learning process.
 
 Image Details:
-* [learning.jpeg](https://www.pexels.com/photo/girls-on-desk-looking-at-notebook-159823/): Pexels License
+* [learning.jpg](https://www.pexels.com/photo/girls-on-desk-looking-at-notebook-159823/): Pexels License
 -->
 
 ---

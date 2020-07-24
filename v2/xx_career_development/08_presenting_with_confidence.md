@@ -78,6 +78,9 @@ Next is power. Regardless of whether you speak quietly or loudly in day-to-day c
 Pausing allows you time to think, and it can be effectively used to create anticipation. Sometimes silence can get people’s attention more than speaking. It also allows sufficient time for an audience to fully absorb your message.
 
 Which of these is something you think your presentation skills should improve on? Or what do you feel like you do well?
+
+Image Details:
+* [presentconfidence02.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -94,6 +97,9 @@ It’s important that your slides, tone, and overall presentation are consistent
 A presentation should be a simple representation of pieces of information. It only acts as a visual aid to the broader story, project, or conversation. Therefore, the key points in this deck would be explained verbally in a presentation rather than all piled onto a slide.
 
 For all slides, apply the 3-second rule. People should be able to glean the point you're trying to convey on a slide within three seconds or less.
+
+Image Details
+* [presentconfidence03.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
