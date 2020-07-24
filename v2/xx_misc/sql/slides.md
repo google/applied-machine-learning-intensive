@@ -33,19 +33,19 @@ Standard?
 
 <!--
 * SQL queries often categorized into several type database operations
-  * DDL - mainly for managing database objects -- Create & Drop (delete) table for example, Alter
-  * DML - for managing rows of data -- Insert & Delete: create or delete rows of data *Update: modify the values of one or more columns of row data
-  * DCL - for managing access to the database objects -- Grant & Revoke: read or write access
-  -->
-  
-  ---
-  
+  * DDL - mainly for managing database objects - Create & Drop (delete) table for example, Alter
+  * DML - for managing rows of data - Insert & Delete: create or delete rows of data *Update: modify the values of one or more columns of row data
+  * DCL - for managing access to the database objects - Grant & Revoke: read or write access
+-->
+
+---
+
 # Query
 
 * Data Query Language (DQL)
   * **SELECT** COLUMN(S)
   * **FROM** TABLE(S)
-  
+
 <!--
 And the most common is DQL - which is for selecting the appropriate subset of data that we need
 * The basic syntax is SELECT one or more columns FROM one or more tables
@@ -67,6 +67,9 @@ The columns are:
 * Employee Name
 * Employee Dept ID
 * Employee Salary
+
+Image Details:
+* [introSQL01.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -84,6 +87,9 @@ Let’s review our first query!
    * 2 columns: ID and Name
   * From a table named Employee
   * Results in all the values of the columns ID and Name
+
+Image Details:
+* [introSQL01.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -95,6 +101,9 @@ Let’s review our first query!
 <!--
 Here’s the output of the previous slide’s query
 Any questions?
+
+Image Details:
+* [introSQL02.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -123,12 +132,21 @@ Now, we don’t always want to get all the values of particular column(s).  That
 * WHERE ID < 1002 is the filter and ID < 1002 is the conditional
 * So, only rows of data that have an Employee ID smaller than 1002 will be selected.  How many rows would the query results be?
 
+<!--
+Image Details:
+* [introSQL01.png](https://opensource.google/docs/copyright/): Copyright Google
+-->
+---
+
 # Filtering
 
 ![](res/introSQL03.png)
 
 <!--
 Correct!  Only 1 row with ID = 1001
+
+Image Details:
+* [introSQL03.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -142,6 +160,9 @@ Correct!  Only 1 row with ID = 1001
 <!--
 What happens if we change the conditional operator from < to <=?
 <= 1002 means Employee ID less than or equal to 1002
+
+Image Details:
+* [introSQL01.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 # Filtering
@@ -150,6 +171,9 @@ What happens if we change the conditional operator from < to <=?
 
 <!--
 In this case, the query resulted in 2 rows with Employee IDs of 1001 and 1002
+
+Image Details:
+* [introSQL04.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 # Operators
@@ -199,6 +223,9 @@ In this case, the query resulted in 2 rows with Employee IDs of 1001 and 1002
 Let’s do the same query as before except we’ll add ORDER BY to sort the results by Name column
 * The filtering will happen first
 * Then, the sorting
+
+Image Details:
+* [introSQL01.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -209,6 +236,9 @@ Let’s do the same query as before except we’ll add ORDER BY to sort the resu
 
 <!--
 And, the results differs from previous example as row with Employee ID 1002 comes first because Employee Name Ben comes before Thomas in the ascending sort order
+
+Image Details:
+* [introSQL05.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -242,6 +272,9 @@ This is an example of aggregation query, and:
  * Each result row will have 2 columns:
  * Dept ID
  * Average of Employee Salary
+
+Image Details:
+* [introSQL01.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -249,6 +282,12 @@ This is an example of aggregation query, and:
 # Aggregating
 
 ![](res/introSQL06.png)
+
+<!--
+
+Image Details:
+* [introSQL06.png](https://opensource.google/docs/copyright/): Copyright Google
+-->
 
 ---
 
@@ -258,6 +297,12 @@ This is an example of aggregation query, and:
 
 ![](res/introSQL01.png)
 
+<!--
+
+Image Details:
+* [introSQL01.png](https://opensource.google/docs/copyright/): Copyright Google
+-->
+
 ---
 
 # Filtering aggregated results
@@ -266,6 +311,9 @@ This is an example of aggregation query, and:
 
 <!--
 While WHERE is used to filter rows, we need to use HAVING to filter aggregated results.
+
+Image Details:
+* [introSQL07.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -322,6 +370,9 @@ Naturally the 2 tables are joined on Dept ID column, by specifying:
 * WHERE Employee.DeptID = Department.DeptID
 Once the join happens, you could select any columns from either table.  In this case, we are selecting all the available columns:
 *SELECT *
+
+Image Details:
+* [introSQL08.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -332,6 +383,9 @@ Once the join happens, you could select any columns from either table.  In this 
 
 <!--
 And, here’s the resulting output of the query
+
+Image Details:
+* [introSQL09.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -346,12 +400,15 @@ A few more useful keywords before you’ll practice with Introduction to SQL col
  * Use to only show the first X rows of query results
  * Useful as sometime the query results can return a very large number of rows
  * Caution: using LIMIT does not impact the execution of the query, just the display of the final output.  This means even though you’re only seeing X number of rows, the query still compute through all the rows which use up computing resources
-* AS: use to alias a column name, and useful when: 
+* AS: use to alias a column name, and useful when:
  * Have a long column name
  * Want a more descriptive column name in the query result instead of the default column name from the source table
 * Alias can also be used for table name, but noticed it does not require AS keyword
 * Arithmetic: you can perform arithmetic on column, for example:
  * Show the employee salary in $K rather than $ amount
+
+Image Details:
+* [introSQL10.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
