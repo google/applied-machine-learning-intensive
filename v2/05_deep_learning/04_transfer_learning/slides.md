@@ -66,7 +66,7 @@ As you can decipher from the data flow arrow, data typically still enters the mo
 
 
 Image Details:
-* [high-level.png](http://www.google.com): Copyright Google
+* [high-level.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -97,7 +97,7 @@ In most classification problems, we have multiple layers of high-dimensional mat
 We don't want to flatten the data before feeding it to our extended model, so instead we need to use an intermediate high-dimensional layer.
 
 Image Details:
-* [which-output.png](http://www.google.com): Copyright Google
+* [which-output.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -112,7 +112,7 @@ We need to introduce a little modelling terminology at this point. You sometimes
 Many papers illustrate models with the input layer at the bottom and the output layer at the top of diagrams. For this reason, culture now dictates that the "bottom" of a model is the input, and the "top" of a model is the output.
 
 Image Details:
-* [bottom-top.png](http://www.google.com): Copyright Google
+* [bottom-top.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -125,7 +125,7 @@ Image Details:
 This terminology is important because some models allow you to choose to include the "top" of the model or not. If you leave out the top, then you get a higher-dimensional input for your custom model, which is typically a good thing.
 
 Image Details:
-* [new-top.png](http://www.google.com): Copyright Google
+* [new-top.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
