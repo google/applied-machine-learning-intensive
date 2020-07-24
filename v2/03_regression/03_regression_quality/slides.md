@@ -117,7 +117,7 @@ Image Details:
 Now we have a situation where there is an obvious bias. All predictions are higher than the actual values, so the model needs to be adjusted to make smaller predictions.
 
 Image Details:
-* [predicted_vs_actual.png](http://www.google.com): Copyright Google
+* [predicted_vs_actual_positive_bias.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

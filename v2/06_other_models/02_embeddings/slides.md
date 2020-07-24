@@ -29,7 +29,7 @@ This has two main problems:
 2) We may need huge vectors to encode all possible items.
 
 Image Details:
-* [embeddings01.png](http://www.google.com): Unlicensed 
+* [embeddings01.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -51,7 +51,7 @@ In this simple example, "hotel" and "motel" are words coming from a dataset cont
 Higher dimension = more descriptive, but the model takes more data and more time to learn.
 
 Image Details:
-* [embeddings02.png](http://www.google.com): Unlicensed 
+* [embeddings02.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -92,7 +92,7 @@ embedding_layer = keras.layers.Embedding(15, 4)
 Similar to a Python dictionary or hash table, the embedding layer acts as a “lookup table” where each item has a unique index that is used to look up its corresponding embedding. This particular table has 15 rows, corresponding to unique items, and 4 columns, one for each embedding dimension. You’ll investigate this more in the colab.
 
 Image Details:
-* [embeddings04.png](http://www.google.com): Unlicensed
+* [embeddings03.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -103,7 +103,7 @@ Image Details:
 One of the big advantages of embeddings is that they can meaningfully represent items and relationships between items in a way we can easily visualize. Here we can see the embeddings for “hotel” and “resort” are fairly close. Based on the dataset used to train these embeddings, this means these two words are used in similar contexts.
 
 Image Details:
-* [embeddings05.png](http://www.google.com): Unlicensed
+* [embeddings04.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

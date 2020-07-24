@@ -82,7 +82,7 @@ Image Details:
 Here is an example of a model returning confusing predictions. The model is highly confident that the image contains either an orange or a grapefruit. What would you do in this situation?
 
 Image Details:
-* [grapefruit.png](https://pixabay.com/photos/grapefruit-fruit-vitamins-1647507/): Pixabay License
+* [grapefruit.jpg](https://pixabay.com/photos/grapefruit-fruit-vitamins-1647507/): Pixabay License
 -->
 
 ---
@@ -135,7 +135,7 @@ Think of the two classes as one “positive” and one “negative” class.
 
 
 Image Details:
-* [confusion_matrix.png](http://www.google.com): Copyright Google
+* [confusion-matrix.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
