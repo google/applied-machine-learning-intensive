@@ -125,7 +125,7 @@ Hovering above or below a current cell will bring up the option to add a new cod
 You can run code cells and typeset text cells using Shift+Enter.
 
 Image Details:
-* [notebook_cells.png](http://www.google.com): Copyright Google
+* [notebook_cells.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -147,7 +147,7 @@ As of January 1, 2020, the Python team no longer supports Python 2. And as of th
 Writing Python code in a notebook is just like writing Python code anywhere else.
 
 Image Details:
-* [python_print.png](http://www.google.com): Copyright Google
+* [python_print.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -256,7 +256,7 @@ You can create numbered and bulleted lists. What is shown here is what the user 
 You can also easily create sublists.
 
 Image Details:
-* [nested-list.png](http://www.google.com): Copyright Google
+* [nested-list.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -307,7 +307,7 @@ Java | James Gosling
 Tables are created using | and -. They will be formatted automatically with lines at each delimiter.
 
 Image Details:
-* [table.png](http://www.google.com): Copyright Google
+* [table.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -332,7 +332,7 @@ LaTeX is a powerful document preparation system for typesetting mathematical equ
 https://www.latex-project.org/help/documentation/
 
 Image Details:
-* [latex.png](http://www.google.com): Copyright Google
+* [latex.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
