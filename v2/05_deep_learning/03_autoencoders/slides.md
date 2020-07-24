@@ -39,7 +39,7 @@ The goal of the encoder is to take some form of input data and reduce it down to
 But there has to be some way to know if this smaller representation is useful. We do that with the decoder.
 
 Image Details:
-* [encoder.png](http://www.google.com): Copyright Google
+* [encoder.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -56,7 +56,7 @@ We haven't really seen this before. The networks we have built tend to get narro
 How do we do this?
 
 Image Details:
-* [decoder.png](http://www.google.com): Copyright Google
+* [decoder.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -97,7 +97,7 @@ The encoder finds an efficient representation for the data. The decoder is able 
 This is "lossy" compression. The output of the model is not typically exactly what was put in, but is hopefully a reasonable approximation.
 
 Image Details:
-* [autoencoder.png](http://www.google.com): Copyright Google
+* [autoencoder.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---

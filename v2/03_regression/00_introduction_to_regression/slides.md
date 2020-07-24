@@ -232,7 +232,7 @@ L2 Loss is also called least squares (LS). Generally, L2 loss is preferred to L1
 Mean Squared Error (MSE) is the average of the squared differences between predicted targets and actual targets. Due to squaring, predictions which are far away from actual values are penalized heavily in comparison to less deviated predictions (similar to L2). MSE also has nice mathematical properties which make it easier to calculate gradients, which are used to update the model parameters (weights and biases).
 
 Image Details:
-* [regression20.png](http://www.google.com): Copyright Google
+* [regression20.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -336,7 +336,7 @@ Image Details:
 Here theta_0 is the bias and theta_1 is the weight (i.e. theta_0 = b and theta_1 = m).
 
 Image Details:
-* [regression25.png](http://www.google.com): Copyright Google
+* [regression25.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -349,7 +349,7 @@ Image Details:
 Using matrix/vector notation we can rewrite the equation of the line more compactly as theta^(transpose) X.
 
 Image Details:
-* [regression26.png](http://www.google.com): Copyright Google
+* [regression26.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -376,7 +376,7 @@ Image Details:
 Again, we can use theta^(transpose) X to represent the regression equation.
 
 Image Details:
-* [regression28.png](http://www.google.com): Copyright Google
+* [regression28.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
