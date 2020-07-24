@@ -127,7 +127,7 @@ https://unsplash.com/photos/_Jb1TF3kvsA
 Pie charts are great for representing data that is in the form of fractions adding up to one or percentages adding up to 100. They create a natural comparison between portions of a whole.
 
 Image Details:
-* [pie-chart.png)(http://www.google.com): Copyright Google
+* [pie-chart.png)(https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -149,7 +149,7 @@ It would appear better as a bar chart, comparing the pieces side-by-side, rather
 }
 
 Image Details:
-* [bad-pie-chart.png](http://www.google.com): Copyright Google
+* [bad-pie-chart.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -170,7 +170,7 @@ Why?:
 In general, bar charts are good for representing categorical data, as the x-axis can be used to represent categories very easily, and the bars create a natural comparison between categories.
 
 Image Details:
-* [bar-chart.png](http://www.google.com): Copyright Google
+* [bar-chart.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -193,7 +193,7 @@ order of size. But since these x values have a meaningful ordering, we can’t
 construct the chart for max readability.
 
 Image Details:
-* [bad-bar-chart.png](http://www.google.com): Copyright Google
+* [bad-bar-chart.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -216,7 +216,7 @@ Why?:
 In general, a line graph is a fantastic choice for data that could be well fit with a function (i.e. an x,y category where every x has just one corresponding y value, and where the x,y pairs strongly correlate in a mathematical way). It allows you to make inferences on what values that weren’t in the original dataset might be expanding your ability to analyze your data.
 
 Image Details:
-* [line-chart.png](http://www.google.com): Copyright Google
+* [line-chart.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -235,7 +235,7 @@ Problems:
   * Example: Does an extra ½ hour of swimming per week really boost your max distance an extra little bit, or is it actually that you have to jump to a whole hour?
 
 Image Details:
-* [bad-line-chart.png](http://www.google.com): Copyright Google
+* [bad-line-chart.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -254,7 +254,7 @@ Why?:
 In general if you have x,y data where you have multiple y values for every x, a scatter plot is a good choice as it allows you to see all the data clearly and doesn’t average out y values for a given x like a line graph would.
 
 Image Details:
-* [scatter-plot.png](http://www.google.com): Copyright Google
+* [scatter-plot.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -271,7 +271,7 @@ Problems:
 * There may be a higher concentration of points in some areas, but in this format we cannot tell.
 
 Image Details:
-* [bad-scatter-plot.png](http://www.google.com): Copyright Google
+* [bad-scatter-plot.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -299,7 +299,7 @@ Answers:
 * Data representing different proportions of a whole (percentages)
 
 Image Details:
-* [heat-map.png](http://www.google.com): Copyright Google
+* [visualizationscatyawn2.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
@@ -349,7 +349,7 @@ Here are some example visualizations of the candy count:
 * Line graph - not good, draw a correlation where there is none in the space between chocolate types - masks the true values
 
 Image Details:
-* [candy-count-charts.png](http://www.google.com): Copyright Google
+* [candy-count-charts.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
