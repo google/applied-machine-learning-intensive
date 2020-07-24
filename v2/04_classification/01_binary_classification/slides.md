@@ -101,6 +101,9 @@ Grid search tries every combination of parameters and finds which performs the b
 
 <!--
 We will also create our first confusion matrix in this lab. Remember that a confusion matrix shows true and false positives and negatives.
+
+Image Details:
+* [Classification1.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
