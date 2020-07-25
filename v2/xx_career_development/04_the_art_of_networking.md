@@ -17,7 +17,7 @@ Interacting meaningfully with other people to exchange information and develop c
 * Many people believe that networking is something you’re born with; some people are just better than others. The truth is that anyone can learn how to network effectively, and you’ll also improve a lot with practice.
 
 Image Details:
-* [artofnetworking01.jpg](https://unsplash.com/photos/W3Jl3jREpDY): Usplash License
+* [artofnetworking01.jpg](https://unsplash.com/photos/W3Jl3jREpDY): Unsplash License
 -->
 
 ---
