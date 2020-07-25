@@ -25,6 +25,8 @@ def find_images(file_name):
         image_file_name = os.path.split(match.group(1))[-1].strip()
         url = match.group(2).strip()
         license = match.group(3).strip()
+        if url == 'https://opensource.google/docs/copyright/':
+          license = 'Google (confirmed)'
         licenses[image_file_name] = {
             'url': url,
             'license': license,

@@ -3,14 +3,14 @@ There are 418 total images.
 
 ## Images per license:
   *  Pixabay License :  38
-  *  Copyright Google :  313
+  *  Copyright Google :  6
+  *  Google (confirmed) :  307
   *  Unlicensed :  14
-  *  Unsplash License :  32
+  *  Unsplash License :  33
   *  MIT License :  1
   *  Creative Commons Attribution-Share Alike 4.0 International license :  1
   *  Pexels License :  6
   *  Copyright LinkedIn™ :  9
-  *  Usplash License :  1
   *  Externally Linked :  3
 
 ## Images
@@ -55,6 +55,11 @@ There are 418 total images.
   * [ toddler.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//01_what_is_ml/00_introduction/res/toddler.png )
 
 ###  Copyright Google
+  * [ polynomialregression9.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//03_regression/04_polynomial_regression/res/polynomialregression9.png )
+  * [ ide.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//02_data/00_introduction_to_colab/res/ide.png )
+  * [ matlab.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//02_data/00_introduction_to_colab/res/matlab.png )
+
+###  Google (confirmed)
   * [ classification.gif ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//01_what_is_ml/01_introduction_to_models/res/classification.gif )
   * [ Classification1.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//04_classification/01_binary_classification/res/Classification1.png )
   * [ cross_fold.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//04_classification/02_multiclass_classification/res/cross_fold.png )
@@ -115,7 +120,6 @@ There are 418 total images.
   * [ polynomialregression7.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//03_regression/04_polynomial_regression/res/polynomialregression7.png )
   * [ polynomialregression8.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//03_regression/04_polynomial_regression/res/polynomialregression8.png )
   * [ polynomialregression19.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//03_regression/04_polynomial_regression/res/polynomialregression19.png )
-  * [ polynomialregression9.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//03_regression/04_polynomial_regression/res/polynomialregression9.png )
   * [ polynomialregression10.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//03_regression/04_polynomial_regression/res/polynomialregression10.png )
   * [ polynomialregression15.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//03_regression/04_polynomial_regression/res/polynomialregression15.png )
   * [ polynomialregression20.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//03_regression/04_polynomial_regression/res/polynomialregression20.png )
@@ -316,8 +320,6 @@ There are 418 total images.
   * [ visualizationscatyawn2.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//02_data/03_visualizations/res/visualizationscatyawn2.png )
   * [ candy-count-as-bg.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//02_data/03_visualizations/res/candy-count-as-bg.png )
   * [ candy-count-charts.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//02_data/03_visualizations/res/candy-count-charts.png )
-  * [ ide.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//02_data/00_introduction_to_colab/res/ide.png )
-  * [ matlab.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//02_data/00_introduction_to_colab/res/matlab.png )
   * [ notebook_cells.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//02_data/00_introduction_to_colab/res/notebook_cells.png )
   * [ python_print.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//02_data/00_introduction_to_colab/res/python_print.png )
   * [ nested-list.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//02_data/00_introduction_to_colab/res/nested-list.png )
@@ -402,6 +404,7 @@ There are 418 total images.
   * [ commrecruiter03.jpg ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//xx_career_development/res/commrecruiter03.jpg )
   * [ resumeworkshop01.jpg ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//xx_career_development/res/resumeworkshop01.jpg )
   * [ resumeworkshop02.jpg ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//xx_career_development/res/resumeworkshop02.jpg )
+  * [ artofnetworking01.jpg ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//xx_career_development/res/artofnetworking01.jpg )
   * [ artofnetworking02.jpg ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//xx_career_development/res/artofnetworking02.jpg )
   * [ artofnetworking03.jpg ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//xx_career_development/res/artofnetworking03.jpg )
   * [ artofnetworking04.jpg ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//xx_career_development/res/artofnetworking04.jpg )
@@ -437,9 +440,6 @@ There are 418 total images.
   * [ linkedin07.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//xx_career_development/res/linkedin07.png )
   * [ linkedin08.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//xx_career_development/res/linkedin08.png )
   * [ linkedin09.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//xx_career_development/res/linkedin09.png )
-
-###  Usplash License
-  * [ artofnetworking01.jpg ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//xx_career_development/res/artofnetworking01.jpg )
 
 ###  Externally Linked
   * [ logo2_compressed.svg ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2//02_data/03_visualizations/https://matplotlib.org/_static/logo2_compressed.svg )
