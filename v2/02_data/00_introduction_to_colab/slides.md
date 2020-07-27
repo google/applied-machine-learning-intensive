@@ -1,6 +1,19 @@
+---
+
+marp: true
+
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Introduction to Colab
 
-![](https://colab.research.google.com/img/colab_favicon_256px.png)
+![center](https://colab.research.google.com/img/colab_favicon_256px.png)
 
 <!--
 We have talked about machine learning and data science in the abstract.
@@ -14,8 +27,7 @@ Image Details:
 ---
 
 # Traditional Development Environments
-
-![](res/ide.png)
+## Integrated Development Environments
 
 <!--
 Many data scientists choose to use a traditional development environment for
@@ -31,16 +43,13 @@ had experience with them.
 
 These development environments are also useful for developing code supported by
 unit tests and code that will be packaged and deployed on server systems.
-
-Image Details:
-* [ide.png](http://www.google.com): Copyright Google
 -->
 
 ---
 
 # Notebooks
 
-![](res/notebook.png)
+![center](res/notebook.png)
 
 <!--
 Notebooks are another option that you will see regularly, and they are the
@@ -64,8 +73,7 @@ Image Details:
 ---
 
 # Other Options
-
-![](res/matlab.png)
+## MATLAB, etc.
 
 <!--
 The choice of development environments isn't a binary choice between notebooks
@@ -85,9 +93,6 @@ The environment might even change over the course of a project. A data scientist
 might explore and build a small model using a notebook. Later, once the model
 is designed, they might then switch over to a more traditional environment to
 create a deployable package.
-
-Image Details:
-* [matlab.png](http://www.google.com): Copyright Google
 -->
 
 ---
@@ -117,7 +122,7 @@ A good introductory notebook can be found here https://colab.sandbox.google.com/
 
 A notebook contains movable cells which are either code or text cells
 
-![](res/notebook_cells.png)
+![center](res/notebook_cells.png)
 
 <!--
 Hovering above or below a current cell will bring up the option to add a new code or text cell.
@@ -141,7 +146,7 @@ As of January 1, 2020, the Python team no longer supports Python 2. And as of th
 
 # Code Cells: Basic Python Print
 
-![](res/python_print.png)
+![center](res/python_print.png)
 
 <!--
 Writing Python code in a notebook is just like writing Python code anywhere else.
@@ -250,7 +255,7 @@ You can create numbered and bulleted lists. What is shown here is what the user 
 
 **Output:**
 
-![](res/nested-list.png)
+![center](res/nested-list.png)
 
 <!--
 You can also easily create sublists.
@@ -299,7 +304,7 @@ Java | James Gosling
 
 **Output:**
 
-![](res/table.png)
+![center](res/table.png)
 
 .
 
@@ -324,7 +329,7 @@ $\sqrt{3x-1}+(1+x)^2$
 
 **Output:**
 
-![](res/latex.png)
+![center](res/latex.png)
 
 <!--
 LaTeX is a powerful document preparation system for typesetting mathematical equations. Markdown in Colab supports basic LaTeX commands.
