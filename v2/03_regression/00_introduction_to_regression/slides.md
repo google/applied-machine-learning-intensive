@@ -48,7 +48,7 @@ Image Details:
 Linear regression has a simple goal: to find a straight line that best fits a set of data.
 
 Image Details:
-* [regression2.png](http://www.google.com): Copyright Google
+* [regression2.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
