@@ -46,7 +46,8 @@ The 2-class problem is often referred to as "binary classification," for which w
 In the illustration here, you can see that we have two classes of data signified by the red and blue dots. We separate the classes using a line. All data on one side of the line is in the blue class, and all data on the other side of the line is in the red class.
 
 Image Details:
-* [classification.gif](http://www.google.com): Copyright Google
+* [classification.gif](https://opensource.google/docs/copyright/): Copyright Google
+-->
 -->
 
 ---
