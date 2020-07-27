@@ -60,6 +60,7 @@ This model is relatively easy to interpret and train, but it doesn't perform wel
 
 Image Details:
 * [classification.gif](http://www.google.com): Copyright Google
+* [classification.gif](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
