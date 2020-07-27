@@ -3,12 +3,12 @@ There are 418 total images.
 
 ## Images per license:
   *  Pixabay License :  42
-  *  Copyright Google :  7
-  *  Google (confirmed) :  307
+  *  Google (confirmed) :  311
   *  Unsplash License :  33
   *  MIT License :  1
   *  Creative Commons Attribution-Share Alike 4.0 International license :  1
   *  Unlicensed :  9
+  *  Copyright Google :  3
   *  Pexels License :  6
   *  Copyright LinkedIn™ :  9
   *  Externally Linked :  3
@@ -58,21 +58,14 @@ There are 418 total images.
   * [ 01_what_is_ml/00_introduction/res/toddler.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/01_what_is_ml/00_introduction/res/toddler.png )
   * [ 01_what_is_ml/00_introduction/res/tiger.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/01_what_is_ml/00_introduction/res/tiger.png )
 
-###  Copyright Google
-  * [ 04_classification/01_binary_classification/res/classification.gif ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/04_classification/01_binary_classification/res/classification.gif )
-  * [ 04_classification/00_intro_to_classification/res/classification.gif ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/04_classification/00_intro_to_classification/res/classification.gif )
-  * [ 03_regression/04_polynomial_regression/res/polynomialregression9.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/04_polynomial_regression/res/polynomialregression9.png )
-  * [ 03_regression/00_introduction_to_regression/res/regression2.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression2.png )
-  * [ 03_regression/00_introduction_to_regression/res/regression28.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression28.png )
-  * [ 02_data/00_introduction_to_colab/res/ide.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/00_introduction_to_colab/res/ide.png )
-  * [ 02_data/00_introduction_to_colab/res/matlab.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/00_introduction_to_colab/res/matlab.png )
-
 ###  Google (confirmed)
+  * [ 04_classification/01_binary_classification/res/classification.gif ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/04_classification/01_binary_classification/res/classification.gif )
   * [ 04_classification/01_binary_classification/res/Classification1.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/04_classification/01_binary_classification/res/Classification1.png )
   * [ 04_classification/02_multiclass_classification/res/cross_fold.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/04_classification/02_multiclass_classification/res/cross_fold.png )
   * [ 04_classification/xx_classification_gone_wrong/res/classificationgonewrong1.jpeg ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/04_classification/xx_classification_gone_wrong/res/classificationgonewrong1.jpeg )
   * [ 04_classification/xx_classification_gone_wrong/res/classificationgonewrong2.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/04_classification/xx_classification_gone_wrong/res/classificationgonewrong2.png )
   * [ 04_classification/00_intro_to_classification/res/regression.gif ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/04_classification/00_intro_to_classification/res/regression.gif )
+  * [ 04_classification/00_intro_to_classification/res/classification.gif ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/04_classification/00_intro_to_classification/res/classification.gif )
   * [ 04_classification/00_intro_to_classification/res/confusion-matrix.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/04_classification/00_intro_to_classification/res/confusion-matrix.png )
   * [ 04_classification/00_intro_to_classification/res/accuracy.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/04_classification/00_intro_to_classification/res/accuracy.png )
   * [ 04_classification/00_intro_to_classification/res/precision.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/04_classification/00_intro_to_classification/res/precision.png )
@@ -128,6 +121,7 @@ There are 418 total images.
   * [ 03_regression/04_polynomial_regression/res/polynomialregression7.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/04_polynomial_regression/res/polynomialregression7.png )
   * [ 03_regression/04_polynomial_regression/res/polynomialregression8.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/04_polynomial_regression/res/polynomialregression8.png )
   * [ 03_regression/04_polynomial_regression/res/polynomialregression19.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/04_polynomial_regression/res/polynomialregression19.png )
+  * [ 03_regression/04_polynomial_regression/res/polynomialregression9.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/04_polynomial_regression/res/polynomialregression9.png )
   * [ 03_regression/04_polynomial_regression/res/polynomialregression10.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/04_polynomial_regression/res/polynomialregression10.png )
   * [ 03_regression/04_polynomial_regression/res/polynomialregression15.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/04_polynomial_regression/res/polynomialregression15.png )
   * [ 03_regression/04_polynomial_regression/res/polynomialregression20.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/04_polynomial_regression/res/polynomialregression20.png )
@@ -158,6 +152,7 @@ There are 418 total images.
   * [ 03_regression/05_introduction_to_tensorflow/res/introtensorflow3.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/05_introduction_to_tensorflow/res/introtensorflow3.png )
   * [ 03_regression/05_introduction_to_tensorflow/res/introtensorflow4.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/05_introduction_to_tensorflow/res/introtensorflow4.png )
   * [ 03_regression/05_introduction_to_tensorflow/res/introtensorflow8.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/05_introduction_to_tensorflow/res/introtensorflow8.png )
+  * [ 03_regression/00_introduction_to_regression/res/regression2.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression2.png )
   * [ 03_regression/00_introduction_to_regression/res/regression3.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression3.png )
   * [ 03_regression/00_introduction_to_regression/res/regression4.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression4.png )
   * [ 03_regression/00_introduction_to_regression/res/regression5.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression5.png )
@@ -427,6 +422,11 @@ There are 418 total images.
   * [ xx_career_development/res/feedback01.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/xx_career_development/res/feedback01.png )
   * [ 02_data/03_visualizations/res/pie-chart.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/03_visualizations/res/pie-chart.png )
   * [ 01_what_is_ml/02_fairness/res/MLheadlinescreenshot.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/01_what_is_ml/02_fairness/res/MLheadlinescreenshot.png )
+
+###  Copyright Google
+  * [ 03_regression/00_introduction_to_regression/res/regression28.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression28.png )
+  * [ 02_data/00_introduction_to_colab/res/ide.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/00_introduction_to_colab/res/ide.png )
+  * [ 02_data/00_introduction_to_colab/res/matlab.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/00_introduction_to_colab/res/matlab.png )
 
 ###  Pexels License
   * [ 05_deep_learning/02_natural_language_processing/res/open-book.jpg ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/05_deep_learning/02_natural_language_processing/res/open-book.jpg )
