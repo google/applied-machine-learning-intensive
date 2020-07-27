@@ -1,5 +1,5 @@
 # AMLI Image File Analysis
-There are 418 total images.
+There are 415 total images.
 
 ## Images per license:
   *  Pixabay License :  42
@@ -7,8 +7,8 @@ There are 418 total images.
   *  Unsplash License :  33
   *  MIT License :  1
   *  Creative Commons Attribution-Share Alike 4.0 International license :  1
-  *  Unlicensed :  9
-  *  Copyright Google :  3
+  *  Unlicensed :  8
+  *  Copyright Google :  1
   *  Pexels License :  6
   *  Copyright LinkedIn™ :  9
   *  Externally Linked :  3
@@ -421,12 +421,9 @@ There are 418 total images.
   * [ 00_prerequisites/00_introduction_to_python/res/notebook.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/00_prerequisites/00_introduction_to_python/res/notebook.png )
   * [ xx_career_development/res/feedback01.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/xx_career_development/res/feedback01.png )
   * [ 02_data/03_visualizations/res/pie-chart.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/03_visualizations/res/pie-chart.png )
-  * [ 01_what_is_ml/02_fairness/res/MLheadlinescreenshot.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/01_what_is_ml/02_fairness/res/MLheadlinescreenshot.png )
 
 ###  Copyright Google
   * [ 03_regression/00_introduction_to_regression/res/regression28.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression28.png )
-  * [ 02_data/00_introduction_to_colab/res/ide.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/00_introduction_to_colab/res/ide.png )
-  * [ 02_data/00_introduction_to_colab/res/matlab.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/00_introduction_to_colab/res/matlab.png )
 
 ###  Pexels License
   * [ 05_deep_learning/02_natural_language_processing/res/open-book.jpg ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/05_deep_learning/02_natural_language_processing/res/open-book.jpg )
