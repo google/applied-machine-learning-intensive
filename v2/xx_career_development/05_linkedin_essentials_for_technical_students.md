@@ -352,7 +352,7 @@ Image Details:
 
 # Endorse and *Recommend* Your Groupmates
 
-*  Indicate how you know Michael and what his position was at the time.
+*  Indicate how you know the person and what their position was at the time.
 *  Write your recommendation!
 *  Aim for at least 3-5 sentences.
 *  Look up examples online if you need assistance.
