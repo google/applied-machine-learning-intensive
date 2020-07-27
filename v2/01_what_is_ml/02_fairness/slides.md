@@ -4,10 +4,8 @@
 
 # Read & Discuss
 
-![](res/MLheadlinescreenshot.png)
-
 <!--
-In this session we'll focus our attention on machine learning fairness. We'll start by engaging with some examples from various domains, showing the impact of bias on end users. 
+In this session we'll focus our attention on machine learning fairness. We'll start by engaging with some examples from various domains, showing the impact of bias on end users.
 
 *There are four potential articles in the facilitator guide. Choose your favorite three and have
 students count off 1, 2, 3. Assign each group an article to read.*
@@ -22,7 +20,7 @@ https://www.wired.com/story/ai-text-generator-too-dangerous-to-make-public/*
 article) to explain the main takeaway of their article to others in the newly-formed group.*
 
 What bias was uncovered?
-How would you describe its impact on people? 
+How would you describe its impact on people?
 What do you find interesting about this article?*
 -->
 
@@ -38,7 +36,7 @@ What do you find interesting about this article?*
 
 <!--
 Biases can be found throughout the design and development of ML systems. Stay in your same groups of three. Now we'll do a
-two-part activity to identify different types of bias. 
+two-part activity to identify different types of bias.
 
 *For part one, ask students to use cards to match nine descriptive examples with nine different types of bias (bias card
 matching). For part two, ask students to think-pair-share or volunteer answers to the whole group: what instances of these bias types have they encountered in their own experience?*
@@ -57,9 +55,9 @@ and handled.*
   * model
   * dataset
   * context
- 
+
 <!--
-It’s important to remember ML algorithms and systems are built, trained, and evaluated by people, and they are affected by human cognitive limitations and biases. To create systems that work for everyone, we have to intentionally work to mitigate those issues. It’s also important to note that fairness is subjective. Not all biases should be approached the same way. 
+It’s important to remember ML algorithms and systems are built, trained, and evaluated by people, and they are affected by human cognitive limitations and biases. To create systems that work for everyone, we have to intentionally work to mitigate those issues. It’s also important to note that fairness is subjective. Not all biases should be approached the same way.
 
 *In your same groups of three, have students work on ethical storyboarding activity for some ML example (chosen from the bias cards or other). Discuss what ML fairness risks might exist for their specific product and what research/feedback mechanisms could help mitigate those issues.*
 
