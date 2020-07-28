@@ -63,8 +63,6 @@ We’ll start by discussing growth mindset, and then we’ll dive into best prac
 * Shift the focus from a fixed mindset of “being good” to a growth mindset of “getting better”
 * When possible, give feedback on the process, not the outcome
 
-![](res/feedback01.png)
-
 <!--Before we even get to talking about giving and receiving feedback, let’s ground this conversation in an important scientific concept related to feedback: growth mindset. 
 -->
 
