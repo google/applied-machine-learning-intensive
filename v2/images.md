@@ -3,11 +3,11 @@ There are 414 total images.
 
 ## Images per license:
   *  Pixabay License :  42
-  *  Google (confirmed) :  312
+  *  Google (confirmed) :  313
   *  Unsplash License :  33
   *  MIT License :  1
   *  Creative Commons Attribution-Share Alike 4.0 International license :  1
-  *  Unlicensed :  6
+  *  Unlicensed :  5
   *  Copyright Google :  1
   *  Pexels License :  6
   *  Copyright LinkedIn™ :  9
@@ -311,6 +311,7 @@ There are 414 total images.
   * [ 02_data/03_visualizations/res/heatmap-repeat.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/03_visualizations/res/heatmap-repeat.png )
   * [ 02_data/03_visualizations/res/heatmap-year.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/03_visualizations/res/heatmap-year.png )
   * [ 02_data/03_visualizations/res/heatmap-pinpoint-hotspots.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/03_visualizations/res/heatmap-pinpoint-hotspots.png )
+  * [ 02_data/03_visualizations/res/pie-chart.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/03_visualizations/res/pie-chart.png )
   * [ 02_data/03_visualizations/res/bad-pie-chart.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/03_visualizations/res/bad-pie-chart.png )
   * [ 02_data/03_visualizations/res/bar-chart.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/03_visualizations/res/bar-chart.png )
   * [ 02_data/03_visualizations/res/bad-bar-chart.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/03_visualizations/res/bad-bar-chart.png )
@@ -419,7 +420,6 @@ There are 414 total images.
   * [ 06_other_models/01_k_means/res/kmeans05.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/06_other_models/01_k_means/res/kmeans05.png )
   * [ 06_other_models/01_k_means/res/kmeans06.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/06_other_models/01_k_means/res/kmeans06.png )
   * [ 06_other_models/01_k_means/res/kmeans07.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/06_other_models/01_k_means/res/kmeans07.png )
-  * [ 02_data/03_visualizations/res/pie-chart.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/03_visualizations/res/pie-chart.png )
 
 ###  Copyright Google
   * [ 03_regression/00_introduction_to_regression/res/regression28.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression28.png )

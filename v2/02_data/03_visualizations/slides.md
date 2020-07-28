@@ -126,7 +126,7 @@ Image Details:
 Pie charts are great for representing data that is in the form of fractions adding up to one or percentages adding up to 100. They create a natural comparison between portions of a whole.
 
 Image Details:
-* [pie-chart.png)(https://opensource.google/docs/copyright/): Copyright Google
+* [pie-chart.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
