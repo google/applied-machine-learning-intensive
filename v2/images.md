@@ -7,7 +7,7 @@ There are 414 total images.
   *  Unsplash License :  33
   *  MIT License :  1
   *  Creative Commons Attribution-Share Alike 4.0 International license :  1
-  *  Unlicensed :  5
+  *  GNU Free Documentation License :  5
   *  Copyright Google :  1
   *  Pexels License :  6
   *  Copyright LinkedIn™ :  9
@@ -414,7 +414,7 @@ There are 414 total images.
 ###  Creative Commons Attribution-Share Alike 4.0 International license
   * [ 04_classification/05_introduction_to_image_classification/res/digits.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/04_classification/05_introduction_to_image_classification/res/digits.png )
 
-###  Unlicensed
+###  GNU Free Documentation License
   * [ 06_other_models/01_k_means/res/kmeans03.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/06_other_models/01_k_means/res/kmeans03.png )
   * [ 06_other_models/01_k_means/res/kmeans04.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/06_other_models/01_k_means/res/kmeans04.png )
   * [ 06_other_models/01_k_means/res/kmeans05.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/06_other_models/01_k_means/res/kmeans05.png )

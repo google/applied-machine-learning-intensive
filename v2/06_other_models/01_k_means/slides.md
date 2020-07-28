@@ -73,7 +73,7 @@ Let's take a closer look at each step in the k-means algorithm.
 We choose our hyperparameter k (i.e., the number of clusters). In this case, k = 3. Then three points are randomly generated within the data. These are our initial "means" often called "centroids." 
 
 Image Details:
-* [kmeans03.png])https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_1.svg): GNU Free Documentation License
+* [kmeans03.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_1.svg): GNU Free Documentation License
 -->
 
 ---
@@ -86,7 +86,10 @@ Image Details:
 Now, clusters are created around each of those three means. Every data point is put into a cluster based on which of the three centroids it's closest to, where close is defined by our distance metric. In this problem the distance metric is just Euclidean distance in the plane. 
 
 Image Details:
-* [kmeans04.png](https://brilliant.org/wiki/k-means-clustering/): Unlicensed
+* [kmeans04.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_1.svg): GNU Free Documentation License
+* [kmeans04.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_2.svg): GNU Free Documentation License
+* [kmeans04.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_3.svg): GNU Free Documentation License
+* [kmeans04.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_4.svg): GNU Free Documentation License
 -->
 
 ---
@@ -101,7 +104,11 @@ We now have three clusters. But if we just stopped here, then the model wouldn't
 We compute the arithmetic mean of each of the three clusters. These values become the new centroids. 
 
 Image Details:
-* [kmeans05.png](https://brilliant.org/wiki/k-means-clustering/): Unlicensed
+* [kmeans05.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_1.svg): GNU Free Documentation License
+* [kmeans05.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_2.svg): GNU Free Documentation License
+* [kmeans05.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_3.svg): GNU Free Documentation License
+* [kmeans05.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_4.svg): GNU Free Documentation License
+
 -->
 
 ---
@@ -114,7 +121,10 @@ Image Details:
 Again, every data point is put into a cluster based on which of the three centroids it's closest to.
 
 Image Details:
-* [kmeans06.png](https://brilliant.org/wiki/k-means-clustering/): Unlicensed
+* [kmeans06.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_1.svg): GNU Free Documentation License
+* [kmeans06.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_2.svg): GNU Free Documentation License
+* [kmeans06.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_3.svg): GNU Free Documentation License
+* [kmeans06.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_4.svg): GNU Free Documentation License
 -->
 
 ---
@@ -127,7 +137,10 @@ Image Details:
 We repeat steps two and three (recalculating the centroids and re-clustering around those centroids) until convergence is reached. Convergence is typically measured by very little or no change in the centroids. In other words, the assignment of data points to clusters is not changing with more iterations. 
 
 Image Details:
-* [kmeans07.png](https://brilliant.org/wiki/k-means-clustering/): Unlicensed
+* [kmeans07.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_1.svg): GNU Free Documentation License
+* [kmeans07.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_2.svg): GNU Free Documentation License
+* [kmeans07.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_3.svg): GNU Free Documentation License
+* [kmeans07.png](https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_4.svg): GNU Free Documentation License
 -->
 
 ---
