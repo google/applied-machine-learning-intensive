@@ -1,13 +1,13 @@
 # AMLI Image File Analysis
-There are 415 total images.
+There are 414 total images.
 
 ## Images per license:
   *  Pixabay License :  42
-  *  Google (confirmed) :  311
+  *  Google (confirmed) :  312
   *  Unsplash License :  33
   *  MIT License :  1
   *  Creative Commons Attribution-Share Alike 4.0 International license :  1
-  *  Unlicensed :  8
+  *  Unlicensed :  6
   *  Copyright Google :  1
   *  Pexels License :  6
   *  Copyright LinkedIn™ :  9
@@ -212,6 +212,7 @@ There are 415 total images.
   * [ 05_deep_learning/01_recurrent_neural_networks/res/lstm_neuron.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/05_deep_learning/01_recurrent_neural_networks/res/lstm_neuron.png )
   * [ 05_deep_learning/01_recurrent_neural_networks/res/time_series.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/05_deep_learning/01_recurrent_neural_networks/res/time_series.png )
   * [ 05_deep_learning/01_recurrent_neural_networks/res/time_series_2.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/05_deep_learning/01_recurrent_neural_networks/res/time_series_2.png )
+  * [ 00_prerequisites/00_introduction_to_python/res/notebook.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/00_prerequisites/00_introduction_to_python/res/notebook.png )
   * [ 00_prerequisites/01_intermediate_python/res/intermediatepython01.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/00_prerequisites/01_intermediate_python/res/intermediatepython01.png )
   * [ 00_prerequisites/01_intermediate_python/res/intermediatepython02.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/00_prerequisites/01_intermediate_python/res/intermediatepython02.png )
   * [ 00_prerequisites/01_intermediate_python/res/intermediatepython03.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/00_prerequisites/01_intermediate_python/res/intermediatepython03.png )
@@ -418,8 +419,6 @@ There are 415 total images.
   * [ 06_other_models/01_k_means/res/kmeans05.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/06_other_models/01_k_means/res/kmeans05.png )
   * [ 06_other_models/01_k_means/res/kmeans06.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/06_other_models/01_k_means/res/kmeans06.png )
   * [ 06_other_models/01_k_means/res/kmeans07.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/06_other_models/01_k_means/res/kmeans07.png )
-  * [ 00_prerequisites/00_introduction_to_python/res/notebook.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/00_prerequisites/00_introduction_to_python/res/notebook.png )
-  * [ xx_career_development/res/feedback01.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/xx_career_development/res/feedback01.png )
   * [ 02_data/03_visualizations/res/pie-chart.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/02_data/03_visualizations/res/pie-chart.png )
 
 ###  Copyright Google
