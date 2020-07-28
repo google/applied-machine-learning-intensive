@@ -128,6 +128,9 @@ Notice that we don't see the value of the addition. When running commands using 
 
 <!--
 Another way to run Python is in an interactive notebook. Jupyter is a popular type of notebook that combines rich textual documentation and Python code. We will be using notebooks throughout this course. We'll be using a service called Colab, which hosts and runs Jupyter notebooks in the cloud.
+
+Image Details:
+* [notebook.png](https://opensource.google/docs/copyright/): Copyright Google
 -->
 
 ---
