@@ -73,7 +73,7 @@ Let's take a closer look at each step in the k-means algorithm.
 We choose our hyperparameter k (i.e., the number of clusters). In this case, k = 3. Then three points are randomly generated within the data. These are our initial "means" often called "centroids." 
 
 Image Details:
-* [kmeans03.png](https://brilliant.org/wiki/k-means-clustering/): Unlicensed
+* [kmeans03.png])https://commons.wikimedia.org/wiki/File:K_Means_Example_Step_1.svg): GNU Free Documentation License
 -->
 
 ---
