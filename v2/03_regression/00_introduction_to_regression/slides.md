@@ -396,9 +396,6 @@ Image Details:
 How does the model actually “learn” those values? Through linear algebra, there is an exact (closed form) solution. All you need to do is plug in your X and y values, and calculate to get your weight and bias values.
 
 X is an m x n matrix. X^T*X is invertible if and only if m /leq n and rank(X) = m.
-
-Image Details:
-* [regression29.png](http://www.google.com): Copyright Google
 -->
 
 ---

@@ -59,7 +59,6 @@ In the lab for this unit, we will build a logistic regression. A logistic regres
 This model is relatively easy to interpret and train, but it doesn't perform well unless an actual logistic boundary can be found. To create a logistically divisible set of classes, you sometimes have to perform some very heavy data manipulation.
 
 Image Details:
-* [classification.gif](http://www.google.com): Copyright Google
 * [classification.gif](https://opensource.google/docs/copyright/): Copyright Google
 -->
 

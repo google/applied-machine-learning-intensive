@@ -3,12 +3,11 @@ There are 414 total images.
 
 ## Images per license:
   *  Pixabay License :  42
-  *  Google (confirmed) :  313
+  *  Google (confirmed) :  314
   *  Unsplash License :  33
   *  MIT License :  1
   *  Creative Commons Attribution-Share Alike 4.0 International license :  1
   *  GNU Free Documentation License :  5
-  *  Copyright Google :  1
   *  Pexels License :  6
   *  Copyright LinkedIn™ :  9
   *  Externally Linked :  3
@@ -173,6 +172,7 @@ There are 414 total images.
   * [ 03_regression/00_introduction_to_regression/res/regression25.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression25.png )
   * [ 03_regression/00_introduction_to_regression/res/regression26.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression26.png )
   * [ 03_regression/00_introduction_to_regression/res/regression27.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression27.png )
+  * [ 03_regression/00_introduction_to_regression/res/regression28.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression28.png )
   * [ 03_regression/00_introduction_to_regression/res/regression10.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression10.png )
   * [ 03_regression/00_introduction_to_regression/res/regression11.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression11.png )
   * [ 05_deep_learning/03_autoencoders/res/encoder.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/05_deep_learning/03_autoencoders/res/encoder.png )
@@ -420,9 +420,6 @@ There are 414 total images.
   * [ 06_other_models/01_k_means/res/kmeans05.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/06_other_models/01_k_means/res/kmeans05.png )
   * [ 06_other_models/01_k_means/res/kmeans06.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/06_other_models/01_k_means/res/kmeans06.png )
   * [ 06_other_models/01_k_means/res/kmeans07.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/06_other_models/01_k_means/res/kmeans07.png )
-
-###  Copyright Google
-  * [ 03_regression/00_introduction_to_regression/res/regression28.png ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/03_regression/00_introduction_to_regression/res/regression28.png )
 
 ###  Pexels License
   * [ 05_deep_learning/02_natural_language_processing/res/open-book.jpg ]( https://github.com/google/applied-machine-learning-intensive/tree/master/v2/05_deep_learning/02_natural_language_processing/res/open-book.jpg )

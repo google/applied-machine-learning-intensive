@@ -1,6 +1,7 @@
 import os
 import re
 import collections
+import sys
 
 summary = collections.defaultdict(int)
 all_images = {}
@@ -28,10 +29,13 @@ def find_images(file_name):
         license = match.group(3).strip()
         if url == 'https://opensource.google/docs/copyright/':
           license = 'Google (confirmed)'
-        licenses[k] = {
-          'url': url,
-          'license': license,
-        }
+        if k in licenses:
+          print(k, file=sys.stderr)
+        else:
+          licenses[k] = {
+            'url': url,
+            'license': license,
+          }
       line = f.readline()
 
   for image in images:
