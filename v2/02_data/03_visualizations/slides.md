@@ -114,6 +114,8 @@ Image Details:
 * [charts.png](https://unsplash.com/photos/IrRbSND5EUc): Unsplash License
 * [charts.png](https://unsplash.com/photos/jrh5lAq-mIs): Unsplash License
 * [charts.png](https://unsplash.com/photos/_Jb1TF3kvsA): Unsplash License
+* [charts.png](https://opensource.google/docs/copyright/): Copyright Google
+  * Created using https://www.meta-chart.com/scatter
 -->
 
 ---
