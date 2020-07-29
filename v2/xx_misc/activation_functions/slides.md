@@ -31,7 +31,7 @@ If you think about an artificial neural network, it is a series of layers. Each 
 more nodes. The layers operate one at a time, feeding data from the top of the model through to the
 outputs. Our goal is to decide if (and with how much intensity) a particular node "fires."
 
-A node in layer n, receives input data from every node layer n-1 (the previous layer). Each piece of incoming information, $x_{i}$, is multiplied by a particular weight, $w_{i}$. Then we sum them all together along with the node's trained bias to create an output. Given this output value we now want to determine if this node "fires" (i.e. is activated), and that is what the activation function does. Thus, we feed the output sum from the current node into the activation funtion to determine the activation level of our current node. Then this value is fed into the nodes in the next layer. 
+A node in layer n, receives input data from every node layer n-1 (the previous layer). Each piece of incoming information, $x_{i}$, is multiplied by a particular weight, $w_{i}$. Then we sum them all together along with the node's trained bias to create an output. Given this output value we now want to determine if this node "fires" (i.e. is activated), and that is what the activation function does. Thus, we feed the output sum from the current node into the activation function to determine the activation level of our current node. Then this value is fed into the nodes in the next layer. 
 
 -->
 
@@ -55,7 +55,7 @@ Let's take a look at some of the more commonly seen activation functions.
 ![center](res/linear.png)
 
 <!--
-The most basic activation function is the linear activation function. This function take the sum of inputs and bias, does nothing to it, and hands the result to the next layer of the network.
+The most basic activation function is the linear activation function. This function takes the sum of inputs and bias, does nothing to it, and hands the result to the next layer of the network.
 
 That's a pretty simple activation function to understand. But what value does it provide?
 
@@ -73,7 +73,7 @@ Image Details:
 ![center](res/relu.png)
 
 <!--
-There is another linear activation function that turns out to be quite useful, the Rectified Lienar Unit (ReLU).
+There is another linear activation function that turns out to be quite useful, the Rectified Linear Unit (ReLU).
 
 If the input value is positive or zero, then ReLU acts like the identity function. If the input value is negative, then ReLU returns zero.
 
@@ -81,7 +81,7 @@ This is also a quite simple activation, but it turns out to be quite useful in p
 
 Let's also think about the use of a ReLU node in a network. If the output layer consists of ReLU values, then the output of the network will be from 0 to infinity.
 
-This works fine for models that are predicting positive values, but what if your model is predicting celsius temperatures in Antartica or some other potentially negative value?
+This works fine for models that are predicting positive values, but what if your model is predicting celsius temperatures in Antarctica or some other potentially negative value?
 
 In this case you would need to adjust the target training data to all be positive, say by adding 100 to it, and then do the reverse to the output of the model, subtract 100 from each value.
 
@@ -133,9 +133,9 @@ Activation functions can also be non-linear. The sigmoid function works using a 
 
 You'll notice that the sigmoid function restricts it's output range to $(0.0, 1.0)$. This is typically not a concern in hidden layers, but needs to be considered in the output layer. 
 
-Sigmoid activation functions are very useful when making binary classification decisions. You can build a model that outputs values from $(0.0, 1.0)$ and treat the output as a confidence that the input is a 1. For example, suppose you are building a model to decided whether or not an image is a cat. If you use a sigmoid in the final layer and receive a 0.2, then we could say "we are 20% confident the image is a cat." That's not very confident, so we'd likely calssify it as a 0 (or not a cat). If we received a 0.9 form the model, then we'd say it's very likely to be a cat. 
+Sigmoid activation functions are very useful when making binary classification decisions. You can build a model that outputs values from $(0.0, 1.0)$ and treat the output as a confidence that the input is a 1. For example, suppose you are building a model to decide whether or not an image is a cat. If you use a sigmoid in the final layer and receive a 0.2, then we could say "we are 20% confident the image is a cat." That's not very confident, so we'd likely classify it as a 0 (or not a cat). If we received a 0.9 form the model, then we'd say it's very likely to be a cat. 
 
-During training, you would experiment to determine a threshold for which you will classify samples as 0 or 1. The most natural choice is to say if the model returns 0.5 or above, we'll call it a cat, otherwise it's not a cat. But that may or may not be the best threshold. Before making this decision you'd need to experiment, find the precision and recall for different thresholds, and choose the one that fit your use case the best.
+During training, you would experiment to determine a threshold for which you will classify samples as 0 or 1. The most natural choice is to say if the model returns 0.5 or above, we'll call it a cat, otherwise it's not a cat. But that may or may not be the best threshold. Before making this decision you'd need to experiment, find the precision and recall for different thresholds, and choose the one that fits your use case the best.
 
 Image Details:
 * [sigmoid.png](https://opensource.google/docs/copyright/): Copyright Google
@@ -149,7 +149,7 @@ Image Details:
 ![center](res/tanh.png)
 
 <!--
-Similar to sigmoid, the hyperbolic tanget, [tanh](https://www.tensorflow.org/api_docs/python/tf/keras/activations/tanh) is a non-linear activation function that can be used in your models. The biggest difference between sigmod and tanh is that tanh has an output range of $(-1.0, 1.0)$.
+Similar to sigmoid, the hyperbolic tangent, [tanh](https://www.tensorflow.org/api_docs/python/tf/keras/activations/tanh) is a non-linear activation function that can be used in your models. The biggest difference between sigmoid and tanh is that tanh has an output range of $(-1.0, 1.0)$.
 
 Image Details:
 * [tanh.png](https://opensource.google/docs/copyright/): Copyright Google
@@ -167,7 +167,7 @@ Softmax is a different type of activation function. Softmax is aware of nodes in
 
 Softmax outputs values in the range of  [0.0,1.0]. If you were to sum the outputs of every node in a layer, the sum would always equal 1.0, or something very very close to 1.0.
 
-Let's say that we had a model that tried to determine if an image contained an apple, orange, or grapefruit. If given a picture of a bright red apple, it might output [1.0, 0.0, 0.0] to show that it was highly confident that the image contained an apple. If given a picture of a yellow apply it might be a little less confident and output [0.8, 0.15, 0.05], indicating a little less confidence. If given a picture of a large orage it might output [0.05, 0.55, 0.4], showing that it was having a tough time making a decision.
+Let's say that we had a model that tried to determine if an image contained an apple, orange, or grapefruit. If given a picture of a bright red apple, it might output [1.0, 0.0, 0.0] to show that it was highly confident that the image contained an apple. If given a picture of a yellow apple it might be a little less confident and output [0.8, 0.15, 0.05], indicating a little less confidence. If given a picture of a large orange it might output [0.05, 0.55, 0.4], showing that it was having a tough time making a decision.
 
 It is worth noting that softmax is typically not used in hidden layers of a model. Most of the time you will see it used on the output layer.
 -->
