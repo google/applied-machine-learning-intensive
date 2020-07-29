@@ -26,7 +26,7 @@ What does this actually mean?
 
 ---
 
-# What is TensorFlow Good For? 
+# What Is TensorFlow Good For? 
 
 * Neural Networks
 * Distributed Computing
@@ -137,7 +137,7 @@ TensorFlow 1 placed more of an emphasis on the concept of estimators (similar to
 
 ---
 
-# TensorFlow is separated into abstraction layers
+# TensorFlow Is Separated Into Abstraction Layers
 
 ![center](res/introtensorflow8.png)
 
