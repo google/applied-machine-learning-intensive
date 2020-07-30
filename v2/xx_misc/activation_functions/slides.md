@@ -29,9 +29,9 @@ Recall that neural networks are inspired by neurons in the brain. The idea is th
 
 If you think about an artificial neural network, it is a series of layers. Each of these layers contains one or
 more nodes. The layers operate one at a time, feeding data from the top of the model through to the
-outputs. Our goal is to decide if (and with how much intensity) a particular node "fires."
+outputs. Our goal is to decide if, and with how much intensity, a particular node "fires."
 
-A node in layer n, receives input data from every node layer n-1 (the previous layer). Each piece of incoming information, $x_{i}$, is multiplied by a particular weight, $w_{i}$. Then we sum them all together along with the node's trained bias to create an output. Given this output value we now want to determine if this node "fires" (i.e. is activated), and that is what the activation function does. Thus, we feed the output sum from the current node into the activation function to determine the activation level of our current node. Then this value is fed into the nodes in the next layer. 
+A node in layer n, receives input data from every node layer n-1 (the previous layer). Each piece of incoming information, $x_{i}$, is multiplied by a particular weight, $w_{i}$. Then we sum them all together along with the node's trained bias to create an output. Given this output value we now want to determine if this node "fires" (i.e., is activated), and that is what the activation function does. Thus, we feed the output sum from the current node into the activation function to determine the activation level of our current node. Then this value is fed into the nodes in the next layer. 
 
 -->
 
@@ -59,7 +59,7 @@ The most basic activation function is the linear activation function. This funct
 
 That's a pretty simple activation function to understand. But what value does it provide?
 
-This function can be useful, especially in your output layer, if you want your model to predict large or negative values. Many of the activation functions that we'll see greatly restrict the range of values that they output. The linear activation function does not restrict it's output range at all. Any real number can be produced by a node with this activation function.
+This function can be useful, especially in your output layer, if you want your model to predict large or negative values. Many of the activation functions we'll see greatly restrict the range of values that they output. The linear activation function does not restrict its output range at all. Any real number can be produced by a node with this activation function.
 
 Image Details:
 * [linear.png](https://opensource.google/docs/copyright/): Copyright Google
@@ -73,7 +73,7 @@ Image Details:
 ![center](res/relu.png)
 
 <!--
-There is another linear activation function that turns out to be quite useful, the Rectified Linear Unit (ReLU).
+There is another linear activation function that turns out to be quite useful: the Rectified Linear Unit (ReLU).
 
 If the input value is positive or zero, then ReLU acts like the identity function. If the input value is negative, then ReLU returns zero.
 
@@ -83,7 +83,7 @@ Let's also think about the use of a ReLU node in a network. If the output layer 
 
 This works fine for models that are predicting positive values, but what if your model is predicting celsius temperatures in Antarctica or some other potentially negative value?
 
-In this case you would need to adjust the target training data to all be positive, say by adding 100 to it, and then do the reverse to the output of the model, subtract 100 from each value.
+In this case you would need to adjust the target training data to all be positive, say, by adding 100 to it. Then do the reverse to the output of the model by subtracting 100 from each value.
 
 You'll find that you'll need to do this type of adjustment quite often when building models. Understanding your activation functions, especially in your output layer, is critically important. When you know the range of values that your model can produce you can adjust your training data to fall within that range.
 
