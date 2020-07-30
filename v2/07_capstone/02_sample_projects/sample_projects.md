@@ -94,9 +94,9 @@
 * Implicit (Confirmation, Experimenters)
 
 <!--
-Biases can be found throughout the design and development of ML systems. Stay in the same groups of 3; do a 2-part activity to identify different types of bias. 
+Biases can be found throughout the design and development of ML systems. Stay in the same groups of three. Do a two-part activity to identify different types of bias. 
 
-Part 1 asks them to use cards to match 9 descriptive examples with 9 different types of bias (Bias Card Matching). For Part 2, ask them to pair-share or volunteer-share what instances of these bias types they’ve encountered in their own experience.
+Part 1 asks students to use cards to match nine descriptive examples with nine different types of bias (Bias Card Matching). Part 2 asks students to pair-share or volunteer-share what instances of these bias types they’ve encountered in their own experience.
 
 If you have a concrete example of bias in ML systems from your own experience, share how it was detected and handled. 
 -->
@@ -113,24 +113,15 @@ If you have a concrete example of bias in ML systems from your own experience, s
   * Context
 
 <!--
-It’s important to always remember that ML algorithms and systems are built, trained, and evaluated by people, and are affected by human cognitive limitations and biases. To create systems that work for everyone, we have to intentionally work to mitigate those issues. It’s also important to note that fairness is *subjective* Not all biases should be approached the same way. 
+It’s important to remember that ML algorithms and systems are built, trained, and evaluated by people. They are affected by human cognitive limitations and biases. To create systems that work for everyone, we have to intentionally work to mitigate those issues. It’s also important to note that fairness is *subjective.* Not all biases should be approached the same way. 
 
-In the same groups of 3, have students work on Ethical Storyboarding activity for some ML example (chosen from the bias cards or other). Discuss what ML Fairness risks might exist for their specific product, and what research/feedback mechanisms could help mitigate those issues.
+In the same groups of three, have students work on the Ethical Storyboarding activity for some ML example (chosen from the bias cards or other). Discuss what ML Fairness risks might exist for their specific product, and what research/feedback mechanisms could help mitigate those issues.
 
 After ~25 minutes, debrief the class all together.
 ASK:
 * What do they perceive as main takeaways from this exercise?
-* What does this mean to them, for their role as up-and-coming professionals in Machine Learning?
+* What does this mean to them, for their role as up-and-coming professionals in ML?
 * What are questions they still have?
 -->
 
 ---
-
-
-
-
-
-
-
-
-
