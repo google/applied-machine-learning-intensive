@@ -75,7 +75,7 @@
   * Keras
 * [Slides](https://docs.google.com/presentation/d/1OUHZf1b3rKYft6FjttfLyD3lbidrGgyf7qaCUHvzUzQ/edit=id.g5a43df980a_0_404)
 
-# What's up with Income
+# What's Up with Income
 
 * Using ML to Understand How Income Changes Across Zip Codes
   * Linear Regression
@@ -113,7 +113,7 @@ If you have a concrete example of bias in ML systems from your own experience, s
   * Context
 
 <!--
-It’s important to always remember that ML algorithms and systems are built, trained, and evaluated by people, and are affected by human cognitive limitations and biases. To create systems that work for everyone, we have to intentionally work to mitigate those issues. It’s also important to note that fairness is *subjective* -- not all biases should be approached the same way. 
+It’s important to always remember that ML algorithms and systems are built, trained, and evaluated by people, and are affected by human cognitive limitations and biases. To create systems that work for everyone, we have to intentionally work to mitigate those issues. It’s also important to note that fairness is *subjective* Not all biases should be approached the same way. 
 
 In the same groups of 3, have students work on Ethical Storyboarding activity for some ML example (chosen from the bias cards or other). Discuss what ML Fairness risks might exist for their specific product, and what research/feedback mechanisms could help mitigate those issues.
 
