@@ -81,7 +81,7 @@ This is also a quite simple activation, but it turns out to be quite useful in p
 
 Let's also think about the use of a ReLU node in a network. If the output layer consists of ReLU values, then the output of the network will be from 0 to infinity.
 
-This works fine for models that are predicting positive values, but what if your model is predicting celsius temperatures in Antarctica or some other potentially negative value?
+This works fine for models that predict positive values, but what if your model is predicting celsius temperatures in Antarctica or some other potentially negative value?
 
 In this case you would need to adjust the target training data to all be positive, say, by adding 100 to it. Then do the reverse to the output of the model by subtracting 100 from each value.
 
@@ -99,7 +99,7 @@ Image Details:
 ![center](res/leaky_relu.png)
 
 <!--
-We talked about dead nodes when discussing the ReLU activation function. One strategy that helps mitigate the dead node issue is a "leaky" ReLU. Leaky ReLUs are ReLU functions that again act as the identity on any value zero or greater. But for values less than zero they apply an alpha value to them and return the result. The idea is that the magnitude of any negative numbers is rather small (bot not necessarily zero, which helps us avoid dead nodes).
+We talked about dead nodes when discussing the ReLU activation function. One strategy that helps mitigate the dead node issue is a "leaky" ReLU. Leaky ReLUs are ReLU functions that again act as the identity on any value zero or greater. But for values less than zero they apply an alpha value to them and return the result. The idea is that the magnitude of any negative numbers is rather small but not necessarily zero, which helps us avoid dead nodes.
 
 Image Details:
 * [leaky_relu.png](https://opensource.google/docs/copyright/): Copyright Google
@@ -113,7 +113,7 @@ Image Details:
 ![center](res/binary_step.png)
 
 <!--
-The binary step activation function serves as an on/off switch for a node. This function returns zero if it's input is on one side of a threshold and one if the input is on the other side of the threshold. 
+The binary step activation function serves as an on/off switch for a node. This function returns zero if its input is on one side of a threshold and returns one if the input is on the other side of the threshold. 
 
 At the output layer this function can be useful when you need to make a yes/no decision and don't care about the confidence of the model in that decision. In other words, this can be useful for binary classification. 
 
@@ -131,11 +131,11 @@ Image Details:
 <!--
 Activation functions can also be non-linear. The sigmoid function works using a logistic curve.
 
-You'll notice that the sigmoid function restricts it's output range to $(0.0, 1.0)$. This is typically not a concern in hidden layers, but needs to be considered in the output layer. 
+You'll notice that the sigmoid function restricts its output range to $(0.0, 1.0)$. This is typically not a concern in hidden layers, but needs to be considered in the output layer. 
 
-Sigmoid activation functions are very useful when making binary classification decisions. You can build a model that outputs values from $(0.0, 1.0)$ and treat the output as a confidence that the input is a 1. For example, suppose you are building a model to decide whether or not an image is a cat. If you use a sigmoid in the final layer and receive a 0.2, then we could say "we are 20% confident the image is a cat." That's not very confident, so we'd likely classify it as a 0 (or not a cat). If we received a 0.9 form the model, then we'd say it's very likely to be a cat. 
+Sigmoid activation functions are very useful when making binary classification decisions. You can build a model that outputs values from $(0.0, 1.0)$ and treat the output as a confidence that the input is a 1. For example, suppose you're building a model to decide whether or not an image is a cat. If you use a sigmoid in the final layer and receive a 0.2, then we could say, "We are 20% confident the image is a cat." That's not very confident, so we'd likely classify it as a 0 (or not a cat). If we received a 0.9 form the model, then we'd say it's very likely to be a cat. 
 
-During training, you would experiment to determine a threshold for which you will classify samples as 0 or 1. The most natural choice is to say if the model returns 0.5 or above, we'll call it a cat, otherwise it's not a cat. But that may or may not be the best threshold. Before making this decision you'd need to experiment, find the precision and recall for different thresholds, and choose the one that fits your use case the best.
+During training, you would experiment to determine a threshold for which you will classify samples as 0 or 1. The most natural choice is to say if the model returns 0.5 or above, we'll call it a cat. Otherwise it's not a cat. But that may or may not be the best threshold. Before making this decision you'd need to experiment, find the precision and recall for different thresholds, and choose the one that fits your use case the best.
 
 Image Details:
 * [sigmoid.png](https://opensource.google/docs/copyright/): Copyright Google
@@ -161,7 +161,7 @@ Image Details:
 # Softmax
 
 <!--
-So far all of the activation functions that we have seen operate without knowing anything about other nodes in their layer. Each node accepts input from the layer before it and passes output to the next layer in the model. The node is unaware of any other node in it's own layer and activation functions on the nodes work independently.
+So far all of the activation functions that we have seen operate without knowing anything about other nodes in their layer. Each node accepts input from the layer before it and passes output to the next layer in the model. The node is unaware of any other node in its own layer, and activation functions on the nodes work independently.
 
 Softmax is a different type of activation function. Softmax is aware of nodes in the same layer and adjusts their outputs in relation to each other.
 
@@ -177,7 +177,7 @@ It is worth noting that softmax is typically not used in hidden layers of a mode
 # Keras
 
 <!--
-These are just a few of the activation functions that you can use. Some are already developed for you in Keras. See [here](https://keras.io/api/layers/activation_layers/) for more on how Keras uses activation functions in its neural nets.
+These are just a few of the activation functions you can use. Some are already developed for you in Keras. See [here](https://keras.io/api/layers/activation_layers/) for more on how Keras uses activation functions in its neural nets.
 
 -->
 
