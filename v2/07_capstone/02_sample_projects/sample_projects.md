@@ -94,7 +94,7 @@
 * Implicit (Confirmation, Experimenters)
 
 <!--
-Biases can be found throughout the design and development of ML systems. Stay in same groups of 3; do a 2-part activity to identify different types of bias. 
+Biases can be found throughout the design and development of ML systems. Stay in the same groups of 3; do a 2-part activity to identify different types of bias. 
 
 Part 1 asks them to use cards to match 9 descriptive examples with 9 different types of bias (Bias Card Matching). For Part 2, ask them to pair-share or volunteer-share what instances of these bias types they’ve encountered in their own experience.
 
@@ -115,7 +115,7 @@ If you have a concrete example of bias in ML systems from your own experience, s
 <!--
 It’s important to always remember that ML algorithms and systems are built, trained, and evaluated by people, and are affected by human cognitive limitations and biases. To create systems that work for everyone, we have to intentionally work to mitigate those issues. It’s also important to note that fairness is *subjective* -- not all biases should be approached the same way. 
 
-In same groups of 3, have students work on Ethical Storyboarding activity for some ML example (chosen from the bias cards or other). Discuss what ML Fairness risks might exist for their specific product, and what research/feedback mechanisms could help mitigate those issues.
+In the same groups of 3, have students work on Ethical Storyboarding activity for some ML example (chosen from the bias cards or other). Discuss what ML Fairness risks might exist for their specific product, and what research/feedback mechanisms could help mitigate those issues.
 
 After ~25 minutes, debrief the class all together.
 ASK:
