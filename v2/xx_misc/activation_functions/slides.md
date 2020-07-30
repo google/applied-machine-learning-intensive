@@ -20,7 +20,7 @@ time of your network.
 
 ---
 
-# What is being "activated"?
+# What Is Being "Activated"?
 
 $$a = activation(bias + \sum_{i=0}^{n}{w_{i}x_i})$$
 
