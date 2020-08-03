@@ -1,0 +1,19 @@
+{
+  "name": "XGBoost",
+  "handouts": [],
+  "resources": [],
+  "materials": [],
+  "colab": [
+    "colab.ipynb"
+  ],
+  "slides": [
+    "slides.md"
+  ],
+  "duration": {
+    "slides.md": 30,
+    "colab.ipynb": 90
+  },
+  "learning-objectives": [
+    "Apply XGBoost algorithm."
+  ]
+}
