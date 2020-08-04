@@ -20,7 +20,7 @@
 # Referenced Images: Done! (Should ask exactly what their image referencing standard is)
 
 # I just added code to get slides (once that becomes possible), and to spellcheck them and look for image references.
-# I've tested it all in temp_testing_v2 and it works, so once v2 is more functional we can just change the folder
+# I've tested it all in temp_testing_content and it works, so once content is more functional we can just change the folder
 # vars at the top and everything will be done!
 
 import os # for navigating folders
@@ -35,8 +35,8 @@ spell = SpellChecker()
 
 # Global Variables
 outputFile = "TestResults.md"
-contentFolder = "../../v2/"
-inContentFolder = "../../v2/"
+contentFolder = "../../content/"
+inContentFolder = "../../content/"
 #Why are these two variables the same?
 
 def spellCheck(track, unit, colabs, slides):
@@ -301,14 +301,14 @@ def main():
         
             slides = []
             try:
-                #print("../v2/content/" + track + "/" + unit + "/")
-                #slides = os.listdir("../v2/content/" + track + "/" + unit + "/")
+                #print("../content/content/" + track + "/" + unit + "/")
+                #slides = os.listdir("../content/content/" + track + "/" + unit + "/")
                 #print(slides)
-                slides = [md for md in os.listdir("../v2/content/" + track + "/" + unit + "/") if md[-3:] == ".md"]
+                slides = [md for md in os.listdir("../content/content/" + track + "/" + unit + "/") if md[-3:] == ".md"]
             except:
                 slides = [] #redundant but oh well
             #print(slides)
-            #Currently this section ^ does not work, folders are named differently across content and v2.
+            #Currently this section ^ does not work, folders are named differently across content and content.
             
             # Make calls to our helper functions that test colabs
             testResults = usePython3(track, unit, colabs)
