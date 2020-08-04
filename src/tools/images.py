@@ -63,19 +63,20 @@ for (root, dirs, files) in os.walk('.'):
 
 
 count = sum(summary.values())
-print("# AMLI Image File Analysis")
+#print("# AMLI Image File Analysis")
 
-print("There are " + str(count) + " total images.")
-print("")
-print("## Images per license:")
-for license, count in summary.items():
-  print("  * ", license, ": ", str(count))
-print("")
+#print("There are " + str(count) + " total images.")
+#print("")
+#print("## Images per license:")
+#for license, count in summary.items():
+#  print("  * ", license, ": ", str(count))
+#print("")
 
-print("## Images")
+#print("## Images")
 for license in summary.keys():
-  print('### ', license)
+#  print('### ', license)
   for image, details in all_images.items():
     if details['license'] == license:
-      print("  * [", details['name'], "](", details['file_path'], ")")
-  print("")
+      print(",".join([license, details['name'], details['file_path']]))
+#      print("  * [", details['name'], "](", details['file_path'], ")")
+#  print("")
