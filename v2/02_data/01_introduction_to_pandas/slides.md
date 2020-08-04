@@ -1,9 +1,22 @@
+---
+
+marp: true
+
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Introduction to Pandas
 
 ---
 
 # Pandas?
-![](res/pandas.jpg)
+![center](res/pandas.jpg)
 
 <!--
 These animals are adorable, but we are going to talk to about a Python library called Pandas, which is a popular tool for handling and analyzing input data.
@@ -31,7 +44,7 @@ Pandas provides data structures and tools similar to R that also help with data 
 
 DataFrames are set up like tables, with columns, headers, and rows of data.
 
-![](res/dataframe.png)
+![center](res/dataframe.png)
 
 <!--
 The DataFrame is Pandas' data structure. It is very much like a table with one or more columns, which means it works well with the CSV data file format.
@@ -48,7 +61,7 @@ Image Details:
 
 One column of a DataFrame is called a “Series."
 
-![](res/dataframe-column.png)
+![center](res/dataframe-column.png)
 
 <!--
 Pandas Series is one-dimensional and contains a homogeneously-typed array. 
@@ -64,7 +77,7 @@ Image Details:
 
 The primary column of the DataFrame, without a title, is the “Index.”
 
-![](res/dataframe-index.png)
+![center](res/dataframe-index.png)
 
 <!--
 Last, the first column is an index column. 
@@ -171,7 +184,7 @@ my_dataframe.shape()
 
 {.column}
 
-![](res/shape.png)
+![center](res/shape.png)
 
 <!--
 shape() prints (number of rows, number of columns)
@@ -192,7 +205,7 @@ my_dataframe.head()
 
 {.column}
 
-![](res/head.png)
+![center](res/head.png)
 
 <!--
 head() prints the full contents of the first 5 rows.
@@ -213,7 +226,7 @@ my_dataframe.tail()
 
 {.column}
 
-![](res/tail.png)
+![center](res/tail.png)
 
 <!--
 tail() prints the full contents of the last 5 rows.
@@ -234,7 +247,7 @@ my_dataframe.describe()
 
 {.column}
 
-![](res/describe.png)
+![center](res/describe.png)
 
 <!--
 describe() gives statistics such as mean and median about numerical data.
@@ -258,7 +271,7 @@ my_dataframe.hist()
 
 {.column}
 
-![](res/hist.png)
+![center](res/hist.png)
 
 <!--
 hist() visualizes the frequency of various results for one or more numerical columns.

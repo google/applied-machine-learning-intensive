@@ -1,3 +1,16 @@
+---
+
+marp: true
+
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Career Development: Resume Workshop
 
 <!--
@@ -30,7 +43,7 @@ I hope today will clarify some of these questions you’ve had about resumes. Pl
 * Your turn!
 * Next steps
 
-![](res/resumeworkshop01.jpg)
+![center](res/resumeworkshop01.jpg)
 
 <!--
 Here’s our agenda for today: general resume tips, resume structure (very important), a deep dive into each section, a chance for you to start putting these tips into practice, and instruction about where we’ll go with our newfound resume knowledge.
@@ -59,7 +72,7 @@ The people reviewing your resume are actively looking for reasons to interview y
 * PDF format: To avoid any formatting inconsistencies, which can happen during upload or file sharing, convert your resume into a PDF so that the formatting is retained without issues.
 * Clean, simple, consistent, bullet-pointed: Bullet points help make your resume more legible and organized. 
 * Action words + metrics = results + impact: We’ll get more into this later, but you want to start each bullet point with an action verb (e.g., created, designed, improved) and include metrics to highlight the impact you had in each experience on your resume.
-* Contact information: In addition to your name, be sure to include your contact information -- email preferred, phone number also helpful -- and feel free to include a link to your personal website or github page.
+* Contact information: In addition to your name, be sure to include your contact information - email preferred, phone number also helpful - and feel free to include a link to your personal website or github page.
 * “References upon request”: we don’t recommend using up space on your resume to list references. Feel free to use that space to tell us more about your experiences, leadership, skills, and interests. We will reach out to you for references down the line if we need more information.
 -->
 
@@ -81,7 +94,7 @@ Let’s talk about the primary components of your resume. There is a wide variet
 
 # Technical Resume by Section
 
-![](res/resumeworkshop02.jpg)
+![center](res/resumeworkshop02.jpg)
 
 <!--
 Now that you have a good idea of what your overall resume structure can look like, let’s dive deeper into each section for a more specific look at what information is helpful to include. We’ll start with your education.
@@ -123,7 +136,7 @@ Technical skills: These should be listed in order of proficiency (strongest firs
 
 **Education Example** 
 
-![](res/resumeworkshop03.png)
+![center](res/resumeworkshop03.png)
 
 <!--
 While including your relevant coursework is not absolutely necessary, we do advise that you list data structures and/or algorithms on your resume if you’ve taken it. 
@@ -149,7 +162,7 @@ Employers want to know how, when, and where you’ve already started to make an 
 
 * Include employer, position, dates employed: Also ensure that most recent experiences are listed first (reverse chronological order).
 * Keep bullet points clear, concise, and descriptive: I highly encourage bullet points and concise fragments over full sentences.
-* Consider relevant experiences: Especially if you’re running out of space on your one-page resume, consider leaving off the non-tech-related experience (e.g., worked the front desk at the library, restocked medical supplies at the hospital -- these are important experience, but perhaps not for this role) in favor of the ones that are relevant to the role to which you’re applying.
+* Consider relevant experiences: Especially if you’re running out of space on your one-page resume, consider leaving off the non-tech-related experience (e.g., worked the front desk at the library, restocked medical supplies at the hospital - these are important experience, but perhaps not for this role) in favor of the ones that are relevant to the role to which you’re applying.
 
 If you're early on in your tech career, you may not have technical work experiences, and that's okay! Internships, student groups, hacks/coding competitions and class projects can be added here under the heading “experiences” instead of “work experiences” until you build up your relevant tech experience throughout your time in college.
 -->
@@ -174,7 +187,7 @@ By doing [Z]: what you specifically did to achieve those results (e.g., by restr
 
 **Before**
 
-![](res/resumeworkshop04.png)
+![center](res/resumeworkshop04.png)
 
 <!--
 This work experience description provides us with some information, but how could it be better? 
@@ -187,7 +200,7 @@ Image Details:
 
 **After**
 
-![](res/resumeworkshop05.png)
+![center](res/resumeworkshop05.png)
 
 <!--
 I want to point a few things out here:
@@ -222,7 +235,7 @@ As we mentioned before, early on in your technical career, you may not feel that
 
 **Projects Example**
 
-![](res/resumeworkshop06.png)
+![center](res/resumeworkshop06.png)
 
 <!--
 I want to point out a few things here, too:
@@ -269,7 +282,7 @@ Employers want to know what excites you, so take this opportunity to let them kn
 
 **Activities/Leadership Example**
 
-![](res/resumeworkshop07.png)
+![center](res/resumeworkshop07.png)
 
 <!--
 It's important to include the following:
@@ -307,7 +320,7 @@ Along your college journey, you may come across opportunities to: 1) be recogniz
 
 **Honors/Awards Example**
 
-![](res/resumeworkshop08.png)
+![center](res/resumeworkshop08.png)
 
 <!--
 Things to point out:

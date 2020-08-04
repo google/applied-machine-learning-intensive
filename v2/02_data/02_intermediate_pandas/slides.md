@@ -1,6 +1,15 @@
 ---
+
 marp: true
+
 ---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
 
 # Intermediate Pandas
 
@@ -118,7 +127,7 @@ Let's start by taking a look at row filtering.
 
 # Filtering: Rows
 
-![](res/table_for_row_filter.png)
+![center](res/table_for_row_filter.png)
 
 <!--
 In this slide we see data from a DataFrame.
@@ -138,7 +147,7 @@ Image Details:
 df[df['num_pet_dogs'] > 1]
 ```
 
-![](res/table_more_than_two_dogs.png)
+![center](res/table_more_than_two_dogs.png)
 
 <!--
 Here we have put the expression `df['num_pet_dogs'] > 1` inside another selector
@@ -158,7 +167,7 @@ Image Details:
 
 # Filtering: Columns
 
-![](res/table_for_column_filter.png)
+![center](res/table_for_column_filter.png)
 
 <!--
 It is also possible to filter out columns of data. In the pictured DataFrame
@@ -180,7 +189,7 @@ Image Details:
 df[[‘first_name’, ‘num_pet_dogs’, ‘num_pet_cats’]]
 ```
 
-![](res/table_less_pii.png)
+![center](res/table_less_pii.png)
 
 <!--
 To filter by columns, we can also use the DataFrame selector. Instead of passing
@@ -253,7 +262,7 @@ example using renderings of tables.
 
 # Grouping
 
-![](res/table_to_group.png)
+![center](res/table_to_group.png)
 
 <!--
 Here we have a `DataFrame` that contains pet owner data at an individual level.
@@ -275,7 +284,7 @@ Image Details:
 df.groupby(‘state’).mean()
 ```
 
-![](res/table_grouped.png)
+![center](res/table_grouped.png)
 
 <!--
 The `DataFrame` object has a method called `groupby()` that allows us to group
@@ -336,7 +345,7 @@ Let's look at an example.
 
 # Merging
 
-![](res/tables_to_merge.png)
+![center](res/tables_to_merge.png)
 
 <!--
 Here is an illustration of two `DataFrame` objects that we'd like to merge. One
@@ -359,7 +368,7 @@ Image Details:
 pd.merge(df1, df2)
 ```
 
-![](res/tables_merged.png)
+![center](res/tables_merged.png)
 
 <!--
 Here we can see the call to `merge()`. It accepts two `DataFrame` objects and
@@ -373,7 +382,7 @@ Image Details:
 
 # Merging
 
-![](res/tables_to_merge_uneven.png)
+![center](res/tables_to_merge_uneven.png)
 
 <!--
 What about this case? We have four rows in one table and three in the other.
@@ -395,7 +404,7 @@ Image Details:
 pd.merge(df1, df2)
 ```
 
-![](res/tables_merged_uneven.png)
+![center](res/tables_merged_uneven.png)
 
 <!--
 In this case we completely lost the record of Seo-yeon! Since Pandas couldn't
@@ -415,7 +424,7 @@ Image Details:
 pd.merge(df1, df2, how='outer')
 ```
 
-![](res/tables_merged_outer.png)
+![center](res/tables_merged_outer.png)
 
 <!--
 You can instruct Pandas to keep the data in one or both of the tables in a join.
@@ -449,7 +458,7 @@ Let's look at an example.
 
 # Sorting
 
-![](res/table_to_sort.png)
+![center](res/table_to_sort.png)
 
 <!--
 Again we have the name-state-pets table that we've seen in this presentation.
@@ -470,7 +479,7 @@ Image Details:
 df.sort_values('num_pet_cats')
 ```
 
-![](res/table_sorted.png)
+![center](res/table_sorted.png)
 
 <!--
 Here we can see the `sort_values()` method in use. We have asked to sort by the

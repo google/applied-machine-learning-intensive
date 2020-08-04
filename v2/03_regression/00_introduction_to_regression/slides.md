@@ -270,7 +270,7 @@ Image Details:
 
 # Housing Example
 
-![](res/housingexample3.png)
+![center](res/housingexample3.png)
 
 <!--
 *Invite answer from students for L2*
@@ -283,7 +283,7 @@ Image Details:
 
 # Housing Example
 
-![](res/housingexample4.png)
+![center](res/housingexample4.png)
 
 <!--
 *Invite answer from students for MSE*

@@ -1,3 +1,16 @@
+---
+
+marp: true
+
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Career Development: Working with Different Personality Styles
 
 <!--
@@ -33,7 +46,7 @@ Pull out one M&M without looking. If it’s red or brown, put it aside (or eat i
 
 Any interesting stories to share with the group briefly?  (Take 2-3 volunteers.)
 
-No matter what color M&M you may have picked, you would have been able to think of an instance in your life where that happened.  We are all a mix of these four traits. Being risky, being analytical, being committed, being nurturing -- these exist in all of us to some degree.
+No matter what color M&M you may have picked, you would have been able to think of an instance in your life where that happened.  We are all a mix of these four traits. Being risky, being analytical, being committed, being nurturing - these exist in all of us to some degree.
 
 Many of us find, however, that we are inclined toward one type more than the others. This session will give us a new lens to understand ourselves and others at work according to these four personality types.
 
@@ -64,7 +77,7 @@ It helps us better understand ourselves and others, which can save a lot of time
 
 # What Are the Four True Colors?
 
-![](res/personalitystyles01.jpg)
+![center](res/personalitystyles01.jpg)
 
 <!--
 Let's dive in. What are the four colors in True Colors and what do they mean?
@@ -88,7 +101,7 @@ I am flexible, spontaneous, adventurous, and fun. I am a natural problem-solver,
 * I enjoy adventure and competition.
 * Keeping a good sense of humor is important to me.
 
-![](res/personalitystyles02.jpg)
+![center](res/personalitystyles02.jpg)
 
 <!--
 Source: https://truecolorsintl.com/
@@ -110,7 +123,7 @@ I am accountable and thorough. I dedicate time and energy to maintaining my orga
 * I am detail-oriented and process-driven.
 * I appreciate order and punctuality.
 
-![](res/personalitystyles03.jpg)
+![center](res/personalitystyles03.jpg)
 
 <!--
 Source: https://truecolorsintl.com/
@@ -132,7 +145,7 @@ I am conceptual and an independent thinker. I like to develop models, explore id
 * I am a designer and inventor.
 * I prefer to work independently.
 
-![](res/personalitystyles04.jpg)
+![center](res/personalitystyles04.jpg)
 
 <!--
 Source: https://truecolorsintl.com/
@@ -154,7 +167,7 @@ I value people in the organization and seek to draw out their full potential. My
 * I can change my color to suit the situation (chameleon).
 * My ideal role is to harmonize, inspire, communicate, and create.
 
-![](res/personalitystyles05.jpg)
+![center](res/personalitystyles05.jpg)
 
 <!--
 Source: https://truecolorsintl.com/
@@ -186,7 +199,7 @@ Source: https://truecolorsintl.com/
 
 # Exercise #2: Census
 
-![](res/personalitystyles06.png)
+![center](res/personalitystyles06.png)
 
 <!--
 Let’s take a count of who has which primary and secondary color.

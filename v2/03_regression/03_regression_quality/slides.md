@@ -71,7 +71,7 @@ There is a solution, though.
 <!--
 The root mean squared error is simply the square root of the mean squared error. It adjusts the units of the error back to the units of the target, which makes model quality much easier to reason about.
 
-For instance, if you have a model that predicted housing prices, and it had an RMSE of 10,000, would that model be good or bad? Since houses cost in the hundreds of thousands -- if not millions -- of dollars, an error of $10,000 doesn't seem too bad.
+For instance, if you have a model that predicted housing prices, and it had an RMSE of 10,000, would that model be good or bad? Since houses cost in the hundreds of thousands - if not millions - of dollars, an error of $10,000 doesn't seem too bad.
 
 What about a model that predicted average global temperatures in Celsius that had an RMSE of 8? Although 8 is much smaller than 10,000, an 8 degrees Celsius change is a big deal in terms of average temperatures. Thus, 8 is probably not an acceptable RMSE for this model.
 -->

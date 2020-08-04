@@ -1,3 +1,16 @@
+---
+
+marp: true
+
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Career Development: Giving and Receiving Feedback
 
 <!--
@@ -108,7 +121,7 @@ Significant research supports the assertion that we are capable of growing our i
 
 # Best Practices for Giving Feedback
 
-![](res/feedback02.png)
+![center](res/feedback02.png)
 
 <!--
 Here are some best practices for giving feedback. How you deliver the feedback can depend on the situation and the person on the receiving end, but these are generally helpful guidelines to keep in mind when delivering feedback.
@@ -121,7 +134,7 @@ Image Details:
 
 ---
 
-![](res/feedback03.png)
+![center](res/feedback03.png)
 
 <!--
 Let’s apply those best practices to some examples. What’s the difference between the two pieces of feedback shown here? 
@@ -135,7 +148,7 @@ Image Details:
 
 ---
 
-![](res/feedback04.png)
+![center](res/feedback04.png)
 
 <!--
 What about this one? What’s the difference between the two pieces of feedback shown here? 
@@ -149,7 +162,7 @@ Image Details:
 
 ---
 
-![](res/feedback05.png)
+![center](res/feedback05.png)
 
 <!--
 Here’s a last example. What do you think? 
@@ -210,7 +223,7 @@ It’s not always easy to be open to constructive feedback, and that’ll probab
 
 What do you find difficult about receiving critical feedback? 
 
-* One way to become more open to developmental feedback is to think of feedback as a gift. Feedback is a way for people to show investment in you. The alternative is silence. If people (family members, roommates, or colleagues) were not interested in seeing you reach your potential in some way, they could always say nothing when you could be doing better -- or when you’re doing great. Feedback very often derives from someone wanting to see you succeed or improve at something. It’s best to think of it that way. Be grateful as best as you’re able and say thank you.
+* One way to become more open to developmental feedback is to think of feedback as a gift. Feedback is a way for people to show investment in you. The alternative is silence. If people (family members, roommates, or colleagues) were not interested in seeing you reach your potential in some way, they could always say nothing when you could be doing better - or when you’re doing great. Feedback very often derives from someone wanting to see you succeed or improve at something. It’s best to think of it that way. Be grateful as best as you’re able and say thank you.
 * Also, many of us can get defensive or shut down when receiving feedback. Sometimes we extrapolate from a small piece of feedback and assume we are not good or incapable of improving at something. For example, the advertising executive quoted in the prep article you read said when he heard his boss make an offhand joke about his lack of professionalism, he said he was flooded with shame and “all his failings rush to mind, as if he were Googling ‘things wrong with me’ and getting 1.2 million hits, with sponsored ads from his father and his ex. In this state it’s hard to see the feedback at ‘actual size.’” But now that Michael understands his standard operating procedure, he’s able to make better choices about where to go from there. He said he’s now able to reassure himself that he’s exaggerating, and usually after he sleeps on it, he’s in a better place to figure out whether there’s something he can learn. He’s learned what he needs to do to appropriately and constructively ingest and make use of the feedback given to him.
 * Another tip is to work to separate the feedback from the person giving it. If the feedback is on target and the advice is wise, it shouldn’t matter who’s delivering it. But it does. Often our feelings about the feedback giver (or how, when, where he delivered the comments) can override the feedback itself. It’s best to attempt to view feedback on its own. You don’t have to apply every piece of feedback you receive, but it would be foolish to rule out a good piece of advice because of some grievance regarding the person giving it.
 

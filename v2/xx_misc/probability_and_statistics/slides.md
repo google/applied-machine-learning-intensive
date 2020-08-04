@@ -1,5 +1,7 @@
 ---
+
 marp: true
+
 ---
 
 <style>
@@ -88,7 +90,7 @@ Image Details:
 
 # Relationships Among Random Variables 
 
-![](res/probstats01.png)
+![center](res/probstats01.png)
 
 <!--
 We call the relationship between two random variables independent if the value of one random variable does not affect the value of the other. For example, if we roll a die, then flip a coin. Furthermore, we could roll a fair die once and observe that it came up a 4, then roll again. These two events are independent.  
@@ -125,7 +127,7 @@ Image Details:
 
 # Conditional Probability: Example
 
-![](res/probstats06.png)
+![center](res/probstats06.png)
 
 <!--
 Consider the example from the previous slide. Namely, P(sum = 5 | first roll = 3) 
@@ -150,7 +152,7 @@ Image Details:
 
 # Conditional Probabilities Are Not Joint Probabilities
 
-![](res/prob24.png)
+![center](res/prob24.png)
 
 <!--
 The conditional probability is what we calculated on the previous slide. 
@@ -167,7 +169,7 @@ Image Details:
 
 # Conditional, Joint, & Marginal Probabilities Are Related
 
-![](res/prob25.png)
+![center](res/prob25.png)
 
 <!--
 The conditional probability between two independent events is simply the probability of X occurring. 
@@ -180,7 +182,7 @@ Image Details:
 
 # Conditional, Joint, & Marginal Probabilities Are Related
 
-![](res/probstats02.png)
+![center](res/probstats02.png)
 
 <!--
 We can recover the probability of X by summing the conditional probability of X given Y times the probability of Y, for every possible Y.
@@ -193,7 +195,7 @@ Image Details:
 
 # Conditional, Joint, & Marginal Probabilities Are Related
 
-![](res/prob27.png)
+![center](res/prob27.png)
 
 <!--
 We can recover the probability of X from summing the joint probabilities of X and Y for every possible Y.
@@ -206,7 +208,7 @@ Image Details:
 
 # Conditional, Joint, & Marginal Probabilities Are Related
 
-![](res/prob28.png)
+![center](res/prob28.png)
 
 <!--
 Let's review the formulae we saw on the previous slides. 
@@ -234,7 +236,7 @@ Image Details:
 
 # Bayes’ Theorem: Example
 
-![](res/probstats03.png)
+![center](res/probstats03.png)
 
 <!--
 Let's look at an example. 
@@ -251,7 +253,7 @@ Image Details:
 
 # Sample Exercise: Peanut Chocolate Detector
 
-![](res/probstats04.png)
+![center](res/probstats04.png)
 
 <!--
 Bayes’ Theorems might seem unnecessarily complicated for solving dice problems, but it can be very useful in Machine Learning
@@ -269,7 +271,7 @@ Image Details:
 
 # Sample Exercise: Peanut Chocolate Detector
 
-![](res/probstats05.png)
+![center](res/probstats05.png)
 
 <!--
 Ask students to discuss the implications of P(p|d) being relatively low even when P(d|p) and P(not d|not p) are high.

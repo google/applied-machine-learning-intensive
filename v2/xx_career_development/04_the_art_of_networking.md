@@ -1,3 +1,16 @@
+---
+
+marp: true
+
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Career Development: The Art of Networking
 
 <!--
@@ -10,7 +23,7 @@ This career development session is about the art of networking. If you’re thin
 
 Interacting meaningfully with other people to exchange information and develop contacts, especially to further one’s career
 
-![](res/artofnetworking01.jpg)
+![center](res/artofnetworking01.jpg)
 
 <!--
 * As college students you have many opportunities to begin making connections with others and building your network, so now is a great time to begin learning the skills of networking.
@@ -62,7 +75,7 @@ Both formal and informal settings:
 
 # Networking DOs and DON'Ts
 
-![](res/artofnetworking02.jpg)
+![center](res/artofnetworking02.jpg)
 
 <!--
 In the next few slides, we will go over ways to effectively network, as well as some things that may detract from building a good network.
@@ -394,7 +407,7 @@ Does anyone have a signoff they use that they want advice on? [Elicit student co
 
 # Questions?
 
-![](res/artofnetworking03.jpg)
+![center](res/artofnetworking03.jpg)
 
 <!--
 What questions do you have?
@@ -424,7 +437,7 @@ Open up your laptop, reach out to one connection on LinkedIn (or another platfor
 
 If you do not have a LinkedIn profile, please make one and be sure to include AMLI as an experience! Our next career development session is about LinkedIn!
 
-![](res/artofnetworking04.jpg)
+![center](res/artofnetworking04.jpg)
 
 <!--
 Circulate to help students formulate emails, respond to recruiters, etc. If students say they don’t have anyone to reach out to - how about a faculty speaker, or just someone they can send a “thank you” and update to? Doesn’t have to be a cold email.

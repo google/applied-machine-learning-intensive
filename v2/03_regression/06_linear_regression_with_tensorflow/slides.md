@@ -1,6 +1,15 @@
 ---
+
 marp: true
+
 ---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
 
 # Linear Regression With TensorFlow
 

@@ -1,3 +1,16 @@
+---
+
+marp: true
+
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Career Development: Communicating with Recruiters
 
 <!--
@@ -42,7 +55,7 @@ First we’ll go over the role your recruiter serves in your hiring process. The
 
 # Effective Communication
 
-![](res/commrecruiter01.jpg)
+![center](res/commrecruiter01.jpg)
 
 <!--
 Let’s move on to some guidelines for effectively communicating with your recruiter.
@@ -91,7 +104,7 @@ TIP: Always be truthful, open, and honest with your recruiter. If they have the 
 
 # Interviews
 
-![](res/commrecruiter02.jpg)
+![center](res/commrecruiter02.jpg)
 
 <!--
 Now let’s move on to scheduling and completing interviews at a company.
@@ -158,7 +171,7 @@ Thank you
 
 # Your Turn
 
-![](res/commrecruiter03.jpg)
+![center](res/commrecruiter03.jpg)
 
 <!--
 Now that we’ve gone over some important information to consider when working with your recruiter, let’s put these best practices to use!
@@ -172,7 +185,7 @@ Image Details:
 
 **Example email from recruiter to candidate** {.big}
 
-![](res/commrecruiter04.png)
+![center](res/commrecruiter04.png)
 
 <!--
 
@@ -200,7 +213,7 @@ Now, take six minutes to draft an appropriate response to your recruiter, Claris
 
 **Candidate response to recruiter example** {.big)
 
-![](res/commrecruiter05.png)
+![center](res/commrecruiter05.png)
 
 <!--
 Now that we’ve read an email exchange between a recruiter and candidate, take a look at this candidate’s response to their recruiter. Can you point out what’s wrong with the candidate’s response or what’s missing in this scenario? 
@@ -224,7 +237,7 @@ Image Details:
 
 **Sample response** {.big}
 
-![](res/commrecruiter06.png)
+![center](res/commrecruiter06.png)
 
 <!--
 Here’s a good example of a positive response from a candidate to a recruiter. What are some things Jane did well here? 
@@ -258,7 +271,7 @@ What would be some things to include in an email to a recruiter for a role you a
 
 **The “no, thank you” email example** {.big}
 
-![](res/commrecruiter07.png)
+![center](res/commrecruiter07.png)
 
 <!--
 This could be sent as an email or copied and pasted into LinkedIn messages. Just remember best practices of spelling the recruiter’s name correctly and making sure details are correct. If you want to connect over LinkedIn or otherwise, keep this person in your contacts (even if this role is not a good fit at this time), and then follow up promptly on doing so. Keep it brief. Even if you give a specific detail on why this is not a fit, you don’t have to get too specific. Remember that it is not okay to lie, so keep it honest and courteous.

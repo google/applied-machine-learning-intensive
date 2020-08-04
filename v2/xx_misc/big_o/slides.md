@@ -1,5 +1,7 @@
 ---
+
 marp: true
+
 ---
 
 <style>
@@ -356,7 +358,7 @@ Image Details:
 
 # List of Examples:
 
-![](res/bigO09.png)
+![center](res/bigO09.png)
 
 <!--
 Let's look at these examples together. Can anyone justify why we have labeled these pieces of code as linear, binary, and quadratic? 

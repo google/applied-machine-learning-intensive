@@ -250,7 +250,7 @@ Image Details:
 
 ---
 
-![](res/tug_of_war.jpg)
+![center](res/tug_of_war.jpg)
 
 <!--
 Balancing precision and recall is a tug-of-war between the metrics. Finding the optimal point where these two metrics are acceptable for your model is the goal.
@@ -422,7 +422,7 @@ Image Details:
 
 # Weather Prediction
 
-![](res/weather.png)
+![center](res/weather.png)
 Create a confusion matrix for this model.
 
 <!--
@@ -453,7 +453,7 @@ Click back to the previous slide to let students calculate.
 
 # Solution
 
-![](res/weather_solution.png)
+![center](res/weather_solution.png)
 
 <!--
 Image Details:

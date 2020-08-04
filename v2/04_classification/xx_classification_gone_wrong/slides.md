@@ -1,3 +1,16 @@
+---
+
+marp: true
+
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Classification Gone Wrong
 
 <!--
@@ -11,7 +24,7 @@ It would best be taught in about 35 minutes, but it could be stretched to 45 min
 
 # What Do You See First?
 
-![](res/classificationgonewrong1.jpeg)
+![center](res/classificationgonewrong1.jpeg)
 
 <!--
 When you look at this, what do you see first?
@@ -52,7 +65,7 @@ These mistakes can have a negative and far-reaching impact on people or entire g
 
 ---
 
-![](res/classificationgonewrong2.png)
+![center](res/classificationgonewrong2.png)
 
 <!--
 Let's break into groups by counting off 1, 2, and 3.

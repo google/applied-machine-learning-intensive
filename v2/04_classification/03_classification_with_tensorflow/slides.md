@@ -4,6 +4,13 @@ marp: true
 
 ---
 
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Classification with TensorFlow
 
 <!--
@@ -154,7 +161,7 @@ Although we've talked a lot about using gradient descent for optimization, there
 ```
 
 <!--
-We'll also visit early stopping in this lab. Early stopping is a model-fitting strategy where you monitor some metric -- say, loss -- and stop training when that metric doesn't change enough across a number of epochs.
+We'll also visit early stopping in this lab. Early stopping is a model-fitting strategy where you monitor some metric - say, loss - and stop training when that metric doesn't change enough across a number of epochs.
 
 In this example we monitor loss and stop early if the loss hasn't changed at least 0.001 during any of the last five epochs.
 -->

@@ -1,5 +1,7 @@
 ---
+
 marp: true
+
 ---
 
 <style>
@@ -86,7 +88,7 @@ from tensorflow import keras
 embedding_layer = keras.layers.Embedding(15, 4)
 ```
 
-![](res/embeddings03.png)
+![center](res/embeddings03.png)
 
 <!--
 Similar to a Python dictionary or hash table, the embedding layer acts as a “lookup table” where each item has a unique index that is used to look up its corresponding embedding. This particular table has 15 rows, corresponding to unique items, and 4 columns, one for each embedding dimension. You’ll investigate this more in the colab.

@@ -1,5 +1,7 @@
 ---
+
 marp: true
+
 ---
 
 <style>
@@ -39,7 +41,7 @@ Given two events $A$ and $B$:
 > $$ P(A|B) = \frac{P(B|A) P(A)}{P(B)} $$
 
 <!--
-Recall Bayes' Theorem. It allows us to calculate the probability of one event (A) given another event (B), if we know the probability of the reverse conditionality -- B given A.
+Recall Bayes' Theorem. It allows us to calculate the probability of one event (A) given another event (B), if we know the probability of the reverse conditionality - B given A.
 
 In other words, how often A happens given that B happens (P(A|B)) can be computed if we know the following: how often B happens given that A happens (P(B|A)), the probability that A happens on its own (P(A)), and the probability that B happens on its own (P(B)).
 

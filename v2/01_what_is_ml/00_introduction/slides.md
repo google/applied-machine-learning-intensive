@@ -1,5 +1,7 @@
 ---
+
 marp: true
+
 ---
 
 <style>
@@ -201,7 +203,7 @@ Image Details:
 
 ## Learning from Examples
 
-![](res/lion.png)
+![center](res/lion.png)
 
 <!--
 You inform the child that this animal is a lion and continue your day at the zoo.

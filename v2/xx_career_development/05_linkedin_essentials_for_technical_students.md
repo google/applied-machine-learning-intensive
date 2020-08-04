@@ -1,3 +1,16 @@
+---
+
+marp: true
+
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Career Development: LinkedIn™ Essentials for Technical Students
 
 <!--
@@ -138,7 +151,7 @@ Consider Facebook, Instagram, and SnapChat friends as your personal inner circle
 
 # How Do I Search for New People to Connect With?
 
-![](res/linkedin01.png)
+![center](res/linkedin01.png)
 
 <!--
 A helpful group of people to connect with is alumni from your university who are working at a company where you may want to work some day. The easiest way to find and connect with those folks is by using the search function on LinkedIn. Please open your computers and log into your LinkedIn™ profiles for this section of the presentation so you can follow along. 
@@ -156,7 +169,7 @@ Image Details:
 * Next, scroll down to Schools and select your university.
 * Then filter again by Current Company to see the alumni from your university who work at a company you’re interested in.
 
-![](res/linkedin02.png)
+![center](res/linkedin02.png)
 
 <!--
 Image Details:
@@ -219,7 +232,7 @@ Now that we’ve gone over some basics regarding building out your LinkedIn™ p
 
 # Make Sure Recruiters Know You're Looking
 
-![](res/linkedin03.png)
+![center](res/linkedin03.png)
 
 <!--
 This may seem simple, but the first thing you want to do is ensure recruiters know you’re looking for a job. You can do that by going to Settings & Privacy, selecting Job seeking preferences, and making sure the toggle for Let Recruiters know you’re open to opportunities is set to Yes.
@@ -232,7 +245,7 @@ Image Details:
 
 # Update Your Skills
 
-![](res/linkedin04.png)
+![center](res/linkedin04.png)
 
 <!--
 Now that it’s clear to recruiters that you’re open to opportunities, let’s talk about what skills you should list on your LinkedIn™ so your employability and uniqueness are on display!
@@ -251,7 +264,7 @@ Image Details:
 *  Keyword optimization is critical. Look at the job descriptions for the roles you want and ensure those skills show up on your LinkedIn™ if you have them
 *  Below are some of the required skills for a Data Scientist role open at Snapchat:
 
-![](res/linkedin05.png)
+![center](res/linkedin05.png)
 
 <!--
 This may seem intuitive, but it’s important to choose skills that reflect the required skills and job requirements for the roles you’re looking for. Obviously you should be truthful about the skills and experiences you have as well.
@@ -264,7 +277,7 @@ Image Details:
 
 # Your Turn!
 
-Spend **3 minutes** updating your skills section -- 
+Spend **3 minutes** updating your skills section.
 
 from this summer and previously developed skills you haven’t added yet.
 
@@ -313,7 +326,7 @@ A recommendation is a written statement of endorsement received from a connectio
 
 # *Endorse* and Recommend Your Groupmates
 
-![](res/linkedin06.png)
+![center](res/linkedin06.png)
 
 <!--
 Endorsements are quick and easy one-clicks you can utilize to vouch that your LinkedIn™ connection has a particular skill or set of skills. You simply go to a LinkedIn™ connection’s profile page, scroll down to their skills section, and click on the + symbol next to the skill you want to endorse. Once a check mark appears in the circle, you’ve successfully endorsed them. Endorsements frequently serve a “you scratch my back, I’ll scratch yours" function, so hopefully the person you endorsed will return the favor and endorse you for skills they know you have.
@@ -339,7 +352,7 @@ Let’s practice! Spend the next two minutes providing endorsements for your gro
 *  Go to a LinkedIn™ connection’s page and click More
 *  Click on Recommend
 
-![](res/linkedin07.png)
+![center](res/linkedin07.png)
 
 <!--
 Let’s move onto recommendations. To create a LinkedIn™ recommendation for someone, go to their page and click More then Recommend. 
@@ -357,7 +370,7 @@ Image Details:
 *  Aim for at least 3-5 sentences.
 *  Look up examples online if you need assistance.
 
-![](res/linkedin08.png)
+![center](res/linkedin08.png)
 
 <!--
 To leave a recommendation on LinkedIn, that person must have this course listed as an experience or you won’t be able to comment on your work with them throughout this program. 
@@ -388,7 +401,7 @@ In your recommendation it’s important that you explain how you know the person
 
 # Endorse and *Recommend* Your Groupmates
 
-![](res/linkedin09.png)
+![center](res/linkedin09.png)
 
 <!--
 Here are some templates as starting points for writing recommendations. What do you notice about these recommendations?

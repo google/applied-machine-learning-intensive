@@ -428,7 +428,7 @@ my stringyour string
 <!--
 Here we have some examples of working with string variables.
 
-Strings are objects. Objects are the combination of data -- in this case, the value of the string -- and methods which can be called on that data. In this case, we call `.upper()` on our string variable to get a copy of the string converted to upper-case.
+Strings are objects. Objects are the combination of data - in this case, the value of the string - and methods which can be called on that data. In this case, we call `.upper()` on our string variable to get a copy of the string converted to upper-case.
 
 Strings consist of characters. In our second print statement, we print the second character of the string `a`. Counting starts at 0. In the third print statement, we print a slice of a string. We start at the second character (index 1) and end at index 4. Notice that the character in index 1 is included in the output, but the character at index 4 is not. Slicing always includes the value at the first index and excludes the final index.
 

@@ -1,5 +1,7 @@
 ---
+
 marp: true
+
 ---
 
 <style>
@@ -221,8 +223,8 @@ Image Details:
 
 # How do we choose K?
 
-* Small K -- > noise has a higher influence
-* Large K -- > computationally expensive
+* Small K -> noise has a higher influence
+* Large K -> computationally expensive
 
 <!--
 There is a balance when choosing K. If we choose K to be very small, say K=3, then outliers in our dataset may have a stronger influence over how we classify new points (i.e., noise has a strong influence). If we choose K too large, then it can be computationally expensive to find the K nearest neighbors every time we want to classify a new data point.
@@ -235,8 +237,8 @@ Another thing to think about is the parity of K. For example, what may happen if
 
 # How do we choose K?
 
-* Small K -- > noise has a higher influence
-* Large K -- > computationally expensive
+* Small K -> noise has a higher influence
+* Large K -> computationally expensive
 
 **SOME OPTIONS**:
 * Let K = sqrt(m) (where m is the sample size)

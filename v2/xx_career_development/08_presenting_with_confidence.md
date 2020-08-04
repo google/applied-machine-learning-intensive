@@ -1,3 +1,16 @@
+---
+
+marp: true
+
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Career Development: Presenting with Confidence
 
 <!--
@@ -64,7 +77,7 @@ Finally, it’s important to summarize the main points of your presentation at t
 
 # Delivery: The Four Ps of Presenting 
 
-![](res/presentconfidence02.png)
+![center](res/presentconfidence02.png)
 
 <!--
 Next up is delivery, or, how you get the content across to your audience.
@@ -87,7 +100,7 @@ Image Details:
 
 # Content, Delivery, Creation:
 
-![](res/presentconfidence03.png)
+![center](res/presentconfidence03.png)
 
 <!--
 Now that we’ve covered what makes up a strong presentation, let’s go over some suggestions for how to achieve it. These are some general rules of thumb when making any presentation.
@@ -180,7 +193,7 @@ Take a moment to read over the list of values in front of you. When you’re don
 
 Looking at this list of 10, star the five values that are most important to you.
 
-Now, this part might be the most difficult, but the final task here is to circle two of those five values that are your core values. You may find that some of the other values that resonate with you fall under those two. Think of these values as the ones you hold yourself to in your everyday behavior and future planning, the values you aspire to embody -- maybe so much so that you do so unconsciously. 
+Now, this part might be the most difficult, but the final task here is to circle two of those five values that are your core values. You may find that some of the other values that resonate with you fall under those two. Think of these values as the ones you hold yourself to in your everyday behavior and future planning, the values you aspire to embody - maybe so much so that you do so unconsciously. 
 
 *Allow students one minute to find those two values.*
 

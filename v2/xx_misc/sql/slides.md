@@ -1,3 +1,16 @@
+---
+
+marp: true
+
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Introduction to SQL
 
 ---
@@ -57,7 +70,7 @@ And the most common is DQL - which is for selecting the appropriate subset of da
 
 Employee table
 
-![](res/introSQL01.png)
+![center](res/introSQL01.png)
 
 <!--
 Here’s an example of tabular data - an employee table that we will use in the next slides:
@@ -78,7 +91,7 @@ Image Details:
 
 **SELECT** ID, Name **FROM** Employee
 
-![](res/introSQL01.png)
+![center](res/introSQL01.png)
 
 <!--
 Let’s review our first query!
@@ -96,7 +109,7 @@ Image Details:
 
 # Query
 
-![](res/introSQL02.png)
+![center](res/introSQL02.png)
 
 <!--
 Here’s the output of the previous slide’s query
@@ -125,7 +138,7 @@ Now, we don’t always want to get all the values of particular column(s).  That
 
 **SELECT** * **FROM** Employee **WHERE** ID < 1002
 
-![](res/introSQL01.png)
+![center](res/introSQL01.png)
 
 * The query begins with SELECT * instead of SELECT followed by one or more column names.  Anyone know what SELECT * stands for?
 * SELECT * means SELECT all columns
@@ -140,7 +153,7 @@ Image Details:
 
 # Filtering
 
-![](res/introSQL03.png)
+![center](res/introSQL03.png)
 
 <!--
 Correct!  Only 1 row with ID = 1001
@@ -155,7 +168,7 @@ Image Details:
 
 **SELECT** * **FROM** Employee **WHERE** ID <= 1002
 
-![](res/introSQL01.png)
+![center](res/introSQL01.png)
 
 <!--
 What happens if we change the conditional operator from < to <=?
@@ -167,7 +180,7 @@ Image Details:
 
 # Filtering
 
-![](res/introSQL04.png)
+![center](res/introSQL04.png)
 
 <!--
 In this case, the query resulted in 2 rows with Employee IDs of 1001 and 1002
@@ -217,7 +230,7 @@ Image Details:
 
 **SELECT** * **FROM** Employee **WHERE** ID <= 1002 **ORDER BY** Name
 
-![](res/introSQL01.png)
+![center](res/introSQL01.png)
 
 <!--
 Let’s do the same query as before except we’ll add ORDER BY to sort the results by Name column
@@ -232,7 +245,7 @@ Image Details:
 
 # Sorting
 
-![](res/introSQL05.png)
+![center](res/introSQL05.png)
 
 <!--
 And, the results differs from previous example as row with Employee ID 1002 comes first because Employee Name Ben comes before Thomas in the ascending sort order
@@ -262,7 +275,7 @@ Let’s look at an example in the next slide
 
 **SELECT** Dept ID,  **AVG**(Salary) **FROM** Employee **GROUP BY** Dept ID
 
-![](res/introSQL01.png)
+![center](res/introSQL01.png)
 
 <!--
 This is an example of aggregation query, and:
@@ -281,7 +294,7 @@ Image Details:
 
 # Aggregating
 
-![](res/introSQL06.png)
+![center](res/introSQL06.png)
 
 <!--
 
@@ -295,7 +308,7 @@ Image Details:
 
 **SELECT** Dept ID, **AVG**(Salary) **FROM** Employee **GROUP BY** Dept ID **HAVING** AVG(Salary) > 51000
 
-![](res/introSQL01.png)
+![center](res/introSQL01.png)
 
 <!--
 
@@ -307,7 +320,7 @@ Image Details:
 
 # Filtering aggregated results
 
-![](res/introSQL07.png)
+![center](res/introSQL07.png)
 
 <!--
 While WHERE is used to filter rows, we need to use HAVING to filter aggregated results.
@@ -356,10 +369,12 @@ Data Query Language (DQL)
 
 # Joining
 
+```
 **SELECT** * **FROM** Employee, Department
 **WHERE** Employee.DeptID = Department.DeptID
+```
 
-![](res/introSQL08.png)
+![center](res/introSQL08.png)
 
 
 <!--
@@ -379,7 +394,7 @@ Image Details:
 
 # Joining
 
-![](res/introSQL09.png)
+![center](res/introSQL09.png)
 
 <!--
 And, here’s the resulting output of the query
@@ -392,7 +407,7 @@ Image Details:
 
 # Useful keywords
 
-![](res/introSQL10.png)
+![center](res/introSQL10.png)
 
 <!--
 A few more useful keywords before you’ll practice with Introduction to SQL colab:

@@ -4,7 +4,6 @@ marp: true
 
 ---
 
-
 <style>
 img[alt~="center"] {
   display: block;
@@ -223,7 +222,7 @@ What attributes of a dataset would you consider ideal?
 Does the ordering of the data matter? Why?
 
 <!--
-One important consideration is the quality of data -- machine learning models are only as good as
+One important consideration is the quality of data - machine learning models are only as good as
 the examples used to train them.
 
 What attributes of a dataset would be ideal?

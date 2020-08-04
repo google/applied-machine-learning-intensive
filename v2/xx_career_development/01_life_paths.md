@@ -1,3 +1,16 @@
+---
+
+marp: true
+
+---
+
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # Career Development: Life Paths
 
 <!--
@@ -24,7 +37,7 @@ A life path is a visual mapping of the significant events or time periods that h
 
 # How It Works
 
-![](res/lifepaths01.png)
+![center](res/lifepaths01.png)
 
 <!--
 You can draw as little or as much as you want to but you will only have two minutes to present.  If you aren’t comfortable with symbols or art, feel free to substitute with written words instead. Again, it’s up to you to disclose as much or as little as you want.
@@ -37,7 +50,7 @@ Image Details:
 
 # Life Path Example
 
-![](res/lifepaths02.png)
+![center](res/lifepaths02.png)
 
 <!--
 
@@ -57,7 +70,7 @@ Image Details:
 
 <insert photos and names of technical instructors>
 
-![](res/lifepaths03.png)
+![center](res/lifepaths03.png)
 
 <!--
 Now our instructors will take a few moments to share their own life paths.
@@ -78,7 +91,7 @@ Image Details:
 1. Take 10 minutes to create a map of your own life path.
 1. Be prepared to share with the group (<2 minutes per person).
 
-![](res/lifepaths04.jpg)
+![center](res/lifepaths04.jpg)
 
 <!--
 Now you’ll each take 10 minutes, markers, and chart paper to construct your own life path with your own events and/or time periods. (An additional five minutes may be necessary.)
