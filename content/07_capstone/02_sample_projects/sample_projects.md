@@ -11,7 +11,7 @@ img[alt~="center"] {
 }
 </style>
 
-# Example Student Project Videos
+# Example Student Projects
 
 ---
 
@@ -29,7 +29,7 @@ img[alt~="center"] {
   
   ---
   
-  # DebuSequencer
+# DebuSequencer
   
 * ML music generator
   * Keras 
@@ -141,4 +141,3 @@ ASK:
 * What are questions they still have?
 -->
 
----
