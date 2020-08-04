@@ -88,6 +88,8 @@ img[alt~="center"] {
   * Keras
 * [Slides](https://docs.google.com/presentation/d/1OUHZf1b3rKYft6FjttfLyD3lbidrGgyf7qaCUHvzUzQ/edit=id.g5a43df980a_0_404)
 
+---
+
 # What's Up with Income
 
 * Using ML to Understand How Income Changes Across Zip Codes
@@ -107,7 +109,9 @@ img[alt~="center"] {
 * Implicit (Confirmation, Experimenters)
 
 <!--
-Biases can be found throughout the design and development of ML systems. Stay in the same groups of three. Do a two-part activity to identify different types of bias. 
+Biases can be found throughout the design and development of ML systems. We will do a two-part activity to identify different types of bias. 
+
+*Put the students in groups of three*
 
 Part 1 asks students to use cards to match nine descriptive examples with nine different types of bias (Bias Card Matching). Part 2 asks students to pair-share or volunteer-share what instances of these bias types they’ve encountered in their own experience.
 
