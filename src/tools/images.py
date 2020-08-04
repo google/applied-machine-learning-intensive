@@ -20,7 +20,7 @@ def find_images(file_name):
         #image_file_name = os.path.split(match.group(2))[-1].strip()
         ifn = os.path.join(os.path.split(file_name)[0], match.group(2))
         k = ifn[2:]
-        ifn = 'https://github.com/google/applied-machine-learning-intensive/tree/master/v2/' + ifn[2:]
+        ifn = 'https://github.com/google/applied-machine-learning-intensive/tree/master/content/' + ifn[2:]
         images[k] = ifn
       match = re.match(license_pattern, line)
       if match:
