@@ -174,9 +174,7 @@ The images in the Fashion-MNIST dataset are labeled with one of the shown classe
 We'll also work with the MNIST digits dataset. This dataset contains handwritten digits that we'll classify as 0 through 9. This is also a very clean dataset with one digit per image.
 
 Image Details:
-* [digits.png](https://commons.wikimedia.org/wiki/File:MnistExamples.png): Creative Commons Attribution-Share Alike 4.0 International license
-
-https://creativecommons.org/licenses/by-sa/4.0/deed.en
+* Original content
 -->
 
 ---
