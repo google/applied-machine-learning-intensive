@@ -1,0 +1,3 @@
+absl-py
+nbformat
+pyminizip
