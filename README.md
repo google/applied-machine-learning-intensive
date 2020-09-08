@@ -6,8 +6,8 @@ The Applied Machine Learning Intensive (AMLI) is a collection of content
 that can be used to teach machine learning. The original content was
 created for a 10-week, bootcamp-style course for undergraduate college
 students. Designed for students who weren’t necessarily majoring in
-computer science, the goal was to enable participants in various fields
-to apply machine learning to their domain using high-level tools.
+computer science, the goal was to enable participants to apply machine 
+learning to different fields using high-level tools.
 
 The content primarily consists of slides, [Jupyter](https://jupyter.org/)
 notebooks, and facilitator guides. The slide decks are written in
